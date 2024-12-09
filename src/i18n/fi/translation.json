@@ -1,0 +1,2275 @@
+{
+  "error": {
+    "network": {}
+  },
+  "error-boundary": {
+    "description": "Tapahtui odottamaton virhe. Tämä voi johtua verkkoyhteyden katkeamisesta tai palvelun virheestä. Yritä myöhemmin uudelleen.",
+    "title": "Virhe"
+  },
+  "home": {
+    "title": "Elämä voi viedä moneen suuntaan. Urataidot auttaa pohdinnoissa eteenpäin."
+  },
+  "nav": {
+    "language": "Kieli",
+    "select-language": "Valitse kieli",
+    "home": "Aloitussivu",
+    "all-exercises": "Kaikki tehtävät",
+    "service-info": "Tietoa palvelusta",
+    "copy-results-to-link": "Kopio linkki keskeneräiseen kyselyyn",
+    "download-workbook": "Lataa työkirja",
+    "workbook-slug": "https://www.hyria.fi/sites/default/files/2024-11/Urasuunnittelutaitoni-ty%C3%B6kirja_11112024_Hyria_0.pdf",
+    "get-workbook": "Uraruunnittelutaitoni-työkirja"
+  },
+  "no-match": {
+    "description": "Hakemaasi sivua ei löytynyt.",
+    "title": "Sivua ei löytynyt"
+  },
+  "slugs": {
+    "career-management": "urasuunnittelu",
+    "exercises": "tehtavat",
+    "quick-self-evaluation": "pikaitsearviointi",
+    "summary": "yhteenveto",
+    "know-yourself": "tunne-itsesi",
+    "my-life-story": "oma-elamantarina",
+    "resources-and-ability-to-work": "voimavarat-ja-tyokyky",
+    "feedback": "palaute",
+    "service-info": "tietoa-palvelusta",
+    "competence-first": "osaaminen-edella",
+    "ready-for-change": "valmiina-muutoksiin",
+    "world-around-you": "maailma-ymparillasi",
+    "anticipate-the-future": "ennakoidaan-tulevaa",
+    "together-ahead": "yhdessa-eteenpain",
+    "competence-and-strengths": "osaaminen-ja-vahvuudet",
+    "application-of-competence": "osaamisen-soveltaminen",
+    "values": "arvot",
+    "feelings-and-ways-of-acting": "tunteet-ja-toimintatavat",
+    "motivational-factors": "motivaatiotekijat",
+    "interests": "kiinnostuksen-kohteet",
+    "attitude-towards-work-and-studying": "suhtautuminen-tyohon-ja-opiskeluun",
+    "development-areas": "kehittymiskohteet",
+    "self-perception-as-a-learner": "kasitys-itsesta-oppijana",
+    "learning-new-skills": "uusien-taitojen-opettelu",
+    "dreams-and-visions": "haaveet-ja-unelmat",
+    "problem-solving": "ongelmanratkaisu",
+    "creativity": "luovuus",
+    "decision-making": "paatoksenteko",
+    "goal-setting": "tavoitteet",
+    "preparedness": "varautuminen",
+    "resilience": "resilienssi",
+    "uncertainty-tolerance": "epavarmuuden-sietaminen",
+    "opportunities-and-constraints": "mahdollisuudet-ja-reunaehdot",
+    "labor-market": "tyomarkkinat",
+    "education-and-learning": "koulutus-ja-opiskelu",
+    "social-structures": "yhteiskunnan-rakenteet",
+    "ecosocial-factors": "ekososiaaliset-tekijat",
+    "articulating-competence": "osaamisen-sanoittaminen",
+    "communication": "viestinta",
+    "interaction-in-work-study-and-networks": "vuorovaikutus-tyossa-opiskelussa-ja-omissa-verkostoissa",
+    "asking-and-utilizing-help": "avun-pyytaminen-ja-hyodyntaminen",
+    "societal-services": "yhteiskunnan-tarjoamat-palvelut",
+    "job-search-skills": "tyonhakutaidot",
+    "alternative-paths": "vaihtoehtoiset-polut",
+    "social-changes": "yhteiskunnan-muutokset",
+    "global-changes": "globaalit-muutokset",
+    "import": "tuo",
+    "career-plan": "urasuunnitelma",
+    "import-career-plan": "tuo-urasuunnitelma"
+  },
+  "content": {
+    "1": {
+      "skillArea": {
+        "know-yourself": {
+          "long-name": "Itsetuntemus",
+          "name": "Tunne itsesi",
+          "info": "Itsetuntemus on toimivan urasuunnittelun perusta. Kun tunnet itsesi ja tiedät, mikä sinua kiinnostaa, mikä sinulle on tärkeää, mistä innostut ja miten suhtaudut eri asioihin, osaat paremmin hahmottaa sinulle sopivaa ammatillista suuntaa.",
+          "feedbacks": {
+            "1": {
+              "description": "Itsearviointisi perusteella olet ottamassa ensimmäisiä askeleita kohti parempaa itsetuntemusta – hienoa! Kun tunnistat, mistä olet kiinnostunut ja mikä motivoi sinua, voit suunnata energiaasi oikeisiin asioihin. Muista, että itsetuntemusta voi kehittää missä iässä tahansa, ja pienetkin askeleet ovat merkityksellisiä."
+            },
+            "2": {
+              "description": "Olet jo ottanut tärkeitä askeleita kohti parempaa ymmärrystä itsestäsi. Osaat arvioida elämäntapahtumiasi, voimavarojasi, kiinnostuksen kohteitasi ja arvojasi monipuolisesti. Tämä on hyvä perusta, jonka päälle voit rakentaa ja kehittää itseäsi. Muista, että itsetuntemus on jatkuva prosessi. Jokainen askel, jonka otat, vie henkilökohtaista kasvuasi ja kehitystäsi eteenpäin. Tsemppiä matkallesi!"
+            },
+            "3": {
+              "description": "Olet jo hyvin perillä omista vahvuuksistasi, arvoistasi ja motivaatiotekijöistäsi. Jatka rohkeasti omien kokemustesi, arvojesi ja tunteidesi tutkimista. Tämä auttaa sinua ymmärtämään entistä paremmin, miten ne vaikuttavat valintoihisi ja toimintaasi eri tilanteissa. Muista, että itsetuntemus on jatkuva prosessi, joka kehittyy ja syvenee koko elämän ajan. Onnea matkaan!"
+            },
+            "4": {
+              "description": "Itsearviointisi tulos kertoo hyvästä itsetuntemuksesta ja kyvystä johtaa itseäsi. Sinulla on vahva pohja, jolle rakentaa tulevaisuuttasi – jatka tätä hyvää työtä! Muista, että itsetuntemus on jatkuva prosessi, joka kehittyy ja syvenee koko elämän ajan."
+            }
+          },
+          "sections": {
+            "my-life-story": {
+              "name": "Oma elämäntarina",
+              "info": "Oman tarinan ja kokemuksien ymmärtäminen auttaa sinua ymmärtämään itseäsi ja omia valintojasi paremmin.",
+              "questions": {
+                "1": {
+                  "title": "Ymmärrän itseäni ja osaan kertoa tärkeistä kokemuksistani elämässä."
+                }
+              }
+            },
+            "resources-and-ability-to-work": {
+              "name": "Voimavarat ja työkyky",
+              "info": "Voimavarat ovat asioita, jotka auttavat sinua selviytymään arjessa ja kohtaamaan elämän haasteita. Ne voivat olla fyysisiä, psyykkisiä, sosiaalisia tai henkisiä. Työkyky tarkoittaa voimavarojen ja työn vaatimusten tasapainoa.",
+              "questions": {
+                "1": {
+                  "title": "Kun suunnittelen uraani, ajattelen omaa elämäntilannettani ja terveyttäni."
+                },
+                "2": {
+                  "title": "Osaan huolehtia siitä, että jaksan hyvin työssäni."
+                }
+              }
+            },
+            "feelings-and-ways-of-acting": {
+              "name": "Tunteet ja toimintatavat",
+              "info": "Tunteet tuovat meille tärkeää tietoa ympäristöstä, toisista ihmisistä ja itsestämme. Tunteet suuntaavat toimintaa ja ovat osa havaitsemista ja ajattelua. Lähes kaikkeen inhimilliseen toimintaan liittyy tunteita.",
+              "questions": {
+                "1": {
+                  "title": "Ymmärrän, miten tunteeni vaikuttavat siihen, mitä teen ja miten valitsen."
+                },
+                "2": {}
+              }
+            },
+            "values": {
+              "name": "Arvot",
+              "info": "Kun tietää, mikä itselle on tärkeää, on helpompi keskittyä olennaiseen. Omien arvojen tunteminen auttaa päätöksenteossa ja tavoitteiden asettamisessa ja saavuttamisessa.",
+              "questions": {
+                "1": {
+                  "title": "Tiedän, mitkä asiat ovat minulle tärkeitä."
+                }
+              }
+            },
+            "motivational-factors": {
+              "name": "Motivaatiotekijät",
+              "info": "Motivaatiotekijät ovat asioita, jotka innostavat tai kannustavat sinua tekemään jotain. Ne auttavat sinua saavuttamaan tavoitteesi.",
+              "questions": {
+                "1": {
+                  "title": "Tiedän, mitkä asiat innostavat minua."
+                },
+                "2": {
+                  "title": "Tiedän, miten voin lisätä innostustani."
+                }
+              }
+            },
+            "interests": {
+              "name": "Kiinnostuksen kohteet",
+              "info": "Omien kiinnostuksen kohteidesi tiedostaminen auttaa sinua uran suunnittelussa. Kiinnostavat asiat kannustavat sinua oppimaan uutta ja ponnistelemaan kohti tavoitteita.",
+              "questions": {
+                "1": {
+                  "title": "Tiedän, mitkä asiat kiinnostavat minua."
+                }
+              }
+            },
+            "attitude-towards-work-and-studying": {
+              "name": "Suhtautuminen työhön ja opiskeluun",
+              "info": "Kun työ tai opiskelu tuntuu sinusta tärkeältä, se voi parantaa hyvinvointiasi. Työn ja opiskelun merkitys voi muuttua elämäsi aikana. Voit myös löytää uusia tapoja ajatella niitä ja saada niistä enemmän hyötyä! ",
+              "questions": {
+                "1": {
+                  "title": "Minulla on positiivinen asenne työhön ja opiskeluun."
+                }
+              }
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "title": "Opi kuvailemaan ja jäsentelemään tärkeitä elämäntapahtumiasi",
+                "feedback": "Mahtavaa! Nyt olet harjoitellut kuvailemaan ja jäsentelemään tärkeitä elämäntapahtumiasi. Oman elämäntarinan hahmottaminen syventää itsetuntemustasi. Omien kokemusten ja arvojen ymmärtäminen auttaa sinua tekemään omannäköisiä uravalintoja.",
+                "text-fields": {
+                  "0": {
+                    "title": "Kirjoita alle 3-5 tärkeää tapahtumaa elämässäsi.",
+                    "description": "Esimerkiksi: opintojen aloittaminen, valmistuminen, uuden työn aloittaminen, muutto uuteen kaupunkiin, elämän ylä- ja alamäet, tärkeä ihmissuhde, perheenlisäys."
+                  },
+                  "1": {
+                    "title": "Valitse yksi tärkeä elämäntapahtuma ja mieti, miten se vaikutti elämääsi ja millaisia muutoksia se toi mukanaan.",
+                    "description": "Esimerkiksi: “Uuden työn aloittaminen toi mukanaan innostusta ja uusia oppimismahdollisuuksia. Se antoi mahdollisuuden käyttää ja kehittää omia taitoja. Työpaikan vaihto vaati muuttoa uuteen kaupunkiin ja uuteen työympäristöön sopeutumista. Uudet työkaverit ja työtehtävät toivat mukanaan myös uusia verkostoja.”"
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi arvioimaan tärkeimpien tapahtumien vaikutusta nykyhetkeen ja tunnistamaan omat vaikutusmahdollisuutesi",
+                "description": "<strong>Kirjoita alle omiin tekstikenttiinsä tärkeimmät elämäntapahtumasi ja -vaiheesi.</strong><br /><i>Esimerkiksi: opinnot, työt, elämän ylä- ja alamäet, tärkeä ihmissuhde, perheenlisäys.</i><br /><br /><strong>● Valitse kuvaavat emojit niille tapahtumille, jotka vaikuttavat nykyisiin urasuunnitelmiisi ja ammatillisiin valintoihisi, eli siihen, minkälaisia valintoja teet tällä hetkellä työssä tai opiskelussa.</strong><br /><strong>● Valitse korostamistasi tapahtumista yksi, ja kuvaile kyseiseen tekstikenttään, miten tapahtuma vaikuttaa nykytilanteeseesi.</strong> Onko vaikutus positiivinen vai negatiivinen? Pystytkö itse vaikuttamaan tilanteeseen? Liittyykö tilanteeseen asioita, joihin et voi vaikuttaa ollenkaan, kuten muiden ihmisten tunteet, päätökset tai ulkoiset olosuhteet?",
+                "feedback": "Hienoa! Elämäntarinan kautta voit tunnistaa merkitykselliset hetket ja teemat. Näitä voit hyödyntää urasuunnittelussa, esimerkiksi valitsemalla työn, joka on linjassa henkilökohtaisten arvojesi kanssa.",
+                "subtitle": "Elämäntapahtumat ja -vaiheet"
+              },
+              "3": {
+                "title": "Opi ennakoimaan elämäntarinasi perusteella, miten valintasi vaikuttavat tulevaisuuteen",
+                "description": "<strong>Kirjoita tekstikenttiin aikajärjestyksessä 5–10 merkittävää elämäntapahtumaa tai päätöstä, jotka ovat muokanneet elämääsi tähän asti. </strong><br /><i>Esimerkiksi: opiskeluvaiheet, työpaikat, vapaaehtoistyöt, elämän ylä- ja alamäet, tärkeät ihmissuhteet, muut merkittävät tapahtumat.</i><br /><br /><strong>● Valitse tapahtumille niitä kuvaavat emojit. </strong><br /><strong>● Tutki, löytyykö elämäntapahtumistasi toistuvia teemoja.</strong><br /><strong>● Valitse yksi merkittävä elämäntapahtumasi ja analysoi sitä tarkemmin:</strong> Miten tämä tapahtuma vaikutti myöhempiin elämäntapahtumiisi ja valintoihisi? Miten tämä tapahtuma vaikutti tavoitteisiisi ja unelmiisi? Opitko kokemuksesta jotain, joka voi auttaa sinua tulevaisuudessa? Kirjoita tärkein ajatuksesi kyseiseen tekstikenttään.",
+                "feedback": "Keskustele harjoituksen tuloksista kaverin tai läheisen kanssa. He voivat tarjota uusia näkökulmia ja auttaa sinua ymmärtämään, kuinka voit aktiivisesti vaikuttaa omaan tulevaisuuteesi. Muista, että elämäntarinasi on ainutlaatuinen voimavara, jota voit käyttää urasi suunnittelussa ja tavoitteidesi saavuttamisessa.",
+                "subtitle": "Elämäntapahtumat ja -vaiheet"
+              }
+            },
+            "2": {
+              "1": {
+                "title": "Opi tunnistamaan sinua kuormittavia asioita ja sinulle voimavaroja tuovia asioita",
+                "word-lists": {
+                  "1": {
+                    "title": "Mitkä asiat väsyttävät sinua? Valitse listasta ne, jotka tuntuvat sinusta raskailta:"
+                  },
+                  "2": {
+                    "title": "Mitkä asiat tuovat sinulle hyvää oloa? Valitse listasta ne, jotka tuovat sinulle voimaa ja jaksamista:"
+                  }
+                },
+                "feedback": "Hyvää työtä! Nyt olet harjoitellut tunnistamaan sinua kuormittavia ja sinulle voimavaroja tuovia asioita. Voimavaratekijät ovat asioita, jotka helpottavat työtäsi, innostavat ja motivoivat, sekä lisäävät energiaasi. ",
+                "after-title": "Mieti vielä hetki, mikä tuo sinulle eniten hyvää oloa, eli mikä on kaikista tärkein voimavarasi? "
+              },
+              "2": {
+                "text-fields": {
+                  "1": {
+                    "title": "Mitkä asiat innostavat ja tuovat sinulle hyvää oloa? Kirjoita alle.",
+                    "description": "Esimerkiksi: “Työn tai opiskelun tärkeys ja vaikutus”“Saavutusten tunnustaminen ja palkitseminen”“Mahdollisuus oppia uusia taitoja ja kehittyä”“Positiivinen ja kannustava työ- tai opiskeluilmapiiri”“Mahdollisuus työskennellä itsenäisesti ja tehdä omia päätöksiä”\"Selkeät ja saavutettavissa olevat tavoitteet” “Rakentavan ja säännöllisen palautteen saaminen”“Harrastukset”“Matkustaminen ja uudet kokemukset”“Ystävien ja perheen kanssa vietetty aika”“Vapaaehtoistyö ja yhteisöllisyys”."
+                  },
+                  "2": {
+                    "title": "Mitkä asiat väsyttävät tai tuottavat haasteita? Kirjoita alle.",
+                    "description": "Esimerkiksi: \"Ylikuormitus ja liian suuret työ- tai opiskelumäärät\"\"Epäselvät tai ristiriitaiset odotukset ja tavoitteet\"\"Negatiivinen tai tukahduttava työ- tai opiskeluilmapiiri”“Riittämätön tuki ja ohjaus esimiehiltä tai opettajilta”“Tiukat aikataulut ja jatkuva kiire”“Vaikeus löytää tasapaino työn/opiskelun ja vapaa-ajan välillä”“Yksitoikkoiset ja toistuvat tehtävät ilman vaihtelua”“Liiallinen aikatauluttaminen”“Sosiaalinen paine”“Liiallinen ruutuaika”“Harrastusten muuttuminen velvollisuuksiksi”“Lomastressi” “Yksinäisyys”“Taloudelliset paineet”“Unen puute”"
+                  },
+                  "3": {
+                    "title": "Valitse yksi sinua väsyttävä tai haasteita tuottava asia ja määritä ainakin yksi konkreettinen tavoite, jonka avulla voit vähentää kuormitusta.",
+                    "description": "Esimerkiksi: “Haluan oppia aikatauluttamaan paremmin”, “Haluan oppia ottamaan epäkohtia puheeksi”, “Haluan oppia sietämään epävarmuutta paremmin”, “Haluan löytää tehokkaampia opiskelutekniikoita”."
+                  },
+                  "4": {
+                    "title": " Kirjoita alle ainakin yksi toimenpide tai askel, jonka aiot ottaa kuormituksen vähentämiseksi. ",
+                    "description": "Esimerkiksi: “Opettelen priorisoimaan eli asettamaan asioita tärkeysjärjestykseen”, “Osallistun mindfulness-kurssille”, “Kokeilen uusia opiskelutekniikoita, kuten mind map -karttojen tekemistä.”"
+                  }
+                },
+                "title": "Opi arvioimaan työn, opiskelun ja arjen kuormittavuutta ja tee toimintasuunnitelma kuormituksen vähentämiseksi",
+                "feedback": "Hyvää työtä! Nyt olet harjoitellut arvioimaan työn, opiskelun ja arjen kuormittavuutta ja suunnittelemaan toimenpiteitä kuormituksen vähentämiseksi. Voimavaratekijät ovat asioita, jotka helpottavat työtäsi, innostavat ja motivoivat, sekä lisäävät energiaasi."
+              }
+            },
+            "3": {
+              "1": {
+                "title": "Opi tunnistamaan omia tunteitasi sekä niiden vaikutusta toimintaasi",
+                "feedback": "Huippua! Nyt olet harjoitellut tunnistamaan ja jäsentelemään tunteidesi ja mielialojesi vaikutusta toimintaasi. Tunteiden tunnistaminen ja hallinta auttavat meitä selviytymään vaikeista tilanteista, kommunikoimaan paremmin muiden kanssa ja tekemään järkeviä päätöksiä. Jatka pohdintoja, sillä nämä taidot ovat arvokkaita niin työelämässä kuin henkilökohtaisessa kasvussakin. Muista, että tunteiden tunnistaminen ja niiden vaikutuksen ymmärtäminen on prosessi, joka vaatii aikaa ja kärsivällisyyttä.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle, mitä tunnet juuri nyt. ",
+                    "description": "Tunteita ovat esimerkiksi: ilo, rakkaus, kiintymys, suru, pelko, viha, inho, ahdistus, kiitollisuus, häpeä, toivo onnellisuus, tyytyväisyys, mielihyvä, rohkeus, rentoutuneisuus."
+                  },
+                  "2": {
+                    "title": "Valitse yksi yllä listaamistasi tunteista ja mieti, mikä on aiheuttanut tämän tunteen",
+                    "description": "Esimerkiksi: “Tunnen itseni stressaantuneeksi, koska minulla on paljon tehtävää tänään”, “Tunnen itseni iloiseksi, koska sain positiivista palautetta työstäni”."
+                  },
+                  "3": {
+                    "title": "Mieti, miten tämä tunne vaikuttaa toimintaasi.",
+                    "description": "Esimerkiksi: “Stressi saa minut tuntemaan, että en pysty keskittymään kunnolla tehtäviini”, “Iloisuus saa minut tuntemaan itseni motivoituneeksi ja energiseksi”."
+                  },
+                  "4": {
+                    "title": "Mieti, mitä voit tehdä tunteen käsittelemiseksi. ",
+                    "description": "Esimerkiksi: “Stressi: Voin tehdä listan tehtävistäni ja aloittaa yhdestä asiasta kerrallaan”, “Iloisuus: Jatkan työskentelyä samalla innolla ja pidän mielessäni saamani positiivisen palautteen”."
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi ymmärtämään omia tunteitasi ja ennakoimaan niiden vaikutusta toimintaasi",
+                "feedback": "Olet tehnyt hienoa työtä pohtiessasi, miten tunteet ovat vaikuttaneet toimintaasi ja päätöksentekoon. Tämä itsetutkiskelu on tärkeää, sillä se auttaa tunnistamaan tunteiden roolin omassa elämässä ja urasuunnittelussa. Olet myös miettinyt keinoja, joilla voit säilyttää tavoitteellisen suunnan tunteiden ohjatessa toisaalle, mikä on erinomainen tapa kehittää itseohjautuvuutta ja pysyä kurssilla kohti asetettuja päämääriä. Jatka samaan malliin, sillä nämä taidot ovat arvokkaita niin työelämässä kuin henkilökohtaisessa kasvussakin.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle, mitä tunnet juuri nyt. ",
+                    "description": "Esimerkiksi: ilo, rakkaus, kiintymys, suru, pelko, viha, inho, ahdistus, kiitollisuus, häpeä, toivo onnellisuus, tyytyväisyys, mielihyvä, rohkeus, rentoutuneisuus."
+                  },
+                  "2": {
+                    "title": "Valitse yksi tunteista ja analysoi sitä tarkemmin: Mieti, miksi tunnet näin. Mikä tilanne tai ajatus aiheutti tämän tunteen?",
+                    "description": "Esimerkiksi: “Olen innostunut, koska sain hyvän palautteen työstäni, ja koen, että panokseni on tärkeä.”"
+                  },
+                  "3": {
+                    "title": " Pohdi ja arvioi alle, millaisia vaikutuksia tämän tunteen jatkumisella voisi olla sinuun pitkällä aikavälillä.",
+                    "description": "Esimerkiksi: “Tunne: innostus. Jos innostus jatkuu pitkällä aikavälillä, se voi vaikuttaa positiivisesti motivaatiooni ja luovuuteeni. Tunnen oloni energiseksi ja motivoiduksi tarttumaan uusiin projekteihin ja tavoitteisiin. Toisaalta, jos en osaa hallita innostustani, se voi johtaa siihen, että otan liikaa asioita hoitaakseni. “"
+                  },
+                  "4": {
+                    "title": " Mieti ja kirjoita alle, miten aiot toimia yllä olevan pohdintasi pohjalta. ",
+                    "description": "Esimerkiksi: “Tunne: innostus. Aion käyttää tätä positiivista energiaa aloittaakseni uuden projektin. Muistan pitää huolen tasapainosta, jotta tunne pysyy kestävänä voimavarana eikä muutu kuormittavaksi.”"
+                  }
+                }
+              }
+            },
+            "4": {
+              "1": {
+                "title": "Opi tunnistamaan arvosi",
+                "afterText": "<strong>Mieti vielä hetki, mitkä näistä ovat kolme tärkeintä arvoasi?</strong> Kirjoita ne paperille tai vaikka puhelimesi muistiinpanoihin. Palaa niihin silloin tällöin, erityisesti tärkeiden päätösten hetkellä, jotta muistat, mitkä asiat ovat sinulle tärkeitä.",
+                "feedback": "Huippua! Nyt olet harjoitellut tunnistamaan ja jäsentelemään arvojasi. Arvot ovat tärkeitä, sillä ne luovat perustan kestäville valinnoille, toiminnoille ja motivaatiolle. Arvojen tunteminen auttaa meitä suunnistamaan oikeaan suuntaan. Jos omat arvot ja toiminta ovat ristiriidassa, se voi aiheuttaa stressiä ja vaikeuksia. ",
+                "wordLists": {
+                  "1": {
+                    "title": "Mikä sinulle on elämässä tärkeää? Valitse listasta sinulle tärkeät asiat:"
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi kirkastamaan arvojesi merkitystä elämässäsi",
+                "feedback": "Olet tehnyt hienoa työtä pohtiessasi arvojesi merkitystä elämässäsi. Arvot voivat muuttua elämän aikana; omien arvojen ajoittainen kirkastaminen auttaa toimimaan omien arvojemme mukaisesti. Arvot liittyvät vahvasti motivaatioon: kun urasuunnitelmasi ovat linjassa arvojesi kanssa, olet motivoituneempi ja sitoutuneempi. Tämä auttaa jaksamaan vaikeina aikoina ja tekemään pitkäjänteisiä päätöksiä.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle 5-10 arvoasi eli asiaa, jotka ovat sinulle tärkeitä. ",
+                    "description": "Esimerkiksi: rehellisyys, tasa-arvo, perhekeskeisyys, terveys, ahkeruus, vaatimattomuus, luonnonmukaisuus, itsenäisyys, luovuus, vastuullisuus, jne."
+                  },
+                  "2": {
+                    "title": "Järjestä arvosi tärkeysjärjestykseen.",
+                    "description": "Mieti, mitkä arvot ovat sinulle kaikkein tärkeimpiä ja mitkä ovat hieman vähemmän tärkeitä. Voit käyttää arvojesi järjestämisessä apuna näitä kysymyksiä: Miten tämä arvo näkyy elämässäni? Miksi tämä arvo on minulle tärkeä?"
+                  },
+                  "3": {
+                    "title": "Valitse yksi arvoistasi, jota haluaisit vahvistaa tai tuoda enemmän esille elämässäsi."
+                  },
+                  "4": {
+                    "title": "Kirjoita alle konkreettisia tekoja ja tavoitteita, jotka auttavat sinua tuomaan valitsemasi arvon enemmän esille arjessa.",
+                    "description": "Esimerkiksi: “Perhekeskeisyys: Varaa viikoittain aikaa perheen yhteisille aktiviteeteille”, “Terveys: Suunnittele viikoittainen liikuntaohjelma ja pidä kiinni terveellisestä ruokavaliosta”, “Rehellisyys: Harjoittele avointa ja rehellistä kommunikointia kaikissa ihmissuhteissa”, “Ystävyys: Järjestä säännöllisesti tapaamisia ystävien kanssa ja pidä yhteyttä”, “Oppiminen: Aseta tavoitteeksi lukea yksi kirja kuukaudessa ja osallistua kursseille tai seminaareihin”."
+                  }
+                }
+              }
+            },
+            "5": {
+              "1": {
+                "title": "Opi tunnistamaan, mitkä asiat motivoivat sinua",
+                "description": "<strong>Kirjoita alla omiin tekstikenttiin 3-4 tilannetta arjestasi, jolloin koit innostusta, iloa tai tyytyväisyyttä. Vastaa seuraaviin kysymyksiin, kunkin tilanteen osalta:</strong> <br /><i>Mitä olit tekemässä? \nKuka oli kanssasi? \nMissä olit?</i>",
+                "emojiTitle": "Valitse myös kullekkin tilanteelle sitä kuvaava emoji.",
+                "feedback": "Hienoa! Nyt olet harjoitellut tunnistamaan omia motivaatiotekijöitäsi. Kun ymmärrät, mikä sinua motivoi, voit tehdä parempia päätöksiä ja suunnitella uraasi tavoitteellisesti. Muista, että matka itsetuntemuksen syventämiseen on jatkuvaa. Jatka itsesi kuuntelemista ja ole avoin uusille oivalluksille. Sinulla on kaikki eväät menestyksekkääseen uraan – jatka samaan malliin!"
+              },
+              "2": {
+                "title": "Opi yhdistämään motivaatiotekijät urasuunnitteluun",
+                "description": "<strong>Tutki alla olevia listoja, ja mieti, mikä motivoi sinua sisäisesti ja mikä ulkoisesti.</strong>",
+                "feedback": "Hyvää työtä! Nyt olet harjoitellut tunnistamaan, mitkä asiat motivoivat sinua elämäsi eri osa-alueilla sekä ennakoimaan, miten voit pitää motivaatiotasi yllä. Omat motivaatiotekijät ovat voimavara, joka auttaa sinua menestymään niin työssä kuin elämässä yleensäkin. Motivaatiotekijät riippuvat monista tekijöistä, kuten elämänvaiheesta, opiskelu- tai työympäristöstä ja saavutuksista. Tärkeintä on tunnistaa omat motivaatiotekijät, jotta osaat tehdä hyviä päätöksiä ja suunnata toimintaasi oikein.",
+                "textFields": {
+                  "1": {
+                    "title": "Mikä motivoi sinua sisäisesti? Mieti ja kirjoita alle, mikä on kaikista tärkein sisäinen motivaatiotekijäsi?",
+                    "description": "Esimerkiksi: \nHaluan auttaa muita. \nNautin uuden oppimisesta. \nKoen tyydytystä ongelmien ratkaisemisesta. \nHaluan kehittyä ammatillisesti. \nTyö tuo minulle merkityksen tunnetta. \nNautin työn tuomasta luovuudesta. \nHaluan toteuttaa omia arvojani ja intohimojani. \nJoku muu, mikä?"
+                  },
+                  "2": {
+                    "title": "Mikä motivoi sinua ulkoisesti? Mieti ja kirjoita alle, mikä on kaikista tärkein ulkoinen motivaatiotekijäsi?",
+                    "description": "Esimerkiksi: \nHaluan taloudellista vakautta. \nPalkitseminen (bonukset, ylennykset). \nHyvät työehdot ja etuudet. \nHaluan saavuttaa ammatillista asemaa tai arvostusta. \nTurvallisuus työpaikalla. \nHaluan positiivista palautetta ja tunnustusta. \nTyöskentelen perheen tai läheisten tukemiseksi. \nJoku muu, mikä?"
+                  },
+                  "3": {
+                    "title": "Kirjoita alle yksi työhön tai opiskeluun liittyvä tavoite, ja mieti miten yllä pohtimasi motivaatiotekijät tukevat tämän tavoitteen saavuttamista.",
+                    "description": "Esimerkki: \"Valitsen työharjoittelupaikan, jossa voin auttaa ihmisiä ja kehittää taitojani urakehitykseni kannalta.\""
+                  }
+                }
+              }
+            },
+            "6": {
+              "1": {
+                "title": "Opi tunnistamaan kiinnostuksen kohteistasi ja kertomaan niistä",
+                "feedback": "Hyvää työtä! Toivottavasti sait uusia ajatuksia kiinnostuksen kohteidesi merkityksestä arjessasi! Omien mielenkiinnon kohteiden pohtiminen laajalti elämän eri osa-alueilla on hyödyllistä. Kun pohdimme, mikä meitä aidosti kiinnostaa, voimme ehkä paremmin jäsentää, suunnitella ja priorisoida ajankäyttöämme ja voimavarojemme panostamista, tai tuunata työtämme. ",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle kolme asiaa, joita teet mielelläsi vapaa-ajallasi tai työssä/opiskelussa.",
+                    "description": "Esimerkki: \"Pidän tietokoneella pelaamisesta\", \"Nautin tiimityöstä\", \"Tykkään strategiapeleistä\", \"Pidän kirjoittamisesta\", \"Nautin luonnossa liikkumisesta\", \"Tykkään auton korjaamisesta\"."
+                  },
+                  "2": {
+                    "title": "Valitse yksi näistä asioista ja mieti, miksi se kiinnostaa sinua.",
+                    "description": "Esimerkki: \"Pidän tietokoneella pelaamisesta, koska se haastaa minut strategisesti ja antaa mahdollisuuden kehittyä koko ajan paremmaksi.\", \"Pidän kirjoittamisesta, koska se auttaa minua jäsentämään ajatuksiani ja ilmaisemaan itseäni.\""
+                  },
+                  "3": {
+                    "title": " Kirjoita yksi lause, jossa kerrot kiinnostuksen kohteestasi ja sen merkityksestä sinulle.",
+                    "description": "Esimerkki: \"Tietokoneella pelaaminen kehittää ongelmanratkaisutaitojani ja tarjoaa haasteita, jotka innostavat minua jatkuvasti parantamaan suoritustani\", “Kirjoittaminen on minulle tapa jäsentää ajatuksia ja tuoda luovuutta esiin\"."
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi hyödyntämään kiinnostuksen kohteitasi",
+                "description": "<strong>Kirjoita alle omiin tekstikenttiin 3–5 asiaa, joista nautit eniten vapaa-ajallasi. </strong><br /> <i>Esimerkiksi: “Lukeminen, piirtäminen, urheilu, musiikki, juhlien järjestäminen, käsityöt, matkustaminen.”</i><br /><br />  <strong>● Valitse kuvaavat emojit kullekin asialle.</strong><br /><strong>● Yhdistä sitten kiinnostuksen kohteesi taitoihin: mieti ja kirjoita kuhunkin tekstikenttään, mitä taitoja käytät kiinnostuksen kohteissasi. </strong><br /> <i>Esimerkiksi: “Lukeminen - analysointikyky, Piirtäminen - luovuus, Juhlien järjestäminen - organisointikyky, Urheilu - tiimityöskentely.”</i><br /> <strong>● Mieti, miten voisit hyödyntää näitä kiinnostuksen kohteita ja taitoja (enemmän) töissä, opinnoissa tai arjessasi? Mieti ja kirjoita ideoita kunkin kiinnostuksen kohteen osalta.</strong><br /> <i>Esimerkiksi: “Piirtäminen - luovuus: Voin käyttää luovuuttani kehittämällä visuaalisia esityksiä, kuten infografiikoita tai markkinointimateriaaleja, jotka tekevät monimutkaisista tiedoista helpommin ymmärrettäviä”, “Juhlien järjestäminen - organisointikyky: Voin hyödyntää organisointikykyäni suunnittelemalla ja koordinoimalla töissä tai koulussa tapahtumia, kokouksia tai projekteja, varmistaen, että kaikki sujuu sujuvasti ja aikataulussa”.</i>",
+                "feedback": "Hyvää työtä! Omien kiinnostuksen kohteiden pohtiminen laajalti elämän eri osa-alueilla on hyödyllistä. Se mikä kiinnostaa, saa meidät kehittämään osaamistamme sekä panostamaan aikaa ja muita resurssejamme asian parissa. Kiinnostukset ovat innostuksen ja motivaation lähde, ja usein ne liittyvät tavalla tai toisella muihin vahvuuksiimme. ",
+                "textFields": {
+                  "1": {}
+                }
+              }
+            },
+            "7": {
+              "1": {
+                "title": "Opi tunnistamaan ja kertomaan omasta suhtautumisestasi työhön ja opiskeluun",
+                "description": "<strong>Ajattele henkilöä, jota kunnioitat tai ihailet ja joka innostaa sinua.</strong> Henkilö voi olla todellinen tai fiktiivinen, kuten elokuvan henkilöhahmo. <strong>Vastaa seuraaviin kysymyksiin valitsemasi henkilön perusteella:</strong>",
+                "feedback": "Hyvin pohdittu! Oman suhtautumisen tunnistaminen työhön ja opiskeluun on tärkeää urasuunnittelun kannalta. Omien asenteiden ja suhtautumisen tunnistaminen auttavat sinua löytämään polkuja, jotka sopivat sinulle parhaiten. Ymmärtämällä, miten suhtaudut työhön ja opiskeluun, voit käyttää asennettasi kilpailuetuna – ja tarvittaessa myös kehittää näitä ominaisuuksia. Positiivinen asenne ja sitoutuminen ovat kilpailuetuja!",
+                "textFields": {
+                  "1": {
+                    "title": "Miten henkilö mielestäsi suhtautuu haasteisiin ja vastoinkäymisiin?",
+                    "description": "Esimerkiksi: “Henkilö ottaa haasteet vastaan innolla ja suhtautuu vastoinkäymisiin mahdollisuuksina oppia.”"
+                  },
+                  "2": {
+                    "title": "Millainen ajattelutapa tai asenne henkilöllä on työhön ja opiskeluun?",
+                    "description": "Esimerkiksi: “Henkilö on motivoitunut, ja hän panostaa työhönsä koko persoonansa. Henkilö on myös aina valmis auttamaan muita”."
+                  },
+                  "3": {
+                    "title": "Mitä yhteisiä piirteitä tai kokemuksia teillä on? Mitä eroavaisuuksia huomaat?",
+                    "description": "Esimerkiksi: “Meille on yhteistä halu oppia uutta. Eroavaisuutena on, että henkilö suhtautuu vastoinkäymisiin minua rauhallisemmin.”"
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi analysoimaan ja kehittämään omaa suhtautumistasi työhön ja opiskeluun",
+                "feedback": "Hyvää työtä! Omien asenteiden analysoiminen ja kehittäminen on tärkeää urasuunnittelun kannalta. Ymmärtämällä, miten suhtaudut työhön ja opiskeluun, voit käyttää asennettasi etuna ja kehittää suhtautumistasi tavoitteellisesti. Muista, että asenteiden muuttuminen vie aikaa, joten ole itsellesi armollinen – ja juhlista kun huomaat pieniäkin edistysaskeleita matkan varrella! P.S. Jotta huomaat kehittymisesi, tee jatkossa säännöllistä itsearviointia, jossa arvioit onko suhtautumisesi työhön ja opiskeluun muuttunut; oletko saavuttanut tavoitteesi suhtautumisesi kehittämisen suhteen!",
+                "textFields": {
+                  "1": {
+                    "title": "Kuvaile alle suhtautumistasi työhön ja/tai opiskeluun.",
+                    "description": "Esimerkiksi: “Työ herättää minussa innostusta ja tyytyväisyyttä, mutta joskus myös stressiä tiukkojen aikataulujen vuoksi.”"
+                  },
+                  "2": {
+                    "title": "Mieti, millainen suhtautumisesi työhön ja/tai opiskeluun olisi ihanteellisessa tilanteessa. ",
+                    "description": "Esimerkiksi: “Motivoitunut ja innostunut. Saisin pidettyä yllä positiivista virettä myös haastavissa tilanteissa.”"
+                  },
+                  "3": {
+                    "title": "Kirjoita alle tavoitteita, joiden saavuttamiseen tällä hetkellä panostat työssä ja/tai opiskelussa. ",
+                    "description": "Esimerkiksi: “Tehdä tietty työtehtävä tai projekti määräajassa”, “Suorittaa kurssi tai oppia uusi taito”, “Kehittää ajanhallintataitoja ja vähentää stressiä”."
+                  },
+                  "4": {
+                    "title": "Kirjoita alle minkälaiset toimenpiteet edistäisivät hyvinvointiasi ja tavoitteidesi saavuttamista.",
+                    "description": "Esimerkiksi: “Pidä huolta työ- ja vapaa-ajan tasapainosta. Varaa aikaa harrastuksille ja rentoutumiselle, jotta voit palautua ja ladata akkuja”, “Käytä tehtävälistoja ja kalenteria, jotta voit seurata edistymistäsi ja priorisoida tärkeimmät tehtävät”."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "together-ahead": {
+          "long-name": "Vuorovaikutus ja yhteistyö",
+          "name": "Yhdessä eteenpäin",
+          "info": "Hyvät vuorovaikutus- ja yhteistyötaidot auttavat sinua löytämään uusia mahdollisuuksia, oivaltamaan uutta ja saamaan apua oman tilanteesi edistämiseen. Vuorovaikutus- ja yhteistyötaidot näkyvät myös siinä, miten tuot esiin arvostustasi muita kohtaan, ja miten kerrot omasta osaamisestasi, tavoitteistasi ja toiveistasi.",
+          "feedbacks": {
+            "1": {
+              "description": "Erilaisissa vuorovaikutustilanteissa toimiminen luo hyvän pohjan urasuunnittelulle. Tietoisuus erilaisista tavoista löytää työmahdollisuuksia auttaa valmistautumaan tulevaisuuteen. Jatka samaan malliin ja muista hyödyntää oppimiasi taitoja tulevissa tilanteissa."
+            },
+            "2": {
+              "description": "Osaat jo hyvin jäsennellä ja kuvailla osaamistasi eri tavoin. Osaamisen sanoittaminen auttaa sinua esimerkiksi ymmärtämään omia vahvuuksiasi ja kehityskohteitasi. Muista ottaa huomioon erilaiset viestintätavat ja vuorovaikutustilanteet – ne vaikuttavat siihen, miten tulet ymmärretyksi. On hienoa, että osaat tunnistaa tärkeät henkilöt ja verkostot avun saamiseksi."
+            },
+            "3": {
+              "description": "Todella hienoa, että olet tietoinen monista tärkeistä taidoistasi ja osaamisestasi! Olet valmis soveltamaan taitojasi erilaisissa tilanteissa. Muista olla avoin palautteelle ja hyödyntää sitä omassa oppimisessasi. Verkostot ovat erittäin tärkeitä urakehityksessä. Jatka verkostojen rakentamista ja ylläpitoa. Muista, että jokainen tilanne ja haaste tarjoaa mahdollisuuden oppia ja kasvaa. Pidä positiivinen asenne ja jatka taitojesi kehittämistä!"
+            },
+            "4": {
+              "description": "Mahtavaa! Osaat viestiä tavoitteellisesti ja vaikuttavasti eri kohderyhmille sekä luoda ja ylläpitää ammatillisia verkostoja. Lisäksi osaat hyödyntää erilaisia palveluita ja ennakoit urasi tarpeita pitkällä aikavälillä. Tämä on arvokasta, kun haluat tuoda osaamisesi esiin!"
+            }
+          },
+          "sections": {
+            "articulating-competence": {
+              "name": "Osaamisen sanoittaminen",
+              "info": "Osaamisen sanoittaminen tarkoittaa, että kerrot selkeästi, mitä osaat ja missä olet hyvä. Tämä on tärkeää esimerkiksi työnhaussa, kun haluat kertoa taidoistasi muille.",
+              "questions": {
+                "1": {
+                  "title": "Osaan kertoa osaamisestani ja antaa siitä käytännön esimerkkejä."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {},
+                "3": {
+                  "textFields": {
+                    "1": {
+                      "title": "Oma hissipuheesi"
+                    }
+                  }
+                }
+              }
+            },
+            "communication": {
+              "name": "Viestintä",
+              "info": "Viestintä on tapa, jolla ihmiset puhuvat tai ilmaisevat asioita toisilleen. Viestintää voi olla sanoilla tai ilman sanoja. Hyvä viestintä auttaa kertomaan tavoitteista ja osaamisesta selkeästi. Se on tärkeää, kun haluat verkostoitua tai tehdä yhteistyötä.",
+              "questions": {
+                "1": {
+                  "title": "Pystyn ilmaisemaan itseäni erilaisissa viestintätilanteissa."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {},
+                "3": {}
+              }
+            },
+            "interaction-in-work-study-and-networks": {
+              "name": "Vuorovaikutus työssä, opiskelussa ja omissa verkostoissa",
+              "info": "Vuorovaikutus tarkoittaa, että ihmiset vaihtavat ajatuksia ja mielipiteitä keskenään ja tekevät yhteistyötä. Hyvä vuorovaikutus perustuu kuuntelemiseen ja yhdessä tekemiseen. Verkostoituminen tarkoittaa, että luot ja ylläpidät hyödyllisiä suhteita muihin ihmisiin.",
+              "questions": {
+                "1": {
+                  "title": "Osaan toimia erilaisissa vuorovaikutustilanteissa."
+                },
+                "2": {
+                  "title": "Tiedän, miten verkostot voivat auttaa opiskelussa, työssä ja muussa elämässäni."
+                }
+              },
+              "exercises": {
+                "2": {},
+                "3": {}
+              }
+            },
+            "asking-and-utilizing-help": {
+              "name": "Avun pyytäminen ja hyödyntäminen",
+              "info": "Et ole yksin miettimässä uraasi. Voit pyytää apua esimerkiksi läheisiltä, ystäviltä tai erilaisista yhteiskunnan palveluista. Avun pyytäminen voi auttaa sinua etenemään urasuunnitelmissasi.",
+              "questions": {
+                "1": {
+                  "title": "Tiedän miten voin pyytää ja saada apua itselleni tärkeissä valintatilanteissa."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {}
+              }
+            },
+            "societal-services": {
+              "name": "Yhteiskunnan tarjoamat palvelut",
+              "info": "Yhteiskunta tarjoaa monenlaisia palveluja, jotka auttavat sinua urasuunnittelussa. Näihin kuuluvat esimerkiksi koulutus- ja työllisyyspalvelut.",
+              "questions": {
+                "1": {
+                  "title": "Osaan hyödyntää yhteiskunnan tarjoamia palveluita omassa elämässäni ja urasuunnittelussani."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {}
+              }
+            },
+            "job-search-skills": {
+              "name": "Työnhakutaidot",
+              "info": "Työnhakutaitoihin kuuluu esimerkiksi se, että tunnet työnhaun nykyiset käytännöt, osaat kertoa selkeästi omasta osaamisestasi ja osaat tehdä hyvät työnhaun asiakirjat, kuten ansioluettelon ja työhakemuksen.",
+              "questions": {
+                "1": {
+                  "title": "Osaan hyödyntää tilanteeseeni sopivia työllistymismahdollisuuksia ja tuoda oman osaamiseni esiin työnhakutilanteissa."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {}
+              }
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "title": "Opi tunnistamaan ja sanoittamaan osaamistasi ",
+                "emojiTitle": "Valitse kuvaavat emojit kullekin asialle. ",
+                "description": "<strong>Listaa alle omiin tekstikenttiinsä 3–5 asiaa, joissa tunnet olevasi hyvä.</strong> Näiden ei tarvitse olla vain ammatillisia taitoja, vaan voit miettiä myös harrastusten kautta ja arjessa karttunutta osaamista. <br /><i>Esimerkiksi: “Olen hyvä kuuntelemaan muita ja ymmärtämään heidän näkökulmiaan”, “Opin nopeasti uusia taitoja”, “Osaan toimia erilaisten ihmisten kanssa yhteistyössä”.</i><br /><br /><strong>Valitse yksi taito ja kirjoita kyseiseen tekstikenttään konkreettinen esimerkki, milloin olet käyttänyt kyseisestä taitoa.</strong><br /><i>Esimerkiksi: “Osaan toimia erilaisten ihmisten kanssa yhteistyössä: Osallistuin opiskeluprojektiin, jossa tiimin jäsenet olivat eri taustoista ja heillä oli erilaisia vahvuuksia. Huomasin, että osa tiimistä koki, että heidän ideoitaan ei kuunneltu. Käynnistin keskustelun, jossa jokainen sai tilaisuuden kertoa omista ideoistaan. Tämä paransi ryhmän ilmapiiriä, ja projekti onnistui todella hyvin kaikkien osallistujien panoksen ansiosta.”</i>",
+                "feedback": "Hienoa, olet tietoinen monista tärkeistä taidoistasi ja osaamisestasi! Osaamisen sanoittaminen tarkoittaa, että kerrot selkeästi, mitä osaat ja missä olet hyvä. Tämä on tärkeää esimerkiksi työnhaussa tai ryhmätyöskentelyssä, kun haluat kertoa taidoistasi muille. "
+              },
+              "2": {
+                "emojiTitle": "Valitse kuvaavat emojit kullekin taidolle.",
+                "title": "Opi jäsentelemään ja kuvailemaan osaamistasi ",
+                "feedback": "Oman osaamisen kuvailu ja soveltamismahdollisuuksien tunnistaminen auttaa osaamisen monipuolisessa hyödyntämisessä urasuunnittelussa ja elämässä. Uskalla olla rohkea ja itsevarma, kun kerrot taidoistasi ja saavutuksistasi.",
+                "description": "<strong>Kirjoita alle omiin tekstikenttiinsä 3–5 taitoa, jotka hallitset hyvin. Nämä voivat olla sekä ammatillisia että henkilökohtaisia taitoja.</strong><br /><i>Esimerkiksi: kielitaito, esiintymistaito, asiakaspalvelutaidot, kuuntelutaito, sosiaaliset taidot, johtamistaidot, tiimityöskentely, kyky työskennellä itsenäisesti, viestintä, ongelmanratkaisukyky, tekninen osaaminen.</i><br /><br /><strong>Valitse yksi taito ja kirjoita kyseiseen tekstikenttään, miten taitoa voisi soveltaa eri tilanteissa. Kuvaile lyhyesti, miten voisit käyttää valitsemaasi taitoa kolmessa eri tilanteessa.</strong><br /><i>Esimerkiksi: “Taito: ongelmanratkaisukyky. 1. Työpaikalla huomaan, että tiimi on myöhässä projektin aikataulusta, koska yksi vaihe on viivästynyt. Käytän ongelmanratkaisutaitojani ehdottamalla, että jaamme työn uudelleen ja keskitymme kiireisimpiin tehtäviin. 2. Ryhmätyössä koulussa tiimini ei löydä sopivaa aihetta esitelmälle. Ehdotan, että jokainen ehdottaa kolme ideaa ja äänestämme parhaasta aiheesta. 3. Kotona huomaan, että perheenjäsenten aikataulut menevät ristiin ja kotityöt jäävät tekemättä. Järjestän listan tehtävistä ja ehdotan, että jokainen valitsee yhden kotityön viikolle.“</i>"
+              },
+              "3": {
+                "title": "Opi viestimään osaamisestasi tehokkaasti",
+                "feedback": "Auttoiko harjoitustehtävä kertomaan omasta osaamisestasi nopeasti ja selkeästi? Nyt on aika hyödyntää kaikki eteen tulevat tilanteet, joissa voit kertoa taidoistasi rohkeasti ja itsevarmasti. Jokainen askel vie sinua lähemmäksi tavoitteitasi.",
+                "description": "<strong>Tee oma hissipuhe. Hissipuhe on lyhyt esittely itsestäsi ja osaamisestasi. Sen tarkoitus on kertoa selkeästi ja ytimekkäästi, mitä osaat ja miksi se on tärkeää. </strong><br /><br />  <strong>●  Kirjoita alla olevaan tekstikenttään muutama lause itsestäsi. Mieti, mitä teet tällä hetkellä (esim. opiskelu tai työ) ja mikä on vahvuutesi. </strong><br /> <i>Esimerkiksi: \"Olen Mari, ja opiskelen liiketaloutta ammattikorkeakoulussa. Olen erikoistunut markkinointiin ja minulla on hyvät viestintätaidot.”</i><br /><br /> <strong>●  Mieti sitten, mikä on vahvin osaamisesi, jota haluat korostaa. Tämä voi liittyä työhön, opintoihin tai harrastuksiin. </strong><br /> <i>Esimerkiksi: \"Olen erityisen hyvä sosiaalisen median markkinoinnissa, ja osaan käyttää sitä tehokkaasti yritysten näkyvyyden parantamiseen.\"</i><br /><br /> <strong>●  Selitä sen jälkeen lyhyesti, miten taitosi tai osaamisesi voi hyödyttää esimerkiksi työnantajaa, tiimiä tai asiakkaita. </strong><br /> <i>Esimerkiksi: \"Olen auttanut useita yrityksiä lisäämään asiakasmääriään sosiaalisen median kampanjoilla. Minulla on kokemusta siitä, mikä toimii parhaiten eri yleisöille.\"</i><br /><br /> <strong>●  Yhdistä kohdat lyhyeksi, 30 sekunnin puheeksi. Tallenna hissipuheesi esimerkiksi puhelimen muistiinpanoihin, ja harjoittele! Hissipuheen tulisi olla selkeä ja sujuva. </strong><br /> <i>Esimerkiksi: \"Olen Mari, liiketalouden opiskelija, ja erikoistunut markkinointiin. Olen erityisen hyvä sosiaalisen median markkinoinnissa ja olen auttanut yrityksiä parantamaan näkyvyyttään ja kasvattamaan asiakasmääriään. Etsin mahdollisuuksia käyttää näitä taitoja markkinointitiimissä.”</i>"
+              }
+            },
+            "2": {
+              "1": {
+                "textFields": {
+                  "1": {
+                    "title": "Pohdi ja kirjoita alle, miten viestintätilanteet erosivat toisistaan.",
+                    "description": "Viestitkö eri tavalla eri yhteyksissä, kanavissa ja ympäristöissä? Minkälaista sanatonta viestintää (eleet, ilmeet, äänenpainot) huomasit näissä kahdessa tilanteessa? "
+                  }
+                },
+                "title": "Opi tunnistamaan omia viestintätaitojasi",
+                "feedback": "Hyvä! Viestintää on kaikkialla, missä ihmiset kohtaavat toisiaan. Viestintä voi olla sanallista tai sanatonta, ja eri viestintätapoja, -muotoja ja -kanavia on lukematon määrä. Viestintä auttaa ilmaisemaan omat tavoitteet, toiveet ja osaamisen selkeästi",
+                "description": "<strong>Mieti kahta erilaista viestintätilannetta, joissa olet ollut mukana. </strong><br /><i>Esimerkiksi: sähköpostikeskustelu, viestittely tai palaveri opiskelu-/työympäristössä tai keskustelu ystävän tai perheenjäsenen kanssa.</i>"
+              },
+              "2": {
+                "description": "<strong>Mieti viestintätilannetta, jossa olet ollut mukana. Vastaa alla oleviin kysymyksiin.</strong>",
+                "title": "Opi arvioimaan omia viestintätaitojasi",
+                "feedback": "Hienoa! Tämä harjoitus auttoi sinua ymmärtämään omia viestintätaitojasi ja antoi sinulle konkreettisia askelia niiden kehittämiseen. Hyvä viestintä auttaa sinua verkostoitumaan ja saavuttamaan uratavoitteesi.",
+                "textFields": {
+                  "1": {
+                    "title": "Miten valmistelit viestintätilannetta?",
+                    "description": "Esim. selkeytit tavoitteet, suunnittelit etukäteen, kuuntelit ensin toista osapuolta"
+                  },
+                  "2": {
+                    "title": "Miten viestintä sujui?",
+                    "description": "Olitko ymmärrettävä, sujuva ja selkeä?"
+                  },
+                  "3": {
+                    "title": "Mitä viestintäkanavia käytit?",
+                    "description": "Esim. kasvokkain, puhelimitse, sähköpostitse, videopalaveri, some"
+                  },
+                  "4": {
+                    "title": "Oliko tilanteessa haasteita?",
+                    "description": "Esim. väärinymmärrykset, epäselvyys, keskustelun ohjaaminen"
+                  },
+                  "5": {
+                    "title": " Pohdi, miten viestintätilanne onnistui? Onnistuitko tuomaan esiin omia näkökulmiasi ja huomiomaan toisen tilanteen ja näkökulmat?"
+                  }
+                }
+              },
+              "3": {
+                "title": "Opi kehittämään omia viestintätaitojasi",
+                "feedback": "Hienoa! Nyt sinulla on konkreettisia askeleita viestintätaitojesi kehittämiseen! Hyvä viestintä auttaa sinua verkostoitumaan ja saavuttamaan uratavoitteesi.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle yksi tavoite, jonka haluat saavuttaa viestintätaitojasi kehittämällä.",
+                    "description": "Esimerkiksi: “Haluan esittää ideani selkeästi ja itsevarmasti kokouksissa.”"
+                  },
+                  "2": {
+                    "title": "Mitä yksittäisiä viestintätaitoja sinun pitää kehittää saavuttaaksesi tavoitteen?",
+                    "description": "Esimerkiksi: “Minun pitää oppia käyttämään visuaalisia apuvälineitä, kuten dioja, ja puhumaan vakuuttavasti ryhmän edessä.” "
+                  },
+                  "3": {
+                    "title": "Miten aiot harjoitella näitä taitoja?",
+                    "description": "Esimerkiksi: “Aion harjoitella PowerPointin käyttöä ja pyytää esitysmateriaalista palautetta kollegoiltani. Aion myös harjoitella esiintymistä osastoni sisäisissä palavereissa, jotta voin kehittyä entistä paremmaksi esiintyjäksi.”"
+                  },
+                  "4": {
+                    "title": "Milloin aiot kokeilla taitojasi käytännössä?",
+                    "description": "Esimerkiksi: “Aion pitää johtoryhmälle kuukauden päästä esityksen osastoni toimintasuunnitelmasta.”"
+                  }
+                }
+              }
+            },
+            "3": {
+              "1": {
+                "title": "Opi huomaamaan vuorovaikutusvahvuuksiasi",
+                "feedback": "Auttoiko harjoitustehtävä sinua tunnistamaan, millaisia vuorovaikutukseen liittyviä vahvuuksia sinulla on? On tärkeää, että tunnistaa oman tapansa toimia. Vuorovaikutuksessa on kyse taidoista, joita opitaan läpi elämän. Jos koet jonkin vuorovaikutustilanteen haastavaksi, harjoittelemalla voit vahvistaa taitoasi toimia tilanteessa. Varmuus ja helppous vuorovaikutukseen tulevat toistojen, harjoittelun ja kokemuksen myötä.",
+                "wordLists": {
+                  "1": {
+                    "title": "Valitse listasta viisi sinua kuvaavaa vahvuuslausetta, jotka tulevat esiin, kun toimit tiimissä, opiskeluryhmässä tai omassa verkostossasi."
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi hyödyntämään ja kehittämään verkostojasi",
+                "feedback": "Hienoa työtä verkostojesi tunnistamisessa ja arvioimisessa! Verkostosi on tärkeä resurssi urasi kehittämisessä. Verkostoja kannattaa kehittää jatkuvasti. Niiden ylläpitäminen säännöllisellä yhteydenpidolla esimerkiksi somen avulla on erinomainen tapa vahvistaa suhteita.  ",
+                "textFields": {
+                  "1": {
+                    "title": "Listaa nykyiset verkostosi: kirjoita alle kaikki henkilöt ja ryhmät, joiden kanssa olet säännöllisesti tekemisissä. ",
+                    "description": "Esimerkiksi: Perhe ja ystävät; nykyiset ja entiset kollegat; ammattijärjestö; some-verkostot "
+                  },
+                  "2": {
+                    "title": "Mieti, miten kukin verkosto voi auttaa sinua urasuunnittelussa.",
+                    "description": "Esimerkiksi: \nVoiko tämä henkilö tai ryhmä tarjota uraneuvoja tai mentorointia?\nOnko heillä tietoa avoimista työpaikoista tai piilotyöpaikoista?\nVoivatko he auttaa sinua kehittämään uusia taitoja tai saamaan koulutusta?\nOnko heillä kontakteja, jotka voisivat olla hyödyllisiä urallasi?"
+                  },
+                  "3": {
+                    "title": "Tarkastele listaasi ja arviointiasi. Onko jokin tärkeä verkosto, joka puuttuu? ",
+                    "description": "Esimerkiksi:\nOnko sinulla riittävästi kontakteja alaltasi?\nOnko sinulla mentoria tai valmentajaa?\nOletko jäsenenä ammatillisissa järjestöissä tai ryhmissä?"
+                  },
+                  "4": {
+                    "title": "Mieti, miten voit hankkia uusia verkostoja ja laajentaa olemassa olevia. ",
+                    "description": "Esimerkiksi:\nOsallistu ammatillisiin tapahtumiin ja seminaareihin.\nOle aktiivinen sosiaalisessa mediassa.\nLiity ammatillisiin järjestöihin ja ryhmiin.\nPidä yhteyttä entisiin kollegoihin ja opiskelukavereihin."
+                  }
+                }
+              }
+            },
+            "4": {
+              "1": {
+                "title": "Opi tunnistamaan, mistä voit saada apua urapohdintoihisi",
+                "feedback": "Hienoa! Muista aina, että et ole yksin urapohdintojesi kanssa. Avun pyytäminen läheisiltä tai yhteiskunnan tarjoamien palvelujen hyödyntäminen voi auttaa sinua eteenpäin urapohdinnoissasi. Jatka samaan malliin ja hyödynnä kaikki apu, joka voi viedä sinua eteenpäin.",
+                "textFields": {
+                  "1": {
+                    "title": "Listaa alle henkilöitä, paikkoja ja palveluita, joiden kautta voit saada apua ja tukea urapohdintoihisi. ",
+                    "description": "Käytä listauksessa apuna näitä kysymyksiä:\n●  Mieti, kehen voit olla yhteydessä omassa verkostossasi. Tämä voi sisältää perheenjäsenet, ystävät, työyhteisön.\n●  Onko työpaikallasi tai oppilaitoksessasi uraohjaaja/-valmentaja tai opinto-ohjaaja?\n●  Oletko tietoinen, mitä työllisyyspalveluja on tarjolla paikkakunnallasi? Esim. ammatinvalinta- ja uraohjaus.\n●  Tiedätkö, mitä mahdollisuuksia on lisäkouluttautumiseen tai uudelleenkouluttautumiseen?\n●  Tunnetko hyödyllisiä palvelusivustoja? Onko Työmarkkinatori tai   Opintopolku tuttu? Mitä apua niiden kautta voisi saada?\n●  Tunnetko Ohjaamon palvelut?\n●  Tiedätkö, mitä tukea ja ohjausta ammattiliitot tai ammattilaisjärjestöt voivat tarjota?\n●  Onko alueellasi työnhakutapahtumia tai verkostoitumistilaisuuksia, joissa voit saada neuvoja ja laajentaa verkostoasi?"
+                  }
+                }
+              },
+              "2": {
+                "textFields": {
+                  "1": {
+                    "description": "Käytä listauksessa apuna näitä kysymyksiä:\n●  Mieti, kehen voit olla yhteydessä omassa verkostossasi. Tämä voi sisältää perheenjäsenet, ystävät, työyhteisön.\n●  Onko työpaikallasi tai oppilaitoksessasi uraohjaaja/-valmentaja tai opinto-ohjaaja?\n●  Oletko tietoinen, mitä työllisyyspalveluja on tarjolla paikkakunnallasi? Esim. ammatinvalinta- ja uraohjaus.\n●  Tiedätkö, mitä mahdollisuuksia on lisäkouluttautumiseen tai uudelleenkouluttautumiseen?\n●  Tunnetko hyödyllisiä palvelusivustoja? Onko Työmarkkinatori tai   Opintopolku tuttu? Mitä apua niiden kautta voisi saada?\n●  Tunnetko Ohjaamon palvelut?\n●  Tiedätkö, mitä tukea ja ohjausta ammattiliitot tai ammattilaisjärjestöt voivat tarjota?\n●  Onko alueellasi työnhakutapahtumia tai verkostoitumistilaisuuksia, joissa voit saada neuvoja ja laajentaa verkostoasi?",
+                    "title": "Listaa alle henkilöt, paikat ja palvelut, joiden kautta voit saada apua ja tukea urapohdintoihisi."
+                  },
+                  "2": {
+                    "title": "Analysoi listaasi ja pohdi, mitkä ovat sinulle tällä hetkellä tärkeimpiä tahoja, mistä voit saada apua ja tukea urapohdintoihisi. Mitkä taas voisivat olla hyödyllisiä pitkällä aikavälillä?"
+                  }
+                },
+                "title": "Opi löytämään sinulle sopivaa apua",
+                "feedback": "Hienoa! Muista aina, että et ole yksin urapohdintojesi kanssa. Avun pyytäminen läheisiltä tai yhteiskunnan tarjoamien palvelujen hyödyntäminen voi auttaa sinua eteenpäin urapohdinnoissasi. Jatka samaan malliin ja hyödynnä kaikki apu, joka voi viedä sinua eteenpäin."
+              }
+            },
+            "5": {
+              "1": {
+                "title": "Opi tunnistamaan yhteiskunnan tarjoamia palveluja elämän ja urasuunnittelun tueksi",
+                "feedback": "Hienoa! Muista aina, että et ole yksin urapohdintojesi kanssa. Yhteiskunnan tarjoamien palvelujen hyödyntäminen voi auttaa sinua eteenpäin urapohdinnoissasi. Hyödynnä kaikki mahdollisuudet, jotka voivat viedä sinua eteenpäin! ",
+                "textFields": {
+                  "1": {
+                    "title": "Listaa alle yhteiskunnan tarjoamia palveluita, joiden kautta voit saada apua elämäsi ja urasuunnittelusi tueksi. "
+                  }
+                },
+                "description": "<strong>Tutki, mitä palveluita yhteiskunta tarjoaa eri elämäntilanteisiin. Käytä virallisia verkkosivustoja, kuten <0>www.suomi.fi/kansalaiselle</0> -sivustoa, löytääksesi tietoa tarjolla olevista palveluista.</strong><br /><i>Esimerkiksi:<br />Työvoimapalvelut<br />Koulutus- ja uudelleenkoulutusohjelmat<br />Terveydenhuollon ja hyvinvoinnin palvelut<br />Sosiaalipalvelut ja taloudellinen tuki<br />Yrittäjyyden tukipalvelut</i>",
+                "link": "https://www.suomi.fi/kansalaiselle"
+              },
+              "2": {
+                "title": "Opi löytämään sinulle sopivat palvelut",
+                "feedback": "Hienoa! Muista aina, että et ole yksin urapohdintojesi kanssa. Yhteiskunnan tarjoamien palvelujen hyödyntäminen voi auttaa sinua eteenpäin urapohdinnoissasi. Hyödynnä kaikki mahdollisuudet, jotka voivat viedä sinua eteenpäin! ",
+                "textFields": {
+                  "1": {
+                    "title": "Aloita oman tilanteen kartoittamisella: Kuvaile alle nykyistä elämäntilannettasi ja uratilannettasi. Mieti, mitkä ovat suurimmat haasteesi ja tarpeesi tällä hetkellä."
+                  },
+                  "2": {
+                    "title": "Palveluiden kartoitus: Tutki, mitä palveluita yhteiskunta tarjoaa eri elämäntilanteisiin. Käytä virallisia verkkosivustoja, kuten www.suomi.fi/kansalaiselle -sivustoa, löytääksesi tietoa tarjolla olevista palveluista.",
+                    "description": "Esimerkiksi:\nTyövoimapalvelut\nKoulutus- ja uudelleenkoulutusohjelmat\nTerveydenhuollon ja hyvinvoinnin palvelut\nSosiaalipalvelut ja taloudellinen tuki\nYrittäjyyden tukipalvelut"
+                  },
+                  "3": {
+                    "title": "Palveluiden arviointi: Tee lista palveluista, jotka voisivat olla hyödyllisiä tilanteessasi. Arvioi, miten hyvin kukin palvelu vastaa tarpeisiisi ja haasteisiisi."
+                  },
+                  "4": {
+                    "title": "Laadi suunnitelma, miten aiot hyödyntää näitä palveluita."
+                  }
+                }
+              }
+            },
+            "6": {
+              "1": {
+                "description": "<strong> Kartoita, mitä kautta löydät sinulle sopivimmat työmahdollisuudet. Vastaa alla oleviin kysymyksiin.</strong>",
+                "title": "Opi löytämään erilaisia työllistymismahdollisuuksia",
+                "feedback": "Hienoa! Aktiivinen asenne auttaa sinua löytämään parhaiten sopivat työpaikat! Muista, että verkossa tapahtuvan työnhaun lisäksi henkilökohtaiset yhteydenotot ovat mahdollisuus työllistymiseen.",
+                "textFields": {
+                  "1": {
+                    "title": "Mieti, millaista työtä etsit: tyyppi (kokopäivä, osa-aikainen, freelance), ala (esim. IT, terveydenhuolto, koulutus), ja sijainti (paikallinen, etätyö, kansainvälinen)."
+                  },
+                  "2": {
+                    "title": "Mieti, mitkä ovat vahvuutesi, taitosi ja kiinnostuksen kohteesi."
+                  },
+                  "3": {
+                    "title": "Tee lista työnhakukanavista, joista voisit löytää sinulle sopivia työmahdollisuuksia.",
+                    "description": "Esimerkiksi:\nTyömarkkinatori ja muut työnhakusivustot\nSosiaalinen media\nYritysten omat sivut\nVerkostot"
+                  },
+                  "4": {
+                    "title": "Tutki listaamiasi kanavia ja kirjoita alle, mistä löysit eniten kiinnostavia työmahdollisuuksia."
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi laajentamaan työllistymismahdollisuuksia",
+                "feedback": "Hienoa! Kun mietit uramahdollisuuksia, kannattaa pohtia laajasti, missä tehtävissä voisit käyttää osaamistasi. Omaa osaamista kannattaa katsoa uusista näkökulmista, ja ideoida ennakkoluulottomasti, miten nykyisiä taitoja voisi hyödyntää uusissa työympäristöissä.",
+                "textFields": {
+                  "1": {
+                    "title": "Tunnista ja kirjoita alle 3–5 osaamistasi, joita voit soveltaa monenlaisissa työtehtävissä.",
+                    "description": "Esimerkiksi projektinhallinta, tarkkuus, viestintätaidot, kielitaito, asiakaspalvelu. "
+                  },
+                  "2": {
+                    "title": "Pohdi, millaisiin uusiin työtehtäviin tai toimialoille nämä taidot voisivat viedä sinut. Mieti, miten voisit soveltaa osaamistasi eri toimialoille tai tehtäviin. ",
+                    "description": "Esimerkiksi, jos sinulla on viestintätaitoja markkinoinnin alalta, voitko siirtää ne myyntiin, koulutukseen tai konsultointiin. "
+                  },
+                  "3": {
+                    "title": " Tutki tarkemmin vähintään kahta eri toimialaa, joilta et ole vielä hakenut töitä. Voit käyttää työnhakusivustoja, ammattiliittojen sivustoja tai keskustella ammattilaisten kanssa näistä aloista. Listaa alle löytämäsi uudet työmahdollisuudet. "
+                  },
+                  "4": {
+                    "title": "Valitse yksi löytämäsi työmahdollisuus ja mieti, miten sanoittaisit osaamistasi suhteessa kyseiseen työtehtävään. "
+                  }
+                }
+              }
+            }
+          }
+        },
+        "competence-first": {
+          "long-name": "Osaamisidentitentin rakentaminen",
+          "name": "Osaaminen edellä",
+          "info": "Osaamisidentiteetin rakentaminen tarkoittaa omien vahvuuksien ja taitojen tunnistamista ja hyödyntämistä eri tilanteissa. Lisäksi se auttaa oivaltamaan, mitä uutta osaamista kenties tarvitset, ja miten kerrot muille osaamisestasi päästäksesi tavoitteeseesi.",
+          "feedbacks": {
+            "1": {
+              "description": "On tärkeää pohtia omia vahvuuksia ja kehittymiskohteita. Jatka rohkeasti – se auttaa sinua kasvamaan ja oppimaan lisää! Muista olla avoin uusille mahdollisuuksille ja uskoa omaan kykyysi oppia ja kehittyä."
+            },
+            "2": {
+              "description": "Osaat jo hyvin jäsennellä osaamistasi ja vahvuuksiasi. Jatka samaan malliin ja muista hyödyntää konkreettisia esimerkkejä osaamisesi kuvaamiseen eri tilanteissa. Kehittymiskohteiden tunnistaminen on myös tärkeää – mieti säännöllisin väliajoin, mitä voit tehdä kehittääksesi itseäsi entisestään. Olet tehnyt hienoa työtä!"
+            },
+            "3": {
+              "description": "On hienoa, että ymmärrät oman osaamisesi ja vahvuutesi suhteessa kehittymiskohteisiisi. Positiivinen oppimiskäsitys ja uusien taitojen soveltaminen on tärkeää. Pidä huolta kehittymisestäsi. Olet oivaltanut tärkeitä asioita!"
+            },
+            "4": {
+              "description": "Loistavaa! Oman osaamisen sanoittaminen on tärkeä taito, jonka äärelle kannattaa pysähtyä aika ajoin. Oma osaaminen voi muuttua ja kehittyä. Onnea matkaan!"
+            }
+          },
+          "sections": {
+            "competence-and-strengths": {
+              "name": "Osaaminen ja vahvuudet",
+              "info": "Kun tunnistat vahvuutesi ja taitosi, voit löytää itsellesi sopivia elämän polkuja. Vahvuuksien tunnistaminen motivoi ja innostaa kehittämään osaamistasi.",
+              "questions": {
+                "1": {
+                  "title": "Tiedän, mitä taitoja minulla on ja mitkä ovat vahvuuteni."
+                }
+              },
+              "exercises": {
+                "1": {
+                  "title": "Opi tunnistamaan osaamistasi ja vahvuuksiasi",
+                  "feedback": "Olet tehnyt hienoa työtä omien vahvuuksiesi tunnistamisessa ja niiden soveltamisessa eri tilanteissa. Omien vahvuuksien ja osaamisen tunnistaminen auttaa ymmärtämään itseämme paremmin ja auttaa saavuttamaan tavoitteita. Jatka samaan malliin! "
+                },
+                "2": {},
+                "3": {
+                  "title": "Opi hyödyntämään osaamistasi ja vahvuuksiasi",
+                  "feedback": "Olet tehnyt erinomaista työtä tunnistaessasi ja analysoidessasi omia vahvuuksiasi. Viiden tärkeimmän vahvuuden valinta ja niiden oppimisen reflektointi auttavat sinua ymmärtämään, miten voit hyödyntää niitä urallasi. Kun valmistaudut esittelemään osaamisesi, muista, että jokainen vahvuus on ainutlaatuinen etu, joka erottaa sinut muista. Ole ylpeä saavutuksistasi ja kerro niistä rohkeasti työhaastatteluissa ja CV:ssäsi.",
+                  "textFields": {
+                    "1": {
+                      "title": "Tunnistetut vahvuudet"
+                    }
+                  }
+                }
+              }
+            },
+            "application-of-competence": {
+              "name": "Osaamisen soveltaminen",
+              "info": "Osaamisen soveltaminen tarkoittaa, että käytät tietojasi ja taitojasi eri tilanteissa. Kun mietit uramahdollisuuksia, pohdi laajasti, missä tehtävissä voisit käyttää osaamistasi.",
+              "questions": {
+                "1": {
+                  "title": "Tiedän, miten voin hyödyntää osaamistani eri tilanteissa ja tehtävissä."
+                }
+              }
+            },
+            "development-areas": {
+              "name": "Kehittymiskohteet",
+              "info": "Kun tiedostat kehittymiskohteesi, voit työstää niitä. Kehittymiskohteisiin paneutuminen ja jatkuva oppiminen tuovat usein lisää intoa ja motivaatiota elämän ja uran suunnitteluun.",
+              "questions": {
+                "1": {
+                  "title": "Tiedän, missä asioissa minun pitää kehittää osaamistani, jotta pääsen tavoitteisiini."
+                }
+              }
+            },
+            "self-perception-as-a-learner": {
+              "name": "Käsitys itsestä oppijana",
+              "info": "Se, miten näet itsesi oppijana, vaikuttaa oppimiseesi ja asenteeseesi opiskelua ja työtä kohtaan. Käsitys muuttuu ja kehittyy koko elämän ajan. Myönteinen käsitys itsestä oppijana syntyy vuorovaikutuksessa muiden kanssa.",
+              "questions": {
+                "1": {
+                  "title": "Luotan kykyyni oppia ja kehittyä."
+                }
+              }
+            },
+            "learning-new-skills": {
+              "name": "Uusien taitojen opettelu",
+              "info": "Kehität osaamistasi koko elämän ajan esimerkiksi lisätäksesi hyvinvointiasi, kehittyäksesi työssä tai edetäksesi urallasi. Uusien taitojen opettelu voi olla tavoitteellista ja järjestettyä, mutta myös osa arkipäivän oppimista.",
+              "questions": {
+                "1": {
+                  "title": "Pidän uusien taitojen opettelusta."
+                }
+              }
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "description": "<strong>Omaa osaamista on helpompi hahmottaa konkreettisten onnistumisten kautta. Mieti tilannetta, jolloin olet onnistunut, saanut hyvää palautetta tai ollut ylpeä itsestäsi. </strong><br /><br />Kurkkaa Sitran video osaamisen näkyväksi tekemisestä <0>https://youtu.be/HvvAvR5fC4c</0>",
+                "link": "https://youtu.be/HvvAvR5fC4c",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita 2–4 onnistumistasi tai saavutustasi. ",
+                    "description": "Onnistumiset voivat liittyä arkeen, opintoihin, ihmissuhteisiin, harrastuksiin, työhön tai muuhun elämään. Älä ole ujo tai itsekriittinen, vaan listaa kaikki, mitä mieleen tulee."
+                  },
+                  "2": {
+                    "title": "Mieti samalla, mitä vahvuuksiasi hyödynsit onnistumisissasi.",
+                    "description": "(esim. luotettavuus, vastuuntuntoisuus, joustavuus, iloisuus, sosiaalisuus, oppimishaluisuus, luovuus)"
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi jäsentämään osaamistasi ja vahvuuksiasi",
+                "feedback": "Todella hienoa, että olet tarttunut näihin kysymyksiin! Oman osaamisen ja vahvuuksien tunnistaminen ovat tärkeitä askelia henkilökohtaisessa kehityksessä. On myös tärkeää ymmärtää, että työelämän osaamistarpeet muuttuvat jatkuvasti – pysythän kärryillä, millaista osaamista tulevaisuudessa tarvitaan!",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita 5-7 vahvuuttasi.",
+                    "description": "Vahvuuksia ovat esimerkiksi luonteenpiirteet tai ominaisuudet. Voit käyttää apunasi VIA-vahvuustestiä <0>www.viacharacter.org</0>. Vaihda halutessasi kieleksi suomi Google Translate -palkista valitsemalla ”suomi”. "
+                  },
+                  "2": {
+                    "title": "Kirjoita 2-4 esimerkkiä siitä, millaista osaamista sinulla on, ja miten olet osaamisiasi hyödyntänyt.",
+                    "description": "Osaamista kertyy arjessa, työssä, opinnoissa ja harrastuksissa. Osaamista ovat kaikki erilaiset taidot, joita käytät elämässäsi.  Esimerkiksi; “Osaan tehdä ruokaa tai leipoa”, “Osaan striimata”, ”Osaan tehdä somepäivityksiä”, “Osaan toimia ryhmässä”, “Ymmärrän asiakkaiden tarpeita”, “Osaan johtaa itseäni ja omaa työtäni”."
+                  }
+                }
+              },
+              "3": {
+                "description": "On olemassa taitoja, jotka auttavat meitä pärjäämään erityisesti työelämässä. Eri aloilla ja työpaikoissa painottuvat hieman erilaiset osaamiset ja osaamistarpeet myös muuttuvat.",
+                "textFields": {
+                  "1": {
+                    "description": "Voit käyttää apunasi VIA-vahvuustestiä <0>www.viacharacter.org</0>. Vaihda halutessasi kieleksi suomi Google Translate -palkista valitsemalla ”suomi”. "
+                  },
+                  "2": {
+                    "title": "Kirjoita, mitkä taidot/osaamiset ovat ydinosaamistasi.",
+                    "description": "Pohdi näitä osaamisiasi muuttuvan työelämän kannalta. Millaisia osaamisen lisäämisen tarpeita sinulla on?"
+                  }
+                }
+              }
+            },
+            "2": {
+              "1": {
+                "description": "Omia vahvuuksia ja osaamista voi usein käyttää monenlaisissa tilanteissa. Olet voinut oppia vaikkapa hyväksi kuuntelijaksi ystävien avulla, mutta kuuntelutaidosta on sinulle hyötyä myös töissä.<br /><br /><strong>Mieti jotain taitoa, osaamista tai ominaisuutta, joka sinulla on.</strong><br /><i>Erilaisia taitoja ja osaamista voi olla esimerkiksi:  Luovuus Järjestelmällisyys Kulttuurinen osaaminen Yritteliäisyys Arvostelukyky Vuorovaikutustaidot Pitkien tekstien lukeminen Johtajuus Sinnikkyys Rehellisyys Nöyryys Neuvon kysyminen Itsehillintä Yhteistyökyky Itsensä johtaminen Leikkimielisyys Sorminäppäryys Digitaaliset taidot Esteettisyys Viestintäosaaminen Joustavuus Oppimistaidot Nopeus Kuunteleminen Itsensä kehittäminen Varovaisuus Liikunnallisuus Ryhmässä työskentely Tarkka makuaisti Rohkeus Hyvä muisti Kirjoittaminen Reiluus Piirtäminen Uteliaisuus Aikataulussa pysyminen Yritteliäisyys Ennakointikyky Empatia Kovuus Ongelmanratkaisu Tiimityöskentely Projektinhallinta.</i>",
+                "title": "Opi, miten voit hyödyntää osaamistasi eri tilanteissa",
+                "feedback": "Upeaa! Huomasit, että sinulla olevia taitoja voi hyödyntää erilaisissa yhteyksissä. On olemassa erilasia yleistaitoja, joita tarvitaan monissa eri työtehtävissä ja ammateissa. Näitä taitoja hankitaan koko elämän ajan – ja myös muualla kuin oppilaitoksissa.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita esimerkkejä siitä, miten olet käyttänyt/voisit käyttää valitsemaasi taitoa tai osaamista erilaisissa tilanteissa. ",
+                    "description": "Esimerkiksi, jos valitsit \"projektinhallinta\". Voisit kuvata taidon hyödyntämistä työpaikalla seuraavasti: \"Johdin tiimiä, joka kehitti uuden ohjelmiston aikataulussa ja budjetissa pysyen.\"  Ja sama taito vapaaehtoistyössä voisi olla: \"Organisoin paikallisen tapahtuman, jossa oli yli 100 osallistujaa.\" Harrastuksessa tämä taito näkyy seuraavasti: \"Suunnittelin ja toteutin puutarhaprojektin, joka vaati huolellista aikataulutusta ja resurssien hallintaa.\" "
+                  }
+                }
+              },
+              "2": {
+                "description": "Omaa osaamista ja taitoja voi hyödyntää monessa eri tilanteessa ja työtehtävässä. Pohdi omaa osaamistasi eri näkökulmista.",
+                "title": "Opi näkemään oma osaamisesi monesta eri näkökulmasta",
+                "feedback": "Jatka itsesi kehittämistä, hyödynnä vahvuutesi ja ole avoin uusille mahdollisuuksille. Verkostoidu, opi uutta ja ole rohkea. Sinulla on jo paljon osaamista, ja se kasvaa jatkuvasti. Uskalla hyödyntää sitä rohkeasti eri tilanteissa. Sinulla on potentiaalia, ja voit saavuttaa unelmasi! Muista, että ura on matka, ja jokainen vaihe opettaa sinulle jotain arvokasta. Uskalla unelmoida suuresti ja luota itseesi.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita millaista ammatillista eli substanssiosaamista sinulla on.",
+                    "description": "Ammatillinen eli substanssiosaaminen on koulutuksen ja työkokemuksen kautta syntynyttä osaamista, joka liittyy omaan ammattiin tai työhön."
+                  },
+                  "2": {
+                    "title": "Kirjoita millaisia geneerisiä taitoja eli yleistaitoja sinulla on. ",
+                    "description": "Esimerkiksi: kestävän kehityksen periaatteiden tuntemus, vuorovaikutus-, viestintä- ja kommunikaatiotaidot, ongelmanratkaisutaidot, luovuus, oppimiskyky, kokonaisuuksien hallinta, monikulttuurisuustaidot, itseohjautuvuus, eettinen toiminta, tiedonhallinta ja analysointitaidot."
+                  },
+                  "3": {
+                    "title": "Kirjoita millaista yleistä työelämäosaamista eli siirrettävää osaamista sinulla on.",
+                    "description": "Esimerkiksi: digiosaaminen, kielitaito, empatia, sopeutumiskyky ja kriittinen ajattelu."
+                  },
+                  "4": {
+                    "title": "Valitse yksi taito ja kirjoita, miten taitoa voisi soveltaa eri tilanteissa. Kuvaile lyhyesti, miten voisit käyttää valitsemaasi taitoa kolmessa eri tilanteessa."
+                  }
+                }
+              }
+            },
+            "3": {
+              "1": {
+                "title": "Opi tunnistamaan omat kehittymiskohteesi",
+                "feedback": "Hyvin tehty! Olet tunnistanut kehittymiskohteitasi. Niiden huomaaminen on tärkeää, kun asetat itsellesi tavoitteita. Seuraava askel on laatia suunnitelma, jossa asetat itsellesi pieniä, konkreettisia tavoitteita, kuten tietyn kirjan lukeminen tai verkkokurssille osallistuminen – ja ei kun toimeksi!",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita 1–3 sellaista taitoa tai osaamista, joissa kehittyminen auttaisi sinua jonkin konkreettisen tavoitteen saavuttamisessa.",
+                    "description": "Esimerkiksi: ”Ajanhallinta: Kehittyminen ajanhallinnassa auttaisi minua suorittamaan työtehtävät tehokkaammin ja vähentäisi stressiä.”"
+                  },
+                  "2": {
+                    "title": "Kirjoita esimerkkejä, minkälaisissa tilanteissa nämä kehittymiskohteet ilmenevät ja miten ne vaikuttavat toimintaasi. ",
+                    "description": "Esimerkiksi: ”Ajanhallinta: Tämä kehittymiskohde ilmenee erityisesti kiireisinä työpäivinä, kun tehtäviä on paljon ja aikataulut tiukkoja. Parempi ajanhallinta auttaa minua priorisoimaan tehtävät ja välttämään viime hetken kiirettä, mikä parantaa työni laatua ja vähentää stressiä.”"
+                  }
+                }
+              },
+              "2": {
+                "title": "Laadi itsellesi toimintasuunnitelma päästäksesi tavoitteisiisi",
+                "feedback": "Hienoa! Ammatillisen ja henkilökohtaisen kasvun kannalta ei kannata rajoittaa itseään omien vahvuuksiensa sisälle. Jos hakeutuu jatkuvasti vain helpoilta ja luonnollisilta tuntuvien tehtävien ääreen, jämähtää helposti paikalleen. Välillä on hyödyllistä kurkottaa myös epämukavuusalueelle.",
+                "textFields": {
+                  "1": {
+                    "title": "Listaa kehittymiskohteitasi. Mieti, mitkä taidot ovat sinulle erityisen tärkeitä urasi kannalta."
+                  },
+                  "2": {
+                    "title": "Aseta konkreettisia tavoitteita osaamisesi kehittämiseksi. "
+                  }
+                }
+              },
+              "3": {
+                "title": "Opi omat vahvuutesi ja kehittymiskohteesi SWOT-analyysin avulla ",
+                "feedback": "Olet tehnyt hienoa työtä SWOT-analyysin parissa! On erinomaista, että olet tunnistanut omat vahvuutesi ja alueet, joilla haluat kehittyä. Tämä itsetuntemus on arvokasta ja auttaa sinua suunnittelemaan uraasi tarkoituksenmukaisesti. SWOT-analyysi on jatkuva prosessi, ja sen päivittäminen säännöllisesti auttaa sinua pysymään oikealla polulla. Muista, että jokainen päivä on uusi mahdollisuus kasvaa ja kehittyä.",
+                "description": "Käytä SWOT-analyysiä itsetuntemuksen lisäämiseen ja urasi suunnitteluun. SWOT-työskentelylle täytyy varata riittävästi aikaa. Analyysin on tarkoitus olla myönteinen prosessi, joka hyödyttää muutoksen toteuttamista. Laadi SWOT-analyysi omista vahvuuksistasi ja kehittymiskohteistasi. ",
+                "textFields": {
+                  "1": {
+                    "title": "Vahvuudet (Strengths): ",
+                    "description": "Listaa omat vahvuutesi, kuten osaaminen, taidot ja saavutukset."
+                  },
+                  "2": {
+                    "title": "Heikkoudet (Weaknesses): ",
+                    "description": "Tunnista alueet, joilla haluat kehittyä.  Esimerkiksi: ajanhallinta, verkostoituminen, esiintyminen, jonkin tietyn osaamisen puute."
+                  },
+                  "3": {
+                    "title": "Mahdollisuudet (Opportunities):",
+                    "description": "Mieti, mitä uramahdollisuuksia on tarjolla. Esimerkiksi: kasvavat ja muuttuvat alat, teknologian nopea kehitys."
+                  },
+                  "4": {
+                    "title": "Uhat (Threats):",
+                    "description": "Ole tietoinen tekijöistä, jotka voivat vaikuttaa uraasi.  Esimerkiksi: talouden muutokset tai kilpailutilanne."
+                  }
+                }
+              }
+            },
+            "4": {
+              "1": {
+                "title": "Opi, millainen käsitys sinulla on itsestäsi oppijana",
+                "description": "Positiivinen käsitys itsestä oppijana edistää oppimista.",
+                "feedback": "Olet matkalla kohti itsetuntemusta ja ymmärrystä siitä, millainen olet oppijana. Muistele, miten aiemmat kokemukset ovat vaikuttaneet oppimiseesi ja miten olet kohdannut haasteet sekä juhlinut onnistumisia. Tietoisuus omista vahvuuksista ja oppimistavoista on tärkeää. Muista hyödyntää näitä taitoja matkallasi kohti tavoitteitasi!",
+                "textFields": {
+                  "1": {
+                    "title": "Millaisia tunteita ja ajatuksia oppiminen herättää?",
+                    "description": "Etsi kuva, joka kuvaa tunnettasi. Selaile lehtiä tai hyödynnä hakukoneita. Kirjoita, mitä kyseinen kuva kertoo ajatuksistasi."
+                  },
+                  "2": {
+                    "title": "Pohdi tilannetta, jossa olet oppinut uuden taidon tai asian.",
+                    "description": "Mitkä asiat auttoivat siinä, että opit? "
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi kehittämään ja ylläpitämään positiivista käsitystä itsestäsi oppijana",
+                "description": "Mieti onnistuneita oppimiskokemuksiasi. ",
+                "feedback": "Oppiminen herättää yleensä innostusta ja uteliaisuutta, kun kokee uuden asian omaksumisen ilon. Ajoittain uuden opettelu saattaa myös turhauttaa, kun kohtaa haasteita, mutta yleensä onnistumisen tunne lopulta voittaa. Oppiminen tuo mukanaan myös itseluottamusta, kun huomaa pystyvänsä omaksumaan uusia taitoja ja tietoja.",
+                "textFields": {
+                  "1": {
+                    "title": "Mitä tunteita oppiminen sinussa herätti?"
+                  },
+                  "2": {
+                    "title": "Mitkä asiat auttoivat sinua oppimaan uuden asian?"
+                  },
+                  "3": {
+                    "title": "Mitkä ovat vahvuuksiasi oppijana?",
+                    "description": "Esimerkiksi: ”Olen kärsivällinen ja sinnikäs, enkä luovuta helposti, vaikka kohtaisin vaikeuksia”, Minulla on hyvä kyky soveltaa oppimaani käytännössä, mikä auttaa minua ymmärtämään asiat syvällisemmin, ”Olen utelias ja motivoitunut oppimaan jatkuvasti uutta, mikä pitää minut ajan tasalla ja kehittää osaamistani”."
+                  }
+                }
+              }
+            },
+            "5": {
+              "1": {
+                "description": "Mieti jotain tiettyä tilannetta, jossa olet oppinut jonkin uuden taidon.",
+                "title": "Opi tunnistamaan, miten opit uusia taitoja",
+                "feedback": "Uusien taitojen oppiminen on yksilöllistä ja jokainen oppii omalla tavallaan. Uusien taitojen opettelu on prosessi, joka vaatii aikaa ja aktiivista tekemistä. Usko omiin kykyihisi ja nauti oppimisen matkasta! ",
+                "textFields": {
+                  "1": {
+                    "title": "Mitkä asiat innostivat ja kannustivat sinua oppimaan uutta?"
+                  },
+                  "2": {
+                    "title": "Mitkä asiat ympäristössä tukivat oppimistasi?"
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi jäsentämään ja edistämään omaa oppimistasi",
+                "description": "Jokaisella on omat ainutlaatuiset tapansa oppia ja omaksua uusia taitoja. On tärkeää tunnistaa, mikä menetelmä toimii parhaiten itselle ja kuinka paljon aikaa voi käyttää oppimiseen. Uusia asioita voi oppia monella eri tavalla, kuten työskentelemällä uusien projektien parissa tai osallistumalla kursseille, valmennuksiin ja koulutuksiin. Jotkut ihmiset pitävät itsenäisestä opiskelusta ja syventymisestä aiheeseen yksin, kun taas toiset hyötyvät enemmän ryhmässä oppimisesta.",
+                "feedback": "Hyvin pohdittu! Uusien taitojen oppiminen avaa ovia lisäoppimiselle ja henkilökohtaiselle kasvulle. Pohdi säännöllisesti kokemuksiasi ja oppimiasi asioita. Mieti, miten ne ovat vaikuttaneet osaamisidentiteettiisi ja uraasi. Jatka itsesi haastamista ja uuden oppimista!",
+                "textFields": {
+                  "1": {
+                    "title": "Mieti, minkä taidon haluaisit oppia."
+                  },
+                  "2": {
+                    "title": "Mieti, mitkä asiat voivat estää kyseisen taidon oppimista."
+                  },
+                  "3": {
+                    "title": "Mieti, mitkä asiat voivat edistää kyseisen taidon oppimista."
+                  }
+                }
+              },
+              "3": {
+                "title": "Opi arvioimaan omaa oppimistasi",
+                "description": "Jokaisella on omat ainutlaatuiset tapansa oppia ja omaksua uusia taitoja. On tärkeää tunnistaa, mikä menetelmä toimii parhaiten itselle ja kuinka paljon aikaa voi käyttää oppimiseen. Uusia asioita voi oppia monella eri tavalla, kuten työskentelemällä uusien projektien parissa tai osallistumalla kursseille, valmennuksiin ja koulutuksiin. Jotkut ihmiset pitävät itsenäisestä opiskelusta ja syventymisestä aiheeseen yksin, kun taas toiset hyötyvät enemmän ryhmässä oppimisesta. ",
+                "textFields": {
+                  "1": {
+                    "title": "Pohdi ja kirjoita, miten sinä opit parhaiten.",
+                    "description": "Arvioi jotain toteutunutta oppimisprosessia:<br />● Toteutuiko oppimistavoitteesi? Miksi tai miksi ei?<br />● Mikä edisti ja mikä haittasi oppimisprosessia?<br />● Millaisia resursseja sinulla oli käytettävissä?<br />● Mitä opit prosessista? Mikä toimi? Mikä ei? Mitä oppeja voit hyödyntää jatkossa."
+                  }
+                },
+                "feedback": "Todella hyvä! On tärkeää tunnistaa oma oppimistapa ja löytää se, mikä toimii parhaiten juuri itsellesi. Mieti millaiset ympäristöt ja tilanteet tukevat oppimistasi parhaiten. Verkkokurssit voivat olla hyvä vaihtoehto itsenäisille oppijoille, kun taas ryhmätyöskentely voi tarjota tukea ja vuorovaikutusta. Oppiminen on jatkuvaa, ja eri menetelmiä voi yhdistellä saavuttaakseen parhaan mahdollisen oppimistuloksen."
+              }
+            }
+          }
+        },
+        "ready-for-change": {
+          "long-name": "Oma tulevaisuus ja muutoskyky",
+          "name": "Valmiina muutoksiin",
+          "info": "Oman tulevaisuuden kuvitteleminen ja haaveilu ovat tärkeitä elämän ja uran suunnittelussa. Luovuus auttaa sinua kehittämään uusia ideoita ja ratkaisuja, ja tietoiset ja perustellut päätökset tukevat pitkän aikavälin tavoitteitasi. Riskien huomioiminen ja varasuunnitelmien tekeminen auttavat sinua selviytymään odottamattomista tilanteista ja säilyttämään positiivisen asenteen muutoksissa.",
+          "feedbacks": {
+            "1": {
+              "description": "Omien haaveiden ja unelmien tunnistaminen on tärkeää, sillä ne ohjaavat sinua kohti tavoitteitasi. Tavoitteiden asettaminen ja niihin pyrkiminen ovat avainasemassa urasuunnittelussa. Päätöksentekoon vaikuttavien tekijöiden tunnistaminen auttaa sinua tekemään harkittuja valintoja. Jatka samaan malliin! Olet oikealla tiellä kohti urasuunnittelutaitojesi kehittämistä."
+            },
+            "2": {
+              "description": "Hyvä! Vaikuttaa siltä, että osaat pohtia tulevaisuuttasi ja siihen vaikuttavia tekijöitä. Tiedon jäsentely auttaa sinua löytämään ratkaisuja vaikeisiinkin tilanteisiin. Lisäksi kykysi hahmottaa eri näkökulmia ja arvioida vaihtoehtoja auttaa varmasti päätöksenteossa. Päätöksentekotaitoja kannattaa harjoitella."
+            },
+            "3": {
+              "description": "Olet monipuolinen ja taitava ajattelija! Osaat arvioida vaihtoehtoja monesta näkökulmasta ja olet valmis kohtaamaan muutoksia ja riskejä. On hienoa, että näet myös tavanomaisista poikkeavia ratkaisuja ja uusia mahdollisuuksia. Luovuus avaa ovia uusiin polkuihin. Jatka rohkeasti tavoitteidesi saavuttamista – olet oikealla tiellä! Tutustu alla oleviin vinkkeihin seuraavia vaiheita varten!"
+            },
+            "4": {
+              "description": "Upeaa! Vaikuttaa siltä, että olet erittäin taitava monipuolisessa ajattelussa ja kyvyssä hahmottaa laajoja yhteyksiä. Osaat arvioida vaihtoehtoja monesta näkökulmasta ja olet valmis kohtaamaan muutoksia ja riskejä. Muista myös, että elämässä on aina mahdollisuus oppia lisää ja kehittyä. Tsemppiä matkallesi!"
+            }
+          },
+          "sections": {
+            "dreams-and-visions": {
+              "name": "Haaveet ja unelmat",
+              "info": "Haaveet ja unelmat ovat tärkeitä omannäköisen elämän ja uran suunnittelussa. Haaveet ja unelmat pitävät mielen positiivisena ja auttavat saavuttamaan tavoitteet.",
+              "questions": {
+                "1": {
+                  "title": "Minulla on haaveita ja toiveita tulevaisuuteni varalle."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "3": {
+                  "textFields": {
+                    "1": {}
+                  }
+                }
+              }
+            },
+            "problem-solving": {
+              "name": "Ongelmanratkaisu",
+              "info": "Ongelmanratkaisutaidot auttavat selviytymään haasteista. Ne auttavat toimimaan luovasti ja löytämään ratkaisuja. Ongelmanratkaisutaidot tekevät sinusta joustavamman ja sopeutumiskykyisemmän.",
+              "questions": {
+                "1": {
+                  "title": "Pystyn selvittämään ja ratkaisemaan kysymyksiä, jotka liittyvät koulutus- ja uravalintoihini."
+                }
+              },
+              "exercises": {
+                "1": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "2": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "3": {
+                  "textFields": {
+                    "1": {}
+                  }
+                }
+              }
+            },
+            "creativity": {
+              "name": "Luovuus",
+              "info": "Luovuus on tärkeää, kun suunnittelet uraasi ja tulevaisuuttasi. Se auttaa suhtautumaan muutoksiin joustavasti ja löytämään ainutlaatuisia urapolkuja. Luovuus rohkaisee kokeilemaan uutta ja näkemään mahdollisuuksia.",
+              "questions": {
+                "1": {
+                  "title": "Osaan ideoida ja kehitellä erilaisia vaihtoehtoja, kun mietin omaa tulevaisuuttani."
+                }
+              },
+              "exercises": {
+                "1": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "2": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "3": {
+                  "textFields": {
+                    "1": {}
+                  }
+                }
+              }
+            },
+            "decision-making": {
+              "name": "Päätöksenteko",
+              "info": "Päätöksentekotaidot auttavat arvioimaan eri vaihtoehtoja ja tekemään tietoon perustuvia valintoja.",
+              "questions": {
+                "1": {
+                  "title": "Pystyn tekemään valintoja ja päätöksiä, jotka liittyvät omaan elämääni ja uraani."
+                }
+              },
+              "exercises": {
+                "1": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "2": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "3": {
+                  "textFields": {
+                    "1": {}
+                  }
+                }
+              }
+            },
+            "goal-setting": {
+              "name": "Tavoitteet",
+              "info": "Selkeästi määritellyt tavoitteet auttavat keskittymään olennaiseen ja tekemään tietoisia päätöksiä. Osatavoitteet auttavat hahmottamaan konkreettisia askelia kohti pitkän aikavälin tavoitteita.",
+              "questions": {
+                "1": {
+                  "title": "Osaan asettaa itselleni selkeitä tavoitteita."
+                }
+              },
+              "exercises": {
+                "1": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "2": {},
+                "3": {}
+              }
+            },
+            "preparedness": {
+              "name": "Varautuminen",
+              "info": "Varautuminen tarkoittaa, että valmistaudut erilaisiin vaihtoehtoihin ja riskeihin. Tämä tuo hallinnan tunnetta.",
+              "questions": {
+                "1": {
+                  "title": "Osaan arvioida, onko suunnitelmillani mahdollisuus onnistua, ja pystyn tekemään varasuunnitelmia."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "3": {
+                  "textFields": {
+                    "1": {}
+                  }
+                }
+              }
+            },
+            "resilience": {
+              "name": "Resilienssi",
+              "info": "Resilienssi tarkoittaa kykyä sopeutua ja selviytyä muutoksista ja haasteista. Se on psyykkistä joustavuutta ja palautumiskykyä.",
+              "questions": {
+                "1": {
+                  "title": "Pystyn suhtautumaan joustavasti muutoksiin ja palautumaan vastoinkäymisistä."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {},
+                "3": {}
+              }
+            },
+            "uncertainty-tolerance": {
+              "name": "Epävarmuuden sietäminen",
+              "info": "Epävarmuuden sietäminen on kykyä kestää tilanteita, joissa lopputulos ei ole selvillä. Tämä taito auttaa toimimaan, vaikka kaikkiin kysymyksiin ei olisikaan vastauksia.",
+              "questions": {
+                "1": {
+                  "title": "Minulla on keinoja, joiden avulla siedän epävarmuutta."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "3": {
+                  "textFields": {
+                    "1": {}
+                  }
+                }
+              }
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "title": "Opi tunnistamaan omat haaveesi ja tulevaisuuden toiveesi",
+                "feedback": "Kun sanoittaa omat haaveensa, ne selkenevät myös itselle. Haaveet ja unelmat ovat tärkeitä itselle mielekkään elämän ja uran suunnittelussa. Ne voivat olla pieniä tai suuria. Haaveet ja unelmat auttavat pitämään yllä positiivista virettä, mikä taas auttaa tavoitteisiin suuntautumisessa ja oppimisessa.",
+                "textFields": {
+                  "1": {
+                    "title": "Osaatko haaveilla?",
+                    "description": "Mieti, ja kirjoita alle: <br />Mitä tekisit, jos sinulla olisi rajattomasti aikaa ja rahaa?<br />Mitä taitoja tai kykyjä haluaisit oppia tai kehittää?<br />Mitä asioita haluaisit muuttaa nykyisessä elämässäsi?"
+                  },
+                  "2": {
+                    "title": "Mikä on suurin haaveesi tai unelmasi? Kirjoita alle.",
+                    "description": "Esimerkkejä haaveista ja unelmista: matkustaminen, oman kodin hankkiminen, perheen perustaminen, kirjan kirjoittaminen, unelmien työpaikan saaminen, terveenä pysyminen, läheisten ystävyyssuhteiden säilyttäminen, uusien ystävien löytäminen, taloudellinen vakaus, harrastuksessa kehittyminen, uuden harrastuksen aloittaminen."
+                  }
+                }
+              },
+              "2": {
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle 3–5 asiaa, joita toivot tulevaisuudeltasi.",
+                    "description": "Nämä voivat liittyä esimerkiksi uraan, henkilökohtaiseen elämään, harrastuksiin, matkustamiseen tai ihmissuhteisiin. "
+                  },
+                  "2": {
+                    "title": "Valitse listaltasi yksi tulevaisuuden unelma, jonka haluaisit visualisoida. Sulje sitten silmäsi ja kuvittele, miltä elämäsi näyttää, kun tämä unelma on toteutunut. Kirjaa alle tärkeimmät ajatukset.",
+                    "description": "Missä olet ja mitä teet? \nKetkä ovat ympärilläsi? \nMiltä sinusta tuntuu?  \nMitä olet saavuttanut?"
+                  },
+                  "3": {
+                    "title": "Pohdi, miten voit ylläpitää motivaatiotasi matkalla kohti visualisoimaasi tulevaisuutta. Kirjaa alle tärkeimmät ajatukset.",
+                    "description": "Voit käyttää seuraavia kysymyksiä apuna: \nMiten voit palkita itseäsi pienistä edistysaskelista?  \nMiten voit pitää itsesi motivoituneena, jos kohtaat haasteita? \nMiten voit hyödyntää tukiverkostoasi (esim. perhe, ystävät, mentorit)?"
+                  }
+                },
+                "title": "Opi visioimaan omat haaveesi ja tulevaisuuden toiveesi ja kulkemaan niitä kohti",
+                "feedback": "Kun visioi omat haaveensa, ne saavat siivet! Haaveet ja unelmat ovat tärkeitä itselle mielekkään elämän ja uran suunnittelussa. Haaveet ja unelmat auttavat pitämään yllä positiivista virettä, mikä taas auttaa tavoitteisiin suuntautumisessa ja oppimisessa."
+              }
+            },
+            "2": {
+              "1": {
+                "title": "Opi kehittämään ongelmanratkaisutaitojasi",
+                "feedback": "Ongelmanratkaisutaidot auttavat kohtaamaan ja selviytymään haasteista tehokkaasti. Ne auttavat toimimaan luovasti ja löytämään ratkaisuja. Ongelmanratkaisukyky edistää myös joustavuutta ja sopeutumiskykyä muuttuvissa tilanteissa, mikä on erityisen tärkeää jatkuvasti muuttuvassa maailmassa."
+              },
+              "2": {
+                "title": "Opi löytämään ratkaisuja koulutus- ja uravalintaan liittyviin kysymyksiin",
+                "feedback": "Ongelmanratkaisutaidot auttavat kohtaamaan haasteita ja selviytymään niistä tehokkaasti. Ne auttavat toimimaan luovasti ja löytämään ratkaisuja. Ongelmanratkaisukyky edistää myös joustavuutta ja sopeutumiskykyä muuttuvissa tilanteissa, mikä on erityisen tärkeää jatkuvasti muuttuvassa maailmassa.",
+                "textFields": {
+                  "1": {
+                    "title": "Valitse jokin haaste, johon olet törmännyt työssä tai opiskelussa.",
+                    "description": "Valitse konkreettinen tilanne, jossa on selkeä ongelma, mutta jota et ole vielä ratkaissut täysin tyydyttävällä tavalla. Esimerkiksi: “Motivaation puute: Minulla on ollut vaikeuksia löytää motivaatiota opiskella erästä kurssia, joka ei kiinnosta minua. En ole vielä keksinyt, miten saisin itseni innostumaan aiheesta.”"
+                  },
+                  "2": {
+                    "title": "Pohdi haastetta seuraavien kysymysten avulla ja kirjoita vastaukset alle: \nMikä tarkalleen on ongelma? \nMilloin ja missä se ilmenee? \nKetkä ovat osallisina tai vaikuttavat ongelman ratkaisuun? \nMiksi ongelma on tärkeä ratkaista?",
+                    "description": "Esimerkiksi: “Motivaation puute: En löydä motivaatiota opiskella kurssia, joka ei kiinnosta minua. Tämä johtaa siihen, että opiskeluun keskittyminen ja tehtävien suorittaminen on vaikeaa. Ongelma ilmenee erityisesti, kun yritän tehdä kotona kurssiin liittyviä tehtäviä. Osallisina ongelman ratkaisuun voivat olla: minä itse, opettaja, opiskelukaverit, perhe ja ystävät. Ongelma on tärkeä ratkaista, koska motivaation puutteen takia en saa kurssia suoritettua enkä valmistu. Tämä vaikuttaa myös itsetuntoon.”"
+                  },
+                  "3": {
+                    "title": "Kehitä kolme erilaista ratkaisuvaihtoehtoa. ",
+                    "description": "Mieti sekä perinteisiä että epätavallisia lähestymistapoja. Voit listata hulluimmiltakin tuntuvia ideoita. Esimerkiksi: “Motivaation puute: 1. Palkitsen itseni projektin valmistumisesta, jollain erityisellä, kuten elokuvailta tai viikonloppumatka. 2. Hankin tukea opiskelukavereilta: Yhdessä opiskelu voi tehdä aiheesta mielenkiintoisemman. 3. Luen artikkeleita, katson videoita tai kuuntelen podcasteja, jotka liittyvät kurssin aiheeseen“."
+                  },
+                  "4": {
+                    "title": "Valitse toteutuskelpoisin vaihtoehto ja pohdi, mitä tarvitset, että voit toteuttaa tämän ratkaisun.",
+                    "description": "Esimerkiksi: toisten apu, lisää aikaa, rahaa, tilaa, välineitä tms."
+                  }
+                }
+              },
+              "3": {
+                "title": "Opi ennakoimaan ratkaisujesi seurauksia",
+                "feedback": "Ongelmanratkaisutaidot auttavat kohtaamaan haasteita ja selviytymään niistä tehokkaasti. Ne auttavat toimimaan luovasti ja löytämään ratkaisuja. Ongelmanratkaisukyky edistää myös joustavuutta ja sopeutumiskykyä muuttuvissa tilanteissa, mikä on erityisen tärkeää jatkuvasti muuttuvassa maailmassa.",
+                "textFields": {
+                  "1": {
+                    "title": "Valitse urasi kannalta merkittävä ongelma, jonka olet kohdannut tai saatat kohdata."
+                  },
+                  "2": {
+                    "title": "Mieti ongelmalle vähintään kolme erilaista ratkaisuvaihtoehtoa."
+                  },
+                  "3": {
+                    "title": "Valitse yksi ratkaisuvaihtoehto. Kuvittele ja kirjoita alle valitsemasi ratkaisuvaihtoehdon mahdolliset seuraukset.",
+                    "description": "Mieti, mitä positiivisia ja negatiivisia vaikutuksia ratkaisulla voisi olla työssä, opiskelussa ja arjessasi."
+                  },
+                  "4": {
+                    "title": "Mieti, mitkä asiat voisivat estää sinua toteuttamasta valitsemaasi ratkaisuvaihtoehtoa. Voisitko varautua niihin etukäteen?"
+                  }
+                }
+              },
+              "textFields": {
+                "1": {
+                  "title": "Valitse jokin konkreettinen ongelma, jonka kohtaat usein, ja kirjoita se alle.",
+                  "description": "Esimerkiksi: \"Olen usein myöhässä\", “Unohdan usein tehdä kotitehtävät”, “Jännitän esiintymistä”, \"En löydä aikaa liikunnalle\"."
+                },
+                "2": {
+                  "title": "Keksi alle kolme erilaista ratkaisua tähän ongelmaan. "
+                }
+              },
+              "afterText": "<strong> Valitse toteutuskelpoisin ratkaisu. Kun olet kokeillut ratkaisua muutaman päivän ajan, muista tehdä arviointia: <br />Onko ongelma ratkennut? Mikä toimi ja mikä ei? </strong>"
+            },
+            "3": {
+              "1": {
+                "title": "Opi kehittelemään vaihtoehtoja",
+                "textFields": {
+                  "1": {
+                    "title": "Listaa alle asioita, joista olet kiinnostunut tai joihin suhtaudut intohimoisesti."
+                  },
+                  "2": {
+                    "title": " Pohdi, miten kiinnostuksen kohteesi ja intohimosi voisivat liittyä erilaisiin uramahdollisuuksiin: Kirjoita alle ensimmäinen ammatti tai työrooli, joka tulee mieleesi. ",
+                    "description": "Tämä on yleensä tutuin ja ilmeisin vaihtoehto. "
+                  },
+                  "3": {
+                    "title": "Listaa sitten niin monta uutta ja erilaista uramahdollisuutta kuin ehdit viidessä minuutissa. ",
+                    "description": "Älä arvioi tai kritisoi ideoita tässä vaiheessa, vaan keskity määrään ja luovuuteen."
+                  },
+                  "4": {
+                    "title": "Käy läpi syntyneet ideat. Avasiko tehtävä uusia ajatuksia urapohdintoihin?"
+                  }
+                },
+                "feedback": "Hyvää työtä! Luova ideointi rohkaisee kokeilemaan uutta ja näkemään uusia ja yllättäviä mahdollisuuksia. Luovuus on tärkeää uran ja tulevaisuuden suunnittelussa!"
+              },
+              "2": {
+                "title": "Opi suunnittelemaan tulevaisuutta luovasti",
+                "feedback": "Luovuus on keskeinen voimavara uran ja tulevaisuuden suunnittelussa, sillä se auttaa sopeutumaan muuttuviin tilanteisiin ja löytämään ainutlaatuisia urapolkuja. Luovuus on avain jatkuvaan oppimiseen ja kasvuun.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle 3–5 tavoitetta, jotka haluat saavuttaa seuraavan viiden vuoden aikana."
+                  },
+                  "2": {
+                    "title": "Valitse yksi tavoite. Mieti ja kirjoita alle, mitkä ovat mahdolliset esteet tämän tavoitteen saavuttamisessa. "
+                  },
+                  "3": {
+                    "title": "Kuvittele sitten rohkeasti erilaisia tapoja, joilla voit voittaa nämä esteet tai kiertää ne. Käytä ideoinnin apuna jotakin luovaa menetelmää, kuten miellekartta, kuusi hattua tai aivoriihi.",
+                    "description": "Kirjaa alle käyttämäsi luova menetelmä sekä tapoja, joilla voit voittaa mahdolliset esteet tavoitteeni saavuttamisessa."
+                  }
+                }
+              },
+              "3": {
+                "title": "Opi ennakoimaan luovasti",
+                "feedback": "Luovuus on keskeinen voimavara uran ja tulevaisuuden suunnittelussa, sillä se auttaa sopeutumaan muuttuviin tilanteisiin ja löytämään ainutlaatuisia urapolkuja. Luovuus on avain jatkuvaan oppimiseen ja kasvuun.",
+                "textFields": {
+                  "1": {
+                    "title": "Valitse yksi tulevaisuuden mahdollinen muutos tai ilmiö, jolla on tai voi olla vaikutusta uraasi. Kuvittele ja kuvaile sitten alle omiin tekstikenttiinsä kolme mahdollista skenaariota (= vaihtoehtoista kuvausta tapahtumien kulusta), mihin suuntaan ilmiö voisi kehittyä seuraavien viiden vuoden aikana:"
+                  },
+                  "2": {
+                    "title": "a. Optimistinen skenaario, jossa kaikki menee parhaalla mahdollisella tavalla."
+                  },
+                  "3": {
+                    "title": "b. Realistinen skenaario, joka perustuu nykyisiin tietoihin ja todennäköisimpiin lopputuloksiin."
+                  },
+                  "4": {
+                    "title": "c. Pessimistinen skenaario, jossa asiat eivät mene toivotulla tavalla."
+                  }
+                },
+                "afterText": "<strong>Mieti vielä lopuksi hetki, mitä voit tehdä jo nyt valmistautuaksesi kuhunkin skenaarioon.</strong>"
+              }
+            },
+            "4": {
+              "1": {
+                "title": "Opi tunnistamaan tekijöitä, jotka vaikuttavat päätöksentekoosi",
+                "feedback": "Hienoa! Päätöksentekotaidot auttavat tunnistamaan ja arvioimaan eri vaihtoehtoja, punnitsemaan niiden hyötyjä ja riskejä sekä tekemään tietoon perustuvia valintoja.  Päätöksentekotaitoihin kuuluu myös kyky arvioida seurauksia. Päätöksentekotaitoja voi kehittää harjoittelemalla.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle kolme päätöstä, jotka olet tehnyt lähiaikoina.",
+                    "description": "Esimerkiksi: “Valitsin, mitä syön lounaaksi”, “Päätin, mihin käytän vapaa-aikani”, “Valitsin, mitä vaatetta käytän tänään”, “Valitsin, minkä työtehtävän teen ensin”, “Valitsin, osallistunko kokoukseen etänä vai paikan päällä”."
+                  },
+                  "2": {
+                    "title": "Mieti, mitkä asiat vaikuttivat näihin päätöksiin.",
+                    "description": "Esimerkiksi: “Valitsin lounaan sen perusteella, että se oli ainoa kasvisvaihtoehto työpaikkaruokalassa”, “Päätin käyttää vapaa-aikani harrastukseen, koska se rentouttaa minua”, “Valitsin vaatteet sen perusteella, että tiedän, että kaverini pukeutuvat samaan tyyliin”, “Valitsin projektin sen tärkeyden ja määräajan perusteella”, “Päätin tehdä kotitehtävät nopeasti, jotta minulle jää enemmän vapaa-aikaa”, “Päätin osallistua kokoukseen etänä, koska pystyn keskittymään paremmin ilman toimiston häiriötekijöitä.”"
+                  },
+                  "3": {
+                    "title": "Tutki yllä olevaa vastaustasi: Listaa alle, mitkä tekijät nousevat esille? Mitkä tekijät vaikuttavat päätöksentekoosi?",
+                    "description": "Esimerkiksi: “Terveys”, “Mukavuus”, “Ajan säästö”, “Mieliala”, “Muiden ihmisten mielipiteet/odotukset”, “Aikataulut”, “Tärkeysjärjestys”, “Oma jaksaminen”."
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi tekemään tietoon perustuvia päätöksiä",
+                "feedback": "Hienoa! Päätöksentekotaidot auttavat tunnistamaan ja arvioimaan eri vaihtoehtoja, punnitsemaan niiden hyötyjä ja riskejä sekä tekemään tietoon perustuvia valintoja.  Päätöksentekotaitoihin kuuluu myös kyky arvioida seurauksia. Päätöksentekotaitoja voi kehittää harjoittelemalla.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle jokin opiskelun tai uran kannalta merkittävä päätöksentekotilanne, joka on sinulle ajankohtainen juuri nyt tai mahdollinen tulevaisuudessa.",
+                    "description": "Esimerkiksi: “Oppilaitoksen tai opiskeltavan alan valinta”, “Päätös jatko-opinnoista, kuten maisterin tai tohtorin tutkinnosta”, “Päätös, minkä yrityksen tai organisaation palvelukseen hakeutuu”, “Valinta eri työtehtävien tai -roolien välillä”, “Päätös hankkia uusia taitoja tai sertifikaatteja, jotka voivat edistää uraa”, “Päätös vaihtaa kokonaan alaa tai siirtyä toiseen ammattiin”, “Valinta etätyön ja toimistotyön välillä”, “Päätös osallistua ammatillisiin verkostoitumistapahtumiin ja konferensseihin”, “Päätös siitä, kuinka paljon aikaa ja energiaa käyttää työhön verrattuna yksityiselämään”"
+                  },
+                  "2": {
+                    "title": "Mieti ja kirjoita alle, mitä tietoa tarvitset päätöksentekoa varten ja miksi. ",
+                    "description": "Esimerkiksi: “Päätös muuttaa toiseen kaupunkiin työn perässä: Tarvittava tieto: Uuden kaupungin elinkustannukset ja asumisvaihtoehdot, työmatkan pituus ja julkisen liikenteen mahdollisuudet, uuden kaupungin elämänlaatu ja vapaa-ajan mahdollisuudet. Miksi: Haluan varmistaa, että muutto on taloudellisesti järkevää ja että löydän sopivan asunnon. Haluan tietää, että työmatka on kohtuullinen ja että julkinen liikenne toimii hyvin. Haluan varmistaa, että uusi kaupunki tarjoaa hyvän elämänlaadun ja mahdollisuuksia vapaa-ajan viettoon.”"
+                  },
+                  "3": {
+                    "title": "Mieti ja kirjoita alle, mistä löydät tarvitsemaasi tietoa päätöksenteon tueksi.",
+                    "description": "Esimerkiksi: “Päätös muuttaa toiseen kaupunkiin työn perässä: Kaupunkien viralliset verkkosivut, asuntoportaalit, kustannuslaskurit, julkisen liikenteen reittioppaat, Karttapalvelut, paikalliset uutis- ja tapahtumasivustot, sosiaalinen media ja foorumit; paikalliset ryhmät, joissa voi kysyä neuvoja ja kokemuksia.”"
+                  }
+                }
+              }
+            },
+            "5": {
+              "1": {
+                "title": "Opi asettamaan itsellesi tavoitteita",
+                "feedback": "Hienoa! Selkeästi määritellyt tavoitteet auttavat keskittymään olennaiseen ja tekemään tietoisia päätöksiä. Osatavoitteet auttavat hahmottamaan konkreettisia askelia kohti pitkän aikavälin tavoitteita. ",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle yksi tavoite, joka on sinulle henkilökohtaisesti tärkeä. ",
+                    "description": "Esimerkiksi: “Haluan parantaa fyysistä kuntoani”, “Haluan kehittää esiintymistaitojani”, “Haluan parantaa koearvosanojani”."
+                  },
+                  "2": {
+                    "title": "Kirjoita alle, miksi tämä tavoite on sinulle tärkeä ja miten se parantaa elämääsi.",
+                    "description": "Esimerkiksi: “Parempi kunto auttaa minua jaksamaan arjessa paremmin ja parantaa yleistä hyvinvointiani”, “Paremmat esiintymistaidot auttavat minua jalkauttamaan projektin tuloksia tehokkaammin”, “Paremmat arvosanat parantavat mahdollisuuksiani saada haluamani työpaikka valmistumisen jälkeen”."
+                  },
+                  "3": {
+                    "title": "Määrittele tavoite tarkemmin ja aseta sille aikaraja. ",
+                    "description": "Esimerkiksi: “Haluan juosta 5 kilometriä ilman taukoja kolmen kuukauden kuluessa”, “Haluan olla itsevarma, kun esittelen projektin loppuraportin seminaarissa kuukauden päästä”, “Haluan nostaa seuraavan tentin arvosanani yhdellä numerolla”."
+                  },
+                  "4": {
+                    "title": "Jaa tavoite pienempiin, hallittaviin osiin.",
+                    "description": "Esimerkiksi: “Esiintymistaidot: Viikko 1–2: Valmistele esityksen sisältö. Viikko 3: Harjoittele esitystä peilin edessä. Viikko 4: Pidä esitys kollegoille ja pyydä palautetta”, “Koearvosanat: Viikko 1–2: Tee lukusuunnitelma ja jaa opiskeltava materiaali päivittäisiin osiin. Viikko 3: Harjoittele vanhoja tenttikysymyksiä. Viikko 4: Kertaa vaikeimmat aiheet ja pidä itsellesi harjoituskoe.”"
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi tekemään tavoitteitasi tukevaa urasuunnittelua",
+                "feedback": "Hienoa! Selkeästi määritellyt tavoitteet auttavat keskittymään olennaiseen ja tekemään tietoisia päätöksiä. Muista, että maaliin on monta reittiä! Mieti, miten voit mukauttaa suunnitelmiasi, jos kohtaat esteitä. ",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle yksi konkreettinen tavoite, jonka haluat saavuttaa työhön tai opiskeluun liittyen. ",
+                    "description": "Esimerkiksi: “Haluan edetä nykyisessä työssäni.”"
+                  },
+                  "2": {
+                    "title": "Kirjoita alle, miksi tämä tavoite on sinulle tärkeä ja miten se parantaa elämääsi."
+                  },
+                  "3": {
+                    "title": " Listaa taidot ja resurssit, joita tarvitset tavoitteen saavuttamiseksi.",
+                    "description": "Esimerkiksi: “Tarvitsen johtamistaitoja”, “Tarvitsen lisää kokemusta projektinhallinnasta”."
+                  },
+                  "4": {
+                    "title": " Kirjoita alle konkreettiset askeleet, jotka otat tavoitteen saavuttamiseksi.",
+                    "description": "Esimerkiksi: “Osallistun johtamiskoulutukseen seuraavan kuukauden aikana”, “Haen projektinhallintatehtäviä nykyisessä työssäni”."
+                  },
+                  "5": {
+                    "title": "Määrittele aikaraja jokaiselle askeleelle ja seuraa edistymistäsi. ",
+                    "description": "Esimerkiksi: “Johtamiskoulutus suoritettu vuoden loppuun mennessä”, “Ensimmäinen projektinhallintatehtävä suoritettu kolmen kuukauden kuluessa”."
+                  }
+                }
+              }
+            },
+            "6": {
+              "1": {
+                "emojiTitle": "Valitse kuvaavat emojit kullekin asialle. ",
+                "title": "Opi tunnistamaan riskejä",
+                "feedback": "Varautuminen urasuunnittelussa tarkoittaa tietoista valmistautumista erilaisiin vaihtoehtoihin. Suunnitelmien onnistumismahdollisuuksien pohtiminen sekä varautuminen riskeihin tuo hallinnan tunnetta. ",
+                "description": "<strong>Kirjoita alle omiin tekstikenttiin 3–5 mahdollista riskiä, joita voi kohdata työ- tai opiskeluelämässä.</strong><br /><i>Esimerkiksi: “Aikataulujen hallinta”, ”Teknologian toimintahäiriöt”, ”Terveysongelmat”. ”Konfliktit työ- tai opiskelukavereiden kanssa”, ”Tietoturvaongelmat”</i><br /><br /><strong>Kuinka todennäköisesti riskit voivat toteutua? Keksitkö keinoja, joilla voit hallita tai vähentää riskejä? Kirjoita vähintään yksi keino kullekin riskille kyseiseen tekstikenttään.</strong><br /><i>Esimerkiksi: Aikataulujen hallinta - Käytä kalenteria ja aseta muistutuksia tärkeistä tehtävistä.</i>"
+              },
+              "2": {
+                "title": "Opi tekemään varasuunnitelma",
+                "feedback": "Varautuminen urasuunnittelussa tarkoittaa tietoista valmistautumista erilaisiin vaihtoehtoihin. Suunnitelmien onnistumismahdollisuuksien pohtiminen sekä varautuminen riskeihin tuo hallinnan tunnetta.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle kolme mahdollista muutosta tai riskiä, joita saatat kohdata seuraavan vuoden aikana.",
+                    "description": "Nämä voivat liittyä esimerkiksi uraan, opiskeluun, henkilökohtaiseen elämään tai talouteen. Pohdi jokaisen riskin osalta alla olevia kysymyksiä:<br />Miksi riski on mahdollinen?<br />Mahdolliset seuraukset, jos riski toteutuu?"
+                  },
+                  "2": {
+                    "title": "Valitse yksi yllä kuvailemasi muutos tai riski, ja pohdi, miten voit varautua siihen. Mieti ja kirjoita alle mahdollisia toimenpiteitä, joilla voit vähentää riskin toteutumisen todennäköisyyttä tai vaikutusta."
+                  }
+                }
+              }
+            },
+            "7": {
+              "1": {
+                "title": "Opi kehittämään joustavuutta elämän muutoksissa",
+                "feedback": "Elämässä tapahtuu jatkuvasti muutoksia, ja resilienssi auttaa sopeutumaan uusiin tilanteisiin ja ympäristöihin. Resilienssi on kykyä sopeutua ja selviytyä muutoksista ja haasteista. Se tarkoittaa psyykkistä joustavuutta ja palautumiskykyä.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle 1–3 muutosta elämässäsi, jotka ovat vaikuttaneet sinuun merkittävästi.",
+                    "description": "Esimerkiksi: uusi työpaikka, työtehtävien muuttuminen, irtisanominen tai lomautus, muutto, valmistuminen, uuden opiskelupaikan saaminen, opintojen keskeyttäminen, perheenlisäys, sairastuminen, muutokset ihmissuhteissa, vaihto-opiskelujakso ulkomailla."
+                  },
+                  "2": {
+                    "title": "Valitse yksi ylle listaamistasi muutoksista, ja kuvaile alle, miten reagoit kyseiseen muutokseen.",
+                    "description": "Esimerkiksi: “Uusi työpaikka: tunsin innostusta unelmatyöstäni, mutta samalla koin stressiä ja epävarmuutta uuden työtehtävän edessä: en kehdannut kysyä neuvoja esimiehiltä tai kollegoilta”."
+                  },
+                  "3": {
+                    "title": "Pohdi ja kirjoita alle, mikä reaktiossasi oli hyödyllistä ja mikä ei."
+                  },
+                  "4": {
+                    "title": "Kirjoita alle yksi tapa, miten voisit reagoida joustavammin vastaaviin muutoksiin tulevaisuudessa.",
+                    "description": "Esimerkiksi: “Pyydän enemmän tukea ja neuvoja kollegoilta,”, “verkostoidun muiden opiskelijoiden kanssa”."
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi vahvistamaan resilienssiä",
+                "feedback": "Hyvä! Resilienssin kehittämiseen ja ylläpitämiseen kannattaakin paneutua! Liikunnan, terveellisen ruokavalion ja sosiaalisen tuen merkitystä ei voi korostaa liikaa, kun puhutaan reslienssistä. Muista palkita itseäsi saavutuksistasi!",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita alle viisi taitoasi, vahvuuttasi tai luonteenpiirrettäsi, jotka tukevat resilienssiäsi eli kykyäsi selviytyä ja sopeutua muutoksiin ja riskeihin.",
+                    "description": "Esimerkiksi: ongelmanratkaisukyky, hyvä ajanhallinta, kommunikaatiotaidot, sopeutumiskyky, itsehillintä, sinnikkyys, empatia, optimismi, luovuus, itseluottamus, joustavuus, päättäväisyys, kriittinen ajattelu, itsemyötätunto, verkostoituminen."
+                  },
+                  "2": {
+                    "title": "Miten ylläpidät ja kehität omaa resilienssiäsi? Kirjoita alle.",
+                    "description": "Esimerkiksi: liikunta, terveellinen ruokavalio, riittävä uni, sosiaalinen tuki, mindfulness ja meditaatio, aikataulutus ja priorisointi, rentoutumistekniikat, positiivinen ajattelu, tavoitteiden asettaminen, itsensä palkitseminen"
+                  }
+                }
+              }
+            },
+            "8": {
+              "1": {
+                "emojiTitle": "Valitse kuvaavat emojit kullekin tilanteelle. ",
+                "feedback": "Epävarmuuden sietäminen on kykyä kestää tilanteita, joissa lopputulos tai seuraavat askeleet eivät ole selvillä. Se on taito, joka auttaa toimimaan, vaikka kaikkiin kysymyksiin ei olisikaan vastauksia saatavilla. ",
+                "title": "Opi tunnistamaan, miten suhtaudut epävarmuuteen",
+                "description": "<strong>Kirjoita alle omiin tekstikenttiinsä 1–3 tilannetta, joissa olet tuntenut epävarmuutta viimeisen kuukauden aikana. </strong><br />Esimerkiksi: “Työtehtävien epäselvyys”, “Opiskeluun liittyvät epävarmuudet, kuten tenttien tulokset”, “Ihmissuhteiden muutokset”, “Toimeentulon/taloudelliset haasteet”.<br /><br /><strong>Valitse yksi näistä tilanteista ja kuvaile kyseiseen tekstikenttään, miten reagoit epävarmuuteen: Mitä tunteita koit (esim. pelko, ahdistus, stressi, hämmennys)? Miten nämä tunteet vaikuttivat käyttäytymiseesi?</strong>"
+              },
+              "2": {
+                "title": "Opi kehittämään epävarmuuden sietokykyäsi",
+                "feedback": "Epävarmuuden sietäminen on kykyä kestää tilanteita, joissa lopputulos tai seuraavat askeleet eivät ole selvillä. Se on taito, joka auttaa toimimaan, vaikka kaikkiin kysymyksiin ei olisikaan vastauksia saatavilla.   Kokeile äsken laatimaasi suunnitelmaa, ja reflektoi kokemuksiasi: mieti, mitä opit tästä prosessista ja miten voit soveltaa oppimaasi tulevaisuudessa.",
+                "textFields": {
+                  "1": {
+                    "title": "Valitse ja kirjoita alle yksi työhön tai opiskeluun liittyvä tilanne, jossa olet tuntenut epävarmuutta lähiaikoina.",
+                    "description": "Esimerkiksi: “Työtehtävien epäselvyys”, “Opiskeluun liittyvät epävarmuudet, kuten tenttien tulokset”, “Työhaastattelu”, “Työpaikan henkilöstömuutokset”."
+                  },
+                  "2": {
+                    "title": "Kuvaile, miten reagoit, kun tunsit epävarmuutta?"
+                  },
+                  "3": {
+                    "title": "Mieti ja kirjoita alle kolme tapaa, miten voisit reagoida joustavammin vastaavissa epävarmoissa tilanteissa tulevaisuudessa. ",
+                    "description": "Esimerkiksi: “Keskustelen epäselvistä työtehtävistä avoimesti tiimini kanssa”."
+                  },
+                  "4": {
+                    "title": "Valitse yksi ylle listaamistasi uusista toimintatavoista, ja laadi suunnitelma, miten kokeilet, toimiiko se käytännössä. ",
+                    "description": "Esimerkiksi: “Olen epävarma, mitä minulta odotetaan uuden työprojektin suhteen: keskustelen tilanteesta avoimesti kollegoiden kanssa ja kysyn tarvittaessa tarkennusta esimieheltä.”"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "world-around-you": {
+          "long-name": "Toimintaympäristön tunteminen",
+          "name": "Maailma ympärilläsi",
+          "info": "Toimintaympäristön tunteminen auttaa sinua ymmärtämään, millaisia mahdollisuuksia ja haasteita ympärilläsi on. Kun tiedät työmarkkinoiden ja oman alasi vaatimukset ja kehityssuunnat, pystyt paremmin pitämään omat taitosi ja tavoitteesi ajan tasalla muuttuvassa maailmassa.",
+          "feedbacks": {
+            "1": {
+              "description": "On tärkeää olla tietoinen toimintaympäristössäsi olevista tekijöistä, jotka vaikuttavat urakehitykseesi ja elämääsi. Muista jatkaa avoimena uusille näkökulmille ja valmiina oppimaan lisää. Vastuullinen kuluttaminen ja ympäristön huomioiminen ovat myös tärkeitä askelia kohti kestävää tulevaisuutta."
+            },
+            "2": {
+              "description": "Olet hahmottanut keskeiset mahdollisuutesi ja niihin vaikuttavat reunaehdot. Osaat jäsennellä työmarkkinoiden tilannetta ja opiskelumahdollisuuksia. Tiedostat yhteiskunnan rakenteiden toimintaa ja niiden vaikutusta mahdollisuuksiin. Jatka hyvää työtä ja ole avoin uusille oppimismahdollisuuksille!"
+            },
+            "3": {
+              "description": "On hienoa, että osaat vertailla mahdollisuuksia ja rajoitteita sekä valita parhaiten omaan tilanteeseesi sopivat vaihtoehdot. Työmarkkinoiden tarkastelu ja  koulutustarpeiden arviointi ovat tärkeitä taitoja. Jatka samaan malliin – olet oikealla tiellä!"
+            },
+            "4": {
+              "description": "Mahtavaa! Tunnet toimintaympäristösi erinomaisesti! Yhteiskunnan rakenteiden ja muutosten ymmärtäminen auttaa sinua tekemään parempia suunnitelmia, ja ekososiaalisten tekijöiden huomioiminen on tärkeää kestävän tulevaisuuden kannalta. Joustavuus ja ennakkoluulottomuus ovat tärkeitä ominaisuuksia muuttuvassa työelämässä."
+            }
+          },
+          "sections": {
+            "opportunities-and-constraints": {
+              "name": "Mahdollisuudet ja reunaehdot",
+              "info": "Mahdollisuudet tarkoittavat vaihtoehtoisia polkuja ja elämän tarjoamia tilaisuuksia. Reunaehdot ovat rajoituksia, jotka vaikuttavat päätöksiisi tai suunnitteluusi. Reunaehtoja voivat olla esimerkiksi terveydentilasi, asuinpaikkasi ja työmarkkinatilanne.",
+              "questions": {
+                "1": {
+                  "title": "Pystyn tarttumaan mahdollisuuksiin, jotka sopivat omaan tilanteeseeni, ja huomioimaan reunaehdot."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {},
+                "3": {}
+              }
+            },
+            "labor-market": {
+              "name": "Työmarkkinat",
+              "info": "Työmarkkinatiedot kertovat, millaisia työmahdollisuuksia on saatavilla ja minkälainen eri alojen työtilanne on. Työmarkkinoiden tunteminen auttaa sinua suuntaamaan uraasi tavoitteellisesti.",
+              "questions": {
+                "1": {
+                  "title": "Tunnistan työmarkkinoiden muutoksia ja mahdollisuuksia, jotka voivat vaikuttaa omaan tilanteeseeni."
+                }
+              },
+              "exercises": {
+                "2": {}
+              }
+            },
+            "education-and-learning": {
+              "name": "Koulutus ja opiskelu",
+              "info": "Elämän ja työuran eri vaiheissa voit kouluttautua ja opiskella eri tavoilla. Tämä voi tarkoittaa uusien taitojen oppimista, lisäkoulutusta tai jopa kokonaan uuden alan opiskelua. Jatkuva oppiminen ei ainoastaan paranna ammattitaitoasi, vaan myös avaa uusia mahdollisuuksia.",
+              "questions": {
+                "1": {
+                  "title": "Osaan etsiä koulutus- ja opiskelumahdollisuuksia, jotka sopivat omaan tilanteeseeni."
+                }
+              }
+            },
+            "social-structures": {
+              "name": "Yhteiskunnan rakenteet",
+              "info": "Yhteiskunnan rakenteet, kuten lait, poliittinen päätöksenteko, talous, koulutusjärjestelmä, kulttuuri ja työmarkkinoiden eriytyminen ja eriarvoistuminen, voivat vaikuttaa urasuunnitteluusi. Esimerkiksi joillakin ammattialoilla on tyypillisesti paljon miehiä ja toisilla naisia, ja tämä voi ohjata tietoisesti tai tiedostamatta omia ammatillisia valintoja.",
+              "questions": {
+                "1": {
+                  "title": "Tunnistan yhteiskunnan ja työelämän rakenteita, jotka ovat oleellisia oman tilanteeni kannalta."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {},
+                "3": {}
+              }
+            },
+            "ecosocial-factors": {
+              "name": "Ekososiaaliset tekijät",
+              "info": "Ekososiaalisuus urasuunnittelussa tarkoittaa, että uravalinnoissa pyritään ottamaan huomioon se, mikä vaikutus niillä on ympäristöön ja muiden ihmisten hyvinvointiin. Tämä voi auttaa sinua löytämään merkityksellisen ja arvojesi mukaisen uran.",
+              "questions": {
+                "1": {
+                  "title": "Osaan huomioida kestävän kehityksen ja ihmisoikeudet urasuunnittelussa."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {}
+              }
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "title": "Opi tunnistamaan omaan tilanteeseen sopivia mahdollisuuksia",
+                "feedback": "Auttoiko harjoitustehtävä tunnistamaan omaan tilanteeseesi sopivia mahdollisuuksia?  Mahdollisuudet tarkoittavat vaihtoehtoisia polkuja ja elämän tarjoamia tilaisuuksia. Reunaehto tarkoittaa mitä tahansa rajoitusta, joka vaikuttaa päätöksentekoon tai suunnitteluun. Reunaehtoja voivat olla esimerkiksi terveydentila, asuinpaikka ja työmarkkinatilanne.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita lyhyt kuvaus tämänhetkisestä tilanteestasi tai tavoitteistasi.",
+                    "description": "Esim. etsitkö uutta työpaikkaa, haluatko kehittää uutta taitoa vai suunnitteletko uutta projektia?"
+                  },
+                  "2": {
+                    "title": "Listaa 1–3 mahdollista tapaa edetä tilanteessasi. ",
+                    "description": "Esim. kursseille osallistuminen, työpaikkojen haku, uusien ihmisten tapaaminen."
+                  },
+                  "3": {
+                    "title": "Valitse listaltasi yksi mahdollisuus ja vastaa seuraaviin kysymyksiin:",
+                    "description": "Kuinka realistinen tämä mahdollisuus on?\nMitä resursseja tai taitoja tarvitset sen hyödyntämiseksi?\nMitkä ovat seuraavat askeleet tämän mahdollisuuden tavoittamisessa?\nPohdi, mitä haasteita saatat kohdata suunnitelman toteuttamisessa."
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi vertailemaan eri vaihtoehtojen tuomia mahdollisuuksia ja niihin vaikuttavia reunaehtoja",
+                "feedback": "Toivottavasti tämä selvensi ajatuksiasi. Mahdollisuudet tarkoittavat vaihtoehtoisia polkuja ja elämän tarjoamia tilaisuuksia. Reunaehto tarkoittaa mitä tahansa rajoitusta, joka vaikuttaa päätöksentekoon tai suunnitteluun. Reunaehtoja voivat olla esimerkiksi terveydentila, asuinpaikka ja työmarkkinatilanne.",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita lyhyt kuvaus tämänhetkisestä tilanteestasi tai tavoitteistasi.",
+                    "description": "Esim. etsitkö uutta työpaikkaa, haluatko kehittää uutta taitoa vai suunnitteletko uutta projektia?"
+                  },
+                  "2": {
+                    "title": "Listaa 2–5 mahdollista tapaa edetä tilanteessasi.",
+                    "description": "Esim. kursseille osallistuminen, työpaikkojen haku, uusien ihmisten tapaaminen."
+                  },
+                  "3": {
+                    "title": "Vertaile keskenään näitä vaihtoehtoisia tapoja. Mitä eroavaisuuksia vaihtoehdoissa on?"
+                  },
+                  "4": {
+                    "title": "Mikä vaihtoehto sopisi parhaiten? Mitä haasteita saatat kohdata tämän suunnitelman toteuttamisessa?"
+                  }
+                }
+              },
+              "3": {
+                "title": "Opi kehittämään uran ja tulevaisuuden suunnittelua reunaehtojen puitteissa",
+                "feedback": "Auttoiko harjoitustehtävä ottamaan reunaehtoja paremmin huomioon tulevaisuudensuunnitelmasi suhteen?    Mahdollisuudet tarkoittavat vaihtoehtoisia polkuja ja elämän tarjoamia tilaisuuksia. Reunaehto tarkoittaa mitä tahansa rajoitusta, joka vaikuttaa päätöksentekoon tai suunnitteluun. Reunaehtoja voivat olla esimerkiksi terveydentila, asuinpaikka ja työmarkkinatilanne.",
+                "textFields": {
+                  "1": {
+                    "title": "Valitse jokin tulevaisuudensuunnitelmasi, jonka toteutuskelpoisuutta haluat pohtia suhteessa reunaehtoihin. "
+                  },
+                  "2": {
+                    "title": "Listaa reunaehtoja, jotka voivat vaikuttaa suunnitelmaasi ",
+                    "description": "Esim. sijainti, koulutus, osaaminen, budjetti, aikataulu, resurssit, arjen vaatimukset"
+                  },
+                  "3": {
+                    "title": "Arvioi, mitkä reunaehdot ovat kriittisimpiä, sekä mihin voit vaikuttaa ja mihin et."
+                  }
+                }
+              }
+            },
+            "2": {
+              "1": {
+                "title": "Opi tunnistamaan työelämän ja työn tekemisen muutoksia ",
+                "feedback": "Hienoa! Työelämässä ja työssä tapahtuvien muutosten tunteminen auttaa sinua suuntaamaan uraasi tavoitteellisesti. ",
+                "description": "Työelämä muuttuu koko ajan. Työelämän keskeisiä muutoksia on talouden maailmalaajuus, uudet teknologiat, robotisaatio ja digitalisaation kehitys sekä väestön ikääntyminen. Työn tekemisen tavat ja ammatit ovat muutoksessa. Tutki alla olevaa työhön, työelämään ja työntekemiseen liittyviä sanoja.",
+                "wordLists": {
+                  "1": {
+                    "title": "Valitse ne, jotka haluat osaksi työelämääsi:"
+                  },
+                  "2": {
+                    "title": "Valitse ne, joita et halua osaksi työelämääsi:"
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi arvioimaan työelämän kehityssuuntia ja vaatimuksia sekä peilaamaan niitä omiin suunnitelmiisi",
+                "feedback": "Hyvä! Omien muutosvalmiuksien kehittäminen ja elinikäiseen oppimiseen asennoituminen on sinulle hyvä turva tulevaisuuden työelämää ajatellen.",
+                "textFields": {
+                  "1": {
+                    "title": "Tutki työelämästä saatavilla olevaa tietoa. Tarkastele, millaisia taitoja ja osaamisia tarvitaan tällä hetkellä ja mitä tulevaisuudessa. ",
+                    "description": "Voit käyttää apuna esimerkiksi <0>sitra.fi</0>- ja <1>osaamistarvekompassi.fi</1>-sivustoja sekä alan raportteja.",
+                    "link": "https://www.sitra.fi/",
+                    "link-2": "https://www.osaamistarvekompassi.fi"
+                  },
+                  "2": {
+                    "title": "Peilaa löytämiäsi tietoja omaan tilanteeseesi ja suunnitelmiisi. ",
+                    "description": "Pohdi, mitkä työelämän muutokset vaikuttavat eniten suunnitelmiisi ja miten voit varautua niihin. "
+                  }
+                }
+              }
+            }
+          }
+        },
+        "anticipate-the-future": {
+          "long-name": "Toimintaympäristön tulevaisuuden hahmottaminen",
+          "name": "Ennakoidaan tulevaa",
+          "info": "Tulevaisuuden suuntausten ja suurten muutosten ymmärtäminen auttaa sinua valmistautumaan työelämän muutoksiin. Tämän taidon avulla voit ennakoida, millaisia taitoja ja osaamista tarvitaan tulevaisuudessa, ja rakentaa päämäärätietoisesti polkuja kohti omannäköistä tulevaisuutta.",
+          "sections": {
+            "alternative-paths": {
+              "name": "Vaihtoehtoiset polut",
+              "info": "Vaihtoehtoisten polkujen kartoittaminen ja päätökset jatkuvat läpi elämän, kun työelämä ja omat elämäntilanteet muuttuvat. Eteen voi tulla sattumalta tilaisuuksia ja mahdollisuuksia, jotka auttavat sinua saavuttamaan tavoitteesi. Omalla toiminnallasi voit edistää uusien vaihtoehtoisten polkujen rakentumista.",
+              "questions": {
+                "1": {
+                  "title": "Osaan etsiä vaihtoehtoisia polkuja, jotka sopivat omaan tilanteeseeni."
+                }
+              },
+              "exercises": {
+                "1": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "2": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "3": {
+                  "textFields": {
+                    "1": {}
+                  }
+                }
+              }
+            },
+            "social-changes": {
+              "name": "Yhteiskunnan muutokset",
+              "info": "Yhteiskunnan muutoksista esimerkiksi digitalisaatio ja tekoälyn yleistyminen, ilmastonmuutoksen torjuntaan käytetyt keinot ja väestön ikääntyminen voivat vaikuttaa urasuunnitteluun.",
+              "questions": {
+                "1": {
+                  "title": "Seuraan yhteiskunnallisia muutoksia, jotka voivat vaikuttaa omaan tilanteeseeni, ja pystyn huomioimaan ne urasuunnittelussani."
+                }
+              },
+              "exercises": {
+                "1": {},
+                "2": {},
+                "3": {}
+              }
+            },
+            "global-changes": {
+              "name": "Globaalit muutokset",
+              "info": "Globaalit muutokset, kuten ilmastonmuutos, talouden suhdanteet ja alueelliset konfliktit, voivat vaikuttaa urasuunnitteluusi.",
+              "questions": {
+                "1": {
+                  "title": "Seuraan maailmanlaajuisia muutoksia, jotka voivat vaikuttaa omaan tilanteeseeni, ja pystyn huomioimaan ne urasuunnittelussani."
+                }
+              },
+              "exercises": {
+                "1": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "2": {
+                  "textFields": {
+                    "1": {}
+                  }
+                },
+                "3": {
+                  "textFields": {
+                    "1": {}
+                  }
+                }
+              }
+            }
+          },
+          "feedbacks": {
+            "1": {
+              "description": "Itsearviointisi perusteella olet valmis kehittämään kykyäsi hahmottaa toimintaympäristösi tulevaisuutta – hienoa! Tämä on tärkeä taito, joka auttaa sinua ymmärtämään paremmin ympärilläsi tapahtuvia muutoksia ja sopeutumaan niihin tehokkaasti. Muista, että uteliaisuus ja avoimuus ovat avainasemassa uuden oppimisessa."
+            },
+            "2": {
+              "description": "Osaat tunnistaa keskeiset polut, joiden avulla voit saavuttaa omat tavoitteesi. Lisäksi ymmärrät, että omalla toiminnallasi on vaikutusta uusien vaihtoehtoisten polkujen rakentumiseen. Yhteiskunnassa tapahtuvien muutosten hahmottaminen on myös tärkeää. Olet selvästi tietoinen siitä, että nämä muutokset voivat vaikuttaa elämäsi ja urasi suunnitteluun. Jatka samaan malliin!"
+            },
+            "3": {
+              "description": "On hienoa, että tunnistat työn ja työtehtävien mahdollisen muuttumisen tulevaisuudessa. Vertailu eri polkujen välillä ja kyky valita itselle sopivimmat vaihtoehdot on tärkeää. Osaat  arvioida, mitä muutokset tarkoittavat juuri sinun urapolkusi kannalta. Jatka aktiivista tiedon hankintaa ja globaalien muutosten seuraamista. Olet oikealla tiellä kohti menestyksekästä uraa!"
+            },
+            "4": {
+              "description": "Osaat arvioida oman työsi ja kiinnostavien alojen muutoksia tulevaisuudessa ja varautua niihin. Tämä on tärkeä taito, joka auttaa sinua menestymään urallasi. Muista jatkaa aktiivista tiedon hankintaa ja seurata globaaleja kehityskulkuja. Näin voit pysyä ajan tasalla ja hahmottaa, millaisia uusia osaamistarpeita muutokset tuovat. Olet oikealla tiellä kohti menestyksekästä uraa!"
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "name": "Opi kartoittamaan vaihtoehtoisia urapolkuja",
+                "feedback": "Erinomaista työtä! Olet osoittanut kykyä kartoittaa vaihtoehtoisia polkuja. Tämä taito on erityisen arvokas, kun työelämä ja omat elämäntilanteet muuttuvat. Jatka samaan malliin ja edistä omalla toiminnallasi uusien vaihtoehtoisten polkujen rakentumista!",
+                "description": "On olemassa erilaisia polkuja, joiden kautta voi päästä samaan tavoitteeseen. Polkujen ei tarvitse välttämättä noudattaa perinteistä urapolkua, vaan matkalla voi myös tulla vastaan mahdollisuuksia ja sattumia, joihin kannattaa tarttua. ",
+                "textFields": {
+                  "1": {
+                    "title": "Kirjoita yksi tulevaisuuden tavoitteesi."
+                  },
+                  "2": {
+                    "title": "Mieti ja kirjoita alle erilaisia vaihtoehtoisia polkuja, joita voit seurata saavuttaaksesi tulevaisuuden tavoitteesi. ",
+                    "description": "Pohdi myös, mitä konkreettisia vaiheita ja askelia sinun täytyy ottaa saavuttaaksesi tämän tavoitteen. Kuvaile myös näitä vaiheita alle. "
+                  }
+                }
+              },
+              "2": {
+                "name": "Opi kartoittamaan vaihtoehtoisia urapolkuja",
+                "description": "Vaihtoehtoiset urapolut tarjoavat erilaisia reittejä ammatilliseen kehitykseen ja etenemiseen, jotka eivät välttämättä noudata perinteistä, suoraviivaista urapolkua. Sattuma ja odottamattomat tilanteet voivat myös muokata matkaa, avaten uusia mahdollisuuksia ja suunnanmuutoksia, jotka rikastuttavat urakehitystä entisestään.",
+                "feedback": "Loistavaa työtä! On hienoa nähdä, että olet valmis tarttumaan sattumalta ilmaantuviin tilaisuuksiin ja mahdollisuuksiin, jotka auttavat sinua saavuttamaan tavoitteesi. Tämä taito on erityisen arvokas, kun työelämä ja omat elämäntilanteesi muuttuvat. Jatka samaan malliin ja edistä omalla toiminnallasi uusien vaihtoehtoisten polkujen rakentumista. Tämä asenne ja toimintatapa vievät sinut pitkälle!",
+                "textFields": {
+                  "1": {
+                    "title": "Mieti, miten omat päätöksesi ja sattumalta ilmaantuneet tilaisuudet ovat vaikuttaneet elämääsi tähän mennessä? ",
+                    "description": "Kirjoita alle tärkein ajatuksesi."
+                  },
+                  "2": {
+                    "title": "Tee mind map (miellekartta) erilaisista vaihtoehtoisista poluista, joita voisit harkita tulevaisuudessa. ",
+                    "description": "Sisällytä sekä uraasi että henkilökohtaiseen elämään liittyviä polkuja. Kuvaile alle toteutuskelpoisimmat vaihtoehtoiset polut."
+                  }
+                }
+              },
+              "3": {
+                "name": "Opi rakentamaan vaihtoehtoisia urapolkuja kohti omannäköistä tulevaisuutta",
+                "description": "Vaihtoehtoiset urapolut tarjoavat erilaisia reittejä ammatilliseen kehitykseen ja etenemiseen, jotka eivät välttämättä noudata perinteistä, suoraviivaista urapolkua. Sattuma ja odottamattomat tilanteet voivat myös muokata matkaa, avaten uusia mahdollisuuksia ja suunnanmuutoksia, jotka rikastuttavat urakehitystä entisestään.",
+                "feedback": "Loistavaa työtä! On hienoa nähdä, että olet valmis tarttumaan sattumalta ilmaantuviin tilaisuuksiin ja mahdollisuuksiin, jotka auttavat sinua saavuttamaan tavoitteesi. Tämä taito on erityisen arvokas, kun työelämä ja omat elämäntilanteesi muuttuvat. Jatka samaan malliin ja edistä omalla toiminnallasi uusien vaihtoehtoisten polkujen rakentumista. Tämä asenne ja toimintatapa vievät sinut pitkälle!",
+                "textFields": {
+                  "1": {
+                    "title": "Mieti, miten omat päätöksesi ja sattumalta ilmaantuneet tilaisuudet ovat vaikuttaneet elämääsi tähän mennessä?",
+                    "description": "Kirjoita alle tärkein ajatuksesi."
+                  },
+                  "2": {
+                    "title": " Tee mind map (miellekartta) erilaisista vaihtoehtoisista poluista, joita voisit harkita tulevaisuudessa. ",
+                    "description": "Sisällytä sekä uraasi että henkilökohtaiseen elämään liittyviä polkuja. Kuvaile alle toteutuskelpoisimmat vaihtoehtoiset polut."
+                  },
+                  "3": {
+                    "title": " Pohdi ja kirjoita alle, miten voit omalla toiminnallasi edistää uusien vaihtoehtoisten polkujen rakentumista?",
+                    "description": "Mieti, mitä taitoja tai resursseja tarvitset ja miten voit hankkia niitä."
+                  }
+                }
+              }
+            },
+            "2": {
+              "1": {
+                "title": "Opi tunnistamaan yhteiskunnan muutoksia, jotka voivat vaikuttaa uramahdollisuuksiin",
+                "description": "Yhteiskunnassa tapahtuu jatkuvasti muutoksia, joiden takia uuden oppimisen tarve korostuu entistä enemmän läpi elämän. ",
+                "feedback": "Hienoa työtä! Tunnistat jo yhteiskunnan muutoksia, jotka voivat vaikuttaa elämän- ja urasuunnitteluusi. Tämä taito on erittäin tärkeä, sillä se auttaa sinua valmistautumaan tulevaisuuden haasteisiin ja mahdollisuuksiin.",
+                "textFields": {
+                  "1": {
+                    "title": "Pohdi, näkyvätkö alla luetellut muutokset omassa elämässäsi:",
+                    "description": "Teknologian kehitys (esim. tekoälyn kasvu, automaatio)\nIlmastonmuutokseen liittyvät toimet (esim. vihreä siirtymä, kestävä kehitys)\nTyömarkkinoiden muutokset (esim. etätyö, freelancereiden määrä)\nAmmattien ja työtehtävien muuttuminen"
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi huomioimaan yhteiskunnan muutoksia urasuunnittelussasi",
+                "description": "Yhteiskunnassa tapahtuu jatkuvasti muutoksia, joiden takia uuden oppimisen tarve korostuu entistä enemmän läpi elämän. ",
+                "feedback": "Hienoa työtä! Yhteiskunnan muutoksista esimerkiksi digitalisaatio ja tekoälyn yleistyminen, ilmastonmuutoksen torjuntaan käytetyt keinot ja väestön ikääntyminen voivat vaikuttaa urasuunnitteluun. ",
+                "textFields": {
+                  "1": {
+                    "title": "Valitse yksi yhteiskunnan muutos ja pohdi, miten se voi vaikuttaa omaan elämääsi ja urasuunnitteluusi:",
+                    "description": "Esimerkiksi:\nTeknologian kehitys (esim. tekoälyn kasvu, automaatio)\nIlmastonmuutokseen liittyvät toimet (esim. vihreä siirtymä, kestävä kehitys)\nTyömarkkinoiden muutokset (esim. etätyö, \nfreelancereiden määrä)\nAmmattien ja työtehtävien muuttuminen\nVäestön ikääntyminen"
+                  }
+                }
+              },
+              "3": {
+                "title": "Opi käyttämään ennakointitietoa ja huomiomaan yhteiskunnan muutokset urasuunnittelussasi",
+                "description": "Selvitä, mitkä ovat tällä hetkellä Suomessa keskeisiä tulevaisuuden kehityssuuntia, jotka vaikuttavat tulevaisuuden uramahdollisuuksiin. Mitä keskeisiä muutoksia on odotettavissa? Millaisia mahdollisuuksia ja haasteita ne tuovat mukanaan?\n\nHyödynnä kansallisia ennakointitietoja, kuten valtioneuvoston tulevaisuuskatsauksia, Sitran sivuja, osaamistarvekompassi.fi -sivustoa tai työ- ja elinkeinoministeriön raportteja.",
+                "textFields": {
+                  "1": {
+                    "title": "Mieti, miten nämä kehityssuunnat ja mahdolliset muutokset liittyvät omaan uraasi. Pohdi ja kirjoita, miten voit ennakoida uusia taitovaatimuksia tai työtehtäviä, jotka voivat olla tärkeitä tulevaisuudessa? "
+                  }
+                },
+                "feedback": "Hienoa työtä! Yhteiskunnan muutoksista esimerkiksi digitalisaatio ja tekoälyn yleistyminen, ilmastonmuutoksen torjuntaan käytetyt keinot ja väestön ikääntyminen voivat vaikuttaa urasuunnitteluun. "
+              }
+            },
+            "3": {
+              "1": {
+                "title": "Opi tunnistamaan globaaleja muutoksia, jotka voivat vaikuttaa uramahdollisuuksiin",
+                "description": "Maailmanlaajuisesti tapahtuu muutoksia, kuten ilmastonmuutos, talouden nousu- ja laskukaudet, digitalisaatio ja alueelliset konfliktit. ",
+                "feedback": "Hienoa työtä! Tunnistat jo globaaleja muutoksia, jotka voivat vaikuttaa elämän- ja urasuunnitteluusi. Tämä taito on erittäin hyödyllinen, sillä se auttaa sinua valmistautumaan tulevaisuuden haasteisiin ja mahdollisuuksiin.",
+                "textFields": {
+                  "1": {
+                    "title": "Pohdi, miten globaalit muutokset näkyvät omassa elämässäsi."
+                  }
+                }
+              },
+              "2": {
+                "title": "Opi huomioimaan globaaleja muutoksia urasuunnittelussasi",
+                "description": "Maailmanlaajuisesti tapahtuu muutoksia, kuten ilmastonmuutos, talouden nousu- ja laskukaudet, digitalisaatio ja alueelliset konfliktit. ",
+                "feedback": "Hienoa! Globaalit muutokset, kuten ilmastonmuutos, talouden suhdanteet ja alueelliset konfliktit, voivat vaikuttaa urasuunnitteluusi. Tulevaisuuden suuntausten ja suurten muutosten ymmärtäminen auttaa sinua valmistautumaan työelämän muutoksiin. Kun osaat ennakoida, millaisia taitoja ja osaamista tarvitaan tulevaisuudessa voit rakentaa päämäärätietoisesti polkuja kohti omannäköistä tulevaisuutta. ",
+                "textFields": {
+                  "1": {
+                    "title": "Tarkastele tarkemmin yhtä globaalia muutosta ja pohdi, miten se voi vaikuttaa omaan elämääsi ja urasuunnitteluusi."
+                  }
+                }
+              },
+              "3": {
+                "title": "Opi käyttämään ennakointitietoa ja huomiomaan globaaleja muutoksia urasuunnittelussasi",
+                "description": "Tutki tulevaisuuden kehityssuuntia ja ennusteita: Selvitä, mitkä ovat tällä hetkellä keskeisiä globaaleja kehityssuuntia, jotka vaikuttavat tulevaisuuden uramahdollisuuksiin. Mitä keskeisiä muutoksia on odotettavissa? Millaisia mahdollisuuksia ja haasteita ne tuovat mukanaan? \n\nHyödynnä kansallisia ennakointitietoja, kuten valtioneuvoston tulevaisuuskatsauksia, Sitran sivuja, osaamistarvekompassi.fi -sivustoa tai työ- ja elinkeinoministeriön raportteja.",
+                "feedback": "Hienoa! Globaalit muutokset, kuten ilmastonmuutos, talouden suhdanteet ja alueelliset konfliktit, voivat vaikuttaa urasuunnitteluusi. Tulevaisuuden suuntausten ja suurten muutosten ymmärtäminen auttaa sinua valmistautumaan työelämän muutoksiin. Kun osaat ennakoida, millaisia taitoja ja osaamista tarvitaan tulevaisuudessa voit rakentaa päämäärätietoisesti polkuja kohti omannäköistä tulevaisuutta. ",
+                "textFields": {
+                  "1": {
+                    "title": "Mieti, miten nämä globaalit kehityssuunnat ja mahdolliset muutokset liittyvät omaan uraasi. Pohdi ja kirjoita alle, miten voit ennakoida uusia taitovaatimuksia tai työtehtäviä, jotka voivat olla tärkeitä tulevaisuudessa?"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "world-around-you": {
+        "sections": {
+          "education-and-learning": {
+            "exercises": {
+              "1": {},
+              "2": {}
+            }
+          }
+        },
+        "exercises": {
+          "3": {
+            "1": {
+              "title": "Opi etsimään uusia oppimismahdollisuuksia",
+              "description": "Elinikäinen oppiminen tarkoittaa sitä, että ihminen jatkaa uuden oppimista koko elämänsä ajan, olipa kyseessä sitten muodollinen koulutus, työelämä tai vapaa-aika.",
+              "feedback": "Hienoa! Elämän ja työuran eri vaiheissa voi oppia, kouluttautua ja opiskella eri tavoilla. Muuttuvassa maailmassa omaa osaamista pitää kehittää jatkuvasti.",
+              "textFields": {
+                "1": {
+                  "title": "Kirjoita alle taito tai osaaminen, jota haluaisit kehittää.",
+                  "description": "Sen ei tarvitse liittyä suoraan työhön tai opiskeluun – se olla myös henkilökohtainen tai harrastuksiin liittyvä taito. \nEsimerkiksi: ajanhallinta, uuden teknologian oppiminen, viestintätaidot, hyvinvoinnin edistäminen."
+                },
+                "2": {
+                  "title": "Kirjoita millä tavalla voit joustavasti kehittää taitoa tai osaamistasi. ",
+                  "description": "Mieti, miten voisit hankkia osaamista. Käytä apuna näitä kysymyksiä:\n- Voitko oppia lyhyissä ajanjaksoissa, kuten 10–20 minuutin pätkissä, esim. Youtube-videoiden, podcastien tai mobiilisovellusten kautta?\n- Voitko osallistua verkkokursseille, jotka ovat itseohjautuvia ja joustavat aikataulun mukaan? \n- Voitko oppia uusia taitoja työpaikallasi (esim. oppisopimus)\n- Lähtisitkö opiskelemaan oppilaitosten järjestämille kursseille tai tutkintotavoitteiseen koulutukseen?\n- Tunnetko jonkun, joka voisi opettaa tämän asian sinulle?"
+                }
+              }
+            },
+            "2": {
+              "title": "Opi, miten löydät tilanteeseesi sopivia opiskelumahdollisuuksia ",
+              "feedback": "Hienoa! Elämän ja työuran eri vaiheissa voi oppia, kouluttautua ja opiskella eri tavoilla. Muuttuvassa maailmassa omaa osaamista pitää kehittää jatkuvasti.",
+              "textFields": {
+                "1": {
+                  "title": "Etsi kaksi erilaista sinulle sopivaa opiskelumahdollisuutta ja vertaile opiskelumahdollisuuksia keskenään. Hyödynnä Opintopolku.fi -sivustoa, josta löydät sekä tutkintoon johtavat koulutukset että lisä- ja täydennyskoulutusmahdollisuudet.",
+                  "description": "Mieti esimerkiksi seuraavia asioita:\n- Millaista osaamista tarvitset lisää ja mitkä ovat tavoitteesi.\n- Kuinka hyvin vaihtoehdot vastaavat tavoitteitasi esim. lyhyt kurssit, koulutusohjelmat/tutkinnot, verkkokurssit?\n- Minkälaisia opiskelumuotoja vaihtoehdot tarjoavat? Esim. päiväopinnot, monimuoto-opinnot, verkko-opinnot, oppisopimus.\n- Millainen on koulutusten sisältö?"
+                }
+              }
+            }
+          },
+          "4": {
+            "1": {
+              "title": "Opi tunnistamaan sinuun vaikuttavia yhteiskunnan ja työelämän rakenteita",
+              "feedback": "Yhteiskunnan rakenteet vaikuttavat elämään ja urasuunnitteluun. Tämä on tärkeää tiedostaa, sillä se auttaa sinua tekemään harkitumpia päätöksiä tulevaisuudessa. Jatka samaan malliin ja syvennä ymmärrystäsi edelleen. ",
+              "textFields": {
+                "1": {
+                  "title": "Pohdinnat valitsemastasi tilanteesta"
+                }
+              },
+              "description": "<strong>Pohdi, miten yhteiskunnan rakenteet vaikuttavat sinuun. Valitse pohdittavaksi yksi alla luetellusta kolmesta kuvitteellisesta tilanteesta tai mieti omaa tilannettasi. Kirjoita alle.</strong><br /><i>Esimerkkejä yhteiskunnan rakenteista: lait, poliittinen päätöksenteko, talous, koulutusjärjestelmä, kulttuuri, työelämän tilanne, sukupuoliroolit.</i><br /><br /><strong>1. Haluan opiskella itselleni uuden ammatin. </strong><br /><i>Esimerkiksi: ”Talouden tilanne vaikuttaa työmarkkinoihin ja koulutuksen rahoitukseen”, ”Opintotuki helpottaa taloudellisesti”, ”Työmarkkinoiden tarpeet ovat muutoksessa”.</i><br /><br /><strong>2. Olen uupunut työssäni ja tarvitsen tauon työelämästä.</strong><br /><i>Esimerkiksi: ” Työpaikan joustavuus tukee jaksamista”, ”Yleinen suhtautuminen työuupumukseen ja palautumiseen vaikuttaa”.</i><br /><br /><strong>3. Minulla on hyvä liikeidea ja haluan perustaa yrityksen. </strong><br /><i>Esimerkiksi: ”Yrityslainsäädäntö ja starttirahat tukevat yrityksen perustamista”, Talous- ja kilpailutilanne vaikuttavat liiketoimintaan”.</i>"
+            },
+            "2": {
+              "title": "Opi havaitsemaan rakenteiden muutoksia omaan urasuunnitteluusi",
+              "feedback": "Yhteiskunnan rakenteet ja niissä tapahtuvat muutokset vaikuttavat elämään ja urasuunnitteluun. Tämä on tärkeää tiedostaa, sillä se auttaa sinua tekemään harkitumpia päätöksiä ja tulevaisuuden suunnitelmia. ",
+              "textFields": {
+                "1": {
+                  "title": "Valitse pohdittavaksi yksi yhteiskunnallinen rakenne, joka voi vaikuttaa urasuunnitteluusi.",
+                  "description": "Esimerkiksi: Teknologian kehittyminen (automaatio, digitalisaatio); Työmarkkinoiden muutokset (etätyö, freelancertyö); Koulutuspolitiikka ja koulutuksen saavutettavuus; Lainsäädäntö (työlainsäädäntö, työajan sääntely); Taloudellinen tilanne (inflaatio, palkkakehitys)"
+                },
+                "2": {
+                  "title": "Pohdi, miten valitsemasi yhteiskunnallinen rakenne vaikuttaa tällä hetkellä uramahdollisuuksiisi. ",
+                  "description": "Kirjoita konkreettisia esimerkkejä.  Esimerkiksi: \"Digitalisaation myötä monet työt ovat siirtyneet etätyöhön, mikä antaa minulle mahdollisuuden hakea työpaikkoja eri maista.\""
+                },
+                "3": {
+                  "title": "Pohdi myös, miten kyseinen rakenne saattaa muuttua seuraavan 5–10 vuoden aikana ja mitä vaikutuksia sillä voisi olla urallesi.",
+                  "description": "Esimerkiksi: \"Jos automaatio ja tekoäly kehittyvät edelleen, tietyt manuaaliset työtehtävät voivat kadota, mutta teknologiaosaaminen nousee entistä tärkeämpään asemaan. Tämä voi tarkoittaa, että minun täytyy hankkia lisää teknisiä taitoja.\""
+                }
+              }
+            },
+            "3": {
+              "title": "Opi ennakoimaan yhteiskunnan rakenteiden muutosten vaikutuksia urasuunnitteluusi",
+              "feedback": "Yhteiskunnan rakenteet ja niissä tapahtuvat muutokset vaikuttavat elämään ja urasuunnitteluun. Muutosten ennakointi on tärkeää, sillä se auttaa sinua tekemään harkitumpia päätöksiä ja tulevaisuuden suunnitelmia. ",
+              "textFields": {
+                "1": {
+                  "title": "Valitse pohdittavaksi yksi yhteiskunnallinen rakenne, joka voi vaikuttaa urasuunnitteluusi. ",
+                  "description": "Esimerkiksi: Teknologian kehittyminen (automaatio, digitalisaatio); Työmarkkinoiden muutokset (etätyö, freelancertyö); Koulutuspolitiikka ja koulutuksen saavutettavuus; Lainsäädäntö (työlait, työajan sääntely); Taloudellinen tilanne (inflaatio, palkkakehitys)"
+                },
+                "2": {
+                  "title": "Pohdi, miten valitsemasi yhteiskunnallinen rakenne vaikuttaa tällä hetkellä uramahdollisuuksiisi. ",
+                  "description": "Kirjoita konkreettisia esimerkkejä.  Esimerkiksi: \"Digitalisaation myötä monet työt ovat siirtyneet etätyöhön, mikä antaa minulle mahdollisuuden hakea työpaikkoja eri maista.\""
+                },
+                "3": {
+                  "title": "Pohdi myös, miten kyseinen rakenne saattaa muuttua seuraavan 5–10 vuoden aikana ja mitä vaikutuksia sillä voisi olla urallesi. ",
+                  "description": "Esimerkki: \"Jos automaatio ja tekoäly kehittyvät edelleen, tietyt manuaaliset työtehtävät voivat kadota, mutta teknologiaosaaminen nousee entistä tärkeämpään asemaan. Tämä voi tarkoittaa, että minun täytyy hankkia lisää teknisiä taitoja.\""
+                },
+                "4": {
+                  "title": "Mieti, mitä voit tehdä jo nyt, jotta olet valmiina tuleviin muutoksiin. ",
+                  "description": "Esimerkiksi: \"Voisin osallistua lisäkoulutukseen tai kursseille, jotka parantavat teknologiaosaamistani, jotta olen kilpailukykyinen työmarkkinoilla tulevaisuudessa.”"
+                }
+              }
+            }
+          },
+          "5": {
+            "1": {
+              "title": "Opi miten työelämässä voi edistää ekososiaalista hyvinvointia",
+              "description": "Pohdi hetki ajatuksiasi kestävään kehitykseen ja vihreään siirtymään, joka vaikuttaa jo moniin ammattialoihin.",
+              "feedback": "Hyvä! Ekososiaalisuus urasuunnittelussa tarkoittaa, että uravalinnoissa pyritään edistämään kestävää kehitystä ja ihmisoikeuksia, mikä voi näkyä esimerkiksi työpaikan tai koulutuksen valinnassa. Urasuunnitteluprosessissa ekososiaalisuuden huomioiminen voi auttaa yksilöä löytämään merkityksellisen ja arvojensa mukaisen uran, joka tukee sekä henkilökohtaista hyvinvointia että yhteiskunnallista kestävyyttä.",
+              "textFields": {
+                "1": {
+                  "title": "Valitse yksi ammatti tai työtehtävä ja pohdi, miten se edistää ihmisten tai luonnon hyvinvointia.",
+                  "description": "Esimerkiksi: lääkäri, koneistaja, opettaja, insinööri, sosiaalityöntekijä, rakennusmestari, metsäkoneyrittäjä, merkonomi, kestävän kehityksen asiantuntija."
+                },
+                "2": {
+                  "title": "Kirjoita lyhyt kuvaus työtehtävästä ja sen vaikutuksista: ",
+                  "description": "Miten tämä työtehtävä parantaa ihmisten elämänlaatua? \nMiten se edistää luonnon hyvinvointia?"
+                }
+              }
+            },
+            "2": {
+              "title": "Opi huomioimaan ekososiaaliset tekijät omassa elämässäsi",
+              "description": "Pohdi alle, miten ekososiaaliset tekijät vaikuttavat omaan elämääsi ja valintoihisi. ",
+              "feedback": "Hienoa! Ekososiaalisuus urasuunnittelussa tarkoittaa, että uravalinnoissa pyritään edistämään kestävää kehitystä ja ihmisoikeuksia, mikä voi näkyä esimerkiksi työpaikan tai koulutuksen valinnassa. Urasuunnitteluprosessissa ekososiaalisuuden huomioiminen voi auttaa yksilöä löytämään merkityksellisen ja arvojensa mukaisen uran, joka tukee sekä henkilökohtaista hyvinvointia että yhteiskunnallista kestävyyttä.",
+              "textFields": {
+                "1": {
+                  "title": "Miten olet huomioinut ekososiaaliset tekijät urasuunnittelussasi?",
+                  "description": "Voit käyttää seuraavia kysymyksiä apuna:\no Miten ekologinen kestävyys näkyy arjessasi?\no Millainen rooli sosiaalisella oikeudenmukaisuudella on elämässäsi?\no Miten kestävä kehitys ohjaa valintojasi?\no Miten yhteisöllisyys vaikuttaa toimintaasi?\no Millaisia vaikutuksia tämänhetkisellä tai sinua kiinnostavalla työllä/alalla on ekososiaaliseen hyvinvointiin?"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "bar": {
+      "no-feedback": "Et ole vielä vastannut tämän osa alueen kysymyksiin. Vastaa kysymyksiin saadaksesi palautetta."
+    },
+    "slider": {
+      "fully": "Täysin",
+      "not-at-all": "En yhtään",
+      "somewhat": "Jonkin verran",
+      "very-much": "Paljon"
+    },
+    "spider": {
+      "title": "Osioiden vertailu"
+    },
+    "button": {
+      "back": "Takaisin"
+    },
+    "quick-self-evaluation-summary-section": {
+      "more-info": "Lisätietoa aiheesta"
+    },
+    "quick-test-selection": {},
+    "career-management-summary-section": {
+      "exercises-close": "Sulje suositellut tehtävät",
+      "exercises-open": "Katso suositellut tehtävät",
+      "feedback-title": "Palaute vastaustesi perusteella:",
+      "no-feedback": "Et ole vielä vastannut tämän osion kysymyksiin. Vastaa kysymyksiin saadaksesi palautetta ja tehtäviä.",
+      "to-section": "Siirry osioon {{ skillAreaName }}"
+    },
+    "exercise-filter": {
+      "no-choice": "Ei valintaa"
+    }
+  },
+  "career-management": {
+    "title": "Syvenny urasuunnitteluun",
+    "description": "Urasuunnittelutaidot ovat opittavissa olevia taitoja, joiden avulla voit suunnitella elämäsi polkua. Tutustu urasuunnittelutaitoihin klikkaamalla:",
+    "self-evaluation": {
+      "title": "Urasuunnittelutaitojen itsearviointi",
+      "description": "Kysymme sinulta kysymyksiä näihin osa-alueisiin liittyen. Vastaustesi perusteella saat palautetta ja harjoitustehtäviä, joiden avulla voit kehittää urasuunnittelutaitojasi. Lopuksi saat yhteenvedon tuloksistasi."
+    },
+    "start": "Aloitetaan!",
+    "survey-sections": "Kyselyn osiot",
+    "go-to-skill-area": "Siirry taitoalueeseen",
+    "skip-question": "Ohita kysymys",
+    "question-info": "Tietoa kysymyksen aihealueesta",
+    "skill-area-summary": {
+      "description": "Voit joko siirtyä eteenpäin seuraavaan osioon tai katsella osion palautteen ja tehtäväsuositukset alta. Näet joka tapauksessa koostetun palautteen ja kaikki tehtäväsuositukset kyselyn päätteeksi.",
+      "title": "Mahtavaa! Suoritit osion {{ skillAreaName }}.",
+      "feedback-title": "Palaute osiosta",
+      "exercises-title": "Tehtäväsuositukset ({{ exerciseNumber }})",
+      "exercises-description": "Alta löydät vastauksiisi perustuvia tehtäväsuosituksia, jotka voivat auttaa sinua eteenpäin urapohdinnoissasi."
+    },
+    "question": "Kysymys",
+    "skill-area": "Taitoalue",
+    "skill-area-info": "Lisätietoa taitoalueesta {{name}}",
+    "show-video-button-text": "Katso video aiheesta",
+    "skillarea-video-label": "Esittely taitoalueesta {{name}}"
+  },
+  "quick-self-evaluation": {
+    "title": "Nopeasti alkuun: urasuunnittelutaitojen pikaitsearviointi",
+    "description": "Urasuunnittelutaidot ovat opittavissa olevia taitoja, joiden avulla voit suunnitella elämäsi polkua. Tee pikaitsearviointi:",
+    "summary-button": "Katso seuraavat askeleet",
+    "titles": {
+      "know-yourself": "Tiedän, millainen olen ja mistä olen kiinnostunut.",
+      "anticipate-the-future": "Tiedän, mitä osaan ja missä minun pitää kehittyä.",
+      "competence-first": "Osaan haaveilla sekä tehdä päätöksiä, jotka vievät kohti haluamaani tulevaisuutta.",
+      "ready-for-change": "Tunnen itseäni kiinnostavan alan työtilanteen ja koulutusmahdollisuudet.",
+      "together-ahead": "Osaan kertoa osaamisestani, toimia verkostoissa ja löytää kiinnostavia työmahdollisuuksia.",
+      "world-around-you": "Tunnistan, mitä itseäni kiinnostavalla alalla tapahtuu ja miten mahdolliset muutokset voivat vaikuttaa omiin suunnitelmiin."
+    },
+    "interest": {
+      "0": "Aihe ei kiinnosta",
+      "1": "Aihe kiinnostaa jonkin verran",
+      "2": "Aihe kiinnostaa melko paljon",
+      "3": "Aihe kiinnostaa paljon"
+    }
+  },
+  "quick-self-evaluation-summary": {
+    "title": "Seuraavat askeleet",
+    "description": "Vastaustesi perusteella seuraavat materiaalit voisivat auttaa sinua eteenpäin. Voit myös siirtyä syventävään itsearviointiin sivun alalaidasta.",
+    "video-card": {
+      "title": "Video sinua kiinnostavasta aiheesta"
+    },
+    "suggestion-card": {
+      "title": "Sinulle suositeltuja tehtäviä, joiden avulla pääset alkuun"
+    }
+  },
+  "career-management-summary": {
+    "exercise-pdf-card": {
+      "title": "Tehdyt tehtävät",
+      "description": "Voit ladata PDF:n kaikista tekemistäsi tehtävistä. Tehtävien vastaukset häviävät, jos suljet tämän selainikkunan, joten lataamalla PDF:n saat tehtävävastauksesi talteen laitteellesi.",
+      "button": "Avaa PDF tehdyistä tehtävistä"
+    },
+    "summary-pdf-card": {
+      "title": "Tarkat tulokset",
+      "button": "Avaa PDF tarkoista tuloksista",
+      "description": "Jos haluat, voit ladata PDF:n, jossa itsearvioinnin tulokset on eritelty tarkemmin. PDF sisältää ylläolevien sanallisten palautteiden lisäksi pylväskaavioita vastauksistasi."
+    },
+    "summary-link-card": {
+      "title": "Linkki tuloksiin",
+      "description": "Voit kopioida tästä linkin tuloksiisi jos haluat palata kyselyyn myöhemmin tai jakaa tuloksesi jollekin muulle. Tehtävien vastauksia ei säilytetä linkissä, joten lataa tehtävistä PDF, jos haluat ne talteen itsellesi.",
+      "copy-link": "Kopioi linkki tuloksiin",
+      "link-copied": "Kopioitu leikepöydälle",
+      "link-loading": "Luodaan tuloksia...",
+      "no-exercises-done": "Ei tehtyjä tehtäviä"
+    },
+    "title": "Palaute ja tehtäväsuositukset",
+    "summary-career-plan": {
+      "title": "Urasuunnitelma",
+      "button": "Tee urasuunnitelma"
+    }
+  },
+  "what-interests-you": {},
+  "common": {
+    "close": "Sulje",
+    "previous": "Edellinen",
+    "next": "Seuraava",
+    "app-name": "Urataidot",
+    "navigation-cards": {
+      "learn-something-new": {
+        "title": "Nopeasti alkuun: urasuunnittelutaitojen pikaitsearviointi",
+        "description": "Tee urasuunnittelutaitojen pikaitsearviointi, jonka perusteella saat nopeasti tietoa ja sinulle sopivia vinkkejä."
+      },
+      "career-management": {
+        "title": "Syvenny urasuunnitteluun: Arvioi urasuunnittelutaitosi ja opi lisää",
+        "description": "Tee laajempi urasuunnittelutaitojen itsearviointi ja pohdi syvällisesti nykytilannettasi. Lopuksi saat sinulle sopivia vinkkejä."
+      },
+      "exercises": {
+        "title": "Tehtäväpankki",
+        "description": "Jos et halua nyt tehdä itsearviointia, voit myös tehdä urasuunnittelutaitoihin liittyviä harjoitustehtäviä."
+      },
+      "career-plan": {
+        "title": "Urasuunnitelma",
+        "description": "Kun olet tehnyt itsearvioinnin ja tehtäviä, voit luoda itsellesi urasuunnitelman. Tämä suunnitelma auttaa sinua askel askeleelta kulkemaan kohti omannäköistä tulevaisuuttasi."
+      }
+    },
+    "answer-scale": {
+      "0": "En yhtään",
+      "3": "Täysin"
+    },
+    "skill-levels": {
+      "0": "Havaitsija",
+      "1": "Tutkiskelija",
+      "2": "Pohtija",
+      "3": "Taitaja"
+    },
+    "all-rights-reserved": "Kaikki oikeudet pidätetään.",
+    "loading": "Ladataan...",
+    "select": "Valitse"
+  },
+  "exercises": {
+    "title": "Kaikki tehtävät",
+    "skill-area": "Taitoalue",
+    "skill-level": "Taitotaso",
+    "description": "Alla näet kaikki tehtävät. Voit suodattaa tehtäviä taitoalueen ja taitotason mukaan. Voit suorittaa tehtäviä haluamassasi järjestyksessä. Kun teet urasuunnittelutaitojen itsearvioinnin, saat sinulle suositeltuja tehtäviä.",
+    "exercise": "Tehtävä",
+    "choose-emoji": "Valitse emoji! :)",
+    "ready": "Valmis",
+    "show-less": "Näytä vähemmän",
+    "show-more": "Näytä lisää",
+    "ready-title": "Palaute harjoitustehtävästä",
+    "download-as-pdf": "Lataa tehtävä PDF:nä",
+    "back-to-summary": "Palaa takaisin",
+    "emoji-textarea-label": "Valitsemaasi emojiin sopiva vastaus",
+    "easier-question": "Tuntuuko tehtävänanto haastavalta?",
+    "easier-link": "Siirry helpompaan tehtävään."
+  },
+  "pdf": {
+    "something-went-wrong": "Ei voitu ladata PDF tiedostoa",
+    "result-summary": "Tulosten yhteenveto",
+    "career-management-skills-report": "Urasuunnittelutaitojen itsearviointi -raportti",
+    "created-at": "Luotu {{time}}",
+    "page": "Sivu {{pageNumber}} / {{totalPages}}",
+    "exercise-answer": "Tehtävä",
+    "all-exercises-document": "Urataidot - Kaikki tehtävät",
+    "result-summary-description": "Yhteenveto sisältää itsearviointisi tulokset visuaalisessa ja sanallisessa muodossa. Osioiden vertailu -kuvan avulla näet kätevästi, missä taitoalueissa olet vahvimmillasi, ja mitä taitoalueita sinun kannattaisi keskittyä kehittämään. Seuraavilla sivuilla olevat palkkidiagrammit näyttävät vahvuutesi ja kehittämiskohteesi yksityiskohtaisemmin, osa-alueittain. Sanalliset palautteet täydentävät kuvaa, tarjoten konkreettisia näkökulmia ja kehitysehdotuksia.",
+    "exercise-document": "Tehtävä",
+    "career-plan": "Urasuunnitelma"
+  },
+  "service-info": {
+    "title": "Urataidot-työkalu - Tietoa palvelusta",
+    "description": "Urataidot on digitaalinen työkalu, joka auttaa sinua arvioimaan ja kehittämään urasuunnittelutaitojasi. Vastaamalla itsearviointikysymyksiin voit selvittää, missä urasuunnittelutaidoissa olet vahva ja mitä taitoja sinun kannattaisi kehittää.<br />Itsearvioinnin jälkeen saat vastaustesi perusteella harjoitustehtäväehdotuksia, joiden avulla voit kehittää urasuunnittelutaitojasi.<br /><br />Työkalu on maksuton, ja sitä käytetään ilman kirjautumista. Vastauksesi säilyvät, kunnes suljet selainikkunan. Voit tallentaa itsearvioinnin yhteenvedon linkkinä tai PDF-muodossa. Tehdyt harjoitustehtävät voit tallentaa PDF-muodossa.<br /><br />Hyria toteutti Urataidot-työkalun osana työ- ja elinkeinoministeriön ja KEHA-keskuksen hallinnoimaa Urasuunnittelutaitojen edistämishanketta. Hankkeen rahoitus tulee EU:n elpymis- ja palautumistukivälineestä.<br /><br />Lisätietoa Hyrian kehittämistyöstä sekä ohjaajille tuotettu tukimateriaali: <0>www.hyria.fi/urasuunnittelutaidot</0><br /><br />Urataidot-työkalu siirtyy osaksi Osaamispolku-sivustoa vuoden 2025 loppuun mennessä."
+  },
+  "career-plan": {
+    "title": "Urasuunnitelma",
+    "questions": {
+      "1": {
+        "title": "Millaisia vahvuuksia, taitoja ja osaamista sinulla on?"
+      },
+      "2": {
+        "title": "Mitkä ovat tärkeimmät arvosi? Elätkö arvojesi mukaista elämää?"
+      },
+      "3": {
+        "title": "Mihin olet tyytyväinen tällä hetkellä? Ja mihin asiaan haluaisit saada muutosta?"
+      },
+      "4": {
+        "title": "Mikä/mitkä ovat tavoitteesi seuraavan vuoden aikana? Entä 5-10 vuoden aikana?"
+      },
+      "5": {
+        "title": "Millaisia muutoksia tai uutta alallasi/tavoittelemallasi alalla tapahtuu parhaillaan? Mitä sinun ainakin tulisi ottaa huomioon tulevaisuudessa?"
+      },
+      "6": {
+        "title": "Mitä osaamista tarvitset lisää saavuttaaksesi tavoitteesi?"
+      },
+      "7": {
+        "title": "Mitkä ovat mahdolliset esteet ja miten voit voittaa ne?"
+      },
+      "8": {
+        "title": "Mistä voisit saada apua suunnitelmiesi toteutumiseksi? Kenelle voit puhua ääneen unelmistasi ja haaveistasi?"
+      },
+      "9": {
+        "title": "Mitä konkreettisia askeleita otat seuraavaksi? Entä seuraavan vuoden aikana?"
+      },
+      "10": {
+        "title": "Miten aiot seurata suunnitelmasi toteutumista?"
+      }
+    },
+    "question-description": "Jos tarvitset apuja kysymykseen vastaamiseksi, tee seuraavat tehtävät:",
+    "feedback": "Urasuunnitelma on työkalu unelmiesi saavuttamiseen! Sen avulla pystyt asettamaan selkeitä, saavutettavissa olevia tavoitteita ja kulkemaan kohti toivomaasi tulevaisuutta. Ole valmis mukauttamaan tavoitteitasi joustavasti tarpeen mukaan ja anna tilaa odottamattomille mahdollisuuksille. Jokainen askel on eteenpäin! Jatka unelmiesi tavoittelua rohkeasti ja nauti matkasta kohti omannäköistä tulevaisuuttasi!",
+    "done-title": "Urasuunnitelma tehty!",
+    "download-as-pdf": "Lataa urasuunnitelma PDF:nä",
+    "copy-link": "Kopioi linkki urasuunnitelmaan",
+    "link-copied": "Linkki kopioitu leikepöydälle"
+  },
+  "Career-management-summary": {
+    "summary-career-plan": {
+      "description": "Olet nyt suorittanut urasuunnittelutaitojen itsearvioinnin, joten voit siirtyä luomaan itsellesi urasuunnitelman."
+    }
+  }
+}

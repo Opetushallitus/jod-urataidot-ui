@@ -1,0 +1,24 @@
+export { default as ArrowLeft } from './arrow_left.svg?react';
+export { default as LightBulb } from './light_bulb.svg?react';
+export { default as ArrowForward } from './arrow_forward.svg?react';
+export { default as ArrowRight } from './arrow_right.svg?react';
+export { default as Check } from './check.svg?react';
+export { default as FinnishFlag } from './fi.svg?react';
+export { default as EnglishFlag } from './en.svg?react';
+export { default as SwedishFlag } from './se.svg?react';
+export { default as Info } from './info.svg?react';
+export { default as Close } from './close.svg?react';
+export { default as ChevronDown } from './chevron_down.svg?react';
+export { default as ChevronRight } from './chevron_right.svg?react';
+export { default as Home } from './home.svg?react';
+export { default as Document } from './document.svg?react';
+export { default as Download } from './download.svg?react';
+export { default as Link } from './link.svg?react';
+export { default as Open } from './open.svg?react';
+
+export { default as IconYourFuture } from './icon-your-future.svg?react';
+export { default as IconKnowYourself } from './icon-know-yourself.svg?react';
+export { default as IconInteraction } from './icon-interaction.svg?react';
+export { default as IconCompetenceIdentity } from './icon-competence-identity.svg?react';
+export { default as IconOperationalEnvironment } from './icon-operational-environment.svg?react';
+export { default as IconOperationalEnvironmentFuture } from './icon-operational-environment-future.svg?react';

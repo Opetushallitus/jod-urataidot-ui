@@ -1,0 +1,101 @@
+{
+  "name": "@jod/urataidot-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": "^20.0.0"
+  },
+  "license": "EUPL-1.2",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier . --write",
+    "preview": "vite preview",
+    "test:unit": "vitest --run",
+    "test:e2e": "playwright test",
+    "prepare": "husky"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "type-enum": [
+        2,
+        "always",
+        [
+          "wip",
+          "feat",
+          "fix",
+          "docs",
+          "style",
+          "refactor",
+          "perf",
+          "test",
+          "revert",
+          "build",
+          "ci",
+          "chore"
+        ]
+      ]
+    }
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.0",
+    "@hookform/resolvers": "^3.4.2",
+    "@react-pdf/renderer": "3.4.4",
+    "cva": "^1.0.0-beta.1",
+    "emoji-picker-react": "^4.11.1",
+    "html-react-parser": "^5.1.18",
+    "i18next": "^23.7.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.4",
+    "react-hook-form": "^7.51.5",
+    "react-i18next": "^14.0.1",
+    "react-router": "^7.0.2",
+    "tailwind-merge": "^2.3.0",
+    "web-vitals": "^3.5.2",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@axe-core/react": "^4.9.0",
+    "@playwright/test": "^1.48.2",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@testing-library/react": "^14.2.2",
+    "@types/node": "^20.11.6",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "husky": "^9.0.10",
+    "jsdom": "^24.0.0",
+    "lint-staged": "^15.2.9",
+    "postcss": "^8.4.33",
+    "prettier": "3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.4.6",
+    "vite-plugin-static-copy": "^2.2.0",
+    "vite-plugin-svgr": "^4.2.0",
+    "vitest": "^1.6.0"
+  },
+  "overrides": {
+    "@react-pdf/layout": "3.6.2",
+    "@react-pdf/textkit": "4.2.1"
+  }
+}

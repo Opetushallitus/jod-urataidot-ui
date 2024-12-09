@@ -1,0 +1,2077 @@
+{
+  "error": {
+    "network": {}
+  },
+  "error-boundary": {
+    "description": "Ett oväntat fel uppstod. Det kan bero på ett avbrott i nätförbindelsen eller på ett fel i tjänsten. Försök igen senare.",
+    "title": "Fel"
+  },
+  "nav": {
+    "all-exercises": "Alla uppgifter",
+    "home": "Hemsidan",
+    "copy-results-to-link": "Kopiera länken till den ofullständiga enkäten",
+    "service-info": "Om tjänsten",
+    "language": "Språk",
+    "select-language": "Välj språk",
+    "download-workbook": "Ladda ner arbetsbok",
+    "workbook-slug": "https://www.hyria.fi/sites/default/files/2024-11/My_Career_Management_Skills_Workbook%20_11112024_Hyria.pdf",
+    "get-workbook": "Min Arbetsbok för Karriärplanering"
+  },
+  "home": {
+    "title": "Livet kan ta dig i många riktningar. Karriärkompetenser hjälper dig vidare i dina reflektioner."
+  },
+  "no-match": {
+    "description": "Sidan du sökte kunde inte hittas.",
+    "title": "Sidan hittades inte"
+  },
+  "slugs": {
+    "career-management": "karriarkompetenser",
+    "exercises": "uppgifter",
+    "quick-self-evaluation": "snabbutvardering",
+    "summary": "sammanfattning",
+    "feedback": "feedback",
+    "import": "hamta",
+    "service-info": "om-tjansten",
+    "my-life-story": "min-livshistoria",
+    "resources-and-ability-to-work": "resurser-och-arbetsformaga",
+    "feelings-and-ways-of-acting": "kanslor-och-handlingssatt",
+    "values": "varderingar",
+    "motivational-factors": "motivationsfaktorer",
+    "interests": "intressen",
+    "attitude-towards-work-and-studying": "installning-till-arbete-och-studier",
+    "competence-and-strengths": "kompetens-och-styrkor",
+    "application-of-competence": "tillampning-av-kompetensen",
+    "development-areas": "utvecklingsomraden",
+    "self-perception-as-a-learner": "uppfattning-om-sig-sjalv-som-larande",
+    "learning-new-skills": "inlarning-av-nya-fardigheter",
+    "dreams-and-visions": "drommar",
+    "problem-solving": "problemlosning",
+    "creativity": "kreativitet",
+    "decision-making": "beslutsfattande",
+    "goal-setting": "mal",
+    "preparedness": "beredskap",
+    "resilience": "resiliens",
+    "uncertainty-tolerance": "tolerans-mot-osakerhet",
+    "opportunities-and-constraints": "mojligheter-och-villkor",
+    "labor-market": "arbetsmarknaden",
+    "education-and-learning": "utbildning-och-studier",
+    "social-structures": "samhallets-strukturer",
+    "ecosocial-factors": "ekosociala-faktorer",
+    "articulating-competence": "formulering-av-kompetens",
+    "communication": "kommunikation",
+    "interaction-in-work-study-and-networks": "interaktion-i-arbete-studier-och-egna-natverk",
+    "asking-and-utilizing-help": "begaran-om-och-utnyttjande-av-hjalp",
+    "societal-services": "tjanster-som-samhallet-erbjuder",
+    "job-search-skills": "fardigheter-i-jobbsokning",
+    "alternative-paths": "alternativa-vagar",
+    "social-changes": "forandringar-i-samhallet",
+    "global-changes": "globala-forandringar",
+    "import-career-plan": "importera-karriarplan",
+    "career-plan": "karriarplan",
+    "know-yourself": "kann-dig-sjalv",
+    "competence-first": "kompetens-forst",
+    "ready-for-change": "redo-for-forandring",
+    "world-around-you": "varlden-omkring-dig",
+    "together-ahead": "tillsammans-framat",
+    "anticipate-the-future": "forutse-framtiden"
+  },
+  "career-management": {
+    "title": "Fördjupa dig i karriärkompetenser",
+    "description": "Karriärkompetenser är färdigheter som kan läras ut och som kan hjälpa dig att planera ditt liv. Du kan läsa mer om karriärkompetenser genom att klicka här:",
+    "self-evaluation": {
+      "title": "Självutvärdering av karriärkompetenser",
+      "description": "Vi ställer frågor till dig om dessa delområden. Utifrån dina svar kommer du att få respons och övningsuppgifter som hjälper dig att utveckla dina karriärkompetenser. Slutligen får du ett sammandrag av dina resultat."
+    },
+    "start": "Vi börjar!",
+    "skill-area-summary": {
+      "description": "Du kan antingen gå vidare till nästa avsnitt eller se respons på avsnittet och rekommenderade uppgifter nedan. Du ser hur som helst den sammanställda responsen och alla rekommenderade uppgifter i slutet av enkäten.",
+      "exercises-description": "Nedan hittar du rekommenderade uppgifter som är baserade på dina svar och som kan hjälpa dig vidare i dina karriärreflektioner.",
+      "exercises-title": "Rekommenderade uppgifter ({{ exerciseNumber }})",
+      "feedback-title": "Respons på avsnittet",
+      "title": "Utmärkt! Du har slutfört avsnittet {{ skillAreaName }}."
+    },
+    "survey-sections": "Enkätens avsnitt",
+    "question": "Fråga",
+    "go-to-skill-area": "Gå till kompetensområde",
+    "skip-question": "Hoppa över frågan",
+    "question-info": "Information om frågans ämnesområde",
+    "skillarea-video-label": "Introduktion till kompetensområdet {{name}}",
+    "skill-area": "Kompetensområde",
+    "skill-area-info": "Mer information om kompetensområdet {{name}}",
+    "show-video-button-text": "Se en video om ämnet"
+  },
+  "quick-self-evaluation": {
+    "title": "Kom igång snabbt: en snabbutvärdering av karriärkompetenser",
+    "description": "Karriärkompetenser är färdigheter som kan läras ut och som kan hjälpa dig att planera ditt liv. Gör en snabb självutvärdering:",
+    "summary-button": "Se nästa steg",
+    "titles": {
+      "together-ahead": "Jag kan berätta om min kompetens, arbeta i nätverk och hitta intressanta jobbmöjligheter.",
+      "competence-first": "Jag kan drömma och fatta beslut som leder till den framtid jag vill ha.",
+      "ready-for-change": "Jag känner till arbetssituationen och utbildningsmöjligheterna inom den bransch jag är intresserad av.",
+      "know-yourself": "Jag vet hurdan jag är som person och vad jag är intresserad av.",
+      "anticipate-the-future": "Jag vet vad jag kan och vad jag behöver utveckla.",
+      "world-around-you": "Jag vet vad som händer inom branschen jag är intresserad av och hur eventuella förändringar kan påverka mina planer."
+    },
+    "interest": {
+      "0": "Inte intresserad av ämnet",
+      "1": "Visst intresse för ämnet",
+      "2": "Ganska intresserad av ämnet",
+      "3": "Mycket intresserad av ämnet"
+    }
+  },
+  "common": {
+    "skill-levels": {
+      "0": "Observatör",
+      "1": "Utredare",
+      "2": "Tänkare",
+      "3": "Expert"
+    },
+    "navigation-cards": {
+      "career-management": {
+        "title": "Fördjupa dig i karriärkompetenser: Utvärdera dina karriärkompetenser och lär dig mer",
+        "description": "Gör en mer omfattande självutvärdering av dina karriärkompetenser och reflektera ingående kring din nuvarande situation. I slutet får du tips som passar just dig."
+      },
+      "learn-something-new": {
+        "description": "Gör en snabb självutvärdering av dina karriärkompetenser, på basis av vilken du snabbt får information och tips som passar just dig.",
+        "title": "Kom igång snabbt: en snabbutvärdering av karriärkompetenser"
+      },
+      "exercises": {
+        "description": "Om du inte vill göra självutvärderingen nu kan du också göra några övningsuppgifter i anknytning till karriärkompetenser.",
+        "title": "Uppgiftsbank"
+      },
+      "career-plan": {
+        "description": "När du har gjort en självutvärdering och arbetat med uppgifterna kan du skapa en karriärplan för dig själv. Denna plan hjälper dig att steg för steg gå mot en framtid som ser ut som du vill ha den.",
+        "title": "Karriärplan"
+      }
+    },
+    "previous": "Föregående",
+    "answer-scale": {
+      "0": "Inte alls",
+      "3": "Helt och hållet"
+    },
+    "app-name": "Karriärkompetenser",
+    "next": "Nästa",
+    "close": "Stäng",
+    "loading": "Belastning…",
+    "select": "Välja",
+    "all-rights-reserved": "Alla rättigheter reserverade."
+  },
+  "exercises": {
+    "title": "Alla uppgifter",
+    "ready": "Färdig",
+    "easier-link": "Gå till en enklare uppgift.",
+    "back-to-summary": "Gå tillbaka",
+    "skill-level": "Kompetensnivå",
+    "skill-area": "Kompetensområde",
+    "download-as-pdf": "Ladda ner uppgiften som PDF",
+    "description": "Nedan kan du se alla uppgifter. Du kan filtrera uppgifter efter kompetensområde och kompetensnivå. Du kan göra uppgifterna i den ordning du vill. När du gör självutvärderingen av karriärkompetenser får du rekommenderade uppgifter.",
+    "emoji-textarea-label": "Svar som matchar den emoji du valt",
+    "easier-question": "Tycker du uppgiften är utmanande?",
+    "exercise": "Uppgift",
+    "ready-title": "Feedback på uppgiften",
+    "choose-emoji": "Välj en emoji! :)",
+    "show-more": "Visa mer",
+    "show-less": "Visa mindre"
+  },
+  "quick-self-evaluation-summary": {
+    "description": "Baserat på dina svar kan följande material hjälpa dig att gå vidare. Du kan också gå till den fördjupande självutvärderingen längst ned på sidan.",
+    "title": "Nästa steg",
+    "suggestion-card": {
+      "title": "Rekommenderade uppgifter för att hjälpa dig att komma igång"
+    },
+    "video-card": {
+      "title": "Video om ämnet som intresserar dig"
+    }
+  },
+  "pdf": {
+    "something-went-wrong": "Det gick inte att ladda ned PDF-filen",
+    "all-exercises-document": "Karriärkompetenser - Alla uppgifter",
+    "career-management-skills-report": "Rapport om självutvärderingen av karriärkompetenser",
+    "result-summary": "Sammandrag av resultaten",
+    "result-summary-description": "Sammandraget innehåller resultaten av din självutvärdering i visuell och verbal form. På bilden Jämförelse av avsnitt ser du enkelt vilka kompetensområden du är starkast inom och vilka kompetensområden det lönar sig att utveckla. Stapeldiagrammen på följande sidor visar dina styrkor och utvecklingsområden mer detaljerat, per delområde. Den verbala responsen kompletterar bilden och ger konkreta perspektiv och utvecklingsförslag.",
+    "page": "Sida {{pageNumber}} / {{totalPages}}",
+    "created-at": "Skapad {{time}}",
+    "exercise-answer": "Uppgift",
+    "exercise-document": "Uppgift",
+    "career-plan": "Karriärplan"
+  },
+  "career-management-summary": {
+    "summary-pdf-card": {
+      "title": "Detaljerade resultat",
+      "description": "Om du vill kan du ladda ned en PDF-fil med en mer detaljerad sammanställning av resultaten från självutvärderingen. Förutom den verbala responsen ovan innehåller PDF-filen stapeldiagram över dina svar.",
+      "button": "Öppna PDF med detaljerade resultat"
+    },
+    "summary-link-card": {
+      "description": "Du kan kopiera den här länken till dina resultat om du vill återvända till enkäten senare eller dela dina resultat med någon annan. Svaren på uppgifterna sparas inte i länken, så ladda ned en PDF av uppgifterna om du vill spara dem.",
+      "copy-link": "Kopiera länken till resultaten",
+      "link-copied": "Kopierades till urklipp",
+      "title": "Länk till resultaten",
+      "link-loading": "Resultat skapas...",
+      "no-exercises-done": "Inga genomförda övningar"
+    },
+    "exercise-pdf-card": {
+      "description": "Du kan ladda ner en PDF-fil med alla uppgifter som du har gjort. Svaren på uppgifterna försvinner om du stänger det här fönstret, så genom att ladda ned PDF-filen sparar du svaren på din enhet.",
+      "button": "Öppna PDF av slutförda uppgifter",
+      "title": "Slutförda uppgifter"
+    },
+    "title": "Respons och rekommenderade uppgifter",
+    "summary-career-plan": {
+      "button": "Gör en karriärplan",
+      "title": "Karriärplan"
+    }
+  },
+  "components": {
+    "career-management-summary-section": {
+      "no-feedback": "Du har ännu inte svarat på frågorna i detta avsnitt. Svara på frågorna för att få feedback och uppgifter.",
+      "feedback-title": "Feedback baserat på dina svar:",
+      "to-section": "Gå till avsnittet {{ skillAreaName }}",
+      "exercises-open": "Se rekommenderade uppgifter",
+      "exercises-close": "Stäng rekommenderade uppgifter"
+    },
+    "bar": {
+      "no-feedback": "Du har ännu inte svarat på frågorna i detta delområde. Svara på frågorna för att få feedback."
+    },
+    "slider": {
+      "fully": "Helt och hållet",
+      "somewhat": "I viss mån",
+      "not-at-all": "Inte alls",
+      "very-much": "Mycket"
+    },
+    "exercise-filter": {
+      "no-choice": "Inget val"
+    },
+    "spider": {
+      "title": "Jämförelse av avsnitt"
+    },
+    "quick-self-evaluation-summary-section": {
+      "more-info": "Mer information om detta ämne"
+    },
+    "button": {
+      "back": "Tillbaka"
+    }
+  },
+  "service-info": {
+    "description": "Karriärkompetenser är ett digitalt verktyg som hjälper dig att bedöma och utveckla dina karriärkompetenser. Genom att svara på självutvärderingsfrågor kan du identifiera vilka karriärkompetenser du redan är stark i och vilka färdigheter du kan behöva utveckla vidare.<br /><br />Efter att du har genomfört självutvärderingen får du, baserat på dina svar, förslag på övningsuppgifter som stödjer dig i att stärka dina karriärkompetenser.<br /><br />Verktyget är helt gratis och kräver ingen inloggning. Dina svar sparas endast tills du stänger webbläsarfönstret. Du kan spara sammanfattningen av självutvärderingen som en länk eller i PDF-format. De övningsuppgifter du genomfört kan också sparas i PDF-format.<br /><br />Verktyget Karriärkompetenser har utvecklats av Hyria som en del av projektet för att främja karriärkompetenser, administrerat av Arbets- och näringsministeriet och Undervisnings- och kulturministeriet samt Utbildningsstyrelsen. Projektet finansieras av EU:s facilitet för återhämtning och resiliens (RRF).<br /><br />För mer information om Hyrias utvecklingsarbete och stödmaterial för handledare, besök: <0>www.hyria.fi/urasuunnittelutaidot</0>.<br /><br />Verktyget Karriärkompetenser kommer att integreras i Kompetensstigen-tjänst i slutet av 2025.",
+    "title": "Verktyget Karriärkompetenser – Om tjänsten"
+  },
+  "content": {
+    "1": {
+      "skillArea": {
+        "know-yourself": {
+          "sections": {
+            "my-life-story": {
+              "name": "Min livshistoria",
+              "questions": {
+                "1": {
+                  "title": "Jag förstår mig själv och jag kan berätta om viktiga erfarenheter i mitt liv."
+                }
+              },
+              "info": "Att förstå sin egen historia och sina egna erfarenheter hjälper dig att bättre förstå dig själv och dina val."
+            },
+            "resources-and-ability-to-work": {
+              "name": "Resurser och arbetsförmåga",
+              "info": "Resurser är sådant som hjälper dig att klara av vardagen och möta utmaningar i livet. De kan vara fysiska, psykiska, sociala eller mentala. Arbetsförmåga avser balansen mellan resurser och arbetets krav.",
+              "questions": {
+                "1": {
+                  "title": "När jag planerar min karriär tänker jag på min egen livssituation och min hälsa."
+                },
+                "2": {
+                  "title": "Jag vet hur jag ska se till att jag orkar i mitt arbete."
+                }
+              }
+            },
+            "feelings-and-ways-of-acting": {
+              "name": "Känslor och handlingssätt",
+              "questions": {
+                "1": {
+                  "title": "Jag förstår hur mina känslor påverkar vad jag gör och hur jag väljer."
+                }
+              },
+              "info": "Känslor ger oss viktig information om omgivningen, andra människor och oss själva. Känslor styr handlingar och är en del av perception och tänkande. Nästan all mänsklig verksamhet involverar känslor."
+            },
+            "values": {
+              "name": "Värderingar",
+              "questions": {
+                "1": {
+                  "title": "Jag vet vilka saker som är viktiga för mig."
+                }
+              },
+              "info": "När du vet vad som är viktigt för dig är det lättare att fokusera på det väsentliga. När du känner till dina egna värderingar är det lättare att fatta beslut och att sätta upp och uppnå mål."
+            },
+            "motivational-factors": {
+              "name": "Motivationsfaktorer",
+              "questions": {
+                "1": {
+                  "title": "Jag vet vilka saker som inspirerar mig."
+                },
+                "2": {
+                  "title": "Jag vet hur jag kan förbättra min entusiasm."
+                }
+              },
+              "info": "Jag vet hur jag kan förbättra min entusiasm."
+            },
+            "interests": {
+              "name": "Intressen",
+              "questions": {
+                "1": {
+                  "title": "Jag vet vilka saker som intresserar mig."
+                }
+              },
+              "info": "Medvetenhet om vad du är intresserad av hjälper dig att planera din karriär. Intressanta saker uppmuntrar dig att lära dig nya saker och att arbeta mot dina mål."
+            },
+            "attitude-towards-work-and-studying": {
+              "name": "Inställning till arbete och studier",
+              "questions": {
+                "1": {
+                  "title": "Jag har en positiv inställning till arbete och studier."
+                }
+              },
+              "info": "När arbetet eller studierna känns viktiga kan det förbättra ditt välbefinnande. Betydelsen av arbete och studier kan förändras under livets gång. Du kan också hitta nya sätt att tänka på dem och få ut mer av dem! "
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "title": "Lär dig att beskriva och strukturera viktiga händelser i ditt liv ",
+                "feedback": "Jättebra! Nu har du övat på att beskriva och strukturera viktiga händelser i ditt liv. Genom att gestalta din egen livshistoria fördjupar du din självkännedom. Att förstå dina egna erfarenheter och värderingar hjälper dig att göra karriärval som är bra för dig.",
+                "text-fields": {
+                  "0": {
+                    "title": "Skriv 3–5 viktiga händelser i ditt liv nedan.",
+                    "description": "Till exempel: börja studera, ta examen, börja ett nytt jobb, flytta till en ny stad, med- och motgångar i livet, en viktig relation, tillökning i familjen."
+                  },
+                  "1": {
+                    "title": "Välj en viktig händelse i ditt liv och fundera på hur den påverkade ditt liv och vilka förändringar den förde med sig.",
+                    "description": "Till exempel: \"Att börja på ett nytt jobb förde med sig spänning och nya möjligheter att lära sig. Det gav mig möjligheten att använda och utveckla mina färdigheter. Bytet av jobb innebar att flytta till en ny stad och anpassa sig till en ny arbetsmiljö. Med nya kollegor och nya jobb följde också nya nätverk.\""
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att bedöma hur de viktiga händelserna påverkar ditt liv idag och identifiera dina egna möjligheter att inverka",
+                "feedback": "Fint! Att sätta sig in i sin livshistoria kommer fördjupar din självkännedom. Genom att granska viktiga händelser och val och bedöma deras inverkan kan du identifiera hur du kan påverka nuet och framtiden. ",
+                "description": "<strong>Skriv de viktigaste händelserna och skedena i ditt liv i egna textrutor nedan.</strong><br /><i>Till exempel: studier, arbete, med- och motgångar i livet, en viktig relation, tillökning i familjen.</i><br /><br /><strong>● Välj beskrivande emojis för de händelser som påverkar dina nuvarande karriärplaner och yrkesval, dvs. de val du idag gör gällande arbete eller studier.</strong><br /><strong>● Välj en av de händelser som du markerat och beskriv i textfältet hur händelsen påverkar din nuvarande situation.</strong> Är påverkan positiv eller negativ? Kan du själv påverka situationen? Finns det saker i din situation som du inte kan påverka alls, såsom andra människors känslor, beslut eller yttre omständigheter? ",
+                "subtitle": "Händelserna och skedena i ditt liv"
+              },
+              "3": {
+                "title": "Lär dig att baserat på din livshistoria förutsäga hur dina val påverkar din framtid",
+                "feedback": "Diskutera resultatet av övningen med en vän eller närstående. De kan erbjuda nya perspektiv och hjälpa dig att förstå hur du aktivt kan påverka din egen framtid. Kom ihåg att din livshistoria är en unik resurs som du kan använda för att planera din karriär och uppnå dina mål.",
+                "description": "<strong>Skriv i textrutorna i kronologisk ordning 5–10 viktiga livshändelser eller beslut som har format ditt liv hittills.</strong><br /><i>Till exempel: olika skeden i studierna, jobb, volontärarbete, med- och motgångar i livet, viktiga relationer, andra betydelsefulla händelser.</i><br /><br /><strong>● Välj beskrivande emojis för händelserna. </strong><br /><strong>● Se om det finns några återkommande teman i dina livshändelser.</strong><br /><strong>● Välj en viktig händelse i ditt liv och analysera den närmare:</strong> Hur påverkade denna händelse senare händelser och val i ditt liv? Hur påverkade händelsen dina mål och drömmar? Lärde du dig något av upplevelsen som du kan ha nytta av i framtiden? Skriv din viktigaste tanke i textfältet.",
+                "subtitle": "Händelserna och skedena i ditt liv"
+              }
+            },
+            "2": {
+              "1": {
+                "feedback": "Bra gjort! Du har nu övat på att identifiera saker som belastar dig och saker som ger dig resurser. Resurser är saker som underlättar ditt arbete, inspirerar och motiverar dig och ger dig energi. ",
+                "word-lists": {
+                  "1": {
+                    "title": "Vilka saker gör dig trött? Välj från listan de saker som du tycker känns tunga: "
+                  },
+                  "2": {
+                    "title": "Vilka saker får dig att må bra? Välj från listan de som ger dig kraft och ork:"
+                  }
+                },
+                "after-title": "Fundera ännu en stund på vad som får dig att må allra bäst, det vill säga vad som är din allra viktigaste resurs? ",
+                "title": "Lär dig att identifiera saker som belastar dig och saker som ger dig resurser   "
+              },
+              "2": {
+                "title": "Lär dig att bedöma hur belastande arbetet, studierna och vardagen är och gör en handlingsplan för att minska belastningen",
+                "feedback": "Bra gjort! Du har nu övat på att bedöma belastningen i arbete, studier och vardagsliv och planera åtgärder för att minska belastningen. Resurser är saker som underlättar ditt arbete, inspirerar och motiverar dig och ger dig energi.",
+                "text-fields": {
+                  "1": {
+                    "title": "Vilka saker inspirerar dig och får dig att må bra? Skriv nedan.",
+                    "description": "Till exempel:\n\"Arbetets eller studiernas betydelse och inverkan”\n\"Erkännande och belöning för prestationer”\n\"Möjlighet att lära sig nya färdigheter och utvecklas”\n\"Positiv och stödjande arbets- eller studiemiljö”\n\"Möjlighet att arbeta självständigt och fatta egna beslut”\n\"Tydliga mål som är möjliga att uppnå”\n\"Konstruktiv och regelbunden feedback”\n\"Hobbyer”\n\"Resor och nya upplevelser”\n\"Tid med vänner och familj”\n\"Volontärarbete och gemenskap”.\n"
+                  },
+                  "2": {
+                    "title": "Vilka saker gör dig trött eller är utmanande? Skriv nedan.",
+                    "description": "Till exempel:\n\"Överbelastning och alltför stor arbets- eller studiebörda”\n\"Otydliga eller motstridiga förväntningar och mål”\n\"Negativ eller kvävande arbets- eller studieatmosfär”\n\"Otillräckligt stöd och vägledning från chefer eller lärare”\n\"Snäva scheman och ständig brådska”\n\"Svårighet att hitta en balans mellan arbete/studier och fritid”\n\"Enformiga och repetitiva uppgifter utan variation”\n\"Överdriven schemaläggning”\n\"Social press”\n\"För mycket skärmtid”\n\"Hobbyer som känns som plikter”\n\"Semesterstress”\n\"Ensamhet”\n\"Ekonomisk press”\n\"Sömnbrist\""
+                  },
+                  "3": {
+                    "title": "Välj en sak som gör dig trött eller är utmanande och sätt upp minst ett konkret mål för att minska din belastning.",
+                    "description": "Till exempel: \"Jag vill lära mig att planera mina tidtabeller bättre\", \"Jag vill lära mig att ta missförhållanden på tal\", \"Jag vill lära mig att tolerera osäkerhet bättre\", \"Jag vill hitta effektivare studietekniker\"."
+                  },
+                  "4": {
+                    "title": "Skriv nedan minst en åtgärd du tänker vidta eller ett steg du tänker ta för att minska belastningen. ",
+                    "description": "Till exempel: \"Jag lär mig att prioritera, det vill säga sätta saker i viktighetsordning\", \"Jag går en kurs i mindfulness\", \"Jag provar nya studietekniker, som tankekartor\""
+                  }
+                }
+              }
+            },
+            "3": {
+              "1": {
+                "title": "Lär dig att känna igen dina egna känslor och hur de påverkar dina handlingar",
+                "feedback": "Toppen! Du har nu övat på att känna igen och strukturera hur dina känslor och sinnesstämningar påverkar dina handlingar. Att känna igen och hantera sina känslor hjälper oss att klara av svåra situationer, kommunicera bättre med andra och fatta förnuftiga beslut. ",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan vad du känner just nu.",
+                    "description": "Känslor är till exempel: glädje, kärlek, tillgivenhet, sorg, rädsla, ilska, avsky, ångest, tacksamhet, skam, hopp, lycka, tillfredsställelse, njutning, mod, avslappning."
+                  },
+                  "2": {
+                    "title": "Välj en av de känslor som du listade ovan och fundera på vad som har orsakat den här känslan. ",
+                    "description": "Till exempel: \"Jag känner mig stressad för att jag har mycket att göra idag\", \"Jag känner mig glad för att jag fick positiv feedback på mitt arbete\"."
+                  },
+                  "3": {
+                    "title": "Tänk på hur denna känsla påverkar dina handlingar. ",
+                    "description": "Till exempel: \"Stress får mig att känna att jag inte kan koncentrera mig ordentligt på mina uppgifter\", \"Glädje får mig att känna mig motiverad och energisk\"."
+                  },
+                  "4": {
+                    "title": "Fundera på vad du kan göra för att hantera känslan.",
+                    "description": "Till exempel: \"Stress: Jag kan göra en lista över mina uppgifter och börja med en sak i taget\", \"Glädje: Jag fortsätter arbeta med samma entusiasm och har den positiva feedback jag fått i åtanke\"."
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att förstå dina egna känslor och förutse hur de påverkar dina handlingar",
+                "feedback": "Du har gjort ett bra jobb med att reflektera över hur känslor har påverkat dina handlingar och ditt beslutsfattande. Denna självrannsakan är viktig eftersom den hjälper dig att inse känslornas roll i ditt liv och i din karriärplanering. ",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan vad du känner just nu.",
+                    "description": "Till exempel: glädje, kärlek, tillgivenhet, sorg, rädsla, ilska, avsky, ångest, tacksamhet, skam, hopp, lycka, tillfredsställelse, njutning, mod, avslappning."
+                  },
+                  "2": {
+                    "title": "Välj en av känslorna och analysera den närmare: Fundera på varför du känner så här. Vilken situation eller tanke utlöste den här känslan? ",
+                    "description": "Till exempel: \"Jag är entusiastisk för att jag fick bra feedback på mitt arbete och jag känner att mitt bidrag är viktigt.\""
+                  },
+                  "3": {
+                    "title": "Tänk på och bedöm nedan vad de långsiktiga effekterna av att fortsätta att känna så här kan få för dig.",
+                    "description": "Till exempel: \"Känsla: entusiasm. Om entusiasmen håller i sig länge kan det ha en positiv inverkan på min motivation och kreativitet. Jag känner mig energisk och motiverad att ta mig an nya projekt och mål. Om jag å andra sidan inte kan kontrollera min entusiasm kan det leda till att jag tar på mig för mycket.\""
+                  },
+                  "4": {
+                    "title": "Tänk på och skriv nedan hur du kommer att agera utifrån din reflektion ovan. ",
+                    "description": "Till exempel: \"Känsla: entusiasm. Jag tänker använda denna positiva energi till att starta ett nytt projekt. Jag kommer ihåg att ta hand om balansen så att känslan förblir en hållbar resurs och inte blir belastande.\""
+                  }
+                }
+              }
+            },
+            "4": {
+              "1": {
+                "title": "Lär dig att identifiera dina värderingar",
+                "feedback": "Toppen! Du har nu övat på att identifiera och strukturera dina värderingar. Värderingar är viktiga eftersom de ligger till grund för hållbara val, handlingar och motivation. Att känna till våra värderingar hjälper oss att gå i rätt riktning. Om det finns en konflikt mellan dina värderingar och dina handlingar kan det leda till stress och svårigheter. ",
+                "wordLists": {
+                  "1": {
+                    "title": "Vad är viktigt för dig i livet? Välj de saker som är viktiga för dig från listan:"
+                  }
+                },
+                "afterText": "<strong>Fundera en stund på vilka av dessa som är dina tre viktigaste värderingar?</strong><br /><i>Skriv ner dem på papper eller i dina anteckningar i telefonen. Återkom till dem då och då, särskilt när du ska göra viktiga beslut, för att påminna dig själv om vad som är viktigt för dig.</i>"
+              },
+              "2": {
+                "title": "Lär dig att klargöra dina värderingars betydelse i ditt liv",
+                "feedback": "Du har gjort ett bra jobb när du reflekterat kring vilken betydelse dina värderingar har i ditt liv. Dina värderingar kan förändras under livets gång; att då och då klargöra sina värderingar hjälper oss att agera i enlighet med dem. Värderingar är starkt kopplade till motivation: när dina karriärplaner ligger i linje med dina värderingar är du mer motiverad och engagerad. Det hjälper dig att klara av svåra tider och att fatta långsiktiga beslut. ",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan 5–10 av dina värderingar, det vill säga saker som är viktiga för dig. ",
+                    "description": "Till exempel: ärlighet, jämlikhet, familjeorientering, hälsa, flitighet, anspråkslöshet, naturlighet, självständighet, kreativitet, ansvar, etc."
+                  },
+                  "2": {
+                    "title": "Rangordna dina värderingar i viktighetsordning.",
+                    "description": "Fundera på vilka värderingar som är viktigast för dig och vilka som är lite mindre viktiga. Du kan använda dessa frågor som hjälp för att rangordna dina värderingar: Hur avspeglas denna värdering i mitt liv? Varför är denna värdering viktig för mig?"
+                  },
+                  "3": {
+                    "title": "Välj en av dina värderingar som du skulle vilja förstärka eller lyfta fram mer i ditt liv. "
+                  },
+                  "4": {
+                    "title": "Skriv ner konkreta handlingar och mål som hjälper dig att göra värderingen du valt mer synlig i ditt dagliga liv.",
+                    "description": "Till exempel: \"Familjeorientering: Avsätt tid varje vecka för gemensamma aktiviteter med familjen\", \"Hälsa: Planera ett träningsprogram varje vecka och håll fast vid en hälsosam kost\", \"Ärlighet: Öva på öppen och ärlig kommunikation i alla relationer\", \"Vänskap: Ordna regelbundna möten med vänner och håll kontakt\", \"Lärande: Sätt som mål att läsa en bok i månaden och delta i kurser eller seminarier\"."
+                  }
+                }
+              }
+            },
+            "5": {
+              "1": {
+                "title": "Lär dig att identifiera vad som motiverar dig",
+                "feedback": "Fint! Du har nu övat på att identifiera dina egna motivationsfaktorer, det vill säga saker som påverkar din vilja och förmåga att uppnå dina mål. Att identifiera dina motivationsfaktorer är viktigt för att förstå vad som driver dig att agera på ett visst sätt. När du förstår vad som motiverar dig kan du fatta bättre beslut och målmedvetet planera din karriär. ",
+                "emojiTitle": "Välj också en beskrivande emoji för varje situation.",
+                "description": "<strong>Skriv nedan i egna textfält 3–4 situationer från din vardag där du upplevt entusiasm, glädje eller nöjdhet. Svara på följande frågor för varje situation:</strong><br /> <i>Vad gjorde du? <br />Vem var med dig? <br />Var var du?</i>"
+              },
+              "2": {
+                "title": "Lär dig att kombinera motiverande faktorer med karriärplanering",
+                "feedback": "Bra gjort! Du har nu övat på att identifiera vad som motiverar dig och att förutse hur du kan bibehålla din motivation. Dina motivationsfaktorer är en resurs som hjälper dig att lyckas på jobbet och i livet i allmänhet. Motivationsfaktorerna beror på många faktorer, till exempel skede i livet, studie- eller arbetsmiljö och prestationer. Det viktigaste är att du identifierar dina egna motivationsfaktorer, så att du kan fatta bra beslut och rikta dina handlingar rätt.",
+                "description": "<strong>Titta på listorna nedan och fundera på vad som motiverar dig inifrån och vad som motiverar dig utifrån.</strong>",
+                "textFields": {
+                  "1": {
+                    "title": "Vad motiverar dig inifrån? Fundera på och skriv nedan vad som är din allra viktigaste inre motivationsfaktor? ",
+                    "description": "Till exempel:\nJag vill hjälpa andra.\nJag tycker om att lära mig nya saker.\nJag får tillfredsställelse av att lösa problem.\nJag vill utvecklas professionellt.\nArbete ger mig en känsla av meningsfullhet.\nJag tycker om den kreativitet som arbetet ger.\nJag vill leva upp till mina egna värderingar och passioner.\nNågon annan, vadå?"
+                  },
+                  "2": {
+                    "title": "Vad motiverar dig utifrån? Fundera på och skriv nedan vad som är din allra viktigaste yttre motivationsfaktor? ",
+                    "description": "Till exempel:\nJag vill ha ekonomisk stabilitet.\nBelöningar (bonusar, befordran).\nBra arbetsvillkor och förmåner.\nJag vill uppnå yrkesmässig status eller prestige.\nSäkerhet på arbetsplatsen.\nJag vill ha positiv feedback och erkännande.\nJag arbetar för att stödja min familj eller mina närstående.\nNågon annan, vadå?"
+                  },
+                  "3": {
+                    "title": "Skriv ett arbets- eller studierelaterat mål nedan och fundera på hur de motivationsfaktorer som du funderade på ovan hjälper dig att uppnå detta mål.",
+                    "description": "Exempel: \"Jag väljer en praktikplats där jag kan hjälpa människor och utveckla mina färdigheter för min karriärutveckling.\" "
+                  }
+                }
+              }
+            },
+            "6": {
+              "1": {
+                "title": "Lär dig att identifiera dina intressen och berätta om dem",
+                "feedback": "Bra jobbat! Förhoppningsvis har du fått några nya tankar om hur viktiga dina intressen är i ditt dagliga liv! Att reflektera över sina egna intressen på ett brett spektrum av delområden i livet är nyttigt. Genom att reflektera över vad vi verkligen är intresserade av kan vi kanske bättre strukturera, planera och prioritera vår tid och våra resurser, eller finslipa vårt arbete. ​",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan tre saker som du tycker om att göra på fritiden eller på jobbet/i studierna.",
+                    "description": "Exempel: \"Jag gillar att spela på datorn\", \"Jag tycker om teamwork\", \"Jag gillar strategispel\", \"Jag tycker om att skriva\", \"Jag tycker om att vara ute i naturen\", \"Jag tycker om att meka med bilar\"."
+                  },
+                  "2": {
+                    "title": "Välj en av dessa saker och fundera på varför det intresserar dig.",
+                    "description": "Exempel: \"Jag gillar att spela på datorn eftersom det utmanar mig strategiskt och ger mig möjlighet att bli bättre hela tiden.\", \"Jag gillar att skriva eftersom det hjälper mig att strukturera mina tankar och uttrycka mig.\""
+                  },
+                  "3": {
+                    "title": "Skriv en mening där du berättar om ditt intresse och vad det betyder för dig.",
+                    "description": "Exempel: \"Att spela på datorn utvecklar min problemlösningsförmåga och ger mig utmaningar som inspirerar mig att ständigt förbättra min prestation\", \"Att skriva är ett sätt för mig att strukturera mina tankar och uttrycka min kreativitet\"."
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att dra nytta av dina intressen",
+                "feedback": "Bra jobbat! Det är bra att fundera på sina egna intressen inom olika delområden i livet. Det som intresserar oss driver oss att utveckla våra färdigheter och satsa tid och andra resurser. Intressen är en källa till inspiration och motivation och är ofta på ett eller annat sätt kopplade till våra andra styrkor. ",
+                "description": "<strong>Skriv nedan i egna textrutor 3–5 saker som du tycker mest om på fritiden.</strong><br /><i>Till exempel: \"Läsa, rita, idrotta, musik, ordna fester, handarbete, resa.”</i><br /><br /><strong>● Välj beskrivande emojis för varje sak.</strong><br /><strong>● Koppla sedan dina intressen till dina färdigheter: fundera på och skriv i varje textfält vilka färdigheter du använder för dina intressen. </strong><br /><i>Till exempel: \"Läsning - analytisk förmåga, Teckning - kreativitet, Festplanering - organisationsförmåga, Idrott - teamwork.”</i><br /><strong>● Fundera på hur du (mer) kan använda dessa intressen och färdigheter på jobbet, i dina studier eller i ditt vardagsliv? Fundera på och skriv ner idéer för varje intresse. </strong><br /><i>Till exempel: \"Teckning - kreativitet: Jag kan använda min kreativitet för att utveckla visuella presentationer, till exempel infografik eller marknadsföringsmaterial, som gör komplex information lättare att förstå\", \"Festplanering - organisationsförmåga: Jag kan använda min organisationsförmåga för att planera och samordna evenemang, möten eller projekt på jobbet eller i skolan och se till att allt går smidigt och enligt tidtabellen”.</i>"
+              }
+            },
+            "7": {
+              "1": {
+                "title": "Lär dig att identifiera och berätta om hur du förhåller dig till arbete och studier",
+                "description": "<strong>Tänk på någon som du respekterar eller beundrar och som inspirerar dig.</strong> Personen kan vara verklig eller fiktiv, till exempel en karaktär i en film. <strong>Svara på följande frågor utifrån den person som du har valt: ​</strong>",
+                "feedback": "Väl genomtänkt! Att identifiera sin egen inställning till arbete och studier är viktigt för karriärplaneringen. Genom att identifiera dina egna attityder och inställningar kan du hitta de vägar som passar dig bäst. Genom att förstå hur du ser på arbete och studier kan du använda din inställning som en konkurrensfördel - och vid behov också utveckla dessa egenskaper. En positiv attityd och engagemang är konkurrensfördelar!",
+                "textFields": {
+                  "1": {
+                    "title": "Hur tror du att personen hanterar utmaningar och motgångar? ",
+                    "description": "Till exempel: \"Personen tar sig an utmaningar med entusiasm och ser motgångar som en möjlighet att lära sig.\""
+                  },
+                  "2": {
+                    "title": "Vilken typ av förhållningssätt eller attityd har personen till arbete och studier? ​",
+                    "description": "Till exempel: \"Personen är motiverad och lägger ner hela sin personlighet i sitt arbete. Personen är också alltid redo att hjälpa andra\"."
+                  },
+                  "3": {
+                    "title": "Vilka gemensamma drag eller erfarenheter har ni? Vilka skillnader lägger du märke till?",
+                    "description": "Till exempel: \"Vi delar viljan att lära oss nytt. En skillnad är att personen förhåller sig lugnare till motgångar än jag.\""
+                  }
+                }
+              },
+              "2": {
+                "title": "Lära dig att analysera och utveckla din egen inställning till arbete och studier",
+                "feedback": "Bra jobbat! Att analysera och utveckla sina egna attityder är viktigt för karriärplaneringen. Genom att förstå hur du ser på arbete och studier kan du använda din inställning till din fördel och utveckla din inställning på ett målinriktat sätt. Kom ihåg att det tar tid att ändra attityder, så var snäll mot dig själv - och uppmärksamma även små framsteg på vägen! ​​P.S. För att se dina framsteg kan du i fortsättningen göra regelbundna självutvärderingar för att se om din inställning till arbete och studier har förändrats; har du uppnått dina mål när det gäller att utveckla din inställning!",
+                "textFields": {
+                  "1": {
+                    "title": "Beskriv nedan din inställning till arbete och/eller studier. ",
+                    "description": "Till exempel: \"Mitt arbete väcker entusiasm och ger mig tillfredsställelse, men är ibland också stressande på grund av snäva tidsramar.\""
+                  },
+                  "2": {
+                    "title": "Fundera på hur din inställning till arbete och/eller studier skulle vara i en ideal situation. ",
+                    "description": "Till exempel: \"Motiverad och entusiastisk. Jag skulle kunna behålla en positiv attityd även i utmanande situationer.\""
+                  },
+                  "3": {
+                    "title": "Skriv nedan de mål som du för närvarande strävar efter i arbetet och/eller studierna.",
+                    "description": "Till exempel: \"Att slutföra en viss uppgift eller ett visst projekt inom en viss tidsfrist\", \"Att slutföra en kurs eller lära mig en ny färdighet\", \"Att utveckla färdigheter i tidshantering och minska stressen\"."
+                  },
+                  "4": {
+                    "title": "Skriv nedan vilka typer av åtgärder som skulle bidra till ditt välbefinnande och till att du uppnår dina mål.",
+                    "description": "Till exempel: \"Ta hand om balansen mellan arbete och fritid. Avsätt tid för hobbyer och avkoppling så att du kan återhämta dig och ladda batterierna\", \"Använd att-göra-listor och en kalender för att följa dina framsteg och prioritera de viktigaste uppgifterna\"."
+                  }
+                }
+              }
+            }
+          },
+          "name": "Känn dig själv",
+          "long-name": "Självkännedom",
+          "feedbacks": {
+            "1": {
+              "description": "Baserat på din självutvärdering håller du på att ta de första stegen mot bättre självkännedom - fint! När du identifierar vad du är intresserad av och vad som motiverar dig kan du fokusera din energi på rätt saker. Kom ihåg att självkännedomen kan utvecklas i alla åldrar och att även små steg är viktiga."
+            },
+            "2": {
+              "description": "Du har redan tagit viktiga steg mot en bättre förståelse av dig själv. Du kan bedöma dina livshändelser, resurser, intressen och värderingar på ett heltäckande sätt. Det är en bra grund att bygga på och utveckla sig själv. Kom ihåg att självkännedom är en fortgående process. Varje steg du tar främjar din personliga tillväxt och utveckling. Lycka till på din resa!"
+            },
+            "3": {
+              "description": "Du är redan väl medveten om dina egna styrkor, värderingar och motivationsfaktorer. Fortsätt att utforska dina egna erfarenheter, värderingar och känslor. Det hjälper dig att bättre förstå hur de påverkar dina val och ditt agerande i olika situationer. Kom ihåg att självkännedom är en fortgående process som utvecklas och fördjupas under hela livet. Lycka till!"
+            },
+            "4": {
+              "description": "Resultatet av din självutvärdering visar på en god självkännedom och förmåga att leda dig själv. Du har en stark grund att bygga din framtid på - fortsätt på samma sätt! Kom ihåg att självkännedom är en fortgående process som utvecklas och fördjupas under hela livet."
+            }
+          },
+          "info": "Självkännedom är grunden för fungerande karriärplanering. När du känner dig själv och vet vad du är intresserad av, vad som är viktigt för dig, vad du brinner för och hur du förhåller dig till saker och ting har du bättre förutsättningar att hitta rätt karriärväg för dig."
+        },
+        "competence-first": {
+          "sections": {
+            "competence-and-strengths": {
+              "name": "Kompetens och styrkor",
+              "questions": {
+                "1": {
+                  "title": "Jag vet vilka färdigheter jag har och vilka mina styrkor är."
+                }
+              },
+              "exercises": {
+                "1": {
+                  "title": "Lär dig att identifiera dina färdigheter och styrkor",
+                  "feedback": "Du har gjort ett bra jobb med att identifiera dina styrkor och tillämpa dem i olika situationer. Att identifiera dina egna styrkor och färdigheter hjälper dig att förstå dig själv bättre och uppnå dina mål. Fortsätt på samma sätt! "
+                },
+                "3": {
+                  "title": "Lär dig att utnyttja dina färdigheter och styrkor",
+                  "feedback": "Du har gjort ett utmärkt jobb med att identifiera och analysera dina egna styrkor. Genom att välja ut fem viktiga styrkor och reflektera över hur du lärt dig dem kan du förstå hur du kan utnyttja dem i din karriär. När du förbereder dig för att visa upp dina färdigheter ska du komma ihåg att varje styrka är en unik tillgång som skiljer dig från mängden. Var stolt över dina prestationer och berätta om dem i anställningsintervjuer och på ditt CV.Fortsätt på samma sätt för att skapa en meningsfull och givande karriär för dig själv. Lycka till!",
+                  "textFields": {
+                    "1": {
+                      "title": "Skriv ner dina fem viktigaste styrkor och hur du har utnyttjat dem."
+                    }
+                  }
+                }
+              },
+              "info": "Genom att identifiera dina styrkor och färdigheter kan du hitta livsvägar som passar dig. Att identifiera dina styrkor kan motivera och inspirera dig att utveckla din kompetens."
+            },
+            "application-of-competence": {
+              "name": "Tillämpning av kompetensen",
+              "info": "Tillämpande av kompetensen innebär att du använder dina kunskaper och färdigheter i olika situationer. När du funderar på karriärmöjligheter lönar det sig att tänka brett på var du kan använda dina färdigheter.",
+              "questions": {
+                "1": {
+                  "title": "Jag vet hur jag ska utnyttja min kompetens i olika situationer och uppgifter."
+                }
+              }
+            },
+            "development-areas": {
+              "name": "Utvecklingsområden",
+              "questions": {
+                "1": {
+                  "title": "Jag vet på vilka områden jag behöver utveckla min kompetens för att uppnå mina mål."
+                }
+              },
+              "info": "När du är medveten om dina utvecklingsområden kan du arbeta med dem. Fokusering på utvecklingsområden och kontinuerligt lärande ger ofta mer iver och motivation att planera sitt liv och sin karriär."
+            },
+            "self-perception-as-a-learner": {
+              "name": "Uppfattning om sig själv som lärande",
+              "questions": {
+                "1": {
+                  "title": "Jag tror på min förmåga att lära mig och utvecklas."
+                }
+              },
+              "info": "Hur du ser på dig själv som lärande påverkar din inlärning och din inställning till studier och arbete. Uppfattningen ändras och utvecklas under hela livet. En positiv uppfattning om sig själv som lärande bildas genom interaktion med andra."
+            },
+            "learning-new-skills": {
+              "name": "Inlärning av nya färdigheter",
+              "questions": {
+                "1": {
+                  "title": "Jag tycker om att lära mig nya färdigheter."
+                }
+              },
+              "info": "Du utvecklar din kompetens under hela livet, till exempel för att öka ditt välbefinnande, utvecklas på jobbet eller avancera i karriären. Du kan lära dig nya färdigheter målinriktat och strukturerat, men också som en del av det vardagliga lärandet."
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "link": "https://youtu.be/5u1deSQ_MkQ",
+                "description": "<strong>Det är lättare att förstå sina egna färdigheter genom konkreta framgångar. Tänk på en situation då du har lyckats, fått bra feedback eller känt dig stolt över dig själv. </strong><br /><br />Se Sitras video om att synliggöra kompetens <0>https://youtu.be/5u1deSQ_MkQ</0>",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv 2-4 av dina framgångar eller prestationer. ",
+                    "description": "Framgångarna kan ha att göra med vardagslivet, studier, relationer, hobbyer, arbete eller något annat i livet. Var inte blyg eller självkritisk, utan lista allt som du kommer att tänka på. "
+                  },
+                  "2": {
+                    "title": "Fundera samtidigt på vilka styrkor du använde för att nå dina framgångar.",
+                    "description": "(t.ex. pålitlighet, ansvarskänsla, flexibilitet, glädje, sociala förmågor, vilja att lära sig, kreativitet...)"
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att strukturera dina färdigheter och styrkor",
+                "feedback": "Verkligen bra att du har tagit itu med dessa frågor! Att identifiera sina egna färdigheter och styrkor är viktiga steg i den personliga utvecklingen. Det är också viktigt att förstå att kompetensbehoven i arbetslivet ständigt förändras - så håll dig uppdaterad om vilka kompetenser som kommer att behövas i framtiden!",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv ner 5–7 av dina styrkor.",
+                    "description": "Styrkorna kan vara karaktärsdrag eller egenskaper. Du kan använda VIA-styrketestet på <0>www.viacharacter.org</0>.  Om du vill kan du byta språket till svenska genom att välja \"svenska\" i Google Translate-fältet. "
+                  },
+                  "2": {
+                    "title": "Skriv 2–4 exempel på hurdan kompetens du har och hur du har utnyttjat din kompetens.",
+                    "description": "Kompetensen utvecklas i vardagslivet, arbete, studier och fritidsintressen. Kompetens är alla de olika färdigheter som du använder i ditt liv. \nTill exempel: \"Jag kan laga mat eller baka\", \"Jag kan streama\", \"Jag kan göra uppdateringar på sociala medier\", \"Jag kan arbeta i ett team\", \"Jag förstår kundernas behov\", \"Jag kan leda mig själv och mitt arbete\"."
+                  }
+                }
+              },
+              "3": {
+                "description": "Det finns färdigheter som hjälper oss att bli framgångsrika särskilt i arbetslivet. Olika sektorer och arbetsplatser betonar olika slags kompetens och kompetensbehoven förändras också.",
+                "textFields": {
+                  "1": {
+                    "description": "Du kan använda VIA-styrketestet på <0>www.viacharacter.org</0>.  Om du vill kan du byta språket till svenska genom att välja \"svenska\" i Google Translate-fältet."
+                  },
+                  "2": {
+                    "title": "Skriv ner vilka färdigheter/kompetenser som är dina kärnkompetenser. ",
+                    "description": "Fundera på dessa kompetenser med tanke på det föränderliga arbetslivet. Vilka behov att utveckla din kompetens har du?"
+                  }
+                }
+              }
+            },
+            "2": {
+              "1": {
+                "title": "Lär dig att utnyttja sin kompetens i olika situationer ",
+                "description": "Dina styrkor och din kompetens kan ofta utnyttjas i en mängd olika situationer. Du kanske har lärt dig av dina vänner att vara en god lyssnare, men förmågan att lyssna är också nyttig i arbetslivet.<br /><br /><strong>Tänk på en färdighet, kompetens eller egenskap som du har.</strong><br /><i>Olika färdigheter och kompetenser kan till exempel vara:  Kreativitet Organisationsförmåga Kulturell kompetens Företagsamhet Omdömesförmåga Interaktionsförmåga Läsning av långa texter Ledarskap Uthållighet Ärlighet Ödmjukhet Förmåga att fråga om råd Självkontroll Samarbetsförmåga Självledarskap Lekfullhet Fingerfärdighet Digital kompetens Sinne för estetik Kommunikationsförmåga Flexibilitet Inlärningsförmåga Snabbhet Lyssnande Självutveckling Försiktighet Fysisk aktivitet Arbete i grupp Bra smaksinne Mod Gott minne Skrivande Rättvisa Ritning Nyfikenhet Att hålla tidtabeller Smidighet Företagsamhet Framförhållningsförmåga Empati Tuffhet Problemlösning Teamwork Projekthantering.</i>",
+                "feedback": "Jättebra! Du har upptäckt att dina färdigheter kan användas i olika sammanhang. Det finns olika typer av allmänna färdigheter som behövs för en mängd olika jobb och yrken. Dessa färdigheter förvärvas under hela livet - och även utanför klassrummet.",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv exempel på hur du har utnyttjat/skulle kunna utnyttja din valda färdighet eller kompetens i olika situationer. ",
+                    "description": "Om du till exempel väljer \"projekthantering\". Du kan beskriva utnyttjandet en färdighet på arbetsplatsen på följande sätt: \"Jag ledde ett team som utvecklade ny programvara i tid och inom budgeten.\" Och samma färdighet i volontärarbete skulle kunna vara: \"Jag organiserade ett lokalt evenemang med över 100 deltagare.\" i hobbyer kan denna färdighet komma till uttryck på följande sätt: \"Jag planerade och genomförde ett trädgårdsprojekt som krävde noggrann schemaläggning och resurshantering.\""
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att se dina färdigheter ur många olika perspektiv",
+                "feedback": "Fortsätt att utveckla dig själv, utnyttja dina styrkor och var öppen för nya möjligheter. Nätverka, lär dig nya saker och var modig. Du har redan en hel del kompetens, och den växer hela tiden. Våga utnyttja den i olika situationer. Du har potential och du kan förverkliga dina drömmar! Kom ihåg att karriären är en resa och att varje steg lär dig något värdefullt. Våga ha stora drömmar och lita på dig själv.",
+                "description": "Du kan använda din kompetens och dina färdigheter i många olika situationer och arbetsuppgifter. Reflektera över din kompetens ur olika perspektiv.",
+                "textFields": {
+                  "1": {
+                    "title": "Beskriv din yrkesmässiga kompetens eller substanskompetens. ",
+                    "description": "Yrkesmässig kompetens eller substanskompetens är kompetens som förvärvats genom utbildning och arbetslivserfarenhet och som anknyter till det egna yrket eller arbetet."
+                  },
+                  "2": {
+                    "title": "Skriv ner vilka generiska eller allmänna färdigheter du har. ",
+                    "description": "Till exempel: kunskap om principerna för hållbar utveckling, interaktions- och kommunikationsfärdigheter, problemlösningsförmåga, kreativitet, inlärningsförmåga, hantering av helheter, mångkulturella färdigheter, självstyrning, etiskt handlande, informationshantering och analytiska färdigheter."
+                  },
+                  "3": {
+                    "title": "Skriv ner vilka allmänna arbetslivsfärdigheter, det vill säga överförbara färdigheter, du har.",
+                    "description": "Till exempel: digital kompetens, språkkunskaper, empati, anpassningsförmåga och kritiskt tänkande. "
+                  },
+                  "4": {
+                    "title": "Välj en färdighet och skriv hur den kan tillämpas i olika situationer. Beskriv kortfattat hur du skulle kunna använda din valda färdighet i tre olika situationer."
+                  }
+                }
+              }
+            },
+            "3": {
+              "1": {
+                "title": "Lär dig att identifiera dina egna utvecklingsområden",
+                "feedback": "Bra gjort! Du har identifierat dina utvecklingsområden. Det är viktigt att känna igen dem när man sätter upp mål för sig själv. Nästa steg är att göra en plan där du sätter upp små, konkreta mål för dig själv, till exempel att läsa en bok eller gå en onlinekurs - och sedan är det bara att sätta igång!",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv 1–3 färdigheter eller kompetenser som, om de utvecklas, skulle hjälpa dig att uppnå ett konkret mål. ​",
+                    "description": "Till exempel: \"Tidshantering: Att förbättra min tidshantering skulle hjälpa mig att göra mitt jobb mer effektivt och minska stressen.\""
+                  },
+                  "2": {
+                    "title": "Skriv exempel på situationer där dessa utvecklingsområden kommer fram och hur de påverkar ditt arbete. ",
+                    "description": "Till exempel: \"Tidshantering: Detta utvecklingsområde kommer fram särskilt under hektiska dagar, när det är mycket som ska göras och tidsfristerna är snäva. Bättre tidshantering hjälper mig att prioritera uppgifter och undvika sista minuten-hetsen, vilket förbättrar kvaliteten på mitt arbete och minskar stressen.\""
+                  }
+                }
+              },
+              "2": {
+                "title": "Gör upp en handlingsplan för att uppnå dina mål",
+                "textFields": {
+                  "1": {
+                    "title": "Lista dina utvecklingsområden. Fundera över vilka färdigheter som är särskilt viktiga för din karriär."
+                  },
+                  "2": {
+                    "title": "Sätt upp konkreta mål för att utveckla din kompetens."
+                  }
+                },
+                "feedback": "Fint! Det är inte bra för den yrkesmässiga och personliga utvecklingen att begränsa sig till sina styrkor. Om man ständigt bara tar sig an uppgifter som känns enkla och naturliga blir man lätt och stampar på stället. Ibland är det bra att gå utanför sin bekvämlighetszon."
+              },
+              "3": {
+                "title": "Lär dig om dina styrkor och utvecklingsområden med hjälp av en SWOT-analys",
+                "description": "Använd SWOT-analysen för att öka din självkännedom och planera din karriär. Avsätt tillräckligt med tid för SWOT-arbetet. Analysen är avsedd att vara en positiv process som gynnar genomförandet av förändringar. Gör en SWOT-analys av dina styrkor och utvecklingsområden.",
+                "feedback": "Du har gjort ett bra jobb med SWOT-analysen! Det är utmärkt att du har identifierat dina egna styrkor och områden där du vill utvecklas. Den här självkännedomen är värdefull och hjälper dig att planera din karriär därefter. SWOT-analysen är en pågående process och genom att uppdatera den regelbundet kan du hålla dig på rätt spår. Kom ihåg att varje dag är en ny möjlighet att växa och utvecklas.",
+                "textFields": {
+                  "1": {
+                    "title": "Styrkor (Strengths): ",
+                    "description": "Lista dina styrkor, t.ex. din kompetens, dina färdigheter och prestationer."
+                  },
+                  "2": {
+                    "title": "Svagheter (Weaknesses):",
+                    "description": "Identifiera områden du vill utveckla. \nTill exempel: tidshantering, nätverkande, presentationsfärdighet, avsaknad av en viss färdighet"
+                  },
+                  "3": {
+                    "title": "Möjligheter (Opportunities):",
+                    "description": "Fundera på vilka karriärmöjligheter som finns där ute.\nTill exempel: växande och föränderliga branscher, teknologins snabba utveckling"
+                  },
+                  "4": {
+                    "title": "Hot (Threats):",
+                    "description": "Var medveten om de faktorer som kan påverka din karriär.\nTill exempel: ekonomiska förändringar eller konkurrenssituationen"
+                  }
+                }
+              }
+            },
+            "4": {
+              "1": {
+                "title": "Lär dig att uppfatta dig själv som lärande.",
+                "description": "En positiv syn på sig själv som lärande främjar inlärningen.",
+                "feedback": "Du är på väg mot självkännedom och en förståelse för hurdan du är som lärande. Minns hur tidigare erfarenheter har påverkat ditt lärande och hur du har mött utmaningar och firat framgångar. Det är viktigt att vara medveten om sina egna styrkor och inlärningssätt. Kom ihåg att använda dessa färdigheter på vägen mot att uppnå dina mål!",
+                "textFields": {
+                  "1": {
+                    "title": "Vilka känslor och tankar väcker lärandet?",
+                    "description": "Hitta en bild som beskriver din känsla. Bläddra i tidningar eller använd sökmotorer. Skriv ner vad bilden säger om dina tankar."
+                  },
+                  "2": {
+                    "title": "Tänk på en situation där du har lärt dig en ny färdighet eller sak. ",
+                    "description": "Vilka saker hjälpte dig att lära dig?"
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att utveckla och bibehålla en positiv uppfattning om dig själv som lärande",
+                "feedback": "Inlärning väcker entusiasm och nyfikenhet när man upplever glädjen i att lära sig något nytt. Ibland kan det också vara frustrerande att lära sig något nytt när man ställs inför utmaningar, men oftast är det känslan av att ha lyckats som vinner i slutändan. Inlärning ger dig också självförtroende när du märker att du lär dig nya färdigheter och kunskaper.",
+                "description": "Tänk på dina framgångsrika inlärningsupplevelser. ",
+                "textFields": {
+                  "1": {
+                    "title": "Vilka känslor väckte lärandet hos dig?"
+                  },
+                  "2": {
+                    "title": "Vilka saker hjälpte dig att lära dig det nya?"
+                  },
+                  "3": {
+                    "title": "Vilka är dina styrkor som lärande?",
+                    "description": "Till exempel: \"Jag är tålmodig och ihärdig och ger inte upp så lätt när jag ställs inför svårigheter\", \"Jag har god förmåga att tillämpa det jag lär mig i praktiken, vilket hjälper mig att förstå saker på ett djupare plan\", \"Jag är nyfiken och motiverad att ständigt lära mig nya saker, vilket håller mig uppdaterad och utvecklar mina färdigheter\"."
+                  }
+                }
+              }
+            },
+            "5": {
+              "1": {
+                "title": "Lär dig att identifiera hur du lär dig nya färdigheter",
+                "description": "Tänk på en specifik situation där du lärde dig en ny färdighet.",
+                "feedback": "Sättet man lär sig nya färdigheter är individuellt och alla lär sig på sitt eget sätt. Att lära sig nya färdigheter är en process som tar tid och kräver aktivt engagemang. Tro på dina egna förmågor och njut av att lära dig! ",
+                "textFields": {
+                  "1": {
+                    "title": "Vilka saker inspirerade och uppmuntrade dig att lära dig den nya saken?"
+                  },
+                  "2": {
+                    "title": "Vilka saker i omgivningen stödde ditt lärande?"
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att strukturera och främja ditt eget lärande",
+                "description": "Alla har sina egna unika sätt att lära sig och ta till sig nya kunskaper. Det är viktigt att identifiera vilket sätt som fungerar bäst för dig och hur mycket tid du kan lägga på att lära dig. Det finns många sätt att lära sig nya saker, till exempel genom att arbeta med nya projekt eller delta i kurser, coachning och utbildningar. Vissa människor gillar att studera självständigt och fördjupa sig i ett ämne på egen hand, medan andra lär sig bättre i grupp. ​",
+                "feedback": "Väl genomtänkt! Att lära sig nya färdigheter öppnar dörrar till ytterligare lärande och personlig utveckling. Reflektera regelbundet över dina erfarenheter och vad du har lärt dig. Fundera på hur de har påverkat din kompetensidentitet och din karriär. Fortsätt att utmana dig själv och lära dig nya saker!",
+                "textFields": {
+                  "1": {
+                    "title": "Fundera på vilken färdighet du skulle vilja lära dig."
+                  },
+                  "2": {
+                    "title": "Fundera på vilka saker som kan hindra dig från att lära dig färdigheten."
+                  },
+                  "3": {
+                    "title": "Fundera på vad som kan hjälpa dig att lära dig färdigheten."
+                  }
+                }
+              },
+              "3": {
+                "title": "Lär dig att bedöma ditt eget lärande",
+                "description": "Alla har sina egna unika sätt att lära sig och ta till sig nya kunskaper. Det är viktigt att identifiera vilket sätt som fungerar bäst för dig och hur mycket tid du kan lägga på att lära dig. Det finns många sätt att lära sig nya saker, till exempel genom att arbeta med nya projekt eller delta i kurser, coachning och utbildningar. Vissa människor gillar att studera självständigt och fördjupa sig i ett ämne på egen hand, medan andra lär sig bättre i grupp.",
+                "feedback": "Mycket bra! Det är viktigt att identifiera sitt eget sätt att lära sig och hitta det som fungerar bäst för en själv. Fundera över vilka omgivningar och situationer som bäst stöder ditt lärande. Onlinekurser kan vara ett bra alternativ för dem som lär sig på egen hand, medan grupparbeten kan ge stöd och interaktion. Lärandet är kontinuerligt och olika metoder kan kombineras för att uppnå bästa möjliga resultat.",
+                "textFields": {
+                  "1": {
+                    "title": "Reflektera över och skriv om hur du lär dig bäst.",
+                    "description": "Utvärdera en inlärningsprocess som har ägt rum:<br />● Uppnådde du dina lärandemål? Varför eller varför inte?<br />● Vad främjade och vad störde inlärningsprocessen?<br />● Vilka resurser fanns tillgängliga för dig?<br />● Vad lärde du dig av processen? Vad fungerade? Vad fungerade inte? Vilka lärdomar kan du utnyttja i framtiden?"
+                  }
+                }
+              }
+            }
+          },
+          "info": "Uppbyggande av en kompetensidentitet innebär att man identifierar sina egna styrkor och färdigheter och kan använda dem i olika situationer. Det hjälper dig också att inse vilka nya färdigheter du kan behöva och hur du ska berätta för andra om din kompetens för att uppnå ditt mål.",
+          "feedbacks": {
+            "1": {
+              "description": "Det är viktigt att reflektera över sina egna styrkor och utvecklingsområden. Fortsätt med det - det hjälper dig att växa och lära dig mer! Kom ihåg att vara öppen för nya möjligheter och tro på din egen förmåga att lära dig och utvecklas."
+            },
+            "2": {
+              "description": "Du är redan bra på att strukturera din kompetens och dina styrkor. Fortsätt på samma sätt och kom ihåg att använda konkreta exempel för att beskriva din kompetens i olika situationer. Det är också viktigt att identifiera utvecklingsområden - fundera regelbundet på vad du kan göra för att utvecklas ytterligare. Du har gjort ett fantastiskt jobb!"
+            },
+            "3": {
+              "description": "Det är fint att du förstår din kompetens och dina styrkor i förhållande till dina utvecklingsområden. Det är viktigt att ha en positiv inställning till att lära sig och att kunna tillämpa nya färdigheter. Ta hand om din utveckling. Du har insett viktiga saker!"
+            },
+            "4": {
+              "description": "Jättebra! Att kunna klä sin kompetens i ord är en viktig färdighet som det lönar sig att reflektera över med jämna mellanrum. Din kompetens kan förändras och utvecklas. Lycka till!"
+            }
+          },
+          "name": "Kompetens först",
+          "long-name": "Bygga upp en kompetensidentitet"
+        },
+        "ready-for-change": {
+          "sections": {
+            "dreams-and-visions": {
+              "name": "Drömmar",
+              "questions": {
+                "1": {
+                  "title": "Jag har drömmar och förhoppningar för min framtid."
+                }
+              },
+              "info": "Drömmar är viktiga för att du ska kunna planera ett liv och en karriär som passar just dig. Drömmar hjälper dig att hålla en positiv inställning och hjälper dig att uppnå dina mål."
+            },
+            "problem-solving": {
+              "name": "Problemlösning",
+              "questions": {
+                "1": {
+                  "title": "Jag kan utreda och lösa frågor som rör min utbildning och mina karriärval."
+                }
+              },
+              "info": "Problemlösningsförmåga hjälper dig att övervinna utmaningar. De hjälper dig att vara kreativ och hitta lösningar. Problemlösningsförmåga gör dig mer flexibel och anpassningsbar."
+            },
+            "creativity": {
+              "name": "Kreativitet",
+              "questions": {
+                "1": {
+                  "title": "Jag kan brainstorma och komma på olika alternativ när jag tänker på min framtid. "
+                }
+              },
+              "info": "Kreativitet är viktigt när du planerar din karriär och din framtid. Den hjälper dig att vara flexibel inför förändringar och att hitta unika karriärvägar. Kreativitet uppmuntrar dig att prova nya saker och se möjligheter."
+            },
+            "decision-making": {
+              "name": "Beslutsfattande",
+              "questions": {
+                "1": {
+                  "title": "Jag kan göra val och fatta beslut som gäller mitt liv och min karriär."
+                }
+              },
+              "info": "Färdigheter i beslutsfattande hjälper dig att utvärdera olika alternativ och göra välgrundade val."
+            },
+            "goal-setting": {
+              "name": "Mål",
+              "questions": {
+                "1": {
+                  "title": "Jag kan sätta upp tydliga mål för mig själv."
+                }
+              },
+              "info": "Tydligt definierade mål hjälper dig att fokusera på det väsentliga och fatta välgrundade beslut. Delmålen hjälper dig att se de konkreta stegen mot långsiktiga mål."
+            },
+            "preparedness": {
+              "name": "Beredskap",
+              "questions": {
+                "1": {
+                  "title": "Jag kan bedöma om mina planer kan lyckas och göra upp reservplaner."
+                }
+              },
+              "info": "Beredskap innebär att man förbereder sig för olika alternativ och risker. Detta ger en känsla av kontroll."
+            },
+            "resilience": {
+              "name": "Resiliens",
+              "questions": {
+                "1": {
+                  "title": "Jag kan förhålla mig flexibelt till förändringar och återhämta mig efter motgångar."
+                }
+              },
+              "info": "Resiliens är förmågan att anpassa sig och klara av förändringar och utmaningar. Det är psykisk flexibilitet och återhämtningsförmåga."
+            },
+            "uncertainty-tolerance": {
+              "name": "Tolerans mot osäkerhet",
+              "questions": {
+                "1": {
+                  "title": "Jag har sätt att tolerera osäkerhet."
+                }
+              },
+              "info": "Tolerans mot osäkerhet är förmågan att klara av situationer där utfallet inte är klart. Denna förmåga som hjälper dig att agera, även om du inte har alla svar."
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "title": "Lär dig att identifiera dina drömmar och förhoppningar för framtiden",
+                "feedback": "När du klär dina drömmar i ord blir de tydligare för dig. Drömmar är viktiga för att du ska kunna planera ett meningsfullt liv och en meningsfull karriär för dig själv. De kan vara små eller stora. Drömmar bidrar till att upprätthålla en positiv attityd, vilket i sin tur hjälper till att fokusera på sina mål och sitt lärande.",
+                "textFields": {
+                  "1": {
+                    "title": "Kan du drömma?",
+                    "description": "Reflektera och skriv nedan:<br />Vad skulle du göra om du hade obegränsat med tid och pengar?<br />Vilka färdigheter eller förmågor skulle du vilja lära dig eller utveckla?<br />Vilka saker skulle du vilja ändra på i ditt nuvarande liv?"
+                  },
+                  "2": {
+                    "title": "Vad är din största dröm. Skriv nedan.",
+                    "description": "Exempel på drömmar: resa, äga ett hem, bilda familj, skriva en bok, få sitt drömjobb, hålla sig frisk, upprätthålla nära vänskaper, få nya vänner, ekonomisk stabilitet, utvecklas i en hobby, börja med en ny hobby."
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att skapa en vision om dina drömmar och förhoppningar för framtiden och arbeta för att uppnå dem",
+                "feedback": "När du skapar en vision om dina drömmar får de luft under vingarna! Drömmar är viktiga för att du ska kunna planera ett meningsfullt liv och en meningsfull karriär för dig själv. Drömmar bidrar till att upprätthålla en positiv attityd, vilket i sin tur hjälper till att fokusera på sina mål och sitt lärande.",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan 3–5 saker som du önskar av din framtid.",
+                    "description": "De kan vara förknippade med din karriär, ditt personliga liv, hobbyer, resor eller relationer."
+                  },
+                  "2": {
+                    "title": "Välj en framtidsdröm från din lista som du skulle vilja skapa en vision om. Slut sedan ögonen och föreställ dig hur ditt liv kommer att se ut när drömmen har gått i uppfyllelse.",
+                    "description": "Var är du och vad gör du?\nVilka är runt omkring dig?\nHur känner du dig?\nVad har du uppnått?"
+                  },
+                  "3": {
+                    "title": "Fundera på hur du kan upprätthålla din motivation på vägen mot den framtid du föreställer dig.",
+                    "description": "Du kan använda följande frågor som hjälp:\nHur kan du belöna dig själv för små framsteg?\nHur kan du hålla dig motiverad när du ställs inför utmaningar?\nHur kan du utnyttja ditt stödnätverk (t.ex. familj, vänner, mentorer)?"
+                  }
+                }
+              }
+            },
+            "2": {
+              "1": {
+                "title": "Lär dig att utveckla din problemlösningsförmåga",
+                "feedback": "Problemlösningsförmågan hjälper dig att möta utmaningar och klara dem på ett effektivt sätt. De hjälper dig att vara kreativ och hitta lösningar. Problemlösningsförmåga främjar också flexibilitet och anpassningsförmåga i föränderliga situationer, vilket är särskilt viktigt i en ständigt föränderlig värld."
+              },
+              "2": {
+                "title": "Lär dig att hitta lösningar på frågor som gäller utbildning och karriärval",
+                "textFields": {
+                  "1": {
+                    "title": "Välj en utmaning som du har stött på i ditt arbete eller dina studier.",
+                    "description": "Välj en konkret situation där det finns ett tydligt problem som du ännu inte har löst det på ett helt tillfredsställande sätt.\nTill exempel: \"Brist på motivation: Jag har haft svårt att hitta motivationen att läsa en kurs som inte intresserar mig. Jag har ännu inte kommit på hur jag ska få mig själv att bli intresserad av ämnet.\""
+                  },
+                  "2": {
+                    "title": "Reflektera över utmaningen med hjälp av följande frågor och skriv dina svar nedan:\nVad är egentligen problemet?\nNär och var kommer det fram?\nVilka är delaktiga eller bidrar till lösningen?\nVarför är det viktigt att lösa problemet?",
+                    "description": "Till exempel: \"Brist på motivation: Jag kan inte hitta motivationen att läsa en kurs som inte intresserar mig. Det gör det svårt att koncentrera sig på studierna och att slutföra uppgifter. Problemet kommer särskilt fram när jag försöker göra kursrelaterade uppgifter hemma. Delaktiga i att lösa problemet kan vara: jag själv, läraren, medstuderande, familj och vänner. Det är viktigt att lösa det här problemet, för på grund av bristen på motivation kan jag inte slutföra kursen och ta examen. Detta påverkar också självkänslan.\""
+                  },
+                  "3": {
+                    "title": "Ta fram tre olika lösningsalternativ.",
+                    "description": "Fundera på både traditionella och okonventionella tillvägagångssätt. Du kan också lista idéer som känns galna.\nTill exempel: \"Brist på motivation: 1. När jag har slutfört ett projekt belönar jag mig själv med något speciellt, som en filmkväll eller en weekendresa. 2. Jag söker stöd hos andra studerande: Att studera tillsammans kan göra ämnet mer intressant. 3. Jag läser artiklar, tittar på videor eller lyssnar på podcasts som är relaterade till kursens ämne\"."
+                  },
+                  "4": {
+                    "title": "Välj det mest genomförbara alternativet och fundera på vad du behöver för att förverkliga lösningen.",
+                    "description": "Till exempel: hjälp från andra, mer tid, pengar, utrymme, redskap etc."
+                  }
+                },
+                "feedback": "Problemlösningsförmågan hjälper dig att möta utmaningar och klara dem på ett effektivt sätt. De hjälper dig att vara kreativ och hitta lösningar. Problemlösningsförmåga främjar också flexibilitet och anpassningsförmåga i föränderliga situationer, vilket är särskilt viktigt i en ständigt föränderlig värld."
+              },
+              "3": {
+                "title": "Lär dig att förutse konsekvenserna av dina beslut",
+                "feedback": "Problemlösningsförmågan hjälper dig att möta utmaningar och klara dem på ett effektivt sätt. De hjälper dig att vara kreativ och hitta lösningar. Problemlösningsförmåga främjar också flexibilitet och anpassningsförmåga i föränderliga situationer, vilket är särskilt viktigt i en ständigt föränderlig värld.",
+                "textFields": {
+                  "1": {
+                    "title": "Välj ett problem som är relevant för din karriär, som du har ställts inför eller kan komma att ställas inför. "
+                  },
+                  "2": {
+                    "title": "Tänk ut minst tre möjliga lösningar på problemet."
+                  },
+                  "3": {
+                    "title": "Välj en av lösningarna. Föreställ dig och skriv nedan de möjliga konsekvenserna av den lösning du valt.",
+                    "description": "Fundera på vilka positiva och negativa effekter lösningen kan få på ditt arbete, dina studier och din vardag."
+                  },
+                  "4": {
+                    "title": "Fundera på vad som skulle kunna hindra dig från att genomföra den lösning du har valt. Kan du förbereda dig för det i förväg?"
+                  }
+                }
+              },
+              "textFields": {
+                "1": {
+                  "title": "Välj ett konkret problem som du ofta ställs inför och skriv det nedan.",
+                  "description": "Till exempel: \"Jag är ofta sen\", \"Jag glömmer ofta att göra mina läxor\", \"Jag spänner mig inför presentationer\", \"Jag har inte tid att träna\"."
+                },
+                "2": {
+                  "title": "Tänk ut tre olika lösningar på detta problem nedan. "
+                }
+              },
+              "afterText": "<strong>Välj den mest genomförbara lösningen. När du har provat lösningen i några dagar ska du göra en utvärdering: Har problemet lösts? Vad fungerade och vad fungerade inte? </strong>"
+            },
+            "3": {
+              "1": {
+                "title": "Lär dig att utveckla alternativ",
+                "feedback": "Bra jobbat! Kreativ brainstorming uppmuntrar en att prova nya saker och se nya och överraskande möjligheter. Kreativitet är viktigt när du planerar din karriär och framtid!",
+                "textFields": {
+                  "1": {
+                    "title": "Lista nedan saker som du är intresserad av eller brinner för. "
+                  },
+                  "2": {
+                    "title": "Fundera på hur dina intressen och passioner kan förknippas med olika karriärmöjligheter: Skriv nedan det första yrket eller den första yrkesrollen som du kommer att tänka på.",
+                    "description": "Detta är vanligtvis det mest bekanta och uppenbara alternativet. "
+                  },
+                  "3": {
+                    "title": "Lista sedan så många nya och annorlunda karriärmöjligheter som du kan på fem minuter.",
+                    "description": "Bedöm eller kritisera inte idéer i det här skedet, utan fokusera på kvantitet och kreativitet."
+                  },
+                  "4": {
+                    "title": "Gå igenom de idéer du kommit med. Öppnade uppgiften upp nya idéer för dina funderingar över karriären?"
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att planera kreativt för framtiden",
+                "feedback": "Kreativitet är en viktig tillgång när du planerar din karriär och framtid, eftersom den hjälper dig att anpassa dig till föränderliga situationer och hitta unika karriärvägar. Kreativitet är nyckeln till kontinuerligt lärande och tillväxt.",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan 3–5 mål som du vill uppnå under de kommande fem åren."
+                  },
+                  "2": {
+                    "title": "Välj ett mål. Fundera över och skriv ner nedan möjliga hinder för att uppnå detta mål."
+                  },
+                  "3": {
+                    "title": "Föreställ dig sedan olika sätt på vilka du kan övervinna eller ta dig runt dessa hinder. Använd en kreativ metod som en tankekarta, sex tänkarhattar eller brainstorming som hjälp för att komma på idéer.",
+                    "description": "Skriv nedan vilken kreativ metod du använder och hur du kan övervinna eventuella hinder för att uppnå ditt mål."
+                  }
+                }
+              },
+              "3": {
+                "title": "Lär dig att förutse på ett kreativt sätt",
+                "textFields": {
+                  "1": {
+                    "title": "Välj en möjlig framtida förändring eller ett fenomen som har eller kan ha en inverkan på din karriär. Föreställ dig och beskriv därefter nedan, i egna textrutor, tre möjliga scenarier (= alternativa beskrivningar av händelseförloppet) hur fenomenet skulle kunna utvecklas under de kommande fem åren:"
+                  },
+                  "2": {
+                    "title": "a. Ett optimistiskt scenario, där allt går på bästa möjliga sätt."
+                  },
+                  "3": {
+                    "title": "b. Ett realistiskt scenario baserat på aktuell information och de mest sannolika utfallen."
+                  },
+                  "4": {
+                    "title": "c. Ett pessimistiskt scenario där saker och ting inte går som förväntat."
+                  }
+                },
+                "feedback": "Kreativitet är en viktig tillgång när du planerar din karriär och framtid, eftersom den hjälper dig att anpassa dig till föränderliga situationer och hitta unika karriärvägar. Kreativitet är nyckeln till kontinuerligt lärande och tillväxt.",
+                "afterText": "<strong>Fundera till slut en stund på vad du kan göra redan nu för att förbereda dig för varje scenario.</strong>"
+              }
+            },
+            "4": {
+              "1": {
+                "title": "Lär dig att identifiera faktorer som påverkar ditt beslutsfattande",
+                "feedback": "Fint! Förmågan att fatta beslut hjälper dig att identifiera och utvärdera olika alternativ, väga fördelar och risker mot varandra och göra välgrundade val.  I förmågan att fatta beslut ingår också att kunna bedöma konsekvenser. Förmågan att fatta beslut kan utvecklas genom övning.",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv ner tre beslut som du nyligen har fattat.",
+                    "description": "Till exempel: \"Jag valde vad jag skulle äta till lunch\", \"Jag bestämde hur jag skulle tillbringa min fritid\", \"Jag valde vad jag skulle ha på mig idag\", \"Jag valde vilken arbetsuppgift jag skulle göra först\", \"Jag valde om jag skulle delta i ett möte på distans eller på plats\"."
+                  },
+                  "2": {
+                    "title": "Fundera på vad som påverkade dessa beslut.",
+                    "description": "Till exempel: \"Jag valde lunch enligt det enda vegetariska alternativet i arbetsplatsens restaurang\", \"Jag valde att ägna min fritid åt en hobby eftersom det får mig att slappna av\", \"Jag valde de här kläderna eftersom jag vet att mina vänner har samma stil\", \"Jag valde ett projekt utifrån dess prioritet och deadline\", \"Jag valde att göra mina läxor snabbt så att jag får mer fritid\", \"Jag valde att delta i mötet på distans eftersom jag kan koncentrera mig bättre utan distraktionerna på kontoret\""
+                  },
+                  "3": {
+                    "title": "Studera ditt svar ovan: Lista nedan de faktorer som sticker ut. Vilka faktorer påverkar ditt beslutsfattande?",
+                    "description": "Till exempel: \"Hälsa\", \"Bekvämlighet\", \"Tidsbesparing\", \"Humör\", \"Andra människors åsikter/förväntningar\", \"Tidtabeller\", \"Prioriteringar\", \"Egen ork\"."
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att fatta välgrundade beslut",
+                "feedback": "Fint! Förmågan att fatta beslut hjälper dig att identifiera och utvärdera olika alternativ, väga fördelar och risker mot varandra och göra välgrundade val.  I förmågan att fatta beslut ingår också att kunna bedöma konsekvenser. Förmågan att fatta beslut kan utvecklas genom övning.",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan en situation där du ska fatta ett beslut gällande dina studier eller din karriär och som du står inför eller kan komma att stå inför i framtiden.",
+                    "description": "Till exempel: \"Val av skola eller studieinriktning\", \"Beslut om fortsatta studier, till exempel magisterexamen eller doktorandstudier\", \"Beslut om vilket företag eller vilken organisation man ska arbeta för\", \"Val mellan olika arbetsuppgifter eller arbetsroller\", \"Beslut om att skaffa nya färdigheter och certifikat som kan främja karriären\", \"Beslut om att helt byta bransch eller byta yrke\", \"Val mellan distansarbete och kontorsarbete\", \"Beslut om att delta i professionella nätverksevenemang och konferenser\", \"Beslut om hur mycket tid och energi som ska ägnas åt arbete i förhållande till det personliga livet\""
+                  },
+                  "2": {
+                    "title": "Fundera på och skriv nedan vilken information du behöver för att fatta ett beslut och varför.",
+                    "description": "Till exempel: \"Beslut om att flytta till en annan stad för att arbeta: Informationen du behöver: Levnadskostnader och boendealternativ i den nya staden, pendlingsavstånd och kollektivtrafik, livskvalitet och fritidsmöjligheter i den nya staden. Varför: Jag vill vara säker på att flytten är ekonomiskt försvarbar och att jag kan hitta en lämplig lägenhet. Jag vill veta att avståndet till arbetet är rimligt och att kollektivtrafiken fungerar bra. Jag vill se till att den nya staden erbjuder en god livskvalitet och goda fritidsmöjligheter.\""
+                  },
+                  "3": {
+                    "title": "Fundera på och skriv nedan var du kan hitta den information du behöver som stöd för ditt beslutsfattande.",
+                    "description": "Till exempel: \"Beslut om att flytta till en annan stad för att arbeta: Stadens officiella webbplatser, bostadsportaler, kostnadsberäknare, reseplanerare för kollektivtrafiken, karttjänster, webbplatser för lokala nyheter och evenemang, sociala medier och forum, lokala grupper där man kan be om råd och utbyta erfarenheter.\""
+                  }
+                }
+              }
+            },
+            "5": {
+              "1": {
+                "title": "Lär dig att sätta upp mål för dig själv",
+                "feedback": "Fint! Tydligt definierade mål hjälper dig att fokusera på det väsentliga och fatta välgrundade beslut. Delmålen bidrar till att se de konkreta stegen mot långsiktiga mål. ",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan ett mål som är viktigt för dig personligen.",
+                    "description": "Till exempel: \"Jag vill förbättra min fysiska kondition\", \"Jag vill förbättra mina presentationer\", \"Jag vill förbättra mina provresultat\"."
+                  },
+                  "2": {
+                    "title": "Skriv nedan varför det här målet är viktigt för dig och hur det kommer att förbättra ditt liv.",
+                    "description": "Till exempel: \"Bättre kondition hjälper mig att klara vardagen bättre och förbättrar mitt allmänna välbefinnande\", \"Bättre presentationer hjälper mig att kommunicera projektresultat mer effektivt\", \"Bättre betyg förbättrar mina chanser att få det jobb jag vill ha efter examen\"."
+                  },
+                  "3": {
+                    "title": "Definiera målet närmare och sätt en tidsgräns. ",
+                    "description": "Till exempel: \"Jag vill kunna springa 5 kilometer utan paus inom tre månader\", \"Jag vill vara självsäker när jag presenterar slutrapporten för projektet på ett seminarium om en månad\", \"Jag vill höja mitt betyg på nästa prov med en siffra\"."
+                  },
+                  "4": {
+                    "title": "Bryt ner målet i mindre, hanterbara delar.",
+                    "description": "Till exempel: \"Presentationsfärdighet: Vecka 1–2: Förbered innehållet i presentationen. Vecka 3: Öva på ditt framträdande framför en spegel. Vecka 4: Håll presentationen för kollegor och be om feedback\", \"Provresultat: Vecka 1–2: Gör en läsplan och dela upp materialet per dag. Vecka 3: Öva på gamla provfrågor. Vecka 4: Repetera de svåraste sakerna och gör ett övningsprov.\""
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att planera din karriär på ett sätt som stöder dina mål",
+                "feedback": "Fint! Tydligt definierade mål hjälper dig att fokusera på det väsentliga och fatta välgrundade beslut. Kom ihåg att det finns många vägar till mållinjen! Fundera på hur du kan anpassa dina planer om du stöter på hinder. ",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv ner ett konkret mål som du vill uppnå i ditt arbete eller dina studier.",
+                    "description": "Till exempel: \"Jag vill avancera i mitt nuvarande jobb.\""
+                  },
+                  "2": {
+                    "title": "Skriv nedan varför det här målet är viktigt för dig och hur det kommer att förbättra ditt liv."
+                  },
+                  "3": {
+                    "title": "Lista de färdigheter och resurser som du behöver för att uppnå ditt mål.",
+                    "description": "Till exempel: \"Jag behöver ledarförmåga\", \"Jag behöver mer erfarenhet av projektledning\"."
+                  },
+                  "4": {
+                    "title": "Skriv nedan de konkreta steg du tänker ta för att uppnå målet.",
+                    "description": "Till exempel: \"Jag deltar i en ledarskapsutbildning under nästa månad\", \"Jag söker projektledaruppdrag i mitt nuvarande jobb\"."
+                  },
+                  "5": {
+                    "title": "Sätt en tidsgräns för varje steg och följ upp dina framsteg. ",
+                    "description": "Till exempel: \"Ledarskapsutbildning genomförd före årets slut\" \"Första projektledningsuppdraget slutfört inom tre månader\"."
+                  }
+                }
+              }
+            },
+            "6": {
+              "1": {
+                "title": "Lär dig att identifiera risker",
+                "emojiTitle": "Välj en beskrivande emoji för varje risk.",
+                "description": "<strong>Skriv 3–5 möjliga risker som du kan utsättas för i ditt arbets- eller studieliv i egna textrutor.</strong><br /><i>Till exempel: \"Hantering av tidtabeller\", \"Tekniska störningar\", \"Hälsoproblem\". \"Konflikter med arbets- eller studiekamrater\", \"Problem med datasäkerhet”</i><br /><br /><strong>●  Hur sannolikt är det att riskerna blir verklighet? Kan du tänka dig sätt att hantera eller minska riskerna? Skriv minst ett sätt för varje risk i textrutan i fråga.</strong><br /><i>Till exempel: Hantering av tidtabeller - Använd kalender och ställ in påminnelser för viktiga uppgifter.</i>",
+                "feedback": "Beredskap i karriärplaneringen innebär att man medvetet förbereder sig för olika alternativ. Att fundera på chanserna att lyckas med planer och förbereda sig för risker ger en känsla av kontroll. "
+              },
+              "2": {
+                "title": "Lär dig att göra en reservplan",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan tre möjliga förändringar eller risker som du kan ställas inför under det kommande året.",
+                    "description": "Dessa kan ha att göra med till exempel karriär, studier, det personliga livet eller ekonomi. Ta för varje risk ställning till frågorna nedan:<br />Varför risken är möjlig<br />Möjliga konsekvenser om risken förverkligas"
+                  },
+                  "2": {
+                    "title": "Välj en av de förändringar eller risker som du beskrivit ovan och fundera på hur du kan förbereda dig för den. Fundera på och skriv nedan möjliga åtgärder som du kan vidta för att minska sannolikheten för eller konsekvenserna av att risken förverkligas."
+                  }
+                },
+                "feedback": "Beredskap i karriärplaneringen innebär att man medvetet förbereder sig för olika alternativ. Att fundera på chanserna att lyckas med planer och förbereda sig för risker ger en känsla av kontroll. "
+              }
+            },
+            "7": {
+              "1": {
+                "title": "Lär dig att utveckla flexibilitet vid förändringar i livet",
+                "feedback": "Livet förändras ständigt och resiliens hjälper dig att anpassa dig till nya situationer och miljöer. Resiliens är förmågan att anpassa sig och klara av förändringar och utmaningar. Det innebär psykisk flexibilitet och återhämtningsförmåga.",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan 1–3 förändringar i ditt liv som har haft en betydande inverkan på dig.",
+                    "description": "Till exempel: nytt jobb, ändrade arbetsuppgifter, uppsägning eller permittering, flytt, examen, ny studieplats, avbrott i studierna, ny familjemedlem, sjukdom, förändrade relationer, utbytesperiod utomlands."
+                  },
+                  "2": {
+                    "title": "Välj en av de förändringar som du listade ovan och beskriv nedan hur du reagerade på den förändringen.",
+                    "description": "Till exempel: \"Nytt jobb: Jag kände mig glad över mitt drömjobb, men samtidigt kände jag mig stressad och osäker på det nya jobbet: Jag vågade inte fråga mina chefer eller kollegor om råd\"."
+                  },
+                  "3": {
+                    "title": "Fundera på och skriv nedan vad som var nyttigt i din reaktion och vad som inte var det."
+                  },
+                  "4": {
+                    "title": "Skriv nedan ett sätt på vilket du skulle kunna vara mer flexibel när det gäller att reagera på liknande förändringar i framtiden.",
+                    "description": "Till exempel: \"Jag söker mer stöd och råd från kollegor\", \"Jag nätverkar med andra studerande\"."
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att stärka resiliensen",
+                "feedback": "Bra! Det lönar sig att satsa på att utveckla och upprätthålla resiliensen! Betydelsen av motion, hälsosam kost och socialt stöd kan inte nog betonas när man talar om resiliens. Kom ihåg att belöna dig själv för dina prestationer!",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan fem färdigheter, styrkor eller karaktärsdrag som stöder din resiliens, det vill säga din förmåga att klara av och anpassa dig till förändringar och risker. ",
+                    "description": "Till exempel: problemlösningsförmåga, god tidshantering, kommunikationsförmåga, anpassningsförmåga, självkontroll, uthållighet, empati, optimism, kreativitet, självförtroende, flexibilitet, beslutsamhet, kritiskt tänkande, självmedkänsla, nätverkande."
+                  },
+                  "2": {
+                    "title": "Hur upprätthåller och utvecklar du din resiliens? Skriv nedan.",
+                    "description": "Till exempel: motion, hälsosam kost, tillräcklig sömn, socialt stöd, mindfulness och meditation, schemaläggning och prioritering, avslappningstekniker, positivt tänkande, målsättning, självbelöning"
+                  }
+                }
+              }
+            },
+            "8": {
+              "1": {
+                "title": "Lär dig att känna igen hur du hanterar osäkerhet",
+                "feedback": "Tolerans mot osäkerhet är förmågan att klara av situationer där utfallet eller nästa steg inte är klara. Det är en förmåga som hjälper dig att agera, även om du inte har alla svar. ​",
+                "emojiTitle": "Välj beskrivande emojis för varje situation",
+                "description": "<strong>Skriv nedan i egna textfält 1–3 situationer där du har känt dig osäker under den senaste månaden.</strong><br /><i>Till exempel: \"Oklara arbetsuppgifter\", \"Osäkerheter relaterade till studier, t.ex. tentamensresultat\", \"Förändringar i relationer\", \"Inkomstrelaterade/finansiella utmaningar”.</i><br /><br /><strong>Välj en av situationerna och beskriv i textfältet hur du reagerar på osäkerheten: Vilka känslor upplevde du (t.ex. rädsla, ångest, stress, förvirring)? Hur påverkade dessa känslor ditt beteende?</strong>"
+              },
+              "2": {
+                "title": "Lär dig att utveckla din tolerans mot osäkerhet",
+                "feedback": "Tolerans mot osäkerhet är förmågan att klara av situationer där utfallet eller nästa steg inte är klara. Det är en förmåga som hjälper dig att agera, även om du inte har alla svar. ​  Prova den plan du just har gjort och reflektera över dina upplevelser: tänk på vad du lärde dig av den här processen och hur du kan använda det du lärt dig i framtiden.",
+                "textFields": {
+                  "1": {
+                    "title": "Välj och skriv nedan en situation i samband med arbete eller studier där du nyligen har känt dig osäker.",
+                    "description": "Till exempel: \"Oklara arbetsuppgifter\", \"Osäkerheter relaterade till studier, såsom tentamensresultat\", \"Anställningsintervju\", \"Personalförändringar på arbetsplatsen\"."
+                  },
+                  "2": {
+                    "title": "Beskriv hur du reagerade när du kände dig osäker?"
+                  },
+                  "3": {
+                    "title": "Fundera på och skriv nedan tre exempel på hur du skulle kunna reagera mer flexibelt på i liknande osäkra situationer i framtiden.",
+                    "description": "Till exempel: \"Jag diskuterar oklara arbetsuppgifter öppet med mitt team\"."
+                  },
+                  "4": {
+                    "title": "Välj en av de nya sätten som du listade ovan och gör en plan för hur du ska prova den för att se om den fungerar i praktiken.",
+                    "description": "Till exempel: \"Jag är osäker på vad som förväntas av mig i samband med ett nytt arbetsprojekt: Jag diskuterar situationen öppet med mina kollegor och ber min chef om förtydliganden om det behövs.\""
+                  }
+                }
+              }
+            }
+          },
+          "info": "Det är viktigt att föreställa sig och drömma om sin framtid när man planerar sitt liv och sin karriär. Kreativitet hjälper dig att utveckla nya idéer och lösningar, och medvetna och välgrundade beslut stöder dina långsiktiga mål. Hänsyn till risker och beredskapsplaner hjälper dig att hantera oväntade situationer och behålla en positiv attityd inför förändringar.",
+          "feedbacks": {
+            "1": {
+              "description": "Det är viktigt att du identifierar dina egna drömmar och ambitioner, eftersom de kommer att vägleda dig mot dina mål. Att sätta upp mål och arbeta för att uppnå dem spelar en nyckelroll i karriärplaneringen. Genom att identifiera de faktorer som påverkar ditt beslutsfattande kan du lättare göra välgrundade val. Fortsätt på samma sätt! Du är på rätt väg mot att utveckla dina karriärkompentenser."
+            },
+            "2": {
+              "description": "Bra! Du verkar ha förmåga att reflektera över din framtid och de faktorer som påverkar den. Strukturering av information hjälper dig att hitta lösningar på även de svåraste situationerna. Dessutom hjälper din förmåga att se olika perspektiv och utvärdera alternativ att hjälpa dig i ditt beslutsfattande. Det lönar sig att öva på förmågan att fatta beslut."
+            },
+            "3": {
+              "description": "Du är en mångsidig och skicklig tänkare! Du kan bedöma alternativ ur många synvinklar och är beredd att möta förändringar och risker. Det är fint att du också kan se annorlunda lösningar och nya möjligheter. Kreativitet öppnar dörrar till nya vägar. Fortsätt att sträva efter dina mål - du är på rätt väg! Bekanta dig med tipsen nedan för nästa steg!"
+            },
+            "4": {
+              "description": "Jättebra! Du verkar vara väldigt bra på att tänka i många olika banor och uppfatta breda kopplingar. Du kan bedöma alternativ ur många synvinklar och är beredd att möta förändringar och risker. Kom också ihåg att det alltid är möjligt att lära sig mer och utvecklas i livet. Lycka till på din resa!"
+            }
+          },
+          "name": "Redo för förändring",
+          "long-name": "Den egna framtiden och förändringsförmågan"
+        },
+        "world-around-you": {
+          "sections": {
+            "opportunities-and-constraints": {
+              "name": "Möjligheter och villkor",
+              "questions": {
+                "1": {
+                  "title": "Jag kan ta vara på möjligheter som passar min situation och ta hänsyn till villkoren."
+                }
+              },
+              "info": "Möjligheter innebär alternativa vägar och möjligheter som livet erbjuder. Villkor är begränsningar som påverkar dina beslut eller din planering. Villkoret kan till exempel handla om hälsa, boende och situationen på arbetsmarknaden."
+            },
+            "labor-market": {
+              "name": "Arbetsmarknaden",
+              "questions": {
+                "1": {
+                  "title": "Jag identifierar förändringar och möjligheter på arbetsmarknaden som kan påverka min situation."
+                }
+              },
+              "info": "Arbetsmarknadsdata talar om vilka jobbmöjligheter som finns och hur jobbsituationen ser ut inom olika sektorer. Kännedom om arbetsmarknaden hjälper dig att inrikta din karriär på ett målmedvetet sätt."
+            },
+            "education-and-learning": {
+              "name": "Utbildning och studier",
+              "questions": {
+                "1": {
+                  "title": "Jag kan hitta utbildnings- och studiemöjligheter som passar min situation."
+                }
+              },
+              "info": "Du kan utbilda dig och studera på olika sätt i olika skeden av ditt liv och din karriär. Det kan innebära att lära sig nya färdigheter, vidareutbilda sig eller till och med att studera till ett helt nytt yrke. Kontinuerligt lärande förbättrar inte bara dina yrkeskunskaper utan öppnar också upp för nya möjligheter."
+            },
+            "social-structures": {
+              "name": "Samhällets strukturer",
+              "questions": {
+                "1": {
+                  "title": "Jag kan identifiera de strukturer i samhället och arbetslivet som är relevanta för min situation."
+                }
+              },
+              "info": "Samhällsstrukturer, såsom lagar, politiskt beslutsfattande, ekonomi, utbildningssystem, kultur samt segregering och ojämlikhet på arbetsmarknaden kan påverka din karriärplanering. Vissa yrken domineras till exempel av män och andra av kvinnor, och detta kan medvetet eller omedvetet styra dina egna karriärval."
+            },
+            "ecosocial-factors": {
+              "name": "Ekosociala faktorer",
+              "questions": {
+                "1": {
+                  "title": "Jag kan ta hänsyn till hållbar utveckling och mänskliga rättigheter i min karriärplanering."
+                }
+              },
+              "info": "Ekosocialitet inom karriärplanering innebär att man vid val av karriär strävar efter att beakta inverkan på miljön och andra människors välbefinnande. Detta kan hjälpa dig att hitta en karriär som är meningsfull och i linje med dina värderingar."
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "title": "Lär dig att identifiera möjligheter som är lämpliga för din situation",
+                "feedback": "Hjälpte övningen dig att identifiera möjligheter som är lämpliga för din situation?  Möjligheter innebär alternativa vägar och möjligheter som livet erbjuder. Ett villkor är en begränsning som påverkar beslutsfattandet eller planeringen. Villkoret kan till exempel handla om hälsa, boende och situationen på arbetsmarknaden.",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv en kort beskrivning av din nuvarande situation eller dina mål.",
+                    "description": "Letar du till exempel efter ett nytt jobb, vill du utveckla en ny färdighet eller planerar du ett nytt projekt?"
+                  },
+                  "2": {
+                    "title": "Lista 1–3 möjliga sätt att gå vidare i din situation. ",
+                    "description": "Till exempel att delta i kurser, söka jobb, träffa nya människor."
+                  },
+                  "3": {
+                    "title": "Välj en möjlighet från din lista och besvara följande frågor:",
+                    "description": "Hur realistisk är denna möjlighet?\nVilka resurser eller färdigheter behöver du för att utnyttja den?\nVilka är följande steg för att uppnå denna möjlighet?\nFundera på vilka utmaningar du kan ställas inför när du ska genomföra planen."
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att jämföra de möjligheter som olika alternativ medför och villkoren som påverkar dem",
+                "feedback": "Hoppas att detta gjorde dina tankar klarare. Möjligheter innebär alternativa vägar och möjligheter som livet erbjuder. Ett villkor är en begränsning som påverkar beslutsfattandet eller planeringen. Villkoret kan till exempel handla om hälsa, boende och situationen på arbetsmarknaden.",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv en kort beskrivning av din nuvarande situation eller dina mål.",
+                    "description": "Letar du till exempel efter ett nytt jobb, vill du utveckla en ny färdighet eller planerar du ett nytt projekt?"
+                  },
+                  "2": {
+                    "title": "Lista 2–5 möjliga sätt att gå vidare i din situation.",
+                    "description": "Till exempel att delta i kurser, söka jobb, träffa nya människor."
+                  },
+                  "3": {
+                    "title": "Jämför dessa alternativa sätt. Vilka är skillnaderna mellan alternativen?"
+                  },
+                  "4": {
+                    "title": "Vilket alternativ skulle passa dig bäst? Vilka utmaningar kan du ställas inför när du ska genomföra den här planen?"
+                  }
+                }
+              },
+              "3": {
+                "title": "Lär dig att utveckla planeringen av karriären och framtiden inom ramen för villkoren",
+                "feedback": "Hjälpte övningen dig att ta bättre hänsyn till villkoren i din framtidsplan?    Möjligheter innebär alternativa vägar och möjligheter som livet erbjuder. Ett villkor är en begränsning som påverkar beslutsfattandet eller planeringen. Villkoret kan till exempel handla om hälsa, boende och situationen på arbetsmarknaden.",
+                "textFields": {
+                  "1": {
+                    "title": "Välj en av dina framtidsplaner vars genomförbarhet du vill överväga i förhållande till villkoren."
+                  },
+                  "2": {
+                    "title": "Lista de villkor som kan påverka din plan",
+                    "description": "T.ex. plats, utbildning, kompetens, budget, tidtabell, resurser, krav i det dagliga livet"
+                  },
+                  "3": {
+                    "title": "Bedöm vilka villkor som är mest kritiska och vilka du kan och inte kan påverka."
+                  }
+                }
+              }
+            },
+            "2": {
+              "1": {
+                "title": "Lär dig att känna igen förändringar i arbetslivet och i hur arbetet utförs",
+                "feedback": "Fint! Att förstå förändringarna i arbetslivet och arbetet hjälper dig att inrikta din karriär på ett målmedvetet sätt. ",
+                "description": "Arbetslivet förändras hela tiden. Globaliseringen av ekonomin, ny teknik, robotisering och digitaliseringens utveckling samt den åldrande befolkningen är centrala förändringar i arbetslivet. Arbetssätten och yrkena håller på att förändras. Titta på orden nedan som har med arbete, arbetsliv och arbetande att göra.",
+                "wordLists": {
+                  "1": {
+                    "title": "Välj de som du vill ska vara en del av ditt arbetsliv:"
+                  },
+                  "2": {
+                    "title": "Välj de faktorer som du inte vill ska vara en del av ditt arbetsliv:"
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att bedöma arbetslivets utvecklingstrender och krav och återspegla dem i dina egna planer",
+                "feedback": "Bra! Att utveckla sin egen beredskap för förändring och att ställa sig positivt till livslångt lärande är en bra för din framtida karriär.",
+                "textFields": {
+                  "1": {
+                    "title": "Studera den information som finns tillgänglig om arbetslivet. Fundera över vilka färdigheter och kompetenser som behövs nu och vad som kommer att behövas i framtiden.",
+                    "link": "https://www.sitra.fi/sv/",
+                    "link-2": "https://www.osaamistarvekompassi.fi/sv",
+                    "description": "Du kan använda till exempel <0>sitra.fi/</0>, <1>www.osaamistarvekompassi.fi</1>-webbplatser och rapporter från branschen som hjälp. "
+                  },
+                  "2": {
+                    "title": "Spegla den information du hittar mot din egen situation och dina planer. ​",
+                    "description": "Fundera på vilka förändringar i arbetslivet som kommer att påverka dina planer mest och hur du kan förbereda dig för dem. "
+                  }
+                }
+              }
+            }
+          },
+          "info": "Kännedom om verksamhetsmiljön hjälper dig att förstå de möjligheter och utmaningar som finns runt omkring dig. När du känner till kraven och utvecklingstrenderna på arbetsmarknaden och inom din bransch kan du dig att hålla din kompetens och dina ambitioner uppdaterade i en föränderlig värld.",
+          "feedbacks": {
+            "1": {
+              "description": "Det är viktigt att vara medveten om de faktorer i din omgivning som påverkar din karriär och ditt liv. Kom ihåg att vara öppen för nya perspektiv och redo att lära dig mer. Ansvarsfull konsumtion och respekt för miljön är också viktiga steg mot en hållbar framtid."
+            },
+            "2": {
+              "description": "Du har identifierat dina viktigaste möjligheter och de villkor som påverkar dem. Du kan analysera situationen på arbetsmarknaden och studiemöjligheter. Du är medveten om hur samhällets strukturer fungerar och hur de påverkar möjligheterna. Fortsätt på samma sätt och var öppen för nya möjligheter till lärande!"
+            },
+            "3": {
+              "description": "Det är bra att du kan jämföra möjligheter och begränsningar och välja de bästa alternativen för din situation. Förmågan att kunna granska arbetsmarknaden och bedöma utbildningsbehov är viktiga färdigheter. Fortsätt på samma sätt - du är på rätt väg!"
+            },
+            "4": {
+              "description": "Utmärkt! Du känner din verksamhetsmiljö mycket väl! Förståelse för strukturer och förändringar i samhället hjälper dig att göra bättre planer, och hänsyn till ekosociala faktorer är viktigt för en hållbar framtid. Flexibilitet och fördomsfrihet är viktiga egenskaper i ett föränderligt arbetsliv."
+            }
+          },
+          "name": "Världen omkring dig",
+          "long-name": "Kännedom om verksamhetsmiljön"
+        },
+        "together-ahead": {
+          "sections": {
+            "articulating-competence": {
+              "name": "Formulering av kompetens",
+              "questions": {
+                "1": {
+                  "title": "Jag kan berätta om min kompetens och ge konkreta exempel."
+                }
+              },
+              "exercises": {
+                "3": {
+                  "textFields": {
+                    "1": {
+                      "title": "Din hissplats"
+                    }
+                  }
+                }
+              },
+              "info": "Att klä kompetensen i ord innebär att du tydligt berättar vad du kan och vad du är bra på. Detta är viktigt till exempel när du söker jobb och vill berätta om dina färdigheter för andra."
+            },
+            "communication": {
+              "name": "Kommunikation",
+              "questions": {
+                "1": {
+                  "title": "Jag kan uttrycka mig i olika kommunikationssituationer."
+                }
+              },
+              "info": "Kommunikation är det sätt på vilket människor talar eller uttrycker saker till varandra. Kommunikationen kan vara verbal eller icke-verbal. God kommunikation hjälper dig att berätta om dina mål och din kompetens på ett tydligt sätt. Det är viktigt när du vill bilda nätverk eller samarbeta."
+            },
+            "interaction-in-work-study-and-networks": {
+              "name": "Interaktion i arbete, studier och egna nätverk",
+              "questions": {
+                "1": {
+                  "title": "Jag kan handla i olika interaktionssituationer."
+                },
+                "2": {
+                  "title": "Jag vet hur nätverk kan hjälpa mig i mina studier, mitt arbete och mitt övriga liv."
+                }
+              },
+              "info": "Interaktion innebär att människor utbyter idéer och åsikter sinsemellan och samarbetar. Bra interaktion bygger på att man lyssnar på varandra och arbetar tillsammans. Nätverkande betyder att man skapar och upprätthåller användbara relationer med andra människor."
+            },
+            "asking-and-utilizing-help": {
+              "name": "Begäran om och utnyttjande av hjälp",
+              "questions": {
+                "1": {
+                  "title": "Jag vet hur jag kan be om och få hjälp med viktiga val."
+                }
+              },
+              "info": "Du är inte ensam om att fundera över din karriär. Du kan be om hjälp av till exempel familj, vänner eller samhällets olika tjänster. Att be om hjälp kan hjälpa dig att gå vidare med dina karriärplaner."
+            },
+            "societal-services": {
+              "name": "Tjänster som samhället erbjuder",
+              "questions": {
+                "1": {
+                  "title": "Jag kan utnyttja de tjänster som samhället tillhandahåller i min egen livs- och karriärplanering."
+                }
+              },
+              "info": "Samhället tillhandahåller ett brett utbud av tjänster som hjälper dig att planera din karriär. Sådana är till exempel utbildnings- och sysselsättningstjänster."
+            },
+            "job-search-skills": {
+              "name": "Färdigheter i jobbsökning",
+              "questions": {
+                "1": {
+                  "title": "Jag kan utnyttja de sysselsättningsmöjligheter som passar min situation och berätta om min kompetens i jobbsökningssituationer."
+                }
+              },
+              "info": "Färdigheter i jobbsökning omfattar till exempel att känna till aktuell praxis för jobbsökning, att kunna berätta om sin kompetens på ett tydligt sätt och att kunna skriva bra jobbsökningsdokument som CV och jobbansökningar."
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "title": "Lär dig att identifiera och formulera din kompetens",
+                "emojiTitle": "Välj beskrivande emojis för varje sak",
+                "feedback": "Bra, du är medveten om många av dina viktiga färdigheter och kompetenser! Att formulera sin kompetens innebär att du tydligt berättar vad du kan och vad du är bra på. Detta är viktigt till exempel när du söker jobb eller arbetar i en grupp och vill dela med dig av dina kunskaper till andra. ",
+                "description": "<strong>Lista nedan i egna textrutor 3–5 saker som du känner att du är bra på.</strong> Det behöver inte bara handla om yrkeskunskaper, utan du kan också fundera på färdigheter som du förvärvat genom hobbyer och i vardagen. <br /><i>Till exempel: \"Jag är bra på att lyssna på andra och förstå deras synpunkter\", \"Jag lär mig nya färdigheter snabbt\", \"Jag kan samarbeta med olika människor”.</i><br /><br /><strong>● Välj en färdighet och skriv i textrutan ett konkret exempel på när du har använt den färdigheten. </strong><br /><i>Till exempel: \"Jag kan samarbeta med olika människor: Jag deltog i ett studieprojekt där gruppmedlemmarna hade olika bakgrund och styrkor. Jag märkte att några i teamet upplevde att man inte lyssnade på deras idéer. Jag startade en diskussion där alla fick dela med sig av sina idéer. Detta förbättrade stämningen i gruppen, och projektet lyckades mycket bra tack vare alla deltagares insatser.”</i>"
+              },
+              "2": {
+                "title": "Lär dig att strukturera och beskriva din kompetens",
+                "feedback": "Att beskriva dina egna färdigheter och identifiera deras potentiella tillämpningsområden hjälper dig att använda dem på ett mångsidigt sätt i din karriärplanering och i livet. Våga vara modig och självsäker när du berättar om dina färdigheter och prestationer.",
+                "emojiTitle": "Välj beskrivande emojis för varje färdighet",
+                "description": "<strong>Skriv nedan i egna textrutor 3–5 färdigheter som du är bra på.</strong> Det kan handla om både professionella och personliga färdigheter. <br /><i>Till exempel: språkkunskap, presentationsfärdighet, kundservice, förmåga att lyssna, social kompetens, ledarskap, teamwork, förmåga att arbeta självständigt, kommunikation, problemlösningsförmåga, tekniska färdigheter.</i><br /><br /><strong>● Välj en färdighet och skriv i textrutan hur färdigheten kan tillämpas i olika situationer. Beskriv kortfattat hur du skulle kunna använda din valda färdighet i tre olika situationer.</strong><br /><i>Till exempel: \"Färdighet: problemlösningsförmåga. 1. På arbetsplatsen märker jag att teamet ligger efter i tidtabellen eftersom en fas i projektet har blivit försenad. Jag använder min problemlösningsförmåga för att föreslå att vi omfördelar arbetet och fokuserar på de mest brådskande uppgifterna. 2. Under ett grupparbete i skolan kan mitt team inte hitta ett lämpligt ämne för en presentation. Jag föreslår att vi var och en föreslår tre idéer och röstar om det bästa ämnet. 3. Hemma märker jag att familjemedlemmarnas tidtabeller går i kors och att sysslor inte blir gjorda. Jag sammanställer en lista över sysslorna och föreslår att alla väljer en syssla för veckan.”</i>"
+              },
+              "3": {
+                "title": "Lär dig att kommunicera dina färdigheter på ett effektivt sätt",
+                "feedback": "Hjälpte övningen dig att kommunicera din kompetens snabbt och tydligt? Nu är det dags att utnyttja alla möjligheter att berätta om din kompetens med mod och självförtroende. Varje steg tar dig närmare dina mål.",
+                "description": "<strong>Gör ditt eget hisstal. Ett hisstal är en kort presentation av dig själv och dina färdigheter. Syftet att på ett klart och kortfattat sätt berätta vad du kan och varför det är viktigt.</strong><br /><br /><strong>● Skriv i textrutan nedan några meningar om dig själv. Tänk på vad du gör för närvarande (till exempel studier eller arbete) och vilka dina styrkor är. </strong><br /><i>Till exempel: \"Jag heter Mari och jag studerar företagsekonomi vid yrkeshögskolan. Jag är specialiserad på marknadsföring och har god kommunikationsförmåga.”</i><br /><strong>● Fundera sedan på vad som är din starkaste kompetens som du vill lyfta fram. Den kan vara kopplad till arbete, studier eller fritidsintressen. </strong><br /><i>Till exempel: \"Jag är särskilt bra på marknadsföring i sociala medier och jag kan utnyttja detta effektivt för att öka företags synlighet.”</i><br /><strong>● Förklara sedan kortfattat hur dina färdigheter eller din kompetens kan vara till nytta för till exempel din arbetsgivare, ditt team eller dina kunder. </strong><br /><i>Till exempel: \"Jag har hjälpt flera företag att öka sitt kundantal genom kampanjer i sociala medier. Jag har erfarenhet av vad som fungerar bäst för olika målgrupper.”</i><br /><strong>● Sammanfatta punkterna i ett kort tal på 30 sekunder. Spela in ditt hisstal till exempel på din telefon, och öva! Hisstalet ska vara tydligt och flytande. </strong><br /><i>Till exempel: \"Jag heter Mari och studerar ekonomi med inriktning på marknadsföring. Jag är särskilt bra på marknadsföring i sociala medier och har hjälpt företag att förbättra sin synlighet och öka antalet kunder. Jag letar efter möjligheter att använda dessa färdigheter i ett marknadsföringsteam.”</i>"
+              }
+            },
+            "2": {
+              "1": {
+                "title": "Lär dig att identifiera dina egna kommunikationsfärdigheter",
+                "feedback": "Bra! Kommunikation finns överallt där människor möter varandra. Kommunikation kan vara verbal eller icke-verbal, och det finns otaliga kommunikationssätt, kommunikationsformer och kommunikationskanaler. Kommunikation hjälper dig att uttrycka dina mål, ambitioner och din kompetens på ett tydligt sätt",
+                "description": "<strong>Tänk på två olika kommunikationssituationer som du har varit inblandad i. </strong><br /><i>Till exempel: e-postkonversation, chattande eller möte i en studie-/arbetsmiljö eller ett samtal med en vän eller familjemedlem. </i>",
+                "textFields": {
+                  "1": {
+                    "title": "Reflektera och skriv nedan hur kommunikationssituationerna skiljde sig från varandra.",
+                    "description": "Kommunicerar du på olika sätt i olika sammanhang, kanaler och miljöer? Vilken typ av icke-verbal kommunikation (gester, ansiktsuttryck, tonfall) lade du märke till i de här två situationerna? "
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att bedöma din egen kommunikationsförmåga",
+                "feedback": "Fint! Den här övningen hjälpte dig att förstå din egen kommunikationsförmåga och gav dig konkreta åtgärder för att förbättra den. God kommunikation hjälper dig att skapa nätverk och nå dina karriärmål.",
+                "description": "<strong> Tänk på en kommunikationssituation som du har varit inblandad i. Besvara frågorna nedan.</strong>",
+                "textFields": {
+                  "1": {
+                    "title": "Hur förberedde du dig inför kommunikationssituationen?",
+                    "description": "T.ex. du klargjorde dina mål, planerade på förhand, lyssnade på den andra parten först"
+                  },
+                  "2": {
+                    "title": "Hur lyckades kommunikationen?",
+                    "description": "Var du begriplig, flytande och tydlig?"
+                  },
+                  "3": {
+                    "title": "Vilka kommunikationskanaler använde du?",
+                    "description": "T.ex. ansikte mot ansikte, telefon, e-post, videomöte, sociala medier"
+                  },
+                  "4": {
+                    "title": "Uppstod det utmaningar i situationen?",
+                    "description": "T.ex. missförstånd, oklarhet, styrning av samtalet"
+                  },
+                  "5": {
+                    "title": "Reflektera över hur kommunikationssituationen lyckades? Lyckades du lyfta fram dina synpunkter och ta hänsyn till den andra personens situation och synpunkter?"
+                  }
+                }
+              },
+              "3": {
+                "title": "Lär dig att utveckla din egen kommunikationsförmåga",
+                "feedback": "Fint! Nu har du konkreta åtgärder för att utveckla din kommunikationsförmåga! God kommunikation hjälper dig att skapa nätverk och nå dina karriärmål.",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv nedan ett mål som du vill uppnå genom att utveckla din kommunikationsförmåga.",
+                    "description": "Till exempel: \"Jag vill presentera mina idéer på ett tydligt och självsäkert sätt i möten.\""
+                  },
+                  "2": {
+                    "title": "Vilka specifika kommunikationsfärdigheter behöver du utveckla för att uppnå målet?",
+                    "description": "Till exempel: \"Jag behöver lära mig att använda visuella hjälpmedel såsom diabilder, och lära mig att tala övertygande inför en grupp.\" "
+                  },
+                  "3": {
+                    "title": "Hur tänker du öva upp dessa färdigheter?",
+                    "description": "Till exempel: \"Jag ska öva på att använda PowerPoint och be mina kollegor om feedback på presentationsmaterialet. Jag ska också öva på att uppträda på interna möten på min avdelning för att bli bättre på att uppträda.\""
+                  },
+                  "4": {
+                    "title": "När tänker du pröva dina kunskaper i praktiken?",
+                    "description": "Till exempel: \"Om en månad presenterar jag min avdelnings verksamhetsplan för ledningsgruppen.\""
+                  }
+                }
+              }
+            },
+            "3": {
+              "1": {
+                "title": "Lär dig att lägga märke till dina styrkor i interaktionen",
+                "feedback": "Hjälpte övningen dig att identifiera vilka dina styrkor är när det gäller interaktion? Det är viktigt att känna igen sitt eget sätt att agera. Interaktion handlar om färdigheter som man lär sig under hela livet. Om du upplever att en interaktionssituation är utmanande kan övning hjälpa dig att agera i situationen. Du får självsäkerhet för interaktionen och interaktionen blir lättare genom upprepning, övning och erfarenhet.",
+                "wordLists": {
+                  "1": {
+                    "title": "Välj från listan fem styrkor som beskriver dig och som kommer fram när du arbetar i ett team, en studiegrupp eller i ditt eget nätverk."
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att använda och utveckla dina nätverk",
+                "feedback": "Bra jobbat med att identifiera och bedöma dina nätverk! Dina nätverk är en viktig resurs för att utveckla din karriär. Det lönar sig att kontinuerligt utveckla dina nätverk. Att upprätthålla dem genom regelbunden kontakt till exempel via sociala medier är ett utmärkt sätt att stärka relationerna.  ",
+                "textFields": {
+                  "1": {
+                    "title": "Lista dina nuvarande nätverk: skriv nedan alla personer och grupper som du regelbundet har att göra med.",
+                    "description": "Till exempel: Familj och vänner; nuvarande och tidigare kollegor; fackorganisation; sociala nätverk"
+                  },
+                  "2": {
+                    "title": "Fundera på hur varje nätverk kan hjälpa dig i din karriärplanering.",
+                    "description": "Till exempel:\nKan den här personen eller gruppen erbjuda karriärrådgivning eller mentorskap?\nHar de information om lediga platser eller dolda jobb?\nKan de hjälpa dig att utveckla nya färdigheter eller få utbildning?\nHar de kontakter som kan vara till nytta i din karriär?"
+                  },
+                  "3": {
+                    "title": "Gå igenom din lista och din bedömning. Är det något viktigt nätverk som saknas? ",
+                    "description": "Till exempel:\nHar du tillräckligt många kontakter inom din bransch?\nHar du en mentor eller coach?\nÄr du medlem i en fackmässiga organisationer eller grupper?"
+                  },
+                  "4": {
+                    "title": "Fundera på hur du kan skaffa nya nätverk och utvidga befintliga.",
+                    "description": "Till exempel:\nDelta i professionella evenemang och seminarier.\nVar aktiv på sociala medier.\nGå med i fackmässiga organisationer och grupper.\nHåll kontakten med tidigare kollegor och studiekamrater."
+                  }
+                }
+              }
+            },
+            "4": {
+              "1": {
+                "title": "Lär dig att identifiera var du kan få hjälp med dina karriärreflektioner",
+                "feedback": "Fint! Kom alltid ihåg att du inte är ensam med dina karriärreflektioner. Att be om hjälp från närstående eller använda tjänster som samhället tillhandahåller kan hjälpa dig att komma vidare i dina karriärreflektioner. Fortsätt på samma sätt och utnyttja all hjälp som kan ta dig vidare.",
+                "textFields": {
+                  "1": {
+                    "title": "Lista nedan de personer, platser och tjänster som kan hjälpa och stödja dig i dina karriärreflektioner. ",
+                    "description": "Använd dessa frågor som hjälp för att göra din lista:\n●  Fundera på vem du kan kontakta i ditt nätverk. Detta kan omfatta familjemedlemmar, vänner, arbetsgemenskap.\n●  Finns det en karriärvägledare/-coach eller studiehandledare på din arbetsplats eller läroanstalt?\n●  Vet du vilka sysselsättningstjänster som finns tillgängliga på din ort? Till exempel yrkesvals- och karriärvägledning.\n●  Vet du vilka möjligheter till vidareutbildning eller omskolning det finns?\n●  Känner du till användbara servicesidor? Är Jobbmarknaden eller Studieinfo bekanta? Vilken hjälp kan du få via dem?\n●  Känner du till Navigatorns tjänster?\n●  Vet du vilket stöd och vilken vägledning fackföreningar eller yrkesorganisationer kan erbjuda?\n●  Finns det några jobbsöknings- eller nätverksevenemang i ditt område där du kan få råd och utvidga ditt nätverk?"
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att hitta den hjälp som är rätt för dig",
+                "feedback": "Fint! Kom alltid ihåg att du inte är ensam med dina karriärreflektioner. Att be om hjälp från närstående eller använda tjänster som samhället tillhandahåller kan hjälpa dig att komma vidare i dina karriärreflektioner. Fortsätt på samma sätt och utnyttja all hjälp som kan ta dig vidare.",
+                "textFields": {
+                  "1": {
+                    "title": "Lista nedan de personer, platser och tjänster via vilka du kan få hjälp och stöd för dina karriärreflektioner. ",
+                    "description": "Använd dessa frågor som hjälp för att göra din lista:\n●  Fundera på vem du kan kontakta i ditt nätverk. Detta kan omfatta familjemedlemmar, vänner, arbetsgemenskap.\n●  Finns det en karriärvägledare/-coach eller studiehandledare på din arbetsplats eller läroanstalt?\n●  Vet du vilka sysselsättningstjänster som finns tillgängliga på din ort? Till exempel yrkesvals- och karriärvägledning.\n●  Vet du vilka möjligheter till vidareutbildning eller omskolning det finns?\n●  Känner du till användbara servicesidor? Är Jobbmarknaden eller Studieinfo bekanta? Vilken hjälp kan du få via dem?\n●  Känner du till Navigatorns tjänster?\n●  Vet du vilket stöd och vilken vägledning fackföreningar eller yrkesorganisationer kan erbjuda?\n●  Finns det några jobbsöknings- eller nätverksevenemang i ditt område där du kan få råd och utvidga ditt nätverk?"
+                  },
+                  "2": {
+                    "title": "Analysera din lista och fundera på vilka som är de viktigaste platserna för dig att få hjälp och stöd för dina karriärreflektioner just nu. Vilka kan vara användbara på lång sikt?"
+                  }
+                }
+              }
+            },
+            "5": {
+              "1": {
+                "title": "Lär dig att identifiera de tjänster som samhället tillhandahåller som stöd för livs- och karriärplanering",
+                "description": "<strong>Ta reda på vilka tjänster samhället tillhandahåller för olika livssituationer. Använd officiella webbplatser, såsom <0>www.suomi.fi/medborgare</0>, för att hitta information om de tjänster som finns tillgängliga.</strong><br /><i>Till exempel:<br />Sysselsättningstjänster<br />Utbildnings- och omskolningsprogram<br />Hälso- och välfärdstjänster<br />Sociala tjänster och ekonomiskt bistånd<br />Stödtjänster för företagande</i>",
+                "link": "https://www.suomi.fi/medborgare",
+                "feedback": "Fint! Kom alltid ihåg att du inte är ensam med dina karriärreflektioner. Att använda de tjänster som samhället tillhandahåller kan hjälpa dig i dina karriärreflektioner. Utnyttja alla möjligheter som kan ta dig framåt! ",
+                "textFields": {
+                  "1": {
+                    "title": "Lista nedan tjänster som tillhandahålls av samhället där du kan få stöd för din livs- och karriärplanering."
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att hitta de tjänster som är rätt för dig",
+                "feedback": "Fint! Kom alltid ihåg att du inte är ensam med dina karriärreflektioner. Att använda de tjänster som samhället tillhandahåller kan hjälpa dig i dina karriärreflektioner. Utnyttja alla möjligheter som kan ta dig framåt! ",
+                "textFields": {
+                  "1": {
+                    "title": "Börja med att kartlägga din situation: Beskriv nedan din nuvarande livs- och karriärsituation. Fundera på vilka som är dina största utmaningar och behov just nu."
+                  },
+                  "2": {
+                    "title": "Kartläggning av tjänster: Ta reda på vilka tjänster samhället tillhandahåller för olika livssituationer. Använd officiella webbplatser, såsom www.suomi.fi/medborgare, för att hitta information om de tjänster som finns tillgängliga.",
+                    "description": "Till exempel:\nSysselsättningstjänster\nUtbildnings- och omskolningsprogram\nHälso- och välfärdstjänster\nSociala tjänster och ekonomiskt bistånd\nStödtjänster för företagande"
+                  },
+                  "3": {
+                    "title": "Utvärdering av tjänster: Gör en lista över tjänster som kan vara användbara i din situation. Utvärdera hur väl varje tjänst hjälper dig med dina behov och utmaningar."
+                  },
+                  "4": {
+                    "title": "Gör upp en plan för hur du ska använda dessa tjänster."
+                  }
+                }
+              }
+            },
+            "6": {
+              "1": {
+                "title": "Lär dig att hitta olika sysselsättningsmöjligheter",
+                "feedback": "Fint! En aktiv inställning hjälper dig att hitta de bästa jobben för dig! Kom ihåg att förutom att söka jobb på nätet kan du hitta jobb genom personliga kontakter.",
+                "description": "<strong>Kartlägg var du kan hitta jobbmöjligheter som passar dig bäst. Besvara frågorna nedan.</strong>",
+                "textFields": {
+                  "1": {
+                    "title": "Tänk på vilken typ av jobb du söker: typ (heltid, deltid, frilans), bransch (till exempel IT, sjukvård, utbildning) och plats (lokalt, distans, internationellt)."
+                  },
+                  "2": {
+                    "title": "Fundera på vilka dina styrkor, färdigheter och intressen är."
+                  },
+                  "3": {
+                    "title": "Gör en lista över jobbsökningskanaler där du kan hitta lämpliga jobbmöjligheter för dig.",
+                    "description": "Till exempel:\nJobbmarknaden och andra webbplatser för jobbsökning\nSociala medier\nFöretags egna sidor\nNätverk"
+                  },
+                  "4": {
+                    "title": "Granska de kanaler som du har listat och skriv nedan var du hittade de mest intressanta jobbmöjligheterna."
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att utöka dina anställningsmöjligheter",
+                "feedback": "Fint! När du funderar på karriärmöjligheter lönar det sig att tänka brett på var du kan använda dina färdigheter. Det lönar sig att se på sina egna färdigheter ur nya perspektiv och vara öppen för hur man kan använda sina nuvarande färdigheter i nya arbetsmiljöer.",
+                "textFields": {
+                  "1": {
+                    "title": "Identifiera och skriv nedan 3–5 färdigheter som du kan tillämpa i flera olika jobb.",
+                    "description": "Till exempel projektledning, noggrannhet, kommunikationsförmåga, språkkunskaper, kundservice. "
+                  },
+                  "2": {
+                    "title": "Fundera på vilka nya jobb eller branscher dessa färdigheter skulle kunna ta dig till. Fundera på hur du kan tillämpa din kompetens inom olika branscher eller i olika uppgifter.",
+                    "description": "Om du till exempel har kommunikationsfärdigheter inom marknadsföring, skulle du kunna överföra dem till försäljning, utbildning eller konsultverksamhet?"
+                  },
+                  "3": {
+                    "title": "Titta närmare på minst två olika branscher där du ännu inte har sökt jobb. Du kan använda jobbsökningssajter, fackföreningars webbplatser eller prata med yrkesverksamma inom dessa branscher. Lista nedan nya jobbmöjligheter som du hittar."
+                  },
+                  "4": {
+                    "title": "Välj en jobbmöjlighet som du har hittat och fundera på hur du skulle beskriva din kompetens i förhållande till det jobbet."
+                  }
+                }
+              }
+            }
+          },
+          "info": "Goda interaktionsfärdigheter och samarbetsförmåga hjälper dig att hitta nya möjligheter, komma till insikt om nya saker och få hjälp att främja din situation. Interaktionsfärdigheter och samarbetsförmåga återspeglas också i hur du visar din uppskattning för andra och hur du berättar om din kompetens, dina mål och dina ambitioner.",
+          "feedbacks": {
+            "1": {
+              "description": "Deltagande i olika interaktionssituationer ger en bra grund för karriärplanering. Att känna till olika sätt att hitta jobbmöjligheter hjälper dig att förbereda dig inför framtiden. Fortsätt på samma sätt och kom ihåg att utnyttja de färdigheter du har lärt dig i framtida situationer."
+            },
+            "2": {
+              "description": "Du är redan bra på att strukturera och beskriva din kompetens på olika sätt. Att klä din kompetens i ord hjälper dig till exempel att förstå dina egna styrkor och utvecklingsområden. Kom ihåg att ta hänsyn till olika kommunikationssätt och interaktionssituationer - de påverkar hur du blir förstådd. Det är bra att du kan identifiera viktiga personer och nätverk för att få hjälp."
+            },
+            "3": {
+              "description": "Det är verkligen bra att du är medveten om dina många viktiga färdigheter och kompetenser! Du är redo att tillämpa dina färdigheter i olika situationer. Kom ihåg att vara öppen för respons och att använda den i ditt eget lärande. Nätverk är mycket viktiga för karriärutvecklingen. Fortsätt att bygga och upprätthålla nätverk. Kom ihåg att varje situation och utmaning är en möjlighet att lära sig och växa. Ha en positiv inställning och fortsätt att utveckla dina färdigheter!"
+            },
+            "4": {
+              "description": "Utmärkt! Du kan kommunicera målmedvetet och ändamålsenligt med olika målgrupper samt skapa och upprätthålla professionella nätverk. Du kan också använda dig av olika tjänster och förutse dina karriärmässiga behov på lång sikt. Detta är värdefullt när du vill föra fram din kompetens!"
+            }
+          },
+          "name": "Tillsammans framåt",
+          "long-name": "Interaktion och samarbete"
+        },
+        "anticipate-the-future": {
+          "sections": {
+            "alternative-paths": {
+              "name": "Alternativa vägar",
+              "questions": {
+                "1": {
+                  "title": "Jag kan hitta alternativa vägar som passar min situation."
+                }
+              },
+              "info": "Kartläggningen av alternativa vägar och beslutfattandet fortsätter genom livet i och med att arbetet och de personliga omständigheterna förändras. Det kan dyka upp tillfällen och möjligheter som hjälper dig att uppnå dina mål. Du kan genom ditt eget agerande bidra till skapandet av nya alternativa vägar."
+            },
+            "social-changes": {
+              "name": "Förändringar i samhället",
+              "questions": {
+                "1": {
+                  "title": "Jag följer med samhällsförändringar som kan påverka min egen situation och kan ta hänsyn till dem i min karriärplanering."
+                }
+              },
+              "info": "Förändringar i samhället, till exempel digitaliseringen och den artificiella intelligensens frammarsch, åtgärder för att bekämpa klimatförändringar och den åldrande befolkningen, kan påverka karriärplaneringen."
+            },
+            "global-changes": {
+              "name": "Globala förändringar",
+              "questions": {
+                "1": {
+                  "title": "Jag följer med globala förändringar som kan påverka min egen situation och kan ta hänsyn till dem i min karriärplanering."
+                }
+              },
+              "info": "Globala förändringar som klimatförändringar, ekonomiska konjunkturer och regionala konflikter kan påverka din karriärplanering."
+            }
+          },
+          "exercises": {
+            "1": {
+              "1": {
+                "name": "Lär dig att kartlägga alternativa karriärvägar",
+                "feedback": "Bra jobbat! Du har visat förmåga att kartlägga alternativa vägar. Denna förmåga är särskilt värdefull när arbetslivet och de egna livssituationerna förändras. Fortsätt på samma sätt och bidra till att bygga nya alternativa vägar!",
+                "description": "Det finns olika vägar som kan leda till samma mål. Vägen behöver inte nödvändigtvis följa en traditionell karriärväg, utan det kan också på vägen dyka upp möjligheter och tillfällen som det lönar sig att ta vara på.",
+                "textFields": {
+                  "1": {
+                    "title": "Skriv ner ett av dina mål för framtiden."
+                  },
+                  "2": {
+                    "title": "Tänk på och skriv nedan olika alternativa vägar som du kan ta för att uppnå dina mål för framtiden. ",
+                    "description": "Fundera också på vilka konkreta skeden och steg som leder detta mål. Beskriv också dessa steg nedan."
+                  }
+                }
+              },
+              "2": {
+                "name": "Lär dig att kartlägga alternativa karriärvägar",
+                "feedback": "Bra jobbat! Det är roligt att se att du är redo att ta vara på slumpmässiga tillfällen och chanser som hjälper dig att uppnå dina mål. Denna färdighet är särskilt värdefull när ditt arbete och din livssituation förändras. Fortsätt på samma sätt och bidra till att bygga nya alternativa vägar. Med den inställningen och det tillvägagångssättet kommer du att komma långt!",
+                "description": "Alternativa karriärvägar erbjuder olika möjligheter till yrkesmässig utveckling och framsteg, som inte nödvändigtvis följer en traditionell, okomplicerad karriärväg. Slumpen och oväntade situationer kan också forma resan och öppna upp för nya möjligheter och riktningsförändringar som ytterligare berikar din karriärutveckling.",
+                "textFields": {
+                  "1": {
+                    "title": "Fundera på hur dina egna beslut och slumpmässiga tillfällen har påverkat ditt liv hittills.",
+                    "description": "Skriv din viktigaste tanke nedan."
+                  },
+                  "2": {
+                    "title": "Gör en mind map (tankekarta) över olika alternativa vägar som du kan överväga i framtiden.",
+                    "description": "Inkludera vägar som är relaterade till både din karriär och ditt personliga liv. Beskriv de mest genomförbara alternativa vägarna nedan."
+                  }
+                }
+              },
+              "3": {
+                "name": "Lär dig att bygga alternativa karriärvägar mot framtid som passar dig",
+                "feedback": "Bra jobbat! Det är roligt att se att du är redo att ta vara på slumpmässiga tillfällen och chanser som hjälper dig att uppnå dina mål. Denna färdighet är särskilt värdefull när ditt arbete och din livssituation förändras. Fortsätt på samma sätt och bidra till att bygga nya alternativa vägar. Med den inställningen och det tillvägagångssättet kommer du att komma långt!",
+                "description": "Alternativa karriärvägar erbjuder olika möjligheter till yrkesmässig utveckling och framsteg, som inte nödvändigtvis följer en traditionell, okomplicerad karriärväg. Slumpen och oväntade situationer kan också forma resan och öppna upp för nya möjligheter och riktningsförändringar som ytterligare berikar din karriärutveckling.",
+                "textFields": {
+                  "1": {
+                    "title": "Fundera på hur dina egna beslut och slumpmässiga tillfällen har påverkat ditt liv hittills.",
+                    "description": "Skriv din viktigaste tanke nedan."
+                  },
+                  "2": {
+                    "title": "Gör en mind map (tankekarta) över olika alternativa vägar som du kan överväga i framtiden.",
+                    "description": "Inkludera vägar som är relaterade till både din karriär och ditt personliga liv. Beskriv de mest genomförbara alternativa vägarna nedan."
+                  },
+                  "3": {
+                    "title": "Fundera på och skriv nedan hur du kan bidra till att bygga nya alternativa vägar genom dina egna handlingar?",
+                    "description": "Fundera på vilka färdigheter och resurser du behöver och hur du kan förvärva dem.​"
+                  }
+                }
+              }
+            },
+            "2": {
+              "1": {
+                "title": "Lär dig att identifiera samhällsförändringar som kan påverka karriärmöjligheterna",
+                "description": "Samhället förändras ständigt, vilket gör att behovet av att lära sig nya saker blir allt viktigare under livet.",
+                "feedback": "Bra gjort! Du känner redan igen samhällsförändringar som kan påverka din livs- och karriärplanering. Denna färdighet är mycket viktig eftersom den hjälper dig att förbereda dig för framtidens utmaningar och möjligheter.",
+                "textFields": {
+                  "1": {
+                    "title": "Fundera på om förändringarna som listas nedan påverkar ditt liv:",
+                    "description": "Teknologisk utveckling (till exempel tillväxten av artificiell intelligens, automatisering)\nÅtgärder relaterade till klimatförändringar (till exempel grön omställning, hållbar utveckling)\nFörändringar på arbetsmarknaden (till exempel distansarbete, antalet frilansare)\nFörändringar i yrken och arbetsuppgifter"
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att ta hänsyn till samhällsförändringar i din karriärplanering",
+                "description": "Samhället förändras ständigt, vilket gör att behovet av att lära sig nya saker blir allt viktigare under livet.",
+                "feedback": "Bra gjort! Förändringar i samhället, till exempel digitaliseringen och den artificiella intelligensens frammarsch, åtgärder för att bekämpa klimatförändringar och den åldrande befolkningen, kan påverka karriärplaneringen.",
+                "textFields": {
+                  "1": {
+                    "title": "Välj en samhällsförändring och fundera på hur den kan påverka ditt liv och din karriärplanering:",
+                    "description": "Till exempel:\nTeknologisk utveckling (till exempel tillväxten av artificiell intelligens, automatisering)\nÅtgärder relaterade till klimatförändringar (till exempel grön omställning, hållbar utveckling)Förändringar på arbetsmarknaden (till exempel distansarbete, antalet frilansare)\nFörändringar i yrken och arbetsuppgifter\nBefolkningens åldrande"
+                  }
+                }
+              },
+              "3": {
+                "title": "Lär dig att använda prognostiseringsdata och ta hänsyn till samhällsförändringar i din karriärplanering",
+                "description": "Ta reda på vilka viktiga utvecklingstrender i Finland som kommer att påverka framtida karriärmöjligheter. Vilka viktiga förändringar förväntas? Vilka möjligheter och utmaningar medför de?\n\nUtnyttja nationell prognostiseringsdata, till exempel statsrådets framtidsöversikter, Sitras webbplats, webbplatsen osaamistarvekompassi.fi eller arbets- och näringsministeriets rapporter.",
+                "feedback": "Bra gjort! Förändringar i samhället, till exempel digitaliseringen och den artificiella intelligensens frammarsch, åtgärder för att bekämpa klimatförändringar och den åldrande befolkningen, kan påverka karriärplaneringen. ",
+                "textFields": {
+                  "1": {
+                    "title": "Fundera på hur dessa utvecklingstrender och eventuella förändringar relaterar till din egen karriär. Fundera på och skriv nedan hur du kan förutse nya kompetenskrav eller arbetsuppgifter som kan bli viktiga i framtiden."
+                  }
+                }
+              }
+            },
+            "3": {
+              "1": {
+                "title": "Lär dig att identifiera globala förändringar som kan påverka dina karriärmöjligheter",
+                "description": "Det sker globala förändringar, till exempel klimatförändringar, ekonomiska upp- och nedgångar, digitalisering och regionala konflikter.",
+                "feedback": "Bra gjort! Du kan redan identifiera globala förändringar som kan påverka ditt liv och din karriärplanering. Denna färdighet är mycket viktig eftersom den hjälper dig att förbereda dig för framtidens utmaningar och möjligheter.",
+                "textFields": {
+                  "1": {
+                    "title": "Fundera på hur globala förändringar påverkar ditt eget liv."
+                  }
+                }
+              },
+              "2": {
+                "title": "Lär dig att ta hänsyn till globala förändringar i din karriärplanering",
+                "feedback": "Fint! Globala förändringar som klimatförändringar, ekonomiska konjunkturer och regionala konflikter kan påverka din karriärplanering. Att förstå framtida trender och stora förändringar hjälper dig att förbereda dig för förändringar i arbetslivet. Genom att förutse vilka färdigheter och kompetenser som kommer att behövas i framtiden kan du målmedvetet skapa vägar mot en framtid som passar dig. ",
+                "description": "Det sker globala förändringar, till exempel klimatförändringar, ekonomiska upp- och nedgångar, digitalisering och regionala konflikter.",
+                "textFields": {
+                  "1": {
+                    "title": "Ta en närmare titt på en global förändring och fundera på hur den kan påverka ditt liv och din karriärplanering."
+                  }
+                }
+              },
+              "3": {
+                "title": "Lär dig att använda prognostiseringsdata och ta hänsyn till globala förändringar i din karriärplanering",
+                "feedback": "Fint! Globala förändringar som klimatförändringar, ekonomiska konjunkturer och regionala konflikter kan påverka din karriärplanering. Att förstå framtida trender och stora förändringar hjälper dig att förbereda dig för förändringar i arbetslivet. Genom att förutse vilka färdigheter och kompetenser som kommer att behövas i framtiden kan du målmedvetet skapa vägar mot en framtid som passar dig. ",
+                "description": "Undersök framtida utvecklingstrender och prognoser: Ta reda på vilka viktiga globala utvecklingstrender som kommer att påverka framtida karriärmöjligheter. Vilka viktiga förändringar förväntas? Vilka möjligheter och utmaningar medför de?\n\nUtnyttja nationell prognostiseringsdata, till exempel statsrådets framtidsöversikter, Sitras webbplats, webbplatsen osaamistarvekompassi.fi eller arbets- och näringsministeriets rapporter.",
+                "textFields": {
+                  "1": {
+                    "title": "Fundera på hur dessa globala utvecklingstrender och eventuella förändringar relaterar till din egen karriär. Fundera på och skriv nedan hur du kan förutse nya kompetenskrav eller arbetsuppgifter som kan bli viktiga i framtiden."
+                  }
+                }
+              }
+            }
+          },
+          "info": "Att förstå framtida trender och stora förändringar hjälper dig att förbereda dig för förändringar i arbetslivet. Med hjälp av denna färdighet kan du förutse vilka färdigheter och kompetenser som kommer att behövas i framtiden och målmedvetet skapa vägar mot en framtid som passar dig.",
+          "feedbacks": {
+            "1": {
+              "description": "Baserat på din självutvärdering är du redo att utveckla din förmåga att forma framtiden för din verksamhetsmiljö - bra! Det är en viktig färdighet som hjälper dig att bättre förstå och anpassa dig till förändringar i din omgivning. Kom ihåg att nyfikenhet och öppenhet är nyckeln till att lära sig nya saker."
+            },
+            "2": {
+              "description": "Du kan identifiera de viktigaste vägarna som hjälper dig att uppnå dina mål. Du förstår också att dina egna handlingar har betydelse för skapandet av nya alternativa vägar. Det är också viktigt att vara uppmärksam på förändringar i samhället. Du är klart medveten om att dessa förändringar kan påverka hur du planerar ditt liv och din karriär. Fortsätt på samma sätt!"
+            },
+            "3": {
+              "description": "Det är bra att du inser att ditt jobb och dina arbetsuppgifter kan komma att förändras i framtiden. Det är viktigt att kunna jämföra olika vägar och kunna välja de alternativ som passar dig bäst. Du kan bedöma vad förändringarna innebär för din karriärväg. Fortsätt att aktivt söka information och bevaka globala förändringar. Du är på rätt väg mot en framgångsrik karriär!"
+            },
+            "4": {
+              "description": "Du bedöma framtida förändringar i ditt arbete och inom branscher som intresserar dig och förbereda dig på dem. Detta är en viktig färdighet som hjälper dig att lyckas i din karriär. Kom ihåg att fortsätta att aktivt söka information och följa med den globala utvecklingen. Detta hjälper dig att hålla dig uppdaterad och förstå vilka nya kompetensbehov som förändringar medför. Du är på rätt väg mot en framgångsrik karriär!"
+            }
+          },
+          "name": "Förutse framtiden",
+          "long-name": "Att förstå verksamhetsmiljöns framtid"
+        }
+      },
+      "world-around-you": {
+        "exercises": {
+          "3": {
+            "1": {
+              "title": "Lär dig att hitta nya lärandemöjligheter",
+              "description": "Livslångt lärande innebär att människor fortsätter att lära sig nya saker under hela livet, oavsett om det är fråga om formell utbildning, arbete eller fritid.",
+              "feedback": "Fint! I olika skeden av livet och karriären kan du lära dig, utbilda dig och studera på olika sätt. I en föränderlig värld måste man ständigt utveckla sin kompetens.",
+              "textFields": {
+                "1": {
+                  "title": "Skriv nedan vilken färdighet eller kompetens du skulle vilja utveckla.",
+                  "description": "Den behöver inte ha en direkt anknytning till arbete eller studier – det kan också vara en personlig färdighet eller en hobby.\nTill exempel: tidshantering, lära sig ny teknik, kommunikationsfärdigheter, främja välbefinnande."
+                },
+                "2": {
+                  "title": "Skriv hur du på ett flexibelt sätt kan utveckla din färdighet eller kompetens.",
+                  "description": "Fundera på hur du skulle kunna skaffa dig kompetens. Använd dessa frågor som hjälp:\n- Kan du lära dig på kort tid, t.ex. 10–20 minuter, t.ex. genom YouTube-videor, podcasts eller mobilappar?\n- Kan du delta i onlinekurser som är självstyrda och flexibla enligt ditt schema?\n- Kan du lära dig nya färdigheter på din arbetsplats (t.ex. läroavtal)\n- Skulle du gå på kurser som anordnas av läroanstalter eller utbildningar som leder till examen?\n- Känner du någon som kan lära dig detta?"
+                }
+              }
+            },
+            "2": {
+              "title": "Lär dig att hitta studiemöjligheter som passar din situation ",
+              "feedback": "Fint! I olika skeden av livet och karriären kan du lära dig, utbilda dig och studera på olika sätt. I en föränderlig värld måste man ständigt utveckla sin kompetens.",
+              "textFields": {
+                "1": {
+                  "title": "Hitta två olika studiemöjligheter som passar dig och jämför dem. Använd webbplatsen Opintopolku.fi, där du hittar både utbildningar som leder till examen och tilläggs- och kompletterande utbildning.",
+                  "description": "Fundera till exempel på följande:\n- Vilken typ av kompetens behöver du mer av och vilka är dina mål.\n- Hur väl motsvarar alternativen dina mål, t.ex. kortkurser, utbildningsprogram/examen, online-kurser?\n- Vilka typer av studiealternativ erbjuder alternativen? T.ex. dagstudier, flerformsstudier, nätstudier, läroavtal.\n- Hurdant är innehållet i utbildningarna?"
+                }
+              }
+            }
+          },
+          "4": {
+            "1": {
+              "title": "Lär dig att identifiera de strukturer i samhället och arbetslivet som påverkar dig ",
+              "description": "<strong>Fundera på hur samhällets strukturer påverkar dig. Välj en av de tre fiktiva situationerna nedan att reflektera över, eller fundera på din egen situation. Skriv nedan.</strong><br /><i>Exempel på samhällsstrukturer: lagar, politiskt beslutsfattande, ekonomi, utbildningssystem, kultur, situationen i arbetslivet, könsroller.</i><br /><br /><strong>1. Jag vill studera ett nytt yrke. </strong><br /><i>Till exempel: \"Det ekonomiska läget påverkar arbetsmarknaden och finansieringen av utbildningen\", \"Studiestödet underlättar den ekonomiska situationen\", \"Arbetsmarknadens behov håller på att förändras”.</i><br /><br /><strong>2. Jag är utmattad på jobbet och behöver en paus från arbetslivet.</strong><br /><i>Till exempel: \"Flexibilitet på arbetsplatsen främjar orken\", \"Den allmänna inställningen till utmattning och återhämtning påverkar”.</i><br /><br /><strong>3. Jag har en bra affärsidé och jag vill starta ett företag. </strong><br /><i>Till exempel: \"Företagslagstiftning och startkapital stöder startande av ett företag\", ”Den ekonomiska situationen och konkurrenssituationen påverkar affärsverksamheten”.</i>",
+              "feedback": "Samhällsstrukturer påverkar planeringen livet och karriären. Detta är viktigt att känna till, eftersom det hjälper dig att fatta mer välgrundade beslut i framtiden. Fortsätt på samma sätt och fördjupa din förståelse ytterligare. ",
+              "textFields": {
+                "1": {
+                  "title": "Tankar om vald situation"
+                }
+              }
+            },
+            "2": {
+              "title": "Lär dig att upptäcka förändringar i strukturerna i din egen karriärplanering",
+              "feedback": "Samhällets strukturer och de förändringar som sker i samhället påverkar planeringen av livet och karriären. Detta är viktigt att känna till, eftersom det hjälper dig att fatta mer välgrundade beslut och planer för framtiden. ",
+              "textFields": {
+                "1": {
+                  "title": "Välj en samhällsstruktur som kan påverka din karriärplanering.",
+                  "description": "Till exempel: Teknologins utveckling (automatisering, digitalisering); Förändringar på arbetsmarknaden (distansarbete, frilansarbete); Utbildningspolitik och utbildningens tillgänglighet; Lagstiftning (arbetslagstiftning, arbetstidsreglering); Ekonomisk situation (inflation, löneutveckling)"
+                },
+                "2": {
+                  "title": "Fundera på hur den samhällsstruktur du har valt för närvarande påverkar dina karriärmöjligheter.",
+                  "description": "Skriv konkreta exempel.\nTill exempel: \"I och med digitaliseringen har många jobb övergått till distansarbete, vilket gör att jag kan söka jobb i olika länder.\""
+                },
+                "3": {
+                  "title": "Fundera också på hur denna struktur kan förändras under de närmaste 5–10 åren och vilken inverkan det kan få på din karriär.",
+                  "description": "Till exempel: \"Om automatisering och AI fortsätter att utvecklas kan vissa manuella arbetsuppgifter försvinna, men teknikkunskaper blir allt viktigare. Det kan betyda att jag behöver skaffa mig mer teknisk kompetens.\""
+                }
+              }
+            },
+            "3": {
+              "title": "Lär dig att förutse hur förändringar i samhällsstrukturer påverkar din karriärplanering",
+              "feedback": "Samhällets strukturer och de förändringar som sker i samhället påverkar planeringen av livet och karriären. Att förutse förändringar är viktigt eftersom det hjälper dig att fatta mer välgrundade beslut och planer för framtiden. ",
+              "textFields": {
+                "1": {
+                  "title": "Välj en samhällsstruktur som kan påverka din karriärplanering.",
+                  "description": "Till exempel: Teknologins utveckling (automatisering, digitalisering); Förändringar på arbetsmarknaden (distansarbete, frilansarbete); Utbildningspolitik och utbildningens tillgänglighet; Lagstiftning (arbetslagstiftning, arbetstidsreglering); Ekonomisk situation (inflation, löneutveckling)"
+                },
+                "2": {
+                  "title": "Fundera på hur den samhällsstruktur du har valt för närvarande påverkar dina karriärmöjligheter. ",
+                  "description": "Skriv konkreta exempel.\nTill exempel: \"I och med digitaliseringen har många jobb övergått till distansarbete, vilket gör att jag kan söka jobb i olika länder.\""
+                },
+                "3": {
+                  "title": "Fundera också på hur denna struktur kan förändras under de närmaste 5–10 åren och vilken inverkan det kan få på din karriär.",
+                  "description": "Exempel: \"Om automatisering och AI fortsätter att utvecklas kan vissa manuella arbetsuppgifter försvinna, men teknikkunskaper blir allt viktigare. Det kan betyda att jag behöver skaffa mig mer teknisk kompetens.\""
+                },
+                "4": {
+                  "title": "Fundera på vad du kan göra nu för att vara redo för de kommande förändringarna.",
+                  "description": "Till exempel: \"Jag skulle kunna delta i tilläggsutbildning eller kurser för att förbättra mina tekniska färdigheter så att jag kan vara konkurrenskraftig på arbetsmarknaden i framtiden.\""
+                }
+              }
+            }
+          },
+          "5": {
+            "1": {
+              "title": "Lär dig att främja ekosocialt välbefinnande på jobbet",
+              "description": "Fundera en stund på dina tankar kring hållbar utveckling och grön omställning som redan påverkar många yrkesområden.",
+              "feedback": "Bra! Ekosocialitet inom karriärplanering innebär att man vid val av karriär strävar efter att främja hållbar utveckling och mänskliga rättigheter, vilket till exempel kan återspeglas i valet av arbetsplats eller utbildning. Genom att ta hänsyn till ekosocialitet i karriärplaneringsprocessen kan man hjälpa individer att hitta en meningsfull karriär enligt de egna värderingarna som stöder både personligt välbefinnande och social hållbarhet.",
+              "textFields": {
+                "1": {
+                  "title": "Välj ett yrke eller en arbetsuppgift och fundera på hur det/den bidrar till människors eller naturens välbefinnande. ",
+                  "description": "Till exempel: läkare, verkstadsmekaniker, lärare, ingenjör, socialarbetare, byggmästare, skogsmaskinsföretagare, merkonom, expert på hållbar utveckling."
+                },
+                "2": {
+                  "title": "Skriv en kort beskrivning av arbetsuppgiften och dess effekter: ",
+                  "description": "Hur förbättrar denna arbetsuppgift människors livskvalitet? Hur bidrar den till naturens välbefinnande?"
+                }
+              }
+            },
+            "2": {
+              "title": "Lär dig att ta hänsyn till ekosociala faktorer i ditt liv",
+              "description": "Fundera nedan på hur ekosociala faktorer påverkar ditt liv och dina val. ",
+              "feedback": "Fint! Ekosocialitet inom karriärplanering innebär att man vid val av karriär strävar efter att främja hållbar utveckling och mänskliga rättigheter, vilket till exempel kan återspeglas i valet av arbetsplats eller utbildning. Genom att ta hänsyn till ekosocialitet i karriärplaneringsprocessen kan man hjälpa individer att hitta en meningsfull karriär enligt de egna värderingarna som stöder både personligt välbefinnande och social hållbarhet.",
+              "textFields": {
+                "1": {
+                  "title": "Hur har du tagit hänsyn till ekosociala faktorer i din karriärplanering?",
+                  "description": "Du kan använda följande frågor som hjälp:\no Hur syns ekologisk hållbarhet i ditt vardagsliv?\no Vilken roll spelar social rättvisa i ditt liv?\no Hur styr hållbar utveckling dina val?\no Hur påverkar social delaktighet dina handlingar?\no Vilka effekter har ditt nuvarande arbete/ett arbete du är intresserad av på det ekosociala välbefinnandet?"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "career-plan": {
+    "title": "Karriärplan",
+    "copy-link": "Kopiera länken till karriärplanen.",
+    "question-description": "Om du behöver hjälp med att svara på frågorna, gör följande uppgifter:",
+    "questions": {
+      "1": {
+        "title": "Vilka styrkor, färdigheter och kunskaper har du?"
+      },
+      "2": {
+        "title": "Vilka är dina viktigaste värderingar? Lever du enligt dina värderingar?"
+      },
+      "3": {
+        "title": "Vad är du nöjd med just nu? Vad vill du förändra?"
+      },
+      "4": {
+        "title": "Vad är dina mål för det kommande året? Och för de kommande 5-10 åren?"
+      },
+      "5": {
+        "title": "Vilka förändringar eller nyheter sker inom ditt område eller det område du strävar efter? Vad bör du åtminstone ta hänsyn till i framtiden?"
+      },
+      "6": {
+        "title": "Vilka kunskaper behöver du för att nå dina mål?"
+      },
+      "7": {
+        "title": "Vilka är de möjliga hindren och hur kan du övervinna dem?"
+      },
+      "8": {
+        "title": "Var kan du få hjälp för att genomföra dina planer? Vem kan du prata öppet om dina drömmar och ambitioner med?"
+      },
+      "9": {
+        "title": "Vilka konkreta steg tar du härnäst? Och under det kommande året?"
+      },
+      "10": {
+        "title": "Hur tänker du följa upp genomförandet av din plan?"
+      }
+    },
+    "done-title": "Karriärplanen klar!",
+    "feedback": "Karriärplanen är ett verktyg för att nå dina drömmar! Med den kan du sätta tydliga, uppnåeliga mål och arbeta mot den framtid du önskar. Var beredd att anpassa dina mål flexibelt vid behov och ge utrymme för oväntade möjligheter. Varje steg är ett framsteg! Fortsätt att sträva efter dina drömmar modigt och njut av resan mot en framtid som ser ut som du vill ha den.",
+    "download-as-pdf": "Ladda ner karriärplan som PDF",
+    "link-copied": "Kopierades till urklipp"
+  },
+  "Career-management-summary": {
+    "summary-career-plan": {
+      "description": "När du har gjort en självutvärdering och arbetat med uppgifterna kan du skapa en karriärplan för dig själv. Denna plan hjälper dig att steg för steg gå mot en framtid som ser ut som du vill ha den."
+    }
+  }
+}
