@@ -6,10 +6,12 @@ import useSkillAreas from '@/hooks/useSkillAreas';
 import { ArrowLeft, ArrowRight } from '@/icons';
 import { SkillArea } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router';
 
 const SkillAreaPage = ({ skillArea }: { skillArea: SkillArea }) => {
   const { t } = useTranslation();
   const { sm } = useMediaQueries();
+  const [searchParams] = useSearchParams();
 
   const skillAreas = useSkillAreas();
 
@@ -32,19 +34,24 @@ const SkillAreaPage = ({ skillArea }: { skillArea: SkillArea }) => {
         <p className="max-w-[80ch] py-2 text-center">{skillArea.info}</p>
         <ShowVideoButton title={skillArea.name} skillAreaId={skillArea.id} skillAreaName={skillArea.name} />
         <div className="hidden items-center gap-4 py-6 sm:flex">
-          <Button variant="simple" icon={<ArrowLeft />} iconSide="left" to={prevSlug}>
+          <Button
+            variant="simple"
+            icon={<ArrowLeft />}
+            iconSide="left"
+            to={{ pathname: prevSlug, search: searchParams.toString() }}
+          >
             {t('common.previous')}
           </Button>
-          <Button to={nextSlug} icon={<ArrowRight />}>
+          <Button to={{ pathname: nextSlug, search: searchParams.toString() }} icon={<ArrowRight />}>
             {t('common.next')}
           </Button>
         </div>
         <MobileBottomBar>
           <div className="mx-4 flex w-full justify-between">
-            <Button variant="simple" to={prevSlug}>
+            <Button variant="simple" to={{ pathname: prevSlug, search: searchParams.toString() }}>
               {t('common.previous')}
             </Button>
-            <Button to={nextSlug}>{t('common.next')}</Button>
+            <Button to={{ pathname: nextSlug, search: searchParams.toString() }}>{t('common.next')}</Button>
           </div>
         </MobileBottomBar>
       </div>

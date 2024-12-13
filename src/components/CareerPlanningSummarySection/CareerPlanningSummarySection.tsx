@@ -7,6 +7,7 @@ import { useSkillAreaExercises } from '@/hooks/useSkillAreaExercises';
 import { Button } from '..';
 import { ChevronRight } from '@/icons';
 import { useSummaryAccordionStore } from '@/stores/summaryAccordionStore';
+import { useSearchParams } from 'react-router';
 
 export const CareerPlanningSummarySection = ({
   skillArea,
@@ -17,6 +18,7 @@ export const CareerPlanningSummarySection = ({
   score: number | undefined;
   index: number;
 }) => {
+  const [searchParams] = useSearchParams();
   const feedback = score ? skillArea.feedbacks.find((f) => f.minScore <= score && score <= f.maxScore) : undefined;
   const exercises = useSkillAreaExercises({ skillAreaId: skillArea.id });
 
@@ -56,7 +58,11 @@ export const CareerPlanningSummarySection = ({
       ) : (
         <div>
           <p className="mb-4 text-body">{t('components.career-management-summary-section.no-feedback')}</p>
-          <Button variant="soft" icon={<ChevronRight />} to={`../${skillArea.slug}`}>
+          <Button
+            variant="soft"
+            icon={<ChevronRight />}
+            to={{ pathname: `../${skillArea.slug}`, search: searchParams.toString() }}
+          >
             {t('components.career-management-summary-section.to-section', { skillAreaName: skillArea.name })}
           </Button>
         </div>

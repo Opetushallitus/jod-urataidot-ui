@@ -9,10 +9,14 @@ import { BlobProvider } from '@react-pdf/renderer';
 import SummaryDocument from '@/features/pdf/documents/SummaryDocument';
 import { useState } from 'react';
 import { OpenAllExercisesPDFButton } from '@/features/exercises/components/OpenAllExercisesPDFButton';
+import { useSearchParams } from 'react-router';
 
 const CareerPlanningSummary = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
   const [linkCopied, setLinkCopied] = useState(false);
   const { t, i18n } = useTranslation();
+
+  const [searchParams] = useSearchParams();
+  const isFromYksilo = searchParams.has('yksilo');
 
   const answers = useCareerPlanningAnswersStore((state) => state.answers);
 
@@ -136,13 +140,15 @@ const CareerPlanningSummary = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
               : t('career-management-summary.summary-link-card.copy-link')}
           </Button>
         </Card>
-        <Card>
-          <h3 className="mb-2 text-heading-3">{t('career-management-summary.summary-career-plan.title')}</h3>
-          <p className="mb-6">{t('Career-management-summary.summary-career-plan.description')}</p>
-          <Button to={`/${i18n.language}/${t('slugs.career-plan')}`} icon={<ArrowRight />}>
-            {t('career-management-summary.summary-career-plan.button')}
-          </Button>
-        </Card>
+        {!isFromYksilo && (
+          <Card>
+            <h3 className="mb-2 text-heading-3">{t('career-management-summary.summary-career-plan.title')}</h3>
+            <p className="mb-6">{t('Career-management-summary.summary-career-plan.description')}</p>
+            <Button to={`/${i18n.language}/${t('slugs.career-plan')}`} icon={<ArrowRight />}>
+              {t('career-management-summary.summary-career-plan.button')}
+            </Button>
+          </Card>
+        )}
       </div>
     </div>
   );

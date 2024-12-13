@@ -8,7 +8,7 @@ import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
 import EmojiPicker from 'emoji-picker-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { ReadyModal } from './ReadyModal';
 
 const EmojiExercise = ({
@@ -21,6 +21,7 @@ const EmojiExercise = ({
   sectionId: number;
 }) => {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
 
   const [readyModalOpen, setReadyModalOpen] = useState(false);
 
@@ -92,7 +93,10 @@ const EmojiExercise = ({
           {t('exercises.easier-question')}{' '}
           <Link
             className="text-body-bold text-primary hover:underline"
-            to={`../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`}
+            to={{
+              pathname: `../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`,
+              search: searchParams.toString(),
+            }}
           >
             {t('exercises.easier-link')}
           </Link>

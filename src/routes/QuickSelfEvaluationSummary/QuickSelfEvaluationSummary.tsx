@@ -4,9 +4,12 @@ import { ExerciseLinkCard } from '@/features/exercises/components/ExerciseLinkCa
 import { useQuickSuggestionExercises } from '@/hooks/useQuickSuggestionExercises';
 import { useQuickSuggestionVideo } from '@/hooks/useQuickSuggestionVideo';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router';
 
 const QuickSelfEvaluationSummary = () => {
   const { t, i18n } = useTranslation();
+  const [searchParams] = useSearchParams();
+  const isFromYksilo = searchParams.has('yksilo');
 
   const videoInfo = useQuickSuggestionVideo();
   const exercises = useQuickSuggestionExercises();
@@ -41,17 +44,19 @@ const QuickSelfEvaluationSummary = () => {
         </Card>
 
         <LinkCard
-          to={`/${i18n.language}/${t('slugs.career-management')}`}
+          to={{ pathname: `/${i18n.language}/${t('slugs.career-management')}`, search: searchParams.toString() }}
           title={t('common.navigation-cards.career-management.title')}
           description={t('common.navigation-cards.career-management.description')}
           bgColor="bg-visualization-turquoise"
         />
-        <LinkCard
-          to={`/${i18n.language}/${t('slugs.exercises')}`}
-          title={t('common.navigation-cards.exercises.title')}
-          description={t('common.navigation-cards.exercises.description')}
-          bgColor="bg-visualization-sky"
-        />
+        {!isFromYksilo && (
+          <LinkCard
+            to={`/${i18n.language}/${t('slugs.exercises')}`}
+            title={t('common.navigation-cards.exercises.title')}
+            description={t('common.navigation-cards.exercises.description')}
+            bgColor="bg-visualization-sky"
+          />
+        )}
       </div>
     </div>
   );

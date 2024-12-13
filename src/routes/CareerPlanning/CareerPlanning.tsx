@@ -3,9 +3,11 @@ import SkillAreaInfoCard from '@/features/career-management/components/SkillArea
 import { ArrowRight } from '@/icons';
 import { SkillArea } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router';
 
 const CareerPlanning = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
   const { t, i18n } = useTranslation();
+  const [searchParams] = useSearchParams();
 
   const currentBaseUrl = `/${i18n.language}/${t('slugs.career-management')}`;
 
@@ -22,12 +24,18 @@ const CareerPlanning = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
       <h2 className="mb-2 text-heading-3 sm:text-heading-2">{t('career-management.self-evaluation.title')}</h2>
       <p className="max-w-[80ch]">{t('career-management.self-evaluation.description')}</p>
       <div className="hidden justify-center py-14 text-body sm:flex">
-        <Button to={`${currentBaseUrl}/${skillAreas[0].slug}`} icon={<ArrowRight />}>
+        <Button
+          to={{ pathname: `${currentBaseUrl}/${skillAreas[0].slug}`, search: searchParams.toString() }}
+          icon={<ArrowRight />}
+        >
           {t('career-management.start')}
         </Button>
       </div>
       <MobileBottomBar>
-        <Button to={`${currentBaseUrl}/${skillAreas[0].slug}`} icon={<ArrowRight />}>
+        <Button
+          to={{ pathname: `${currentBaseUrl}/${skillAreas[0].slug}`, search: searchParams.toString() }}
+          icon={<ArrowRight />}
+        >
           {t('career-management.start')}
         </Button>
       </MobileBottomBar>

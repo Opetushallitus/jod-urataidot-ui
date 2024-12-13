@@ -6,7 +6,7 @@ import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
 import { MediaExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { ReadyModal } from './ReadyModal';
 
 const MediaExercise = ({
@@ -19,6 +19,7 @@ const MediaExercise = ({
   sectionId: number;
 }) => {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
 
   const [readyModalOpen, setReadyModalOpen] = useState(false);
 
@@ -74,7 +75,10 @@ const MediaExercise = ({
           {t('exercises.easier-question')}{' '}
           <Link
             className="text-body-sm-bold text-primary hover:underline"
-            to={`../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`}
+            to={{
+              pathname: `../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`,
+              search: searchParams.toString(),
+            }}
           >
             {t('exercises.easier-link')}
           </Link>
