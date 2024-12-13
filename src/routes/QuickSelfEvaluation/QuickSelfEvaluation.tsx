@@ -1,9 +1,11 @@
 import { BackButton, Button, MobileBottomBar, QuickTestSection } from '@/components';
 import { SkillArea } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router';
 
 const QuickSelfEvaluation = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
 
   return (
     <div className="mx-auto flex max-w-3xl flex-col items-start">
@@ -17,11 +19,15 @@ const QuickSelfEvaluation = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
       </div>
 
       <div className="mx-auto hidden py-4 sm:block">
-        <Button to={t('slugs.summary')}>{t('quick-self-evaluation.summary-button')}</Button>
+        <Button to={{ pathname: t('slugs.summary'), search: searchParams.toString() }}>
+          {t('quick-self-evaluation.summary-button')}
+        </Button>
       </div>
 
       <MobileBottomBar>
-        <Button to={t('slugs.summary')}>{t('quick-self-evaluation.summary-button')}</Button>
+        <Button to={{ pathname: t('slugs.summary'), search: searchParams.toString() }}>
+          {t('quick-self-evaluation.summary-button')}
+        </Button>
       </MobileBottomBar>
     </div>
   );

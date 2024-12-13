@@ -3,7 +3,7 @@ import { SelectExercise as SelectExerciseType, SkillAreaID } from '@/lib/content
 import { useTranslation } from 'react-i18next';
 import { SelectOptions } from './SelectOptions';
 import { useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { SelectExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
 import { useEasierExercise } from '@/hooks/useEasierExercise';
 import ExerciseDocument from '@/features/pdf/documents/ExerciseDocument';
@@ -20,6 +20,7 @@ const SelectExercise = ({
   sectionId: number;
 }) => {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
 
   const [readyModalOpen, setReadyModalOpen] = useState(false);
 
@@ -79,7 +80,10 @@ const SelectExercise = ({
           {t('exercises.easier-question')}{' '}
           <Link
             className="text-body-bold text-primary hover:underline"
-            to={`../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`}
+            to={{
+              pathname: `../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`,
+              search: searchParams.toString(),
+            }}
           >
             {t('exercises.easier-link')}
           </Link>

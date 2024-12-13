@@ -1,7 +1,7 @@
 import { Check, ChevronRight } from '@/icons';
 import { ExerciseWithInfo, SkillAreaID } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { cx } from 'cva';
 import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
 
@@ -28,6 +28,7 @@ export const ExerciseLinkCard = ({
   showTag?: boolean;
 }) => {
   const { t, i18n } = useTranslation();
+  const [searchParams] = useSearchParams();
 
   const exerciseAnswered = useExerciseAnsweredStore((state) =>
     state.getExerciseAnswered({
@@ -47,7 +48,10 @@ export const ExerciseLinkCard = ({
 
   return (
     <Link
-      to={`/${i18n.language}/${t('slugs.exercises')}/${exercise.skillAreaSlug}/${exercise.sectionSlug}/${exercise.id}`}
+      to={{
+        pathname: `/${i18n.language}/${t('slugs.exercises')}/${exercise.skillAreaSlug}/${exercise.sectionSlug}/${exercise.id}`,
+        search: searchParams.toString(),
+      }}
       className={styles}
     >
       <div className="flex w-4/5 flex-col gap-3">

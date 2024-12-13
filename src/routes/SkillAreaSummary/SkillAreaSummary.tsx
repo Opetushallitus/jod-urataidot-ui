@@ -9,10 +9,12 @@ import { SkillArea } from '@/lib/content-types';
 import { getLastQuestionUrl } from '@/lib/navigation-helpers';
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router';
 
 const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
   const { t } = useTranslation();
   const { sm } = useMediaQueries();
+  const [searchParams] = useSearchParams();
 
   const nextSkillArea = useNextSkillAreaSlug({ id: skillArea.id });
   const prevUrl = `../${getLastQuestionUrl(skillArea)}`;
@@ -42,11 +44,16 @@ const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
           <p className="text-center">{t('career-management.skill-area-summary.description')}</p>
 
           <div className="hidden items-center gap-4 sm:flex">
-            <Button variant="simple" icon={<ArrowLeft />} iconSide="left" to={prevUrl}>
+            <Button
+              variant="simple"
+              icon={<ArrowLeft />}
+              iconSide="left"
+              to={{ pathname: prevUrl, search: searchParams.toString() }}
+            >
               {t('common.previous')}
             </Button>
 
-            <Button to={nextUrl} icon={<ArrowRight />}>
+            <Button to={{ pathname: nextUrl, search: searchParams.toString() }} icon={<ArrowRight />}>
               {t('common.next')}
             </Button>
           </div>
@@ -59,9 +66,12 @@ const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
               <p className="mb-6">{feedback.description}</p>
             ) : (
               <>
-                {' '}
                 <p className="mb-4 text-body">{t('components.career-management-summary-section.no-feedback')}</p>
-                <Button variant="soft" icon={<ChevronRight />} to={`../`}>
+                <Button
+                  variant="soft"
+                  icon={<ChevronRight />}
+                  to={{ pathname: `../`, search: searchParams.toString() }}
+                >
                   {t('components.career-management-summary-section.to-section', { skillAreaName: skillArea.name })}
                 </Button>
               </>
@@ -88,10 +98,10 @@ const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
 
         <MobileBottomBar>
           <div className="mx-4 flex w-full justify-between">
-            <Button variant="simple" to={prevUrl}>
+            <Button variant="simple" to={{ pathname: prevUrl, search: searchParams.toString() }}>
               {t('common.previous')}
             </Button>
-            <Button to={nextUrl}>{t('common.next')}</Button>
+            <Button to={{ pathname: nextUrl, search: searchParams.toString() }}>{t('common.next')}</Button>
           </div>
         </MobileBottomBar>
       </div>

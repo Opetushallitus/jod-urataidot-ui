@@ -4,13 +4,14 @@ import { ChevronDown } from '@/icons';
 import { cx } from 'cva';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useLocation, useNavigate } from 'react-router';
+import { useLocation, useNavigate, useSearchParams } from 'react-router';
 
 export const MobileSkillAreaSelector = () => {
   const { t, i18n } = useTranslation();
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+  const [searchParams] = useSearchParams();
 
   const skillAreas = useSkillAreas();
   const currentSkillArea = skillAreas.find((o) => pathname.includes(o.slug));
@@ -42,7 +43,10 @@ export const MobileSkillAreaSelector = () => {
               key={skillArea.id}
               onClick={() => {
                 setIsOpen(false);
-                navigate(`/${i18n.language}/${t('slugs.career-management')}/${skillArea.slug}`);
+                navigate({
+                  pathname: `/${i18n.language}/${t('slugs.career-management')}/${skillArea.slug}`,
+                  search: searchParams.toString(),
+                });
               }}
             >
               <SkillAreaIcon section={skillArea.id} size="xs" />
@@ -56,7 +60,10 @@ export const MobileSkillAreaSelector = () => {
             )}
             onClick={() => {
               setIsOpen(false);
-              navigate(`/${i18n.language}/${t('slugs.career-management')}/${t('slugs.summary')}`);
+              navigate({
+                pathname: `/${i18n.language}/${t('slugs.career-management')}/${t('slugs.summary')}`,
+                search: searchParams.toString(),
+              });
             }}
           >
             <span className="flex h-8 min-w-40 flex-1 items-center px-4 text-left text-heading-5">

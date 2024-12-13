@@ -2,7 +2,7 @@ import { Button, MobileBottomBar } from '@/components';
 import { useState } from 'react';
 import { SkillAreaID, TextExercise as TextExerciseType } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { TextExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
 import { useEasierExercise } from '@/hooks/useEasierExercise';
 import ExerciseDocument from '@/features/pdf/documents/ExerciseDocument';
@@ -19,6 +19,7 @@ const TextExercise = ({
   sectionId: number;
 }) => {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
 
   const [readyModalOpen, setReadyModalOpen] = useState(false);
 
@@ -60,11 +61,8 @@ const TextExercise = ({
         close={() => setReadyModalOpen(false)}
         document={<ExerciseDocument exercise={exercise} answers={fields} type="text" />}
       />
-
       <h1 className="text-heading-3 sm:text-heading-2">{exercise.title}</h1>
-
       {exercise.description && <p className="mb-4 whitespace-pre-wrap">{exercise.description}</p>}
-
       {exercise.textFields.map((textField, i) => (
         <div key={textField.id} className="mb-2 flex flex-col gap-1">
           <label className="font-display text-heading-5 sm:text-heading-4" htmlFor={textField.id.toString()}>
@@ -81,7 +79,10 @@ const TextExercise = ({
               {t('exercises.easier-question')}{' '}
               <Link
                 className="text-body-sm-bold text-primary hover:underline"
-                to={`../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`}
+                to={{
+                  pathname: `../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`,
+                  search: searchParams.toString(),
+                }}
               >
                 {t('exercises.easier-link')}
               </Link>
@@ -99,7 +100,6 @@ const TextExercise = ({
           />
         </div>
       ))}
-
       <p>{exercise.afterText}</p>
       <div className="hidden w-full justify-center sm:flex">
         <Button
@@ -110,7 +110,6 @@ const TextExercise = ({
           {t('exercises.ready')}
         </Button>
       </div>
-
       <MobileBottomBar>
         <Button
           onClick={() => {

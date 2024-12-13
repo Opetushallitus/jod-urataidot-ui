@@ -1,8 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { Footer, LinkCard, Title } from '@/components';
+import { useSearchParams } from 'react-router';
 
 const Home = () => {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
+  const isFromYksilo = searchParams.has('yksilo');
 
   return (
     <>
@@ -16,33 +19,37 @@ const Home = () => {
             </h1>
             <div className="grid justify-items-stretch gap-6 py-4 sm:grid-cols-2">
               <LinkCard
-                to={t('slugs.quick-self-evaluation')}
+                to={{ pathname: t('slugs.quick-self-evaluation'), search: searchParams.toString() }}
                 title={t('common.navigation-cards.learn-something-new.title')}
                 description={t('common.navigation-cards.learn-something-new.description')}
                 bgColor="bg-visualization-peach"
               />
               <LinkCard
-                to={t('slugs.career-management')}
+                to={{ pathname: t('slugs.career-management'), search: searchParams.toString() }}
                 title={t('common.navigation-cards.career-management.title')}
                 description={t('common.navigation-cards.career-management.description')}
                 bgColor="bg-visualization-turquoise"
               />
-              <LinkCard
-                to={t('slugs.exercises')}
-                title={t('common.navigation-cards.exercises.title')}
-                description={t('common.navigation-cards.exercises.description')}
-                bgColor="bg-visualization-sky"
-              />
-              <LinkCard
-                to={t('slugs.career-plan')}
-                title={t('common.navigation-cards.career-plan.title')}
-                description={t('common.navigation-cards.career-plan.description')}
-                bgColor="bg-neutral-3"
-              />
+              {!isFromYksilo && (
+                <>
+                  <LinkCard
+                    to={t('slugs.exercises')}
+                    title={t('common.navigation-cards.exercises.title')}
+                    description={t('common.navigation-cards.exercises.description')}
+                    bgColor="bg-visualization-sky"
+                  />
+                  <LinkCard
+                    to={t('slugs.career-plan')}
+                    title={t('common.navigation-cards.career-plan.title')}
+                    description={t('common.navigation-cards.career-plan.description')}
+                    bgColor="bg-neutral-3"
+                  />
+                </>
+              )}
             </div>
           </main>
         </div>
-        <Footer />
+        {!isFromYksilo && <Footer />}
       </div>
     </>
   );
