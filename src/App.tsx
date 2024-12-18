@@ -6,7 +6,7 @@ import { SkillAreaSection } from '@/routes/SkillAreaSection';
 import { SkillAreaSummary } from '@/routes/SkillAreaSummary';
 import { Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Outlet, RouterProvider, createBrowserRouter, redirect } from 'react-router';
+import { Outlet, RouterProvider, createBrowserRouter, replace } from 'react-router';
 import { MainLayout } from './components';
 import { ExercisePage } from './features/exercises/components/Exercise';
 import useSkillAreas from './hooks/useSkillAreas';
@@ -67,7 +67,7 @@ const App = () => {
     [
       {
         path: '/',
-        loader: () => redirect(`/${i18n.language}`),
+        loader: () => replace(`/${i18n.language}`),
       },
       {
         path: '/:lng',
