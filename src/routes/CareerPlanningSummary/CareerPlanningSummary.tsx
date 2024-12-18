@@ -36,7 +36,7 @@ const CareerPlanningSummary = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
 
   const copyToClipboard = async () => {
     await navigator.clipboard.writeText(
-      `${window.location.origin}/urataidot/${i18n.language}/${t('slugs.import')}#${getEncodedData()}`,
+      `${window.location.origin}/urataidot/${i18n.language}/${t('slugs.import')}${isFromYksilo ? '?yksilo=' : ''}#${getEncodedData()}`,
     );
     setLinkCopied(true);
     setTimeout(() => {
