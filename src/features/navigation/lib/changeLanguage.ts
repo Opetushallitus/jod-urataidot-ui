@@ -1,7 +1,7 @@
 import i18n from '@/i18n/config';
 import { t } from 'i18next';
 
-export const changeLanguage = (nextLanguage: string) => {
+export const changeLanguage = (nextLanguage: string, searchParams?: string) => {
   const slugs = i18n.getResource(i18n.language, 'translation', 'slugs') as Record<string, string>;
   const currentPathname = window.location.pathname.split('/').filter(Boolean).slice(2);
 
@@ -27,7 +27,7 @@ export const changeLanguage = (nextLanguage: string) => {
         )
         .join('/')}`;
       localStorage.setItem('i18nextLng', nextLanguage);
-      window.location.href = newPathname;
+      window.location.href = searchParams && searchParams.length > 0 ? `${newPathname}?${searchParams}` : newPathname;
     })
     .catch((error) => {
       console.error(error);

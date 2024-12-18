@@ -6,11 +6,14 @@ import { cx } from 'cva';
 import { PropsWithChildren, forwardRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { changeLanguage } from '../lib/changeLanguage';
+import { useSearchParams } from 'react-router';
 
 const LanguageSelector = () => {
   const { t, i18n } = useTranslation();
 
   const { sm } = useMediaQueries();
+
+  const [searchParams] = useSearchParams();
 
   return (
     <Menu>
@@ -31,17 +34,26 @@ const LanguageSelector = () => {
           </MenuItem>
         )}
         <MenuItem>
-          <LanguageButton language="fi" changeLanguage={changeLanguage}>
+          <LanguageButton
+            language="fi"
+            changeLanguage={(language) => changeLanguage(language, searchParams.toString())}
+          >
             Suomeksi
           </LanguageButton>
         </MenuItem>
         <MenuItem>
-          <LanguageButton language="en" changeLanguage={changeLanguage}>
+          <LanguageButton
+            language="en"
+            changeLanguage={(language) => changeLanguage(language, searchParams.toString())}
+          >
             In English
           </LanguageButton>
         </MenuItem>
         <MenuItem>
-          <LanguageButton language="sv" changeLanguage={changeLanguage}>
+          <LanguageButton
+            language="sv"
+            changeLanguage={(language) => changeLanguage(language, searchParams.toString())}
+          >
             På svenska
           </LanguageButton>
         </MenuItem>
