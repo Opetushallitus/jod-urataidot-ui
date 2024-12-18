@@ -19,7 +19,6 @@ import { ImportCareerPlan } from './routes/ImportCareerPlan';
 import { ImportEncodedAnswers } from './routes/ImportEncodedAnswers';
 import { QuickSelfEvaluation } from './routes/QuickSelfEvaluation';
 import { QuickSelfEvaluationSummary } from './routes/QuickSelfEvaluationSummary';
-import { ServiceInfo } from './routes/ServiceInfo';
 import { SkillArea } from './routes/SkillArea';
 import TestPDF from './routes/TestPDF/TestPDF';
 
@@ -136,10 +135,6 @@ const App = () => {
           {
             path: t('slugs.import-career-plan'),
             element: <ImportCareerPlan />,
-          },
-          {
-            path: t('slugs.service-info'),
-            element: <ServiceInfo />,
           },
           {
             path: t('slugs.career-plan'),

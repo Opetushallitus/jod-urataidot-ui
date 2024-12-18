@@ -14,11 +14,7 @@
     "select-language": "Valitse kieli",
     "home": "Aloitussivu",
     "all-exercises": "Kaikki tehtävät",
-    "service-info": "Tietoa palvelusta",
-    "copy-results-to-link": "Kopio linkki keskeneräiseen kyselyyn",
-    "download-workbook": "Lataa työkirja",
-    "workbook-slug": "https://www.hyria.fi/sites/default/files/2024-11/Urasuunnittelutaitoni-ty%C3%B6kirja_11112024_Hyria_0.pdf",
-    "get-workbook": "Uraruunnittelutaitoni-työkirja"
+    "copy-results-to-link": "Kopio linkki keskeneräiseen kyselyyn"
   },
   "no-match": {
     "description": "Hakemaasi sivua ei löytynyt.",
@@ -33,7 +29,6 @@
     "my-life-story": "oma-elamantarina",
     "resources-and-ability-to-work": "voimavarat-ja-tyokyky",
     "feedback": "palaute",
-    "service-info": "tietoa-palvelusta",
     "competence-first": "osaaminen-edella",
     "ready-for-change": "valmiina-muutoksiin",
     "world-around-you": "maailma-ymparillasi",
@@ -2221,10 +2216,6 @@
     "result-summary-description": "Yhteenveto sisältää itsearviointisi tulokset visuaalisessa ja sanallisessa muodossa. Osioiden vertailu -kuvan avulla näet kätevästi, missä taitoalueissa olet vahvimmillasi, ja mitä taitoalueita sinun kannattaisi keskittyä kehittämään. Seuraavilla sivuilla olevat palkkidiagrammit näyttävät vahvuutesi ja kehittämiskohteesi yksityiskohtaisemmin, osa-alueittain. Sanalliset palautteet täydentävät kuvaa, tarjoten konkreettisia näkökulmia ja kehitysehdotuksia.",
     "exercise-document": "Tehtävä",
     "career-plan": "Urasuunnitelma"
-  },
-  "service-info": {
-    "title": "Urataidot-työkalu - Tietoa palvelusta",
-    "description": "Urataidot on digitaalinen työkalu, joka auttaa sinua arvioimaan ja kehittämään urasuunnittelutaitojasi. Vastaamalla itsearviointikysymyksiin voit selvittää, missä urasuunnittelutaidoissa olet vahva ja mitä taitoja sinun kannattaisi kehittää.<br />Itsearvioinnin jälkeen saat vastaustesi perusteella harjoitustehtäväehdotuksia, joiden avulla voit kehittää urasuunnittelutaitojasi.<br /><br />Työkalu on maksuton, ja sitä käytetään ilman kirjautumista. Vastauksesi säilyvät, kunnes suljet selainikkunan. Voit tallentaa itsearvioinnin yhteenvedon linkkinä tai PDF-muodossa. Tehdyt harjoitustehtävät voit tallentaa PDF-muodossa.<br /><br />Hyria toteutti Urataidot-työkalun osana työ- ja elinkeinoministeriön ja KEHA-keskuksen hallinnoimaa Urasuunnittelutaitojen edistämishanketta. Hankkeen rahoitus tulee EU:n elpymis- ja palautumistukivälineestä.<br /><br />Lisätietoa Hyrian kehittämistyöstä sekä ohjaajille tuotettu tukimateriaali: <0>www.hyria.fi/urasuunnittelutaidot</0><br /><br />Urataidot-työkalu siirtyy osaksi Osaamispolku-sivustoa vuoden 2025 loppuun mennessä."
   },
   "career-plan": {
     "title": "Urasuunnitelma",
