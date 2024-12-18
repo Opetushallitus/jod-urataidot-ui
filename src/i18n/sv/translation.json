@@ -10,12 +10,8 @@
     "all-exercises": "Alla uppgifter",
     "home": "Hemsidan",
     "copy-results-to-link": "Kopiera länken till den ofullständiga enkäten",
-    "service-info": "Om tjänsten",
     "language": "Språk",
-    "select-language": "Välj språk",
-    "download-workbook": "Ladda ner arbetsbok",
-    "workbook-slug": "https://www.hyria.fi/sites/default/files/2024-11/My_Career_Management_Skills_Workbook%20_11112024_Hyria.pdf",
-    "get-workbook": "Min Arbetsbok för Karriärplanering"
+    "select-language": "Välj språk"
   },
   "home": {
     "title": "Livet kan ta dig i många riktningar. Karriärkompetenser hjälper dig vidare i dina reflektioner."
@@ -31,7 +27,6 @@
     "summary": "sammanfattning",
     "feedback": "feedback",
     "import": "hamta",
-    "service-info": "om-tjansten",
     "my-life-story": "min-livshistoria",
     "resources-and-ability-to-work": "resurser-och-arbetsformaga",
     "feelings-and-ways-of-acting": "kanslor-och-handlingssatt",
@@ -249,10 +244,6 @@
     "button": {
       "back": "Tillbaka"
     }
-  },
-  "service-info": {
-    "description": "Karriärkompetenser är ett digitalt verktyg som hjälper dig att bedöma och utveckla dina karriärkompetenser. Genom att svara på självutvärderingsfrågor kan du identifiera vilka karriärkompetenser du redan är stark i och vilka färdigheter du kan behöva utveckla vidare.<br /><br />Efter att du har genomfört självutvärderingen får du, baserat på dina svar, förslag på övningsuppgifter som stödjer dig i att stärka dina karriärkompetenser.<br /><br />Verktyget är helt gratis och kräver ingen inloggning. Dina svar sparas endast tills du stänger webbläsarfönstret. Du kan spara sammanfattningen av självutvärderingen som en länk eller i PDF-format. De övningsuppgifter du genomfört kan också sparas i PDF-format.<br /><br />Verktyget Karriärkompetenser har utvecklats av Hyria som en del av projektet för att främja karriärkompetenser, administrerat av Arbets- och näringsministeriet och Undervisnings- och kulturministeriet samt Utbildningsstyrelsen. Projektet finansieras av EU:s facilitet för återhämtning och resiliens (RRF).<br /><br />För mer information om Hyrias utvecklingsarbete och stödmaterial för handledare, besök: <0>www.hyria.fi/urasuunnittelutaidot</0>.<br /><br />Verktyget Karriärkompetenser kommer att integreras i Kompetensstigen-tjänst i slutet av 2025.",
-    "title": "Verktyget Karriärkompetenser – Om tjänsten"
   },
   "content": {
     "1": {

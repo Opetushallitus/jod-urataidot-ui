@@ -14,11 +14,7 @@
     "select-language": "Select language",
     "home": "Home",
     "all-exercises": "All exercises",
-    "service-info": "About the service",
-    "copy-results-to-link": "Copy the link to the incomplete survey",
-    "download-workbook": "Download workbook",
-    "workbook-slug": "https://www.hyria.fi/sites/default/files/2024-11/My_Career_Management_Skills_Workbook%20_11112024_Hyria.pdf",
-    "get-workbook": "My Career Management Skills workbook"
+    "copy-results-to-link": "Copy the link to the incomplete survey"
   },
   "no-match": {
     "description": "The page you are looking for does not exist.",
@@ -72,8 +68,7 @@
     "social-changes": "changes-in-society",
     "global-changes": "global-changes",
     "career-plan": "career-plan",
-    "import-career-plan": "import-career-plan",
-    "service-info": "about-the-service"
+    "import-career-plan": "import-career-plan"
   },
   "content": {
     "1": {
@@ -2025,10 +2020,6 @@
     "result-summary-description": "The summary contains the results of your self-assessment in visual and verbal form. The section comparison screen makes it easy to see where you are strongest and which skills you should focus on developing. The bar charts on the following pages show your strengths and areas for development in more detail, by sub-area. Verbal feedback completes the picture, offering concrete insights and suggestions for improvement.",
     "exercise-document": "Exercise",
     "career-plan": "Career Plan"
-  },
-  "service-info": {
-    "title": "Career Skills Tool - About the service",
-    "description": "Career Skills is a digital tool to help you assess and develop your career management skills. By answering self-assessment questions, you can find out which career management skills you are strong in and which skills you should develop.<br />After the self-assessment, you will receive suggestions for exercises to help you develop your career management skills.<br /><br />The tool is free of charge and can be used without logging in. Your answers will be saved until you close the browser window. You can save the self-assessment summary as a link or in PDF format. You can save the exercises you have done in PDF format.<br /><br />Hyria implemented the Career Skills tool as part of the Career Management Skills Promotion project managed by the Ministry of Employment and the Economy and the KEHA Centre. Funding for the project comes from the EU's Recovery and Regeneration Instrument.<br /><br />For more information on Hyria's development work and support material for instructors, please visit: <0>www.hyria.fi/urasuunnittelutaidot</0><br /><br />The Career Skills tool will be integrated into the CompetencyPath service by the end of 2025."
   },
   "career-plan": {
     "title": "Career Plan",

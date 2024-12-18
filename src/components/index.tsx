@@ -17,4 +17,3 @@ export { Slider } from './Slider/Slider';
 export { Title } from './Title/Title';
 export { SpiderDiagram } from './SpiderDiagram/SpiderDiagram';
 export { InfoButton } from './InfoButton/InfoButton';
-export { Footer } from './Footer/Footer';

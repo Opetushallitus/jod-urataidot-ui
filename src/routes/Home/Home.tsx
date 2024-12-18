@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Footer, LinkCard, Title } from '@/components';
+import { LinkCard, Title } from '@/components';
 import { useSearchParams } from 'react-router';
 
 const Home = () => {
@@ -49,7 +49,6 @@ const Home = () => {
             </div>
           </main>
         </div>
-        {!isFromYksilo && <Footer />}
       </div>
     </>
   );
