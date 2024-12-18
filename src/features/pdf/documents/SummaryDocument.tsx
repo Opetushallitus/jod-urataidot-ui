@@ -132,7 +132,6 @@ const Header = () => {
   return (
     <View style={styles.header}>
       <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-        <Image src="/urataidot/hyria_logo.png" style={{ width: 70, height: 32 }} />
         <Image src="/urataidot/eu_rahoittama_logo.png" style={{ height: 26 }} />
         <View style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
           <Text style={{ fontSize: 8 }}>{t('pdf.career-management-skills-report')}</Text>
