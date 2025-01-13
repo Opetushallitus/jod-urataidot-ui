@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import { configDefaults } from 'vitest/config';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
