@@ -1,6 +1,6 @@
 import { ChevronDown } from '@/icons';
 import { Disclosure, DisclosureButton, DisclosurePanel, Transition } from '@headlessui/react';
-import { useRef } from 'react';
+import React from 'react';
 
 const Accordion = ({
   children,
@@ -15,7 +15,7 @@ const Accordion = ({
   defaultOpen?: boolean;
   onClick?: (open: boolean) => void;
 }) => {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = React.useRef<HTMLDivElement>(null);
   return (
     <Disclosure defaultOpen={defaultOpen}>
       {({ open }) => (
@@ -37,10 +37,14 @@ const Accordion = ({
               ref={ref}
               show={open}
               beforeEnter={() => {
-                ref.current && ref.current.style.setProperty(`max-height`, `${ref.current.scrollHeight}px`);
+                if (ref.current) {
+                  ref.current.style.setProperty(`max-height`, `${ref.current.scrollHeight}px`);
+                }
               }}
               beforeLeave={() => {
-                ref.current && ref.current.style.setProperty(`max-height`, `0px`);
+                if (ref.current) {
+                  ref.current.style.setProperty(`max-height`, `0px`);
+                }
               }}
               enterFrom="transform opacity-0 max-h-[0px]"
               enterTo="transform opacity-100 ease-in"

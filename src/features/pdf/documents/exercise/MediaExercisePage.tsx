@@ -46,8 +46,6 @@ const styles = StyleSheet.create({
   },
 });
 
-// TODO: create media exercise for future needs (?) maybe
-
 export const MediaExercisePage = ({
   exercise,
   answers,

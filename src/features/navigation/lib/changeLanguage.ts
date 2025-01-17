@@ -29,7 +29,7 @@ export const changeLanguage = (nextLanguage: string, searchParams?: string) => {
       localStorage.setItem('i18nextLng', nextLanguage);
       window.location.href = searchParams && searchParams.length > 0 ? `${newPathname}?${searchParams}` : newPathname;
     })
-    .catch((error) => {
-      console.error(error);
+    .catch((_error) => {
+      // No logging the error to console
     });
 };

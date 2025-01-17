@@ -1,3 +1,4 @@
+import React from 'react';
 import { cx } from 'cva';
 
 interface CardProps {
@@ -5,6 +6,6 @@ interface CardProps {
   className?: string;
 }
 
-export function Card({ children, className }: CardProps) {
+export function Card({ children, className }: Readonly<CardProps>) {
   return <div className={cx('rounded-[20px] bg-white p-4', className)}>{children}</div>;
 }

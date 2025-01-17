@@ -1,6 +1,5 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { HelmetProvider } from 'react-helmet-async';
 import { Metric } from 'web-vitals';
 import './i18n/config';
 import App from './App.tsx';
@@ -12,6 +11,7 @@ if (process.env.NODE_ENV !== 'production') {
   void import('web-vitals').then((vitals) => {
     const warnOnlyNegativeMetrics = (metric: Metric) => {
       if (metric.rating !== 'good') {
+        /* eslint-disable-next-line no-console */
         console.warn(`Metric ${metric.name} is not good`, metric);
       }
     };
@@ -28,8 +28,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 root.render(
   <React.StrictMode>
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
+    <App />
   </React.StrictMode>,
 );

@@ -4,7 +4,7 @@ import { useEasierExercise } from '@/hooks/useEasierExercise';
 import { MediaExercise as MediaExerciseType, SkillAreaID } from '@/lib/content-types';
 import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
 import { MediaExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
-import { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useSearchParams } from 'react-router';
 import { ReadyModal } from './ReadyModal';
@@ -21,7 +21,7 @@ const MediaExercise = ({
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
 
-  const [readyModalOpen, setReadyModalOpen] = useState(false);
+  const [readyModalOpen, setReadyModalOpen] = React.useState(false);
 
   const answer = useExerciseAnswersStore((state) =>
     state.getAnswer({
@@ -84,8 +84,6 @@ const MediaExercise = ({
           </Link>
         </span>
       )}
-
-      {/* TODO: allow multiple textfields if needed */}
       <label htmlFor={exercise.textFieldTitle} className="text-heading-3">
         {exercise.textFieldTitle}
       </label>

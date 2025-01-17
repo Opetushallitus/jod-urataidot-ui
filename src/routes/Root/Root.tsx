@@ -1,10 +1,14 @@
-import { NavigationBar } from '@/components';
-import { Helmet } from 'react-helmet-async';
+import React from 'react';
+import { NavigationBar, Title } from '@/components';
 import { useTranslation } from 'react-i18next';
 import { Outlet, ScrollRestoration } from 'react-router';
 
 const Root = () => {
   const { i18n, t } = useTranslation();
+
+  React.useEffect(() => {
+    document.documentElement.setAttribute('lang', i18n.language);
+  }, [i18n.language]);
 
   return (
     <>
@@ -13,10 +17,7 @@ const Root = () => {
           return location.pathname;
         }}
       />
-      <Helmet>
-        <html lang={i18n.language} />
-        <title>{t('common.app-name')}</title>
-      </Helmet>
+      <Title value={t('common.app-name')} />
       <header role="banner" className="sticky top-0 z-50 print:hidden">
         <NavigationBar />
       </header>

@@ -19,7 +19,7 @@ interface LinkCardProps {
   bgColor: `bg-${Colors}`;
 }
 
-export function LinkCard({ to, title, description, bgColor }: LinkCardProps) {
+export function LinkCard({ to, title, description, bgColor }: Readonly<LinkCardProps>) {
   const classes = twMerge(
     'group w-full min-h-min text-balance flex flex-col gap-2 rounded-[20px] bg-primary-muted p-6 sm:gap-4 sm:p-8',
     bgColor,

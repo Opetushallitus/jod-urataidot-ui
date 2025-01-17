@@ -130,6 +130,7 @@ describe('useCareerPlanningAnswersStore', () => {
     const encodedLink = store.getEncodedData();
 
     // Check that the encoded link is a valid base64 string
+    // eslint-disable-next-line sonarjs/slow-regex
     expect(encodedLink).toMatch(/([A-Za-z0-9+/=]+)$/);
   });
 

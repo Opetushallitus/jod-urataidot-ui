@@ -1,9 +1,7 @@
-import { forwardRef, useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
+import React, { forwardRef } from 'react';
 import { t } from 'i18next';
 import { Popover, PopoverPanel } from '@headlessui/react';
 import { cx } from 'cva';
-
-// TODO: make sure this is accessibel
 
 type SliderProps = {
   /** Override for visible slider texts */
@@ -15,19 +13,23 @@ type SliderProps = {
 
 export const Slider = forwardRef<HTMLInputElement, SliderProps>(
   ({ leftText, rightText, valueTexts, ...rest }: SliderProps, ref) => {
-    const innerRef = useRef<HTMLInputElement>(null);
-    const [focused, setFocused] = useState(false);
-    useImperativeHandle(ref, () => innerRef.current!, []);
+    const innerRef = React.useRef<HTMLInputElement>(null);
+    const [focused, setFocused] = React.useState(false);
+    React.useImperativeHandle(ref, () => innerRef.current!, []);
 
-    const timeoutRef = useRef<NodeJS.Timeout>();
+    const timeoutRef = React.useRef<NodeJS.Timeout>(null);
 
-    const [value, setValue] = useState(
-      typeof innerRef.current?.valueAsNumber === 'number'
-        ? innerRef.current.valueAsNumber
-        : typeof rest.defaultValue !== 'undefined'
-          ? Number(rest.defaultValue)
-          : 2,
-    );
+    const getInitialValue = () => {
+      if (typeof innerRef.current?.valueAsNumber === 'number') {
+        return innerRef.current.valueAsNumber;
+      }
+      if (typeof rest.defaultValue !== 'undefined') {
+        return Number(rest.defaultValue);
+      }
+      return 2;
+    };
+
+    const [value, setValue] = React.useState(getInitialValue);
 
     const defaultTextValues = [
       t('components.slider.not-at-all'),
@@ -52,6 +54,21 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
       }, 3000);
     };
 
+    const progressClassName = () => {
+      switch (value) {
+        case 0:
+          return 'w-0';
+        case 1:
+          return 'w-1/3';
+        case 2:
+          return 'w-2/3';
+        case 3:
+          return 'w-full';
+        default:
+          return '';
+      }
+    };
+
     return (
       <div className="w-full text-body">
         <div aria-hidden className="mb-3 flex flex-row justify-between gap-4 font-display text-body-lg">
@@ -64,9 +81,7 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
             aria-hidden
             className="pointer-events-none absolute left-3 right-3 z-10 flex items-center justify-between rounded-full bg-neutral-5"
           >
-            <div
-              className={`h-1.5 rounded-full bg-primary ${value === 0 ? 'w-0' : value === 1 ? 'w-1/3' : value === 2 ? 'w-2/3' : 'w-full'}`}
-            />
+            <div className={`h-1.5 rounded-full bg-primary ${progressClassName()}`} />
           </div>
           {/* Ticks */}
           <div
@@ -106,25 +121,7 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
             onDrag={() => setFocus()}
             onTouchStart={() => setFocus()}
             onTouchMove={() => setFocus()}
-            className="
-            absolute
-            z-20
-            flex
-            h-10
-            w-full
-            cursor-pointer
-            appearance-none
-            rounded-full
-            bg-transparent
-            px-2
-            outline-none
-
-            slider-thumb:h-5
-            slider-thumb:w-5
-            slider-thumb:appearance-none
-            slider-thumb:rounded-full
-            slider-thumb:bg-primary
-          "
+            className="absolute z-20 flex h-10 w-full cursor-pointer appearance-none rounded-full bg-transparent px-2 outline-none slider-thumb:h-5 slider-thumb:w-5 slider-thumb:appearance-none slider-thumb:rounded-full slider-thumb:bg-primary"
             min={0}
             max={3}
             step={1}
@@ -144,11 +141,11 @@ const TickWithTooltip = ({
   show: boolean;
   className?: string;
 }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const [offsetX, setOffsetX] = useState(0);
-  const [boundingRect, setBoundingRect] = useState<DOMRect>();
+  const ref = React.useRef<HTMLDivElement>(null);
+  const [offsetX, setOffsetX] = React.useState(0);
+  const [boundingRect, setBoundingRect] = React.useState<DOMRect>();
 
-  useLayoutEffect(() => {
+  React.useLayoutEffect(() => {
     if (ref.current && !boundingRect) {
       setBoundingRect(ref.current.getBoundingClientRect());
     }

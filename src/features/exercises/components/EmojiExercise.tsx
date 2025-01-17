@@ -6,7 +6,7 @@ import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
 import { EmojiExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
 import EmojiPicker from 'emoji-picker-react';
-import { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useSearchParams } from 'react-router';
 import { ReadyModal } from './ReadyModal';
@@ -23,7 +23,7 @@ const EmojiExercise = ({
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
 
-  const [readyModalOpen, setReadyModalOpen] = useState(false);
+  const [readyModalOpen, setReadyModalOpen] = React.useState(false);
 
   const easierExercise = useEasierExercise({ skillAreaId, sectionId, exerciseId: exercise.id });
   const answer = useExerciseAnswersStore((state) =>

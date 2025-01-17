@@ -38,11 +38,11 @@ export const SelectExercisePage = ({
         {parseDescription(exercise.description)}
       </View>
       {exercise.wordLists.map((wordList, i) => (
-        <Fragment key={i}>
+        <Fragment key={exercise.id}>
           <Text style={styles.headingSmall}>{wordList.title}</Text>
           <View style={localStyle.selectedWordsContainer}>
-            {answers[i].selections.map((word, j) => (
-              <Text key={j} style={localStyle.selectedWord}>
+            {answers[i].selections.map((word) => (
+              <Text key={answers[i].id} style={localStyle.selectedWord}>
                 {word}
               </Text>
             ))}

@@ -5,7 +5,7 @@ import { useAllExercises } from '@/hooks/useAllExercises';
 import { Check, Link as LinkIcon } from '@/icons';
 import { ExerciseWithInfo } from '@/lib/content-types';
 import { useCareerPlanAnswersStore } from '@/stores/careerPlanAnswersStore';
-import { useEffect, useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, To } from 'react-router';
 
@@ -13,8 +13,8 @@ const CareerPlan = () => {
   const { t, i18n } = useTranslation();
   const answers = useCareerPlanAnswersStore((state) => state.answers);
   const getEncodedData = useCareerPlanAnswersStore((state) => state.getEncodedData);
-  const [readyModalOpen, setReadyModalOpen] = useState(false);
-  const [linkCopied, setLinkCopied] = useState(false);
+  const [readyModalOpen, setReadyModalOpen] = React.useState(false);
+  const [linkCopied, setLinkCopied] = React.useState(false);
 
   const description = t('career-plan.question-description');
   const knowYourselfSlug = t('slugs.know-yourself');
@@ -320,12 +320,12 @@ const TextArea = ({
   const { t, i18n } = useTranslation();
   const allExercises = useAllExercises();
 
-  const [answer, setAnswer] = useState('');
+  const [answer, setAnswer] = React.useState('');
 
   const getAnswer = useCareerPlanAnswersStore((state) => state.getAnswer);
   const storeAnswer = useCareerPlanAnswersStore((state) => state.setAnswer);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const answer = getAnswer({ id });
     if (answer) {
       setAnswer(answer.text);

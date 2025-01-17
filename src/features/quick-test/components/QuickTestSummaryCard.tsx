@@ -13,6 +13,7 @@ export const QuickTestSummaryCard = ({ title, type }: { title: string; type: 'kn
       <h2 className="text-heading-3">{title}</h2>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-y-16">
         {scores.map((s, i) => (
+          // eslint-disable-next-line react/no-array-index-key
           <ScoreDisplay key={i} skillAreaId={SkillAreaIDValues[i]} score={s} />
         ))}
       </div>
@@ -32,6 +33,20 @@ const ScoreDisplay = ({ score, skillAreaId }: { score: number; skillAreaId: Skil
 
 const DisplaySlider = ({ score }: { score: number }) => {
   const { t } = useTranslation();
+
+  const getProgressClassName = () => {
+    switch (score) {
+      case 0:
+        return 'w-3';
+      case 1:
+        return 'w-[calc(100%/3+10px)]';
+      case 2:
+        return 'w-[calc(200%/3+6px)]';
+      default:
+        return 'w-full';
+    }
+  };
+
   return (
     <div className="flex flex-col gap-2">
       <div className="flex justify-between font-display text-body-sm">
@@ -44,9 +59,7 @@ const DisplaySlider = ({ score }: { score: number }) => {
           aria-hidden
           className="pointer-events-none absolute inset-0 z-10 flex items-center justify-between rounded-full bg-neutral-5"
         >
-          <div
-            className={`h-1.5 rounded-full bg-primary ${score === 0 ? 'w-3' : score === 1 ? 'w-[calc(100%/3+10px)]' : score === 2 ? 'w-[calc(200%/3+6px)]' : 'w-full'}`}
-          />
+          <div className={`h-1.5 rounded-full bg-primary ${getProgressClassName()}`} />
         </div>
         {/* Ticks */}
         <div className="absolute inset-0 z-20 mx-1 flex h-1.5 items-center justify-between">

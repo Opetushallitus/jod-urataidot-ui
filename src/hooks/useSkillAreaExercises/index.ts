@@ -31,14 +31,16 @@ export const useSkillAreaExercises = ({ skillAreaId }: { skillAreaId: SkillAreaI
     const exercise = section.exercises.find((e) => isExerciseLimit({ score, min: e.minScore, max: e.maxScore }));
 
     return exercise
-      ? {
-          skillAreaSlug: skillAreaSlug,
-          sectionSlug: section.slug,
-          sectionId: section.id,
-          skillAreaId: skillAreaId,
-          skillAreaName: skillArea.name,
-          ...exercise,
-        }
+      ? [
+          {
+            skillAreaSlug: skillAreaSlug,
+            sectionSlug: section.slug,
+            sectionId: section.id,
+            skillAreaId: skillAreaId,
+            skillAreaName: skillArea.name,
+            ...exercise,
+          },
+        ]
       : [];
   });
 };

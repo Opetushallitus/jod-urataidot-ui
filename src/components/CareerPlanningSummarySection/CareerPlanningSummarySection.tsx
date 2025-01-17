@@ -45,7 +45,7 @@ export const CareerPlanningSummarySection = ({
           <Accordion
             title={t('components.career-management-summary-section.exercises-close')}
             titleOpen={t('components.career-management-summary-section.exercises-open')}
-            defaultOpen={accordionOpen ?? index === 0 ? true : false} // if accordion state not set and index 0 open by default
+            defaultOpen={(accordionOpen ?? index === 0) ? true : false} // if accordion state not set and index 0 open by default
             onClick={(open) => setSummaryAccordion({ id: skillArea.id, open })}
           >
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

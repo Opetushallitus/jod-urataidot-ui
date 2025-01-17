@@ -1,7 +1,7 @@
 import { Language } from '@/i18n/config';
 import { getContents } from '@/lib/content';
 import { Content, SkillArea } from '@/lib/content-types';
-import { useEffect, useMemo, useRef } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 /**
@@ -10,11 +10,11 @@ import { useTranslation } from 'react-i18next';
 const useSkillAreas = (): SkillArea[] => {
   const { t, i18n } = useTranslation();
   const language = i18n.language as Language;
-  const contentRef = useRef<Content>(getContents(t, language).slice(-1)[0]);
+  const contentRef = React.useRef<Content>(getContents(t, language).slice(-1)[0]);
   const versionInSession = window.sessionStorage.getItem('content-version');
-  const version = useMemo(() => (versionInSession ? Number(versionInSession) : null), [versionInSession]);
+  const version = React.useMemo(() => (versionInSession ? Number(versionInSession) : null), [versionInSession]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (typeof version === 'number') {
       contentRef.current = getContents(t, language)[version - 1];
     } else {

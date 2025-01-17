@@ -59,7 +59,7 @@ export const useCareerPlanAnswersStore = create<CareerPlanAnswersStore>()(
           const decodedData = JSON.parse(decompressedData) as CareerPlanAnswer[];
           set({ answers: decodedData });
           return { error: null };
-        } catch (error) {
+        } catch (_error) {
           return { error: 'Invalid data' };
         }
       },

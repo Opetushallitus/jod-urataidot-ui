@@ -39,7 +39,8 @@ export const PDFBarDiagram = ({
   // Remap here so i can get index cleanly
   const sectionScores = skillArea.sections.map((section) => {
     const answerList = section.questions.flatMap((question) => {
-      return answers.find((a) => a.questionId === question.id && a.sectionId === section.id)?.score ?? [];
+      const score = answers.find((a) => a.questionId === question.id && a.sectionId === section.id)?.score;
+      return score !== undefined ? [score] : [];
     });
 
     const score = answerList.length ? answerList.reduce((c, a) => c + a, 0) / answerList.length : undefined;
@@ -138,7 +139,6 @@ export const PDFBarDiagram = ({
 
                 const flooredBarHeight = score === undefined || barHeight > minBarHeight ? barHeight : minBarHeight;
 
-                // TODO: dynamic size?
                 const wrappedTitleStrings = wrapText(name, 10);
 
                 return (
@@ -162,6 +162,7 @@ export const PDFBarDiagram = ({
                           width: barSpacing * 1.8,
                           fill: '#55575E',
                         }}
+                        // eslint-disable-next-line react/no-array-index-key
                         key={`text-row-${j}`}
                         x={barSpacing * (i * 2 + 1)}
                         y={barMaxHeight + 12 + 12 * j}

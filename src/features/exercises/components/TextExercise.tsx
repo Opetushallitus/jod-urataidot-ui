@@ -1,5 +1,5 @@
 import { Button, MobileBottomBar } from '@/components';
-import { useState } from 'react';
+import React from 'react';
 import { SkillAreaID, TextExercise as TextExerciseType } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
 import { Link, useSearchParams } from 'react-router';
@@ -21,7 +21,7 @@ const TextExercise = ({
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
 
-  const [readyModalOpen, setReadyModalOpen] = useState(false);
+  const [readyModalOpen, setReadyModalOpen] = React.useState(false);
 
   const easierExercise = useEasierExercise({ skillAreaId, sectionId, exerciseId: exercise.id });
   const setAnswer = useExerciseAnswersStore((state) => state.setAnswer);

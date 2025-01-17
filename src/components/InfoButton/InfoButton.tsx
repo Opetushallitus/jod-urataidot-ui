@@ -1,9 +1,9 @@
 import { Info } from '@/icons';
 import { Modal } from '../Modal/Modal';
-import { useState } from 'react';
+import React from 'react';
 
 export const InfoButton = ({ buttonText, title, info }: { buttonText: string; title: string; info: string }) => {
-  const [infoModalOpen, setInfoModalOpen] = useState(false);
+  const [infoModalOpen, setInfoModalOpen] = React.useState(false);
   return (
     <button className="flex flex-row items-center gap-1 text-primary" onClick={() => setInfoModalOpen(true)}>
       <Info />

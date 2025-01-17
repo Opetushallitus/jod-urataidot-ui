@@ -74,10 +74,21 @@ export const PDFSpiderDiagram = ({
         <G>
           {SkillAreaIDValues.map((section, i) => {
             const { x, y } = calculateCirclePoint(viewBox, viewBox / 2 - 2, i);
-            const textOffset = i === 1 || i === 2 ? 100 : i === 4 || i === 5 ? -100 : 0;
+            const getTextOffset = () => {
+              switch (i) {
+                case 1:
+                case 2:
+                  return 100;
+                case 4:
+                case 5:
+                  return -100;
+                default:
+                  return 0;
+              }
+            };
 
             return (
-              <G key={section} transform={`translate(${x - iconSize / 2 + textOffset}, ${y - iconSize / 2 - 10})`}>
+              <G key={section} transform={`translate(${x - iconSize / 2 + getTextOffset()}, ${y - iconSize / 2 - 10})`}>
                 <PDFSkillAreaIcon skillArea={section} size={iconSize} />
                 <Text
                   style={{

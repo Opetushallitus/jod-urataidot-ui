@@ -7,12 +7,12 @@ import { CareerPlanningSummarySection } from '@/components/CareerPlanningSummary
 import { Open, Link, Check, ArrowRight } from '@/icons';
 import { BlobProvider } from '@react-pdf/renderer';
 import SummaryDocument from '@/features/pdf/documents/SummaryDocument';
-import { useState } from 'react';
+import React from 'react';
 import { OpenAllExercisesPDFButton } from '@/features/exercises/components/OpenAllExercisesPDFButton';
 import { useSearchParams } from 'react-router';
 
 const CareerPlanningSummary = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
-  const [linkCopied, setLinkCopied] = useState(false);
+  const [linkCopied, setLinkCopied] = React.useState(false);
   const { t, i18n } = useTranslation();
 
   const [searchParams] = useSearchParams();
@@ -68,16 +68,16 @@ const CareerPlanningSummary = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
 
         <SpiderDiagram totalScores={totalScores} skillAreas={skillAreas} />
 
-        {skillAreas
-          .sort((a, b) => {
+        {[...skillAreas]
+          .sort((a: SkillArea, b: SkillArea) => {
             const sa = totalScores[a.id];
             const sb = totalScores[b.id];
             if (sa === undefined && sb === undefined) return 0;
-            if (sa !== undefined || sb === undefined) return -1;
-            if (sa === undefined || sb !== undefined) return 1;
+            if (sa != undefined || sb === undefined) return -1;
+            if (sa === undefined || sb != undefined) return 1;
             return sa - sb;
           })
-          .map((skillArea, i) => (
+          .map((skillArea: SkillArea, i: number) => (
             <CareerPlanningSummarySection
               index={i}
               key={skillArea.id}
