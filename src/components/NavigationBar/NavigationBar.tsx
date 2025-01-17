@@ -2,17 +2,17 @@ import { Drawer } from '@/components';
 import LanguageSelector from '@/features/navigation/components/LanguageSelector';
 import { Check, Document, Home, Link as LinkIcon } from '@/icons';
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
-import { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, To, useSearchParams } from 'react-router';
 
 export function NavigationBar() {
   const { t, i18n } = useTranslation();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = React.useState(false);
 
   const getEncodedData = useCareerPlanningAnswersStore((state) => state.getEncodedData);
 
-  const [linkCopied, setLinkCopied] = useState(false);
+  const [linkCopied, setLinkCopied] = React.useState(false);
 
   const copyToClipboard = async () => {
     await navigator.clipboard.writeText(

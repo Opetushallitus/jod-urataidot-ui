@@ -36,8 +36,8 @@ export const EmojiExercisePage = ({
         {parseDescription(exercise.description)}
       </View>
       <Text style={styles.headingSmall}>{exercise.emojiTitle}</Text>
-      {answers.map((answer, i) => (
-        <View key={i} style={localStyle.answerContainer}>
+      {answers.map((answer) => (
+        <View key={answer.id} style={localStyle.answerContainer}>
           <Text style={localStyle.emoji}>{answer.emoji}</Text>
           <Text style={styles.body}>{answer.text}</Text>
         </View>

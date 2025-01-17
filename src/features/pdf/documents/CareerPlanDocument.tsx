@@ -76,8 +76,8 @@ const CareerPlanDocument = ({ content }: Props) => {
         <Header />
         <View style={styles.content}>
           <Text style={styles.heading}>{t('career-plan.title')}</Text>
-          {content.map((qa, i) => (
-            <View key={i} wrap={false}>
+          {content.map((qa) => (
+            <View key={qa.id} wrap={false}>
               <Text style={styles.headingSmall}>{qa.question}</Text>
               <Text style={styles.body}>{qa.answer}</Text>
             </View>

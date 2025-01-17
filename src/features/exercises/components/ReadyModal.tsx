@@ -1,3 +1,4 @@
+import { JSX } from 'react/jsx-runtime';
 import { Button, Modal } from '@/components';
 import { DownloadPDFButton } from '@/features/pdf/components/DownloadPDFButton';
 import { Exercise } from '@/lib/content-types';

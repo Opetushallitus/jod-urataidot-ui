@@ -26,11 +26,13 @@ export const OpenAllExercisesPDFButton = ({ hideWhenNoAnswers = false }: { hideW
       return [];
     }
 
-    return {
-      exercise: exercise,
-      answers: answers.answers,
-      type: answers.type,
-    };
+    return [
+      {
+        exercise: exercise,
+        answers: answers.answers,
+        type: answers.type,
+      },
+    ];
   });
 
   if (allAnswers.length === 0) {

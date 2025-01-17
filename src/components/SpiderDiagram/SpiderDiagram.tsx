@@ -1,10 +1,9 @@
 import { SkillArea, SkillAreaID, SkillAreaIDValues } from '@/lib/content-types';
-import { SkillAreaIcon } from '..';
+import { Card, SkillAreaIcon } from '..';
 import { useTranslation } from 'react-i18next';
-import { Card } from '..';
 import { calcHexPath, calcStatPath, calculateCirclePoint } from './helpers';
 import { Popover, PopoverPanel } from '@headlessui/react';
-import { useState } from 'react';
+import React from 'react';
 import { cx } from 'cva';
 
 export type TotalScoreRecord = Record<SkillAreaID, number | undefined>;
@@ -27,8 +26,8 @@ export const SpiderDiagram = ({
   totalScores: TotalScoreRecord;
 }) => {
   const { t } = useTranslation();
-  const [shownPopovers, setShownPopovers] = useState<SkillAreaID[]>([]);
-  const [popoverTimeouts, setPopoverTimeouts] = useState<TimeoutRecord>({});
+  const [shownPopovers, setShownPopovers] = React.useState<SkillAreaID[]>([]);
+  const [popoverTimeouts, setPopoverTimeouts] = React.useState<TimeoutRecord>({});
 
   // everything is scaled based on the view box so i can use the
   // configured text sizes and adjust the viewbox so they look right
@@ -36,9 +35,13 @@ export const SpiderDiagram = ({
   const dotSize = viewBox / 100;
 
   // On mobile if section icons are clicked show a tooltip
+  const removePopover = (skillAreaId: SkillAreaID) => {
+    return (currentPopovers: SkillAreaID[]) => currentPopovers.filter((s) => s !== skillAreaId);
+  };
+
   const showToolTip = (skillAreaId: SkillAreaID) => {
     if (shownPopovers.includes(skillAreaId)) {
-      setShownPopovers([...shownPopovers.filter((s) => s !== skillAreaId)]);
+      setShownPopovers(removePopover(skillAreaId)(shownPopovers));
 
       // cancel the previous timeout if icon is pressed again
       clearTimeout(popoverTimeouts[skillAreaId]);
@@ -46,10 +49,7 @@ export const SpiderDiagram = ({
     } else {
       setShownPopovers([...shownPopovers.filter((s) => s !== skillAreaId), skillAreaId]);
 
-      const timeoutRef = setTimeout(
-        () => setShownPopovers((shownPopovers) => shownPopovers.filter((s) => s !== skillAreaId)),
-        3000,
-      );
+      const timeoutRef = setTimeout(() => setShownPopovers(removePopover(skillAreaId)), 3000);
 
       // save timeout ref if we want to reclick, idk if redundant
       setPopoverTimeouts({ ...popoverTimeouts, [skillAreaId]: timeoutRef });
@@ -57,9 +57,6 @@ export const SpiderDiagram = ({
   };
 
   const offsetX = 0;
-
-  // TODO: add some screenreader capability?
-
   return (
     <Card>
       <h2 className="text-heading-3">{t('components.spider.title')}</h2>
@@ -158,14 +155,25 @@ export const SpiderDiagram = ({
               const { x, y } = calculateCirclePoint(viewBox, viewBox / 2 - 2, i);
               const iconSize = viewBox / 10;
 
-              const textOffset = i === 1 || i === 2 ? 100 : i === 4 || i === 5 ? -100 : 0;
+              const getTextOffset = () => {
+                switch (i) {
+                  case 1:
+                  case 2:
+                    return 100;
+                  case 4:
+                  case 5:
+                    return -100;
+                  default:
+                    return 0;
+                }
+              };
 
               return (
                 <g key={section}>
                   <svg
                     width={iconSize}
                     height={iconSize}
-                    x={x - iconSize / 2 + textOffset}
+                    x={x - iconSize / 2 + getTextOffset()}
                     y={y - iconSize / 2 - 10}
                     className={`aspect-square`}
                   >
@@ -173,7 +181,7 @@ export const SpiderDiagram = ({
                   </svg>
                   <text
                     textAnchor="middle"
-                    x={x + textOffset}
+                    x={x + getTextOffset()}
                     y={y + iconSize - 10}
                     style={{ fill: 'black' }}
                     className="justify-center py-4 font-display text-body-sm-bold"

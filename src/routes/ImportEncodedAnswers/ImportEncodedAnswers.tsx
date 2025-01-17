@@ -1,5 +1,5 @@
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
-import { useEffect } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, Navigate, useSearchParams } from 'react-router';
 import { useNavigate } from 'react-router';
@@ -14,7 +14,7 @@ const ImportEncodedAnswers = () => {
   const [searchParams] = useSearchParams();
   const isFromYksilo = searchParams.has('yksilo');
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (slicedHash) {
       const { error } = setStateWithEncodedData(slicedHash);
 
@@ -29,10 +29,10 @@ const ImportEncodedAnswers = () => {
   }, []);
 
   // if the location key is default we want to replace the entry with root to maintain proper navigation
-  if (location.key === 'default')
+  if (location.key === 'default') {
     window.history.replaceState(null, '', `/urataidot/${i18n.language}${isFromYksilo ? '?yksilo=' : ''}`);
+  }
 
-  // TODO: some error page instead? Now fails silently
   return <Navigate to={{ pathname: `/urataidot/${i18n.language}`, search: searchParams.toString() }} />;
 };
 

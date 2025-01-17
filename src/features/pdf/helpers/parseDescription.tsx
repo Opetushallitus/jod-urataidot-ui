@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+import { JSX } from 'react/jsx-runtime';
 import { Text, StyleSheet, Font } from '@react-pdf/renderer';
 import { ReactElement, ReactNode } from 'react';
 import { renderToString } from 'react-dom/server';
@@ -59,25 +59,25 @@ export const parseDescription = (description: ReactNode) => {
         {elements.map((el: JSX.Element) => {
           if (el.type === 'strong') {
             return (
-              <Text key={Math.random()} style={styles.bodyBold}>
+              <Text key={el.key} style={styles.bodyBold}>
                 {el.props.children}
               </Text>
             );
           }
           if (el.type === 'i') {
             return (
-              <Text key={Math.random()} style={styles.bodyItalic}>
+              <Text key={el.key} style={styles.bodyItalic}>
                 {el.props.children}
               </Text>
             );
           }
 
           if (el.type === 'br') {
-            return '\n';
+            return <>{'\n'}</>;
           }
 
           return (
-            <Text key={Math.random()} style={styles.body}>
+            <Text key={el.key} style={styles.body}>
               {el}
             </Text>
           );

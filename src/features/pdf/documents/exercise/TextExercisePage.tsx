@@ -26,8 +26,8 @@ export const TextExercisePage = ({
         <Text style={styles.heading}>{exercise.title}</Text>
         {parseDescription(exercise.description)}
       </View>
-      {exercise.textFields.map((textField, i) => (
-        <View key={i} style={localStyle.textFieldContainer}>
+      {exercise.textFields.map((textField) => (
+        <View key={textField.id} style={localStyle.textFieldContainer}>
           <Text style={styles.headingSmall}>{textField.title}</Text>
           <Text style={styles.body}>{answers.find((a) => a.id === textField.id)?.text}</Text>
         </View>

@@ -1,6 +1,6 @@
 import { Button } from '@/components';
-import type ReactPDF from '@react-pdf/renderer';
-import React, { useState } from 'react';
+import * as ReactPDF from '@react-pdf/renderer';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 export const DownloadPDFButton = ({
@@ -13,8 +13,8 @@ export const DownloadPDFButton = ({
   children: React.ReactNode;
 }) => {
   const { t } = useTranslation();
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState<string | null>(null);
 
   const buildAndDownloadPDF = async () => {
     setLoading(true);

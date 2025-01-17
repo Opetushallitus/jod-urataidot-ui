@@ -2,7 +2,7 @@ import { Button, MobileBottomBar } from '@/components';
 import { SelectExercise as SelectExerciseType, SkillAreaID } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
 import { SelectOptions } from './SelectOptions';
-import { useState } from 'react';
+import React from 'react';
 import { Link, useSearchParams } from 'react-router';
 import { SelectExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
 import { useEasierExercise } from '@/hooks/useEasierExercise';
@@ -22,7 +22,7 @@ const SelectExercise = ({
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
 
-  const [readyModalOpen, setReadyModalOpen] = useState(false);
+  const [readyModalOpen, setReadyModalOpen] = React.useState(false);
 
   const easierExercise = useEasierExercise({ skillAreaId, exerciseId: exercise.id, sectionId });
   const answer = useExerciseAnswersStore((state) =>

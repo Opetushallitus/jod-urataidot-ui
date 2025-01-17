@@ -1,5 +1,5 @@
 import { Info } from '@/icons';
-import { useState } from 'react';
+import React from 'react';
 import { SkillAreaID } from '@/lib/content-types';
 import { Modal } from '@/components';
 import { useTranslation } from 'react-i18next';
@@ -14,7 +14,7 @@ export const ShowVideoButton = ({
   skillAreaId: SkillAreaID;
   skillAreaName: string;
 }) => {
-  const [infoModalOpen, setInfoModalOpen] = useState(false);
+  const [infoModalOpen, setInfoModalOpen] = React.useState(false);
   const { t } = useTranslation();
   return (
     <button className="flex flex-row items-center gap-1 text-primary" onClick={() => setInfoModalOpen(true)}>

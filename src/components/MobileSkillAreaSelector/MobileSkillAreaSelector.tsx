@@ -2,7 +2,7 @@ import { BottomDrawer, SkillAreaIcon } from '@/components';
 import useSkillAreas from '@/hooks/useSkillAreas';
 import { ChevronDown } from '@/icons';
 import { cx } from 'cva';
-import { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate, useSearchParams } from 'react-router';
 
@@ -10,7 +10,7 @@ export const MobileSkillAreaSelector = () => {
   const { t, i18n } = useTranslation();
   const { pathname } = useLocation();
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
   const [searchParams] = useSearchParams();
 
   const skillAreas = useSkillAreas();

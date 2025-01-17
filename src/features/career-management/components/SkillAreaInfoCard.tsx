@@ -3,13 +3,13 @@ import { Modal } from '@/components';
 import { Video } from '@/components/Video/Video';
 import { useMediaQueries } from '@/hooks/useMediaQuery';
 import { SkillArea } from '@/lib/content-types';
-import { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 export const SkillAreaInfoCard = ({ skillArea }: { skillArea: SkillArea }) => {
   const { xs } = useMediaQueries();
   const { t } = useTranslation();
-  const [infoModalOpen, setInfoModalOpen] = useState(false);
+  const [infoModalOpen, setInfoModalOpen] = React.useState(false);
 
   return (
     <button

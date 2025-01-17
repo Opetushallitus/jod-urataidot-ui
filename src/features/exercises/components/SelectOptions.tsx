@@ -1,6 +1,6 @@
 import { Check, ChevronDown } from '@/icons';
 import { cx } from 'cva';
-import { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 export const SelectOptions = ({
@@ -14,7 +14,7 @@ export const SelectOptions = ({
   onClick: (value: string) => void;
   label: string;
 }) => {
-  const [showMore, setShowMore] = useState(false);
+  const [showMore, setShowMore] = React.useState(false);
   const { t } = useTranslation();
 
   const filteredOptions = options.slice(0, showMore ? options.length : 24);

@@ -141,8 +141,7 @@ export const useCareerPlanningAnswersStore = create<CareerPlanningAnswersStore>(
           );
           set({ answers });
           return { error: null };
-        } catch (e) {
-          console.error(e);
+        } catch (_e) {
           return { error: 'Could not import data' };
         }
       },
