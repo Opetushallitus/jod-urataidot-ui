@@ -236,7 +236,8 @@
       "no-choice": "Inget val"
     },
     "spider": {
-      "title": "Jämförelse av avsnitt"
+      "title": "Jämförelse av avsnitt",
+      "value": "Värde"
     },
     "quick-self-evaluation-summary-section": {
       "more-info": "Mer information om detta ämne"

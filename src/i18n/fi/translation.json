@@ -2051,7 +2051,8 @@
       "very-much": "Paljon"
     },
     "spider": {
-      "title": "Osioiden vertailu"
+      "title": "Osioiden vertailu",
+      "value": "Arvo"
     },
     "button": {
       "back": "Takaisin"
