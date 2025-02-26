@@ -5,11 +5,12 @@ import { calcHexPath, calcStatPath, calculateCirclePoint } from './helpers';
 import { Popover, PopoverPanel } from '@headlessui/react';
 import React from 'react';
 import { cx } from 'cva';
+import { useMediaQueries } from '@/hooks/useMediaQuery';
 
 export type TotalScoreRecord = Record<SkillAreaID, number | undefined>;
 type TimeoutRecord = Partial<Record<SkillAreaID, NodeJS.Timeout>>;
 
-const tooltipPositions = {
+const tooltipPositions: Record<SkillAreaID, string> = {
   'know-yourself': cx('absolute top-[20%] left-[50%]'),
   'competence-first': cx('absolute top-[40%] left-[84.5%]'),
   'ready-for-change': cx('absolute top-[80%] left-[84.5%]'),
@@ -17,6 +18,11 @@ const tooltipPositions = {
   'together-ahead': cx('absolute top-[80%] left-[15.5%]'),
   'anticipate-the-future': cx('absolute top-[40%] left-[15.5%]'),
 };
+
+// everything is scaled based on the view box so i can use the
+// configured text sizes and adjust the viewbox so they look right
+const viewBox = 450;
+const dotSize = viewBox / 100;
 
 export const SpiderDiagram = ({
   skillAreas,
@@ -28,11 +34,7 @@ export const SpiderDiagram = ({
   const { t } = useTranslation();
   const [shownPopovers, setShownPopovers] = React.useState<SkillAreaID[]>([]);
   const [popoverTimeouts, setPopoverTimeouts] = React.useState<TimeoutRecord>({});
-
-  // everything is scaled based on the view box so i can use the
-  // configured text sizes and adjust the viewbox so they look right
-  const viewBox = 450;
-  const dotSize = viewBox / 100;
+  const { md } = useMediaQueries();
 
   // On mobile if section icons are clicked show a tooltip
   const removePopover = (skillAreaId: SkillAreaID) => {
@@ -54,6 +56,10 @@ export const SpiderDiagram = ({
       // save timeout ref if we want to reclick, idk if redundant
       setPopoverTimeouts({ ...popoverTimeouts, [skillAreaId]: timeoutRef });
     }
+  };
+
+  const sectionScoreForScreenreader = (section: SkillAreaID) => {
+    return `${skillAreas.find((a) => a.id === section)?.name}. ${t('components.spider.value')}: ${totalScores[section]?.toFixed(2)}.`;
   };
 
   const offsetX = 0;
@@ -115,7 +121,7 @@ export const SpiderDiagram = ({
             className="stroke-primary stroke-2 sm:w-1/2"
             d={calcStatPath(
               viewBox,
-              SkillAreaIDValues.map((section) => {
+              SkillAreaIDValues.map((section: SkillAreaID) => {
                 const sectionScore = totalScores[section];
                 return (((sectionScore !== undefined ? sectionScore + 0.5 : 0) * viewBox) / 3.5 / 26) * 10;
               }),
@@ -123,7 +129,7 @@ export const SpiderDiagram = ({
           />
 
           <g className="fill-primary">
-            {SkillAreaIDValues.map((section, i) => {
+            {SkillAreaIDValues.map((section: SkillAreaID, i: number) => {
               const sectionScore = totalScores[section];
 
               const { x, y } = calculateCirclePoint(
@@ -136,62 +142,86 @@ export const SpiderDiagram = ({
             })}
           </g>
 
-          <g className={`flex aspect-square @5xl:hidden`}>
-            {SkillAreaIDValues.map((section, i) => {
-              const { x, y } = calculateCirclePoint(viewBox, viewBox / 2 - 2, i);
-              const iconSize = viewBox / 7;
+          {!md && (
+            <g className="flex aspect-square">
+              {SkillAreaIDValues.map((section: SkillAreaID, i: number) => {
+                const { x, y } = calculateCirclePoint(viewBox, viewBox / 2 - 2, i);
+                const iconSize = viewBox / 7;
 
-              return (
-                <svg key={section} width={iconSize} height={iconSize} x={x - iconSize / 2} y={y - iconSize / 2}>
-                  <SkillAreaIcon section={section} />
-                  <rect x="0" y="0" width={iconSize} height={iconSize} onClick={() => showToolTip(section)} />
-                </svg>
-              );
-            })}
-          </g>
-
-          <g className="hidden @5xl:flex">
-            {SkillAreaIDValues.map((section, i) => {
-              const { x, y } = calculateCirclePoint(viewBox, viewBox / 2 - 2, i);
-              const iconSize = viewBox / 10;
-
-              const getTextOffset = () => {
-                switch (i) {
-                  case 1:
-                  case 2:
-                    return 100;
-                  case 4:
-                  case 5:
-                    return -100;
-                  default:
-                    return 0;
-                }
-              };
-
-              return (
-                <g key={section}>
+                return (
                   <svg
+                    role="img"
+                    key={section}
                     width={iconSize}
                     height={iconSize}
-                    x={x - iconSize / 2 + getTextOffset()}
-                    y={y - iconSize / 2 - 10}
-                    className={`aspect-square`}
+                    x={x - iconSize / 2}
+                    y={y - iconSize / 2}
                   >
+                    <title>{sectionScoreForScreenreader(section)}</title>
                     <SkillAreaIcon section={section} />
+                    <rect x="0" y="0" width={iconSize} height={iconSize} onClick={() => showToolTip(section)} />
                   </svg>
-                  <text
-                    textAnchor="middle"
-                    x={x + getTextOffset()}
-                    y={y + iconSize - 10}
-                    style={{ fill: 'black' }}
-                    className="justify-center py-4 font-display text-body-sm-bold"
-                  >
-                    {skillAreas.find((a) => a.id === section)?.name}
-                  </text>
-                </g>
-              );
-            })}
-          </g>
+                );
+              })}
+            </g>
+          )}
+
+          {md && (
+            <g className="flex">
+              {SkillAreaIDValues.map((section: SkillAreaID, i: number) => {
+                const { x, y } = calculateCirclePoint(viewBox, viewBox / 2 - 2, i);
+                const iconSize = viewBox / 10;
+
+                const getTextOffset = () => {
+                  switch (i) {
+                    case 1:
+                    case 2:
+                      return 100;
+                    case 4:
+                    case 5:
+                      return -100;
+                    default:
+                      return 0;
+                  }
+                };
+
+                return (
+                  <g key={section} role="img" aria-labelledby={section}>
+                    <svg
+                      width={iconSize}
+                      height={iconSize}
+                      x={x - iconSize / 2 + getTextOffset()}
+                      y={y - iconSize / 2 - 10}
+                      className="aspect-square"
+                    >
+                      <SkillAreaIcon section={section} />
+                    </svg>
+                    <g>
+                      <text
+                        aria-hidden="true"
+                        textAnchor="middle"
+                        x={x + getTextOffset()}
+                        y={y + iconSize - 10}
+                        style={{ fill: 'black' }}
+                        className="justify-center py-4 font-display text-body-sm-bold"
+                      >
+                        {skillAreas.find((a) => a.id === section)?.name}
+                      </text>
+                      <text
+                        id={section}
+                        textAnchor="middle"
+                        className="sr-only"
+                        x={x + getTextOffset()}
+                        y={y + iconSize - 10}
+                      >
+                        {sectionScoreForScreenreader(section)}
+                      </text>
+                    </g>
+                  </g>
+                );
+              })}
+            </g>
+          )}
         </svg>
       </div>
     </Card>

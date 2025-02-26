@@ -1856,7 +1856,8 @@
       "back": "Back"
     },
     "spider": {
-      "title": "Section comparison"
+      "title": "Section comparison",
+      "value": "Value"
     },
     "quick-self-evaluation-summary-section": {
       "more-info": "More information of the topic"
