@@ -3,7 +3,7 @@ import { Document, View, StyleSheet, Font, Page, Text, Image } from '@react-pdf/
 
 // Disable word hyphenation, because it doesn't work in Finnish
 // https://react-pdf.org/fonts#registerhyphenationcallback
-Font.registerHyphenationCallback((word) => {
+Font.registerHyphenationCallback((word: string) => {
   return [word];
 });
 
