@@ -83,7 +83,7 @@ export const PDFBarDiagram = ({
                 textAlign: 'left',
                 fontFamily: 'Arimo',
                 backgroundColor: '#E4E5E9',
-                borderRadius: '100%',
+                borderRadius: 20,
                 fontWeight: 400,
               }}
             >
