@@ -234,6 +234,7 @@ const CareerPlan = () => {
     setReadyModalOpen(true);
   };
 
+  // clipboard not working on local dev-environment on iOS Safari, because it is not https://
   const copyToClipboard = async () => {
     setLinkCopied(true);
     const encodedData = await getEncodedData();
