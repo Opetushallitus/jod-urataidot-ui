@@ -14,6 +14,7 @@ export function NavigationBar() {
 
   const [linkCopied, setLinkCopied] = React.useState(false);
 
+  // clipboard not working on local dev-environment on iOS Safari, because it is not https://
   const copyToClipboard = async () => {
     await navigator.clipboard.writeText(
       `${window.location.origin}/urataidot/${i18n.language}/${t('slugs.import')}${isFromYksilo ? '?yksilo=' : ''}#${getEncodedData()}`,
