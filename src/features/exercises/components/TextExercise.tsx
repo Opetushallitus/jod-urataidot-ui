@@ -2,7 +2,7 @@ import { Button, MobileBottomBar } from '@/components';
 import React from 'react';
 import { SkillAreaID, TextExercise as TextExerciseType } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
-import { Link, useSearchParams } from 'react-router';
+import { useLocation } from 'react-router';
 import { TextExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
 import { useEasierExercise } from '@/hooks/useEasierExercise';
 import ExerciseDocument from '@/features/pdf/documents/ExerciseDocument';
@@ -18,8 +18,11 @@ const TextExercise = ({
   skillAreaId: SkillAreaID;
   sectionId: number;
 }) => {
-  const { t } = useTranslation();
-  const [searchParams] = useSearchParams();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  const { search } = useLocation();
 
   const [readyModalOpen, setReadyModalOpen] = React.useState(false);
 
@@ -77,15 +80,12 @@ const TextExercise = ({
           {i === 0 && easierExercise !== null && (
             <span className="mb-2 whitespace-pre-wrap text-body-sm">
               {t('exercises.easier-question')}{' '}
-              <Link
+              <a
+                href={`/urataidot/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}
                 className="text-body-sm-bold text-primary hover:underline"
-                to={{
-                  pathname: `../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`,
-                  search: searchParams.toString(),
-                }}
               >
                 {t('exercises.easier-link')}
-              </Link>
+              </a>
             </span>
           )}
 
