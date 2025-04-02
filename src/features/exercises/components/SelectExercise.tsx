@@ -3,7 +3,7 @@ import { SelectExercise as SelectExerciseType, SkillAreaID } from '@/lib/content
 import { useTranslation } from 'react-i18next';
 import { SelectOptions } from './SelectOptions';
 import React from 'react';
-import { Link, useSearchParams } from 'react-router';
+import { useLocation } from 'react-router';
 import { SelectExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
 import { useEasierExercise } from '@/hooks/useEasierExercise';
 import ExerciseDocument from '@/features/pdf/documents/ExerciseDocument';
@@ -19,8 +19,11 @@ const SelectExercise = ({
   skillAreaId: SkillAreaID;
   sectionId: number;
 }) => {
-  const { t } = useTranslation();
-  const [searchParams] = useSearchParams();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  const { search } = useLocation();
 
   const [readyModalOpen, setReadyModalOpen] = React.useState(false);
 
@@ -78,15 +81,12 @@ const SelectExercise = ({
       {easierExercise && (
         <span className="mb-2 whitespace-pre-wrap text-body">
           {t('exercises.easier-question')}{' '}
-          <Link
-            className="text-body-bold text-primary hover:underline"
-            to={{
-              pathname: `../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`,
-              search: searchParams.toString(),
-            }}
+          <a
+            href={`/urataidot/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}
+            className="text-body-sm-bold text-primary hover:underline"
           >
             {t('exercises.easier-link')}
-          </Link>
+          </a>
         </span>
       )}
 

@@ -6,7 +6,7 @@ import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
 import { MediaExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useSearchParams } from 'react-router';
+import { useLocation } from 'react-router';
 import { ReadyModal } from './ReadyModal';
 
 const MediaExercise = ({
@@ -18,8 +18,11 @@ const MediaExercise = ({
   skillAreaId: SkillAreaID;
   sectionId: number;
 }) => {
-  const { t } = useTranslation();
-  const [searchParams] = useSearchParams();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  const { search } = useLocation();
 
   const [readyModalOpen, setReadyModalOpen] = React.useState(false);
 
@@ -73,15 +76,12 @@ const MediaExercise = ({
       {easierExercise && (
         <span className="mb-2 whitespace-pre-wrap text-body-sm">
           {t('exercises.easier-question')}{' '}
-          <Link
+          <a
+            href={`/urataidot/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}
             className="text-body-sm-bold text-primary hover:underline"
-            to={{
-              pathname: `../${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}`,
-              search: searchParams.toString(),
-            }}
           >
             {t('exercises.easier-link')}
-          </Link>
+          </a>
         </span>
       )}
       <label htmlFor={exercise.textFieldTitle} className="text-heading-3">
