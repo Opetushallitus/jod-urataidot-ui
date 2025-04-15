@@ -5,7 +5,7 @@ import { EmojiExercise as EmojiExerciseType, SkillAreaID } from '@/lib/content-t
 import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
 import { EmojiExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
-import EmojiPicker from 'emoji-picker-react';
+import EmojiPicker, { EmojiStyle } from 'emoji-picker-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router';
@@ -130,6 +130,25 @@ const EmojiExercise = ({
   );
 };
 
+const CDN_URL_APPLE = `${import.meta.env.BASE_URL}emoji-datasource-apple/img/apple/64/`;
+const CDN_URL_FACEBOOK = `${import.meta.env.BASE_URL}emoji-datasource-facebook/img/facebook/64/`;
+const CDN_URL_TWITTER = `${import.meta.env.BASE_URL}emoji-datasource-twitter/img/twitter/64/`;
+const CDN_URL_GOOGLE = `${import.meta.env.BASE_URL}emoji-datasource-google/img/google/64/`;
+
+function cdnUrl(emojiStyle: EmojiStyle): string {
+  switch (emojiStyle) {
+    case EmojiStyle.TWITTER:
+      return CDN_URL_TWITTER;
+    case EmojiStyle.GOOGLE:
+      return CDN_URL_GOOGLE;
+    case EmojiStyle.FACEBOOK:
+      return CDN_URL_FACEBOOK;
+    case EmojiStyle.APPLE:
+    default:
+      return CDN_URL_APPLE;
+  }
+}
+
 const EmojiTextArea = ({
   emoji,
   setEmoji,
@@ -158,6 +177,7 @@ const EmojiTextArea = ({
                   setEmoji(emoji.emoji);
                   close();
                 }}
+                getEmojiUrl={(unified, emojiStyle) => `${cdnUrl(emojiStyle)}${unified}.png`}
               />
             )}
           </PopoverPanel>

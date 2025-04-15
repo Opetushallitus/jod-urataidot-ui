@@ -26,6 +26,22 @@ export default defineConfig({
           src: 'assets/urataidot/fonts/*',
           dest: 'fonts',
         },
+        {
+          src: 'node_modules/emoji-datasource-apple/img/apple/64/*',
+          dest: 'emoji-datasource-apple/img/apple/64',
+        },
+        {
+          src: 'node_modules/emoji-datasource-facebook/img/facebook/64/*',
+          dest: 'emoji-datasource-facebook/img/facebook/64',
+        },
+        {
+          src: 'node_modules/emoji-datasource-twitter/img/twitter/64/*',
+          dest: 'emoji-datasource-twitter/img/twitter/64',
+        },
+        {
+          src: 'node_modules/emoji-datasource-google/img/google/64/*',
+          dest: 'emoji-datasource-google/img/google/64',
+        },
       ],
     }),
     svgr({
