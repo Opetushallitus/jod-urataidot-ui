@@ -48,4 +48,18 @@ jobs:
       - name: Copy files to S3
         run: |
           aws s3 sync --size-only --delete --cache-control "public,max-age=31536000,immutable" assets/ s3://${{ secrets.JOD_AWS_DIST_BUCKET }}/urataidot/assets
-          aws s3 sync --exclude "assets/*" --delete --cache-control "public,max-age=0,s-maxage=60,must-revalidate" . s3://${{ secrets.JOD_AWS_DIST_BUCKET }}/urataidot
+          aws s3 sync --size-only --delete --cache-control "public,max-age=31536000,immutable" emoji-datasource-apple/ s3://${{ secrets.JOD_AWS_DIST_BUCKET }}/urataidot/emoji-datasource-apple
+          aws s3 sync --size-only --delete --cache-control "public,max-age=31536000,immutable" emoji-datasource-facebook/ s3://${{ secrets.JOD_AWS_DIST_BUCKET }}/urataidot/emoji-datasource-facebook
+          aws s3 sync --size-only --delete --cache-control "public,max-age=31536000,immutable" emoji-datasource-google/ s3://${{ secrets.JOD_AWS_DIST_BUCKET }}/urataidot/emoji-datasource-google
+          aws s3 sync --size-only --delete --cache-control "public,max-age=31536000,immutable" emoji-datasource-twitter/ s3://${{ secrets.JOD_AWS_DIST_BUCKET }}/urataidot/emoji-datasource-twitter
+          aws s3 sync --size-only --delete --cache-control "public,max-age=31536000,immutable" fonts/ s3://${{ secrets.JOD_AWS_DIST_BUCKET }}/urataidot/fonts
+          aws s3 sync --size-only --delete --cache-control "public,max-age=31536000,immutable" videos/ s3://${{ secrets.JOD_AWS_DIST_BUCKET }}/urataidot/videos
+          aws s3 sync \
+            --exclude "assets/*" \
+            --exclude "emoji-datasource-apple/*" \
+            --exclude "emoji-datasource-facebook/*" \
+            --exclude "emoji-datasource-google/*" \
+            --exclude "emoji-datasource-twitter/*" \
+            --exclude "fonts/*" \
+            --exclude "videos/*" \
+            --delete --cache-control "public,max-age=0,s-maxage=60,must-revalidate" . s3://${{ secrets.JOD_AWS_DIST_BUCKET }}/urataidot
