@@ -7,7 +7,6 @@ import { useSkillAreaExercises } from '@/hooks/useSkillAreaExercises';
 import { Button } from '..';
 import { ChevronRight } from '@/icons';
 import { useSummaryAccordionStore } from '@/stores/summaryAccordionStore';
-import { useSearchParams } from 'react-router';
 
 export const CareerPlanningSummarySection = ({
   skillArea,
@@ -18,7 +17,6 @@ export const CareerPlanningSummarySection = ({
   score: number | undefined;
   index: number;
 }) => {
-  const [searchParams] = useSearchParams();
   const feedback = score ? skillArea.feedbacks.find((f) => f.minScore <= score && score <= f.maxScore) : undefined;
   const exercises = useSkillAreaExercises({ skillAreaId: skillArea.id });
 
@@ -26,20 +24,20 @@ export const CareerPlanningSummarySection = ({
   const setSummaryAccordion = useSummaryAccordionStore((state) => state.setSummaryAccordion);
 
   return (
-    <div className="flex w-full flex-col gap-4 rounded-[1.25rem] bg-white p-4">
-      <div className="flex min-h-[72px] items-center gap-4">
+    <div className="flex w-full flex-col gap-5 rounded-[20px] bg-white p-5">
+      <div className="flex min-h-[72px] items-center gap-5">
         <div className="size-16">
           <SkillAreaIcon size="md" section={skillArea.id} />
         </div>
         <div className="flex h-full flex-col items-start gap-2">
-          <h3 className="mt-0 text-heading-3">{skillArea.name}</h3>
-          <div className="flex text-wrap rounded-3xl bg-neutral-4 px-4 py-2 text-body-sm">{skillArea.longName}</div>
+          <h3 className="text-heading-3 mt-0">{skillArea.name}</h3>
+          <div className="bg-neutral-4 text-body-sm flex rounded-3xl px-4 py-2 text-wrap">{skillArea.longName}</div>
         </div>
       </div>
       {feedback ? (
         <>
           <div>
-            <p className="mb-1 text-body-bold">{t('components.career-management-summary-section.feedback-title')}</p>
+            <p className="text-body-bold mb-1">{t('components.career-management-summary-section.feedback-title')}</p>
             <p className="text-body">{feedback.description}</p>
           </div>
           <Accordion
@@ -57,12 +55,8 @@ export const CareerPlanningSummarySection = ({
         </>
       ) : (
         <div>
-          <p className="mb-4 text-body">{t('components.career-management-summary-section.no-feedback')}</p>
-          <Button
-            variant="soft"
-            icon={<ChevronRight />}
-            to={{ pathname: `../${skillArea.slug}`, search: searchParams.toString() }}
-          >
+          <p className="text-body mb-4">{t('components.career-management-summary-section.no-feedback')}</p>
+          <Button variant="soft" icon={<ChevronRight />} to={`../${skillArea.slug}`}>
             {t('components.career-management-summary-section.to-section', { skillAreaName: skillArea.name })}
           </Button>
         </div>

@@ -49,24 +49,24 @@ const DisplaySlider = ({ score }: { score: number }) => {
 
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex justify-between font-display text-body-sm">
+      <div className="font-display text-body-sm flex justify-between">
         <div>{t('components.slider.not-at-all')}</div>
         <div>{t('components.slider.fully')}</div>
       </div>
-      <div className="relative h-1.5 w-full rounded-full bg-neutral-5">
+      <div className="bg-neutral-5 relative h-1.5 w-full rounded-full">
         {/* Blue progress bar */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 z-10 flex items-center justify-between rounded-full bg-neutral-5"
+          className="bg-neutral-5 pointer-events-none absolute inset-0 z-10 flex items-center justify-between rounded-full"
         >
-          <div className={`h-1.5 rounded-full bg-primary ${getProgressClassName()}`} />
+          <div className={`bg-primary h-1.5 rounded-full ${getProgressClassName()}`} />
         </div>
         {/* Ticks */}
         <div className="absolute inset-0 z-20 mx-1 flex h-1.5 items-center justify-between">
-          <div className={`size-1 rounded-full bg-primary-muted`} />
+          <div className={`bg-primary-muted size-1 rounded-full`} />
           <div className={`size-1 rounded-full ${score > 1 ? 'bg-primary-muted' : 'bg-primary-light'}`} />
           <div className={`size-1 rounded-full ${score > 2 ? 'bg-primary-muted' : 'bg-primary-light'}`} />
-          <div className={`size-1 rounded-full bg-primary-light`} />
+          <div className={`bg-primary-light size-1 rounded-full`} />
         </div>
       </div>
     </div>

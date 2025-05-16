@@ -35,9 +35,9 @@ export interface SkillAreaIconProps {
 
 export const SkillAreaIcon = ({ size, section, className }: SkillAreaIconProps) => {
   const iconSize = cx({
-    'size-8': size === 'xs',
-    'size-11': size === 'sm',
-    'size-16': size === 'md',
+    'size-7': size === 'xs',
+    'size-10': size === 'sm',
+    'size-11': size === 'md',
     'size-[100px]': size === 'lg',
     'size-[120px]': size === 'xl',
   });

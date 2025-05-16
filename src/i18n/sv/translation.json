@@ -6,16 +6,21 @@
     "description": "Ett oväntat fel uppstod. Det kan bero på ett avbrott i nätförbindelsen eller på ett fel i tjänsten. Försök igen senare.",
     "title": "Fel"
   },
+  "menu": "Meny",
+  "front-page": "Framsidan",
+  "back": "Tillbaka",
+  "close-menu": "Stäng meny",
+  "open-submenu": "Öppna undermeny",
   "nav": {
+    "competency-path-home": "Kompetensenstigen startsida",
     "all-exercises": "Alla uppgifter",
-    "home": "Hemsidan",
+    "service-info": "Om tjänsten",
+    "home": "Självbedömning av Karriärfärdigheter - Startsida",
     "copy-results-to-link": "Kopiera länken till den ofullständiga enkäten",
     "language": "Språk",
     "select-language": "Välj språk"
   },
-  "home": {
-    "title": "Livet kan ta dig i många riktningar. Karriärkompetenser hjälper dig vidare i dina reflektioner."
-  },
+  "home": {},
   "no-match": {
     "description": "Sidan du sökte kunde inte hittas.",
     "title": "Sidan hittades inte"
@@ -26,6 +31,7 @@
     "quick-self-evaluation": "snabbutvardering",
     "summary": "sammanfattning",
     "feedback": "feedback",
+    "service-info": "om-tjansten",
     "import": "hamta",
     "my-life-story": "min-livshistoria",
     "resources-and-ability-to-work": "resurser-och-arbetsformaga",
@@ -123,12 +129,12 @@
     },
     "navigation-cards": {
       "career-management": {
-        "title": "Fördjupa dig i karriärkompetenser: Utvärdera dina karriärkompetenser och lär dig mer",
+        "title": "Fördjupa dig i karriärkompetenser",
         "description": "Gör en mer omfattande självutvärdering av dina karriärkompetenser och reflektera ingående kring din nuvarande situation. I slutet får du tips som passar just dig."
       },
       "learn-something-new": {
         "description": "Gör en snabb självutvärdering av dina karriärkompetenser, på basis av vilken du snabbt får information och tips som passar just dig.",
-        "title": "Kom igång snabbt: en snabbutvärdering av karriärkompetenser"
+        "title": "Kom igång snabbt"
       },
       "exercises": {
         "description": "Om du inte vill göra självutvärderingen nu kan du också göra några övningsuppgifter i anknytning till karriärkompetenser.",

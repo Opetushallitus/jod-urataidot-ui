@@ -2,9 +2,9 @@ import { TFunction } from 'i18next';
 import { importantInLife, statementsOfStrength, thingsAndResources, workLife } from './selectWordLists';
 import { Content } from './content-types';
 import { Trans } from 'react-i18next';
-import { Language } from '@/i18n/config';
+import { LangCode } from '@/i18n/config';
 
-export const getContents = (t: TFunction<'translation', undefined>, lng: Language): Content[] => [
+export const getContents = (t: TFunction<'translation', undefined>, lng: LangCode): Content[] => [
   {
     version: 1,
     skillAreas: [
@@ -528,7 +528,7 @@ export const getContents = (t: TFunction<'translation', undefined>, lng: Languag
                       href={t('content.1.skillArea.competence-first.exercises.1.1.link')}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="break-all text-primary underline"
+                      className="text-primary break-all underline"
                     >
                       {t('content.1.skillArea.competence-first.exercises.1.1.link')}
                     </a>

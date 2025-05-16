@@ -58,12 +58,12 @@ export const OpenAllExercisesPDFButton = ({ hideWhenNoAnswers = false }: { hideW
               href={url}
               target="_blank"
               rel="noreferrer"
-              className="group relative flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 py-2 font-display font-bold text-white outline-offset-4 hover:bg-primary-hover hover:underline"
+              className="group bg-primary font-display hover:bg-primary-hover relative flex min-h-[44px] items-center justify-center gap-3 rounded-full px-5 py-3 font-bold whitespace-nowrap text-white outline-offset-4 hover:underline"
             >
               <div className="size-6">
                 <Open />
               </div>
-              <span className="text-wrap text-center leading-none">
+              <span className="text-center leading-none text-wrap">
                 {t('career-management-summary.exercise-pdf-card.button')}
               </span>
             </a>

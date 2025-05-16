@@ -67,7 +67,7 @@ const SelectExercise = ({
   };
 
   return (
-    <div className="flex w-full flex-col gap-4">
+    <div className="flex w-full flex-col gap-5">
       <ReadyModal
         exercise={exercise}
         open={readyModalOpen}
@@ -79,7 +79,7 @@ const SelectExercise = ({
       {exercise.description && <p className="mb-4">{exercise.description}</p>}
 
       {easierExercise && (
-        <span className="mb-2 whitespace-pre-wrap text-body">
+        <span className="text-body mb-2 whitespace-pre-wrap">
           {t('exercises.easier-question')}{' '}
           <a
             href={`/urataidot/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}
@@ -103,7 +103,7 @@ const SelectExercise = ({
             />
           ))}
       </div>
-      {exercise.afterTitle && <h2 className="mt-4 text-heading-3">{exercise.afterTitle}</h2>}
+      {exercise.afterTitle && <h2 className="text-heading-3 mt-4">{exercise.afterTitle}</h2>}
       {exercise.afterText && <p className="mt-4">{exercise.afterText}</p>}
       <div className="hidden w-full justify-center sm:flex">
         <Button onClick={onDone}>{t('exercises.ready')}</Button>

@@ -1,11 +1,16 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router';
 import { Metric } from 'web-vitals';
 import './i18n/config';
-import App from './App.tsx';
+import './index.css';
+import { routes } from './routes';
 
-const container = document.getElementById('root')!;
-const root = createRoot(container);
+export const router = createBrowserRouter(routes, {
+  basename: '/urataidot',
+});
+
+const root = createRoot(document.getElementById('root')!);
 
 if (process.env.NODE_ENV !== 'production') {
   void import('web-vitals').then((vitals) => {
@@ -28,6 +33,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 );

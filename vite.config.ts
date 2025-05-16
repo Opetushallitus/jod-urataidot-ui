@@ -1,20 +1,14 @@
 import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
 import { configDefaults } from 'vitest/config';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import react from '@vitejs/plugin-react-swc';
 import svgr from 'vite-plugin-svgr';
 import { fileURLToPath } from 'node:url';
-import tailwindConfig from './tailwind.config';
-import resolveConfig from 'tailwindcss/resolveConfig';
-
-const twConfig = resolveConfig(tailwindConfig);
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/urataidot/',
-  define: {
-    __SCREENS__: twConfig.theme.screens,
-  },
   plugins: [
     viteStaticCopy({
       targets: [
@@ -49,6 +43,7 @@ export default defineConfig({
       include: './src/icons/*.svg?react',
     }),
     react(),
+    tailwindcss(),
   ],
   test: {
     environment: 'jsdom',

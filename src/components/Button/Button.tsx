@@ -33,7 +33,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ) => {
     const { t } = useTranslation();
     const classes = cx({
-      'group relative flex items-center min-h-11 text-wrap font-bold px-4 py-2 rounded-full outline-offset-4 disabled:[&:not([data-loading])]:text-text-disabled whitespace-nowrap font-display hover:not(disabled):underline':
+      'group relative flex items-center min-h-[44px] text-wrap font-bold px-5 py-3 rounded-full outline-offset-4 disabled:[&:not([data-loading])]:text-text-disabled whitespace-nowrap font-display hover:not(disabled):underline':
         true,
       'text-white bg-primary hover:bg-primary-hover disabled:[&:not([data-loading])]:bg-neutral-4':
         variant === 'filled',
@@ -41,16 +41,18 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         variant === 'soft',
       'text-black hover:text-primary bg-white disabled:[&:not([data-loading])]:bg-white': variant === 'simple',
       'text-primary-contrast disabled:[&:not([data-loading])]:bg-transparent': variant === 'plain',
-      'justify-center gap-2': icon,
+      'cursor-pointer': !disabled,
+      'cursor-not-allowed': disabled,
+      'justify-center gap-3': icon,
       [className ?? '']: true,
     });
 
     const textClasses = cx({
-      'leading-none text-center group-data-[loading]:opacity-0': true,
+      'leading-none text-center group-data-loading:opacity-0': true,
     });
 
     const loadingClasses = cx({
-      'absolute inset-0 hidden items-center justify-center leading-none group-data-[loading]:flex': true,
+      'absolute inset-0 hidden items-center justify-center leading-none group-data-loading:flex': true,
     });
 
     const iconClasses = cx({ 'flex items-center justify-center size-6': true });
