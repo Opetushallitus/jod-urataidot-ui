@@ -4,12 +4,9 @@ import { ExerciseLinkCard } from '@/features/exercises/components/ExerciseLinkCa
 import { useQuickSuggestionExercises } from '@/hooks/useQuickSuggestionExercises';
 import { useQuickSuggestionVideo } from '@/hooks/useQuickSuggestionVideo';
 import { useTranslation } from 'react-i18next';
-import { useSearchParams } from 'react-router';
 
 const QuickSelfEvaluationSummary = () => {
   const { t, i18n } = useTranslation();
-  const [searchParams] = useSearchParams();
-  const isFromYksilo = searchParams.has('yksilo');
 
   const videoInfo = useQuickSuggestionVideo();
   const exercises = useQuickSuggestionExercises();
@@ -17,9 +14,9 @@ const QuickSelfEvaluationSummary = () => {
   return (
     <div>
       <BackButton />
-      <h1 className="mb-4 mt-4 text-heading-2 sm:mt-8 sm:text-heading-1">{t('quick-self-evaluation-summary.title')}</h1>
+      <h1 className="text-heading-2 sm:text-heading-1 mt-5 mb-5 sm:mt-7">{t('quick-self-evaluation-summary.title')}</h1>
       <p className="max-w-[80ch]">{t('quick-self-evaluation-summary.description')}</p>
-      <div className="grid grid-cols-1 gap-4 py-4 sm:py-10">
+      <div className="grid grid-cols-1 gap-5 py-5 sm:py-8">
         <Card className="group">
           <div className="flex flex-col gap-6 sm:p-4">
             <h2 className="text-heading-3">{t('quick-self-evaluation-summary.video-card.title')}</h2>
@@ -30,7 +27,7 @@ const QuickSelfEvaluationSummary = () => {
         <Card className="group">
           <div className="px-2: flex flex-col gap-6 sm:p-4">
             <h2 className="text-heading-3">{t('quick-self-evaluation-summary.suggestion-card.title')}</h2>
-            <div className="flex w-full flex-col gap-4">
+            <div className="flex w-full flex-col gap-5">
               {exercises.map((exercise) => (
                 <ExerciseLinkCard
                   background={'gray'}
@@ -44,19 +41,11 @@ const QuickSelfEvaluationSummary = () => {
         </Card>
 
         <LinkCard
-          to={{ pathname: `/${i18n.language}/${t('slugs.career-management')}`, search: searchParams.toString() }}
+          to={`/${i18n.language}/${t('slugs.career-management')}`}
           title={t('common.navigation-cards.career-management.title')}
           description={t('common.navigation-cards.career-management.description')}
-          bgColor="bg-visualization-turquoise"
+          className="bg-[#006DB3] text-white"
         />
-        {!isFromYksilo && (
-          <LinkCard
-            to={`/${i18n.language}/${t('slugs.exercises')}`}
-            title={t('common.navigation-cards.exercises.title')}
-            description={t('common.navigation-cards.exercises.description')}
-            bgColor="bg-visualization-sky"
-          />
-        )}
       </div>
     </div>
   );

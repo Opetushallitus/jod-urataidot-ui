@@ -70,40 +70,40 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
     };
 
     return (
-      <div className="w-full text-body">
-        <div aria-hidden className="mb-3 flex flex-row justify-between gap-4 font-display text-body-lg">
+      <div className="text-body w-full">
+        <div aria-hidden className="font-display text-body-md mb-4 flex flex-row justify-between gap-5">
           <div>{leftText ?? t('components.slider.not-at-all')}</div>
           <div className="text-right">{rightText ?? t('components.slider.fully')}</div>
         </div>
-        <div className="relative flex h-10 w-full min-w-40 items-center rounded-full bg-white outline-primary [&:has(:focus-visible)]:outline">
+        <div className="outline-primary relative flex h-8 w-full min-w-[160px] items-center rounded-full bg-white [&:has(:focus-visible)]:outline">
           {/* Blue progress bar */}
           <div
             aria-hidden
-            className="pointer-events-none absolute left-3 right-3 z-10 flex items-center justify-between rounded-full bg-neutral-5"
+            className="bg-neutral-5 pointer-events-none absolute right-4 left-4 z-10 flex items-center justify-between rounded-full"
           >
-            <div className={`h-1.5 rounded-full bg-primary ${progressClassName()}`} />
+            <div className={`bg-primary h-[6px] rounded-full ${progressClassName()}`} />
           </div>
           {/* Ticks */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 z-10 flex items-center justify-between rounded-full px-4"
+            className="pointer-events-none absolute inset-0 z-10 flex items-center justify-between rounded-full px-5"
           >
-            <TickWithTooltip show={focused && value === 0} className="size-1 rounded-full bg-primary-muted">
+            <TickWithTooltip show={focused && value === 0} className="bg-primary-muted size-2 rounded-full">
               {valueTexts?.[0] ?? defaultTextValues[0]}
             </TickWithTooltip>
             <TickWithTooltip
               show={focused && value === 1}
-              className={`size-1 rounded-full ${value > 1 ? 'bg-primary-muted' : 'bg-primary-light'}`}
+              className={`size-2 rounded-full ${value > 1 ? 'bg-primary-muted' : 'bg-primary-light'}`}
             >
               {valueTexts?.[1] ?? defaultTextValues[1]}
             </TickWithTooltip>
             <TickWithTooltip
               show={focused && value === 2}
-              className={`size-1 rounded-full ${value > 2 ? 'bg-primary-muted' : 'bg-primary-light'}`}
+              className={`size-2 rounded-full ${value > 2 ? 'bg-primary-muted' : 'bg-primary-light'}`}
             >
               {valueTexts?.[2] ?? defaultTextValues[2]}
             </TickWithTooltip>
-            <TickWithTooltip show={focused && value === 3} className="size-1 rounded-full bg-primary-light">
+            <TickWithTooltip show={focused && value === 3} className="bg-primary-light size-2 rounded-full">
               {valueTexts?.[3] ?? defaultTextValues[3]}
             </TickWithTooltip>
           </div>
@@ -121,7 +121,7 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
             onDrag={() => setFocus()}
             onTouchStart={() => setFocus()}
             onTouchMove={() => setFocus()}
-            className="absolute z-20 flex h-10 w-full cursor-pointer appearance-none rounded-full bg-transparent px-2 outline-none slider-thumb:h-5 slider-thumb:w-5 slider-thumb:appearance-none slider-thumb:rounded-full slider-thumb:bg-primary"
+            className="slider-thumb:h-5 slider-thumb:w-5 slider-thumb:appearance-none slider-thumb:rounded-full slider-thumb:bg-primary absolute z-20 flex h-8 w-full cursor-pointer appearance-none rounded-full bg-transparent px-3 outline-hidden"
             min={0}
             max={3}
             step={1}
@@ -168,7 +168,7 @@ const TickWithTooltip = ({
           <div
             ref={ref}
             className={cx(
-              'absolute top-10 -translate-x-1/2 rounded-lg bg-black p-2 font-display text-body-sm text-white',
+              'font-display text-body-sm absolute top-7 -translate-x-1/2 rounded-md bg-black p-3 text-white',
               offsetX > 0 && 'left-0 translate-x-0',
               offsetX < 0 && 'right-0 translate-x-0',
             )}

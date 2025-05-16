@@ -74,7 +74,7 @@ const EmojiExercise = ({
   };
 
   return (
-    <div className="flex w-full flex-col gap-4">
+    <div className="flex w-full flex-col gap-5">
       <ReadyModal
         exercise={exercise}
         open={readyModalOpen}
@@ -92,7 +92,7 @@ const EmojiExercise = ({
       <p className="mb-4 whitespace-pre-wrap">{exercise.description}</p>
 
       {easierExercise !== null && (
-        <span className="mb-2 whitespace-pre-wrap text-body">
+        <span className="text-body mb-2 whitespace-pre-wrap">
           {t('exercises.easier-question')}{' '}
           <a
             href={`/urataidot/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}
@@ -165,12 +165,12 @@ const EmojiTextArea = ({
 
   return (
     <div className="relative mt-4 w-full">
-      <div className={`absolute left-4 top-0 z-30 -translate-y-1/2 ${emoji && 'text-[2rem]'}`}>
+      <div className={`absolute top-0 left-4 z-30 -translate-y-1/2 ${emoji && 'text-[2rem]'}`}>
         <Popover>
           <PopoverButton as={Button} variant="soft">
             {emoji ?? t('exercises.choose-emoji')}
           </PopoverButton>
-          <PopoverPanel className="z-50 text-body" anchor="top start">
+          <PopoverPanel className="text-body z-50" anchor="top start">
             {({ close }) => (
               <EmojiPicker
                 onEmojiClick={(emoji) => {
@@ -184,7 +184,7 @@ const EmojiTextArea = ({
         </Popover>
       </div>
       <textarea
-        className="z-20 w-full rounded p-4 pt-8"
+        className="z-20 w-full rounded-sm bg-white p-5 pt-7"
         rows={3}
         value={text}
         onChange={(e) => setText(e.target.value)}

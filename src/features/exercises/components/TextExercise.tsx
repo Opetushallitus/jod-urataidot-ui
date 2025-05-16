@@ -57,7 +57,7 @@ const TextExercise = ({
   };
 
   return (
-    <div className="flex w-full flex-col gap-4">
+    <div className="flex w-full flex-col gap-5">
       <ReadyModal
         exercise={exercise}
         open={readyModalOpen}
@@ -65,20 +65,20 @@ const TextExercise = ({
         document={<ExerciseDocument exercise={exercise} answers={fields} type="text" />}
       />
       <h1 className="text-heading-3 sm:text-heading-2">{exercise.title}</h1>
-      {exercise.description && <p className="mb-4 whitespace-pre-wrap">{exercise.description}</p>}
+      {exercise.description && <p className="mb-5 whitespace-pre-wrap">{exercise.description}</p>}
       {exercise.textFields.map((textField, i) => (
-        <div key={textField.id} className="mb-2 flex flex-col gap-1">
+        <div key={textField.id} className="mb-3 flex flex-col gap-2">
           <label className="font-display text-heading-5 sm:text-heading-4" htmlFor={textField.id.toString()}>
             {textField.title}
           </label>
           {textField.description && (
-            <span id={textField.id + '-description'} className="mb-2 whitespace-pre-wrap text-body-sm italic">
+            <span id={textField.id + '-description'} className="text-body-sm mb-3 whitespace-pre-wrap italic">
               {textField.description}
             </span>
           )}
 
           {i === 0 && easierExercise !== null && (
-            <span className="mb-2 whitespace-pre-wrap text-body-sm">
+            <span className="text-body-sm mb-3 whitespace-pre-wrap">
               {t('exercises.easier-question')}{' '}
               <a
                 href={`/urataidot/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}
@@ -96,7 +96,7 @@ const TextExercise = ({
             value={fields.find((a) => a.id === textField.id)?.text ?? ''}
             onChange={(e) => textHandler(e.target.value, textField.id)}
             rows={5}
-            className="w-full rounded border p-2"
+            className="w-full rounded-sm border border-[#00000040] bg-white p-4"
           />
         </div>
       ))}

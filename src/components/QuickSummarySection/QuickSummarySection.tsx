@@ -12,8 +12,8 @@ export const QuickSummarySection = ({
 }) => {
   const feedback = skillArea.feedbacks.find((f) => f.minScore <= score && score <= f.maxScore);
   return (
-    <div className="flex w-full flex-col gap-4 rounded-[1.25rem] bg-white p-3">
-      <div className="flex items-center gap-4">
+    <div className="flex w-full flex-col gap-5 rounded-[1.25rem] bg-white p-3">
+      <div className="flex items-center gap-5">
         <SkillAreaIcon size="md" section={skillArea.id} />
         <h3 className="text-heading-3">{skillArea.name}</h3>
       </div>

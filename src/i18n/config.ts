@@ -4,32 +4,30 @@ import translationEn from './en/translation.json';
 import translationFi from './fi/translation.json';
 import translationSv from './sv/translation.json';
 
-export type Language = 'fi' | 'en' | 'sv';
+export type LangCode = 'fi' | 'sv' | 'en';
+export const supportedLanguageCodes: LangCode[] = ['fi', 'sv', 'en'];
+export const defaultLang = 'fi';
 
-export const resources: Resource = {
-  en: {
-    translation: translationEn,
-  },
-  fi: {
-    translation: translationFi,
-  },
-  sv: {
-    translation: translationSv,
-  },
+export const langLabels = {
+  en: 'In English',
+  fi: 'Suomeksi',
+  sv: 'På sverige',
 };
 
-export const lng = 'fi';
+const resources: Resource = {
+  en: { translation: translationEn },
+  fi: { translation: translationFi },
+  sv: { translation: translationSv },
+};
 
-export const fallbackLng = 'fi';
-
-void i18n.use(initReactI18next).init({
-  lng: localStorage.getItem('i18nextLng') ?? lng,
-  fallbackLng: localStorage.getItem('i18nextLng') ?? fallbackLng,
+i18n.use(initReactI18next).init({
+  lng: defaultLang,
+  supportedLngs: supportedLanguageCodes,
+  /* eslint-disable sonarjs/todo-tag */
+  // fallbackLng: defaultLang, // TODO: Uncomment this line when translations are ready
   resources,
-  detection: {
-    order: ['path', 'localStorage', 'navigator'],
-    lookupFromPathIndex: 0,
-    checkWhitelist: true,
+  interpolation: {
+    escapeValue: false,
   },
 });
 
