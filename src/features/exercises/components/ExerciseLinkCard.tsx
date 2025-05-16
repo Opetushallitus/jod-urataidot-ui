@@ -1,7 +1,7 @@
 import { Check, ChevronRight } from '@/icons';
 import { ExerciseWithInfo, SkillAreaID } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
-import { Link, useSearchParams } from 'react-router';
+import { Link } from 'react-router';
 import { cx } from 'cva';
 import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
 
@@ -15,7 +15,7 @@ const SkillAreaTag = ({ skillAreaID, skillAreaName }: { skillAreaID: SkillAreaID
     'bg-visualization-pink': skillAreaID === 'ready-for-change',
   });
 
-  return <div className={cx(color, 'rounded-full bg-opacity-50 px-3 py-1 text-body-sm')}>{skillAreaName}</div>;
+  return <div className={cx(color, 'bg-opacity-50 text-body-sm rounded-full px-4 py-2')}>{skillAreaName}</div>;
 };
 
 export const ExerciseLinkCard = ({
@@ -28,7 +28,6 @@ export const ExerciseLinkCard = ({
   showTag?: boolean;
 }) => {
   const { t, i18n } = useTranslation();
-  const [searchParams] = useSearchParams();
 
   const exerciseAnswered = useExerciseAnsweredStore((state) =>
     state.getExerciseAnswered({
@@ -39,7 +38,7 @@ export const ExerciseLinkCard = ({
   );
 
   const styles = cx({
-    'flex w-full items-center justify-between rounded-lg p-3 hover:bg-surface-hover': true,
+    'flex w-full items-center justify-between rounded-md p-4 hover:bg-surface-hover': true,
     'bg-white': background === 'white',
     'bg-neutral-5': background === 'gray',
     'odd:bg-surface-hover even:bg-neutral-5': background === 'alternating-grey-bg',
@@ -48,20 +47,17 @@ export const ExerciseLinkCard = ({
 
   return (
     <Link
-      to={{
-        pathname: `/${i18n.language}/${t('slugs.exercises')}/${exercise.skillAreaSlug}/${exercise.sectionSlug}/${exercise.id}`,
-        search: searchParams.toString(),
-      }}
+      to={`/${i18n.language}/${t('slugs.exercises')}/${exercise.skillAreaSlug}/${exercise.sectionSlug}/${exercise.id}`}
       className={styles}
     >
-      <div className="flex w-4/5 flex-col gap-3">
-        <div className="flex items-center gap-2">
+      <div className="flex w-4/5 flex-col gap-4">
+        <div className="flex items-center gap-3">
           {exerciseAnswered && (
-            <div className="flex size-5 items-center justify-center rounded-full bg-success-muted">
-              <Check className="size-4" />
+            <div className="bg-success-muted flex size-[20px] items-center justify-center rounded-full">
+              <Check className="size-5" />
             </div>
           )}
-          <span className="text-overline-sm uppercase text-neutral-1">{t('exercises.exercise')}</span>
+          <span className="text-overline-sm text-neutral-1 uppercase">{t('exercises.exercise')}</span>
         </div>
         <span className="font-display text-heading-4">{exercise.title}</span>
         {showTag && (

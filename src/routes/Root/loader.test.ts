@@ -1,5 +1,5 @@
-import { describe, it, expect, vi } from 'vitest';
 import i18n from '@/i18n/config';
+import { describe, expect, it, vi } from 'vitest';
 import loader from './loader';
 
 describe('loader', () => {
@@ -17,6 +17,7 @@ describe('loader', () => {
       params: {
         lng: 'sv',
       },
+      context: {},
     });
 
     expect(spyChangeLanguage).toHaveBeenCalledWith('sv');

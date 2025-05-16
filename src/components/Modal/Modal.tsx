@@ -15,11 +15,11 @@ export const Modal = ({
   return (
     <Dialog open={isOpen} onClose={close} className="relative z-50">
       <DialogBackdrop className="fixed inset-0 bg-black/30" />
-      <div className="fixed inset-0 flex w-screen items-center justify-center sm:p-4">
-        <DialogPanel className="relative w-full max-w-3xl space-y-4 rounded-2xl border bg-background p-4 shadow-xl sm:w-auto sm:p-6">
-          <DialogTitle className="flex w-full items-center justify-between text-heading-3">
+      <div className="fixed inset-0 flex w-screen items-center justify-center sm:p-5">
+        <DialogPanel className="bg-background relative w-full max-w-3xl space-y-5 rounded-2xl border border-[#00000040] p-5 shadow-xl sm:w-auto sm:p-6">
+          <DialogTitle className="text-heading-3 flex w-full items-center justify-between">
             {title}
-            <CloseButton as={'button'}>
+            <CloseButton as={'button'} className="cursor-pointer">
               <Close />
             </CloseButton>
           </DialogTitle>

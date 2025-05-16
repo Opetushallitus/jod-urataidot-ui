@@ -30,7 +30,7 @@ export const SelectOptions = ({
         ))}
         {options.length > 24 && (
           <button
-            className="ml-2 flex h-full items-center py-1 text-body-sm-bold leading-none text-primary-contrast"
+            className="text-body-sm-bold text-primary-contrast ml-2 flex h-full items-center py-1 leading-none"
             onClick={() => setShowMore((p) => !p)}
           >
             <span>{showMore ? t('exercises.show-less') : t('exercises.show-more')}</span>
@@ -54,7 +54,7 @@ const Chip = ({
   isSelected: boolean;
 }) => {
   const classes = cx({
-    'flex items-center gap-1 rounded-full border px-2 py-1': true,
+    'flex items-center gap-1 rounded-full border border-[#00000040] px-2 py-1': true,
     'bg-white border-white': !isSelected,
     'border-primary bg-primary-muted text-primary-contrast': isSelected,
   });

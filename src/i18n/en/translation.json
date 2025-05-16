@@ -6,14 +6,19 @@
     "description": "An error occurred in the application and the page could not be loaded. Please try again later.",
     "title": "Error"
   },
-  "home": {
-    "title": "Life can take you in many directions. Career Skills helps you think ahead."
-  },
+  "menu": "Menu",
+  "front-page": "Front page",
+  "back": "Back",
+  "close-menu": "Close menu",
+  "open-submenu": "Open submenu",
+  "home": {},
   "nav": {
+    "competency-path-home": "Competency Path home page",
     "language": "Language",
     "select-language": "Select language",
-    "home": "Home",
+    "home": "Self-Assessment of Career Skills - Home Page",
     "all-exercises": "All exercises",
+    "service-info": "About the service",
     "copy-results-to-link": "Copy the link to the incomplete survey"
   },
   "no-match": {
@@ -29,6 +34,7 @@
     "my-life-story": "my-life-story",
     "resources-and-ability-to-work": "resources-and-work-ability",
     "feedback": "feedback",
+    "service-info": "about-the-service",
     "competence-first": "competence-first",
     "ready-for-change": "ready-for-change",
     "import": "import",
@@ -1902,7 +1908,7 @@
     "skillarea-video-label": "Introduction to the skill area {{name}}"
   },
   "quick-self-evaluation": {
-    "title": "Getting started fast: a quick assessment of career management skills",
+    "title": "Getting started fast",
     "description": "Career management skills are learnable skills that can help you plan the path of your life. Take a quick self-assessment:",
     "summary-button": "View summary",
     "titles": {
@@ -1932,7 +1938,7 @@
         "description": "Take a quick assessment of your career management skills to get quick information and tips that are right for you."
       },
       "career-management": {
-        "title": "Get deeper into career management: assess your career management skills and learn more",
+        "title": "Get deeper into career management",
         "description": "Take a broader self-assessment of your career management skills and reflect deeply on your current situation. Finally, you'll get the right tips for you."
       },
       "exercises": {

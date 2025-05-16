@@ -1,37 +1,29 @@
 import { ArrowForward } from '@/icons';
 import { Link, LinkProps } from 'react-router';
-import { twMerge } from 'tailwind-merge';
-
-type Colors =
-  | 'visualization-peach'
-  | 'visualization-orange'
-  | 'visualization-turquoise'
-  | 'visualization-sky'
-  | 'visualization-blue'
-  | 'visualization-pink'
-  | 'transparent'
-  | 'neutral-3';
+import { cx } from '@jod/design-system';
 
 interface LinkCardProps {
   to: LinkProps['to'];
   title: string;
   description: string;
-  bgColor: `bg-${Colors}`;
+  className: string;
 }
 
-export function LinkCard({ to, title, description, bgColor }: Readonly<LinkCardProps>) {
-  const classes = twMerge(
-    'group w-full min-h-min text-balance flex flex-col gap-2 rounded-[20px] bg-primary-muted p-6 sm:gap-4 sm:p-8',
-    bgColor,
+export function LinkCard({ to, title, description, className }: Readonly<LinkCardProps>) {
+  const classes = cx(
+    'group w-full min-h-min text-balance flex flex-col gap-2 rounded-lg bg-primary-muted p-6',
+    className,
   );
 
   return (
     <Link to={to} className={classes}>
-      <h2 className="text-heading-3 group-hover:underline">{title}</h2>
-      <p className="col-span-2">{description}</p>
-      <span className="mt-auto place-self-end">
-        <ArrowForward />
-      </span>
+      <div className="flex">
+        <h2 className="text-heading-2-mobile sm:text-heading-2 grow group-hover:underline">{title}</h2>
+        <div className="m-2">
+          <ArrowForward />
+        </div>
+      </div>
+      <p className="text-body-lg-mobile sm:text-body-lg col-span-2">{description}</p>
     </Link>
   );
 }

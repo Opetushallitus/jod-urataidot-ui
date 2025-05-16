@@ -7,5 +7,5 @@ interface CardProps {
 }
 
 export function Card({ children, className }: Readonly<CardProps>) {
-  return <div className={cx('rounded-[20px] bg-white p-4', className)}>{children}</div>;
+  return <div className={cx('rounded-[20px] bg-white p-5', className)}>{children}</div>;
 }
