@@ -1,7 +1,7 @@
 import { Button, Card, MobileBottomBar, MobileSkillAreaSelector, SkillAreaIcon, SkillAreaSelector } from '@/components';
 import { QuestionProgressBar } from '@/features/career-management/components/QuestionProgressBar';
 import { ExerciseLinkCard } from '@/features/exercises/components/ExerciseLinkCard';
-import { useMediaQueries } from '@/hooks/useMediaQuery';
+import { useMediaQueries } from '@jod/design-system';
 import { useNextSkillAreaSlug } from '@/hooks/useNextSkillAreaSlug';
 import { useSkillAreaExercises } from '@/hooks/useSkillAreaExercises';
 import { ArrowLeft, ArrowRight, ChevronRight } from '@/icons';
@@ -9,12 +9,10 @@ import { SkillArea } from '@/lib/content-types';
 import { getLastQuestionUrl } from '@/lib/navigation-helpers';
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
 import { useTranslation } from 'react-i18next';
-import { useSearchParams } from 'react-router';
 
 const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
   const { t } = useTranslation();
   const { sm } = useMediaQueries();
-  const [searchParams] = useSearchParams();
 
   const nextSkillArea = useNextSkillAreaSlug({ id: skillArea.id });
   const prevUrl = `../${getLastQuestionUrl(skillArea)}`;
@@ -38,22 +36,17 @@ const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
         <div className="flex flex-col items-center gap-6">
           <SkillAreaIcon section={skillArea.id} size="xl" />
 
-          <h1 className="text-center text-heading-3 sm:text-heading-2">
+          <h1 className="text-heading-3 sm:text-heading-2 text-center">
             {t('career-management.skill-area-summary.title', { skillAreaName: skillArea.name })}
           </h1>
           <p className="text-center">{t('career-management.skill-area-summary.description')}</p>
 
           <div className="hidden items-center gap-4 sm:flex">
-            <Button
-              variant="simple"
-              icon={<ArrowLeft />}
-              iconSide="left"
-              to={{ pathname: prevUrl, search: searchParams.toString() }}
-            >
+            <Button variant="simple" icon={<ArrowLeft />} iconSide="left" to={prevUrl}>
               {t('common.previous')}
             </Button>
 
-            <Button to={{ pathname: nextUrl, search: searchParams.toString() }} icon={<ArrowRight />}>
+            <Button to={nextUrl} icon={<ArrowRight />}>
               {t('common.next')}
             </Button>
           </div>
@@ -61,17 +54,13 @@ const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
 
         <div className="flex max-w-3xl flex-col gap-4 sm:gap-6">
           <Card>
-            <h3 className="my-2 text-heading-3">{t('career-management.skill-area-summary.feedback-title')}</h3>
+            <h3 className="text-heading-3 my-2">{t('career-management.skill-area-summary.feedback-title')}</h3>
             {feedback ? (
               <p className="mb-6">{feedback.description}</p>
             ) : (
               <>
-                <p className="mb-4 text-body">{t('components.career-management-summary-section.no-feedback')}</p>
-                <Button
-                  variant="soft"
-                  icon={<ChevronRight />}
-                  to={{ pathname: `../`, search: searchParams.toString() }}
-                >
+                <p className="text-body mb-4">{t('components.career-management-summary-section.no-feedback')}</p>
+                <Button variant="soft" icon={<ChevronRight />} to={`../`}>
                   {t('components.career-management-summary-section.to-section', { skillAreaName: skillArea.name })}
                 </Button>
               </>
@@ -79,11 +68,11 @@ const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
           </Card>
 
           <Card>
-            <h3 className="my-2 text-heading-3">
+            <h3 className="text-heading-3 my-2">
               {t('career-management.skill-area-summary.exercises-title', { exerciseNumber: exercises.length })}
             </h3>
             <p className="mb-6">{t('career-management.skill-area-summary.exercises-description')}</p>
-            <div className="flex w-full flex-col gap-2">
+            <div className="flex w-full flex-col gap-3">
               {exercises.map((exercise) => (
                 <ExerciseLinkCard
                   background={'gray'}
@@ -97,11 +86,11 @@ const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
         </div>
 
         <MobileBottomBar>
-          <div className="mx-4 flex w-full justify-between">
-            <Button variant="simple" to={{ pathname: prevUrl, search: searchParams.toString() }}>
+          <div className="mx-5 flex w-full justify-between">
+            <Button variant="simple" to={prevUrl}>
               {t('common.previous')}
             </Button>
-            <Button to={{ pathname: nextUrl, search: searchParams.toString() }}>{t('common.next')}</Button>
+            <Button to={nextUrl}>{t('common.next')}</Button>
           </div>
         </MobileBottomBar>
       </div>

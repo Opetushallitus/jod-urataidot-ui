@@ -64,7 +64,7 @@ const ExerciseContainer = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="mx-auto flex max-w-3xl flex-col items-start">
       <BackButton />
-      <p className="mb-4 mt-8 text-heading-5 uppercase">{t('exercises.exercise')}</p>
+      <p className="text-button-sm mt-7 mb-5 uppercase">{t('exercises.exercise')}</p>
       <Suspense>{children}</Suspense>
     </div>
   );

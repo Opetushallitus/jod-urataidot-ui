@@ -5,7 +5,7 @@ import { calcHexPath, calcStatPath, calculateCirclePoint } from './helpers';
 import { Popover, PopoverPanel } from '@headlessui/react';
 import React from 'react';
 import { cx } from 'cva';
-import { useMediaQueries } from '@/hooks/useMediaQuery';
+import { useMediaQueries } from '@jod/design-system';
 
 export type TotalScoreRecord = Record<SkillAreaID, number | undefined>;
 type TimeoutRecord = Partial<Record<SkillAreaID, NodeJS.Timeout>>;
@@ -76,7 +76,7 @@ export const SpiderDiagram = ({
                   {shownPopovers.includes(skillArea.id) && (
                     <div
                       className={cx(
-                        'absolute -translate-x-1/2 rounded-lg bg-black p-2 text-center font-display text-body-sm text-white',
+                        'font-display text-body-sm absolute -translate-x-1/2 rounded-lg bg-black p-3 text-center text-white',
                         offsetX > 0 && 'left-0 translate-x-0',
                         offsetX < 0 && 'right-0 translate-x-0',
                       )}
@@ -106,7 +106,7 @@ export const SpiderDiagram = ({
         </div>
 
         <svg
-          className="pointer-events-auto relative z-0 aspect-square max-h-[600px] w-full fill-transparent @container"
+          className="@container pointer-events-auto relative z-0 aspect-square max-h-[600px] w-full fill-transparent"
           viewBox={`0 -${viewBox * 0.14} ${viewBox} ${viewBox * 1.25}`}
         >
           <g className="stroke-neutral-3 stroke-1">
@@ -203,7 +203,7 @@ export const SpiderDiagram = ({
                         x={x + getTextOffset()}
                         y={y + iconSize - 10}
                         style={{ fill: 'black' }}
-                        className="justify-center py-4 font-display text-body-sm-bold"
+                        className="font-display text-body-sm-bold justify-center py-5"
                       >
                         {skillAreas.find((a) => a.id === section)?.name}
                       </text>

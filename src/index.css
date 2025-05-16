@@ -1,39 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@import '@jod/design-system/dist/main.css';
+@import '@jod/design-system/lib/theme.css';
 
-/* Needed for sticky footer */
-#root {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-@layer base {
-  @font-face {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    src: url(@/../assets/Poppins-Regular.woff2) format('woff2');
-  }
-
-  @font-face {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    src: url(@/../assets/Poppins-SemiBold.woff2) format('woff2');
-  }
-
-  html {
-    font-family: Arial, system-ui, sans-serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: Poppins, system-ui, sans-serif;
-  }
-}
+@config '../tailwind.config.ts';

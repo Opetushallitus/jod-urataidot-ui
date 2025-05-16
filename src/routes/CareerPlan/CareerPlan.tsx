@@ -251,7 +251,7 @@ const CareerPlan = () => {
       <div className="mx-auto w-full max-w-3xl">
         <Modal title={t('career-plan.done-title')} isOpen={readyModalOpen} close={() => setReadyModalOpen(false)}>
           <p className="max-w-[80ch]">{t('career-plan.feedback')}</p>
-          <div className="mt-4 flex flex-col justify-center gap-2 sm:flex-row-reverse sm:justify-start">
+          <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row-reverse sm:justify-start">
             <DownloadPDFButton
               filename={t('career-plan.title') + '.pdf'}
               pdfDocument={
@@ -272,13 +272,13 @@ const CareerPlan = () => {
           </div>
         </Modal>
         <BackButton />
-        <div className="mb-4 mt-6 flex flex-col gap-4 sm:mt-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-6 mb-5 flex flex-col gap-4 sm:mt-7 sm:flex-row sm:items-center sm:justify-between">
           <h1 className="text-heading-2 sm:text-heading-1">{t('career-plan.title')}</h1>
           <Button onClick={() => void copyToClipboard()} icon={linkCopied ? <Check /> : <LinkIcon />}>
             {linkCopied ? t('career-plan.link-copied') : t('career-plan.copy-link')}
           </Button>
         </div>
-        <div className="my-8 flex flex-col gap-8">
+        <div className="my-7 flex flex-col gap-7">
           {questions.map((q) => (
             <TextArea key={q.id} id={q.id} title={q.title} description={q.description} exercises={q.exercises} />
           ))}
@@ -349,13 +349,13 @@ const TextArea = ({
   };
 
   return (
-    <div className="mb-2 flex flex-col gap-1">
+    <div className="mb-2 flex flex-col gap-2">
       <label className="font-display text-heading-5 sm:text-heading-4" htmlFor={id.toString()}>
         {`${id}. ${title}`}
       </label>
       {description && (
         <div className="flex flex-col">
-          <span id={id + '-description'} className="whitespace-pre-wrap text-body-sm italic">
+          <span id={id + '-description'} className="text-body-sm whitespace-pre-wrap italic">
             {description}
           </span>
           {exercisesWithInfo.map((e) => {
@@ -376,11 +376,11 @@ const TextArea = ({
       <textarea
         key={id}
         id={id.toString()}
-        aria-describedby={id + '-description'}
+        aria-describedby={`${id}-description`}
         value={answer}
         onChange={(e) => handleAnswerChange(e.target.value)}
         rows={5}
-        className="w-full rounded border p-2"
+        className="w-full rounded-sm border border-[#00000040] bg-white p-3"
         maxLength={2000}
       />
     </div>

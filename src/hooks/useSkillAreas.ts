@@ -1,4 +1,4 @@
-import { Language } from '@/i18n/config';
+import { LangCode } from '@/i18n/config';
 import { getContents } from '@/lib/content';
 import { Content, SkillArea } from '@/lib/content-types';
 import React from 'react';
@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
  */
 const useSkillAreas = (): SkillArea[] => {
   const { t, i18n } = useTranslation();
-  const language = i18n.language as Language;
+  const language = i18n.language as LangCode;
   const contentRef = React.useRef<Content>(getContents(t, language).slice(-1)[0]);
   const versionInSession = window.sessionStorage.getItem('content-version');
   const version = React.useMemo(() => (versionInSession ? Number(versionInSession) : null), [versionInSession]);

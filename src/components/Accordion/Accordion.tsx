@@ -24,15 +24,15 @@ const Accordion = ({
             onClick={() => {
               if (onClick) onClick(!open);
             }}
-            className="group peer flex w-full items-center gap-1 text-primary"
+            className="group peer text-primary flex w-full cursor-pointer items-center gap-1"
           >
-            <span className="group-data-[open]:rotate-180">
+            <span className="group-data-open:rotate-180">
               <ChevronDown />
             </span>
             <span className="text-body-bold leading-none">{open ? title : titleOpen}</span>
           </DisclosureButton>
 
-          <div className="overflow-clip *:transition-all *:peer-data-[open]:mt-4">
+          <div className="overflow-clip *:transition-all peer-data-open:*:mt-4">
             <Transition
               ref={ref}
               show={open}

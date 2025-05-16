@@ -12,11 +12,11 @@ export const QuickTestSection = ({ skillArea }: { skillArea: Pick<SkillArea, 'id
   const heading = useQuickEvaluationHeading(skillArea.id);
 
   return (
-    <div className="flex w-full flex-col justify-between gap-4 rounded-[1.25rem] bg-white p-6">
-      <div className="flex items-center gap-2">
+    <div className="flex w-full flex-col justify-between gap-5 rounded-[1.25rem] bg-white p-6">
+      <div className="flex items-center gap-3">
         <h3 className="text-heading-3">{`${heading}`}</h3>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-5">
         <Slider
           defaultValue={getScore({ id: skillArea.id, type: 'knowledge' })}
           onChange={(e) => setScore({ id: skillArea.id, score: Number(e.target.value), type: 'knowledge' })}

@@ -1,17 +1,15 @@
 import { Button, MobileBottomBar, MobileSkillAreaSelector, SkillAreaIcon, SkillAreaSelector } from '@/components';
 import { QuestionProgressBar } from '@/features/career-management/components/QuestionProgressBar';
 import { ShowVideoButton } from '@/features/career-management/components/ShowVideoButton';
-import { useMediaQueries } from '@/hooks/useMediaQuery';
+import { useMediaQueries } from '@jod/design-system';
 import useSkillAreas from '@/hooks/useSkillAreas';
 import { ArrowLeft, ArrowRight } from '@/icons';
 import { SkillArea } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
-import { useSearchParams } from 'react-router';
 
 const SkillAreaPage = ({ skillArea }: { skillArea: SkillArea }) => {
   const { t } = useTranslation();
   const { sm } = useMediaQueries();
-  const [searchParams] = useSearchParams();
 
   const skillAreas = useSkillAreas();
 
@@ -21,37 +19,32 @@ const SkillAreaPage = ({ skillArea }: { skillArea: SkillArea }) => {
 
   return (
     <div>
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-5">
         {sm ? <SkillAreaSelector /> : <MobileSkillAreaSelector />}
       </div>
-      <div className="flex flex-col items-center gap-2 pt-4">
+      <div className="flex flex-col items-center gap-3 pt-5">
         <SkillAreaIcon section={skillArea.id} size="lg" />
-        <p className="flex w-full justify-center pt-4 text-body-sm-bold uppercase">
+        <p className="text-body-sm-bold flex w-full justify-center pt-5 uppercase">
           {t('career-management.skill-area')} {`${skillAreaIndex + 1}/${skillAreas.length}`}
         </p>
         <h1 className="text-heading-3 sm:text-heading-2">{skillArea.name}</h1>
-        <div className="rounded-full bg-neutral-4 px-3 py-1.5 text-body-sm">{skillArea.longName}</div>
-        <p className="max-w-[80ch] py-2 text-center">{skillArea.info}</p>
+        <div className="bg-neutral-4 text-body-sm rounded-full px-4 py-2">{skillArea.longName}</div>
+        <p className="max-w-[80ch] py-3 text-center">{skillArea.info}</p>
         <ShowVideoButton title={skillArea.name} skillAreaId={skillArea.id} skillAreaName={skillArea.name} />
-        <div className="hidden items-center gap-4 py-6 sm:flex">
-          <Button
-            variant="simple"
-            icon={<ArrowLeft />}
-            iconSide="left"
-            to={{ pathname: prevSlug, search: searchParams.toString() }}
-          >
+        <div className="hidden items-center gap-5 py-6 sm:flex">
+          <Button variant="simple" icon={<ArrowLeft />} iconSide="left" to={prevSlug}>
             {t('common.previous')}
           </Button>
-          <Button to={{ pathname: nextSlug, search: searchParams.toString() }} icon={<ArrowRight />}>
+          <Button to={nextSlug} icon={<ArrowRight />}>
             {t('common.next')}
           </Button>
         </div>
         <MobileBottomBar>
-          <div className="mx-4 flex w-full justify-between">
-            <Button variant="simple" to={{ pathname: prevSlug, search: searchParams.toString() }}>
+          <div className="mx-5 flex w-full justify-between">
+            <Button variant="simple" to={prevSlug}>
               {t('common.previous')}
             </Button>
-            <Button to={{ pathname: nextSlug, search: searchParams.toString() }}>{t('common.next')}</Button>
+            <Button to={nextSlug}>{t('common.next')}</Button>
           </div>
         </MobileBottomBar>
       </div>

@@ -61,7 +61,7 @@ const MediaExercise = ({
   };
 
   return (
-    <div className="flex w-full flex-col gap-4">
+    <div className="flex w-full flex-col gap-5">
       <ReadyModal
         exercise={exercise}
         open={readyModalOpen}
@@ -74,7 +74,7 @@ const MediaExercise = ({
       <p className="mb-4 italic">{exercise.mediaDescription}</p>
 
       {easierExercise && (
-        <span className="mb-2 whitespace-pre-wrap text-body-sm">
+        <span className="text-body-sm mb-2 whitespace-pre-wrap">
           {t('exercises.easier-question')}{' '}
           <a
             href={`/urataidot/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}
@@ -90,7 +90,7 @@ const MediaExercise = ({
       <textarea
         rows={5}
         id={exercise.textFieldTitle}
-        className="w-full rounded border p-4"
+        className="w-full rounded-sm border border-[#00000040] bg-white p-4"
         value={fields.find((a) => a.id === 1)?.text}
         onChange={(e) => textHandler(e.target.value, 1)}
       />

@@ -6,14 +6,24 @@
     "description": "Tapahtui odottamaton virhe. Tämä voi johtua verkkoyhteyden katkeamisesta tai palvelun virheestä. Yritä myöhemmin uudelleen.",
     "title": "Virhe"
   },
+  "menu": "Valikko",
+  "front-page": "Etusivu",
+  "back": "Takaisin",
+  "close-menu": "Sulje valikko",
+  "open-submenu": "Avaa alivalikko",
   "home": {
-    "title": "Elämä voi viedä moneen suuntaan. Urataidot auttaa pohdinnoissa eteenpäin."
+    "title": "Tunnista vahvuutesi ja kehityskohteesi Urataitojen itsearvioinnin avulla",
+    "description": "Aloita vastaamalla muutamaan itsearviointikysymykseen. Saat tämän jälkeen harjoitustehtäviä itsesi kehittämiseen.",
+    "info": "Tehtävät on suunniteltu tukemaan omaa pohdintaasi. Vastaukset eivät tallennu Osaamispolun osaamisprofiiliin, mutta voit ladata tekemäsi tehtävät PDF-muodossa itsellesi."
   },
+  "copyright": "© JOD 2024. Kaikki oikeudet pidätetään.",
   "nav": {
+    "competency-path-home": "Osaamispolku etusivu",
     "language": "Kieli",
     "select-language": "Valitse kieli",
-    "home": "Aloitussivu",
-    "all-exercises": "Kaikki tehtävät",
+    "home": "Urataitojen itsearviointi - etusivu",
+    "all-exercises": "Tehtäväpankki",
+    "service-info": "Tietoa palvelusta",
     "copy-results-to-link": "Kopio linkki keskeneräiseen kyselyyn"
   },
   "no-match": {
@@ -29,6 +39,7 @@
     "my-life-story": "oma-elamantarina",
     "resources-and-ability-to-work": "voimavarat-ja-tyokyky",
     "feedback": "palaute",
+    "service-info": "tietoa-palvelusta",
     "competence-first": "osaaminen-edella",
     "ready-for-change": "valmiina-muutoksiin",
     "world-around-you": "maailma-ymparillasi",
@@ -2159,11 +2170,11 @@
     "app-name": "Urataidot",
     "navigation-cards": {
       "learn-something-new": {
-        "title": "Nopeasti alkuun: urasuunnittelutaitojen pikaitsearviointi",
+        "title": "Nopeasti alkuun",
         "description": "Tee urasuunnittelutaitojen pikaitsearviointi, jonka perusteella saat nopeasti tietoa ja sinulle sopivia vinkkejä."
       },
       "career-management": {
-        "title": "Syvenny urasuunnitteluun: Arvioi urasuunnittelutaitosi ja opi lisää",
+        "title": "Syvenny urasuunnitteluun",
         "description": "Tee laajempi urasuunnittelutaitojen itsearviointi ja pohdi syvällisesti nykytilannettasi. Lopuksi saat sinulle sopivia vinkkejä."
       },
       "exercises": {
@@ -2190,7 +2201,7 @@
     "select": "Valitse"
   },
   "exercises": {
-    "title": "Kaikki tehtävät",
+    "title": "Tehtäväpankki",
     "skill-area": "Taitoalue",
     "skill-level": "Taitotaso",
     "description": "Alla näet kaikki tehtävät. Voit suodattaa tehtäviä taitoalueen ja taitotason mukaan. Voit suorittaa tehtäviä haluamassasi järjestyksessä. Kun teet urasuunnittelutaitojen itsearvioinnin, saat sinulle suositeltuja tehtäviä.",
@@ -2217,6 +2228,10 @@
     "result-summary-description": "Yhteenveto sisältää itsearviointisi tulokset visuaalisessa ja sanallisessa muodossa. Osioiden vertailu -kuvan avulla näet kätevästi, missä taitoalueissa olet vahvimmillasi, ja mitä taitoalueita sinun kannattaisi keskittyä kehittämään. Seuraavilla sivuilla olevat palkkidiagrammit näyttävät vahvuutesi ja kehittämiskohteesi yksityiskohtaisemmin, osa-alueittain. Sanalliset palautteet täydentävät kuvaa, tarjoten konkreettisia näkökulmia ja kehitysehdotuksia.",
     "exercise-document": "Tehtävä",
     "career-plan": "Urasuunnitelma"
+  },
+  "service-info": {
+    "title": "Urataitojen itsearviointi - Tietoa palvelusta",
+    "description": "Urataidot on digitaalinen työkalu, joka auttaa sinua arvioimaan ja kehittämään urasuunnittelutaitojasi. Vastaamalla itsearviointikysymyksiin voit selvittää, missä urasuunnittelutaidoissa olet vahva ja mitä taitoja sinun kannattaisi kehittää.\n\nItsearvioinnin jälkeen saat vastaustesi perusteella harjoitustehtäväehdotuksia, joiden avulla voit kehittää urasuunnittelutaitojasi.\n\nTyökalu on maksuton, ja sitä käytetään ilman kirjautumista. Vastauksesi säilyvät, kunnes suljet selainikkunan. Voit tallentaa itsearvioinnin yhteenvedon linkkinä tai PDF-muodossa. Tehdyt harjoitustehtävät voit tallentaa PDF-muodossa.\n\nUrataidot-työkalu on toteutettu osana työ- ja elinkeinoministeriön ja KEHA-keskuksen Urasuunnittelutaitojen edistämishanketta. Työkalun toteuttajana oli Hyria. Hankkeen rahoitus tuli EU:n elpymis- ja palautumistukivälineestä"
   },
   "career-plan": {
     "title": "Urasuunnitelma",

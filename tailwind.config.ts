@@ -1,16 +1,8 @@
 import type { Config } from 'tailwindcss';
-import plugin from 'tailwindcss/plugin';
-import containerQueries from '@tailwindcss/container-queries';
 
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    screens: {
-      xs: '300px',
-      sm: '640px',
-      md: '1024px',
-      lg: '1440px',
-    },
     fontSize: {
       'heading-1': [
         '2.25rem',
@@ -81,12 +73,4 @@ export default {
       },
     },
   },
-  plugins: [
-    // https://tailwindcss.com/docs/plugins#adding-variants
-    plugin(function ({ addVariant }) {
-      addVariant('slider-thumb', ['&::-webkit-slider-thumb', '&::-moz-range-thumb']);
-      addVariant('slider-track', ['&::-webkit-slider-runnable-track', '&::-moz-range-track']);
-    }),
-    containerQueries,
-  ],
 } satisfies Config;
