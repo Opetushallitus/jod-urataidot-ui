@@ -8,6 +8,11 @@
   },
   "menu": "Valikko",
   "front-page": "Etusivu",
+  "about-us": "Tietoa palvelusta",
+  "privacy-policy-and-cookies": "Tietosuojaseloste ja evästeet",
+  "data-sources": "Datalähteet",
+  "about-ai": "Tietoa tekoälyn käytöstä",
+  "accessibility-statement": "Saavutettavuusseloste",
   "back": "Takaisin",
   "close-menu": "Sulje valikko",
   "open-submenu": "Avaa alivalikko",
@@ -18,7 +23,6 @@
   },
   "copyright": "© JOD 2024. Kaikki oikeudet pidätetään.",
   "nav": {
-    "competency-path-home": "Osaamispolku etusivu",
     "language": "Kieli",
     "select-language": "Valitse kieli",
     "home": "Urataitojen itsearviointi - etusivu",
@@ -26,11 +30,84 @@
     "service-info": "Tietoa palvelusta",
     "copy-results-to-link": "Kopio linkki keskeneräiseen kyselyyn"
   },
+  "navigation": {
+    "menu-section-title": "Urataidot osio"
+  },
+  "competency-path-portal": "Osaamispolkuportaali",
+  "language-selection": "Käyttökieli",
+  "cancel": "Peruuta",
+  "feedback": {
+    "aihe": {
+      "options": {
+        "option-1": "Palaute",
+        "option-2": "Kehitysehdotus",
+        "option-3": "Tekninen ongelma",
+        "option-4": "Muu asia"
+      },
+      "title": "Mistä haluat antaa palautetta?"
+    },
+    "description": "Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.",
+    "description-2": "Jos raportoit teknisestä ongelmasta, meitä auttaisi, että kerrot mahdollisimman tarkasti:",
+    "email": "Sähköposti",
+    "email-placeholder": "Syötä sähköpostiosoitteesi tähän",
+    "errors": {
+      "aihe": "Valitse palautteen aihe",
+      "osio": "Valitse palautteen osio",
+      "palaute": "Palautekenttä on pakollinen",
+      "required-sposti": "Sähköposti on pakollinen, jos haluat että sinuun otetaan yhteyttä",
+      "valid-sposti": "Syötä kelvollinen sähköpostiosoite"
+    },
+    "foot-note": "Kun lähetät palautetta, tallennamme palvelun tilatiedon, kuten mistä näkymästä palaute on lähetetty. Tilatietoa ei välitetä eteenpäin kolmansille osapuolille. Palautteita käytetään palvelun kehittämiseen ja vapaaehtoisesti jätettäviä yhteystietoja palautteisiin vastaamiseen. Palautteet ja yhteystiedot poistetaan käytössä olevasta palautejärjestelmästä 12 kuukauden välein. Lue lisää <CustomLink href=\"123546\">tietosuojaselosteestamme</CustomLink>.",
+    "foot-note-link": "/",
+    "osio": {
+      "options": {
+        "option-1": "Osaamispolkuni",
+        "option-2": "Ohjaajan osio",
+        "option-3": "Tietopalvelu",
+        "option-4": "Yleinen palaute"
+      },
+      "title": "Mitä osiota palautteesi koskee?"
+    },
+    "placeholder": "Kirjoita palautteesi tähän",
+    "privacy": "Älä kirjoita palautteeseen henkilökohtaisia tietoja, kuten henkilötunnusta tai terveystietoja. Täytähän kaikki kentät, jotta voimme käsitellä palautteesi.",
+    "questions": {
+      "item-1": "Mitä olit tekemässä, kun ongelma ilmeni? Mikä ei toiminut? Saitko virheilmoituksen? Jos, niin minkälaisen?",
+      "item-2": "Ilmoita ongelman päivämäärä ja kellonaika sekä käyttämäsi laite (tietokone, tabletti, älypuhelin).",
+      "item-3": "Jos mahdollista, ota ongelmasta kuvaruutukaappaus, sillä saatamme pyytää sitä sinulta myöhemmin. Jätä sitä varten yhteystietosi."
+    },
+    "send": "Lähetä palaute",
+    "take-contact": "Haluan, että minuun otetaan tarvittaessa yhteyttä sähköpostitse",
+    "title": "Palautelomake"
+  },
+  "footer": {
+    "cooperation-title": "Osaamipolku on toteutettu yhteistyössä seuraavien tahojen toimesta.",
+    "feedback-button-label": "Anna palautetta",
+    "feedback-content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeita. Anna meille palautetta ja huomiomme sen kehitystyössä.",
+    "feedback-title": "Kerro meille mitä pidit palvelusta!",
+    "funding-title": "Palvelu on rahoitettu Euroopan RFF-rahoituksella.",
+    "logos": {
+      "keha-label": "KEHA-keskus",
+      "okm-label": "Opetus- ja kulttuuriministeriö",
+      "oph-label": "Opetushallitus",
+      "tem-label": "Työ- ja elinkeinoministeriö"
+    },
+    "more-info-description": "Mietityttääkö tietosuoja tai tekoälyn hyödyntäminen palvelussa? Alta löydät kootusti yleistä tietoa palvelusta ja sen käytöstä.",
+    "more-info-title": "Haluatko tietää lisää Osaamispolusta?"
+  },
   "no-match": {
     "description": "Hakemaasi sivua ei löytynyt.",
     "title": "Sivua ei löytynyt"
   },
   "slugs": {
+    "basic-information": "perustiedot",
+    "user-guide": {
+      "index": "ohjeet",
+      "what-is-the-service": "mika-palvelu-on"
+    },
+    "about-ai": "tekoalysta",
+    "accessibility-statement": "saavutettavuusseloste",
+    "privacy-policy": "tietosuojaseloste",
+    "data-sources": "datalahteet",
     "career-management": "urasuunnittelu",
     "exercises": "tehtavat",
     "quick-self-evaluation": "pikaitsearviointi",

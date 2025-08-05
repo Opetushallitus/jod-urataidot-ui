@@ -2,18 +2,14 @@ import React from 'react';
 import { langLabels, supportedLanguageCodes } from '@/i18n/config';
 import { Link as LinkIcon } from '@/icons';
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
-import { LinkComponent, MenuItem, NavigationMenu } from '@jod/design-system';
+import { LinkComponent, MenuSection, NavigationMenu } from '@jod/design-system';
 import { useTranslation } from 'react-i18next';
-import { MdArrowBackIos, MdCheck } from 'react-icons/md';
-import { Link, useLocation } from 'react-router';
+import { MdCheck } from 'react-icons/md';
+import { useMenuRoutes } from './menuRoutes';
 
-const FrontPageLink = ({ children, className }: LinkComponent) => {
-  const {
-    i18n: { language },
-  } = useTranslation();
-
+const PortalLink = ({ children, className }: LinkComponent) => {
   return (
-    <a href={`/yksilo/${language}`} className={className}>
+    <a href="/" className={className}>
       {children}
     </a>
   );
@@ -30,52 +26,14 @@ const LanguageSelectionLinkComponent = (lng: string) => {
   return LanguageSelectionLink;
 };
 
-const MenuLinkComponent = (to: string, onClose: () => void) => {
-  const MenuLink = (props: LinkComponent) => <Link to={to} type="button" {...props} onClick={onClose} />;
-  return MenuLink;
-};
-
 export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
   const {
     t,
     i18n: { language },
   } = useTranslation();
-  const { pathname } = useLocation();
+
   const getEncodedData = useCareerPlanningAnswersStore((state) => state.getEncodedData);
   const [linkCopied, setLinkCopied] = React.useState(false);
-
-  const menuItems: MenuItem[] = [
-    {
-      label: t('nav.home'),
-      LinkComponent: MenuLinkComponent('/', onClose),
-      selected: pathname === `/${language}`,
-    },
-    {
-      label: t('common.navigation-cards.learn-something-new.title'),
-      LinkComponent: MenuLinkComponent(t('slugs.quick-self-evaluation'), onClose),
-      selected: pathname.startsWith(`/${language}/${t('slugs.quick-self-evaluation')}`),
-    },
-    {
-      label: t('common.navigation-cards.career-management.title'),
-      LinkComponent: MenuLinkComponent(t('slugs.career-management'), onClose),
-      selected: pathname.startsWith(`/${language}/${t('slugs.career-management')}`),
-    },
-    {
-      label: t('common.navigation-cards.exercises.title'),
-      LinkComponent: MenuLinkComponent(t('slugs.exercises'), onClose),
-      selected: pathname.startsWith(`/${language}/${t('slugs.exercises')}`),
-    },
-    {
-      label: t('common.navigation-cards.career-plan.title'),
-      LinkComponent: MenuLinkComponent(t('slugs.career-plan'), onClose),
-      selected: pathname === `/${language}/${t('slugs.career-plan')}`,
-    },
-    {
-      label: t('nav.service-info'),
-      LinkComponent: MenuLinkComponent(t('slugs.service-info'), onClose),
-      selected: pathname === `/${language}/${t('slugs.service-info')}`,
-    },
-  ];
 
   const copyToClipboard = async () => {
     await navigator.clipboard.writeText(
@@ -93,17 +51,19 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
     linkComponent: LanguageSelectionLinkComponent(code),
   }));
 
+  const menuSection: MenuSection = {
+    title: t('navigation.menu-section-title'),
+    linkItems: useMenuRoutes(onClose),
+  };
+
   return (
     <NavigationMenu
       open={open}
-      accentColor="#85C4EC"
-      FrontPageLinkComponent={FrontPageLink}
-      backLabel={t('back')}
-      menuItems={menuItems}
+      PortalLinkComponent={PortalLink}
+      menuSection={menuSection}
       ariaCloseMenu={t('close-menu')}
       openSubMenuLabel={t('open-submenu')}
-      frontPageIcon={<MdArrowBackIos size={24} />}
-      frontPageLinkLabel={t('nav.competency-path-home')}
+      portalLinkLabel={t('competency-path-portal')}
       onClose={onClose}
       selectedLanguage={language}
       languageSelectionItems={languageSelectionItems}
@@ -120,6 +80,8 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
           </span>
         </button>
       }
+      languageSelectionTitle={t('language-selection')}
+      serviceVariant="yksilo"
     />
   );
 };
