@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "engines": {
-    "node": "^20.0.0"
+    "node": "^22.0.0"
   },
   "license": "EUPL-1.2",
   "scripts": {
@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
+    "@hookform/error-message": "^2.0.1",
     "@hookform/resolvers": "^4.1.2",
     "@jod/design-system": "github:Opetushallitus/jod-design-system#main",
     "@react-pdf/renderer": "4.2.2",
