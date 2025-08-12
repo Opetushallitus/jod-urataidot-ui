@@ -33,8 +33,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ) => {
     const { t } = useTranslation();
     const classes = cx({
-      'group relative flex items-center min-h-[44px] text-wrap font-bold px-5 py-3 rounded-full outline-offset-4 disabled:[&:not([data-loading])]:text-text-disabled whitespace-nowrap font-display hover:not(disabled):underline':
-        true,
+      'group relative flex items-center min-h-[44px] text-wrap font-bold px-5 py-3 rounded-full outline-offset-4 disabled:[&:not([data-loading])]:text-text-disabled whitespace-nowrap font-display hover:not(disabled):underline': true,
       'text-white bg-primary hover:bg-primary-hover disabled:[&:not([data-loading])]:bg-neutral-4':
         variant === 'filled',
       'text-primary-contrast bg-primary-muted hover:bg-primary-muted-hover disabled:[&:not([data-loading])]:bg-neutral-5':

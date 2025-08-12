@@ -11,7 +11,7 @@ interface PalauteForm {
   osio: string;
   aihe: string;
   palaute: string;
-  ottakaaYhteytta: boolean;
+  ottakaaYhteytta?: boolean;
   sposti?: string;
 }
 
@@ -41,6 +41,7 @@ export const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
           sposti: z
             .union([
               z.string().length(0, t('feedback.errors.valid-sposti')),
+              // eslint-disable-next-line sonarjs/deprecation
               z.string().email(t('feedback.errors.valid-sposti')),
             ])
             .optional(),
