@@ -2,7 +2,7 @@ import React from 'react';
 import { LanguageButton, NavMenu, FeedbackModal } from '@/components';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router';
-import { Footer, NavigationBar } from '@jod/design-system';
+import { Footer, MatomoTracker, NavigationBar } from '@jod/design-system';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { MdMenu } from 'react-icons/md';
 
@@ -11,6 +11,17 @@ const Root = () => {
     t,
     i18n: { language },
   } = useTranslation();
+
+  const hostname = window.location.hostname;
+  const siteId = React.useMemo(() => {
+    if (hostname === 'localhost' || hostname === 'jodkehitys.fi') {
+      return 37;
+    } else if (hostname === 'jodtestaus.fi') {
+      return 38;
+    } else if (hostname === 'osaamispolku.fi') {
+      return 36;
+    }
+  }, [hostname]);
 
   const infoSlug = t('slugs.basic-information');
   const moreInfoLinks = [
@@ -116,6 +127,9 @@ const Root = () => {
           return location.pathname;
         }}
       />
+      {siteId && (
+        <MatomoTracker trackerUrl="https://analytiikka.opintopolku.fi" siteId={siteId} pathname={location.pathname} />
+      )}
     </div>
   );
 };
