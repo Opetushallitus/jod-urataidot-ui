@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router';
 import { Footer, MatomoTracker, NavigationBar } from '@jod/design-system';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
-import { MdMenu } from 'react-icons/md';
+import { JodMenu } from '@jod/design-system/icons';
 
 const Root = () => {
   const {
@@ -77,7 +77,7 @@ const Root = () => {
               className="flex cursor-pointer items-center justify-center gap-2 select-none"
             >
               <span className="flex size-7 items-center justify-center">
-                <MdMenu size={24} />
+                <JodMenu size={24} />
               </span>
               <span className="py-3 pr-2">{t('menu')}</span>
             </button>
