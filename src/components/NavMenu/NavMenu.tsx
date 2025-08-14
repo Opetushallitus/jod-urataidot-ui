@@ -4,8 +4,8 @@ import { Link as LinkIcon } from '@/icons';
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
 import { LinkComponent, MenuSection, NavigationMenu } from '@jod/design-system';
 import { useTranslation } from 'react-i18next';
-import { MdCheck } from 'react-icons/md';
 import { useMenuRoutes } from './menuRoutes';
+import { JodCheckmark } from '@jod/design-system/icons';
 
 const PortalLink = ({ children, className }: LinkComponent) => {
   return (
@@ -73,7 +73,7 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
           className="focus:outline-accent flex cursor-pointer flex-row items-center"
         >
           <div className="flex min-h-[40px] min-w-[40px] items-center justify-center">
-            {linkCopied ? <MdCheck size={24} /> : <LinkIcon />}
+            {linkCopied ? <JodCheckmark size={24} /> : <LinkIcon />}
           </div>
           <span className="text-button-md text-left">
             {linkCopied ? t('career-management-summary.summary-link-card.link-copied') : t('nav.copy-results-to-link')}
