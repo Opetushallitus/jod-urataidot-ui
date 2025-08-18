@@ -2,15 +2,23 @@ import React from 'react';
 import { LanguageButton, NavMenu, FeedbackModal } from '@/components';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router';
-import { Footer, MatomoTracker, NavigationBar } from '@jod/design-system';
+import { Chatbot, Footer, MatomoTracker, NavigationBar, useMediaQueries } from '@jod/design-system';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { JodMenu } from '@jod/design-system/icons';
+
+const agents: Record<'fi' | 'sv' | 'en', string> = {
+  fi: '2c134474-326f-4456-9139-8e585a569a9a',
+  sv: 'd41ea75b-628f-4420-9e4a-7431ffabb047',
+  en: '37f50124-4dec-4cab-8bc6-f8d2ea5bfe21',
+};
 
 const Root = () => {
   const {
     t,
     i18n: { language },
   } = useTranslation();
+
+  const { lg } = useMediaQueries();
 
   const hostname = window.location.hostname;
   const siteId = React.useMemo(() => {
@@ -126,6 +134,21 @@ const Root = () => {
         getKey={(location) => {
           return location.pathname;
         }}
+      />
+      <Chatbot
+        agent={agents[language as keyof typeof agents]}
+        language={language}
+        agentIcon={`${import.meta.env.BASE_URL}chatbot-icon.svg`}
+        header={t('chatbot.header')}
+        openWindowText={lg ? t('chatbot.open-window-text') : ''}
+        agentName={t('chatbot.agent-name')}
+        errorMessage={t('chatbot.error-message')}
+        greeting={t('chatbot.greeting')}
+        textInputPlaceholder={t('chatbot.text-input-placeholder')}
+        textInputHelper={t('chatbot.text-input-helper')}
+        eraseChatHistory={t('chatbot.erase-chat-history')}
+        saveChatAsCsv={t('chatbot.save-chat-as-csv')}
+        close={t('chatbot.close')}
       />
       {siteId && (
         <MatomoTracker trackerUrl="https://analytiikka.opintopolku.fi" siteId={siteId} pathname={location.pathname} />

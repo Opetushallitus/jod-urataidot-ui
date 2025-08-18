@@ -15,6 +15,18 @@
   "accessibility-statement": "Saavutettavuusseloste",
   "back": "Takaisin",
   "close-menu": "Sulje valikko",
+  "chatbot": {
+    "agent-name": "Neuvontabotti",
+    "close": "Sulje",
+    "erase-chat-history": "Tyhjennä keskusteluhistoria",
+    "error-message": "Tapahtui jokin virhe.",
+    "greeting": "Hei, olen Osaamispolun neuvontabotti.",
+    "header": "Neuvontabotti",
+    "open-window-text": "Kysy neuvoa?",
+    "save-chat-as-csv": "Tallenna keskustelu CSV-tiedostona",
+    "text-input-helper": "Ole hyvä ja odota edellisen vastauksen valmistumista.",
+    "text-input-placeholder": "Kirjoita kysymyksesi tähän"
+  },
   "open-submenu": "Avaa alivalikko",
   "home": {
     "title": "Tunnista vahvuutesi ja kehityskohteesi Urataitojen itsearvioinnin avulla",
