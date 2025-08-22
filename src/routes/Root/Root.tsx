@@ -2,7 +2,7 @@ import React from 'react';
 import { LanguageButton, NavMenu, FeedbackModal } from '@/components';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router';
-import { Chatbot, Footer, MatomoTracker, NavigationBar, useMediaQueries } from '@jod/design-system';
+import { Chatbot, Footer, MatomoTracker, NavigationBar } from '@jod/design-system';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { JodMenu } from '@jod/design-system/icons';
 
@@ -24,8 +24,6 @@ const Root = () => {
     t,
     i18n: { language },
   } = useTranslation();
-
-  const { lg } = useMediaQueries();
 
   const hostname = window.location.hostname;
   const { siteId, agent } = React.useMemo(() => {
@@ -147,7 +145,7 @@ const Root = () => {
         language={language}
         agentIcon={`${import.meta.env.BASE_URL}chatbot-icon.svg`}
         header={t('chatbot.header')}
-        openWindowText={lg ? t('chatbot.open-window-text') : ''}
+        openWindowText={t('chatbot.open-window-text')}
         agentName={t('chatbot.agent-name')}
         errorMessage={t('chatbot.error-message')}
         greeting={t('chatbot.greeting')}
