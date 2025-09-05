@@ -80,6 +80,7 @@ const Root = () => {
   return (
     <div className="bg-bg-gray flex min-h-screen flex-col">
       <title>{t('common.app-name')}</title>
+      <link rel="manifest" href={`/manifest-${language}.json`} crossOrigin="use-credentials" />
       <header role="banner" className="sticky top-0 z-50 print:hidden">
         <NavigationBar
           logo={{ to: `/${language}`, language, srText: t('osaamispolku') }}
@@ -143,7 +144,7 @@ const Root = () => {
       <Chatbot
         agent={agent}
         language={language}
-        agentIcon={`${import.meta.env.BASE_URL}chatbot-icon.svg`}
+        agentIcon={'/chatbot-icon.svg'}
         header={t('chatbot.header')}
         openWindowText={t('chatbot.open-window-text')}
         agentName={t('chatbot.agent-name')}

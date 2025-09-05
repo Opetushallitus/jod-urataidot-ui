@@ -61,4 +61,17 @@ export default defineConfig({
       },
     ],
   },
+  server: {
+    proxy: {
+      '/': {
+        target: 'http://localhost:5173', // Landing page UI
+        xfwd: true,
+        bypass: (req) => {
+          if (req.url && req.url.startsWith('/urataidot')) {
+            return req.url;
+          }
+        },
+      },
+    },
+  },
 });
