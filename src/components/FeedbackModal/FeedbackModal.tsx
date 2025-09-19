@@ -1,231 +1,278 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button, Checkbox, InputField, Modal, RadioButton, RadioButtonGroup, Textarea } from '@jod/design-system';
+import { JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
-import { Form, FormProvider, FormSubmitHandler, useForm, useFormState } from 'react-hook-form';
-import { Trans, useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router';
+import { Controller, Form, FormSubmitHandler, useForm, useFormState } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 import { z } from 'zod';
-import { FormError } from '../FormError/FormError';
 
-interface PalauteForm {
-  osio: string;
-  aihe: string;
-  palaute: string;
-  ottakaaYhteytta?: boolean;
-  sposti?: string;
-}
+const DETAILS_MAX_LENGTH = 2048;
+const MESSAGE_MAX_LENGTH = 5000;
+const EMAIL_MAX_LENGTH = 320;
+
+const Feedback = z
+  .object({
+    section: z.enum(['Osaamispolkuni', 'Ohjaajan osio', 'Tietopalvelu', 'Koko palvelu tai muu palaute']),
+    area: z.enum(['Alatunniste', 'Kohtaanto työkalu', 'Työmahdollisuus']),
+    language: z.enum(['fi', 'en', 'sv']),
+    details: z.string().nonempty().max(DETAILS_MAX_LENGTH).optional(),
+    type: z.enum(['Kehu', 'Kehitysehdotus', 'Moite', 'Tekninen vika tai ongelma']),
+    message: z.string().nonempty().max(MESSAGE_MAX_LENGTH),
+    email: z.string().optional(),
+    timestamp: z.iso.datetime().optional(),
+    wantsContact: z.boolean(),
+  })
+  .superRefine((data, ctx) => {
+    if (data.wantsContact) {
+      if (!data.email || data.email.trim().length === 0) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['email'],
+        });
+      } else {
+        const emailSchema = z.email().max(EMAIL_MAX_LENGTH);
+        const result = emailSchema.safeParse(data.email);
+        if (!result.success) {
+          ctx.addIssue({
+            code: 'custom',
+            path: ['email'],
+          });
+        }
+      }
+    }
+  });
+
+type Feedback = z.infer<typeof Feedback>;
 
 export interface FeedbackModalProps {
   isOpen: boolean;
   onClose: () => void;
+  section: Feedback['section'];
+  area: Feedback['area'];
+  language: Feedback['language'];
 }
 
-export const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
-  const {
-    t,
-    i18n: { language },
-  } = useTranslation();
+export const FeedbackModal = ({ isOpen, onClose, section, area, language }: FeedbackModalProps) => {
   const formId = React.useId();
-  const [feedbackOsio, setFeedbackOsio] = React.useState<string>('');
-  const [feedbackAihe, setFeedbackAihe] = React.useState<string>('');
+  const { t } = useTranslation();
 
-  const methods = useForm<PalauteForm>({
-    mode: 'onBlur',
-    resolver: zodResolver(
-      z
-        .object({
-          osio: z.string().min(1, t('feedback.errors.osio')),
-          aihe: z.string().min(1, t('feedback.errors.aihe')),
-          palaute: z.string().min(1, t('feedback.errors.palaute')),
-          ottakaaYhteytta: z.boolean().optional().default(false),
-          sposti: z
-            .union([
-              z.string().length(0, t('feedback.errors.valid-sposti')),
-              // eslint-disable-next-line sonarjs/deprecation
-              z.string().email(t('feedback.errors.valid-sposti')),
-            ])
-            .optional(),
-        })
-        .refine(
-          // eslint-disable-next-line sonarjs/function-return-type
-          (data) => {
-            if (data.ottakaaYhteytta) {
-              return data.sposti && data.sposti.trim().length > 0;
-            }
-            return true;
-          },
-          {
-            message: t('feedback.errors.required-sposti'),
-            path: ['sposti'],
-          },
-        ),
-    ),
+  const { control, register, watch, reset } = useForm({
+    resolver: zodResolver(Feedback),
     defaultValues: {
-      osio: '',
-      aihe: '',
-      palaute: '',
-      ottakaaYhteytta: false,
-      sposti: '',
+      section,
+      area,
+      language,
+      type: 'Kehu',
+      wantsContact: false,
     },
   });
-
-  const { isValid, isLoading, errors } = useFormState({
-    control: methods.control,
-  });
-
-  const onSubmit: FormSubmitHandler<PalauteForm> = async ({ data: _data }) => {
-    // send feedback actually to somewhere
-    onClose();
-  };
-
-  const { watch, setValue, trigger } = methods;
-  const ottakaaYhteytta = watch('ottakaaYhteytta');
+  const { isValid } = useFormState({ control });
+  const wantsContact = watch('wantsContact');
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
 
   React.useEffect(() => {
-    void trigger();
-  }, [trigger]);
+    reset();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [section, area, language]);
 
-  if (isLoading) {
-    return null;
-  }
+  const onSubmit: FormSubmitHandler<Feedback> = async (payload) => {
+    try {
+      setIsSubmitting(true);
+      const { wantsContact, email, ...rest } = payload.data;
+      const body = JSON.stringify({
+        ...rest,
+        email: wantsContact ? email : undefined,
+        details: window.location.href,
+        timestamp: new Date().toISOString(),
+      });
+      const response = await fetch('/api/palaute', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-amz-content-sha256': Array.from(
+            new Uint8Array(await window.crypto.subtle.digest('SHA-256', new TextEncoder().encode(body))),
+          )
+            .map((b) => b.toString(16).padStart(2, '0'))
+            .join(''),
+        },
+        body,
+      });
+
+      if (!response.ok) {
+        throw new Error();
+      }
+
+      setIsSubmitting(false);
+      reset();
+      onClose();
+
+      // Wait a moment before showing success message
+      await new Promise((resolve) => setTimeout(resolve, 50));
+      alert(t('feedback.success'));
+
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (error) {
+      setIsSubmitting(false);
+      alert(t('feedback.error'));
+    }
+  };
 
   return (
     <Modal
       open={isOpen}
+      onClose={onClose}
       fullWidthContent
       content={
-        <FormProvider {...methods}>
-          <Form
-            id={formId}
-            onSubmit={onSubmit}
-            onKeyDown={(event) => {
-              const target = event.target as HTMLElement;
-              const tagName = target.tagName.toLowerCase();
-              // Allow hyperlink to be navigated with the keyboard
-              if (tagName === 'a') {
-                return;
-              }
-              // Prevent form submission on Enter
-              if (event.key === 'Enter') {
-                event.preventDefault();
-              }
-            }}
-          >
-            <h2 className="text-hero-mobile sm:text-hero mb-4 text-black sm:mb-5">{t('feedback.title')}</h2>
-            <div className="text-body-md-mobile sm:text-body-md font-arial mb-5 flex flex-col gap-5">
-              <p>{t('feedback.description')}</p>
-              <div>
-                <p>{t('feedback.description-2')}</p>
-
-                <ol className="list-inside list-decimal">
-                  <li>{t('feedback.questions.item-1')}</li>
-                  <li>{t('feedback.questions.item-2')}</li>
-                  <li>{t('feedback.questions.item-3')}</li>
-                </ol>
-              </div>
-              <p>{t('feedback.privacy')}</p>
-            </div>
-
-            <div>
+        <Form id={formId} control={control} onSubmit={onSubmit} data-testid="feedback-form">
+          <h2 className="sm:text-heading-1 text-heading-1-mobile mb-5">{t('feedback.title')}</h2>
+          <p className="sm:text-body-md text-body-md-mobile mb-9">
+            {t('feedback.intro-1')} {t('feedback.intro-2')}
+            <br />
+            <br />
+            {t('feedback.intro-privacy')}
+          </p>
+          <Controller
+            control={control}
+            name="section"
+            render={({ field: { value, onChange } }) => (
               <RadioButtonGroup
-                label={t('feedback.osio.title')}
-                value={feedbackOsio}
-                onChange={(newValue) => {
-                  setFeedbackOsio(newValue);
-                  methods.setValue('osio', newValue, { shouldValidate: true });
-                }}
+                label={t('feedback.section-question')}
+                value={value}
+                onChange={onChange}
+                className="mb-6"
+                data-testid="feedback-section-group"
               >
-                <RadioButton {...methods.register('osio')} label={t('feedback.osio.options.option-1')} value="a" />
-                <RadioButton {...methods.register('osio')} label={t('feedback.osio.options.option-2')} value="b" />
-                <RadioButton {...methods.register('osio')} label={t('feedback.osio.options.option-3')} value="c" />
-                <RadioButton {...methods.register('osio')} label={t('feedback.osio.options.option-4')} value="d" />
+                <RadioButton label={t('feedback.sections.osaamispolkuni')} value="Osaamispolkuni" />
+                <RadioButton label={t('feedback.sections.ohjaajan-osio')} value="Ohjaajan osio" />
+                <RadioButton label={t('feedback.sections.tietopalvelu')} value="Tietopalvelu" />
+                <RadioButton label={t('feedback.sections.koko-palvelu')} value="Koko palvelu tai muu palaute" />
               </RadioButtonGroup>
-              <FormError name="osio" errors={errors} />
-            </div>
-
-            <div>
-              <RadioButtonGroup
-                className="mt-5 mb-5"
-                label={t('feedback.aihe.title')}
-                value={feedbackAihe}
-                onChange={(newValue) => {
-                  setFeedbackAihe(newValue);
-                  methods.setValue('aihe', newValue, { shouldValidate: true });
-                }}
-              >
-                <RadioButton {...methods.register('aihe')} label={t('feedback.aihe.options.option-1')} value="a" />
-                <RadioButton {...methods.register('aihe')} label={t('feedback.aihe.options.option-2')} value="b" />
-                <RadioButton {...methods.register('aihe')} label={t('feedback.aihe.options.option-1')} value="c" />
-                <RadioButton {...methods.register('aihe')} label={t('feedback.aihe.options.option-4')} value="d" />
-              </RadioButtonGroup>
-              <FormError name="aihe" errors={errors} />
-            </div>
-
-            <Textarea
-              label={'Palaute'}
-              {...methods.register('palaute' as const)}
-              placeholder={t('feedback.placeholder')}
-            />
-            <FormError name="palaute" errors={errors} />
-            <Checkbox
-              ariaLabel={t('feedback.take-contact')}
-              label={t('feedback.take-contact')}
-              {...methods.register('ottakaaYhteytta')}
-              className="mt-4"
-              checked={ottakaaYhteytta || false}
-              value={String(ottakaaYhteytta)}
-              onChange={(e) => {
-                setValue('ottakaaYhteytta', e.target.checked, { shouldValidate: true });
-
-                if (!e.target.checked) {
-                  setValue('sposti', '', { shouldValidate: true });
-                }
-              }}
-            />
-            {ottakaaYhteytta && (
-              <div className="mt-4">
-                <InputField
-                  label={t('feedback.email')}
-                  placeholder={t('feedback.email-placeholder')}
-                  {...methods.register('sposti')}
-                />
-                <FormError name="sposti" errors={errors} />
-              </div>
             )}
-
-            <p className="font-arial mt-5">
-              <Trans
-                i18nKey="feedback.foot-note"
-                components={{
-                  CustomLink: (
-                    <NavLink
-                      type="link"
-                      to={`${t('slugs.basic-information')}/${t('slugs.privacy-policy')}`}
-                      lang={language}
-                      key={'privacy-policy-link'}
-                      className="text-button-md text-accent hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    />
-                  ),
-                }}
+          />
+          <Controller
+            control={control}
+            name="type"
+            render={({ field: { value, onChange } }) => (
+              <RadioButtonGroup
+                label={t('feedback.type-question')}
+                value={value}
+                onChange={onChange}
+                className="mb-6"
+                data-testid="feedback-type-group"
+              >
+                <RadioButton label={t('feedback.types.kehu')} value="Kehu" />
+                <RadioButton label={t('feedback.types.kehitysehdotus')} value="Kehitysehdotus" />
+                <RadioButton label={t('feedback.types.moite')} value="Moite" />
+                <RadioButton label={t('feedback.types.vika')} value="Tekninen vika tai ongelma" />
+              </RadioButtonGroup>
+            )}
+          />
+          <Textarea
+            label={t('feedback.message-label')}
+            {...register('message')}
+            className="mb-9"
+            rows={5}
+            maxLength={MESSAGE_MAX_LENGTH}
+            data-testid="feedback-message"
+          />
+          <Controller
+            control={control}
+            name="wantsContact"
+            render={({ field: { name, value, onChange } }) => (
+              <Checkbox
+                label={t('feedback.wants-contact')}
+                ariaLabel={t('feedback.wants-contact')}
+                name={name}
+                value="yes"
+                checked={value}
+                onChange={onChange}
+                className={wantsContact ? 'mb-5' : 'mb-7'}
+                data-testid="feedback-wants-contact"
               />
-            </p>
-          </Form>
-        </FormProvider>
+            )}
+          />
+          {wantsContact && (
+            <InputField
+              label={t('feedback.email-label')}
+              {...register('email')}
+              className="mb-9"
+              maxLength={EMAIL_MAX_LENGTH}
+              data-testid="feedback-email"
+            />
+          )}
+          <hr className="bg-border-gray text-border-gray mb-7 h-1" />
+          <div className="sm:text-body-md text-body-md-mobile">
+            <p>{t('feedback.footer-info-1')}</p>
+            <br />
+            <p>{t('feedback.footer-info-heading')}</p>
+            <ul className="ml-7 list-outside list-disc">
+              <li>{t('feedback.footer-handled.osaamispolkuni')}</li>
+              <li>{t('feedback.footer-handled.ohjaajan')}</li>
+              <li>{t('feedback.footer-handled.tietopalvelu')}</li>
+            </ul>
+            <br />
+            <p>{t('feedback.footer-privacy-heading')}</p>
+            <ul className="ml-7 list-outside list-disc">
+              <li>
+                <a
+                  href={t('feedback.linkHrefs.oph')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent inline-flex hover:underline"
+                >
+                  {t('feedback.links.oph')}
+                  <JodOpenInNew />
+                </a>
+              </li>
+              <li>
+                <a
+                  href={t('feedback.linkHrefs.keha')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent inline-flex hover:underline"
+                >
+                  {t('feedback.links.keha')}
+                  <JodOpenInNew />
+                </a>
+              </li>
+              <li>
+                <a
+                  href={t('feedback.linkHrefs.okm')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent inline-flex hover:underline"
+                >
+                  {t('feedback.links.okm')}
+                  <JodOpenInNew />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </Form>
       }
       footer={
-        <div className="flex flex-1 justify-end gap-3">
-          <Button variant="white" label={t('cancel')} onClick={onClose} className="whitespace-nowrap" />
+        <div className="flex flex-1 justify-end gap-4">
           <Button
-            form={formId}
             variant="white"
-            label={t('feedback.send')}
+            label={t('feedback.cancel')}
+            onClick={() => {
+              reset();
+              onClose();
+            }}
             className="whitespace-nowrap"
-            disabled={!isValid}
+            data-testid="feedback-cancel"
+          />
+          <Button
+            variant="white"
+            label={t('feedback.submit')}
+            className="whitespace-nowrap"
+            disabled={!isValid || isSubmitting}
+            form={formId}
+            data-testid="feedback-submit"
           />
         </div>
       }
+      data-testid="feedback-modal"
     />
   );
 };

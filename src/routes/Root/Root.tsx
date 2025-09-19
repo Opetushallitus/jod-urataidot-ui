@@ -5,6 +5,7 @@ import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router';
 import { Chatbot, Footer, MatomoTracker, NavigationBar } from '@jod/design-system';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { JodMenu } from '@jod/design-system/icons';
+import { LangCode } from '@/i18n/config';
 
 const agents = {
   test: {
@@ -146,7 +147,13 @@ const Root = () => {
         feedbackBgImageClassName="bg-[url(@/../assets/home-1.avif)] bg-cover bg-[length:auto_auto] sm:bg-[length:auto_1000px] bg-[top_-0rem_right_-0rem] sm:bg-[top_-21rem_right_0rem]"
         copyright={t('copyright')}
       />
-      <FeedbackModal isOpen={feedbackVisible} onClose={() => setFeedbackVisible(false)} />
+      <FeedbackModal
+        isOpen={feedbackVisible}
+        onClose={() => setFeedbackVisible(false)}
+        section="Osaamispolkuni"
+        area="Alatunniste"
+        language={language as LangCode}
+      />
       <ScrollRestoration
         getKey={(location) => {
           return location.pathname;
