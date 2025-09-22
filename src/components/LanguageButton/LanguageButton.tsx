@@ -1,5 +1,6 @@
 import { LanguageMenu } from '@/components';
-import { langLabels } from '@/i18n/config';
+import { type LangCode, langLabels } from '@/i18n/config';
+import { useMediaQueries } from '@jod/design-system';
 import { JodCaretDown, JodCaretUp, JodLanguage } from '@jod/design-system/icons';
 import { useTranslation } from 'react-i18next';
 
@@ -16,19 +17,25 @@ export const LanguageButton = ({ onClick, langMenuOpen, menuRef, onMenuBlur, onM
     i18n: { language: languageKey },
   } = useTranslation();
 
+  const { sm } = useMediaQueries();
+
+  const carets = sm ? <>{langMenuOpen ? <JodCaretUp size={20} /> : <JodCaretDown size={20} />}</> : null;
+
   return (
-    <div className="relative">
-      <button onClick={onClick} className="flex cursor-pointer items-center justify-center gap-2 select-none">
-        <span className="flex size-7 items-center justify-center">
-          <JodLanguage size={24} />
+    <div className="relative" data-testid="language-button">
+      <button
+        onClick={onClick}
+        className="flex cursor-pointer flex-col items-center justify-center select-none sm:mr-5 sm:flex-row"
+        data-testid="language-button-trigger"
+      >
+        <JodLanguage className="mx-auto" />
+        <span className="sm:text-button-sm text-[12px] whitespace-nowrap sm:mx-3">
+          {langLabels[languageKey as LangCode]}
         </span>
-        <span className="py-3 whitespace-nowrap">{langLabels[languageKey as keyof typeof langLabels]}</span>
-        <span className="flex size-7 items-center justify-center">
-          {langMenuOpen ? <JodCaretUp size={24} /> : <JodCaretDown size={24} />}
-        </span>
+        {carets}
       </button>
       {langMenuOpen && (
-        <div ref={menuRef} onBlur={onMenuBlur} className="absolute right-0 translate-y-8">
+        <div ref={menuRef} onBlur={onMenuBlur} className="absolute right-0 translate-y-8" data-testid="language-menu">
           <LanguageMenu onClick={onMenuClick} />
         </div>
       )}
