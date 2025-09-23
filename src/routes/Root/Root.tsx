@@ -1,7 +1,7 @@
 import React from 'react';
 import { LanguageButton, NavMenu, FeedbackModal } from '@/components';
 import { useTranslation } from 'react-i18next';
-import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router';
+import { Link, Outlet, ScrollRestoration } from 'react-router';
 import { Chatbot, Footer, MatomoTracker, NavigationBar } from '@jod/design-system';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { JodMenu } from '@jod/design-system/icons';
@@ -37,29 +37,15 @@ const Root = () => {
     }
   }, [hostname, language]);
 
-  const infoSlug = t('slugs.basic-information');
-  const moreInfoLinks = [
-    {
-      to: `${t('slugs.user-guide.index')}/${t('slugs.user-guide.what-is-the-service')}`,
-      label: t('about-us'),
+  const moreInfoLinks = ['about-service', 'privacy-and-cookies', 'data-sources', 'ai-usage', 'accessibility'].map(
+    (key) => {
+      const slug = t(`slugs.${key}`);
+      return {
+        href: `/${language}/${slug}`,
+        label: t(`footer.more-info-links.${key}`),
+      };
     },
-    {
-      to: `${infoSlug}/${t('slugs.privacy-policy')}`,
-      label: t('privacy-policy-and-cookies'),
-    },
-    {
-      to: `${infoSlug}/${t('slugs.data-sources')}`,
-      label: t('data-sources'),
-    },
-    {
-      to: `${infoSlug}/${t('slugs.about-ai')}`,
-      label: t('about-ai'),
-    },
-    {
-      to: `${infoSlug}/${t('slugs.accessibility-statement')}`,
-      label: t('accessibility-statement'),
-    },
-  ];
+  );
 
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const [feedbackVisible, setFeedbackVisible] = React.useState(false);
@@ -137,7 +123,6 @@ const Root = () => {
         moreInfoTitle={t('footer.more-info-title')}
         moreInfoDescription={t('footer.more-info-description')}
         moreInfoLinks={moreInfoLinks}
-        MoreInfoLinkComponent={NavLink}
         feedbackTitle={t('footer.feedback-title')}
         feedbackContent={t('footer.feedback-content')}
         feedbackButtonLabel={t('footer.feedback-button-label')}

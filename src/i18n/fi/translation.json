@@ -8,11 +8,6 @@
   },
   "menu": "Valikko",
   "front-page": "Etusivu",
-  "about-us": "Tietoa palvelusta",
-  "privacy-policy-and-cookies": "Tietosuojaseloste ja evästeet",
-  "data-sources": "Datalähteet",
-  "about-ai": "Tietoa tekoälyn käytöstä",
-  "accessibility-statement": "Saavutettavuusseloste",
   "back": "Takaisin",
   "close-menu": "Sulje valikko",
   "chatbot": {
@@ -103,22 +98,25 @@
       "tem-label": "Työ- ja elinkeinoministeriö"
     },
     "more-info-description": "Mietityttääkö tietosuoja tai tekoälyn hyödyntäminen palvelussa? Alta löydät kootusti yleistä tietoa palvelusta ja sen käytöstä.",
-    "more-info-title": "Haluatko tietää lisää Osaamispolusta?"
+    "more-info-title": "Haluatko tietää lisää Osaamispolusta?",
+    "more-info-links": {
+      "about-service": "Tietoa palvelusta",
+      "privacy-and-cookies": "Tietosuojaseloste ja evästeet",
+      "data-sources": "Datalähteet",
+      "ai-usage": "Tietoa tekoälyn käytöstä",
+      "accessibility": "Tietoa saavutettavuudesta"
+    }
   },
   "no-match": {
     "description": "Hakemaasi sivua ei löytynyt.",
     "title": "Sivua ei löytynyt"
   },
   "slugs": {
-    "basic-information": "perustiedot",
-    "user-guide": {
-      "index": "ohjeet",
-      "what-is-the-service": "mika-palvelu-on"
-    },
-    "about-ai": "tekoalysta",
-    "accessibility-statement": "saavutettavuusseloste",
-    "privacy-policy": "tietosuojaseloste",
+    "about-service": "tietoa-palvelusta",
+    "privacy-and-cookies": "tietosuojaseloste-ja-evasteet",
     "data-sources": "datalahteet",
+    "ai-usage": "tietoa-tekoalyn-kaytosta",
+    "accessibility": "tietoa-saavutettavuudesta",
     "career-management": "urasuunnittelu",
     "exercises": "tehtavat",
     "quick-self-evaluation": "pikaitsearviointi",
