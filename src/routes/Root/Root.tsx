@@ -2,10 +2,11 @@ import React from 'react';
 import { LanguageButton, NavMenu, FeedbackModal } from '@/components';
 import { useTranslation } from 'react-i18next';
 import { Link, Outlet, ScrollRestoration } from 'react-router';
-import { Chatbot, Footer, MatomoTracker, NavigationBar } from '@jod/design-system';
+import { Button, Chatbot, Footer, MatomoTracker, NavigationBar, NoteStack, useNoteStack } from '@jod/design-system';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
-import { JodMenu } from '@jod/design-system/icons';
+import { JodMenu, JodOpenInNew } from '@jod/design-system/icons';
 import { LangCode } from '@/i18n/config';
+import { getLinkTo } from '@/utils/routeUtils';
 
 const agents = {
   test: {
@@ -25,6 +26,7 @@ const Root = () => {
     t,
     i18n: { language },
   } = useTranslation();
+  const { addNote, removeNote } = useNoteStack();
 
   const hostname = window.location.hostname;
   const { siteId, agent } = React.useMemo(() => {
@@ -64,6 +66,37 @@ const Root = () => {
     document.documentElement.setAttribute('lang', language);
   }, [language]);
 
+  const [visibleBetaFeedback, setVisibleBetaFeedback] = React.useState(true);
+
+  React.useEffect(() => {
+    if (visibleBetaFeedback) {
+      addNote({
+        title: t('beta.note.title'),
+        description: t('beta.note.description'),
+        variant: 'feedback',
+        onCloseClick: () => {
+          setVisibleBetaFeedback(false);
+          removeNote('beta-feedback');
+        },
+        readMoreComponent: (
+          <Button
+            size="sm"
+            variant="white"
+            label={t('beta.note.to-feedback')}
+            icon={<JodOpenInNew />}
+            iconSide="right"
+            LinkComponent={getLinkTo('https://link.webropolsurveys.com/S/9697D299FF7E5000', {
+              useAnchor: true,
+              target: '_blank',
+            })}
+          />
+        ),
+        permanent: false,
+        id: 'beta-feedback',
+      });
+    }
+  }, [t, addNote, visibleBetaFeedback, removeNote]);
+
   return (
     <div className="bg-bg-gray flex min-h-screen flex-col">
       <title>{t('common.app-name')}</title>
@@ -98,6 +131,7 @@ const Root = () => {
           )}
         />
         <div id="progress-bar" className="absolute -bottom-1 left-0 hidden h-1 w-full sm:block"></div>
+        <NoteStack showAllText={t('show-all')} />
       </header>
       <NavMenu open={navMenuOpen} onClose={() => setNavMenuOpen(false)} />
       <Outlet />

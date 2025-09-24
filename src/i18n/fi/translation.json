@@ -1,4 +1,11 @@
 {
+  "beta": {
+    "note": {
+      "description": "Kerro mielipiteesi ja auta meitä kehittämään palvelua.",
+      "title": "Kokeile palvelua",
+      "to-feedback": "Siirry kyselyyn"
+    }
+  },
   "error": {
     "network": {}
   },
@@ -2364,5 +2371,6 @@
     "summary-career-plan": {
       "description": "Olet nyt suorittanut urasuunnittelutaitojen itsearvioinnin, joten voit siirtyä luomaan itsellesi urasuunnitelman."
     }
-  }
+  },
+  "show-all": "Näytä kaikki"
 }
