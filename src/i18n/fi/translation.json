@@ -32,7 +32,6 @@
     "description": "Aloita vastaamalla muutamaan itsearviointikysymykseen. Saat tämän jälkeen harjoitustehtäviä itsesi kehittämiseen.",
     "info": "Tehtävät on suunniteltu tukemaan omaa pohdintaasi. Vastaukset eivät tallennu Osaamispolun osaamisprofiiliin, mutta voit ladata tekemäsi tehtävät PDF-muodossa itsellesi."
   },
-  "copyright": "© JOD 2024. Kaikki oikeudet pidätetään.",
   "nav": {
     "language": "Kieli",
     "select-language": "Valitse kieli",
@@ -93,11 +92,12 @@
     "wants-contact": "Haluan, että minuun otetaan yhteyttä"
   },
   "footer": {
-    "cooperation-title": "Osaamipolku on toteutettu yhteistyössä seuraavien tahojen toimesta.",
+    "cooperation-title": "Osaamispolku on toteutettu yhteistyössä seuraavien tahojen toimesta",
+    "copyright": "© Osaamispolku 2025. Kaikki oikeudet pidätetään.",
     "feedback-button-label": "Anna palautetta",
     "feedback-content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeita. Anna meille palautetta ja huomiomme sen kehitystyössä.",
     "feedback-title": "Kerro meille mitä pidit palvelusta!",
-    "funding-title": "Palvelu on rahoitettu Euroopan RFF-rahoituksella.",
+    "funding-title": "Palvelu on rahoitettu EU:n elpymis- ja palautumistukivälineellä (RRF)",
     "logos": {
       "keha-label": "KEHA-keskus",
       "okm-label": "Opetus- ja kulttuuriministeriö",
@@ -105,14 +105,14 @@
       "tem-label": "Työ- ja elinkeinoministeriö"
     },
     "more-info-description": "Mietityttääkö tietosuoja tai tekoälyn hyödyntäminen palvelussa? Alta löydät kootusti yleistä tietoa palvelusta ja sen käytöstä.",
-    "more-info-title": "Haluatko tietää lisää Osaamispolusta?",
     "more-info-links": {
       "about-service": "Tietoa palvelusta",
-      "privacy-and-cookies": "Tietosuojaseloste ja evästeet",
-      "data-sources": "Datalähteet",
+      "accessibility": "Tietoa saavutettavuudesta",
       "ai-usage": "Tietoa tekoälyn käytöstä",
-      "accessibility": "Tietoa saavutettavuudesta"
-    }
+      "data-sources": "Datalähteet",
+      "privacy-and-cookies": "Tietosuojaseloste ja evästeet"
+    },
+    "more-info-title": "Haluatko tietää lisää Osaamispolusta?"
   },
   "no-match": {
     "description": "Hakemaasi sivua ei löytynyt.",
