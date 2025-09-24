@@ -22,6 +22,7 @@ import i18n, { LangCode, supportedLanguageCodes } from '@/i18n/config';
 import { ServiceInfo } from './ServiceInfo';
 import { getContents } from '@/lib/content';
 import { SkillArea as SkillAreaContent } from '@/lib/content-types';
+import { NoteStackProvider } from '@jod/design-system';
 
 const pathLang = window.location.pathname.replace(import.meta.env.BASE_URL, '').split('/')[0];
 if (i18n.language !== pathLang && supportedLanguageCodes.includes(pathLang as LangCode)) {
@@ -80,7 +81,11 @@ export const routes: RouteObject[] = [
   },
   {
     path: '/:lng',
-    element: <Root />,
+    element: (
+      <NoteStackProvider>
+        <Root />
+      </NoteStackProvider>
+    ),
     loader: rootLoader,
     errorElement: <ErrorElement />,
     children: [
