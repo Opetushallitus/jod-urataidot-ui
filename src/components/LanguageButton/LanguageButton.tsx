@@ -35,7 +35,12 @@ export const LanguageButton = ({ onClick, langMenuOpen, menuRef, onMenuBlur, onM
         {carets}
       </button>
       {langMenuOpen && (
-        <div ref={menuRef} onBlur={onMenuBlur} className="absolute right-0 translate-y-8" data-testid="language-menu">
+        <div
+          ref={menuRef}
+          onBlur={onMenuBlur}
+          className="absolute right-0 z-60 translate-y-8"
+          data-testid="language-menu"
+        >
           <LanguageMenu onClick={onMenuClick} />
         </div>
       )}
