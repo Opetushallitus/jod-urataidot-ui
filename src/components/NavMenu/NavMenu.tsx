@@ -8,8 +8,12 @@ import { useMenuRoutes } from './menuRoutes';
 import { JodCheckmark } from '@jod/design-system/icons';
 
 const PortalLink = ({ children, className }: LinkComponent) => {
+  const {
+    i18n: { language },
+  } = useTranslation();
+
   return (
-    <a href="/" className={className}>
+    <a href={`/${language}`} className={className}>
       {children}
     </a>
   );
