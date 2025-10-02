@@ -1,11 +1,20 @@
 import React from 'react';
-import { LanguageButton, NavMenu, FeedbackModal } from '@/components';
+import { NavMenu, FeedbackModal } from '@/components';
 import { useTranslation } from 'react-i18next';
 import { Link, Outlet, ScrollRestoration } from 'react-router';
-import { Button, Chatbot, Footer, MatomoTracker, NavigationBar, NoteStack, useNoteStack } from '@jod/design-system';
+import {
+  Button,
+  Chatbot,
+  Footer,
+  LanguageButton,
+  MatomoTracker,
+  NavigationBar,
+  NoteStack,
+  useNoteStack,
+} from '@jod/design-system';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { JodMenu, JodOpenInNew } from '@jod/design-system/icons';
-import { LangCode } from '@/i18n/config';
+import { LangCode, langLabels, supportedLanguageCodes } from '@/i18n/config';
 import { getLinkTo } from '@/utils/routeUtils';
 
 const agents = {
@@ -108,19 +117,30 @@ const Root = () => {
             <button
               onClick={() => setNavMenuOpen(!navMenuOpen)}
               aria-label={t('open-menu')}
-              className="flex cursor-pointer flex-col items-center justify-center select-none sm:flex-row sm:gap-3"
+              className="flex cursor-pointer flex-col items-center justify-center gap-2 select-none md:flex-row md:gap-3"
+              data-testid="open-nav-menu"
             >
               <JodMenu className="mx-auto" />
-              <span className="sm:text-button-sm text-[12px] md:pr-3">{t('menu')}</span>
+              <span className="text-[10px] sm:text-[12px] md:text-[14px]">{t('menu')}</span>
             </button>
           }
           languageButtonComponent={
             <LanguageButton
+              dataTestId="language-button"
               onClick={() => setLangMenuOpen(!langMenuOpen)}
               langMenuOpen={langMenuOpen}
               menuRef={langMenuRef}
               onMenuBlur={handleBlur}
               onMenuClick={() => setLangMenuOpen(false)}
+              language={language as LangCode}
+              supportedLanguageCodes={supportedLanguageCodes}
+              generateLocalizedPath={(lng: string) => `/${lng}`}
+              LinkComponent={Link}
+              translations={{
+                fi: { change: 'Vaihda kieli.', label: langLabels.fi },
+                sv: { change: 'Andra språk.', label: langLabels.sv },
+                en: { change: 'Change language.', label: langLabels.en },
+              }}
             />
           }
           refs={{ langMenuButtonRef: langMenuButtonRef }}

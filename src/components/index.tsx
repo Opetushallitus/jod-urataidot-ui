@@ -14,7 +14,5 @@ export { SkillAreaSelector } from './SkillAreaSelector/SkillAreaSelector';
 export { Slider } from './Slider/Slider';
 export { SpiderDiagram } from './SpiderDiagram/SpiderDiagram';
 export { InfoButton } from './InfoButton/InfoButton';
-export { LanguageButton } from './LanguageButton/LanguageButton';
-export { LanguageMenu } from './LanguageMenu/LanguageMenu';
 export { NavMenu } from './NavMenu/NavMenu';
 export { FeedbackModal } from './FeedbackModal/FeedbackModal';
