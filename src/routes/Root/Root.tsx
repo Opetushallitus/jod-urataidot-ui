@@ -16,6 +16,7 @@ import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { JodMenu, JodOpenInNew } from '@jod/design-system/icons';
 import { LangCode, langLabels, supportedLanguageCodes } from '@/i18n/config';
 import { getLinkTo } from '@/utils/routeUtils';
+import { Toaster } from '@/components/Toaster/Toaster';
 
 const agents = {
   test: {
@@ -193,6 +194,7 @@ const Root = () => {
         area="Alatunniste"
         language={language as LangCode}
       />
+      <Toaster />
       <ScrollRestoration
         getKey={(location) => {
           return location.pathname;
