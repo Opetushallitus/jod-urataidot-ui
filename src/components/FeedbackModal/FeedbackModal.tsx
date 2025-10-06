@@ -4,6 +4,7 @@ import { JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
 import { Controller, Form, FormSubmitHandler, useForm, useFormState } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
+import toast from 'react-hot-toast/headless';
 import { z } from 'zod';
 
 const DETAILS_MAX_LENGTH = 2048;
@@ -108,12 +109,12 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
 
       // Wait a moment before showing success message
       await new Promise((resolve) => setTimeout(resolve, 50));
-      alert(t('feedback.success'));
+      toast.success(t('feedback.success'));
 
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       setIsSubmitting(false);
-      alert(t('feedback.error'));
+      toast.error(t('feedback.error'));
     }
   };
 
