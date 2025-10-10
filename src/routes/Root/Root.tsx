@@ -8,12 +8,12 @@ import {
   Footer,
   LanguageButton,
   MatomoTracker,
+  MenuButton,
   NavigationBar,
   NoteStack,
   useNoteStack,
 } from '@jod/design-system';
-import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
-import { JodMenu, JodOpenInNew } from '@jod/design-system/icons';
+import { JodOpenInNew } from '@jod/design-system/icons';
 import { LangCode, langLabels, supportedLanguageCodes } from '@/i18n/config';
 import { getLinkTo } from '@/utils/routeUtils';
 import { Toaster } from '@/components/Toaster/Toaster';
@@ -62,16 +62,6 @@ const Root = () => {
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const [feedbackVisible, setFeedbackVisible] = React.useState(false);
 
-  const [langMenuOpen, setLangMenuOpen] = React.useState(false);
-  const langMenuButtonRef = React.useRef<HTMLLIElement>(null);
-  const langMenuRef = useMenuClickHandler(() => setLangMenuOpen(false), langMenuButtonRef);
-
-  const handleBlur = (event: React.FocusEvent<HTMLDivElement>) => {
-    if (langMenuRef.current && !langMenuRef.current.contains(event.relatedTarget as Node)) {
-      setLangMenuOpen(false);
-    }
-  };
-
   React.useEffect(() => {
     document.documentElement.setAttribute('lang', language);
   }, [language]);
@@ -114,25 +104,11 @@ const Root = () => {
       <header role="banner" className="sticky top-0 z-50 print:hidden">
         <NavigationBar
           logo={{ to: `/${language}`, language, srText: t('osaamispolku') }}
-          menuComponent={
-            <button
-              onClick={() => setNavMenuOpen(!navMenuOpen)}
-              aria-label={t('open-menu')}
-              className="flex cursor-pointer flex-col items-center justify-center gap-2 select-none md:flex-row md:gap-3"
-              data-testid="open-nav-menu"
-            >
-              <JodMenu className="mx-auto" />
-              <span className="text-[10px] sm:text-[12px] md:text-[14px]">{t('menu')}</span>
-            </button>
-          }
+          menuComponent={<MenuButton onClick={() => setNavMenuOpen(!navMenuOpen)} label={t('menu')} />}
           languageButtonComponent={
             <LanguageButton
+              serviceVariant="yksilo"
               dataTestId="language-button"
-              onClick={() => setLangMenuOpen(!langMenuOpen)}
-              langMenuOpen={langMenuOpen}
-              menuRef={langMenuRef}
-              onMenuBlur={handleBlur}
-              onMenuClick={() => setLangMenuOpen(false)}
               language={language as LangCode}
               supportedLanguageCodes={supportedLanguageCodes}
               generateLocalizedPath={(lng: string) => `/${lng}`}
@@ -144,7 +120,6 @@ const Root = () => {
               }}
             />
           }
-          refs={{ langMenuButtonRef: langMenuButtonRef }}
           renderLink={({ to, className, children }) => (
             <Link to={to} className={className}>
               {children as React.ReactNode}
