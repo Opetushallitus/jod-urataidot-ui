@@ -83,7 +83,7 @@ const Root = () => {
             size="sm"
             variant="white"
             label={t('beta.note.to-feedback')}
-            icon={<JodOpenInNew />}
+            icon={<JodOpenInNew ariaLabel={t('external-link')} />}
             iconSide="right"
             LinkComponent={getLinkTo('https://link.webropolsurveys.com/S/F27EA876E86B2D74', {
               useAnchor: true,
@@ -160,6 +160,7 @@ const Root = () => {
         feedbackOnClick={() => setFeedbackVisible(true)}
         feedbackBgImageClassName="bg-[url(@/../assets/feedback.jpg)] bg-cover bg-[50%_50%]"
         copyright={t('footer.copyright')}
+        externalLinkIconAriaLabel={t('external-link')}
         dataTestId="footer"
       />
       <FeedbackModal
