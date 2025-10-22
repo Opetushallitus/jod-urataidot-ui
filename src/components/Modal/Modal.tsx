@@ -13,7 +13,7 @@ export const Modal = ({
   children: React.ReactNode;
 }) => {
   return (
-    <Dialog open={isOpen} onClose={close} className="relative z-50">
+    <Dialog open={isOpen} onClose={close} className="relative z-50" aria-label={title}>
       <DialogBackdrop className="fixed inset-0 bg-black/30" />
       <div className="fixed inset-0 flex w-screen items-center justify-center sm:p-5">
         <DialogPanel className="bg-background relative w-full max-w-3xl space-y-5 rounded-2xl border border-[#00000040] p-5 shadow-xl sm:w-auto sm:p-6">
