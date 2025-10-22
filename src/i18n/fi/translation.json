@@ -2179,6 +2179,7 @@
     "skill-level": "Taitotaso",
     "title": "Tehtäväpankki"
   },
+  "external-link": "Linkki johtaa palvelun ulkopuolelle",
   "feedback": {
     "cancel": "Peruuta",
     "email-label": "Sähköpostiosoite",

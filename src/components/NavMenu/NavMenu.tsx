@@ -86,6 +86,7 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       }
       languageSelectionTitle={t('language-selection')}
       serviceVariant="yksilo"
+      externalLinkIconAriaLabel={t('external-link')}
     />
   );
 };
