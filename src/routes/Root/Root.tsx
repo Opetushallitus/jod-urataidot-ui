@@ -49,15 +49,13 @@ const Root = () => {
     }
   }, [hostname, language]);
 
-  const moreInfoLinks = ['about-service', 'privacy-and-cookies', 'data-sources', 'ai-usage', 'accessibility'].map(
-    (key) => {
-      const slug = t(`slugs.${key}`);
-      return {
-        href: `/${language}/${slug}`,
-        label: t(`footer.more-info-links.${key}`),
-      };
-    },
-  );
+  const moreInfoLinks = [
+    { href: `/${language}/${t('slugs.about-service')}`, label: t('footer.more-info-links.about-service') },
+    { href: `/${language}/${t('slugs.privacy-and-cookies')}`, label: t('footer.more-info-links.privacy-and-cookies') },
+    { href: `/${language}/${t('slugs.data-sources')}`, label: t('footer.more-info-links.data-sources') },
+    { href: `/${language}/${t('slugs.ai-usage')}`, label: t('footer.more-info-links.ai-usage') },
+    { href: `/${language}/${t('slugs.accessibility')}`, label: t('footer.more-info-links.accessibility') },
+  ];
 
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const [feedbackVisible, setFeedbackVisible] = React.useState(false);

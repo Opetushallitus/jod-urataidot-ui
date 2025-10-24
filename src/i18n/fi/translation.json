@@ -1,10 +1,4 @@
 {
-  "Career-management-summary": {
-    "summary-career-plan": {
-      "description": "Olet nyt suorittanut urasuunnittelutaitojen itsearvioinnin, joten voit siirtyä luomaan itsellesi urasuunnitelman."
-    }
-  },
-  "back": "Takaisin",
   "beta": {
     "note": {
       "description": "Kerro mielipiteesi ja auta meitä kehittämään palvelua.",
@@ -12,7 +6,6 @@
       "to-feedback": "Siirry kyselyyn"
     }
   },
-  "cancel": "Peruuta",
   "career-management": {
     "description": "Urasuunnittelutaidot ovat opittavissa olevia taitoja, joiden avulla voit suunnitella elämäsi polkua. Tutustu urasuunnittelutaitoihin klikkaamalla:",
     "go-to-skill-area": "Siirry taitoalueeseen",
@@ -43,10 +36,6 @@
       "button": "Avaa PDF tehdyistä tehtävistä",
       "description": "Voit ladata PDF:n kaikista tekemistäsi tehtävistä. Tehtävien vastaukset häviävät, jos suljet tämän selainikkunan, joten lataamalla PDF:n saat tehtävävastauksesi talteen laitteellesi.",
       "title": "Tehdyt tehtävät"
-    },
-    "summary-career-plan": {
-      "button": "Tee urasuunnitelma",
-      "title": "Urasuunnitelma"
     },
     "summary-link-card": {
       "copy-link": "Kopioi linkki tuloksiin",
@@ -116,13 +105,11 @@
   },
   "close-menu": "Sulje valikko",
   "common": {
-    "all-rights-reserved": "Kaikki oikeudet pidätetään.",
     "answer-scale": {
       "0": "En yhtään",
       "3": "Täysin"
     },
     "app-name": "Urataidot",
-    "close": "Sulje",
     "loading": "Ladataan...",
     "navigation-cards": {
       "career-management": {
@@ -130,11 +117,9 @@
         "title": "Syvenny urasuunnitteluun"
       },
       "career-plan": {
-        "description": "Kun olet tehnyt itsearvioinnin ja tehtäviä, voit luoda itsellesi urasuunnitelman. Tämä suunnitelma auttaa sinua askel askeleelta kulkemaan kohti omannäköistä tulevaisuuttasi.",
         "title": "Urasuunnitelma"
       },
       "exercises": {
-        "description": "Jos et halua nyt tehdä itsearviointia, voit myös tehdä urasuunnittelutaitoihin liittyviä harjoitustehtäviä.",
         "title": "Tehtäväpankki"
       },
       "learn-something-new": {
@@ -2257,11 +2242,7 @@
   "language-selection": "Käyttökieli",
   "menu": "Valikko",
   "nav": {
-    "all-exercises": "Tehtäväpankki",
     "copy-results-to-link": "Kopio linkki keskeneräiseen kyselyyn",
-    "home": "Urataitojen itsearviointi - etusivu",
-    "language": "Kieli",
-    "select-language": "Valitse kieli",
     "service-info": "Tietoa palvelusta"
   },
   "navigation": {
@@ -2272,6 +2253,7 @@
     "title": "Sivua ei löytynyt"
   },
   "open-submenu": "Avaa alivalikko",
+  "osaamispolku": "Osaamispolku",
   "pdf": {
     "all-exercises-document": "Urataidot - Kaikki tehtävät",
     "career-management-skills-report": "Urasuunnittelutaitojen itsearviointi -raportti",
