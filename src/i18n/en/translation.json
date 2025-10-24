@@ -1,10 +1,4 @@
 {
-  "Career-management-summary": {
-    "summary-career-plan": {
-      "description": "You have now completed the career management skills self-assessment, you can move on to creating a career plan for yourself."
-    }
-  },
-  "back": "Back",
   "career-management": {
     "description": "Career management skills are learnable abilities that help you map out the path of your life. You can read more about career mangement skills by clicking:",
     "go-to-skill-area": "Go to Skill Area",
@@ -35,10 +29,6 @@
       "button": "Open PDF of completed results",
       "description": "You can download a PDF of all the exercises you have done. The answers to the exercises will be lost if you close this browser window, so downloading the PDF will save your answers to your device.",
       "title": "Completed exercises"
-    },
-    "summary-career-plan": {
-      "button": "Make a Career Plan",
-      "title": "Career Plan"
     },
     "summary-link-card": {
       "copy-link": "Copy link to results",
@@ -98,13 +88,11 @@
   },
   "close-menu": "Close menu",
   "common": {
-    "all-rights-reserved": "All rights reserved.",
     "answer-scale": {
       "0": "Not at all",
       "3": "Fully"
     },
     "app-name": "Career Skills",
-    "close": "Close",
     "loading": "Loading…",
     "navigation-cards": {
       "career-management": {
@@ -112,11 +100,9 @@
         "title": "Get deeper into career management"
       },
       "career-plan": {
-        "description": "Once you have completed the self-assessment and exercises, you can create a career plan for yourself. This plan will help you move step by step towards a future that reflects your personal vision.",
         "title": "Career Plan"
       },
       "exercises": {
-        "description": "If you don't want to do a self-assessment now, you can also do exercises related to career management skills.",
         "title": "Exercise vault"
       },
       "learn-something-new": {
@@ -1968,12 +1954,7 @@
   "home": {},
   "menu": "Menu",
   "nav": {
-    "all-exercises": "All exercises",
-    "competency-path-home": "Competency Path home page",
     "copy-results-to-link": "Copy the link to the incomplete survey",
-    "home": "Self-Assessment of Career Skills - Home Page",
-    "language": "Language",
-    "select-language": "Select language",
     "service-info": "About the service"
   },
   "no-match": {

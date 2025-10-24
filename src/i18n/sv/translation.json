@@ -1,10 +1,4 @@
 {
-  "Career-management-summary": {
-    "summary-career-plan": {
-      "description": "När du har gjort en självutvärdering och arbetat med uppgifterna kan du skapa en karriärplan för dig själv. Denna plan hjälper dig att steg för steg gå mot en framtid som ser ut som du vill ha den."
-    }
-  },
-  "back": "Tillbaka",
   "career-management": {
     "description": "Karriärkompetenser är färdigheter som kan läras ut och som kan hjälpa dig att planera ditt liv. Du kan läsa mer om karriärkompetenser genom att klicka här:",
     "go-to-skill-area": "Gå till kompetensområde",
@@ -35,10 +29,6 @@
       "button": "Öppna PDF av slutförda uppgifter",
       "description": "Du kan ladda ner en PDF-fil med alla uppgifter som du har gjort. Svaren på uppgifterna försvinner om du stänger det här fönstret, så genom att ladda ned PDF-filen sparar du svaren på din enhet.",
       "title": "Slutförda uppgifter"
-    },
-    "summary-career-plan": {
-      "button": "Gör en karriärplan",
-      "title": "Karriärplan"
     },
     "summary-link-card": {
       "copy-link": "Kopiera länken till resultaten",
@@ -98,13 +88,11 @@
   },
   "close-menu": "Stäng meny",
   "common": {
-    "all-rights-reserved": "Alla rättigheter reserverade.",
     "answer-scale": {
       "0": "Inte alls",
       "3": "Helt och hållet"
     },
     "app-name": "Karriärkompetenser",
-    "close": "Stäng",
     "loading": "Belastning…",
     "navigation-cards": {
       "career-management": {
@@ -112,11 +100,9 @@
         "title": "Fördjupa dig i karriärkompetenser"
       },
       "career-plan": {
-        "description": "När du har gjort en självutvärdering och arbetat med uppgifterna kan du skapa en karriärplan för dig själv. Denna plan hjälper dig att steg för steg gå mot en framtid som ser ut som du vill ha den.",
         "title": "Karriärplan"
       },
       "exercises": {
-        "description": "Om du inte vill göra självutvärderingen nu kan du också göra några övningsuppgifter i anknytning till karriärkompetenser.",
         "title": "Uppgiftsbank"
       },
       "learn-something-new": {
@@ -1967,12 +1953,7 @@
   "home": {},
   "menu": "Meny",
   "nav": {
-    "all-exercises": "Alla uppgifter",
-    "competency-path-home": "Kompetensenstigen startsida",
     "copy-results-to-link": "Kopiera länken till den ofullständiga enkäten",
-    "home": "Självbedömning av Karriärfärdigheter - Startsida",
-    "language": "Språk",
-    "select-language": "Välj språk",
     "service-info": "Om tjänsten"
   },
   "no-match": {
