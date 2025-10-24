@@ -15,7 +15,9 @@
     "preview": "vite preview",
     "test:unit": "vitest --run",
     "test:e2e": "playwright test",
-    "prepare": "husky"
+    "prepare": "husky",
+    "translations:export": "node ./scripts/translations/export-translations.js jod-urataidot-ui",
+    "translations:import": "node ./scripts/translations/import-translations.js jod-urataidot-ui"
   },
   "commitlint": {
     "extends": [
@@ -95,6 +97,7 @@
     "vite": "^7.1.0",
     "vite-plugin-static-copy": "^3.1.1",
     "vite-plugin-svgr": "^4.3.0",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "xlsx": "file:vendor/xlsx-0.20.3.tgz"
   }
 }
