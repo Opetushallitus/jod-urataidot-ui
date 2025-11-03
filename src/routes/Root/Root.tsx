@@ -107,7 +107,7 @@ const Root = () => {
           languageButtonComponent={
             <LanguageButton
               serviceVariant="yksilo"
-              dataTestId="language-button"
+              testId="language-button"
               language={language as LangCode}
               supportedLanguageCodes={supportedLanguageCodes}
               generateLocalizedPath={(lng: string) => `/${lng}`}
@@ -160,7 +160,7 @@ const Root = () => {
         feedbackBgImageClassName="bg-[url(@/../assets/feedback.jpg)] bg-cover bg-[50%_50%]"
         copyright={t('footer.copyright')}
         externalLinkIconAriaLabel={t('external-link')}
-        dataTestId="footer"
+        testId="footer"
       />
       <FeedbackModal
         isOpen={feedbackVisible}
