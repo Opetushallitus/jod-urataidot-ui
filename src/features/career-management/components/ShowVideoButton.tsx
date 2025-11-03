@@ -17,7 +17,10 @@ export const ShowVideoButton = ({
   const [infoModalOpen, setInfoModalOpen] = React.useState(false);
   const { t } = useTranslation();
   return (
-    <button className="text-primary flex flex-row items-center gap-1" onClick={() => setInfoModalOpen(true)}>
+    <button
+      className="text-primary flex cursor-pointer flex-row items-center gap-1 hover:underline"
+      onClick={() => setInfoModalOpen(true)}
+    >
       <Info />
       <p className="text-body-bold leading-none">{t('career-management.show-video-button-text')}</p>
       <Modal isOpen={infoModalOpen} close={() => setInfoModalOpen(false)} title={title}>
