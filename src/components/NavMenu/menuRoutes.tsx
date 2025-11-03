@@ -26,7 +26,7 @@ export const useMenuRoutes = (onClose: () => void) => {
       return {
         ...(icon && { icon }),
         label,
-        LinkComponent: ({ children, className }: LinkComponent) => (
+        linkComponent: ({ children, className }: LinkComponent) => (
           <NavLink to={fullPath} className={className} lang={language} onClick={onClose}>
             {children}
           </NavLink>
