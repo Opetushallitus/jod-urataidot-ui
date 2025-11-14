@@ -99,7 +99,7 @@
     "error-message": "Tapahtui jokin virhe.",
     "greeting": "Hei, olen Osaamispolun neuvontabotti. Voin auttaa sinua Osaamispolkuun liittyvissä kysymyksissä.<br/><br/>Olen testiversio ja harjoittelen vielä, joten en osaa vastata kaikkiin kysymyksiin. Kysy silti, sillä opin koko ajan lisää. Esittämäsi kysymykset auttavat minua kehittymään.<br/><br/>Esitäthän yhden kysymyksen kerrallaan. Pidä kysymykset lyhyinä ja selkeinä, niin pystyn auttamaan paremmin. En muista aiempia kysymyksiä tai vastauksia. Ethän kirjoita henkilötietojasi chattiin. Miten voin auttaa?",
     "header": "Neuvontabotti",
-    "open-window-text": "Kysy neuvoa?",
+    "open-window-text": "Kysy neuvoa",
     "text-input-placeholder": "Kirjoita kysymyksesi tähän",
     "waiting-message": "Haetaan tietoa..."
   },
@@ -2168,7 +2168,7 @@
   "feedback": {
     "cancel": "Peruuta",
     "email-label": "Sähköpostiosoite",
-    "error": "Palautteen lähettäminen epäonnistui. Yritä uudelleen myöhemmin.",
+    "error": "Palautteen lähettäminen epäonnistui. Yritä myöhemmin uudelleen.",
     "footer-handled": {
       "ohjaajan": "Ohjaajan osio KEHA-keskuksessa,",
       "osaamispolkuni": "Osaamispolkuni Opetushallituksessa,",
@@ -2246,7 +2246,7 @@
     "service-info": "Tietoa palvelusta"
   },
   "navigation": {
-    "menu-section-title": "Urataidot osio"
+    "menu-section-title": "Urataidot-osio"
   },
   "no-match": {
     "description": "Hakemaasi sivua ei löytynyt.",
@@ -2296,15 +2296,15 @@
     }
   },
   "service-info": {
-    "description": "Urataidot on digitaalinen työkalu, joka auttaa sinua arvioimaan ja kehittämään urasuunnittelutaitojasi. Vastaamalla itsearviointikysymyksiin voit selvittää, missä urasuunnittelutaidoissa olet vahva ja mitä taitoja sinun kannattaisi kehittää.\n\nItsearvioinnin jälkeen saat vastaustesi perusteella harjoitustehtäväehdotuksia, joiden avulla voit kehittää urasuunnittelutaitojasi.\n\nTyökalu on maksuton, ja sitä käytetään ilman kirjautumista. Vastauksesi säilyvät, kunnes suljet selainikkunan. Voit tallentaa itsearvioinnin yhteenvedon linkkinä tai PDF-muodossa. Tehdyt harjoitustehtävät voit tallentaa PDF-muodossa.\n\nUrataidot-työkalu on toteutettu osana työ- ja elinkeinoministeriön ja KEHA-keskuksen Urasuunnittelutaitojen edistämishanketta. Työkalun toteuttajana oli Hyria. Hankkeen rahoitus tuli EU:n elpymis- ja palautumistukivälineestä",
-    "title": "Urataitojen itsearviointi - Tietoa palvelusta"
+    "description": "Urataidot-osio",
+    "title": "Osaamispolku"
   },
-  "show-all": "Näytä kaikki",
+  "show-all": "Urataidot on digitaalinen työkalu, joka auttaa sinua arvioimaan ja kehittämään urasuunnittelutaitojasi. Vastaamalla itsearviointikysymyksiin voit selvittää, missä urasuunnittelutaidoissa olet vahva ja mitä taitoja sinun kannattaisi kehittää.\n\nItsearvioinnin jälkeen saat vastaustesi perusteella harjoitustehtäväehdotuksia, joiden avulla voit kehittää urasuunnittelutaitojasi.\n\nTyökalu on maksuton ja sitä käytetään ilman kirjautumista. Vastauksesi säilyvät, kunnes suljet selainikkunan. Voit tallentaa itsearvioinnin yhteenvedon linkkinä tai PDF-muodossa. Tehdyt harjoitustehtävät voit tallentaa PDF-muodossa.\n\nUrataidot-työkalu on toteutettu osana työ- ja elinkeinoministeriön ja KEHA-keskuksen Urasuunnittelutaitojen edistämishanketta. Työkalun toteuttajana oli Hyria. Hankkeen rahoitus tuli EU:n elpymis- ja palautumistukivälineestä (RRF).",
   "slugs": {
-    "about-service": "tietoa-palvelusta",
-    "accessibility": "tietoa-saavutettavuudesta",
-    "ai-usage": "tietoa-tekoalyn-kaytosta",
-    "alternative-paths": "vaihtoehtoiset-polut",
+    "about-service": "Urataitojen itsearviointi – Tietoa palvelusta",
+    "accessibility": "Näytä kaikki",
+    "ai-usage": "tietoa-palvelusta",
+    "alternative-paths": "tietoa-saavutettavuudesta",
     "anticipate-the-future": "ennakoidaan-tulevaa",
     "application-of-competence": "osaamisen-soveltaminen",
     "articulating-competence": "osaamisen-sanoittaminen",
