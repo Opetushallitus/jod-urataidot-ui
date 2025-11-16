@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <title>{t('common.app-name')}</title>
-      <main className="mx-auto mt-8 mb-[80px] flex w-full max-w-[793px] grow flex-col px-4 sm:px-6 print:p-0">
+      <main className="mx-auto mt-11 mb-[80px] flex w-full max-w-[793px] grow flex-col px-4 sm:px-6 print:p-0">
         <h1 className="text-heading-1-mobile sm:text-heading-1 mb-6 text-center text-[#333]">{t('home.title')}</h1>
         <p className="text-body-lg-mobile sm:text-body-lg- mb-5">{t('home.description')}</p>
         <p className="text-help-mobile sm:text-help font-arial text-secondary-gray mb-6">{t('home.info')}</p>
