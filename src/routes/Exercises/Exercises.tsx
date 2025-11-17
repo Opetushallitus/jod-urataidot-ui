@@ -2,11 +2,12 @@ import { BackButton } from '@/components';
 import { ExerciseLinkCard } from '@/features/exercises/components/ExerciseLinkCard';
 import { useFilteredExercises } from '@/hooks/useFilteredExercises';
 import { ChevronDown } from '@/icons';
-import { SkillArea, SkillAreaID } from '@/lib/content-types';
+import { SkillAreaID } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
 import { Field, Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react';
 import { ExerciseFilterField, useExerciseFilterStore } from '@/stores/exerciseFilterStore';
 import { OpenAllExercisesPDFButton } from '@/features/exercises/components/OpenAllExercisesPDFButton';
+import useSkillAreas from '@/hooks/useSkillAreas';
 
 interface SelectOption {
   value: string;
@@ -64,8 +65,10 @@ const Select = ({
   );
 };
 
-const ExercisesPage = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
+const ExercisesPage = () => {
   const { t } = useTranslation();
+
+  const skillAreas = useSkillAreas();
 
   const exerciseFilter = useExerciseFilterStore((state) => state.exerciseFilter);
 

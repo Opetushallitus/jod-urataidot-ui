@@ -1,12 +1,12 @@
 import { BackButton, Button, MobileBottomBar } from '@/components';
 import SkillAreaInfoCard from '@/features/career-management/components/SkillAreaInfoCard';
+import useSkillAreas from '@/hooks/useSkillAreas';
 import { ArrowRight } from '@/icons';
-import { SkillArea } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
 
-const CareerPlanning = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
+const CareerPlanning = () => {
   const { t, i18n } = useTranslation();
-
+  const skillAreas = useSkillAreas();
   const currentBaseUrl = `/${i18n.language}/${t('slugs.career-management')}`;
 
   return (

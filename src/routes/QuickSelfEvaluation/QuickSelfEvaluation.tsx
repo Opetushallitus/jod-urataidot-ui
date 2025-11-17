@@ -1,10 +1,11 @@
 import { BackButton, Button, MobileBottomBar, QuickTestSection } from '@/components';
-import { SkillArea } from '@/lib/content-types';
+import useSkillAreas from '@/hooks/useSkillAreas';
 import { useTranslation } from 'react-i18next';
 
-const QuickSelfEvaluation = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
+const QuickSelfEvaluation = () => {
   const { t } = useTranslation();
 
+  const skillAreas = useSkillAreas();
   return (
     <div className="mx-auto flex max-w-3xl flex-col items-start">
       <BackButton />

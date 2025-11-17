@@ -9,10 +9,12 @@ import { BlobProvider } from '@react-pdf/renderer';
 import SummaryDocument from '@/features/pdf/documents/SummaryDocument';
 import React from 'react';
 import { OpenAllExercisesPDFButton } from '@/features/exercises/components/OpenAllExercisesPDFButton';
+import useSkillAreas from '@/hooks/useSkillAreas';
 
-const CareerPlanningSummary = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
+const CareerPlanningSummary = () => {
   const [linkCopied, setLinkCopied] = React.useState(false);
   const { t, i18n } = useTranslation();
+  const skillAreas = useSkillAreas();
 
   const answers = useCareerPlanningAnswersStore((state) => state.answers);
 
@@ -33,7 +35,7 @@ const CareerPlanningSummary = ({ skillAreas }: { skillAreas: SkillArea[] }) => {
   // clipboard not working on local dev-environment on iOS Safari, because it is not https://
   const copyToClipboard = async () => {
     await navigator.clipboard.writeText(
-      `${window.location.origin}/urataidot/${i18n.language}/${t('slugs.import')}#${getEncodedData()}`,
+      `${globalThis.location.origin}/urataidot/${i18n.language}/${t('slugs.import')}#${getEncodedData()}`,
     );
     setLinkCopied(true);
     setTimeout(() => {
