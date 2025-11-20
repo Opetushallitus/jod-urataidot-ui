@@ -192,12 +192,12 @@ export const routes: RouteObject[] = [
   },
   {
     path: '/:lng',
+    loader: rootLoader,
     element: (
       <NoteStackProvider>
         <Root />
       </NoteStackProvider>
     ),
-    loader: rootLoader,
     errorElement: <ErrorElement />,
     children: [
       {
@@ -210,7 +210,10 @@ export const routes: RouteObject[] = [
       // Test route for PDF Viewing in development
       ...(import.meta.env.PROD ? [] : [{ path: 'testpdf', element: <TestPDF /> }]),
       ...commonRoutes,
-      { path: '*', element: <NoMatch /> },
+      {
+        path: '*',
+        element: <NoMatch />,
+      },
     ],
   },
 ];

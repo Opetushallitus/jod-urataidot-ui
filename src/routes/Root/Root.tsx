@@ -120,7 +120,7 @@ const Root = () => {
               {children as React.ReactNode}
             </Link>
           )}
-          serviceBarVariant={'yksilo'}
+          serviceBarVariant="yksilo"
           serviceBarTitle={t('my-competence-path')}
           translations={{
             showAllNotesLabel: t('show-all'),
