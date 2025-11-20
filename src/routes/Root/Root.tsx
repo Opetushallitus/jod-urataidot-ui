@@ -36,6 +36,7 @@ const useAddBetaFeedbackNote = () => {
 
   React.useEffect(() => {
     addPermanentNote(() => ({
+      id: 'beta-feedback-note',
       title: t('beta.note.title'),
       description: t('beta.note.description'),
       variant: 'feedback',
