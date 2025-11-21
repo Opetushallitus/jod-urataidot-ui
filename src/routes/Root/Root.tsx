@@ -32,10 +32,10 @@ const agents = {
 
 const useAddBetaFeedbackNote = () => {
   const { t } = useTranslation();
-  const { addPermanentNote } = useNoteStack();
+  const { addTemporaryNote } = useNoteStack();
 
   React.useEffect(() => {
-    addPermanentNote(() => ({
+    addTemporaryNote(() => ({
       id: 'beta-feedback-note',
       title: t('beta.note.title'),
       description: t('beta.note.description'),
@@ -54,8 +54,9 @@ const useAddBetaFeedbackNote = () => {
           className="whitespace-nowrap"
         />
       ),
+      isCollapsed: false,
     }));
-  }, [addPermanentNote, t]);
+  }, [addTemporaryNote, t]);
 };
 
 const Root = () => {
