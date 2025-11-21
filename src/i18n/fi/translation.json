@@ -2300,7 +2300,7 @@
     "description": "Urataidot-osio",
     "title": "Osaamispolku"
   },
-  "show-all": "Urataidot on digitaalinen työkalu, joka auttaa sinua arvioimaan ja kehittämään urasuunnittelutaitojasi. Vastaamalla itsearviointikysymyksiin voit selvittää, missä urasuunnittelutaidoissa olet vahva ja mitä taitoja sinun kannattaisi kehittää.\n\nItsearvioinnin jälkeen saat vastaustesi perusteella harjoitustehtäväehdotuksia, joiden avulla voit kehittää urasuunnittelutaitojasi.\n\nTyökalu on maksuton ja sitä käytetään ilman kirjautumista. Vastauksesi säilyvät, kunnes suljet selainikkunan. Voit tallentaa itsearvioinnin yhteenvedon linkkinä tai PDF-muodossa. Tehdyt harjoitustehtävät voit tallentaa PDF-muodossa.\n\nUrataidot-työkalu on toteutettu osana työ- ja elinkeinoministeriön ja KEHA-keskuksen Urasuunnittelutaitojen edistämishanketta. Työkalun toteuttajana oli Hyria. Hankkeen rahoitus tuli EU:n elpymis- ja palautumistukivälineestä (RRF).",
+  "show-all": "Näytä kaikki",
   "slugs": {
     "about-service": "Urataitojen itsearviointi – Tietoa palvelusta",
     "accessibility": "Näytä kaikki",
