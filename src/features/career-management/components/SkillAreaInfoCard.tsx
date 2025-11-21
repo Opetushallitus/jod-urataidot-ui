@@ -17,9 +17,9 @@ export const SkillAreaInfoCard = ({ skillArea }: { skillArea: SkillArea }) => {
       onClick={() => setInfoModalOpen(true)}
       aria-label={t('career-management.skill-area-info', { name: skillArea.name })}
     >
-      <Modal isOpen={infoModalOpen} close={() => setInfoModalOpen(false)} title={t(skillArea.name)}>
+      <Modal isOpen={infoModalOpen} close={() => setInfoModalOpen(false)} title={skillArea.name}>
         <div className="flex flex-col gap-5">
-          <span>{t(skillArea.info)}</span>
+          <span>{skillArea.info}</span>
           <Video skillAreaId={skillArea.id} skillAreaName={skillArea.name} />
         </div>
       </Modal>
