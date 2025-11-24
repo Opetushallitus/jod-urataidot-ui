@@ -2100,7 +2100,7 @@
     }
   },
   "service-info": {
-    "description": "Avsnittet Karriärkompetens",
+    "description": "Karriärkompetens är ett digitalt verktyg som hjälper dig att utvärdera och utveckla dina färdigheter i karriärplanering. Genom att svara på självutvärderingsfrågorna kan du ta reda på vilka karriärplaneringsfärdigheter du är bra på och vilka färdigheter det lönar sig för dig att utveckla.\n\nEfter självutvärderingen får du förslag på övningsuppgifter baserat på dina svar. De hjälper dig att utveckla dina karriärplaneringsfärdigheter.\n\nVerktyget är avgiftsfritt och används utan inloggning. Dina svar sparas tills du stänger webbläsarfönstret. Du kan spara sammanfattningen av din självutvärdering som en länk eller i PDF-format. Du kan spara genomförda övningar i PDF-format.\n\nVerktyget Karriärkompetens har genomförts som en del av arbets- och näringsministeriets och UF-centrets projekt för främjandet av färdigheterna för karriärplanering. Verktyget genomfördes av Hyria. Projektet finansierades av EU:s facilitet för återhämtning och resiliens (RRF).\n",
     "title": "Kompetensstigen"
   },
   "show-all": "Visa alla",
