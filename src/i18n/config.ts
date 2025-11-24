@@ -10,7 +10,7 @@ import translationSv from './sv/translation.json';
 export type LangCode = 'fi' | 'sv' | 'en';
 export const supportedLanguageCodes: LangCode[] =
   /* eslint-disable sonarjs/todo-tag */
-  window.location.hostname === 'osaamispolku.fi' ? ['fi'] : ['fi', 'sv', 'en']; // TODO: Set fi, sv, en when translations are ready
+  window.location.hostname === 'osaamispolku.fi' ? ['fi', 'sv'] : ['fi', 'sv', 'en'];
 export const defaultLang = 'fi';
 
 export const langLabels = {
@@ -28,8 +28,7 @@ const resources: Resource = {
 i18n.use(initReactI18next).init({
   lng: defaultLang,
   supportedLngs: supportedLanguageCodes,
-  /* eslint-disable sonarjs/todo-tag */
-  // fallbackLng: defaultLang, // TODO: Uncomment this line when translations are ready
+  fallbackLng: defaultLang,
   resources,
   interpolation: {
     escapeValue: false,
