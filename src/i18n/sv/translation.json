@@ -1,5 +1,4 @@
 {
-  "my-competence-path": "Min kompetensstig",
   "beta": {
     "note": {
       "description": "Berätta vad du tycker och hjälp oss att förbättra tjänsten.",
@@ -138,7 +137,7 @@
       "3": "Expert"
     }
   },
-  "competency-path-portal": "Kompetensstigens startsida",
+  "competency-path-portal": "Kompetensstigens framsida",
   "components": {
     "bar": {
       "no-feedback": "Du har ännu inte svarat på frågorna i detta delområde. Svara på frågorna för att få feedback."
@@ -1974,13 +1973,13 @@
     "email-label": "E-postadress",
     "error": "Det gick inte att skicka respons. Försök på nytt senare.",
     "footer-handled": {
-      "ohjaajan": "Vägledarens avsnitt på UF-centret,",
+      "ohjaajan": "Vägledar-delen på UF-centret,",
       "osaamispolkuni": "Min kompetensstig i Utbildningsstyrelsen,",
       "tietopalvelu": "Informationstjänsten och hela tjänsten i undervisnings- och kulturministeriet."
     },
     "footer-info-1": "När du skickar respons sparar vi tjänstens statusinformation, till exempel från vilken vy responsen har skickats. Statusinformationen vidarebefordras inte till tredje part. Respons används för utveckling av tjänsten och frivilligt lämnade kontaktuppgifter för att svara på respons.",
-    "footer-info-heading": "Beroende på avsnitt behandlas respons på följande sätt:",
-    "footer-privacy-heading": "Läs mer i responshanterarnas dataskyddsbeskrivningar:",
+    "footer-info-heading": "Beroende på delen behandlas responsen på följande sätt:",
+    "footer-privacy-heading": "Läs mer om dataskyddsbeskrivningarna för de som behandlar respons",
     "intro-1": "Ge respons om tjänsten eller rapportera ett tekniskt problem. På så sätt hjälper du oss i utvecklingen av tjänsterna.",
     "intro-2": "Om du rapporterar en störning skulle det hjälpa oss om du berättar om den så noggrant som möjligt.",
     "intro-privacy": "Skriv inga personuppgifter i din respons, såsom personbeteckning eller hälsouppgifter. Vänligen fyll i alla fält så att vi kan behandla din respons.",
@@ -1995,7 +1994,7 @@
       "oph": "Utbildningsstyrelsens integritetspolicy"
     },
     "message-label": "Respons",
-    "section-question": "Vilket avsnitt gäller din respons?",
+    "section-question": "Vilken del gäller din respons?",
     "sections": {
       "koko-palvelu": "Hela tjänsten eller annan respons",
       "ohjaajan-osio": "Vägledar-delen",
@@ -2045,12 +2044,13 @@
   },
   "language-selection": "Språk",
   "menu": "Meny",
+  "my-competence-path": "Min kompetensstig",
   "nav": {
     "copy-results-to-link": "Kopiera länken till den ofullständiga enkäten",
     "service-info": "Om tjänsten"
   },
   "navigation": {
-    "menu-section-title": "Avsnittet Karriärkompetens"
+    "menu-section-title": "Verktyget Karriärkompetenser"
   },
   "no-match": {
     "description": "Sidan du sökte kunde inte hittas.",
@@ -2100,7 +2100,7 @@
     }
   },
   "service-info": {
-    "description": "Karriärkompetens är ett digitalt verktyg som hjälper dig att utvärdera och utveckla dina färdigheter i karriärplanering. Genom att svara på självutvärderingsfrågorna kan du ta reda på vilka karriärplaneringsfärdigheter du är bra på och vilka färdigheter det lönar sig för dig att utveckla.\n\nEfter självutvärderingen får du förslag på övningsuppgifter baserat på dina svar. De hjälper dig att utveckla dina karriärplaneringsfärdigheter.\n\nVerktyget är avgiftsfritt och används utan inloggning. Dina svar sparas tills du stänger webbläsarfönstret. Du kan spara sammanfattningen av din självutvärdering som en länk eller i PDF-format. Du kan spara genomförda övningar i PDF-format.\n\nVerktyget Karriärkompetens har genomförts som en del av arbets- och näringsministeriets och UF-centrets projekt för främjandet av färdigheterna för karriärplanering. Verktyget genomfördes av Hyria. Projektet finansierades av EU:s facilitet för återhämtning och resiliens (RRF).\n",
+    "description": "Karriärkompetens är ett digitalt verktyg som hjälper dig att utvärdera och utveckla dina färdigheter i karriärplanering. Genom att svara på självutvärderingsfrågorna kan du ta reda på vilka karriärplaneringsfärdigheter du är bra på och vilka färdigheter det lönar sig för dig att utveckla.\n\nEfter självutvärderingen får du förslag på övningsuppgifter baserat på dina svar. De hjälper dig att utveckla dina karriärplaneringsfärdigheter.\n\nVerktyget är avgiftsfritt och används utan inloggning. Dina svar sparas tills du stänger webbläsarfönstret. Du kan spara sammanfattningen av din självutvärdering som en länk eller i PDF-format. Du kan spara genomförda övningar i PDF-format.\n\nKarriärkompetens verktyget har genomförts som en del av arbets- och näringsministeriets och UF-centrets projekt för främjandet av färdigheterna för karriärplanering. Verktyget genomfördes av Hyria. Projektet finansierades av EU:s facilitet för återhämtning och resiliens (RRF).\n",
     "title": "Kompetensstigen"
   },
   "show-all": "Visa alla",

@@ -1,5 +1,4 @@
 {
-  "my-competence-path": "Osaamispolkuni",
   "beta": {
     "note": {
       "description": "Kerro mielipiteesi ja auta meitä kehittämään palvelua.",
@@ -2242,16 +2241,20 @@
   },
   "language-selection": "Käyttökieli",
   "menu": "Valikko",
+  "my-competence-path": "Osaamispolkuni",
   "nav": {
     "copy-results-to-link": "Kopio linkki keskeneräiseen kyselyyn",
     "service-info": "Tietoa palvelusta"
   },
   "navigation": {
-    "menu-section-title": "Urataidot-osio"
+    "menu-section-title": "Urataidot-työkalu"
   },
   "no-match": {
     "description": "Hakemaasi sivua ei löytynyt.",
     "title": "Sivua ei löytynyt"
+  },
+  "note": {
+    "close": "Sulje"
   },
   "open-submenu": "Avaa alivalikko",
   "osaamispolku": "Osaamispolku",
@@ -2302,8 +2305,8 @@
   },
   "show-all": "Näytä kaikki",
   "slugs": {
-    "about-service": "Urataitojen itsearviointi – Tietoa palvelusta",
-    "accessibility": "Näytä kaikki",
+    "about-service": "tietoa-palvelusta",
+    "accessibility": "tietoa-saavutettavuudesta",
     "ai-usage": "tietoa-palvelusta",
     "alternative-paths": "tietoa-saavutettavuudesta",
     "anticipate-the-future": "ennakoidaan-tulevaa",

@@ -1,12 +1,8 @@
 {
-  "my-competence-path": "Osaamispolkuni",
   "no-match": {
     "description": "Etsimääsi sivua ei löytynyt tai linkki on vanhentunut. Tarkista osoite, avaa valikko tai siirry etusivulle.",
     "go-home": "Siirry etusivulle",
     "title": "Hups! Sivua ei löytynyt"
-  },
-  "note": {
-    "close": "Sulje"
   },
   "version": "Testausversio"
 }
