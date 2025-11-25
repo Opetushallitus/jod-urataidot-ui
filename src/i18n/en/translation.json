@@ -1,5 +1,4 @@
 {
-  "my-competence-path": "My competence path",
   "career-management": {
     "description": "Career management skills are learnable abilities that help you map out the path of your life. You can read more about career mangement skills by clicking:",
     "go-to-skill-area": "Go to Skill Area",
@@ -1954,6 +1953,7 @@
   "front-page": "Front page",
   "home": {},
   "menu": "Menu",
+  "my-competence-path": "My competence path",
   "nav": {
     "copy-results-to-link": "Copy the link to the incomplete survey",
     "service-info": "About the service"
