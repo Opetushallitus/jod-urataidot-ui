@@ -3,3 +3,7 @@
 @import '@jod/design-system/lib/theme.css';
 
 @config '../tailwind.config.ts';
+
+ai-agent-float-container {
+  z-index: 49 !important;
+}
