@@ -4,5 +4,8 @@
     "go-home": "Siirry etusivulle",
     "title": "Hups! Sivua ei löytynyt"
   },
+  "service-info": {
+    "title": "Urataidot-työkalu"
+  },
   "version": "Testausversio"
 }
