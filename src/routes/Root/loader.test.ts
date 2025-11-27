@@ -5,7 +5,7 @@ import loader from './loader';
 describe('loader', () => {
   it('should change the language if it is different from the current language', async () => {
     const spyChangeLanguage = vi.spyOn(i18n, 'changeLanguage');
-    vi.spyOn(global, 'fetch').mockImplementation(() =>
+    vi.spyOn(globalThis, 'fetch').mockImplementation(() =>
       Promise.resolve({
         ok: true,
         json: () => Promise.resolve({}),
@@ -18,6 +18,7 @@ describe('loader', () => {
         lng: 'sv',
       },
       context: {},
+      unstable_pattern: '',
     });
 
     expect(spyChangeLanguage).toHaveBeenCalledWith('sv');
