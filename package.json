@@ -73,6 +73,8 @@
   },
   "devDependencies": {
     "@axe-core/react": "^4.10.2",
+    "@lavamoat/allow-scripts": "^3.4.1",
+    "@lavamoat/preinstall-always-fail": "^2.1.1",
     "@playwright/test": "^1.57.0",
     "@singlestore/eslint-plugin-react-hooks-disable-import": "^1.0.2",
     "@tailwindcss/vite": "^4.1.11",
@@ -102,5 +104,12 @@
     "vite-plugin-svgr": "^4.3.0",
     "vitest": "^3.2.4",
     "xlsx": "file:vendor/xlsx-0.20.3.tgz"
+  },
+  "lavamoat": {
+    "allowScripts": {
+      "@lavamoat/preinstall-always-fail": false,
+      "@vitejs/plugin-react-swc>@swc/core": true,
+      "vite>esbuild": true
+    }
   }
 }
