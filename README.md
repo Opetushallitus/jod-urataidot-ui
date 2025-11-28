@@ -20,7 +20,7 @@ The project is constructed based on [jod-yksilo-ui](https://github.com/Opetushal
 
 ### Getting up and running
 
-Clone the repository and run <code>npm install</code> and <code>npm run dev</code> to start the development server.
+Clone the repository and run <code>npm install</code> and <code>npm exec allow-scripts run</code> and <code>npm run dev</code> to start the development server.
 
 ### Download third-party UI assets
 
