@@ -54,7 +54,7 @@
     "@jod/design-system": "github:Opetushallitus/jod-design-system#main",
     "@react-pdf/renderer": "^4.3.0",
     "cva": "^1.0.0-beta.3",
-    "emoji-datasource-apple": "^15.1.2",
+    "emoji-datasource-apple": "^16.0.0",
     "emoji-datasource-facebook": "^15.1.2",
     "emoji-datasource-google": "^15.1.2",
     "emoji-datasource-twitter": "^15.1.2",
