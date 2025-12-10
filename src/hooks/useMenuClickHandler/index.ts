@@ -15,14 +15,15 @@ export const useMenuClickHandler = (
    * @param element HTML element
    * @returns True if the element is part of a headlessui dialog, false otherwise
    */
-  const isPartOfConfirmationDialog = React.useCallback((element: HTMLElement) => {
-    if (element.id.includes('ds-confirm-dialog-panel')) {
-      return true;
-    } else if (element.parentElement) {
-      return isPartOfConfirmationDialog(element.parentElement);
-    } else {
-      return false;
+  const isPartOfConfirmationDialog = React.useCallback((element: HTMLElement): boolean => {
+    let current: HTMLElement | null = element;
+    while (current) {
+      if (current.id.includes('ds-confirm-dialog-panel')) {
+        return true;
+      }
+      current = current.parentElement;
     }
+    return false;
   }, []);
 
   React.useEffect(() => {

@@ -13,20 +13,26 @@ const useSkillAreas = (): SkillArea[] => {
     i18n: { language },
   } = useTranslation();
 
-  const contentRef = React.useRef<Content>(getContents(t, language as LangCode).at(-1));
   const versionInSession = globalThis.sessionStorage.getItem('content-version');
   const version = React.useMemo(() => (versionInSession ? Number(versionInSession) : null), [versionInSession]);
 
+  const [content, setContent] = React.useState<Content | undefined>(() => {
+    if (typeof version === 'number') {
+      return getContents(t, language as LangCode)[version - 1];
+    }
+    return getContents(t, language as LangCode).at(-1);
+  });
+
   React.useEffect(() => {
     if (typeof version === 'number') {
-      contentRef.current = getContents(t, language as LangCode)[version - 1];
+      setContent(getContents(t, language as LangCode)[version - 1]);
     } else {
       // If no version is specified, use latest
-      contentRef.current = getContents(t, language as LangCode).at(-1);
+      setContent(getContents(t, language as LangCode).at(-1));
     }
   }, [version, t, language]);
 
-  return contentRef.current?.skillAreas ?? [];
+  return content?.skillAreas ?? [];
 };
 
 export default useSkillAreas;

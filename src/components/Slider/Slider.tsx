@@ -19,17 +19,16 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
 
     const timeoutRef = React.useRef<NodeJS.Timeout>(null);
 
-    const getInitialValue = () => {
-      if (typeof innerRef.current?.valueAsNumber === 'number') {
-        return innerRef.current.valueAsNumber;
-      }
-      if (typeof rest.defaultValue !== 'undefined') {
-        return Number(rest.defaultValue);
-      }
-      return 2;
-    };
+    // Initialize value state without accessing ref
+    const initialValue = typeof rest.defaultValue !== 'undefined' ? Number(rest.defaultValue) : 2;
+    const [value, setValue] = React.useState(initialValue);
 
-    const [value, setValue] = React.useState(getInitialValue);
+    // After mount, update value from ref if available
+    React.useEffect(() => {
+      if (innerRef.current && typeof innerRef.current.valueAsNumber === 'number') {
+        setValue(innerRef.current.valueAsNumber);
+      }
+    }, []);
 
     const defaultTextValues = [
       t('components.slider.not-at-all'),
