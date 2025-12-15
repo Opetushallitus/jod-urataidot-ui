@@ -57,7 +57,7 @@
     "emoji-datasource-apple": "^15.1.2",
     "emoji-datasource-facebook": "^15.1.2",
     "emoji-datasource-google": "^15.1.2",
-    "emoji-datasource-twitter": "^15.1.2",
+    "emoji-datasource-twitter": "^16.0.0",
     "emoji-picker-react": "^4.13.2",
     "html-react-parser": "^5.2.6",
     "i18next": "^25.6.3",
