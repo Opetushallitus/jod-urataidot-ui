@@ -1,4 +1,6 @@
 {
+  "main-navigation": "Huvudnavigering",
+  "navigation-menu": "Meny",
   "no-match": {
     "description": "Sidan du söker kunde inte hittas eller länken är föråldrad. Kontrollera adressen, öppna menyn eller gå till startsidan.",
     "go-home": "Gå till startsidan",
