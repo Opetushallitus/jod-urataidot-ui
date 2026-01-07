@@ -29,6 +29,7 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
       return 2;
     };
 
+    // eslint-disable-next-line react-hooks/refs
     const [value, setValue] = React.useState(getInitialValue);
 
     const defaultTextValues = [

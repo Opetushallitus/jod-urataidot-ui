@@ -76,7 +76,7 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
           onClick={() => void copyToClipboard()}
           className="focus:outline-accent flex cursor-pointer flex-row items-center"
         >
-          <div className="flex min-h-[40px] min-w-[40px] items-center justify-center">
+          <div className="flex min-h-8 min-w-8 items-center justify-center">
             {linkCopied ? <JodCheckmark size={24} /> : <LinkIcon />}
           </div>
           <span className="text-button-md text-left">

@@ -26,6 +26,7 @@ const useSkillAreas = (): SkillArea[] => {
     }
   }, [version, t, language]);
 
+  // eslint-disable-next-line react-hooks/refs
   return contentRef.current?.skillAreas ?? [];
 };
 
