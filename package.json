@@ -60,7 +60,7 @@
     "emoji-datasource-twitter": "^16.0.0",
     "emoji-picker-react": "^4.16.1",
     "html-react-parser": "^5.2.11",
-    "i18next": "^25.7.3",
+    "i18next": "^25.7.4",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-hook-form": "^7.69.0",
