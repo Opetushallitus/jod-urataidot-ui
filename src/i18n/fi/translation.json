@@ -1,11 +1,4 @@
 {
-  "beta": {
-    "note": {
-      "description": "Kerro mielipiteesi ja auta meitä kehittämään palvelua.",
-      "title": "Kokeile palvelua",
-      "to-feedback": "Siirry kyselyyn"
-    }
-  },
   "career-management": {
     "description": "Urasuunnittelutaidot ovat opittavissa olevia taitoja, joiden avulla voit suunnitella elämäsi polkua. Tutustu urasuunnittelutaitoihin klikkaamalla:",
     "go-to-skill-area": "Siirry taitoalueeseen",
