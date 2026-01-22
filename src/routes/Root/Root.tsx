@@ -2,49 +2,9 @@ import React from 'react';
 import { NavMenu, FeedbackModal } from '@/components';
 import { useTranslation } from 'react-i18next';
 import { Link, Outlet, ScrollRestoration } from 'react-router';
-import {
-  Button,
-  Chatbot,
-  Footer,
-  LanguageButton,
-  MatomoTracker,
-  MenuButton,
-  NavigationBar,
-  useNoteStack,
-} from '@jod/design-system';
-import { JodOpenInNew } from '@jod/design-system/icons';
+import { Chatbot, Footer, LanguageButton, MatomoTracker, MenuButton, NavigationBar } from '@jod/design-system';
 import { LangCode, langLabels, supportedLanguageCodes } from '@/i18n/config';
-import { getLinkTo } from '@/utils/routeUtils';
 import { Toaster } from '@/components/Toaster/Toaster';
-
-const useAddBetaFeedbackNote = () => {
-  const { t } = useTranslation();
-  const { addTemporaryNote } = useNoteStack();
-
-  React.useEffect(() => {
-    addTemporaryNote(() => ({
-      id: 'beta-feedback-note',
-      title: t('beta.note.title'),
-      description: t('beta.note.description'),
-      variant: 'feedback',
-      readMoreComponent: (
-        <Button
-          size="sm"
-          variant="white"
-          label={t('beta.note.to-feedback')}
-          icon={<JodOpenInNew ariaLabel={t('external-link')} />}
-          iconSide="right"
-          linkComponent={getLinkTo('https://link.webropolsurveys.com/S/8AF8E63BF83D39FE', {
-            useAnchor: true,
-            target: '_blank',
-          })}
-          className="whitespace-nowrap"
-        />
-      ),
-      isCollapsed: false,
-    }));
-  }, [addTemporaryNote, t]);
-};
 
 const Root = () => {
   const {
@@ -73,8 +33,6 @@ const Root = () => {
 
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const [feedbackVisible, setFeedbackVisible] = React.useState(false);
-
-  useAddBetaFeedbackNote();
 
   React.useEffect(() => {
     document.documentElement.setAttribute('lang', language);

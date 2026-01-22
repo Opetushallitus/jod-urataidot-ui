@@ -1,11 +1,4 @@
 {
-  "beta": {
-    "note": {
-      "description": "Berätta vad du tycker och hjälp oss att förbättra tjänsten.",
-      "title": "Prova tjänsten",
-      "to-feedback": "Öppna enkäten"
-    }
-  },
   "career-management": {
     "description": "Karriärkompetenser är färdigheter som kan läras ut och som kan hjälpa dig att planera ditt liv. Du kan läsa mer om karriärkompetenser genom att klicka här:",
     "go-to-skill-area": "Gå till kompetensområde",
