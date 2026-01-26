@@ -1,4 +1,10 @@
 {
+  "error": {
+    "form": {
+      "email": "Kontrollera e-postadressen",
+      "required": "Obligatoriskt fält"
+    }
+  },
   "main-navigation": "Huvudnavigering",
   "navigation-menu": "Meny",
   "no-match": {
@@ -9,6 +15,7 @@
   "note": {
     "close": "Stäng"
   },
+  "required": "obligatorisk",
   "service-info": {
     "title": "Verktyget Karriärkompetenser"
   }

@@ -1,4 +1,10 @@
 {
+  "error": {
+    "form": {
+      "email": "Tarkista sähköpostiosoite",
+      "required": "Pakollinen kenttä"
+    }
+  },
   "main-navigation": "Päänavigaatio",
   "navigation-menu": "Valikko",
   "no-match": {
@@ -6,6 +12,7 @@
     "go-home": "Siirry etusivulle",
     "title": "Hups! Sivua ei löytynyt"
   },
+  "required": "pakollinen",
   "service-info": {
     "title": "Urataidot-työkalu"
   }

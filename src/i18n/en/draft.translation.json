@@ -1,4 +1,10 @@
 {
+  "error": {
+    "form": {
+      "email": "Check the email address",
+      "required": "Mandatory field"
+    }
+  },
   "main-navigation": "Main navigation",
   "navigation-menu": "Menu",
   "no-match": {
@@ -8,5 +14,6 @@
   },
   "note": {
     "close": "Close"
-  }
+  },
+  "required": "mandatory"
 }
