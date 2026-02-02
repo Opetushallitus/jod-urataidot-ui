@@ -1956,13 +1956,13 @@
     "email-label": "E-postadress",
     "error": "Det gick inte att skicka respons. Försök på nytt senare.",
     "footer-handled": {
-      "ohjaajan": "Vägledar-delen på UF-centret,",
+      "ohjaajan": "Vägledarens del på UF-centret,",
       "osaamispolkuni": "Min kompetensstig i Utbildningsstyrelsen,",
       "tietopalvelu": "Informationstjänsten och hela tjänsten i undervisnings- och kulturministeriet."
     },
-    "footer-info-1": "När du skickar respons sparar vi tjänstens statusinformation, till exempel från vilken vy responsen har skickats. Statusinformationen vidarebefordras inte till tredje part. Respons används för utveckling av tjänsten och frivilligt lämnade kontaktuppgifter för att svara på respons.",
+    "footer-info-1": "När du skickar respons sparar vi tjänstens statusinformation, till exempel från vilken vy responsen har skickats. Statusinformationen vidarebefordras inte till tredje part. Responsen används för utveckling av tjänsten och frivilligt lämnade kontaktuppgifter används för att svara på responsen.",
     "footer-info-heading": "Beroende på delen behandlas responsen på följande sätt:",
-    "footer-privacy-heading": "Läs mer om dataskyddsbeskrivningarna för de som behandlar respons",
+    "footer-privacy-heading": "Läs mer i responshanterarnas dataskyddsbeskrivningar:",
     "intro-1": "Ge respons om tjänsten eller rapportera ett tekniskt problem. På så sätt hjälper du oss i utvecklingen av tjänsterna.",
     "intro-2": "Om du rapporterar en störning skulle det hjälpa oss om du berättar om den så noggrant som möjligt.",
     "intro-privacy": "Skriv inga personuppgifter i din respons, såsom personbeteckning eller hälsouppgifter. Vänligen fyll i alla fält så att vi kan behandla din respons.",
@@ -2012,20 +2012,21 @@
     "more-info-description": "Funderar du på dataskyddet eller hur artificiell intelligens används i tjänsten? Nedan hittar du allmän information om tjänsten och dess användning.",
     "more-info-links": {
       "about-service": "Information om tjänsten",
-      "accessibility": "Information om tillgänglighet",
+      "accessibility": "Tillgänglighetsutlåtande",
       "ai-usage": "Information om användningen av artificiell intelligens",
       "data-sources": "Datakällor",
       "privacy-and-cookies": "Dataskyddsbeskrivning och cookies"
     },
     "more-info-title": "Vill du veta mer om Kompetensstigen?"
   },
-  "front-page": "Framsidan",
+  "front-page": "Framsida",
   "home": {
     "description": "Börja med att svara på några självutvärderingsfrågor. Därefter får du övningsuppgifter för din egen utveckling.",
     "info": "Uppgifterna är utformade för att stödja din egen reflektion. Svaren sparas inte i Kompetensstigens kompetensprofil, men du kan ladda ner uppgifterna du har gjort i PDF-format.",
     "title": "Identifiera dina styrkor och utvecklingsområden med hjälp av Självutvärdering av karriärkompetens"
   },
   "language-selection": "Språk",
+  "main-navigation": "Huvudmenyn",
   "menu": "Meny",
   "my-competence-path": "Min kompetensstig",
   "nav": {
@@ -2035,9 +2036,14 @@
   "navigation": {
     "menu-section-title": "Verktyget Karriärkompetenser"
   },
+  "navigation-menu": "Meny",
   "no-match": {
     "description": "Sidan du sökte kunde inte hittas.",
+    "go-home": "Gå till startsidan",
     "title": "Sidan hittades inte"
+  },
+  "note": {
+    "close": "Stäng"
   },
   "open-submenu": "Öppna undermeny",
   "osaamispolku": "Kompetensstigen",
@@ -2083,7 +2089,8 @@
     }
   },
   "service-info": {
-    "description": "Karriärkompetens är ett digitalt verktyg som hjälper dig att utvärdera och utveckla dina färdigheter i karriärplanering. Genom att svara på självutvärderingsfrågorna kan du ta reda på vilka karriärplaneringsfärdigheter du är bra på och vilka färdigheter det lönar sig för dig att utveckla.\n\nEfter självutvärderingen får du förslag på övningsuppgifter baserat på dina svar. De hjälper dig att utveckla dina karriärplaneringsfärdigheter.\n\nVerktyget är avgiftsfritt och används utan inloggning. Dina svar sparas tills du stänger webbläsarfönstret. Du kan spara sammanfattningen av din självutvärdering som en länk eller i PDF-format. Du kan spara genomförda övningar i PDF-format.\n\nKarriärkompetens verktyget har genomförts som en del av arbets- och näringsministeriets och UF-centrets projekt för främjandet av färdigheterna för karriärplanering. Verktyget genomfördes av Hyria. Projektet finansierades av EU:s facilitet för återhämtning och resiliens (RRF).\n"
+    "description": "Karriärkompetens är ett digitalt verktyg som hjälper dig att utvärdera och utveckla dina färdigheter i karriärplanering. Genom att svara på självutvärderingsfrågorna kan du ta reda på vilka karriärplaneringsfärdigheter du är bra på och vilka färdigheter det lönar sig för dig att utveckla.\n\nEfter självutvärderingen får du förslag på övningsuppgifter baserat på dina svar. De hjälper dig att utveckla dina karriärplaneringsfärdigheter.\n\nVerktyget är avgiftsfritt och används utan inloggning. Dina svar sparas tills du stänger webbläsarfönstret. Du kan spara sammanfattningen av din självutvärdering som en länk eller i PDF-format. Du kan spara genomförda övningar i PDF-format.\n\nKarriärkompetens verktyget har genomförts som en del av arbets- och näringsministeriets och UF-centrets projekt för främjandet av färdigheterna för karriärplanering. Verktyget genomfördes av Hyria. Projektet finansierades av EU:s facilitet för återhämtning och resiliens (RRF).\n",
+    "title": "Stäng"
   },
   "show-all": "Visa alla",
   "slugs": {
