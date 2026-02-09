@@ -53,6 +53,9 @@
     "link-copied": "Kopierades till urklipp",
     "question-description": "Om du behöver hjälp med att svara på frågorna, gör följande uppgifter:",
     "questions": {
+      "10": {
+        "title": "Hur tänker du följa upp genomförandet av din plan?"
+      },
       "1": {
         "title": "Vilka styrkor, färdigheter och kunskaper har du?"
       },
@@ -79,14 +82,10 @@
       },
       "9": {
         "title": "Vilka konkreta steg tar du härnäst? Och under det kommande året?"
-      },
-      "10": {
-        "title": "Hur tänker du följa upp genomförandet av din plan?"
       }
     },
     "title": "Karriärplan"
   },
-  "close-menu": "Stäng meny",
   "common": {
     "answer-scale": {
       "0": "Inte alls",
@@ -120,7 +119,6 @@
       "3": "Expert"
     }
   },
-  "competency-path-portal": "Kompetensstigens framsida",
   "components": {
     "bar": {
       "no-feedback": "Du har ännu inte svarat på frågorna i detta delområde. Svara på frågorna för att få feedback."
@@ -1926,13 +1924,6 @@
       }
     }
   },
-  "error": {
-    "network": {}
-  },
-  "error-boundary": {
-    "description": "Ett oväntat fel uppstod. Det kan bero på ett avbrott i nätförbindelsen eller på ett fel i tjänsten. Försök igen senare.",
-    "title": "Fel"
-  },
   "exercises": {
     "back-to-summary": "Gå tillbaka",
     "choose-emoji": "Välj en emoji! :)",
@@ -1950,118 +1941,20 @@
     "skill-level": "Kompetensnivå",
     "title": "Alla uppgifter"
   },
-  "external-link": "Länken leder dig utanför tjänsten",
-  "feedback": {
-    "cancel": "Avbryt",
-    "email-label": "E-postadress",
-    "error": "Det gick inte att skicka respons. Försök på nytt senare.",
-    "footer-handled": {
-      "ohjaajan": "Vägledarens del på UF-centret,",
-      "osaamispolkuni": "Min kompetensstig i Utbildningsstyrelsen,",
-      "tietopalvelu": "Informationstjänsten och hela tjänsten i undervisnings- och kulturministeriet."
-    },
-    "footer-info-1": "När du skickar respons sparar vi tjänstens statusinformation, till exempel från vilken vy responsen har skickats. Statusinformationen vidarebefordras inte till tredje part. Responsen används för utveckling av tjänsten och frivilligt lämnade kontaktuppgifter används för att svara på responsen.",
-    "footer-info-heading": "Beroende på delen behandlas responsen på följande sätt:",
-    "footer-privacy-heading": "Läs mer i responshanterarnas dataskyddsbeskrivningar:",
-    "intro-1": "Ge respons om tjänsten eller rapportera ett tekniskt problem. På så sätt hjälper du oss i utvecklingen av tjänsterna.",
-    "intro-2": "Om du rapporterar en störning skulle det hjälpa oss om du berättar om den så noggrant som möjligt.",
-    "intro-privacy": "Skriv inga personuppgifter i din respons, såsom personbeteckning eller hälsouppgifter. Vänligen fyll i alla fält så att vi kan behandla din respons.",
-    "linkHrefs": {
-      "keha": "https://tyomarkkinatori.fi/sv/information-om-tjansten/dataskydds-och-registerbeskrivning-och-anvandarvillkor/dataskyddsbeskrivningar",
-      "okm": "https://okm.fi/sv/information-om-webbtjanst",
-      "oph": "https://www.oph.fi/sv/integritetspolicy"
-    },
-    "links": {
-      "keha": "Dataskyddsbeskrivning för UF-centrets kund- och rådgivningstjänster",
-      "okm": "Undervisnings- och kulturministeriets dataskyddsbeskrivning",
-      "oph": "Utbildningsstyrelsens integritetspolicy"
-    },
-    "message-label": "Respons",
-    "section-question": "Vilken del gäller din respons?",
-    "sections": {
-      "koko-palvelu": "Hela tjänsten eller annan respons",
-      "ohjaajan-osio": "Vägledar-delen",
-      "osaamispolkuni": "Min kompetensstig",
-      "tietopalvelu": "Informationstjänst"
-    },
-    "submit": "Skicka",
-    "success": "Tack för din respons! Din respons hjälper oss att förbättra tjänsten.",
-    "title": "Ge respons",
-    "type-question": "Vilken typ av respons vill du ge?",
-    "types": {
-      "kehitysehdotus": "Utvecklingsförslag",
-      "kehu": "Beröm",
-      "moite": "Kritik",
-      "vika": "Tekniskt fel eller problem"
-    },
-    "wants-contact": "Jag vill bli kontaktad."
-  },
-  "footer": {
-    "cooperation-title": "Kompetensstigen har genomförts i samarbete mellan följande parter",
-    "copyright": "© Kompetensstigen 2026. Alla rättigheter förbehålls.",
-    "feedback-button-label": "Ge respons",
-    "feedback-content": "Vi vill utveckla Kompetensstigen så att den bättre motsvarar just dina behov. Ge oss respons, vi beaktar den i utvecklingsarbetet.",
-    "feedback-title": "Berätta vad du tyckte om tjänsten!",
-    "funding-title": "Finansieringen av tjänsten kommer från EU:s facilitet för återhämtning och resiliens (RRF)",
-    "logos": {
-      "keha-label": "UF-centret",
-      "okm-label": "Undervisnings- och kulturministeriet",
-      "oph-label": "Utbildningsstyrelsen",
-      "tem-label": "Arbets- och näringsministeriet"
-    },
-    "more-info-description": "Funderar du på dataskyddet eller hur artificiell intelligens används i tjänsten? Nedan hittar du allmän information om tjänsten och dess användning.",
-    "more-info-links": {
-      "about-service": "Information om tjänsten",
-      "accessibility": "Tillgänglighetsutlåtande",
-      "ai-usage": "Information om användningen av artificiell intelligens",
-      "data-sources": "Datakällor",
-      "privacy-and-cookies": "Dataskyddsbeskrivning och cookies"
-    },
-    "more-info-title": "Vill du veta mer om Kompetensstigen?"
-  },
   "front-page": "Framsida",
   "home": {
     "description": "Börja med att svara på några självutvärderingsfrågor. Därefter får du övningsuppgifter för din egen utveckling.",
     "info": "Uppgifterna är utformade för att stödja din egen reflektion. Svaren sparas inte i Kompetensstigens kompetensprofil, men du kan ladda ner uppgifterna du har gjort i PDF-format.",
     "title": "Identifiera dina styrkor och utvecklingsområden med hjälp av Självutvärdering av karriärkompetens"
   },
-  "language-selection": "Språk",
-  "main-navigation": "Huvudmenyn",
-  "menu": "Meny",
   "my-competence-path": "Min kompetensstig",
   "nav": {
     "copy-results-to-link": "Kopiera länken till den ofullständiga enkäten",
     "service-info": "Om tjänsten"
   },
   "navigation": {
-    "external": {
-      "ohjaaja": {
-        "description": "Information och material för vägledning",
-        "label": "Vägledar-delen"
-      },
-      "osaamispolku": {
-        "description": "Personlig kompetensstig",
-        "label": "Min kompetensstig"
-      },
-      "tietopalvelu": {
-        "description": "Information till stöd för beslutsfattande",
-        "label": "Informationstjänst"
-      },
-      "title": "Uppsättningar av innehåll"
-    },
     "menu-section-title": "Verktyget Karriärkompetenser"
   },
-  "navigation-menu": "Meny",
-  "no-match": {
-    "description": "Sidan du sökte kunde inte hittas.",
-    "go-home": "Gå till startsidan",
-    "title": "Sidan hittades inte"
-  },
-  "note": {
-    "close": "Stäng"
-  },
-  "open-submenu": "Öppna undermeny",
-  "osaamispolku": "Kompetensstigen",
   "pdf": {
     "all-exercises-document": "Karriärkompetenser - Alla uppgifter",
     "career-management-skills-report": "Rapport om självutvärderingen av karriärkompetenser",
@@ -2107,11 +2000,7 @@
     "description": "Karriärkompetens är ett digitalt verktyg som hjälper dig att utvärdera och utveckla dina färdigheter i karriärplanering. Genom att svara på självutvärderingsfrågorna kan du ta reda på vilka karriärplaneringsfärdigheter du är bra på och vilka färdigheter det lönar sig för dig att utveckla.\n\nEfter självutvärderingen får du förslag på övningsuppgifter baserat på dina svar. De hjälper dig att utveckla dina karriärplaneringsfärdigheter.\n\nVerktyget är avgiftsfritt och används utan inloggning. Dina svar sparas tills du stänger webbläsarfönstret. Du kan spara sammanfattningen av din självutvärdering som en länk eller i PDF-format. Du kan spara genomförda övningar i PDF-format.\n\nKarriärkompetens verktyget har genomförts som en del av arbets- och näringsministeriets och UF-centrets projekt för främjandet av färdigheterna för karriärplanering. Verktyget genomfördes av Hyria. Projektet finansierades av EU:s facilitet för återhämtning och resiliens (RRF).\n",
     "title": "Stäng"
   },
-  "show-all": "Visa alla",
   "slugs": {
-    "about-service": "information-om-tjansten",
-    "accessibility": "information-om-tillganglighet",
-    "ai-usage": "information-om-anvandningen-av-artificiell-intelligens",
     "alternative-paths": "alternativa-vagar",
     "anticipate-the-future": "forutse-framtiden",
     "application-of-competence": "tillampning-av-kompetensen",
@@ -2124,7 +2013,6 @@
     "competence-and-strengths": "kompetens-och-styrkor",
     "competence-first": "kompetens-forst",
     "creativity": "kreativitet",
-    "data-sources": "datakallor",
     "decision-making": "beslutsfattande",
     "development-areas": "utvecklingsomraden",
     "dreams-and-visions": "drommar",
@@ -2147,7 +2035,6 @@
     "my-life-story": "min-livshistoria",
     "opportunities-and-constraints": "mojligheter-och-villkor",
     "preparedness": "beredskap",
-    "privacy-and-cookies": "dataskyddsbeskrivning-och-cookies",
     "problem-solving": "problemlosning",
     "quick-self-evaluation": "snabbutvardering",
     "ready-for-change": "redo-for-forandring",

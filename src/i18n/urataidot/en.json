@@ -53,6 +53,9 @@
     "link-copied": "Link copied to clipboard",
     "question-description": "If you need help answering this question, complete the following exercises:",
     "questions": {
+      "10": {
+        "title": "How will you track the progress of your plan?"
+      },
       "1": {
         "title": "What strengths, skills, and knowledge do you have?"
       },
@@ -79,14 +82,10 @@
       },
       "9": {
         "title": "What concrete steps will you take next? What about in the next year?"
-      },
-      "10": {
-        "title": "How will you track the progress of your plan?"
       }
     },
     "title": "Career Plan"
   },
-  "close-menu": "Close menu",
   "common": {
     "answer-scale": {
       "0": "Not at all",
@@ -120,7 +119,6 @@
       "3": "Expert"
     }
   },
-  "competency-path-portal": "Competency Path frontpage",
   "components": {
     "bar": {
       "no-feedback": "You have not yet answered the questions in this area. Answer the questions to receive feedback."
@@ -141,7 +139,6 @@
     "quick-self-evaluation-summary-section": {
       "more-info": "More information of the topic"
     },
-    "quick-test-selection": {},
     "slider": {
       "fully": "Fully",
       "not-at-all": "Not at all",
@@ -1927,13 +1924,6 @@
       }
     }
   },
-  "error": {
-    "network": {}
-  },
-  "error-boundary": {
-    "description": "An error occurred in the application and the page could not be loaded. Please try again later.",
-    "title": "Error"
-  },
   "exercises": {
     "back-to-summary": "Go back",
     "choose-emoji": "Choose an emoji! :)",
@@ -1951,118 +1941,20 @@
     "skill-level": "Skill Level",
     "title": "All exercises"
   },
-  "external-link": "The link leads outside the service",
-  "feedback": {
-    "cancel": "Cancel",
-    "email-label": "Email address",
-    "error": "Failed to send feedback. Please try again later.",
-    "footer-handled": {
-      "ohjaajan": "Guidance practitioners section at the KEHA centre,",
-      "osaamispolkuni": "My Competency Path at the Finnish National Agency for Education,",
-      "tietopalvelu": "Information service and entire service at the Ministry of Education and Culture."
-    },
-    "footer-info-1": "When you send feedback, we save the service status information, such as the view from which the feedback was sent. Status information will not be disclosed to third parties. Feedback is used for service development and voluntarily provided contact information is used to respond to feedback.",
-    "footer-info-heading": "Depending on the section, the feedback is processed as follows:",
-    "footer-privacy-heading": "Read more in the privacy statements of the feedback processors:",
-    "intro-1": "Please provide feedback on the service or report a technical problem. This way, you will help us in service development.",
-    "intro-2": "If you report an incident, it would help us if you were as specific as possible.",
-    "intro-privacy": "Do not enter any personal information, such as personal identity number or health information, in the feedback. Please fill in all the fields so that we can process your feedback.",
-    "linkHrefs": {
-      "keha": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietosuoja-ja-kayttoehdot/tietosuojaselosteet",
-      "okm": "https://okm.fi/tietoa-sivustosta#henkilotiedot",
-      "oph": "https://www.oph.fi/fi/tietosuoja"
-    },
-    "links": {
-      "keha": "KEHA Centre's customer and advisory services privacy statement",
-      "okm": "Ministry of Education and Culture's privacy statement",
-      "oph": "Finnish National Agency for Education’s data protection policy"
-    },
-    "message-label": "Feedback",
-    "section-question": "Which section does your feedback concern?",
-    "sections": {
-      "koko-palvelu": "Entire service or other feedback",
-      "ohjaajan-osio": "Guidance practitioner section",
-      "osaamispolkuni": "My Competency Path",
-      "tietopalvelu": "Information service"
-    },
-    "submit": "Submit",
-    "success": "Thank you for your feedback! Your feedback will help us to improve the service.",
-    "title": "Give feedback",
-    "type-question": "What kind of feedback would you like to give?",
-    "types": {
-      "kehitysehdotus": "Development proposal",
-      "kehu": "Praise",
-      "moite": "Complaint",
-      "vika": "Technical fault or problem"
-    },
-    "wants-contact": "I want to be contacted."
-  },
-  "footer": {
-    "cooperation-title": "Competency Path has been implemented in cooperation by the following parties",
-    "copyright": "© Competency Path 2026. All rights reserved.",
-    "feedback-button-label": "Give feedback",
-    "feedback-content": "We want to develop Competency Path to better meet your specific needs. Give us feedback and we will take it into account in our development work.",
-    "feedback-title": "Tell us what you thought about the service!",
-    "funding-title": "The project is funded by the EU’s Recovery and Resilience Facility (RRF)",
-    "logos": {
-      "keha-label": "KEHA Centre",
-      "okm-label": "Ministry of Education and Culture",
-      "oph-label": "Finnish National Agency for Education",
-      "tem-label": "Ministry of Economic Affairs and Employment"
-    },
-    "more-info-description": "Are you worried about data protection or the use of artificial intelligence in the service? Below, you will find a summary of general information about the service and its use.",
-    "more-info-links": {
-      "about-service": "About the service",
-      "accessibility": "Accessibility statement",
-      "ai-usage": "About the use of artificial intelligence",
-      "data-sources": "Sources of data",
-      "privacy-and-cookies": "Privacy policy and cookies"
-    },
-    "more-info-title": "Do you want to know more about Competency Path?"
-  },
   "front-page": "Front page",
   "home": {
     "description": "Start by answering a few self-assessment questions. You will then be given exercises for your personal development.",
     "info": "The exercises are designed to support your own reflection. The answers are not saved in Competency Path's competence profile, but you can download the exercises you have completed in PDF format for yourself.",
     "title": "Use the Career Skills self-assessment tool to identify your strengths and development areas"
   },
-  "language-selection": "Language of use",
-  "main-navigation": "Main navigation",
-  "menu": "Menu",
   "my-competence-path": "My competence path",
   "nav": {
     "copy-results-to-link": "Copy the link to the incomplete survey",
     "service-info": "About the service"
   },
   "navigation": {
-    "external": {
-      "ohjaaja": {
-        "description": "Tietoja ja materiaaleja ohjaukseen",
-        "label": "Ohjaajan osio"
-      },
-      "osaamispolku": {
-        "description": "Henkilökohtainen osaamispolku",
-        "label": "Osaamispolkuni"
-      },
-      "tietopalvelu": {
-        "description": "Tietoa päätöksenteon tueksi",
-        "label": "Tietopalvelu"
-      },
-      "title": "Sisältökokonaisuudet"
-    },
     "menu-section-title": "Self-assessment of career skills"
   },
-  "navigation-menu": "Menu",
-  "no-match": {
-    "description": "The page you are looking for does not exist.",
-    "go-home": "Go to the front page",
-    "title": "Page not found"
-  },
-  "note": {
-    "close": "Close"
-  },
-  "open-submenu": "Open submenu",
-  "osaamispolku": "Competency Path",
   "pdf": {
     "all-exercises-document": "Career Skills - All exercises",
     "career-management-skills-report": "Career Management Skills Self-Assessment Report",
@@ -2108,11 +2000,7 @@
     "description": "Career Skills is a digital tool that helps you assess and develop your career management skills. Answer the self-assessment questions to find out which career management skills are your strengths and which skills you should develop.\n\nAfter the self-assessment, you will receive suggestions for exercises based on your answers to help you develop your career management skills.\n\nThe tool is free of charge and can be used without logging in. Your answers will be saved until you close the browser window. You can save the self-assessment summary as a link or as a PDF. You can save the exercises you have completed in PDF format.\n\nThe Career Skills tool has been implemented as part of the Career Management Skills Development Project of the Ministry of Economic Affairs and Employment and the KEHA Centre. The tool was implemented by Hyria. The project was funded by the EU’s Recovery and Resilience Facility (RRF).",
     "title": "Close"
   },
-  "show-all": "Show all",
   "slugs": {
-    "about-service": "about-service",
-    "accessibility": "about-accessibility",
-    "ai-usage": "about-the-use-of-ai",
     "alternative-paths": "alternative-paths",
     "anticipate-the-future": "anticipating-the-future",
     "application-of-competence": "application-of-competence",
@@ -2125,7 +2013,6 @@
     "competence-and-strengths": "competences-and-strengths",
     "competence-first": "competence-first",
     "creativity": "creativity",
-    "data-sources": "data-sources",
     "decision-making": "decision-making",
     "development-areas": "development-areas",
     "dreams-and-visions": "dreams-and-aspirations",
@@ -2148,7 +2035,6 @@
     "my-life-story": "my-life-story",
     "opportunities-and-constraints": "opportunities-and-constraints",
     "preparedness": "preparedness",
-    "privacy-and-cookies": "privacy-notice-and-cookies",
     "problem-solving": "problem-solving",
     "quick-self-evaluation": "quick-self-evaluation",
     "ready-for-change": "ready-for-change",
@@ -2164,6 +2050,5 @@
     "uncertainty-tolerance": "responding-to-uncertainty",
     "values": "values",
     "world-around-you": "the-world-around-you"
-  },
-  "what-interests-you": {}
+  }
 }

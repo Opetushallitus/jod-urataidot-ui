@@ -53,6 +53,9 @@
     "link-copied": "Linkki kopioitu leikepöydälle",
     "question-description": "Jos tarvitset apuja kysymykseen vastaamiseksi, tee seuraavat tehtävät:",
     "questions": {
+      "10": {
+        "title": "Miten aiot seurata suunnitelmasi toteutumista?"
+      },
       "1": {
         "title": "Millaisia vahvuuksia, taitoja ja osaamista sinulla on?"
       },
@@ -79,14 +82,10 @@
       },
       "9": {
         "title": "Mitä konkreettisia askeleita otat seuraavaksi? Entä seuraavan vuoden aikana?"
-      },
-      "10": {
-        "title": "Miten aiot seurata suunnitelmasi toteutumista?"
       }
     },
     "title": "Urasuunnitelma"
   },
-  "close-menu": "Sulje valikko",
   "common": {
     "answer-scale": {
       "0": "En yhtään",
@@ -120,7 +119,6 @@
       "3": "Taitaja"
     }
   },
-  "competency-path-portal": "Osaamispolun etusivu",
   "components": {
     "bar": {
       "no-feedback": "Et ole vielä vastannut tämän osa-alueen kysymyksiin. Vastaa kysymyksiin saadaksesi palautetta."
@@ -141,7 +139,6 @@
     "quick-self-evaluation-summary-section": {
       "more-info": "Lisätietoa aiheesta"
     },
-    "quick-test-selection": {},
     "slider": {
       "fully": "Täysin",
       "not-at-all": "En yhtään",
@@ -294,23 +291,6 @@
           "name": "Ennakoidaan tulevaa",
           "sections": {
             "alternative-paths": {
-              "exercises": {
-                "1": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "2": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "3": {
-                  "textFields": {
-                    "1": {}
-                  }
-                }
-              },
               "info": "Vaihtoehtoisten polkujen kartoittaminen ja päätökset jatkuvat läpi elämän, kun työelämä ja omat elämäntilanteet muuttuvat. Eteen voi tulla sattumalta tilaisuuksia ja mahdollisuuksia, jotka auttavat sinua saavuttamaan tavoitteesi. Omalla toiminnallasi voit edistää uusien vaihtoehtoisten polkujen rakentumista.",
               "name": "Vaihtoehtoiset polut",
               "questions": {
@@ -320,23 +300,6 @@
               }
             },
             "global-changes": {
-              "exercises": {
-                "1": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "2": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "3": {
-                  "textFields": {
-                    "1": {}
-                  }
-                }
-              },
               "info": "Globaalit muutokset, kuten ilmastonmuutos, talouden suhdanteet ja alueelliset konfliktit, voivat vaikuttaa urasuunnitteluusi.",
               "name": "Globaalit muutokset",
               "questions": {
@@ -346,11 +309,6 @@
               }
             },
             "social-changes": {
-              "exercises": {
-                "1": {},
-                "2": {},
-                "3": {}
-              },
               "info": "Yhteiskunnan muutoksista esimerkiksi digitalisaatio ja tekoälyn yleistyminen, ilmastonmuutoksen torjuntaan käytetyt keinot ja väestön ikääntyminen voivat vaikuttaa urasuunnitteluun.",
               "name": "Yhteiskunnan muutokset",
               "questions": {
@@ -601,7 +559,6 @@
                   "feedback": "Olet tehnyt hienoa työtä omien vahvuuksiesi tunnistamisessa ja niiden soveltamisessa eri tilanteissa. Omien vahvuuksien ja osaamisen tunnistaminen auttaa ymmärtämään itseämme paremmin ja auttaa saavuttamaan tavoitteita. Jatka samaan malliin! ",
                   "title": "Opi tunnistamaan osaamistasi ja vahvuuksiasi"
                 },
-                "2": {},
                 "3": {
                   "feedback": "Olet tehnyt erinomaista työtä tunnistaessasi ja analysoidessasi omia vahvuuksiasi. Viiden tärkeimmän vahvuuden valinta ja niiden oppimisen reflektointi auttavat sinua ymmärtämään, miten voit hyödyntää niitä urallasi. Kun valmistaudut esittelemään osaamisesi, muista, että jokainen vahvuus on ainutlaatuinen etu, joka erottaa sinut muista. Ole ylpeä saavutuksistasi ja kerro niistä rohkeasti työhaastatteluissa ja CV:ssäsi.",
                   "textFields": {
@@ -844,9 +801,6 @@
               "2": {
                 "description": "<strong>Kirjoita alle omiin tekstikenttiin 3–5 asiaa, joista nautit eniten vapaa-ajallasi. </strong><br /> <i>Esimerkiksi: “Lukeminen, piirtäminen, urheilu, musiikki, juhlien järjestäminen, käsityöt, matkustaminen.”</i><br /><br />  <strong>● Valitse kuvaavat emojit kullekin asialle.</strong><br /><strong>● Yhdistä sitten kiinnostuksen kohteesi taitoihin: mieti ja kirjoita kuhunkin tekstikenttään, mitä taitoja käytät kiinnostuksen kohteissasi. </strong><br /> <i>Esimerkiksi: “Lukeminen - analysointikyky, Piirtäminen - luovuus, Juhlien järjestäminen - organisointikyky, Urheilu - tiimityöskentely.”</i><br /> <strong>● Mieti, miten voisit hyödyntää näitä kiinnostuksen kohteita ja taitoja (enemmän) töissä, opinnoissa tai arjessasi? Mieti ja kirjoita ideoita kunkin kiinnostuksen kohteen osalta.</strong><br /> <i>Esimerkiksi: “Piirtäminen - luovuus: Voin käyttää luovuuttani kehittämällä visuaalisia esityksiä, kuten infografiikoita tai markkinointimateriaaleja, jotka tekevät monimutkaisista tiedoista helpommin ymmärrettäviä”, “Juhlien järjestäminen - organisointikyky: Voin hyödyntää organisointikykyäni suunnittelemalla ja koordinoimalla töissä tai koulussa tapahtumia, kokouksia tai projekteja, varmistaen, että kaikki sujuu sujuvasti ja aikataulussa”.</i>",
                 "feedback": "Hyvää työtä! Omien kiinnostuksen kohteiden pohtiminen laajalti elämän eri osa-alueilla on hyödyllistä. Se mikä kiinnostaa, saa meidät kehittämään osaamistamme sekä panostamaan aikaa ja muita resurssejamme asian parissa. Kiinnostukset ovat innostuksen ja motivaation lähde, ja usein ne liittyvät tavalla tai toisella muihin vahvuuksiimme. ",
-                "textFields": {
-                  "1": {}
-                },
                 "title": "Opi hyödyntämään kiinnostuksen kohteitasi"
               }
             },
@@ -927,8 +881,7 @@
               "questions": {
                 "1": {
                   "title": "Ymmärrän, miten tunteeni vaikuttavat siihen, mitä teen ja miten valitsen."
-                },
-                "2": {}
+                }
               }
             },
             "interests": {
@@ -1328,23 +1281,6 @@
           "name": "Valmiina muutoksiin",
           "sections": {
             "creativity": {
-              "exercises": {
-                "1": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "2": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "3": {
-                  "textFields": {
-                    "1": {}
-                  }
-                }
-              },
               "info": "Luovuus on tärkeää, kun suunnittelet uraasi ja tulevaisuuttasi. Se auttaa suhtautumaan muutoksiin joustavasti ja löytämään ainutlaatuisia urapolkuja. Luovuus rohkaisee kokeilemaan uutta ja näkemään mahdollisuuksia.",
               "name": "Luovuus",
               "questions": {
@@ -1354,23 +1290,6 @@
               }
             },
             "decision-making": {
-              "exercises": {
-                "1": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "2": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "3": {
-                  "textFields": {
-                    "1": {}
-                  }
-                }
-              },
               "info": "Päätöksentekotaidot auttavat arvioimaan eri vaihtoehtoja ja tekemään tietoon perustuvia valintoja.",
               "name": "Päätöksenteko",
               "questions": {
@@ -1380,19 +1299,6 @@
               }
             },
             "dreams-and-visions": {
-              "exercises": {
-                "1": {},
-                "2": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "3": {
-                  "textFields": {
-                    "1": {}
-                  }
-                }
-              },
               "info": "Haaveet ja unelmat ovat tärkeitä omannäköisen elämän ja uran suunnittelussa. Haaveet ja unelmat pitävät mielen positiivisena ja auttavat saavuttamaan tavoitteet.",
               "name": "Haaveet ja unelmat",
               "questions": {
@@ -1402,15 +1308,6 @@
               }
             },
             "goal-setting": {
-              "exercises": {
-                "1": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "2": {},
-                "3": {}
-              },
               "info": "Selkeästi määritellyt tavoitteet auttavat keskittymään olennaiseen ja tekemään tietoisia päätöksiä. Osatavoitteet auttavat hahmottamaan konkreettisia askelia kohti pitkän aikavälin tavoitteita.",
               "name": "Tavoitteet",
               "questions": {
@@ -1420,19 +1317,6 @@
               }
             },
             "preparedness": {
-              "exercises": {
-                "1": {},
-                "2": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "3": {
-                  "textFields": {
-                    "1": {}
-                  }
-                }
-              },
               "info": "Varautuminen tarkoittaa, että valmistaudut erilaisiin vaihtoehtoihin ja riskeihin. Tämä tuo hallinnan tunnetta.",
               "name": "Varautuminen",
               "questions": {
@@ -1442,23 +1326,6 @@
               }
             },
             "problem-solving": {
-              "exercises": {
-                "1": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "2": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "3": {
-                  "textFields": {
-                    "1": {}
-                  }
-                }
-              },
               "info": "Ongelmanratkaisutaidot auttavat selviytymään haasteista. Ne auttavat toimimaan luovasti ja löytämään ratkaisuja. Ongelmanratkaisutaidot tekevät sinusta joustavamman ja sopeutumiskykyisemmän.",
               "name": "Ongelmanratkaisu",
               "questions": {
@@ -1468,11 +1335,6 @@
               }
             },
             "resilience": {
-              "exercises": {
-                "1": {},
-                "2": {},
-                "3": {}
-              },
               "info": "Resilienssi tarkoittaa kykyä sopeutua ja selviytyä muutoksista ja haasteista. Se on psyykkistä joustavuutta ja palautumiskykyä.",
               "name": "Resilienssi",
               "questions": {
@@ -1482,19 +1344,6 @@
               }
             },
             "uncertainty-tolerance": {
-              "exercises": {
-                "1": {},
-                "2": {
-                  "textFields": {
-                    "1": {}
-                  }
-                },
-                "3": {
-                  "textFields": {
-                    "1": {}
-                  }
-                }
-              },
               "info": "Epävarmuuden sietäminen on kykyä kestää tilanteita, joissa lopputulos ei ole selvillä. Tämä taito auttaa toimimaan, vaikka kaikkiin kysymyksiin ei olisikaan vastauksia.",
               "name": "Epävarmuuden sietäminen",
               "questions": {
@@ -1740,8 +1589,6 @@
           "sections": {
             "articulating-competence": {
               "exercises": {
-                "1": {},
-                "2": {},
                 "3": {
                   "textFields": {
                     "1": {
@@ -1759,10 +1606,6 @@
               }
             },
             "asking-and-utilizing-help": {
-              "exercises": {
-                "1": {},
-                "2": {}
-              },
               "info": "Et ole yksin miettimässä uraasi. Voit pyytää apua esimerkiksi läheisiltä, ystäviltä tai erilaisista yhteiskunnan palveluista. Avun pyytäminen voi auttaa sinua etenemään urasuunnitelmissasi.",
               "name": "Avun pyytäminen ja hyödyntäminen",
               "questions": {
@@ -1772,11 +1615,6 @@
               }
             },
             "communication": {
-              "exercises": {
-                "1": {},
-                "2": {},
-                "3": {}
-              },
               "info": "Viestintä on tapa, jolla ihmiset puhuvat tai ilmaisevat asioita toisilleen. Viestintää voi olla sanoilla tai ilman sanoja. Hyvä viestintä auttaa kertomaan tavoitteista ja osaamisesta selkeästi. Se on tärkeää, kun haluat verkostoitua tai tehdä yhteistyötä.",
               "name": "Viestintä",
               "questions": {
@@ -1786,10 +1624,6 @@
               }
             },
             "interaction-in-work-study-and-networks": {
-              "exercises": {
-                "2": {},
-                "3": {}
-              },
               "info": "Vuorovaikutus tarkoittaa, että ihmiset vaihtavat ajatuksia ja mielipiteitä keskenään ja tekevät yhteistyötä. Hyvä vuorovaikutus perustuu kuuntelemiseen ja yhdessä tekemiseen. Verkostoituminen tarkoittaa, että luot ja ylläpidät hyödyllisiä suhteita muihin ihmisiin.",
               "name": "Vuorovaikutus työssä, opiskelussa ja omissa verkostoissa",
               "questions": {
@@ -1802,10 +1636,6 @@
               }
             },
             "job-search-skills": {
-              "exercises": {
-                "1": {},
-                "2": {}
-              },
               "info": "Työnhakutaitoihin kuuluu esimerkiksi se, että tunnet työnhaun nykyiset käytännöt, osaat kertoa selkeästi omasta osaamisestasi ja osaat tehdä hyvät työnhaun asiakirjat, kuten ansioluettelon ja työhakemuksen.",
               "name": "Työnhakutaidot",
               "questions": {
@@ -1815,10 +1645,6 @@
               }
             },
             "societal-services": {
-              "exercises": {
-                "1": {},
-                "2": {}
-              },
               "info": "Yhteiskunta tarjoaa monenlaisia palveluja, jotka auttavat sinua urasuunnittelussa. Näihin kuuluvat esimerkiksi koulutus- ja työllisyyspalvelut.",
               "name": "Yhteiskunnan tarjoamat palvelut",
               "questions": {
@@ -1938,10 +1764,6 @@
           "name": "Maailma ympärilläsi",
           "sections": {
             "ecosocial-factors": {
-              "exercises": {
-                "1": {},
-                "2": {}
-              },
               "info": "Ekososiaalisuus urasuunnittelussa tarkoittaa, että uravalinnoissa pyritään ottamaan huomioon se, mikä vaikutus niillä on ympäristöön ja muiden ihmisten hyvinvointiin. Tämä voi auttaa sinua löytämään merkityksellisen ja arvojesi mukaisen uran.",
               "name": "Ekososiaaliset tekijät",
               "questions": {
@@ -1960,9 +1782,6 @@
               }
             },
             "labor-market": {
-              "exercises": {
-                "2": {}
-              },
               "info": "Työmarkkinatiedot kertovat, millaisia työmahdollisuuksia on saatavilla ja minkälainen eri alojen työtilanne on. Työmarkkinoiden tunteminen auttaa sinua suuntaamaan uraasi tavoitteellisesti.",
               "name": "Työmarkkinat",
               "questions": {
@@ -1972,11 +1791,6 @@
               }
             },
             "opportunities-and-constraints": {
-              "exercises": {
-                "1": {},
-                "2": {},
-                "3": {}
-              },
               "info": "Mahdollisuudet tarkoittavat vaihtoehtoisia polkuja ja elämän tarjoamia tilaisuuksia. Reunaehdot ovat rajoituksia, jotka vaikuttavat päätöksiisi tai suunnitteluusi. Reunaehtoja voivat olla esimerkiksi terveydentilasi, asuinpaikkasi ja työmarkkinatilanne.",
               "name": "Mahdollisuudet ja reunaehdot",
               "questions": {
@@ -1986,11 +1800,6 @@
               }
             },
             "social-structures": {
-              "exercises": {
-                "1": {},
-                "2": {},
-                "3": {}
-              },
               "info": "Yhteiskunnan rakenteet, kuten lait, poliittinen päätöksenteko, talous, koulutusjärjestelmä, kulttuuri ja työmarkkinoiden eriytyminen ja eriarvoistuminen, voivat vaikuttaa urasuunnitteluusi. Esimerkiksi joillakin ammattialoilla on tyypillisesti paljon miehiä ja toisilla naisia, ja tämä voi ohjata tietoisesti tai tiedostamatta omia ammatillisia valintoja.",
               "name": "Yhteiskunnan rakenteet",
               "questions": {
@@ -2111,24 +1920,9 @@
               "title": "Opi huomioimaan ekososiaaliset tekijät omassa elämässäsi"
             }
           }
-        },
-        "sections": {
-          "education-and-learning": {
-            "exercises": {
-              "1": {},
-              "2": {}
-            }
-          }
         }
       }
     }
-  },
-  "error": {
-    "network": {}
-  },
-  "error-boundary": {
-    "description": "Tapahtui odottamaton virhe. Tämä voi johtua verkkoyhteyden katkeamisesta tai palvelun virheestä. Yritä myöhemmin uudelleen.",
-    "title": "Virhe"
   },
   "exercises": {
     "back-to-summary": "Palaa takaisin",
@@ -2147,118 +1941,20 @@
     "skill-level": "Taitotaso",
     "title": "Tehtäväpankki"
   },
-  "external-link": "Linkki johtaa palvelun ulkopuolelle",
-  "feedback": {
-    "cancel": "Peruuta",
-    "email-label": "Sähköpostiosoite",
-    "error": "Palautteen lähettäminen epäonnistui. Yritä myöhemmin uudelleen.",
-    "footer-handled": {
-      "ohjaajan": "Ohjaajan osio KEHA-keskuksessa,",
-      "osaamispolkuni": "Osaamispolkuni Opetushallituksessa,",
-      "tietopalvelu": "Tietopalvelu ja koko palvelu opetus- ja kulttuuriministeriössä."
-    },
-    "footer-info-1": "Kun lähetät palautetta, tallennamme palvelun tilatiedon, kuten mistä näkymästä palaute on lähetetty. Tilatietoa ei välitetä eteenpäin kolmansille osapuolille. Palautteita käytetään palvelun kehittämiseen ja vapaaehtoisesti jätettäviä yhteystietoja palautteisiin vastaamiseen.",
-    "footer-info-heading": "Palaute käsitellään osiosta riippuen seuraavasti:",
-    "footer-privacy-heading": "Lue lisää palautteiden käsittelijöiden tietosuojaseloisteista:",
-    "intro-1": "Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.",
-    "intro-2": "Jos raportoit häiriötilanteesta, meitä auttaisi, että kerrot siitä mahdollisimman tarkasti.",
-    "intro-privacy": "Älä kirjoita palautteeseen henkilökohtaisia tietoja, kuten henkilötunnusta tai terveystietoja. Täytähän kaikki kentät, jotta voimme käsitellä palautteesi.",
-    "linkHrefs": {
-      "keha": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietosuoja-ja-kayttoehdot/tietosuojaselosteet",
-      "okm": "https://okm.fi/tietoa-sivustosta#henkilotiedot",
-      "oph": "https://www.oph.fi/fi/tietosuoja"
-    },
-    "links": {
-      "keha": "KEHA-keskuksen asiakas- ja neuvontapalveluiden tietosuojaseloste",
-      "okm": "Opetus- ja kulttuuriministeriön tietosuojaseloste",
-      "oph": "Opetushallituksen tietosuojakäytäntö"
-    },
-    "message-label": "Palaute",
-    "section-question": "Mitä osiota palautteesi koskee?",
-    "sections": {
-      "koko-palvelu": "Koko palvelu tai muu palaute",
-      "ohjaajan-osio": "Ohjaajan osio",
-      "osaamispolkuni": "Osaamispolkuni",
-      "tietopalvelu": "Tietopalvelu"
-    },
-    "submit": "Lähetä",
-    "success": "Kiitos palautteestasi! Palautteesi auttaa meitä parantamaan palvelua.",
-    "title": "Anna palautetta",
-    "type-question": "Minkälaista palautetta haluat antaa?",
-    "types": {
-      "kehitysehdotus": "Kehitysehdotus",
-      "kehu": "Kehu",
-      "moite": "Moite",
-      "vika": "Tekninen vika tai ongelma"
-    },
-    "wants-contact": "Haluan, että minuun otetaan yhteyttä"
-  },
-  "footer": {
-    "cooperation-title": "Osaamispolku on toteutettu yhteistyössä seuraavien tahojen toimesta",
-    "copyright": "© Osaamispolku 2026. Kaikki oikeudet pidätetään.",
-    "feedback-button-label": "Anna palautetta",
-    "feedback-content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeitasi. Anna meille palautetta ja huomioimme sen kehitystyössä.",
-    "feedback-title": "Kerro meille mitä pidit palvelusta!",
-    "funding-title": "Palvelu on rahoitettu EU:n elpymis- ja palautumistukivälineellä (RRF)",
-    "logos": {
-      "keha-label": "KEHA-keskus",
-      "okm-label": "Opetus- ja kulttuuriministeriö",
-      "oph-label": "Opetushallitus",
-      "tem-label": "Työ- ja elinkeinoministeriö"
-    },
-    "more-info-description": "Mietityttääkö tietosuoja tai tekoälyn hyödyntäminen palvelussa? Alta löydät kootusti yleistä tietoa palvelusta ja sen käytöstä.",
-    "more-info-links": {
-      "about-service": "Tietoa palvelusta",
-      "accessibility": "Tietoa saavutettavuudesta",
-      "ai-usage": "Tietoa tekoälyn käytöstä",
-      "data-sources": "Datalähteet",
-      "privacy-and-cookies": "Tietosuojaseloste ja evästeet"
-    },
-    "more-info-title": "Haluatko tietää lisää Osaamispolusta?"
-  },
   "front-page": "Etusivu",
   "home": {
     "description": "Aloita vastaamalla muutamaan itsearviointikysymykseen. Saat tämän jälkeen harjoitustehtäviä itsesi kehittämiseen.",
     "info": "Tehtävät on suunniteltu tukemaan omaa pohdintaasi. Vastaukset eivät tallennu Osaamispolun osaamisprofiiliin, mutta voit ladata tekemäsi tehtävät PDF-muodossa itsellesi.",
     "title": "Tunnista vahvuutesi ja kehityskohteesi Urataitojen itsearvioinnin avulla"
   },
-  "language-selection": "Käyttökieli",
-  "main-navigation": "Päänavigaatio",
-  "menu": "Valikko",
   "my-competence-path": "Osaamispolkuni",
   "nav": {
-    "copy-results-to-link": "Kopioi linkki keskeneräiseen kyselyyn",
+    "copy-results-to-link": "Kopio linkki keskeneräiseen kyselyyn",
     "service-info": "Tietoa palvelusta"
   },
   "navigation": {
-    "external": {
-      "ohjaaja": {
-        "description": "Tietoja ja materiaaleja ohjaukseen",
-        "label": "Ohjaajan osio"
-      },
-      "osaamispolku": {
-        "description": "Henkilökohtainen osaamispolku",
-        "label": "Osaamispolkuni"
-      },
-      "tietopalvelu": {
-        "description": "Tietoa päätöksenteon tueksi",
-        "label": "Tietopalvelu"
-      },
-      "title": "Osaamispolun sisältökokonaisuudet"
-    },
     "menu-section-title": "Urataidot-työkalu"
   },
-  "navigation-menu": "Valikko",
-  "no-match": {
-    "description": "Etsimääsi sivua ei löytynyt tai linkki on vanhentunut. Tarkista osoite, avaa valikko tai siirry etusivulle.",
-    "go-home": "Siirry etusivulle",
-    "title": "Hups! Sivua ei löytynyt"
-  },
-  "note": {
-    "close": "Sulje"
-  },
-  "open-submenu": "Avaa alivalikko",
-  "osaamispolku": "Osaamispolku",
   "pdf": {
     "all-exercises-document": "Urataidot - Kaikki tehtävät",
     "career-management-skills-report": "Urasuunnittelutaitojen itsearviointi -raportti",
@@ -2304,11 +2000,7 @@
     "description": "Urataidot on digitaalinen työkalu, joka auttaa sinua arvioimaan ja kehittämään urasuunnittelutaitojasi. Vastaamalla itsearviointikysymyksiin voit selvittää, missä urasuunnittelutaidoissa olet vahva ja mitä taitoja sinun kannattaisi kehittää.\n\nItsearvioinnin jälkeen saat vastaustesi perusteella harjoitustehtäväehdotuksia, joiden avulla voit kehittää urasuunnittelutaitojasi.\n\nTyökalu on maksuton ja sitä käytetään ilman kirjautumista. Vastauksesi säilyvät, kunnes suljet selainikkunan. Voit tallentaa itsearvioinnin yhteenvedon linkkinä tai PDF-muodossa. Tehdyt harjoitustehtävät voit tallentaa PDF-muodossa.\n\nUrataidot-työkalu on toteutettu osana työ- ja elinkeinoministeriön ja KEHA-keskuksen Urasuunnittelutaitojen edistämishanketta. Työkalun toteuttajana oli Hyria. Hankkeen rahoitus tuli EU:n elpymis- ja palautumistukivälineestä (RRF).\n",
     "title": "Urataidot-työkalu"
   },
-  "show-all": "Näytä kaikki",
   "slugs": {
-    "about-service": "tietoa-palvelusta",
-    "accessibility": "tietoa-saavutettavuudesta",
-    "ai-usage": "tietoa-tekoalyn-kaytosta",
     "alternative-paths": "tietoa-saavutettavuudesta",
     "anticipate-the-future": "ennakoidaan-tulevaa",
     "application-of-competence": "osaamisen-soveltaminen",
@@ -2321,7 +2013,6 @@
     "competence-and-strengths": "osaaminen-ja-vahvuudet",
     "competence-first": "osaaminen-edella",
     "creativity": "luovuus",
-    "data-sources": "datalahteet",
     "decision-making": "paatoksenteko",
     "development-areas": "kehittymiskohteet",
     "dreams-and-visions": "haaveet-ja-unelmat",
@@ -2344,7 +2035,6 @@
     "my-life-story": "oma-elamantarina",
     "opportunities-and-constraints": "mahdollisuudet-ja-reunaehdot",
     "preparedness": "varautuminen",
-    "privacy-and-cookies": "tietosuojaseloste-ja-evasteet",
     "problem-solving": "ongelmanratkaisu",
     "quick-self-evaluation": "pikaitsearviointi",
     "ready-for-change": "valmiina-muutoksiin",
@@ -2360,6 +2050,5 @@
     "uncertainty-tolerance": "epavarmuuden-sietaminen",
     "values": "arvot",
     "world-around-you": "maailma-ymparillasi"
-  },
-  "what-interests-you": {}
+  }
 }
