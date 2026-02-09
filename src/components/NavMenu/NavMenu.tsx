@@ -63,24 +63,24 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
 
   const externalLinkSections: ExternalLinkSection[] = [
     {
-      title: t('navigation.external.title'),
+      title: t('common:navigation.external.title'),
       linkItems: [
         {
-          label: t('navigation.external.osaamispolku.label'),
+          label: t('common:navigation.external.yksilo.label'),
           url: `/yksilo/${language}`,
-          description: t('navigation.external.osaamispolku.description'),
+          description: t('common:navigation.external.yksilo.description'),
           accentColor: '#006DB3',
         },
         {
-          label: t('navigation.external.ohjaaja.label'),
+          label: t('common:navigation.external.ohjaaja.label'),
           url: `/ohjaaja/${language}`,
-          description: t('navigation.external.ohjaaja.description'),
+          description: t('common:navigation.external.ohjaaja.description'),
           accentColor: '#00818A',
         },
         {
-          label: t('navigation.external.tietopalvelu.label'),
+          label: t('common:navigation.external.tietopalvelu.label'),
           url: `/tietopalvelu/${language}`,
-          description: t('navigation.external.tietopalvelu.description'),
+          description: t('common:navigation.external.tietopalvelu.description'),
           accentColor: '#AD4298',
         },
       ],
@@ -92,9 +92,9 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       open={open}
       portalLinkComponent={PortalLink}
       menuSection={menuSection}
-      ariaCloseMenu={t('close-menu')}
-      openSubMenuLabel={t('open-submenu')}
-      portalLinkLabel={t('competency-path-portal')}
+      ariaCloseMenu={t('common:close-menu')}
+      openSubMenuLabel={t('common:open-submenu')}
+      portalLinkLabel={t('common:competency-path-portal')}
       onClose={onClose}
       selectedLanguage={language}
       languageSelectionItems={languageSelectionItems}
@@ -116,11 +116,11 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
           </div>
         </button>
       }
-      languageSelectionTitle={t('language-selection')}
+      languageSelectionTitle={t('common:language-selection')}
       serviceVariant="ohjaaja"
-      externalLinkIconAriaLabel={t('external-link')}
-      ariaLabel={t('navigation-menu')}
-      navigationAriaLabel={t('main-navigation')}
+      externalLinkIconAriaLabel={t('common:external-link')}
+      ariaLabel={t('common:navigation-menu')}
+      navigationAriaLabel={t('common:main-navigation')}
     />
   );
 };

@@ -85,4 +85,5 @@ jobs:
             --exclude "emoji-datasource-twitter/*" \
             --exclude "fonts/*" \
             --exclude "videos/*" \
+            --exclude "i18n/*" \
             --delete --cache-control "public,max-age=0,s-maxage=60,must-revalidate" . s3://${{ secrets.JOD_AWS_DIST_BUCKET }}/urataidot
