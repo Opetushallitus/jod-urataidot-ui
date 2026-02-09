@@ -1,9 +1,0 @@
-{
-  "error": {
-    "form": {
-      "email": "Check the email address",
-      "required": "Mandatory field"
-    }
-  },
-  "required": "mandatory"
-}
