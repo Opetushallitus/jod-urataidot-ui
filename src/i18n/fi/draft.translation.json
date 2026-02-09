@@ -1,9 +1,0 @@
-{
-  "error": {
-    "form": {
-      "email": "Tarkista sähköpostiosoite",
-      "required": "Pakollinen kenttä"
-    }
-  },
-  "required": "pakollinen"
-}
