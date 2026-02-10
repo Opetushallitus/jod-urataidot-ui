@@ -52,15 +52,6 @@ jobs:
           path: coverage/
           retention-days: 30
 
-      - name: Export translations Excel file
-        run: npm run translations:export
-
-      - name: Upload translations Excel artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: translations-excel
-          path: translations-export/jod-urataidot-ui-translations-*.xlsx
-
       - name: Run build
         run: npm run build
 

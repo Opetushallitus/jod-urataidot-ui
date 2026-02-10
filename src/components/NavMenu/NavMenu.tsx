@@ -65,9 +65,9 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       open={open}
       portalLinkComponent={PortalLink}
       menuSection={menuSection}
-      ariaCloseMenu={t('close-menu')}
-      openSubMenuLabel={t('open-submenu')}
-      portalLinkLabel={t('competency-path-portal')}
+      ariaCloseMenu={t('common:close-menu')}
+      openSubMenuLabel={t('common:open-submenu')}
+      portalLinkLabel={t('common:competency-path-portal')}
       onClose={onClose}
       selectedLanguage={language}
       languageSelectionItems={languageSelectionItems}
@@ -84,11 +84,11 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
           </span>
         </button>
       }
-      languageSelectionTitle={t('language-selection')}
+      languageSelectionTitle={t('common:language-selection')}
       serviceVariant="yksilo"
-      externalLinkIconAriaLabel={t('external-link')}
-      ariaLabel={t('navigation-menu')}
-      navigationAriaLabel={t('main-navigation')}
+      externalLinkIconAriaLabel={t('common:external-link')}
+      ariaLabel={t('common:navigation-menu')}
+      navigationAriaLabel={t('common:main-navigation')}
     />
   );
 };

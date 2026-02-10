@@ -1,9 +1,0 @@
-{
-  "error": {
-    "form": {
-      "email": "Kontrollera e-postadressen",
-      "required": "Obligatoriskt fält"
-    }
-  },
-  "required": "obligatorisk"
-}
