@@ -2034,6 +2034,21 @@
     "service-info": "Om tjänsten"
   },
   "navigation": {
+    "external": {
+      "ohjaaja": {
+        "description": "Information och material för vägledning",
+        "label": "Vägledar-delen"
+      },
+      "osaamispolku": {
+        "description": "Personlig kompetensstig",
+        "label": "Min kompetensstig"
+      },
+      "tietopalvelu": {
+        "description": "Information till stöd för beslutsfattande",
+        "label": "Informationstjänst"
+      },
+      "title": "Uppsättningar av innehåll"
+    },
     "menu-section-title": "Verktyget Karriärkompetenser"
   },
   "navigation-menu": "Meny",
