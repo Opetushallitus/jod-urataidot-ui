@@ -1,5 +1,6 @@
 import { Toast } from '@jod/design-system';
 import { Toast as ReactHotToast, useToaster } from 'react-hot-toast/headless';
+import { createPortal } from 'react-dom';
 import './toaster.css';
 
 type SafeToast = Omit<ReactHotToast, 'message'> & { message: string };
@@ -13,10 +14,10 @@ export const Toaster = () => {
   // Margin to edges is 32px according to design
   const topClass = window.scrollY > 0 ? 'top-[100px]' : 'top-[136px]';
 
-  return (
+  const toasterContent = (
     <div
       role="alert"
-      className={`fixed ${topClass} right-7 z-60 flex flex-col gap-4`}
+      className={`fixed ${topClass} right-7 z-100 flex flex-col gap-4`}
       onMouseEnter={startPause}
       onMouseLeave={endPause}
     >
@@ -29,4 +30,13 @@ export const Toaster = () => {
         ))}
     </div>
   );
+
+  // Render inside dialog if it exists (when nav menu is open)
+  const dialogElement = document.querySelector('dialog[open]');
+
+  if (dialogElement) {
+    return createPortal(toasterContent, dialogElement);
+  }
+
+  return toasterContent;
 };

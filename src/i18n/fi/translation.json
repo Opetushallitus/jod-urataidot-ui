@@ -2227,10 +2227,25 @@
   "menu": "Valikko",
   "my-competence-path": "Osaamispolkuni",
   "nav": {
-    "copy-results-to-link": "Kopio linkki keskeneräiseen kyselyyn",
+    "copy-results-to-link": "Kopioi linkki keskeneräiseen kyselyyn",
     "service-info": "Tietoa palvelusta"
   },
   "navigation": {
+    "external": {
+      "ohjaaja": {
+        "description": "Tietoja ja materiaaleja ohjaukseen",
+        "label": "Ohjaajan osio"
+      },
+      "osaamispolku": {
+        "description": "Henkilökohtainen osaamispolku",
+        "label": "Osaamispolkuni"
+      },
+      "tietopalvelu": {
+        "description": "Tietoa päätöksenteon tueksi",
+        "label": "Tietopalvelu"
+      },
+      "title": "Osaamispolun sisältökokonaisuudet"
+    },
     "menu-section-title": "Urataidot-työkalu"
   },
   "navigation-menu": "Valikko",

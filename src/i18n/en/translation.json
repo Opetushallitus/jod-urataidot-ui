@@ -2035,6 +2035,21 @@
     "service-info": "About the service"
   },
   "navigation": {
+    "external": {
+      "ohjaaja": {
+        "description": "Tietoja ja materiaaleja ohjaukseen",
+        "label": "Ohjaajan osio"
+      },
+      "osaamispolku": {
+        "description": "Henkilökohtainen osaamispolku",
+        "label": "Osaamispolkuni"
+      },
+      "tietopalvelu": {
+        "description": "Tietoa päätöksenteon tueksi",
+        "label": "Tietopalvelu"
+      },
+      "title": "Sisältökokonaisuudet"
+    },
     "menu-section-title": "Self-assessment of career skills"
   },
   "navigation-menu": "Menu",
