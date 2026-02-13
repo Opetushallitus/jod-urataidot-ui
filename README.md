@@ -26,6 +26,14 @@ Clone the repository and run <code>npm install</code> and <code>npm exec allow-s
 
 Third-party assets such as images, fonts, and icons are stored in a S3 bucket. Guide to download assets is available in the infrastructure repository.
 
+## Updating JOD Design System
+
+To update the JOD Design System to the latest version:
+
+1. Check the latest release in the [JOD Design System GitHub repository](https://github.com/Opetushallitus/jod-design-system/releases)
+2. Update the `@jod/design-system` dependency URL in `package.json` to point to the latest release `.tgz` file
+3. Run `npm install` to install the updated version
+
 ### Technologies
 
 - [React](https://react.dev/), [Vite](https://vitejs.dev/) and [Typescript](https://www.typescriptlang.org/) are used to build the UI
