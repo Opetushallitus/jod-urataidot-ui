@@ -1,7 +1,12 @@
-import i18n from '@/i18n/config';
+import i18n, { LangCode } from '@/i18n/config';
 import { Section, SkillArea } from './content-types';
 
-export const getNextQuestionSlug = (questionId: number, sections: Section[], currentSection: Section) => {
+export const getNextQuestionSlug = (
+  questionId: number,
+  sections: Section[],
+  currentSection: Section,
+  lng: LangCode,
+) => {
   const nextQuestion = currentSection?.questions.find((question) => question.id === questionId + 1);
   if (nextQuestion) {
     return `../${nextQuestion.id.toString()}`;
@@ -11,7 +16,7 @@ export const getNextQuestionSlug = (questionId: number, sections: Section[], cur
   if (nextSection) {
     return `../../${nextSection.slug}/1`;
   }
-  return `../../${i18n.t('slugs.feedback')}`;
+  return `../../${i18n.t('slugs.feedback', { lng })}`;
 };
 
 export const getPrevQuestionSlug = (

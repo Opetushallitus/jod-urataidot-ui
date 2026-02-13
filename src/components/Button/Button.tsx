@@ -43,7 +43,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       'cursor-pointer': !disabled,
       'cursor-not-allowed': disabled,
       'justify-center gap-3': icon,
-      [className ?? '']: true,
+      className,
     });
 
     const textClasses = cx({

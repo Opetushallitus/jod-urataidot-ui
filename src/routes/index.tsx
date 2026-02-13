@@ -78,7 +78,7 @@ const skillAreaRoutes = supportedLanguageCodes.reduce(
                   skillArea={skillArea}
                   section={section}
                   prevUrl={getPrevQuestionSlug(question.id, skillArea.sections, section, skillArea)}
-                  nextUrl={getNextQuestionSlug(question.id, skillArea.sections, section)}
+                  nextUrl={getNextQuestionSlug(question.id, skillArea.sections, section, lng)}
                 />
               ),
             })),
