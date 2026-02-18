@@ -59,7 +59,7 @@
     "emoji-datasource-twitter": "^16.0.0",
     "emoji-picker-react": "^4.16.1",
     "html-react-parser": "^5.2.11",
-    "i18next": "^25.7.4",
+    "i18next": "^25.8.5",
     "i18next-chained-backend": "^5.0.2",
     "i18next-http-backend": "^3.0.2",
     "i18next-resources-to-backend": "^1.2.1",
