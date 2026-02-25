@@ -962,7 +962,7 @@
                     "title": "Kirjoita alle 3–5 asiaa, joita toivot tulevaisuudeltasi."
                   },
                   "2": {
-                    "description": "Missä olet ja mitä teet? \nKetkä ovat ympärilläsi? \nMiltä sinusta tuntuu?  \nMitä olet saavuttanut?",
+                    "description": "Missä olet ja mitä teet? \nKetkä ovat ympärill��si? \nMiltä sinusta tuntuu?  \nMitä olet saavuttanut?",
                     "title": "Valitse listaltasi yksi tulevaisuuden unelma, jonka haluaisit visualisoida. Sulje sitten silmäsi ja kuvittele, miltä elämäsi näyttää, kun tämä unelma on toteutunut. Kirjaa alle tärkeimmät ajatukset."
                   },
                   "3": {
@@ -1947,7 +1947,7 @@
     "info": "Tehtävät on suunniteltu tukemaan omaa pohdintaasi. Vastaukset eivät tallennu Osaamispolun osaamisprofiiliin, mutta voit ladata tekemäsi tehtävät PDF-muodossa itsellesi.",
     "title": "Tunnista vahvuutesi ja kehityskohteesi Urataitojen itsearvioinnin avulla"
   },
-  "my-competence-path": "Osaamispolkuni",
+  "my-competence-path": "Oma Osaamispolku",
   "nav": {
     "copy-results-to-link": "Kopio linkki keskeneräiseen kyselyyn",
     "service-info": "Tietoa palvelusta"
