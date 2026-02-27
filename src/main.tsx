@@ -12,7 +12,7 @@ export const router = createBrowserRouter(routes, {
 
 const root = createRoot(document.getElementById('root')!);
 
-if (process.env.NODE_ENV !== 'production') {
+if (import.meta.env.NODE_ENV !== 'production') {
   void import('web-vitals').then((vitals) => {
     const warnOnlyNegativeMetrics = (metric: Metric) => {
       if (metric.rating !== 'good') {
