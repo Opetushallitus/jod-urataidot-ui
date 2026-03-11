@@ -40,6 +40,21 @@ const Root = () => {
     },
   ];
 
+  const socialMedia: React.ComponentProps<typeof Footer>['socialMedia'] = {
+    facebook: {
+      href: 'https://www.facebook.com/osaamispolku',
+      label: t('common:footer.social-media.facebook'),
+    },
+    instagram: {
+      href: 'https://www.instagram.com/osaamispolku/',
+      label: t('common:footer.social-media.instagram'),
+    },
+    linkedin: {
+      href: 'https://www.linkedin.com/company/osaamispolku',
+      label: t('common:footer.social-media.linkedin'),
+    },
+  };
+
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const [feedbackVisible, setFeedbackVisible] = React.useState(false);
 
@@ -105,6 +120,7 @@ const Root = () => {
         feedbackBgImageClassName="bg-[url(@/../assets/feedback.jpg)] bg-cover bg-[50%_50%]"
         copyright={t('common:footer.copyright')}
         externalLinkIconAriaLabel={t('common:external-link')}
+        socialMedia={socialMedia}
         testId="footer"
       />
       <FeedbackModal
