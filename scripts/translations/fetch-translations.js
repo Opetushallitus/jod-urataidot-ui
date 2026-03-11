@@ -49,6 +49,8 @@ function fetchFromUrl(url) {
           return;
         }
 
+        response.setEncoding('utf-8');
+
         let data = '';
         response.on('data', (chunk) => {
           data += chunk;
