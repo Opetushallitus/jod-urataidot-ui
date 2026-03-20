@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
 import { configDefaults } from 'vitest/config';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
-import react from '@vitejs/plugin-react-swc';
+import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 import { fileURLToPath } from 'node:url';
 
