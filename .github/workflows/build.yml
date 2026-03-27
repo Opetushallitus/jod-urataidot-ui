@@ -32,6 +32,9 @@ jobs:
       - name: Run Prettier
         run: npx prettier . --check
 
+      - name: Run Translation check
+        run: npm run translations:check
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v6
         with:
