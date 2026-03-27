@@ -38,7 +38,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         variant === 'filled',
       'text-primary-contrast bg-primary-muted hover:bg-primary-muted-hover disabled:[&:not([data-loading])]:bg-neutral-5':
         variant === 'soft',
-      'text-black hover:text-primary bg-white disabled:[&:not([data-loading])]:bg-white': variant === 'simple',
+      'text-primary-gray hover:text-primary bg-white disabled:[&:not([data-loading])]:bg-white': variant === 'simple',
       'text-primary-contrast disabled:[&:not([data-loading])]:bg-transparent': variant === 'plain',
       'cursor-pointer': !disabled,
       'cursor-not-allowed': disabled,
