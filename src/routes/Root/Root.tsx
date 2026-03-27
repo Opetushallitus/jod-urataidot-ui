@@ -63,7 +63,7 @@ const Root = () => {
   }, [language]);
 
   return (
-    <div className="bg-bg-gray flex min-h-screen flex-col">
+    <div className="bg-bg-gray text-primary-gray flex min-h-screen flex-col">
       <title>{t('common.app-name')}</title>
       <link rel="manifest" href={`/manifest-${language}.json`} crossOrigin="use-credentials" />
       <header role="banner" className="sticky top-0 z-50 print:hidden">
