@@ -2,6 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test('exercises can be filtered and opened', async ({ page }) => {
   await page.goto('/urataidot/');
+  await page.getByText('Hyväksy kaikki').click();
   await page.getByText('Valikko').click();
   await page.getByRole('link', { name: 'Tehtäväpankki' }).click();
   await page.getByRole('link', { name: 'Tehtävä Opi kuvailemaan' }).click();
@@ -20,6 +21,7 @@ test('exercises can be filtered and opened', async ({ page }) => {
 
 test('exercise pdf can be downloaded', async ({ page }) => {
   await page.goto('http://localhost:5173/urataidot/fi/tehtavat');
+  await page.getByText('Hyväksy kaikki').click();
   await page
     .getByRole('link', { name: 'Tehtävä Opi tunnistamaan omaan tilanteeseen sopivia mahdollisuuksia Maailma ymp' })
     .click();
