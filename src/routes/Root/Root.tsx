@@ -2,7 +2,17 @@ import React from 'react';
 import { NavMenu, FeedbackModal } from '@/components';
 import { useTranslation } from 'react-i18next';
 import { Link, Outlet, ScrollRestoration } from 'react-router';
-import { Chatbot, Footer, LanguageButton, MatomoTracker, MenuButton, NavigationBar } from '@jod/design-system';
+import {
+  Chatbot,
+  CookieConsentGuard,
+  CookieConsentProvider
+  Footer,
+  LanguageButton,
+  MatomoTracker,
+  MenuButton,
+  NavigationBar,
+  useCookieConsent,
+} from '@jod/design-system';
 import { LangCode, langLabels, supportedLanguageCodes } from '@/i18n/config';
 import { Toaster } from '@/components/Toaster/Toaster';
 
@@ -61,6 +71,8 @@ const Root = () => {
   React.useEffect(() => {
     document.documentElement.setAttribute('lang', language);
   }, [language]);
+
+  const { open: openCookieConsent } = useCookieConsent();
 
   return (
     <div className="bg-bg-gray text-primary-gray flex min-h-screen flex-col">
@@ -122,6 +134,8 @@ const Root = () => {
         externalLinkIconAriaLabel={t('common:external-link')}
         socialMedia={socialMedia}
         testId="footer"
+        cookieSettingsLabel={t('common:footer.cookie-settings-label')}
+        onCookieSettingsClick={() => openCookieConsent()}
       />
       <FeedbackModal
         isOpen={feedbackVisible}
@@ -136,9 +150,45 @@ const Root = () => {
           return location.pathname;
         }}
       />
-      <MatomoTracker trackerUrl="https://analytiikka.opintopolku.fi" siteId={siteId} pathname={location.pathname} />
+      <CookieConsentGuard categories={['statistics']}>
+        <MatomoTracker trackerUrl="https://analytiikka.opintopolku.fi" siteId={siteId} pathname={location.pathname} />
+      </CookieConsentGuard>
     </div>
   );
 };
 
-export default Root;
+const RootWithCookieConsentProvider = () => {
+  const { t } = useTranslation();
+
+  return (
+    <CookieConsentProvider
+      serviceVariant="yksilo"
+      translations={{
+        guard: {
+          buttonLabel: t('common:cookie-consent.guard.buttonLabel'),
+          description: t('common:cookie-consent.guard.description'),
+          title: t('common:cookie-consent.guard.title'),
+        },
+        modal: {
+          acceptAllLabel: t('common:cookie-consent.modal.acceptAllLabel'),
+          cookiesCategoriesNecessary: t('common:cookie-consent.modal.cookiesCategoriesNecessary'),
+          cookiesCategoriesAnalytics: t('common:cookie-consent.modal.cookiesCategoriesAnalytics'),
+          cookiesCategoriesThirdParty: t('common:cookie-consent.modal.cookiesCategoriesThirdParty'),
+          cookieCategoriesLabel: t('common:cookie-consent.modal.cookieCategoriesLabel'),
+          currentSelectionLabel: t('common:cookie-consent.modal.currentSelectionLabel'),
+          declineOptionalLabel: t('common:cookie-consent.modal.declineOptionalLabel'),
+          description: t('common:cookie-consent.modal.description'),
+          hereLabel: t('common:cookie-consent.modal.hereLabel'),
+          name: t('common:cookie-consent.modal.name'),
+          readMoreHref: t('common:cookie-consent.modal.readMoreHref'),
+          readMoreLabel: t('common:cookie-consent.modal.readMoreLabel'),
+          title: t('common:cookie-consent.modal.title'),
+        },
+      }}
+    >
+      <Root />
+    </CookieConsentProvider>
+  );
+};
+
+export default RootWithCookieConsentProvider;
