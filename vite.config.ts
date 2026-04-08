@@ -15,27 +15,23 @@ export default defineConfig({
         {
           src: 'assets/urataidot/videos/*',
           dest: 'videos',
+          rename: { stripBase: true },
+        },
+        {
+          src: 'assets/urataidot/videos/placeholders/*',
+          dest: 'videos/placeholders',
+          rename: { stripBase: true },
         },
         {
           src: 'assets/urataidot/fonts/*',
           dest: 'fonts',
+          rename: { stripBase: true },
         },
-        {
-          src: 'node_modules/emoji-datasource-apple/img/apple/64/*',
-          dest: 'emoji-datasource-apple/img/apple/64',
-        },
-        {
-          src: 'node_modules/emoji-datasource-facebook/img/facebook/64/*',
-          dest: 'emoji-datasource-facebook/img/facebook/64',
-        },
-        {
-          src: 'node_modules/emoji-datasource-twitter/img/twitter/64/*',
-          dest: 'emoji-datasource-twitter/img/twitter/64',
-        },
-        {
-          src: 'node_modules/emoji-datasource-google/img/google/64/*',
-          dest: 'emoji-datasource-google/img/google/64',
-        },
+        ...['apple', 'facebook', 'twitter', 'google'].map((provider) => ({
+          src: `node_modules/emoji-datasource-${provider}/img/${provider}/64/*`,
+          dest: `emoji-datasource-${provider}/img/${provider}/64`,
+          rename: { stripBase: true as const },
+        })),
       ],
     }),
     svgr({
