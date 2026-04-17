@@ -15,6 +15,27 @@ import {
 import { LangCode, langLabels, supportedLanguageCodes } from '@/i18n/config';
 import { Toaster } from '@/components/Toaster/Toaster';
 
+const LanguageButtonWrapper = () => {
+  const {
+    i18n: { language },
+  } = useTranslation();
+  return (
+    <LanguageButton
+      serviceVariant="yksilo"
+      testId="language-button"
+      language={language as LangCode}
+      supportedLanguageCodes={supportedLanguageCodes}
+      generateLocalizedPath={(lng: string) => `/${lng}`}
+      linkComponent={Link}
+      translations={{
+        fi: { change: 'Vaihda kieli.', label: langLabels.fi },
+        sv: { change: 'Andra språk.', label: langLabels.sv },
+        en: { change: 'Change language.', label: langLabels.en },
+      }}
+    />
+  );
+};
+
 const Root = () => {
   const {
     t,
@@ -81,21 +102,7 @@ const Root = () => {
         <NavigationBar
           logo={{ to: `/${language}`, language, srText: t('common:osaamispolku') }}
           menuComponent={<MenuButton onClick={() => setNavMenuOpen(!navMenuOpen)} label={t('common:menu')} />}
-          languageButtonComponent={
-            <LanguageButton
-              serviceVariant="yksilo"
-              testId="language-button"
-              language={language as LangCode}
-              supportedLanguageCodes={supportedLanguageCodes}
-              generateLocalizedPath={(lng: string) => `/${lng}`}
-              linkComponent={Link}
-              translations={{
-                fi: { change: 'Vaihda kieli.', label: langLabels.fi },
-                sv: { change: 'Andra språk.', label: langLabels.sv },
-                en: { change: 'Change language.', label: langLabels.en },
-              }}
-            />
-          }
+          languageButtonComponent={<LanguageButtonWrapper />}
           renderLink={({ to, className, children }) => (
             <Link to={to} className={className}>
               {children as React.ReactNode}
@@ -159,7 +166,7 @@ const RootWithCookieConsentProvider = () => {
 
   return (
     <CookieConsentProvider
-      serviceVariant="yksilo"
+      languageButtonComponent={<LanguageButtonWrapper />}
       translations={{
         guard: {
           buttonLabel: t('common:cookie-consent.guard.buttonLabel'),
@@ -174,10 +181,10 @@ const RootWithCookieConsentProvider = () => {
           currentSelectionLabel: t('common:cookie-consent.modal.currentSelectionLabel'),
           declineOptionalLabel: t('common:cookie-consent.modal.declineOptionalLabel'),
           description: t('common:cookie-consent.modal.description'),
-          hereLabel: t('common:cookie-consent.modal.hereLabel'),
           name: t('common:cookie-consent.modal.name'),
           readMoreHref: t('common:cookie-consent.modal.readMoreHref'),
           readMoreLabel: t('common:cookie-consent.modal.readMoreLabel'),
+          externalLinkIconAriaLabel: t('common:external-link'),
           statisticsDescription: t('common:cookie-consent.modal.statisticsDescription'),
           title: t('common:cookie-consent.modal.title'),
         },
