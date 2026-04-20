@@ -15,7 +15,7 @@ import {
 import { LangCode, langLabels, supportedLanguageCodes } from '@/i18n/config';
 import { Toaster } from '@/components/Toaster/Toaster';
 
-const LanguageButtonWrapper = () => {
+const LanguageButtonWrapper = ({ responsive }: { responsive?: boolean }) => {
   const {
     i18n: { language },
   } = useTranslation();
@@ -27,6 +27,7 @@ const LanguageButtonWrapper = () => {
       supportedLanguageCodes={supportedLanguageCodes}
       generateLocalizedPath={(lng: string) => `/${lng}`}
       linkComponent={Link}
+      responsive={responsive}
       translations={{
         fi: { change: 'Vaihda kieli.', label: langLabels.fi },
         sv: { change: 'Andra språk.', label: langLabels.sv },
@@ -166,7 +167,7 @@ const RootWithCookieConsentProvider = () => {
 
   return (
     <CookieConsentProvider
-      languageButtonComponent={<LanguageButtonWrapper />}
+      languageButtonComponent={<LanguageButtonWrapper responsive={false} />}
       translations={{
         guard: {
           buttonLabel: t('common:cookie-consent.guard.buttonLabel'),
