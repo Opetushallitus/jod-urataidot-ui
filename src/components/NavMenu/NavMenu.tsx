@@ -7,13 +7,13 @@ import { useMenuRoutes } from './menuRoutes';
 import { JodCheckmark, JodLink } from '@jod/design-system/icons';
 import toast from 'react-hot-toast/headless';
 
-const PortalLink = ({ children, className }: LinkComponent) => {
+const PortalLink = ({ children, className, rel, target }: LinkComponent) => {
   const {
     i18n: { language },
   } = useTranslation();
 
   return (
-    <a href={`/${language}`} className={className}>
+    <a href={`/${language}`} className={className} rel={rel} target={target}>
       {children}
     </a>
   );
