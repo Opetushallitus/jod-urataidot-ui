@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavMenu, FeedbackModal } from '@/components';
 import { useTranslation } from 'react-i18next';
 import { Link, Outlet, ScrollRestoration } from 'react-router';
+
 import {
   Chatbot,
   CookieConsentProvider,
@@ -12,8 +12,10 @@ import {
   NavigationBar,
   useCookieConsent,
 } from '@jod/design-system';
-import { LangCode, langLabels, supportedLanguageCodes } from '@/i18n/config';
+
+import { NavMenu, FeedbackModal } from '@/components';
 import { Toaster } from '@/components/Toaster/Toaster';
+import { LangCode, langLabels, supportedLanguageCodes } from '@/i18n/config';
 
 const LanguageButtonWrapper = ({ responsive }: { responsive?: boolean }) => {
   const {
@@ -96,7 +98,7 @@ const Root = () => {
   const { open: openCookieConsent } = useCookieConsent();
 
   return (
-    <div className="bg-bg-gray text-primary-gray flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-bg-gray text-primary-gray">
       <title>{t('common.app-name')}</title>
       <link rel="manifest" href={`/manifest-${language}.json`} crossOrigin="use-credentials" />
       <header role="banner" className="sticky top-0 z-50 print:hidden">

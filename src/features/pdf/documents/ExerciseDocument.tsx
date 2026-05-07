@@ -1,3 +1,6 @@
+import { Document } from '@react-pdf/renderer';
+import { useTranslation } from 'react-i18next';
+
 import { EmojiExercise, Exercise, MediaExercise, SelectExercise, TextExercise } from '@/lib/content-types';
 import {
   EmojiExerciseAnswer,
@@ -6,8 +9,7 @@ import {
   SelectExerciseAnswer,
   TextExerciseAnswer,
 } from '@/stores/exerciseAnswersStore';
-import { Document } from '@react-pdf/renderer';
-import { useTranslation } from 'react-i18next';
+
 import { EmojiExercisePage } from './exercise/EmojiExercisePage';
 import { MediaExercisePage } from './exercise/MediaExercisePage';
 import { SelectExercisePage } from './exercise/SelectExercisePage';

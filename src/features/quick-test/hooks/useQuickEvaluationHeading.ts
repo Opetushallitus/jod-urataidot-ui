@@ -1,5 +1,6 @@
-import { SkillAreaID } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
+
+import { SkillAreaID } from '@/lib/content-types';
 
 export const useQuickEvaluationHeading = (id: SkillAreaID) => {
   const { t } = useTranslation();

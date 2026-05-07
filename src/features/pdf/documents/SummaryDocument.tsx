@@ -1,12 +1,14 @@
-import { PDFSpiderDiagram } from '../components/PDFSpiderDiagram';
-import { PDFBarDiagram } from '../components/PDFBarDiagram';
+import { Document, Page, StyleSheet, View, Text, Font, Image } from '@react-pdf/renderer';
+import { ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import { TotalScoreRecord } from '@/components/SpiderDiagram/SpiderDiagram';
 import i18n from '@/i18n/config';
 import { SkillArea } from '@/lib/content-types';
-import { Document, Page, StyleSheet, View, Text, Font, Image } from '@react-pdf/renderer';
-import { useTranslation } from 'react-i18next';
 import { Answer } from '@/stores/careerPlanningAnswersStore';
-import { ReactNode } from 'react';
+
+import { PDFBarDiagram } from '../components/PDFBarDiagram';
+import { PDFSpiderDiagram } from '../components/PDFSpiderDiagram';
 
 Font.register({
   family: 'Poppins',

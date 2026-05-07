@@ -1,11 +1,13 @@
+import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router';
+
+import { useMediaQueries } from '@jod/design-system';
+
 import { Button, InfoButton, MobileBottomBar, MobileSkillAreaSelector, SkillAreaSelector, Slider } from '@/components';
 import { QuestionProgressBar } from '@/features/career-management/components/QuestionProgressBar';
-import { useMediaQueries } from '@jod/design-system';
 import { ArrowLeft, ArrowRight, Close } from '@/icons';
 import { Question, Section, SkillArea } from '@/lib/content-types';
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
-import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router';
 
 const SkillAreaQuestion = ({
   question,
@@ -33,14 +35,14 @@ const SkillAreaQuestion = ({
 
   const resetQuestionAndGoToNext = () => {
     setScore({ score: undefined, questionId: question.id, sectionId: section.id, skillAreaId: skillArea.id });
-    navigate(nextUrl);
+    void navigate(nextUrl);
   };
 
   // All questions list needed to display the question number (out of X)
   const allQuestions = skillArea.sections.flat().flatMap((s) => s.questions.map((q) => ({ ...q, sectionId: s.id })));
 
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className="max-w-3xl mx-auto">
       <div className="flex items-center justify-center gap-4">
         {sm ? <SkillAreaSelector /> : <MobileSkillAreaSelector />}
       </div>
@@ -49,7 +51,7 @@ const SkillAreaQuestion = ({
           {`${t('career-management.question')} ${allQuestions.findIndex((q) => q.id === question.id && q.sectionId === section.id) + 1}/${allQuestions.length}`}
         </p>
         <div className="flex min-h-[180px] flex-col items-center gap-4 sm:min-h-[160px]">
-          <h1 className="text-heading-3 sm:text-heading-2 text-center">{question.title}</h1>
+          <h1 className="text-center text-heading-3 sm:text-heading-2">{question.title}</h1>
           <InfoButton buttonText={t('career-management.question-info')} title={section.name} info={section.info} />
         </div>
         <Slider

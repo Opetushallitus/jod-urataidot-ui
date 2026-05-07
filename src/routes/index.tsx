@@ -1,32 +1,35 @@
-import { replace, RouteObject, Outlet } from 'react-router';
-import { getNextQuestionSlug, getPrevQuestionSlug } from '@/lib/navigation-helpers';
-import { Home } from '@/routes/Home';
-import { ErrorElement, NoMatch, Root, loader as rootLoader } from '@/routes/Root';
-import { SkillAreaQuestion } from '@/routes/SkillAreaQuestion';
-import { SkillAreaSection } from '@/routes/SkillAreaSection';
-import { SkillAreaSummary } from '@/routes/SkillAreaSummary';
 import { Suspense } from 'react';
+import { replace, RouteObject, Outlet } from 'react-router';
+
+import { NoteStackProvider } from '@jod/design-system';
+
 import { MainLayout } from '@/components';
 import { ExercisePage } from '@/features/exercises/components/Exercise';
+import i18n, { LangCode, supportedLanguageCodes } from '@/i18n/config';
+import { getContents } from '@/lib/content';
+import { SkillArea as SkillAreaContent } from '@/lib/content-types';
+import { getNextQuestionSlug, getPrevQuestionSlug } from '@/lib/navigation-helpers';
 import { CareerPlan } from '@/routes/CareerPlan';
 import { CareerPlanning } from '@/routes/CareerPlanning';
 import { CareerPlanningSummary } from '@/routes/CareerPlanningSummary';
 import { ExercisesPage } from '@/routes/Exercises';
+import { Home } from '@/routes/Home';
 import { ImportCareerPlan } from '@/routes/ImportCareerPlan';
 import { ImportEncodedAnswers } from '@/routes/ImportEncodedAnswers';
 import { QuickSelfEvaluation } from '@/routes/QuickSelfEvaluation';
 import { QuickSelfEvaluationSummary } from '@/routes/QuickSelfEvaluationSummary';
+import { ErrorElement, NoMatch, Root, loader as rootLoader } from '@/routes/Root';
 import { SkillArea } from '@/routes/SkillArea';
+import { SkillAreaQuestion } from '@/routes/SkillAreaQuestion';
+import { SkillAreaSection } from '@/routes/SkillAreaSection';
+import { SkillAreaSummary } from '@/routes/SkillAreaSummary';
 import TestPDF from '@/routes/TestPDF/TestPDF';
-import i18n, { LangCode, supportedLanguageCodes } from '@/i18n/config';
+
 import { ServiceInfo } from './ServiceInfo';
-import { getContents } from '@/lib/content';
-import { SkillArea as SkillAreaContent } from '@/lib/content-types';
-import { NoteStackProvider } from '@jod/design-system';
 
 const pathLang = globalThis.location.pathname.replace(import.meta.env.BASE_URL, '').split('/')[0];
 if (i18n.language !== pathLang && supportedLanguageCodes.includes(pathLang as LangCode)) {
-  i18n.changeLanguage(pathLang);
+  void i18n.changeLanguage(pathLang);
 }
 
 const versionInSession = globalThis.sessionStorage.getItem('content-version');

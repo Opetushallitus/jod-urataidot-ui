@@ -1,3 +1,7 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link, To } from 'react-router';
+
 import { BackButton, Button, MainLayout, MobileBottomBar, Modal } from '@/components';
 import { DownloadPDFButton } from '@/features/pdf/components/DownloadPDFButton';
 import CareerPlanDocument from '@/features/pdf/documents/CareerPlanDocument';
@@ -5,9 +9,6 @@ import { useAllExercises } from '@/hooks/useAllExercises';
 import { Check, Link as LinkIcon } from '@/icons';
 import { ExerciseWithInfo } from '@/lib/content-types';
 import { useCareerPlanAnswersStore } from '@/stores/careerPlanAnswersStore';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link, To } from 'react-router';
 
 const CareerPlan = () => {
   const { t, i18n } = useTranslation();
@@ -248,7 +249,7 @@ const CareerPlan = () => {
 
   return (
     <MainLayout>
-      <div className="mx-auto w-full max-w-3xl">
+      <div className="max-w-3xl mx-auto w-full">
         <Modal title={t('career-plan.done-title')} isOpen={readyModalOpen} close={() => setReadyModalOpen(false)}>
           <p className="max-w-[80ch]">{t('career-plan.feedback')}</p>
           <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row-reverse sm:justify-start">
@@ -363,7 +364,7 @@ const TextArea = ({
             return (
               <span key={e.id + e.title}>
                 <Link
-                  className="text-body-sm text-primary underline"
+                  className="text-primary text-body-sm underline"
                   to={`/${i18n.language}/${t('slugs.exercises')}/${e.skillAreaSlug}/${e.sectionSlug}/${e.id}`}
                 >
                   {e.title}

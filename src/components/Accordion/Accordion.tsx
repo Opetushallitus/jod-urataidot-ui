@@ -1,6 +1,7 @@
-import { ChevronDown } from '@/icons';
 import { Disclosure, DisclosureButton, DisclosurePanel, Transition } from '@headlessui/react';
 import React from 'react';
+
+import { ChevronDown } from '@/icons';
 
 const Accordion = ({
   children,

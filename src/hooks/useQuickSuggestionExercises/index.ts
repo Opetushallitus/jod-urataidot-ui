@@ -1,5 +1,6 @@
 import { ExerciseWithInfo, SkillAreaID, SkillAreaIDValues } from '@/lib/content-types';
 import { AnswerRecordEntry, useQuickSelfEvaluationStore } from '@/stores/quickSelfEvaluationStore';
+
 import useSkillAreas from '../useSkillAreas';
 
 const calcQuickScore = (answer: AnswerRecordEntry) => {

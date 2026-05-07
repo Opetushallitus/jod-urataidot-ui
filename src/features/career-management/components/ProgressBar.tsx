@@ -1,4 +1,4 @@
-export const ProgressBar = ({ percentage = 0 }: { percentage: number }) => {
+export const ProgressBar = ({ percentage = 0 }: { percentage?: number }) => {
   return (
     <div
       role="progressbar"

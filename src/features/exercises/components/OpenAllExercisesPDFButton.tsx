@@ -1,10 +1,11 @@
+import { BlobProvider } from '@react-pdf/renderer';
+import { useTranslation } from 'react-i18next';
+
 import { Button } from '@/components';
 import AllExercisesDocument from '@/features/pdf/documents/AllExercisesDocument';
 import useSkillAreas from '@/hooks/useSkillAreas';
 import { Open } from '@/icons';
 import { useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
-import { BlobProvider } from '@react-pdf/renderer';
-import { useTranslation } from 'react-i18next';
 
 export const OpenAllExercisesPDFButton = ({ hideWhenNoAnswers = false }: { hideWhenNoAnswers?: boolean }) => {
   const { t } = useTranslation();
@@ -58,7 +59,7 @@ export const OpenAllExercisesPDFButton = ({ hideWhenNoAnswers = false }: { hideW
               href={url}
               target="_blank"
               rel="noreferrer"
-              className="group bg-primary font-display hover:bg-primary-hover relative flex min-h-[44px] items-center justify-center gap-3 rounded-full px-5 py-3 font-bold whitespace-nowrap text-white outline-offset-4 hover:underline"
+              className="group bg-primary font-display hover:bg-primary-hover font-bold relative flex min-h-[44px] items-center justify-center gap-3 rounded-full px-5 py-3 whitespace-nowrap text-white outline-offset-4 hover:underline"
             >
               <div className="size-6">
                 <Open />

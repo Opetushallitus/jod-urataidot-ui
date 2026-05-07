@@ -1,14 +1,16 @@
+import { useTranslation } from 'react-i18next';
+
+import { useMediaQueries } from '@jod/design-system';
+
 import { Button, Card, MobileBottomBar, MobileSkillAreaSelector, SkillAreaIcon, SkillAreaSelector } from '@/components';
 import { QuestionProgressBar } from '@/features/career-management/components/QuestionProgressBar';
 import { ExerciseLinkCard } from '@/features/exercises/components/ExerciseLinkCard';
-import { useMediaQueries } from '@jod/design-system';
 import { useNextSkillAreaSlug } from '@/hooks/useNextSkillAreaSlug';
 import { useSkillAreaExercises } from '@/hooks/useSkillAreaExercises';
 import { ArrowLeft, ArrowRight, ChevronRight } from '@/icons';
 import { SkillArea } from '@/lib/content-types';
 import { getLastQuestionUrl } from '@/lib/navigation-helpers';
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
-import { useTranslation } from 'react-i18next';
 
 const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
   const { t } = useTranslation();
@@ -30,13 +32,13 @@ const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
   const exercises = useSkillAreaExercises({ skillAreaId: skillArea.id });
 
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className="max-w-3xl mx-auto">
       <div className="flex items-center justify-center">{sm ? <SkillAreaSelector /> : <MobileSkillAreaSelector />}</div>
       <div className="flex flex-col items-center gap-6 pt-4">
         <div className="flex flex-col items-center gap-6">
           <SkillAreaIcon section={skillArea.id} size="xl" />
 
-          <h1 className="text-heading-3 sm:text-heading-2 text-center">
+          <h1 className="text-center text-heading-3 sm:text-heading-2">
             {t('career-management.skill-area-summary.title', { skillAreaName: skillArea.name })}
           </h1>
           <p className="text-center">{t('career-management.skill-area-summary.description')}</p>
@@ -52,9 +54,9 @@ const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
           </div>
         </div>
 
-        <div className="flex max-w-3xl flex-col gap-4 sm:gap-6">
+        <div className="max-w-3xl flex flex-col gap-4 sm:gap-6">
           <Card>
-            <h3 className="text-heading-3 my-2">{t('career-management.skill-area-summary.feedback-title')}</h3>
+            <h3 className="my-2 text-heading-3">{t('career-management.skill-area-summary.feedback-title')}</h3>
             {feedback ? (
               <p className="mb-6">{feedback.description}</p>
             ) : (
@@ -68,7 +70,7 @@ const SkillAreaSummary = ({ skillArea }: { skillArea: SkillArea }) => {
           </Card>
 
           <Card>
-            <h3 className="text-heading-3 my-2">
+            <h3 className="my-2 text-heading-3">
               {t('career-management.skill-area-summary.exercises-title', { exerciseNumber: exercises.length })}
             </h3>
             <p className="mb-6">{t('career-management.skill-area-summary.exercises-description')}</p>

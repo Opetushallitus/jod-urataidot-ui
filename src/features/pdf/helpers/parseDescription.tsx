@@ -1,8 +1,8 @@
-import { JSX } from 'react/jsx-runtime';
 import { Text, StyleSheet, Font } from '@react-pdf/renderer';
+import parse from 'html-react-parser';
 import { ReactElement, ReactNode } from 'react';
 import { renderToString } from 'react-dom/server';
-import parse from 'html-react-parser';
+import { JSX } from 'react/jsx-runtime';
 
 Font.register({
   family: 'Arimo',

@@ -1,6 +1,6 @@
-import Root from './Root';
 import ErrorElement from './ErrorElement';
-import NoMatch from './NoMatch';
 import loader from './loader';
+import NoMatch from './NoMatch';
+import Root from './Root';
 
 export { loader, Root, ErrorElement, NoMatch };

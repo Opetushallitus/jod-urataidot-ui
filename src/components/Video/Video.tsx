@@ -1,5 +1,6 @@
-import { SkillAreaID } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
+
+import { SkillAreaID } from '@/lib/content-types';
 
 export const Video = ({ skillAreaId, skillAreaName }: { skillAreaId: SkillAreaID; skillAreaName: string }) => {
   const { t, i18n } = useTranslation();
@@ -10,7 +11,7 @@ export const Video = ({ skillAreaId, skillAreaName }: { skillAreaId: SkillAreaID
 
   return (
     // Videos already have open captions in them
-    // eslint-disable-next-line jsx-a11y/media-has-caption
+    // oxlint-disable-next-line jsx_a11y/media-has-caption
     <video
       className="w-full rounded-md"
       controls

@@ -1,8 +1,9 @@
-import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, Navigate } from 'react-router';
 import { useNavigate } from 'react-router';
+
+import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
 
 const ImportEncodedAnswers = () => {
   const { t, i18n } = useTranslation();
@@ -17,10 +18,10 @@ const ImportEncodedAnswers = () => {
       const { error } = setStateWithEncodedData(slicedHash);
 
       if (!error) {
-        navigate(`/${i18n.language}/${t('slugs.career-management')}/${t('slugs.summary')}`);
+        void navigate(`/${i18n.language}/${t('slugs.career-management')}/${t('slugs.summary')}`);
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // oxlint-disable-next-line eslint-plugin-react-hooks/exhaustive-deps
   }, []);
 
   // if the location key is default we want to replace the entry with root to maintain proper navigation

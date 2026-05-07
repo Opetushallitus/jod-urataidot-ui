@@ -1,10 +1,11 @@
-import { BottomDrawer, SkillAreaIcon } from '@/components';
-import useSkillAreas from '@/hooks/useSkillAreas';
-import { ChevronDown } from '@/icons';
 import { cx } from 'cva';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router';
+
+import { BottomDrawer, SkillAreaIcon } from '@/components';
+import useSkillAreas from '@/hooks/useSkillAreas';
+import { ChevronDown } from '@/icons';
 
 export const MobileSkillAreaSelector = () => {
   const { t, i18n } = useTranslation();
@@ -20,7 +21,7 @@ export const MobileSkillAreaSelector = () => {
       <button aria-label={t('career-management.go-to-skill-area')} onClick={() => setIsOpen(true)}>
         <span className="flex h-[44px] items-center gap-3 rounded-md border border-[#00000040] bg-white p-2">
           <SkillAreaIcon section={currentSkillArea?.id ?? 'know-yourself'} size="xs" />
-          <span className="text-button-sm flex-1 text-left sm:min-w-[160px]">{currentSkillArea?.name}</span>
+          <span className="flex-1 text-left text-button-sm sm:min-w-[160px]">{currentSkillArea?.name}</span>
           <span>
             <ChevronDown />
           </span>
@@ -42,13 +43,13 @@ export const MobileSkillAreaSelector = () => {
               key={skillArea.id}
               onClick={() => {
                 setIsOpen(false);
-                navigate({
+                void navigate({
                   pathname: `/${i18n.language}/${t('slugs.career-management')}/${skillArea.slug}`,
                 });
               }}
             >
               <SkillAreaIcon section={skillArea.id} size="xs" />
-              <span className="text-button-sm min-w-[160px] flex-1 text-left">{skillArea.name}</span>
+              <span className="min-w-[160px] flex-1 text-left text-button-sm">{skillArea.name}</span>
             </button>
           ))}
           <button
@@ -58,10 +59,10 @@ export const MobileSkillAreaSelector = () => {
             )}
             onClick={() => {
               setIsOpen(false);
-              navigate(`/${i18n.language}/${t('slugs.career-management')}/${t('slugs.summary')}`);
+              void navigate(`/${i18n.language}/${t('slugs.career-management')}/${t('slugs.summary')}`);
             }}
           >
-            <span className="text-button-sm flex h-7 min-w-[160px] flex-1 items-center px-5 text-left">
+            <span className="flex h-7 min-w-[160px] flex-1 items-center px-5 text-left text-button-sm">
               {t('career-management-summary.title')}
             </span>
           </button>

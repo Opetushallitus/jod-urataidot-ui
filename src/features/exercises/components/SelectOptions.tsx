@@ -1,7 +1,8 @@
-import { Check, ChevronDown } from '@/icons';
 import { cx } from 'cva';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
+import { Check, ChevronDown } from '@/icons';
 
 export const SelectOptions = ({
   options,
@@ -55,7 +56,7 @@ const Chip = ({
 }) => {
   const classes = cx({
     'flex items-center gap-1 rounded-full border border-[#00000040] px-2 py-1': true,
-    'bg-white border-white': !isSelected,
+    'border-white bg-white': !isSelected,
     'border-primary bg-primary-muted text-primary-contrast': isSelected,
   });
   return (

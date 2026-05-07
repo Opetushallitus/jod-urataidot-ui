@@ -1,12 +1,14 @@
-import { SkillArea } from '@/lib/content-types';
-import { SkillAreaIcon } from '../SkillAreaIcon/SkillAreaIcon';
 import { t } from 'i18next';
-import Accordion from '../Accordion/Accordion';
+
 import { ExerciseLinkCard } from '@/features/exercises/components/ExerciseLinkCard';
 import { useSkillAreaExercises } from '@/hooks/useSkillAreaExercises';
-import { Button } from '..';
 import { ChevronRight } from '@/icons';
+import { SkillArea } from '@/lib/content-types';
 import { useSummaryAccordionStore } from '@/stores/summaryAccordionStore';
+
+import { Button } from '..';
+import Accordion from '../Accordion/Accordion';
+import { SkillAreaIcon } from '../SkillAreaIcon/SkillAreaIcon';
 
 export const CareerPlanningSummarySection = ({
   skillArea,
@@ -30,8 +32,8 @@ export const CareerPlanningSummarySection = ({
           <SkillAreaIcon size="md" section={skillArea.id} />
         </div>
         <div className="flex h-full flex-col items-start gap-2">
-          <h3 className="text-heading-3 mt-0">{skillArea.name}</h3>
-          <div className="bg-neutral-4 text-body-sm flex rounded-3xl px-4 py-2 text-wrap">{skillArea.longName}</div>
+          <h3 className="mt-0 text-heading-3">{skillArea.name}</h3>
+          <div className="bg-neutral-4 rounded-3xl flex px-4 py-2 text-body-sm text-wrap">{skillArea.longName}</div>
         </div>
       </div>
       {feedback ? (

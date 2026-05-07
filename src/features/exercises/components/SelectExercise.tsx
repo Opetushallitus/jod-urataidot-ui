@@ -1,14 +1,16 @@
-import { Button, MobileBottomBar } from '@/components';
-import { SelectExercise as SelectExerciseType, SkillAreaID } from '@/lib/content-types';
-import { useTranslation } from 'react-i18next';
-import { SelectOptions } from './SelectOptions';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router';
-import { SelectExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
-import { useEasierExercise } from '@/hooks/useEasierExercise';
+
+import { Button, MobileBottomBar } from '@/components';
 import ExerciseDocument from '@/features/pdf/documents/ExerciseDocument';
+import { useEasierExercise } from '@/hooks/useEasierExercise';
+import { SelectExercise as SelectExerciseType, SkillAreaID } from '@/lib/content-types';
 import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
+import { SelectExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
+
 import { ReadyModal } from './ReadyModal';
+import { SelectOptions } from './SelectOptions';
 
 const SelectExercise = ({
   exercise,
@@ -103,7 +105,7 @@ const SelectExercise = ({
             />
           ))}
       </div>
-      {exercise.afterTitle && <h2 className="text-heading-3 mt-4">{exercise.afterTitle}</h2>}
+      {exercise.afterTitle && <h2 className="mt-4 text-heading-3">{exercise.afterTitle}</h2>}
       {exercise.afterText && <p className="mt-4">{exercise.afterText}</p>}
       <div className="hidden w-full justify-center sm:flex">
         <Button onClick={onDone}>{t('exercises.ready')}</Button>

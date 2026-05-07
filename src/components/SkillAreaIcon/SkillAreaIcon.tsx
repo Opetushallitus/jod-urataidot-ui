@@ -1,5 +1,4 @@
 import { cx } from 'cva';
-import { SkillAreaID } from '@/lib/content-types';
 
 import {
   IconKnowYourself,
@@ -9,6 +8,7 @@ import {
   IconOperationalEnvironment,
   IconOperationalEnvironmentFuture,
 } from '@/icons';
+import { SkillAreaID } from '@/lib/content-types';
 
 const Icon = ({ id, width, x }: { id: SkillAreaID; width: string; x: string }) => {
   switch (id) {

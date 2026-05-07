@@ -1,7 +1,9 @@
+import { createPortal } from 'react-dom';
+
 import { useProgress } from '@/hooks/useProgress';
 import { SkillAreaID } from '@/lib/content-types';
+
 import { ProgressBar } from './ProgressBar';
-import { createPortal } from 'react-dom';
 
 export const QuestionProgressBar = ({
   currentQuestion,

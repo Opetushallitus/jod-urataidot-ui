@@ -33,12 +33,12 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ) => {
     const { t } = useTranslation();
     const classes = cx({
-      'group relative flex items-center min-h-[44px] text-wrap font-bold px-5 py-3 rounded-full outline-offset-4 disabled:[&:not([data-loading])]:text-text-disabled whitespace-nowrap font-display hover:not(disabled):underline': true,
-      'text-white bg-primary hover:bg-primary-hover disabled:[&:not([data-loading])]:bg-neutral-4':
+      'group font-bold disabled:[&:not([data-loading])]:text-text-disabled font-display hover:not(disabled):underline relative flex min-h-[44px] items-center rounded-full px-5 py-3 text-wrap whitespace-nowrap outline-offset-4': true,
+      'bg-primary hover:bg-primary-hover disabled:[&:not([data-loading])]:bg-neutral-4 text-white':
         variant === 'filled',
       'text-primary-contrast bg-primary-muted hover:bg-primary-muted-hover disabled:[&:not([data-loading])]:bg-neutral-5':
         variant === 'soft',
-      'text-primary-gray hover:text-primary bg-white disabled:[&:not([data-loading])]:bg-white': variant === 'simple',
+      'hover:text-primary bg-white text-primary-gray disabled:[&:not([data-loading])]:bg-white': variant === 'simple',
       'text-primary-contrast disabled:[&:not([data-loading])]:bg-transparent': variant === 'plain',
       'cursor-pointer': !disabled,
       'cursor-not-allowed': disabled,
@@ -47,14 +47,14 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     });
 
     const textClasses = cx({
-      'leading-none text-center group-data-loading:opacity-0': true,
+      'text-center leading-none group-data-loading:opacity-0': true,
     });
 
     const loadingClasses = cx({
       'absolute inset-0 hidden items-center justify-center leading-none group-data-loading:flex': true,
     });
 
-    const iconClasses = cx({ 'flex items-center justify-center size-6': true });
+    const iconClasses = cx({ 'flex size-6 items-center justify-center': true });
 
     if (to) {
       return (

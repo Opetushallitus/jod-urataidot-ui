@@ -1,14 +1,17 @@
-import { SkillArea, SkillAreaID, SkillAreaIDValues } from '@/lib/content-types';
-import { Card, SkillAreaIcon } from '..';
-import { useTranslation } from 'react-i18next';
-import { calcHexPath, calcStatPath, calculateCirclePoint } from './helpers';
 import { Popover, PopoverPanel } from '@headlessui/react';
-import React from 'react';
 import { cx } from 'cva';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 import { useMediaQueries } from '@jod/design-system';
 
+import { SkillArea, SkillAreaID, SkillAreaIDValues } from '@/lib/content-types';
+
+import { Card, SkillAreaIcon } from '..';
+import { calcHexPath, calcStatPath, calculateCirclePoint } from './helpers';
+
 export type TotalScoreRecord = Record<SkillAreaID, number | undefined>;
-type TimeoutRecord = Partial<Record<SkillAreaID, NodeJS.Timeout>>;
+type TimeoutRecord = Partial<Record<SkillAreaID, number>>;
 
 const tooltipPositions: Record<SkillAreaID, string> = {
   'know-yourself': cx('absolute top-[20%] left-[50%]'),
@@ -76,7 +79,7 @@ export const SpiderDiagram = ({
                   {shownPopovers.includes(skillArea.id) && (
                     <div
                       className={cx(
-                        'font-display text-body-sm absolute -translate-x-1/2 rounded-lg bg-black p-3 text-center text-white',
+                        'font-display absolute -translate-x-1/2 rounded-lg bg-black p-3 text-center text-body-sm text-white',
                         offsetX > 0 && 'left-0 translate-x-0',
                         offsetX < 0 && 'right-0 translate-x-0',
                       )}

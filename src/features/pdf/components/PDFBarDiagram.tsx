@@ -1,9 +1,11 @@
+import { G, Line, Rect, Svg, Text, View } from '@react-pdf/renderer';
+import { useTranslation } from 'react-i18next';
+
 import { SkillArea } from '@/lib/content-types';
 import { Answer } from '@/stores/careerPlanningAnswersStore';
-import { G, Line, Rect, Svg, Text, View } from '@react-pdf/renderer';
-import { getFillColor } from '../utils';
+
 import { PDFSkillAreaIcon } from '../icons/PDFIcons';
-import { useTranslation } from 'react-i18next';
+import { getFillColor } from '../utils';
 
 /**
  * Hacky function for text wrap in svg
@@ -162,7 +164,6 @@ export const PDFBarDiagram = ({
                           width: barSpacing * 1.8,
                           fill: '#55575E',
                         }}
-                        // eslint-disable-next-line react/no-array-index-key
                         key={`text-row-${j}`}
                         x={barSpacing * (i * 2 + 1)}
                         y={barMaxHeight + 12 + 12 * j}

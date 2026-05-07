@@ -1,7 +1,9 @@
-import { Exercise } from '@/lib/content-types';
-import { ExerciseAnswer } from '@/stores/exerciseAnswersStore';
 import { Document } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
+
+import { Exercise } from '@/lib/content-types';
+import { ExerciseAnswer } from '@/stores/exerciseAnswersStore';
+
 import { ExercisePage } from './ExerciseDocument';
 
 export type AllExercises = {

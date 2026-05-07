@@ -1,5 +1,5 @@
-import { useTranslation } from 'react-i18next';
 import { Document, View, StyleSheet, Font, Page, Text, Image } from '@react-pdf/renderer';
+import { useTranslation } from 'react-i18next';
 
 // Disable word hyphenation, because it doesn't work in Finnish
 // https://react-pdf.org/fonts#registerhyphenationcallback

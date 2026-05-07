@@ -1,11 +1,14 @@
 import React from 'react';
+import toast from 'react-hot-toast/headless';
+import { useTranslation } from 'react-i18next';
+
+import { ExternalLinkSection, LinkComponent, MenuSection, NavigationMenu } from '@jod/design-system';
+import { JodCheckmark, JodLink } from '@jod/design-system/icons';
+
 import { langLabels, supportedLanguageCodes } from '@/i18n/config';
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
-import { ExternalLinkSection, LinkComponent, MenuSection, NavigationMenu } from '@jod/design-system';
-import { useTranslation } from 'react-i18next';
+
 import { useMenuRoutes } from './menuRoutes';
-import { JodCheckmark, JodLink } from '@jod/design-system/icons';
-import toast from 'react-hot-toast/headless';
 
 const PortalLink = ({ children, className, rel, target }: LinkComponent) => {
   const {
@@ -102,10 +105,10 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       extraSection={
         <button
           onClick={() => void copyToClipboard()}
-          className="focus:outline-accent text-accent flex w-full cursor-pointer flex-row items-center justify-between pl-5"
+          className="flex w-full cursor-pointer flex-row items-center justify-between pl-5 text-accent focus:outline-accent"
         >
-          <div className="hover:bg-bg-gray flex w-full items-center justify-between rounded-md">
-            <span className="text-button-sm pl-3 text-left">
+          <div className="flex w-full items-center justify-between rounded-md hover:bg-bg-gray">
+            <span className="pl-3 text-left text-button-sm">
               {linkCopied
                 ? t('career-management-summary.summary-link-card.link-copied')
                 : t('nav.copy-results-to-link')}

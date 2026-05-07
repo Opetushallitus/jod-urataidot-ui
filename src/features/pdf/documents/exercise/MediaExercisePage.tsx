@@ -1,6 +1,7 @@
+import { Font, Page, StyleSheet, Text, View } from '@react-pdf/renderer';
+
 import { MediaExercise } from '@/lib/content-types';
 import { MediaExerciseAnswer } from '@/stores/exerciseAnswersStore';
-import { Font, Page, StyleSheet, Text, View } from '@react-pdf/renderer';
 
 Font.register({
   family: 'Poppins',

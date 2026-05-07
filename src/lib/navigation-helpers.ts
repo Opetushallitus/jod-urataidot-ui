@@ -1,4 +1,5 @@
 import i18n, { LangCode } from '@/i18n/config';
+
 import { Section, SkillArea } from './content-types';
 
 export const getNextQuestionSlug = (

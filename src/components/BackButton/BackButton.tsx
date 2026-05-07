@@ -1,7 +1,9 @@
-import { ArrowLeft } from '@/icons';
-import { Button } from '../Button/Button';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router';
+
+import { ArrowLeft } from '@/icons';
+
+import { Button } from '../Button/Button';
 
 export const BackButton = () => {
   const { t } = useTranslation();

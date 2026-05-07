@@ -1,6 +1,7 @@
-import { SkillAreaID } from '@/lib/content-types';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
+
+import { SkillAreaID } from '@/lib/content-types';
 
 interface ExerciseAnswerBase {
   skillAreaId: SkillAreaID;

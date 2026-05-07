@@ -1,8 +1,9 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 import { LangCode } from '@/i18n/config';
 import { getContents } from '@/lib/content';
 import { Content, SkillArea } from '@/lib/content-types';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 /**
  * Hook that returns a list of skill areas from content with current version and language
@@ -26,7 +27,6 @@ const useSkillAreas = (): SkillArea[] => {
     }
   }, [version, t, language]);
 
-  // eslint-disable-next-line react-hooks/refs
   return contentRef.current?.skillAreas ?? [];
 };
 

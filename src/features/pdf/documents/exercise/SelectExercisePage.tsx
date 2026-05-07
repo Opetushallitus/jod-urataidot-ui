@@ -1,10 +1,12 @@
-import { SelectExercise } from '@/lib/content-types';
-import { SelectExerciseAnswer } from '@/stores/exerciseAnswersStore';
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
 import { Fragment } from 'react';
+
+import { SelectExercise } from '@/lib/content-types';
+import { SelectExerciseAnswer } from '@/stores/exerciseAnswersStore';
+
+import { parseDescription } from '../../helpers/parseDescription';
 import ExercisePage from './ExercisePage';
 import { styles } from './ExerciseStylesheet';
-import { parseDescription } from '../../helpers/parseDescription';
 
 const localStyle = StyleSheet.create({
   selectedWordsContainer: {

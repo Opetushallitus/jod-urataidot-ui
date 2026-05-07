@@ -1,8 +1,9 @@
-import i18n from '@/i18n/config';
-import { SkillAreaID } from '@/lib/content-types';
-import { getContents } from '@/lib/content';
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
+
+import i18n from '@/i18n/config';
+import { getContents } from '@/lib/content';
+import { SkillAreaID } from '@/lib/content-types';
 
 export interface Answer {
   skillAreaId: SkillAreaID;
