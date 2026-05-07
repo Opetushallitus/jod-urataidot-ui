@@ -1,11 +1,12 @@
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Button, Checkbox, InputField, Modal, RadioButton, RadioButtonGroup, Textarea } from '@jod/design-system';
-import { JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
 import { Controller, Form, FormSubmitHandler, useForm, useFormState } from 'react-hook-form';
-import { useTranslation } from 'react-i18next';
 import toast from 'react-hot-toast/headless';
+import { useTranslation } from 'react-i18next';
 import { z } from 'zod';
+
+import { Button, Checkbox, InputField, Modal, RadioButton, RadioButtonGroup, Textarea } from '@jod/design-system';
+import { JodOpenInNew } from '@jod/design-system/icons';
 
 const DETAILS_MAX_LENGTH = 2048;
 const MESSAGE_MAX_LENGTH = 5000;
@@ -74,7 +75,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
 
   React.useEffect(() => {
     reset();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // oxlint-disable-next-line eslint-plugin-react-hooks/exhaustive-deps
   }, [section, area, language]);
 
   const onSubmit: FormSubmitHandler<Feedback> = async (payload) => {
@@ -111,9 +112,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
       // Wait a moment before showing success message
       await new Promise((resolve) => setTimeout(resolve, 50));
       toast.success(t('common:feedback.success'));
-
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (error) {
+    } catch {
       setIsSubmitting(false);
       toast.error(t('common:feedback.error'));
     }
@@ -125,16 +124,16 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
       open={isOpen}
       onClose={onClose}
       fullWidthContent
-      topSlot={<h2 className="sm:text-heading-1 text-heading-1-mobile mb-5">{t('common:feedback.title')}</h2>}
+      topSlot={<h2 className="mb-5 text-heading-1-mobile sm:text-heading-1">{t('common:feedback.title')}</h2>}
       content={
         <Form
           id={formId}
           control={control}
           onSubmit={onSubmit}
           data-testid="feedback-form"
-          className="max-w-modal-content box-content px-5 md:px-9"
+          className="box-content max-w-modal-content px-5 md:px-9"
         >
-          <p className="sm:text-body-md text-body-md-mobile mb-9">
+          <p className="mb-9 text-body-md-mobile sm:text-body-md">
             {t('common:feedback.intro-1')} {t('common:feedback.intro-2')}
             <br />
             <br />
@@ -215,8 +214,8 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
               />
             </div>
           )}
-          <hr className="bg-border-gray text-border-gray mb-7 h-1" />
-          <div className="sm:text-body-md text-body-md-mobile mb-5 sm:mb-9">
+          <hr className="mb-7 h-1 bg-border-gray text-border-gray" />
+          <div className="mb-5 text-body-md-mobile sm:mb-9 sm:text-body-md">
             <p>{t('common:feedback.footer-info-1')}</p>
             <br />
             <p>{t('common:feedback.footer-info-heading')}</p>
@@ -233,7 +232,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   href={t('common:feedback.linkHrefs.oph')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent inline-flex hover:underline"
+                  className="inline-flex text-accent hover:underline"
                 >
                   {t('common:feedback.links.oph')}
                   <JodOpenInNew ariaLabel={t('common:external-link')} />
@@ -244,7 +243,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   href={t('common:feedback.linkHrefs.keha')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent inline-flex hover:underline"
+                  className="inline-flex text-accent hover:underline"
                 >
                   {t('common:feedback.links.keha')}
                   <JodOpenInNew ariaLabel={t('common:external-link')} />
@@ -255,7 +254,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   href={t('common:feedback.linkHrefs.okm')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent inline-flex hover:underline"
+                  className="inline-flex text-accent hover:underline"
                 >
                   {t('common:feedback.links.okm')}
                   <JodOpenInNew ariaLabel={t('common:external-link')} />

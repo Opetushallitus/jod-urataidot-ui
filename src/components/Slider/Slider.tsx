@@ -1,7 +1,7 @@
-import React, { forwardRef } from 'react';
-import { t } from 'i18next';
 import { Popover, PopoverPanel } from '@headlessui/react';
 import { cx } from 'cva';
+import { t } from 'i18next';
+import React, { forwardRef } from 'react';
 
 type SliderProps = {
   /** Override for visible slider texts */
@@ -17,7 +17,7 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
     const [focused, setFocused] = React.useState(false);
     React.useImperativeHandle(ref, () => innerRef.current!, []);
 
-    const timeoutRef = React.useRef<NodeJS.Timeout>(null);
+    const timeoutRef = React.useRef<number>(null);
 
     const getInitialValue = () => {
       if (typeof innerRef.current?.valueAsNumber === 'number') {
@@ -29,7 +29,6 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
       return 2;
     };
 
-    // eslint-disable-next-line react-hooks/refs
     const [value, setValue] = React.useState(getInitialValue);
 
     const defaultTextValues = [
@@ -72,7 +71,7 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
 
     return (
       <div className="text-body w-full">
-        <div aria-hidden className="font-display text-body-md mb-4 flex flex-row justify-between gap-5">
+        <div aria-hidden className="font-display mb-4 flex flex-row justify-between gap-5 text-body-md">
           <div>{leftText ?? t('components.slider.not-at-all')}</div>
           <div className="text-right">{rightText ?? t('components.slider.fully')}</div>
         </div>
@@ -169,7 +168,7 @@ const TickWithTooltip = ({
           <div
             ref={ref}
             className={cx(
-              'font-display text-body-sm absolute top-7 -translate-x-1/2 rounded-md bg-black p-3 text-white',
+              'font-display absolute top-7 -translate-x-1/2 rounded-md bg-black p-3 text-body-sm text-white',
               offsetX > 0 && 'left-0 translate-x-0',
               offsetX < 0 && 'right-0 translate-x-0',
             )}

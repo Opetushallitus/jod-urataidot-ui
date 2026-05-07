@@ -1,8 +1,9 @@
-import { BackButton } from '@/components';
+import { Suspense, lazy } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Navigate, useParams } from 'react-router';
+
+import { BackButton } from '@/components';
 import { useExercise } from '@/hooks/useExercise';
-import { Suspense, lazy } from 'react';
 
 export const ExercisePage = () => {
   const { t, i18n } = useTranslation();
@@ -62,9 +63,9 @@ export const ExercisePage = () => {
 const ExerciseContainer = ({ children }: { children: React.ReactNode }) => {
   const { t } = useTranslation();
   return (
-    <div className="mx-auto flex max-w-3xl flex-col items-start">
+    <div className="max-w-3xl mx-auto flex flex-col items-start">
       <BackButton />
-      <p className="text-button-sm mt-7 mb-5 uppercase">{t('exercises.exercise')}</p>
+      <p className="mt-7 mb-5 text-button-sm uppercase">{t('exercises.exercise')}</p>
       <Suspense>{children}</Suspense>
     </div>
   );

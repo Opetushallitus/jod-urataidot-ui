@@ -1,10 +1,12 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+import { useMediaQueries } from '@jod/design-system';
+
 import { SkillAreaIcon } from '@/components';
 import { Modal } from '@/components';
 import { Video } from '@/components/Video/Video';
-import { useMediaQueries } from '@jod/design-system';
 import { SkillArea } from '@/lib/content-types';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 export const SkillAreaInfoCard = ({ skillArea }: { skillArea: SkillArea }) => {
   const { sm } = useMediaQueries();
@@ -24,7 +26,7 @@ export const SkillAreaInfoCard = ({ skillArea }: { skillArea: SkillArea }) => {
         </div>
       </Modal>
       <SkillAreaIcon section={skillArea.id} size={sm ? 'lg' : 'md'} />
-      <h2 className="text-body-sm font-bold">{skillArea.name}</h2>
+      <h2 className="font-bold text-body-sm">{skillArea.name}</h2>
     </button>
   );
 };

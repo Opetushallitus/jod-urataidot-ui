@@ -1,4 +1,5 @@
 import { SkillAreaID } from '@/lib/content-types';
+
 import useSkillAreas from '../useSkillAreas';
 
 export const usePreviousSkillAreaSlug = ({ id }: { id: SkillAreaID }) => {

@@ -24,7 +24,7 @@ export const IconHeading = ({
       )}
       <h1
         data-testid={testId}
-        className={`text-hero-mobile sm:text-hero text-pretty break-words hyphens-auto ${textClassName}`}
+        className={`text-hero-mobile text-pretty break-words hyphens-auto sm:text-hero ${textClassName}`}
       >
         {title}
       </h1>

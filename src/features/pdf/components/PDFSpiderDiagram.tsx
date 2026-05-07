@@ -1,8 +1,9 @@
-import { SkillArea, SkillAreaID, SkillAreaIDValues } from '@/lib/content-types';
 import { Circle, G, Path, Svg, Text, View } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
+
 import { calcHexPath, calcStatPath, calculateCirclePoint } from '@/components/SpiderDiagram/helpers';
 import { PDFSkillAreaIcon } from '@/features/pdf/icons/PDFIcons';
+import { SkillArea, SkillAreaID, SkillAreaIDValues } from '@/lib/content-types';
 
 export type TotalScoreRecord = Record<SkillAreaID, number | undefined>;
 

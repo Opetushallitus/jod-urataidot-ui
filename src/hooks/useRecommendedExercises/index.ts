@@ -1,6 +1,7 @@
 import { ExerciseWithInfo, SkillAreaID } from '@/lib/content-types';
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
 import { isExerciseLimit } from '@/utils/isExerciseLimit';
+
 import useSkillAreas from '../useSkillAreas';
 
 /**

@@ -1,9 +1,10 @@
+import { useTranslation } from 'react-i18next';
+import { useLocation, useNavigate } from 'react-router';
 import { JSX } from 'react/jsx-runtime';
+
 import { Button, Modal } from '@/components';
 import { DownloadPDFButton } from '@/features/pdf/components/DownloadPDFButton';
 import { Exercise } from '@/lib/content-types';
-import { useTranslation } from 'react-i18next';
-import { useLocation, useNavigate } from 'react-router';
 
 export const ReadyModal = ({
   open,

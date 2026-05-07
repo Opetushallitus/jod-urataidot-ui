@@ -1,6 +1,7 @@
-import { SkillAreaIDValues, SkillAreaID } from '@/lib/content-types';
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
+
+import { SkillAreaIDValues, SkillAreaID } from '@/lib/content-types';
 
 export interface AnswerRecordEntry {
   knowledge: number;

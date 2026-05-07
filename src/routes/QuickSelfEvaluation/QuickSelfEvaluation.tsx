@@ -1,15 +1,16 @@
+import { useTranslation } from 'react-i18next';
+
 import { BackButton, Button, MobileBottomBar, QuickTestSection } from '@/components';
 import useSkillAreas from '@/hooks/useSkillAreas';
-import { useTranslation } from 'react-i18next';
 
 const QuickSelfEvaluation = () => {
   const { t } = useTranslation();
 
   const skillAreas = useSkillAreas();
   return (
-    <div className="mx-auto flex max-w-3xl flex-col items-start">
+    <div className="max-w-3xl mx-auto flex flex-col items-start">
       <BackButton />
-      <h1 className="text-heading-2 sm:text-heading-1 mt-4 mb-5 sm:mt-7">{t('quick-self-evaluation.title')}</h1>
+      <h1 className="mt-4 mb-5 text-heading-2 sm:mt-7 sm:text-heading-1">{t('quick-self-evaluation.title')}</h1>
       <p className="max-w-[80ch]">{t('quick-self-evaluation.description')}</p>
       <div className="grid grid-cols-1 gap-6 py-4 sm:py-10">
         {skillAreas.map((skillArea) => (

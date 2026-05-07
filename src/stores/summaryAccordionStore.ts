@@ -1,6 +1,7 @@
-import { SkillAreaID } from '@/lib/content-types';
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
+
+import { SkillAreaID } from '@/lib/content-types';
 
 type SummaryAccordionRecord = Partial<Record<SkillAreaID, boolean>>;
 

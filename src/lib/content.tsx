@@ -1,8 +1,10 @@
 import { TFunction } from 'i18next';
-import { importantInLife, statementsOfStrength, thingsAndResources, workLife } from './selectWordLists';
-import { Content } from './content-types';
 import { Trans } from 'react-i18next';
+
 import { LangCode } from '@/i18n/config';
+
+import { Content } from './content-types';
+import { importantInLife, statementsOfStrength, thingsAndResources, workLife } from './selectWordLists';
 
 export const getContents = (translate: TFunction<'translation', undefined>, lng: LangCode): Content[] => {
   const t = (key: string) => translate(key, { lng });

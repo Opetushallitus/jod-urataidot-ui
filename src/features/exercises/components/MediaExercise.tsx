@@ -1,12 +1,14 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router';
+
 import { Button, MobileBottomBar } from '@/components';
 import ExerciseDocument from '@/features/pdf/documents/ExerciseDocument';
 import { useEasierExercise } from '@/hooks/useEasierExercise';
 import { MediaExercise as MediaExerciseType, SkillAreaID } from '@/lib/content-types';
 import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
 import { MediaExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router';
+
 import { ReadyModal } from './ReadyModal';
 
 const MediaExercise = ({
@@ -74,7 +76,7 @@ const MediaExercise = ({
       <p className="mb-4 italic">{exercise.mediaDescription}</p>
 
       {easierExercise && (
-        <span className="text-body-sm mb-2 whitespace-pre-wrap">
+        <span className="mb-2 text-body-sm whitespace-pre-wrap">
           {t('exercises.easier-question')}{' '}
           <a
             href={`/urataidot/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}

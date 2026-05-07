@@ -1,7 +1,9 @@
-import { SkillArea } from '@/lib/content-types';
-import { SkillAreaIcon } from '../SkillAreaIcon/SkillAreaIcon';
 import { t } from 'i18next';
+
+import { SkillArea } from '@/lib/content-types';
+
 import { InfoButton } from '..';
+import { SkillAreaIcon } from '../SkillAreaIcon/SkillAreaIcon';
 
 export const QuickSummarySection = ({
   skillArea,

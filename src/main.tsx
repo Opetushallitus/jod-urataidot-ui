@@ -2,7 +2,9 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import { Metric } from 'web-vitals';
+
 import './i18n/config';
+
 import './index.css';
 import { routes } from './routes';
 
@@ -16,7 +18,6 @@ if (import.meta.env.NODE_ENV !== 'production') {
   void import('web-vitals').then((vitals) => {
     const warnOnlyNegativeMetrics = (metric: Metric) => {
       if (metric.rating !== 'good') {
-        /* eslint-disable-next-line no-console */
         console.warn(`Metric ${metric.name} is not good`, metric);
       }
     };

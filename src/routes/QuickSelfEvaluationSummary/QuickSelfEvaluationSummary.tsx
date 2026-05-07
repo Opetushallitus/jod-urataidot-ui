@@ -1,9 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 import { BackButton, Card, LinkCard } from '@/components';
 import { Video } from '@/components/Video/Video';
 import { ExerciseLinkCard } from '@/features/exercises/components/ExerciseLinkCard';
 import { useQuickSuggestionExercises } from '@/hooks/useQuickSuggestionExercises';
 import { useQuickSuggestionVideo } from '@/hooks/useQuickSuggestionVideo';
-import { useTranslation } from 'react-i18next';
 
 const QuickSelfEvaluationSummary = () => {
   const { t, i18n } = useTranslation();
@@ -14,7 +15,7 @@ const QuickSelfEvaluationSummary = () => {
   return (
     <div>
       <BackButton />
-      <h1 className="text-heading-2 sm:text-heading-1 mt-5 mb-5 sm:mt-7">{t('quick-self-evaluation-summary.title')}</h1>
+      <h1 className="mt-5 mb-5 text-heading-2 sm:mt-7 sm:text-heading-1">{t('quick-self-evaluation-summary.title')}</h1>
       <p className="max-w-[80ch]">{t('quick-self-evaluation-summary.description')}</p>
       <div className="grid grid-cols-1 gap-5 py-5 sm:py-8">
         <Card className="group">

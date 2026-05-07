@@ -1,4 +1,5 @@
 import { LoaderFunction, replace } from 'react-router';
+
 import i18n, { supportedLanguageCodes, LangCode, defaultLang } from '@/i18n/config';
 
 export default (async ({ params: { lng } }) => {

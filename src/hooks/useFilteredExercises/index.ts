@@ -1,5 +1,6 @@
 import { ExerciseWithInfo, SkillAreaID } from '@/lib/content-types';
 import { isExerciseLimit } from '@/utils/isExerciseLimit';
+
 import useSkillAreas from '../useSkillAreas';
 
 export const useFilteredExercises = ({

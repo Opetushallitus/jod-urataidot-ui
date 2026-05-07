@@ -1,14 +1,16 @@
+import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
+import EmojiPicker, { EmojiStyle } from 'emoji-picker-react';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router';
+
 import { Button, MobileBottomBar } from '@/components';
 import ExerciseDocument from '@/features/pdf/documents/ExerciseDocument';
 import { useEasierExercise } from '@/hooks/useEasierExercise';
 import { EmojiExercise as EmojiExerciseType, SkillAreaID } from '@/lib/content-types';
 import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
 import { EmojiExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
-import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
-import EmojiPicker, { EmojiStyle } from 'emoji-picker-react';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router';
+
 import { ReadyModal } from './ReadyModal';
 
 const EmojiExercise = ({

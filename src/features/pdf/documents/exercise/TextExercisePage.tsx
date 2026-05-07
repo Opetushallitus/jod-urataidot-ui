@@ -1,9 +1,11 @@
+import { StyleSheet, Text, View } from '@react-pdf/renderer';
+
 import { TextExercise } from '@/lib/content-types';
 import { TextExerciseAnswer } from '@/stores/exerciseAnswersStore';
-import { StyleSheet, Text, View } from '@react-pdf/renderer';
+
+import { parseDescription } from '../../helpers/parseDescription';
 import ExercisePage from './ExercisePage';
 import { styles } from './ExerciseStylesheet';
-import { parseDescription } from '../../helpers/parseDescription';
 
 const localStyle = StyleSheet.create({
   textFieldContainer: {

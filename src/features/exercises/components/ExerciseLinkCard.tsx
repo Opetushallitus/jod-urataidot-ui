@@ -1,8 +1,9 @@
-import { Check, ChevronRight } from '@/icons';
-import { ExerciseWithInfo, SkillAreaID } from '@/lib/content-types';
+import { cx } from 'cva';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
-import { cx } from 'cva';
+
+import { Check, ChevronRight } from '@/icons';
+import { ExerciseWithInfo, SkillAreaID } from '@/lib/content-types';
 import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
 
 const SkillAreaTag = ({ skillAreaID, skillAreaName }: { skillAreaID: SkillAreaID; skillAreaName: string }) => {
@@ -15,7 +16,7 @@ const SkillAreaTag = ({ skillAreaID, skillAreaName }: { skillAreaID: SkillAreaID
     'bg-visualization-pink': skillAreaID === 'ready-for-change',
   });
 
-  return <div className={cx(color, 'bg-opacity-50 text-body-sm rounded-full px-4 py-2')}>{skillAreaName}</div>;
+  return <div className={cx(color, 'bg-opacity-50 rounded-full px-4 py-2 text-body-sm')}>{skillAreaName}</div>;
 };
 
 export const ExerciseLinkCard = ({
@@ -38,7 +39,7 @@ export const ExerciseLinkCard = ({
   );
 
   const styles = cx({
-    'flex w-full items-center justify-between rounded-md p-4 hover:bg-surface-hover': true,
+    'hover:bg-surface-hover flex w-full items-center justify-between rounded-md p-4': true,
     'bg-white': background === 'white',
     'bg-neutral-5': background === 'gray',
     'odd:bg-surface-hover even:bg-neutral-5': background === 'alternating-grey-bg',

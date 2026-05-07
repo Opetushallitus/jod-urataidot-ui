@@ -1,5 +1,5 @@
-import React from 'react';
 import { cx } from 'cva';
+import React from 'react';
 
 interface CardProps {
   children: React.ReactNode;

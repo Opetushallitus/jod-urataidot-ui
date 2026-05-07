@@ -1,12 +1,14 @@
-import { Button, MobileBottomBar } from '@/components';
 import React from 'react';
-import { SkillAreaID, TextExercise as TextExerciseType } from '@/lib/content-types';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router';
-import { TextExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
-import { useEasierExercise } from '@/hooks/useEasierExercise';
+
+import { Button, MobileBottomBar } from '@/components';
 import ExerciseDocument from '@/features/pdf/documents/ExerciseDocument';
+import { useEasierExercise } from '@/hooks/useEasierExercise';
+import { SkillAreaID, TextExercise as TextExerciseType } from '@/lib/content-types';
 import { useExerciseAnsweredStore } from '@/stores/exerciseAnsweredStore';
+import { TextExerciseAnswer, useExerciseAnswersStore } from '@/stores/exerciseAnswersStore';
+
 import { ReadyModal } from './ReadyModal';
 
 const TextExercise = ({
@@ -72,13 +74,13 @@ const TextExercise = ({
             {textField.title}
           </label>
           {textField.description && (
-            <span id={textField.id + '-description'} className="text-body-sm mb-3 whitespace-pre-wrap italic">
+            <span id={textField.id + '-description'} className="mb-3 text-body-sm whitespace-pre-wrap italic">
               {textField.description}
             </span>
           )}
 
           {i === 0 && easierExercise !== null && (
-            <span className="text-body-sm mb-3 whitespace-pre-wrap">
+            <span className="mb-3 text-body-sm whitespace-pre-wrap">
               {t('exercises.easier-question')}{' '}
               <a
                 href={`/urataidot/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}

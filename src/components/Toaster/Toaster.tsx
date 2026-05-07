@@ -1,6 +1,8 @@
-import { Toast } from '@jod/design-system';
-import { Toast as ReactHotToast, useToaster } from 'react-hot-toast/headless';
 import { createPortal } from 'react-dom';
+import { Toast as ReactHotToast, useToaster } from 'react-hot-toast/headless';
+
+import { Toast } from '@jod/design-system';
+
 import './toaster.css';
 
 type SafeToast = Omit<ReactHotToast, 'message'> & { message: string };

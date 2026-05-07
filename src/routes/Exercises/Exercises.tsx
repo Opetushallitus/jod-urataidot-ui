@@ -1,13 +1,14 @@
+import { Field, Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react';
+import { useTranslation } from 'react-i18next';
+
 import { BackButton } from '@/components';
 import { ExerciseLinkCard } from '@/features/exercises/components/ExerciseLinkCard';
+import { OpenAllExercisesPDFButton } from '@/features/exercises/components/OpenAllExercisesPDFButton';
 import { useFilteredExercises } from '@/hooks/useFilteredExercises';
+import useSkillAreas from '@/hooks/useSkillAreas';
 import { ChevronDown } from '@/icons';
 import { SkillAreaID } from '@/lib/content-types';
-import { useTranslation } from 'react-i18next';
-import { Field, Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react';
 import { ExerciseFilterField, useExerciseFilterStore } from '@/stores/exerciseFilterStore';
-import { OpenAllExercisesPDFButton } from '@/features/exercises/components/OpenAllExercisesPDFButton';
-import useSkillAreas from '@/hooks/useSkillAreas';
 
 interface SelectOption {
   value: string;
@@ -46,7 +47,7 @@ const Select = ({
         </ListboxButton>
         <ListboxOptions
           anchor="bottom"
-          className="mt-2 flex w-[224px] cursor-pointer flex-col gap-2 rounded-md bg-white p-3 shadow-lg"
+          className="shadow-lg mt-2 flex w-[224px] cursor-pointer flex-col gap-2 rounded-md bg-white p-3"
         >
           {[{ value: undefined, text: noChoiceText }, ...options]
             .filter((option) => option.value !== value)
@@ -86,13 +87,13 @@ const ExercisesPage = () => {
   ];
 
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className="max-w-3xl mx-auto">
       <BackButton />
       <div className="mt-6 mb-5 flex flex-col gap-5 sm:mt-7 sm:flex-row sm:items-center sm:justify-between">
         <h1 className="text-heading-2 sm:text-heading-1">{t('exercises.title')}</h1>
         <OpenAllExercisesPDFButton hideWhenNoAnswers />
       </div>
-      <p className="text-body-sm mt-6 mb-6">{t('exercises.description')}</p>
+      <p className="mt-6 mb-6 text-body-sm">{t('exercises.description')}</p>
       <div className="mt-6 mb-6 flex flex-col gap-4 sm:flex-row">
         <Select
           title={t('exercises.skill-area')}

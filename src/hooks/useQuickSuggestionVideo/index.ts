@@ -1,5 +1,6 @@
 import { SkillAreaID, SkillAreaIDValues } from '@/lib/content-types';
 import { useQuickSelfEvaluationStore } from '@/stores/quickSelfEvaluationStore';
+
 import useSkillAreas from '../useSkillAreas';
 
 /**

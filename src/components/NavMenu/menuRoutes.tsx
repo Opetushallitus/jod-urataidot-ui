@@ -1,7 +1,8 @@
-import { LinkComponent, MenuItem } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink, useLocation } from 'react-router';
+
+import { LinkComponent, MenuItem } from '@jod/design-system';
 import { JodHome } from '@jod/design-system/icons';
 
 export const useMenuRoutes = (onClose: () => void) => {

@@ -1,6 +1,7 @@
+import { PDFViewer } from '@react-pdf/renderer';
+
 import ExerciseDocument from '@/features/pdf/documents/ExerciseDocument';
 import { TextExercise } from '@/lib/content-types';
-import { PDFViewer } from '@react-pdf/renderer';
 
 const TestPDF = () => {
   return (

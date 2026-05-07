@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 import { useQuickEvaluationHeading } from '@/features/quick-test/hooks/useQuickEvaluationHeading';
-import { Slider } from '../Slider/Slider';
 import { SkillArea } from '@/lib/content-types';
 import { useQuickSelfEvaluationStore } from '@/stores/quickSelfEvaluationStore';
-import { useTranslation } from 'react-i18next';
+
+import { Slider } from '../Slider/Slider';
 
 export const QuickTestSection = ({ skillArea }: { skillArea: Pick<SkillArea, 'id' | 'name' | 'info'> }) => {
   const { t } = useTranslation();

@@ -1,15 +1,16 @@
+import { BlobProvider } from '@react-pdf/renderer';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
+
 import { SpiderDiagram, BackButton, Button, Card } from '@/components';
+import { CareerPlanningSummarySection } from '@/components/CareerPlanningSummarySection/CareerPlanningSummarySection';
 import { TotalScoreRecord } from '@/components/SpiderDiagram/SpiderDiagram';
+import { OpenAllExercisesPDFButton } from '@/features/exercises/components/OpenAllExercisesPDFButton';
+import SummaryDocument from '@/features/pdf/documents/SummaryDocument';
+import useSkillAreas from '@/hooks/useSkillAreas';
+import { Open, Link, Check } from '@/icons';
 import { SkillAreaIDValues, SkillArea } from '@/lib/content-types';
 import { useCareerPlanningAnswersStore } from '@/stores/careerPlanningAnswersStore';
-import { CareerPlanningSummarySection } from '@/components/CareerPlanningSummarySection/CareerPlanningSummarySection';
-import { Open, Link, Check } from '@/icons';
-import { BlobProvider } from '@react-pdf/renderer';
-import SummaryDocument from '@/features/pdf/documents/SummaryDocument';
-import React from 'react';
-import { OpenAllExercisesPDFButton } from '@/features/exercises/components/OpenAllExercisesPDFButton';
-import useSkillAreas from '@/hooks/useSkillAreas';
 
 const CareerPlanningSummary = () => {
   const [linkCopied, setLinkCopied] = React.useState(false);
@@ -46,7 +47,7 @@ const CareerPlanningSummary = () => {
   return (
     <div>
       <BackButton />
-      <h1 className="text-text text-heading-2 sm:text-heading-1 mt-5 mb-5 sm:mt-7">
+      <h1 className="text-text mt-5 mb-5 text-heading-2 sm:mt-7 sm:text-heading-1">
         {t('career-management-summary.title')}
       </h1>
 
@@ -86,7 +87,7 @@ const CareerPlanningSummary = () => {
           ))}
 
         <Card>
-          <h3 className="text-heading-3 mb-3">{t('career-management-summary.summary-pdf-card.title')}</h3>
+          <h3 className="mb-3 text-heading-3">{t('career-management-summary.summary-pdf-card.title')}</h3>
           <p className="mb-6">{t('career-management-summary.summary-pdf-card.description')}</p>
           <BlobProvider
             document={<SummaryDocument totalScores={totalScores} skillAreas={skillAreas} answers={answers} />}
@@ -102,7 +103,7 @@ const CareerPlanningSummary = () => {
                     href={url}
                     target="_blank"
                     rel="noreferrer"
-                    className="group bg-primary font-display hover:bg-primary-hover relative flex min-h-[44px] items-center justify-center gap-3 rounded-full px-5 py-3 font-bold whitespace-nowrap text-white outline-offset-4 hover:underline"
+                    className="group bg-primary font-display hover:bg-primary-hover font-bold relative flex min-h-[44px] items-center justify-center gap-3 rounded-full px-5 py-3 whitespace-nowrap text-white outline-offset-4 hover:underline"
                   >
                     <div className="size-6">
                       <Open />
@@ -118,13 +119,13 @@ const CareerPlanningSummary = () => {
         </Card>
 
         <Card>
-          <h3 className="text-heading-3 mb-2">{t('career-management-summary.exercise-pdf-card.title')}</h3>
+          <h3 className="mb-2 text-heading-3">{t('career-management-summary.exercise-pdf-card.title')}</h3>
           <p className="mb-6">{t('career-management-summary.exercise-pdf-card.description')}</p>
           <OpenAllExercisesPDFButton />
         </Card>
 
         <Card>
-          <h3 className="text-heading-3 mb-2">{t('career-management-summary.summary-link-card.title')}</h3>
+          <h3 className="mb-2 text-heading-3">{t('career-management-summary.summary-link-card.title')}</h3>
           <p className="mb-6">{t('career-management-summary.summary-link-card.description')}</p>
           <Button
             variant="filled"

@@ -1,6 +1,8 @@
-import { Info } from '@/icons';
-import { Modal } from '../Modal/Modal';
 import React from 'react';
+
+import { Info } from '@/icons';
+
+import { Modal } from '../Modal/Modal';
 
 export const InfoButton = ({ buttonText, title, info }: { buttonText: string; title: string; info: string }) => {
   const [infoModalOpen, setInfoModalOpen] = React.useState(false);

@@ -1,5 +1,7 @@
-import { SkillAreaID } from '@/lib/content-types';
 import { Path, G, Circle } from '@react-pdf/renderer';
+
+import { SkillAreaID } from '@/lib/content-types';
+
 import { getFillColor } from '../utils';
 
 const Icon = ({ skillArea }: { skillArea: SkillAreaID }) => {

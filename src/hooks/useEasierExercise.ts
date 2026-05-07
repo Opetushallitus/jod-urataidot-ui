@@ -1,4 +1,5 @@
 import { ExerciseWithInfo, SkillAreaID } from '@/lib/content-types';
+
 import useSkillAreas from './useSkillAreas';
 
 export const useEasierExercise = ({

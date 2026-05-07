@@ -1,10 +1,11 @@
-import { defineConfig } from 'vite';
-import tailwindcss from '@tailwindcss/vite';
-import { configDefaults } from 'vitest/config';
-import { viteStaticCopy } from 'vite-plugin-static-copy';
-import react from '@vitejs/plugin-react';
-import svgr from 'vite-plugin-svgr';
 import { fileURLToPath } from 'node:url';
+
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
+import svgr from 'vite-plugin-svgr';
+import { configDefaults } from 'vitest/config';
 
 // https://vitejs.dev/config/
 export default defineConfig({

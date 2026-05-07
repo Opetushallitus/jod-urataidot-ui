@@ -1,7 +1,9 @@
-import i18n from '@/i18n/config';
 import { Font, Image, Page, Text, View } from '@react-pdf/renderer';
 import { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
+
+import i18n from '@/i18n/config';
+
 import { styles } from './ExerciseStylesheet';
 
 Font.register({

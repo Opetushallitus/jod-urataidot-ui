@@ -1,9 +1,11 @@
+import { Font, StyleSheet, Text, View } from '@react-pdf/renderer';
+
 import { EmojiExercise } from '@/lib/content-types';
 import { EmojiExerciseAnswer } from '@/stores/exerciseAnswersStore';
-import { Font, StyleSheet, Text, View } from '@react-pdf/renderer';
+
+import { parseDescription } from '../../helpers/parseDescription';
 import ExercisePage from './ExercisePage';
 import { styles } from './ExerciseStylesheet';
-import { parseDescription } from '../../helpers/parseDescription';
 
 const localStyle = StyleSheet.create({
   answerContainer: {

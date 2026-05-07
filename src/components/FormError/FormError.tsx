@@ -1,6 +1,7 @@
-import { getNestedProperty } from '@/utils';
 import { ErrorMessage } from '@hookform/error-message';
 import { FieldErrors } from 'react-hook-form';
+
+import { getNestedProperty } from '@/utils';
 
 interface FormErrorProps {
   /** Field path, supports dot notation for nested fields */

@@ -1,9 +1,10 @@
-import { Info } from '@/icons';
 import React from 'react';
-import { SkillAreaID } from '@/lib/content-types';
-import { Modal } from '@/components';
 import { useTranslation } from 'react-i18next';
+
+import { Modal } from '@/components';
 import { Video } from '@/components/Video/Video';
+import { Info } from '@/icons';
+import { SkillAreaID } from '@/lib/content-types';
 
 export const ShowVideoButton = ({
   title,

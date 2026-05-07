@@ -1,7 +1,8 @@
-import { Button } from '@/components';
 import * as ReactPDF from '@react-pdf/renderer';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
+import { Button } from '@/components';
 
 export const DownloadPDFButton = ({
   pdfDocument,
