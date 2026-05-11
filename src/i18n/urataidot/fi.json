@@ -369,7 +369,7 @@
                 "feedback": "Upeaa! Huomasit, että sinulla olevia taitoja voi hyödyntää erilaisissa yhteyksissä. On olemassa erilasia yleistaitoja, joita tarvitaan monissa eri työtehtävissä ja ammateissa. Näitä taitoja hankitaan koko elämän ajan – ja myös muualla kuin oppilaitoksissa.",
                 "textFields": {
                   "1": {
-                    "description": "Esimerkiksi, jos valitsit \"projektinhallinta\". Voisit kuvata taidon hyödyntämistä työpaikalla seuraavasti: \"Johdin tiimiä, joka kehitti uuden ohjelmiston aikataulussa ja budjetissa pysyen.\" Ja sama taito vapaaehtoistyössä voisi olla: \"Organisoin paikallisen tapahtuman, jossa oli yli 100 osallistujaa.\" Harrastuksessa tämä taito näkyy seuraavasti: \"Suunnittelin ja toteutin puutarhaprojektin, joka vaati huolellista aikataulutusta ja resurssien hallintaa.\" ",
+                    "description": "Esimerkiksi, jos valitsit ”projektinhallinta”. Voisit kuvata taidon hyödyntämistä työpaikalla seuraavasti: ”Johdin tiimiä, joka kehitti uuden ohjelmiston aikataulussa ja budjetissa pysyen.” Ja sama taito vapaaehtoistyössä voisi olla: ”Organisoin paikallisen tapahtuman, jossa oli yli 100 osallistujaa.” Harrastuksessa tämä taito näkyy seuraavasti: ”Suunnittelin ja toteutin puutarhaprojektin, joka vaati huolellista aikataulutusta ja resurssien hallintaa.”",
                     "title": "Kirjoita esimerkkejä siitä, miten olet käyttänyt/voisit käyttää valitsemaasi taitoa tai osaamista erilaisissa tilanteissa. "
                   }
                 },
@@ -654,11 +654,11 @@
                 "feedback": "Hyvää työtä! Nyt olet harjoitellut arvioimaan työn, opiskelun ja arjen kuormittavuutta ja suunnittelemaan toimenpiteitä kuormituksen vähentämiseksi. Voimavaratekijät ovat asioita, jotka helpottavat työtäsi, innostavat ja motivoivat, sekä lisäävät energiaasi.",
                 "text-fields": {
                   "1": {
-                    "description": "Esimerkiksi: “Työn tai opiskelun tärkeys ja vaikutus”“Saavutusten tunnustaminen ja palkitseminen”“Mahdollisuus oppia uusia taitoja ja kehittyä”“Positiivinen ja kannustava työ- tai opiskeluilmapiiri”“Mahdollisuus työskennellä itsenäisesti ja tehdä omia päätöksiä”\"Selkeät ja saavutettavissa olevat tavoitteet” “Rakentavan ja säännöllisen palautteen saaminen”“Harrastukset”“Matkustaminen ja uudet kokemukset”“Ystävien ja perheen kanssa vietetty aika”“Vapaaehtoistyö ja yhteisöllisyys”.",
+                    "description": "Esimerkiksi:\n“Työn tai opiskelun tärkeys ja vaikutus”\n“Saavutusten tunnustaminen ja palkitseminen”\n“Mahdollisuus oppia uusia taitoja ja kehittyä”\n“Positiivinen ja kannustava työ- tai opiskeluilmapiiri”\n“Mahdollisuus työskennellä itsenäisesti ja tehdä omia päätöksiä”\n“Selkeät ja saavutettavissa olevat tavoitteet“\n“Rakentavan ja säännöllisen palautteen saaminen”\n“Harrastukset”\n“Matkustaminen ja uudet kokemukset”\n“Ystävien ja perheen kanssa vietetty aika”\n“Vapaaehtoistyö ja yhteisöllisyys”.",
                     "title": "Mitkä asiat innostavat ja tuovat sinulle hyvää oloa? Kirjoita alle."
                   },
                   "2": {
-                    "description": "Esimerkiksi: \"Ylikuormitus ja liian suuret työ- tai opiskelumäärät\"\"Epäselvät tai ristiriitaiset odotukset ja tavoitteet\"\"Negatiivinen tai tukahduttava työ- tai opiskeluilmapiiri”“Riittämätön tuki ja ohjaus esimiehiltä tai opettajilta”“Tiukat aikataulut ja jatkuva kiire”“Vaikeus löytää tasapaino työn/opiskelun ja vapaa-ajan välillä”“Yksitoikkoiset ja toistuvat tehtävät ilman vaihtelua”“Liiallinen aikatauluttaminen”“Sosiaalinen paine”“Liiallinen ruutuaika”“Harrastusten muuttuminen velvollisuuksiksi”“Lomastressi” “Yksinäisyys”“Taloudelliset paineet”“Unen puute”",
+                    "description": "Esimerkiksi:\n”Ylikuormitus ja liian suuret työ- tai opiskelumäärät”\n“Epäselvät tai ristiriitaiset odotukset ja tavoitteet”\n“Negatiivinen tai tukahduttava työ- tai opiskeluilmapiiri”\n“Riittämätön tuki ja ohjaus esimiehiltä tai opettajilta”\n“Tiukat aikataulut ja jatkuva kiire”\n“Vaikeus löytää tasapaino työn/opiskelun ja vapaa-ajan välillä”\n“Yksitoikkoiset ja toistuvat tehtävät ilman vaihtelua”\n“Liiallinen aikatauluttaminen”\n“Sosiaalinen paine”\n“Liiallinen ruutuaika”\n“Harrastusten muuttuminen velvollisuuksiksi”\n”Lomastressi”\n”Yksinäisyys”\n”Taloudelliset paineet”\n“Unen puute”",
                     "title": "Mitkä asiat väsyttävät tai tuottavat haasteita? Kirjoita alle."
                   },
                   "3": {
@@ -772,7 +772,7 @@
                     "title": "Mikä motivoi sinua ulkoisesti? Mieti ja kirjoita alle, mikä on kaikista tärkein ulkoinen motivaatiotekijäsi?"
                   },
                   "3": {
-                    "description": "Esimerkki: \"Valitsen työharjoittelupaikan, jossa voin auttaa ihmisiä ja kehittää taitojani urakehitykseni kannalta.\"",
+                    "description": "Esimerkki: ”Valitsen työharjoittelupaikan, jossa voin auttaa ihmisiä ja kehittää taitojani urakehitykseni kannalta.”",
                     "title": "Kirjoita alle yksi työhön tai opiskeluun liittyvä tavoite, ja mieti miten yllä pohtimasi motivaatiotekijät tukevat tämän tavoitteen saavuttamista."
                   }
                 },
@@ -784,15 +784,15 @@
                 "feedback": "Hyvää työtä! Toivottavasti sait uusia ajatuksia kiinnostuksen kohteidesi merkityksestä arjessasi! Omien mielenkiinnon kohteiden pohtiminen laajalti elämän eri osa-alueilla on hyödyllistä. Kun pohdimme, mikä meitä aidosti kiinnostaa, voimme ehkä paremmin jäsentää, suunnitella ja priorisoida ajankäyttöämme ja voimavarojemme panostamista, tai tuunata työtämme. ",
                 "textFields": {
                   "1": {
-                    "description": "Esimerkki: \"Pidän tietokoneella pelaamisesta\", \"Nautin tiimityöstä\", \"Tykkään strategiapeleistä\", \"Pidän kirjoittamisesta\", \"Nautin luonnossa liikkumisesta\", \"Tykkään auton korjaamisesta\".",
+                    "description": "Esimerkki: ”Pidän tietokoneella pelaamisesta”, ”Nautin tiimityöstä”, ”Tykkään strategiapeleistä”, ”Pidän kirjoittamisesta”, ”Nautin luonnossa liikkumisesta”, ”Tykkään auton korjaamisesta”.",
                     "title": "Kirjoita alle kolme asiaa, joita teet mielelläsi vapaa-ajallasi tai työssä/opiskelussa."
                   },
                   "2": {
-                    "description": "Esimerkki: \"Pidän tietokoneella pelaamisesta, koska se haastaa minut strategisesti ja antaa mahdollisuuden kehittyä koko ajan paremmaksi.\", \"Pidän kirjoittamisesta, koska se auttaa minua jäsentämään ajatuksiani ja ilmaisemaan itseäni.\"",
+                    "description": "Esimerkki: ”Pidän tietokoneella pelaamisesta, koska se haastaa minut strategisesti ja antaa mahdollisuuden kehittyä koko ajan paremmaksi.”, ”Pidän kirjoittamisesta, koska se auttaa minua jäsentämään ajatuksiani ja ilmaisemaan itseäni.”",
                     "title": "Valitse yksi näistä asioista ja mieti, miksi se kiinnostaa sinua."
                   },
                   "3": {
-                    "description": "Esimerkki: \"Tietokoneella pelaaminen kehittää ongelmanratkaisutaitojani ja tarjoaa haasteita, jotka innostavat minua jatkuvasti parantamaan suoritustani\", “Kirjoittaminen on minulle tapa jäsentää ajatuksia ja tuoda luovuutta esiin\".",
+                    "description": "Esimerkki: ”Tietokoneella pelaaminen kehittää ongelmanratkaisutaitojani ja tarjoaa haasteita, jotka innostavat minua jatkuvasti parantamaan suoritustani”, “Kirjoittaminen on minulle tapa jäsentää ajatuksia ja tuoda luovuutta esiin”.",
                     "title": " Kirjoita yksi lause, jossa kerrot kiinnostuksen kohteestasi ja sen merkityksestä sinulle."
                   }
                 },
@@ -1022,7 +1022,7 @@
               "afterText": "<strong> Valitse toteutuskelpoisin ratkaisu. Kun olet kokeillut ratkaisua muutaman päivän ajan, muista tehdä arviointia: <br />Onko ongelma ratkennut? Mikä toimi ja mikä ei? </strong>",
               "textFields": {
                 "1": {
-                  "description": "Esimerkiksi: \"Olen usein myöhässä\", “Unohdan usein tehdä kotitehtävät”, “Jännitän esiintymistä”, \"En löydä aikaa liikunnalle\".",
+                  "description": "Esimerkiksi: ”Olen usein myöhässä”, “Unohdan usein tehdä kotitehtävät”, “Jännitän esiintymistä”, ”En löydä aikaa liikunnalle”.",
                   "title": "Valitse jokin konkreettinen ongelma, jonka kohtaat usein, ja kirjoita se alle."
                 },
                 "2": {
@@ -1370,7 +1370,7 @@
                 "title": "Opi jäsentelemään ja kuvailemaan osaamistasi "
               },
               "3": {
-                "description": "<strong>Tee oma hissipuhe. Hissipuhe on lyhyt esittely itsestäsi ja osaamisestasi. Sen tarkoitus on kertoa selkeästi ja ytimekkäästi, mitä osaat ja miksi se on tärkeää. </strong><br /><br /><strong>● Kirjoita alla olevaan tekstikenttään muutama lause itsestäsi. Mieti, mitä teet tällä hetkellä (esim. opiskelu tai työ) ja mikä on vahvuutesi. </strong><br /> <i>Esimerkiksi: \"Olen Mari, ja opiskelen liiketaloutta ammattikorkeakoulussa. Olen erikoistunut markkinointiin ja minulla on hyvät viestintätaidot.”</i><br /><br /><strong>● Mieti sitten, mikä on vahvin osaamisesi, jota haluat korostaa. Tämä voi liittyä työhön, opintoihin tai harrastuksiin. </strong><br /> <i>Esimerkiksi: \"Olen erityisen hyvä sosiaalisen median markkinoinnissa, ja osaan käyttää sitä tehokkaasti yritysten näkyvyyden parantamiseen.\"</i><br /><br /><strong>● Selitä sen jälkeen lyhyesti, miten taitosi tai osaamisesi voi hyödyttää esimerkiksi työnantajaa, tiimiä tai asiakkaita. </strong><br /> <i>Esimerkiksi: \"Olen auttanut useita yrityksiä lisäämään asiakasmääriään sosiaalisen median kampanjoilla. Minulla on kokemusta siitä, mikä toimii parhaiten eri yleisöille.\"</i><br /><br /><strong>● Yhdistä kohdat lyhyeksi, 30 sekunnin puheeksi. Tallenna hissipuheesi esimerkiksi puhelimen muistiinpanoihin ja harjoittele! Hissipuheen tulisi olla selkeä ja sujuva. </strong><br /> <i>Esimerkiksi: \"Olen Mari, liiketalouden opiskelija, ja erikoistunut markkinointiin. Olen erityisen hyvä sosiaalisen median markkinoinnissa ja olen auttanut yrityksiä parantamaan näkyvyyttään ja kasvattamaan asiakasmääriään. Etsin mahdollisuuksia käyttää näitä taitoja markkinointitiimissä.”</i>",
+                "description": "<strong>Tee oma hissipuhe. Hissipuhe on lyhyt esittely itsestäsi ja osaamisestasi. Sen tarkoitus on kertoa selkeästi ja ytimekkäästi, mitä osaat ja miksi se on tärkeää. </strong><br /><br /><strong>● Kirjoita alla olevaan tekstikenttään muutama lause itsestäsi. Mieti, mitä teet tällä hetkellä (esim. opiskelu tai työ) ja mikä on vahvuutesi. </strong><br /> <i>Esimerkiksi: ”Olen Mari, ja opiskelen liiketaloutta ammattikorkeakoulussa. Olen erikoistunut markkinointiin ja minulla on hyvät viestintätaidot.”</i><br /><br /><strong>● Mieti sitten, mikä on vahvin osaamisesi, jota haluat korostaa. Tämä voi liittyä työhön, opintoihin tai harrastuksiin. </strong><br /> <i>Esimerkiksi: ”Olen erityisen hyvä sosiaalisen median markkinoinnissa, ja osaan käyttää sitä tehokkaasti yritysten ”</i><br /><br /><strong>● Selitä sen jälkeen lyhyesti, miten taitosi tai osaamisesi voi hyödyttää esimerkiksi työnantajaa, tiimiä tai asiakkaita. </strong><br /> <i>Esimerkiksi: ”Olen auttanut useita yrityksiä lisäämään asiakasmääriään sosiaalisen median kampanjoilla. Minulla on kokemusta siitä, mikä toimii parhaiten eri yleisöille.”</i><br /><br /><strong>● Yhdistä kohdat lyhyeksi, 30 sekunnin puheeksi. Tallenna hissipuheesi esimerkiksi puhelimen muistiinpanoihin ja harjoittele! Hissipuheen tulisi olla selkeä ja sujuva. </strong><br /> <i>Esimerkiksi: ”Olen Mari, liiketalouden opiskelija, ja erikoistunut markkinointiin. Olen erityisen hyvä sosiaalisen median markkinoinnissa ja olen auttanut yrityksiä parantamaan näkyvyyttään ja kasvattamaan asiakasmääriään. Etsin mahdollisuuksia käyttää näitä taitoja markkinointitiimissä.”</i>",
                 "feedback": "Auttoiko harjoitustehtävä kertomaan omasta osaamisestasi nopeasti ja selkeästi? Nyt on aika hyödyntää kaikki eteen tulevat tilanteet, joissa voit kertoa taidoistasi rohkeasti ja itsevarmasti. Jokainen askel vie sinua lähemmäksi tavoitteitasi.",
                 "title": "Opi viestimään osaamisestasi tehokkaasti"
               }
@@ -1859,11 +1859,11 @@
                   "title": "Valitse pohdittavaksi yksi yhteiskunnallinen rakenne, joka voi vaikuttaa urasuunnitteluusi."
                 },
                 "2": {
-                  "description": "Kirjoita konkreettisia esimerkkejä. Esimerkiksi: \"Digitalisaation myötä monet työt ovat siirtyneet etätyöhön, mikä antaa minulle mahdollisuuden hakea työpaikkoja eri maista.\"",
+                  "description": "Kirjoita konkreettisia esimerkkejä. Esimerkiksi: ”Digitalisaation myötä monet työt ovat siirtyneet etätyöhön, mikä antaa minulle mahdollisuuden hakea työpaikkoja eri maista.”",
                   "title": "Pohdi, miten valitsemasi yhteiskunnallinen rakenne vaikuttaa tällä hetkellä uramahdollisuuksiisi. "
                 },
                 "3": {
-                  "description": "Esimerkiksi: \"Jos automaatio ja tekoäly kehittyvät edelleen, tietyt manuaaliset työtehtävät voivat kadota, mutta teknologiaosaaminen nousee entistä tärkeämpään asemaan. Tämä voi tarkoittaa, että minun täytyy hankkia lisää teknisiä taitoja.\"",
+                  "description": "Esimerkiksi: ”Jos automaatio ja tekoäly kehittyvät edelleen, tietyt manuaaliset työtehtävät voivat kadota, mutta teknologiaosaaminen nousee entistä tärkeämpään asemaan. Tämä voi tarkoittaa, että minun täytyy hankkia lisää teknisiä taitoja.”",
                   "title": "Pohdi myös, miten kyseinen rakenne saattaa muuttua seuraavan 5–10 vuoden aikana ja mitä vaikutuksia sillä voisi olla urallesi."
                 }
               },
@@ -1877,15 +1877,15 @@
                   "title": "Valitse pohdittavaksi yksi yhteiskunnallinen rakenne, joka voi vaikuttaa urasuunnitteluusi. "
                 },
                 "2": {
-                  "description": "Kirjoita konkreettisia esimerkkejä. Esimerkiksi: \"Digitalisaation myötä monet työt ovat siirtyneet etätyöhön, mikä antaa minulle mahdollisuuden hakea työpaikkoja eri maista.\"",
+                  "description": "Kirjoita konkreettisia esimerkkejä. Esimerkiksi: ”Digitalisaation myötä monet työt ovat siirtyneet etätyöhön, mikä antaa minulle mahdollisuuden hakea työpaikkoja eri maista.”",
                   "title": "Pohdi, miten valitsemasi yhteiskunnallinen rakenne vaikuttaa tällä hetkellä uramahdollisuuksiisi. "
                 },
                 "3": {
-                  "description": "Esimerkki: \"Jos automaatio ja tekoäly kehittyvät edelleen, tietyt manuaaliset työtehtävät voivat kadota, mutta teknologiaosaaminen nousee entistä tärkeämpään asemaan. Tämä voi tarkoittaa, että minun täytyy hankkia lisää teknisiä taitoja.\"",
+                  "description": "Esimerkki: ”Jos automaatio ja tekoäly kehittyvät edelleen, tietyt manuaaliset työtehtävät voivat kadota, mutta teknologiaosaaminen nousee entistä tärkeämpään asemaan. Tämä voi tarkoittaa, että minun täytyy hankkia lisää teknisiä taitoja.”",
                   "title": "Pohdi myös, miten kyseinen rakenne saattaa muuttua seuraavan 5–10 vuoden aikana ja mitä vaikutuksia sillä voisi olla urallesi. "
                 },
                 "4": {
-                  "description": "Esimerkiksi: \"Voisin osallistua lisäkoulutukseen tai kursseille, jotka parantavat teknologiaosaamistani, jotta olen kilpailukykyinen työmarkkinoilla tulevaisuudessa.”",
+                  "description": "Esimerkiksi: ”Voisin osallistua lisäkoulutukseen tai kursseille, jotka parantavat teknologiaosaamistani, jotta olen kilpailukykyinen työmarkkinoilla tulevaisuudessa.”",
                   "title": "Mieti, mitä voit tehdä jo nyt, jotta olet valmiina tuleviin muutoksiin. "
                 }
               },
