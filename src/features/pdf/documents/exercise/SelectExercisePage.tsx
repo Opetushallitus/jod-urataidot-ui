@@ -43,7 +43,7 @@ export const SelectExercisePage = ({
         <Fragment key={exercise.id}>
           <Text style={styles.headingSmall}>{wordList.title}</Text>
           <View style={localStyle.selectedWordsContainer}>
-            {answers[i].selections.map((word) => (
+            {answers[i]?.selections.map((word) => (
               <Text key={answers[i].id} style={localStyle.selectedWord}>
                 {word}
               </Text>

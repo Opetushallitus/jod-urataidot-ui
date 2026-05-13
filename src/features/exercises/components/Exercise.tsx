@@ -21,10 +21,12 @@ export const ExercisePage = () => {
 
   if (!exercise) return <Navigate to={`/${i18n.language}/${t('slugs.exercises')}`} replace />;
 
+  const exerciseKey = `${exercise.skillAreaId}-${exercise.sectionId}-${exercise.id}`;
+
   if (exercise.type === 'emoji') {
     const EmojiExercise = lazy(() => import('./EmojiExercise'));
     return (
-      <ExerciseContainer>
+      <ExerciseContainer key={exerciseKey}>
         <EmojiExercise exercise={exercise} skillAreaId={exercise.skillAreaId} sectionId={exercise.sectionId} />
       </ExerciseContainer>
     );
@@ -33,7 +35,7 @@ export const ExercisePage = () => {
   if (exercise.type === 'text') {
     const TextExercise = lazy(() => import('./TextExercise'));
     return (
-      <ExerciseContainer>
+      <ExerciseContainer key={exerciseKey}>
         <TextExercise exercise={exercise} skillAreaId={exercise.skillAreaId} sectionId={exercise.sectionId} />
       </ExerciseContainer>
     );
@@ -42,7 +44,7 @@ export const ExercisePage = () => {
   if (exercise.type === 'select') {
     const SelectExercise = lazy(() => import('./SelectExercise'));
     return (
-      <ExerciseContainer>
+      <ExerciseContainer key={exerciseKey}>
         <SelectExercise exercise={exercise} skillAreaId={exercise.skillAreaId} sectionId={exercise.sectionId} />
       </ExerciseContainer>
     );
@@ -51,7 +53,7 @@ export const ExercisePage = () => {
   if (exercise.type === 'media') {
     const MediaExercise = lazy(() => import('./MediaExercise'));
     return (
-      <ExerciseContainer>
+      <ExerciseContainer key={exerciseKey}>
         <MediaExercise exercise={exercise} skillAreaId={exercise.skillAreaId} sectionId={exercise.sectionId} />
       </ExerciseContainer>
     );
