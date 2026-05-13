@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router';
+import { Link, useLocation } from 'react-router';
 
 import { Button, MobileBottomBar } from '@/components';
 import ExerciseDocument from '@/features/pdf/documents/ExerciseDocument';
@@ -78,12 +78,12 @@ const MediaExercise = ({
       {easierExercise && (
         <span className="mb-2 text-body-sm whitespace-pre-wrap">
           {t('exercises.easier-question')}{' '}
-          <a
-            href={`/urataidot/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}
+          <Link
+            to={`/${language}/${t('slugs.exercises')}/${easierExercise.skillAreaSlug}/${easierExercise.sectionSlug}/${easierExercise.id}${search}`}
             className="text-body-sm-bold text-primary hover:underline"
           >
             {t('exercises.easier-link')}
-          </a>
+          </Link>
         </span>
       )}
       <label htmlFor={exercise.textFieldTitle} className="text-heading-3">
