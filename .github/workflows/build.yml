@@ -63,14 +63,10 @@ jobs:
       - name: Run build
         run: npm run build
 
-      # E2E tests
-      # It's not recommended to cache browsers.
-      # See https://playwright.dev/docs/ci#caching-browsers
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
-
       - name: Run Playwright e2e tests
-        run: npx playwright test
+        uses: docker://mcr.microsoft.com/playwright:v1.60.0-noble
+        with:
+          args: bash -lc "export HOME=/root && npx playwright test"
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
