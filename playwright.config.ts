@@ -1,5 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const isCI = !!process.env.CI;
+
 // https://playwright.dev/docs/test-configuration
 export default defineConfig({
   testDir: './e2e',
@@ -7,14 +9,14 @@ export default defineConfig({
   expect: {
     timeout: 10000,
   },
-  forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
-  reporter: process.env.CI ? [['github'], ['html']] : 'html',
+  forbidOnly: isCI,
+  retries: isCI ? 2 : 0,
+  workers: isCI ? 1 : undefined,
+  reporter: isCI ? [['github'], ['html']] : 'html',
   use: {
     baseURL: 'http://localhost:5173',
     trace: 'on-first-retry',
-    headless: !!process.env.CI,
+    headless: !!isCI,
   },
   projects: [
     {
@@ -23,7 +25,7 @@ export default defineConfig({
     },
     {
       name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+      use: { ...devices['Desktop Chrome'], ...(isCI ? {} : { channel: 'chrome' }) },
     },
     {
       name: 'webkit',
@@ -31,7 +33,7 @@ export default defineConfig({
     },
     {
       name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' },
+      use: { ...devices['Desktop Edge'], ...(isCI ? {} : { channel: 'msedge' }) },
     },
     {
       name: 'Tablet iPad',
@@ -47,8 +49,8 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: process.env.CI ? 'vite preview --port 5173' : 'vite dev',
+    command: isCI ? 'vite preview --port 5173' : 'vite dev',
     url: 'http://localhost:5173',
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: !isCI,
   },
 });
