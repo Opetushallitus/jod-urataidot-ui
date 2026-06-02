@@ -20,7 +20,8 @@ describe('loader', () => {
         lng: 'sv',
       },
       context: {},
-      unstable_pattern: '',
+      url: new URL('http://localhost'),
+      pattern: '',
     });
 
     expect(spyChangeLanguage).toHaveBeenCalledWith('sv');
