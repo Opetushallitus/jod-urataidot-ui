@@ -23,7 +23,7 @@
     "@headlessui/react": "2.2.10",
     "@hookform/error-message": "2.0.1",
     "@hookform/resolvers": "5.4.0",
-    "@jod/design-system": "https://github.com/Opetushallitus/jod-design-system/releases/download/rel-20260604-1/jod-design-system-0.0.0.tgz",
+    "@jod/design-system": "https://github.com/Opetushallitus/jod-design-system/releases/download/rel-20260608-2/jod-design-system-0.0.0.tgz",
     "@react-pdf/renderer": "4.5.1",
     "cva": "1.0.0-beta.4",
     "emoji-datasource-apple": "16.0.0",
