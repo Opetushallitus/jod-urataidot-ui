@@ -13,5 +13,5 @@ export default (async ({ params: { lng } }) => {
     await i18n.changeLanguage(lng);
   }
 
-  return null;
-}) satisfies LoaderFunction;
+  return {};
+}) satisfies LoaderFunction<{}>;
