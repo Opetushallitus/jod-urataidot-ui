@@ -1,7 +1,8 @@
 import { BlobProvider } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
-import { Button } from '@/components';
+import { Button as DSButton } from '@jod/design-system';
+
 import AllExercisesDocument from '@/features/pdf/documents/AllExercisesDocument';
 import useSkillAreas from '@/hooks/useSkillAreas';
 import { Open } from '@/icons';
@@ -41,33 +42,39 @@ export const OpenAllExercisesPDFButton = ({ hideWhenNoAnswers = false }: { hideW
       return null;
     }
     return (
-      <Button iconSide="left" icon={<Open />} disabled={true} variant="filled">
-        {t('career-management-summary.summary-link-card.no-exercises-done')}
-      </Button>
+      <DSButton
+        iconSide="left"
+        icon={<Open />}
+        disabled={true}
+        variant="gray"
+        label={t('career-management-summary.summary-link-card.no-exercises-done')}
+      />
     );
   }
   return (
     <BlobProvider document={<AllExercisesDocument exerciseAnswers={exerciseAnswers} />}>
       {({ url, loading }) =>
         loading || !url ? (
-          <Button iconSide="left" icon={<Open />} disabled={true} variant="filled">
-            {t('career-management-summary.summary-link-card.link-loading')}
-          </Button>
+          <DSButton
+            iconSide="left"
+            icon={<Open />}
+            disabled={true}
+            variant="gray"
+            label={t('career-management-summary.summary-link-card.link-loading')}
+          />
         ) : (
           <div className="flex">
-            <a
-              href={url}
-              target="_blank"
-              rel="noreferrer"
-              className="group bg-primary font-display hover:bg-primary-hover font-bold relative flex min-h-[44px] items-center justify-center gap-3 rounded-full px-5 py-3 whitespace-nowrap text-white outline-offset-4 hover:underline"
-            >
-              <div className="size-6">
-                <Open />
-              </div>
-              <span className="text-center leading-none text-wrap">
-                {t('career-management-summary.exercise-pdf-card.button')}
-              </span>
-            </a>
+            <DSButton
+              icon={<Open />}
+              iconSide="left"
+              variant="gray"
+              label={t('career-management-summary.exercise-pdf-card.button')}
+              linkComponent={({ children, className }) => (
+                <a href={url} target="_blank" rel="noreferrer" className={className}>
+                  {children}
+                </a>
+              )}
+            />
           </div>
         )
       }
