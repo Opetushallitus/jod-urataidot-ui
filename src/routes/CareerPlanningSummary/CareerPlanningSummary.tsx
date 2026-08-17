@@ -2,6 +2,8 @@ import { BlobProvider } from '@react-pdf/renderer';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { Button as DSButton } from '@jod/design-system';
+
 import { SpiderDiagram, BackButton, Button, Card } from '@/components';
 import { CareerPlanningSummarySection } from '@/components/CareerPlanningSummarySection/CareerPlanningSummarySection';
 import { TotalScoreRecord } from '@/components/SpiderDiagram/SpiderDiagram';
@@ -94,24 +96,26 @@ const CareerPlanningSummary = () => {
           >
             {({ url, loading }) =>
               loading || !url ? (
-                <Button iconSide="left" icon={<Open />} disabled={true} variant="filled">
-                  {t('career-management-summary.summary-link-card.link-loading')}
-                </Button>
+                <DSButton
+                  iconSide="left"
+                  icon={<Open />}
+                  disabled={true}
+                  variant="gray"
+                  label={t('career-management-summary.summary-link-card.link-loading')}
+                />
               ) : (
                 <div className="flex">
-                  <a
-                    href={url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group bg-primary font-display hover:bg-primary-hover font-bold relative flex min-h-[44px] items-center justify-center gap-3 rounded-full px-5 py-3 whitespace-nowrap text-white outline-offset-4 hover:underline"
-                  >
-                    <div className="size-6">
-                      <Open />
-                    </div>
-                    <span className="text-center leading-none text-wrap">
-                      {t('career-management-summary.summary-pdf-card.button')}
-                    </span>
-                  </a>
+                  <DSButton
+                    icon={<Open />}
+                    iconSide="left"
+                    variant="gray"
+                    label={t('career-management-summary.summary-pdf-card.button')}
+                    linkComponent={({ children, className }) => (
+                      <a href={url} target="_blank" rel="noreferrer" className={className}>
+                        {children}
+                      </a>
+                    )}
+                  />
                 </div>
               )
             }
@@ -127,18 +131,19 @@ const CareerPlanningSummary = () => {
         <Card>
           <h3 className="mb-2 text-heading-3">{t('career-management-summary.summary-link-card.title')}</h3>
           <p className="mb-6">{t('career-management-summary.summary-link-card.description')}</p>
-          <Button
-            variant="filled"
+          <DSButton
+            variant="gray"
             icon={linkCopied ? <Check /> : <Link />}
             iconSide="left"
             onClick={() => {
               void copyToClipboard();
             }}
-          >
-            {linkCopied
-              ? t('career-management-summary.summary-link-card.link-copied')
-              : t('career-management-summary.summary-link-card.copy-link')}
-          </Button>
+            label={
+              linkCopied
+                ? t('career-management-summary.summary-link-card.link-copied')
+                : t('career-management-summary.summary-link-card.copy-link')
+            }
+          />
         </Card>
       </div>
     </div>
