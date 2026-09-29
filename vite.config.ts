@@ -3,9 +3,19 @@ import { fileURLToPath } from 'node:url';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
+import { imagetools, type Picture as ImagetoolsPicture } from 'vite-imagetools';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import svgr from 'vite-plugin-svgr';
 import { configDefaults } from 'vitest/config';
+
+import type { PictureData } from '@jod/design-system';
+
+// Build-time image optimization presets, used as `import bg from './bg.jpg?preset=bg'`.
+// Query parameters override the preset, e.g. `?preset=bg&w=720`.
+const imagePresets: Record<string, Record<string, string>> = {
+  // CSS backgrounds: a single width, converted to `image-set()` with `pictureToImageSet`.
+  bg: { format: 'avif;webp;jpg', w: '1440', as: 'picture' },
+};
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -41,6 +51,21 @@ export default defineConfig({
     }),
     react(),
     tailwindcss(),
+    imagetools({
+      defaultDirectives: (url) => new URLSearchParams(imagePresets[url.searchParams.get('preset') ?? ''] ?? {}),
+      // Emit `as=picture` in the shape of the design system's `PictureData`,
+      // so imports can be passed straight to `<Picture picture={...} />`.
+      extendOutputFormats: (builtins) => ({
+        ...builtins,
+        picture: (args) => async (metadatas) => {
+          const { sources, img } = (await builtins.picture(args)(metadatas)) as ImagetoolsPicture;
+          return {
+            sources: Object.entries(sources).map(([format, srcSet]) => ({ srcSet, type: `image/${format}` })),
+            img,
+          } satisfies PictureData;
+        },
+      }),
+    }),
   ],
   build: {
     rolldownOptions: {

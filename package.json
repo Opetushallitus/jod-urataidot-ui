@@ -23,7 +23,7 @@
     "@headlessui/react": "2.2.10",
     "@hookform/error-message": "2.0.1",
     "@hookform/resolvers": "5.9.1",
-    "@jod/design-system": "https://github.com/Opetushallitus/jod-design-system/releases/download/rel-20260925-1/jod-design-system-0.0.0.tgz",
+    "@jod/design-system": "https://github.com/Opetushallitus/jod-design-system/releases/download/rel-20260929-1/jod-design-system-0.0.0.tgz",
     "@react-pdf/renderer": "4.9.0",
     "cva": "1.0.0-beta.8",
     "emoji-datasource-apple": "16.0.0",
@@ -69,6 +69,7 @@
     "tailwindcss": "4.3.3",
     "typescript": "npm:@typescript/typescript6@6.0.2",
     "vite": "8.2.2",
+    "vite-imagetools": "12.0.1",
     "vite-plugin-static-copy": "4.1.1",
     "vite-plugin-svgr": "5.2.0",
     "vitest": "5.0.0"

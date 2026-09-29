@@ -10,9 +10,11 @@ import {
   MatomoTracker,
   MenuButton,
   NavigationBar,
+  pictureToImageSet,
   useCookieConsent,
 } from '@jod/design-system';
 
+import feedbackBg from '@/../assets/feedback.jpg?preset=bg';
 import { NavMenu, FeedbackModal } from '@/components';
 import { Toaster } from '@/components/Toaster/Toaster';
 import { LangCode, langLabels, supportedLanguageCodes } from '@/i18n/config';
@@ -98,7 +100,10 @@ const Root = () => {
   const { open: openCookieConsent } = useCookieConsent();
 
   return (
-    <div className="flex min-h-screen flex-col bg-bg-gray text-primary-gray">
+    <div
+      className="flex min-h-screen flex-col bg-bg-gray text-primary-gray"
+      style={{ '--feedback-bg': pictureToImageSet(feedbackBg) } as React.CSSProperties}
+    >
       <title>{t('common.app-name')}</title>
       <link rel="manifest" href={`/manifest-${language}.json`} crossOrigin="use-credentials" />
       <header role="banner" className="sticky top-0 z-50 print:hidden">
@@ -138,7 +143,7 @@ const Root = () => {
         feedbackContent={t('common:footer.feedback-content')}
         feedbackButtonLabel={t('common:footer.feedback-button-label')}
         feedbackOnClick={() => setFeedbackVisible(true)}
-        feedbackBgImageClassName="bg-[url(@/../assets/feedback.jpg)] bg-cover bg-[50%_50%]"
+        feedbackBgImageClassName="bg-(image:--feedback-bg) bg-cover bg-[50%_50%]"
         copyright={t('common:footer.copyright')}
         externalLinkIconAriaLabel={t('common:external-link')}
         socialMedia={socialMedia}

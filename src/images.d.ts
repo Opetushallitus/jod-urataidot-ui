@@ -1,0 +1,4 @@
+declare module '*?preset=bg' {
+  const picture: import('@jod/design-system').PictureData;
+  export default picture;
+}
