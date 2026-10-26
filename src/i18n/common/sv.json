@@ -40,6 +40,7 @@
   "external-link": "Länken leder dig utanför tjänsten",
   "feedback": {
     "cancel": "Avbryt",
+    "close": "Stäng",
     "email-label": "E-postadress",
     "error": "Det gick inte att skicka respons. Försök på nytt senare.",
     "footer-handled": {
@@ -73,6 +74,8 @@
     },
     "submit": "Skicka",
     "success": "Tack för din respons! Din respons hjälper oss att förbättra tjänsten.",
+    "success-description": "Din feedback hjälper oss att förbättra tjänsten.",
+    "success-title": "Tack för din respons!",
     "title": "Ge respons",
     "type-question": "Vilken typ av respons vill du ge?",
     "types": {
@@ -106,12 +109,12 @@
       "privacy-and-cookies": "Dataskyddsbeskrivning och cookies"
     },
     "more-info-title": "Vill du veta mer om Kompetensstigen?",
-    "social-media-label": "Kompetensstigen i sociala medier",
     "social-media": {
       "facebook": "Kompetensstigen Facebook",
       "instagram": "Kompetensstigen Instagram",
       "linkedin": "Kompetensstigen LinkedIn"
-    }
+    },
+    "social-media-label": "Kompetensstigen i sociala medier"
   },
   "language-selection": "Språk",
   "login": "Logga in",
@@ -156,11 +159,18 @@
     "close": "Stäng"
   },
   "open-submenu": "Öppna undermenyn",
-  "osaamispolku": "Min kompetensstig",
+  "osaamispolku": "Kompetensstigen",
   "print": "Skriv ut",
   "required": "obligatorisk",
   "return-home": "Återgå till förstasidan",
   "session": {
+    "auth-error": {
+      "description": "Inloggningen misslyckades. Försök igen.",
+      "reason": {
+        "method-not-allowed": "Den inloggningsmetod du valde är inte tillåten."
+      },
+      "title": "Inloggningen misslyckades"
+    },
     "expired": {
       "continue": "Fortsätt utan att logga in",
       "login": "Logga in igen",
