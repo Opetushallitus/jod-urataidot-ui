@@ -20,16 +20,19 @@ test('exercises can be filtered and opened', async ({ page }) => {
 });
 
 test('exercise pdf can be downloaded', async ({ page }) => {
-  await page.goto('http://localhost:5173/urataidot/fi/tehtavat');
+  await page.goto('/urataidot/fi/tehtavat');
   await page.getByText('Hyväksy kaikki').click();
   await page
     .getByRole('link', { name: 'Tehtävä Opi tunnistamaan omaan tilanteeseen sopivia mahdollisuuksia Maailma ymp' })
     .click();
   await page.getByRole('button', { name: 'Valmis' }).click();
-  await page.getByRole('button', { name: 'Lataa tehtävä PDF:nä' }).click();
   const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Lataa tehtävä PDF:nä' }).click();
   const download = await downloadPromise;
-  expect(download.suggestedFilename()).toEqual('Opi tunnistamaan omaan tilanteeseen sopivia mahdollisuuksia.pdf');
+  // Chromium replaces spaces with underscores in the suggested filename
+  expect(download.suggestedFilename().replaceAll('_', ' ')).toEqual(
+    'Opi tunnistamaan omaan tilanteeseen sopivia mahdollisuuksia.pdf',
+  );
   await page.getByRole('button', { name: 'Palaa takaisin' }).click();
   await expect(page.getByRole('heading', { name: 'Tehtäväpankki' })).toBeVisible();
 });

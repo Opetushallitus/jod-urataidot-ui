@@ -40,6 +40,7 @@
   "external-link": "The link leads outside the service",
   "feedback": {
     "cancel": "Cancel",
+    "close": "Close",
     "email-label": "E-mail address",
     "error": "Failed to send feedback. Please try again later.",
     "footer-handled": {
@@ -73,6 +74,8 @@
     },
     "submit": "Submit",
     "success": "Thank you for your feedback! Your feedback will help us to improve the service.",
+    "success-description": "Your feedback helps us improve the service.",
+    "success-title": "Thank you for your feedback!",
     "title": "Give feedback",
     "type-question": "What kind of feedback would you like to give?",
     "types": {
@@ -107,12 +110,12 @@
       "privacy-and-cookies": "Privacy policy and cookies"
     },
     "more-info-title": "Do you want to know more about Competency Path?",
-    "social-media-label": "Competency Path on social media",
     "social-media": {
       "facebook": "Competency Path Facebook",
       "instagram": "Competency Path Instagram",
       "linkedin": "Competency Path LinkedIn"
-    }
+    },
+    "social-media-label": "Competency Path on social media"
   },
   "language-selection": "Language",
   "login": "Log in",
@@ -162,6 +165,13 @@
   "required": "mandatory",
   "return-home": "Return to the front page",
   "session": {
+    "auth-error": {
+      "description": "Login failed. Please try again.",
+      "reason": {
+        "method-not-allowed": "The login method you selected is not allowed."
+      },
+      "title": "Login failed"
+    },
     "expired": {
       "continue": "Continue without logging in",
       "login": "Log in again",
