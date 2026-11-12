@@ -127,7 +127,7 @@ const Root = () => {
       </header>
       <NavMenu open={navMenuOpen} onClose={() => setNavMenuOpen(false)} />
       <Outlet />
-      <Chatbot />
+      <Chatbot ariaLabel={t('common:chatbot.name')} />
       <Footer
         language={language}
         okmLabel={t('common:footer.logos.okm-label')}
