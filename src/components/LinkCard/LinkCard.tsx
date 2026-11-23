@@ -20,7 +20,7 @@ export function LinkCard({ to, title, description, className }: Readonly<LinkCar
   return (
     <Link to={to} className={classes}>
       <div className="flex">
-        <h2 className="grow text-heading-2-mobile group-hover:underline sm:text-heading-2">{title}</h2>
+        <h2 className="grow text-heading-2-mobile hyphens-auto group-hover:underline sm:text-heading-2">{title}</h2>
         <div className="m-2">
           <ArrowForward />
         </div>

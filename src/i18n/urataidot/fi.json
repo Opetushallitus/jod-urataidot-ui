@@ -95,18 +95,20 @@
     "loading": "Ladataan...",
     "navigation-cards": {
       "career-management": {
-        "description": "Tee laajempi urasuunnittelutaitojen itsearviointi ja pohdi syvällisesti nykytilannettasi. Lopuksi saat sinulle sopivia vinkkejä.",
-        "title": "Syvenny urasuunnitteluun"
+        "description": "Opit ymmärtämään paremmin itseäsi ja voit pohtia, mitkä asiat ovat sinulle merkityksellisiä oman suunnan löytymisessä.",
+        "title": "Urasuunnittelu-taitojen itsearviointi"
       },
       "career-plan": {
+        "description": "Kun olet pohtinut riittävästi sinulle merkityksellisiä asioita, luo urasuunnitelma. Urasuunnitelma auttaa sinua sanoittamaan tulevaisuuden tavoitteitasi.",
         "title": "Urasuunnitelma"
       },
       "exercises": {
+        "description": "Tutustu kaikkiin urasuunnittelutaitoihin liittyviin harjoitustehtäviin tehtäväpankissa ja valitse niistä itsellesi sopivimmat.",
         "title": "Tehtäväpankki"
       },
       "learn-something-new": {
-        "description": "Tee urasuunnittelutaitojen pikaitsearviointi, jonka perusteella saat nopeasti tietoa ja sinulle sopivia vinkkejä.",
-        "title": "Nopeasti alkuun"
+        "description": "Urasuunnittelutaitojen pikaitsearvioinnin perusteella saat ehdotuksia materiaaleista, jotka voisivat kiinnostaa sinua.",
+        "title": "Pikaitsearviointi"
       }
     },
     "next": "Seuraava",
@@ -1943,9 +1945,9 @@
   },
   "front-page": "Etusivu",
   "home": {
-    "description": "Aloita vastaamalla muutamaan itsearviointikysymykseen. Saat tämän jälkeen harjoitustehtäviä itsesi kehittämiseen.",
-    "info": "Tehtävät on suunniteltu tukemaan omaa pohdintaasi. Vastaukset eivät tallennu Osaamispolun osaamisprofiiliin, mutta voit ladata tekemäsi tehtävät PDF-muodossa itsellesi.",
-    "title": "Tunnista vahvuutesi ja kehityskohteesi Urataitojen itsearvioinnin avulla"
+    "description": "Urataitojen itsearvioinnin avulla tunnistat, mitkä urasuunnittelun teemat ovat juuri nyt sinulle ajankohtaisia. Saat itsearvioinnin jälkeen henkilökohtaisen yhteenvedon ja ehdotuksia sinulle sopivista tehtävistä.",
+    "info": "Huomioithan, että vastauksesi eivät tallennu Osaamispolun osaamisprofiiliin, mutta voit ladata tekemäsi tehtävät PDF-muodossa itsellesi. Jos teet laajemman itsearvioinnin kaikki kuusi osa-aluetta, saat niistä myös yhteenvedon, jonka voit ladata PDF:nä tai jakaa linkkinä.",
+    "title": "Pohdi omaa suuntaasi Urataidot-työkalun avulla"
   },
   "my-competence-path": "Oma Osaamispolku",
   "nav": {
