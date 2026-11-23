@@ -4,7 +4,7 @@ test('exercises can be filtered and opened', async ({ page }) => {
   await page.goto('/urataidot/');
   await page.getByText('Hyväksy kaikki').click();
   await page.getByText('Valikko').click();
-  await page.getByRole('link', { name: 'Tehtäväpankki' }).click();
+  await page.getByRole('link', { name: 'Tehtäväpankki', exact: true }).click();
   await page.getByRole('link', { name: 'Tehtävä Opi kuvailemaan' }).click();
   await expect(page.getByRole('heading', { name: 'Opi kuvailemaan ja jäsentelem' })).toBeVisible();
   await page.getByRole('button', { name: 'Takaisin' }).click();

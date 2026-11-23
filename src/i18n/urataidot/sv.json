@@ -95,18 +95,20 @@
     "loading": "Belastning…",
     "navigation-cards": {
       "career-management": {
-        "description": "Gör en mer omfattande självutvärdering av dina karriärkompetenser och reflektera ingående kring din nuvarande situation. I slutet får du tips som passar just dig.",
-        "title": "Fördjupa dig i karriärkompetenser"
+        "description": "Du lär dig att bättre förstå dig själv och kan reflektera över vilka saker som är viktiga för dig när du hittar din egen riktning.",
+        "title": "Självutvärdering av karriärkompetenser"
       },
       "career-plan": {
+        "description": "När du har reflekterat tillräckligt över de saker som är viktiga för dig, skapa en karriärplan. Karriärplanen hjälper dig att formulera dina framtida mål.",
         "title": "Karriärplan"
       },
       "exercises": {
+        "description": "Utforska alla övningar relaterade till karriärkompetenser i uppgiftsbanken och välj de som passar dig bäst.",
         "title": "Uppgiftsbank"
       },
       "learn-something-new": {
-        "description": "Gör en snabb självutvärdering av dina karriärkompetenser, på basis av vilken du snabbt får information och tips som passar just dig.",
-        "title": "Kom igång snabbt"
+        "description": "Baserat på den snabba självutvärderingen av dina karriärkompetenser får du förslag på material som kan vara av intresse för dig.",
+        "title": "Snabb självutvärdering"
       }
     },
     "next": "Nästa",
@@ -1943,9 +1945,9 @@
   },
   "front-page": "Framsida",
   "home": {
-    "description": "Börja med att svara på några självutvärderingsfrågor. Därefter får du övningsuppgifter för din egen utveckling.",
-    "info": "Uppgifterna är utformade för att stödja din egen reflektion. Svaren sparas inte i Kompetensstigens kompetensprofil, men du kan ladda ner uppgifterna du har gjort i PDF-format.",
-    "title": "Identifiera dina styrkor och utvecklingsområden med hjälp av Självutvärdering av karriärkompetens"
+    "description": "Med självutvärderingen av karriärkompetenser identifierar du vilka teman inom karriärplanering som är aktuella för dig just nu. Efter självutvärderingen får du en personlig sammanfattning och förslag på uppgifter som passar dig.",
+    "info": "Observera att dina svar inte sparas i Kompetensstigens kompetensprofil, men du kan ladda ner de uppgifter du har gjort i PDF-format. Om du gör en mer omfattande självutvärdering av alla sex delområden får du också en sammanfattning som du kan ladda ner som PDF eller dela som länk.",
+    "title": "Reflektera över din riktning med hjälp av Karriärkompetenser-verktyget"
   },
   "my-competence-path": "Min kompetensstig",
   "nav": {

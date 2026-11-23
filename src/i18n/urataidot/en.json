@@ -95,18 +95,20 @@
     "loading": "Loading…",
     "navigation-cards": {
       "career-management": {
-        "description": "Take a broader self-assessment of your career management skills and reflect deeply on your current situation. Finally, you'll get the right tips for you.",
-        "title": "Get deeper into career management"
+        "description": "You will learn to better understand yourself and can reflect on what matters to you when finding your own direction.",
+        "title": "Self-assessment of career management skills"
       },
       "career-plan": {
+        "description": "After you have reflected sufficiently on what is meaningful to you, create a career plan. The career plan helps you articulate your future goals.",
         "title": "Career Plan"
       },
       "exercises": {
+        "description": "Explore all career skills exercises in the exercise vault and choose the ones that suit you best.",
         "title": "Exercise vault"
       },
       "learn-something-new": {
-        "description": "Take a quick assessment of your career management skills to get quick information and tips that are right for you.",
-        "title": "Getting started fast: a quick assessment of career management skills"
+        "description": "Based on the quick assessment of your career management skills, you will receive suggestions for materials that might interest you.",
+        "title": "Quick assessment"
       }
     },
     "next": "Next",
@@ -1943,9 +1945,9 @@
   },
   "front-page": "Front page",
   "home": {
-    "description": "Start by answering a few self-assessment questions. You will then be given exercises for your personal development.",
-    "info": "The exercises are designed to support your own reflection. The answers are not saved in Competency Path's competence profile, but you can download the exercises you have completed in PDF format for yourself.",
-    "title": "Use the Career Skills self-assessment tool to identify your strengths and development areas"
+    "description": "With the self-assessment of career skills, you can identify which themes in career planning are currently relevant to you. After the self-assessment, you will receive a personal summary and suggestions for exercises suitable for you.",
+    "info": "Please note that your answers are not saved in the Competence Path competence profile, but you can download the exercises you have completed in PDF format for yourself. If you complete a more comprehensive self-assessment of all six sub-areas, you will also receive a summary that you can download as a PDF or share as a link.",
+    "title": "Reflect on your direction with the Career Skills tool"
   },
   "my-competence-path": "My competence path",
   "nav": {
